@@ -1,0 +1,52 @@
+{
+  "source_id": "TECH-028",
+  "title": "langchain-ai/langchain official repository and license snapshot",
+  "issuer": "langchain-ai",
+  "repository": "langchain-ai/langchain",
+  "official_url": "https://github.com/langchain-ai/langchain",
+  "revision": "5c1f28271295bb13034f4cf8964f74c117357d40",
+  "commit_date": "2026-09-16T16:50:09Z",
+  "retrieved_at": "2026-09-16T17:06:50.172651+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/langchain-ai/langchain/commits/HEAD",
+      "sha256": "3fb0d0cf7d6c5849f1d7bcd547afae9d991e4a93dffff318356b193403053b75",
+      "bytes": 8962
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/langchain-ai/langchain/5c1f28271295bb13034f4cf8964f74c117357d40/README.md",
+      "sha256": "7e8f7983153194ce3e1d277e03c14623a2f7e3c6238ef71f066403a9f3398ad3",
+      "bytes": 5933
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/langchain-ai/langchain/5c1f28271295bb13034f4cf8964f74c117357d40/LICENSE",
+      "sha256": "4ec67e4ca6e6721dba849b2ca82261597c86a61ee214bbf21416006b7b2d0478",
+      "bytes": 1067
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/langchain-ai/langchain/releases/latest",
+      "sha256": "efe38034d07fc105d8accba78142eede47fb3c990e878a223388a04272ef86a1",
+      "bytes": 6585
+    },
+    "overview.md": {
+      "requested_url": "https://docs.langchain.com/oss/python/langchain/overview.md",
+      "sha256": "145958e74fa57c76b44396c2b9d6c79332220d0b0ea9925789baa17820b4fa38",
+      "bytes": 11149
+    },
+    "package-release.json": {
+      "requested_url": "https://pypi.org/pypi/langchain/json",
+      "sha256": "30e234af65b88325d894e03b1ead19a1007303077e9aeecbc8d312a8e03de1f9",
+      "bytes": 817150
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

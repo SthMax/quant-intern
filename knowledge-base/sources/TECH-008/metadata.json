@@ -1,0 +1,48 @@
+{
+  "source_id": "TECH-008",
+  "model_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "title": "deepseek-ai/DeepSeek-V4.1-Flash official model card and configuration",
+  "issuer": "deepseek-ai",
+  "official_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+  "revision": "dba1be0a40aa45a94ad051997016db3960a90277",
+  "retrieved_at": "2026-09-16T08:32:42.890657+00:00",
+  "created_at_api": "2026-09-10T02:17:58.000Z",
+  "last_modified_api": "2026-09-10T08:18:10.000Z",
+  "license_tag": "mit",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Official model card, configuration and license metadata; no local inference or license approval. createdAt is repository creation, not a release announcement.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+      "sha256": "7533fd7f1a985cbee31b78681d9c8286e6d6ae625b1df7f2b63ecd09aab98204",
+      "bytes": 6192
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/dba1be0a40aa45a94ad051997016db3960a90277/README.md",
+      "sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+      "bytes": 13110
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/dba1be0a40aa45a94ad051997016db3960a90277/config.json",
+      "sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+      "bytes": 3311
+    },
+    "LICENSE": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/dba1be0a40aa45a94ad051997016db3960a90277/LICENSE",
+      "sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+      "bytes": 1084
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/dba1be0a40aa45a94ad051997016db3960a90277/model.safetensors.index.json",
+      "sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+      "bytes": 7470294
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "Introduction; Evaluation Results; Minimal Inference; License; config and tensor index",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "verbatim_model_card"
+}

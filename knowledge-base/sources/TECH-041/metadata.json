@@ -1,0 +1,42 @@
+{
+  "source_id": "TECH-041",
+  "title": "langchain-ai/deepagents official repository and license snapshot",
+  "issuer": "langchain-ai",
+  "official_url": "https://github.com/langchain-ai/deepagents",
+  "retrieved_at": "2026-09-16T17:11:03.095549+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/langchain-ai/deepagents/commits/HEAD",
+      "sha256": "c68b0d1fc673ba30fee28a9f14b76f52d285040a571b5308c7e990d46f3219fc",
+      "bytes": 10087
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/langchain-ai/deepagents/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea/README.md",
+      "sha256": "569c79f865abd0d677a71e83ba5c3b971318146a4421e3851a0e25ee2d3b1146",
+      "bytes": 6984
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/langchain-ai/deepagents/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea/LICENSE",
+      "sha256": "4ec67e4ca6e6721dba849b2ca82261597c86a61ee214bbf21416006b7b2d0478",
+      "bytes": 1067
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/langchain-ai/deepagents/releases/latest",
+      "sha256": "d0c51b58850eeabb442aa8733277f2e5a7190234290e43a9eae94a5db12a79ea",
+      "bytes": 11451
+    }
+  },
+  "repository": "langchain-ai/deepagents",
+  "revision": "26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea",
+  "commit_date": "2026-09-16T16:08:10Z",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Harness architecture and local model support; no runtime tests.",
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

@@ -1,8 +1,14 @@
 # Knowledge Base
 
+> 2026-09-17新增[Serving framework调研](infrastructure/serving-framework-survey-2026-09-17.md)与[Harness调研](infrastructure/harness-survey-2026-09-17.md)。当前总索引167项：149主阅读、14辅助、4来源链。新增23组官方软件/许可来源，明确框架能力、API兼容和实际运行验证的区别。
+
+> 2026-09-16确定主线：**面向专业个人工作站与共享服务的模型研究**。见[重排后的8模型候选](models/model-survey-2026-09-16.md)、[许可专项](models/license-review-2026-09-16.md)及[第3–5周研究计划](../weekly/week-03-05-plan.md)。当日累计新增19项官方技术/许可来源、总索引144项，首轮5项模型资料转历史辅助；报告修订按[独立计划](../reports/phase1-llm-industry-2026-09-09/editorial/fixing-plan.md)推进。
+
+以下为Phase 1资料积累的历史说明。
+
 > 2026-09-11新增[DeepSeek-V4.1-Flash技术报告与中文分析](models/deepseek-v4.1-flash/README.md)，归入Phase 2模型技术资料。
 
-> 当前范围：**2026年基金公司LLM量化三方向**，API方案可用，本地部署加分；部署层与Agent层分开评估。见[最新案例矩阵](companies/quant-research-2026-09-09.md)。
+> Phase 1量化专题范围：**2026年基金公司LLM量化三方向**，API方案可作案例，本地部署加分；部署层与Agent层分开评估。见[案例矩阵](companies/quant-research-2026-09-09.md)。
 
 > 本地LLM目标的研究结果：[任务、代码、部署依赖与评价方案](models/local-llm-poc-evidence-2026-09-09.md)。尚未进入实际GPU部署。
 
@@ -21,8 +27,9 @@
 最新来源恢复：[内部浏览器与深搜复核结果](audits/2026-09-07-source-recovery/README.md)。
 
 This folder holds research findings and their evidence. Project scope is
-controlled by [the final project plan](../PROJECT_PLAN.md). Execution is tracked
-in [the Week 2 plan](../weekly/week-02-plan.md).
+controlled by [the final project plan](../PROJECT_PLAN.md). Current execution is
+tracked in [the Weeks 3–5 plan](../weekly/week-03-05-plan.md); the
+[Week 2 plan](../weekly/week-02-plan.md) retains the Phase 1 record.
 
 ## 原始来源与研究分析 / Original sources and analysis
 

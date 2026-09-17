@@ -1,0 +1,125 @@
+{
+  "url": "https://api.github.com/repos/vllm-project/vllm/issues/56400",
+  "repository_url": "https://api.github.com/repos/vllm-project/vllm",
+  "labels_url": "https://api.github.com/repos/vllm-project/vllm/issues/56400/labels{/name}",
+  "comments_url": "https://api.github.com/repos/vllm-project/vllm/issues/56400/comments",
+  "events_url": "https://api.github.com/repos/vllm-project/vllm/issues/56400/events",
+  "html_url": "https://github.com/vllm-project/vllm/issues/56400",
+  "id": 5420602980,
+  "node_id": "I_kwDOI7xefs8AAAABQxfWZA",
+  "number": 56400,
+  "title": "[Model Support] DeepSeek-V4.1 Tracking Issue",
+  "user": {
+    "login": "jcotant-inferact",
+    "id": 304614975,
+    "node_id": "U_kgDOEigOPw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/304614975?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jcotant-inferact",
+    "html_url": "https://github.com/jcotant-inferact",
+    "followers_url": "https://api.github.com/users/jcotant-inferact/followers",
+    "following_url": "https://api.github.com/users/jcotant-inferact/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jcotant-inferact/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jcotant-inferact/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jcotant-inferact/subscriptions",
+    "organizations_url": "https://api.github.com/users/jcotant-inferact/orgs",
+    "repos_url": "https://api.github.com/users/jcotant-inferact/repos",
+    "events_url": "https://api.github.com/users/jcotant-inferact/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jcotant-inferact/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 5135047180,
+      "node_id": "LA_kwDOI7xefs8AAAABMhKaDA",
+      "url": "https://api.github.com/repos/vllm-project/vllm/labels/documentation",
+      "name": "documentation",
+      "color": "0075ca",
+      "default": true,
+      "description": "Improvements or additions to documentation",
+      "archived_at": null,
+      "archived_by": null
+    },
+    {
+      "id": 6114440385,
+      "node_id": "LA_kwDOI7xefs8AAAABbHL0wQ",
+      "url": "https://api.github.com/repos/vllm-project/vllm/labels/rocm",
+      "name": "rocm",
+      "color": "B60205",
+      "default": false,
+      "description": "Related to AMD ROCm",
+      "archived_at": null,
+      "archived_by": null
+    },
+    {
+      "id": 8746007475,
+      "node_id": "LA_kwDOI7xefs8AAAACCU17sw",
+      "url": "https://api.github.com/repos/vllm-project/vllm/labels/deepseek",
+      "name": "deepseek",
+      "color": "1995FE",
+      "default": false,
+      "description": "Related to DeepSeek models",
+      "archived_at": null,
+      "archived_by": null
+    },
+    {
+      "id": 12141724842,
+      "node_id": "LA_kwDOI7xefs8AAAAC07QEqg",
+      "url": "https://api.github.com/repos/vllm-project/vllm/labels/DSv4.1",
+      "name": "DSv4.1",
+      "color": "2c52b7",
+      "default": false,
+      "description": "Related to DeepSeek-V4.1 models",
+      "archived_at": null,
+      "archived_by": null
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2026-09-11T05:07:24Z",
+  "updated_at": "2026-09-15T13:56:10Z",
+  "closed_at": null,
+  "assignee": null,
+  "author_association": "COLLABORATOR",
+  "issue_field_values": [
+
+  ],
+  "type": null,
+  "active_lock_reason": null,
+  "sub_issues_summary": {
+    "total": 0,
+    "completed": 0,
+    "percent_completed": 0
+  },
+  "issue_dependencies_summary": {
+    "blocked_by": 0,
+    "total_blocked_by": 0,
+    "blocking": 0,
+    "total_blocking": 0
+  },
+  "body": "Model: [deepseek-ai/DeepSeek-V4.1-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)\nRecipe: [`models/deepseek-ai/DeepSeek-V4.1-Flash.yaml`](https://github.com/vllm-project/recipes/blob/main/models/deepseek-ai/DeepSeek-V4.1-Flash.yaml) — verified on H200, GB200, GB300, MI350X\n\nAll open work: [`is:open label:DSv4.1`](https://github.com/vllm-project/vllm/issues?q=is%3Aopen+label%3ADSv4.1)\n\n> **Everything below stacks on #56214.** That PR adds `DeepseekV41ForCausalLM` to\n> `registry.py`, so until it lands the model does not resolve from `main`. Please\n> base new work on it rather than on `main`.\n\n## Model support\nzyongye\n- #56214 — `DeepseekV41ForCausalLM` registry entry, config and tokenizer wiring **(keystone, in review)**\n- #56228 — model definitions (merged)\n\n## Kernels\ngau-nernst JaredforReal ZJY0516 zyongye\n- DeepGEMM Mega-Gate and Mega-mHC — gau-nernst\n- Sparse indexer — JaredforReal, #56254\n- [DeepSelect](https://github.com/deepseek-ai/DeepSelect) — ZJY0516\n- [FlashMLA](https://github.com/deepseek-ai/FlashMLA) — zyongye\n- #56344 — attention megakernel\n- Kernel detail tracked in #56217\n\n## Engram\n- #56219 — redistribute SP embeddings with all-to-all\n- #56220 — overlap lookup with decoder compute\n- #56224 — microbatch positions and Engram histories\n- #56357 — prefetch offloaded lookups, share host tables via mmap\n\n## Pipeline parallelism\n- #56221 — validate sharing dependencies before construction\n- #56222 — sequence-parallel stage boundaries\n- #56223 — relay cache and index state across stages\n\n## Attention / SWA\nivanium\n- #56227 — SWA-bounded replay\n\n## Frontend and tool calling\nabmfy CedricHwong\n- #56235 — constrain tool parameters by schema in structural tag\n- #56299 — support Responses text content types\n- #56297 — bug: Responses API rejects text content types\n\n## AMD / ROCm\nJohnQinAMD hongxiayang\n- #56342 — fused TileLang mHC kernels on the AMD path\n- #56347 — bug: segfault on 3rd decode token with `FULL_DECODE_ONLY` unless `--no-async-scheduling`\n- [vllm-project/recipes#952](https://github.com/vllm-project/recipes/pull/952) — working CUDA graph mode for AMD\n\n\n## Triage notes\n- V4.1 has its own `DSv4.1` label as of today. It previously landed on `DSv4`,\n  because that rule's title pattern had no boundary after `v4`. Automation fix in\n  #56332; `DSv4` will be cleared off the 4.1 PRs once that merges.\n- `DeepseekV41ForCausalLM` is a distinct architecture from V4 — separate tree,\n  tokenizer mode, parsers and config class. Please don't file 4.1 issues under\n  `DSv4`.\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/vllm-project/vllm/issues/56400/reactions",
+    "total_count": 3,
+    "+1": 3,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/vllm-project/vllm/issues/56400/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null,
+  "pinned_comment": null
+}

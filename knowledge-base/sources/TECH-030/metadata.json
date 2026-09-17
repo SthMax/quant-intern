@@ -1,0 +1,52 @@
+{
+  "source_id": "TECH-030",
+  "title": "langgenius/dify official repository and license snapshot",
+  "issuer": "langgenius",
+  "repository": "langgenius/dify",
+  "official_url": "https://github.com/langgenius/dify",
+  "revision": "9c6c48b50ba99512801873350702326a44dc62de",
+  "commit_date": "2026-09-16T13:41:22Z",
+  "retrieved_at": "2026-09-16T17:06:50.745220+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately. providers.md is Dify Cloud documentation, not a self-hosted feature guarantee; license and deployment docs are treated separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/langgenius/dify/commits/HEAD",
+      "sha256": "4701eca4b1de56402452162d706ca0c01a0068fc720e3534a36eb979429e9120",
+      "bytes": 31084
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/langgenius/dify/9c6c48b50ba99512801873350702326a44dc62de/README.md",
+      "sha256": "51647e1180794278e006c7e1925eec056d5b68a036893143849ef83ad695e7e2",
+      "bytes": 11950
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/langgenius/dify/9c6c48b50ba99512801873350702326a44dc62de/LICENSE",
+      "sha256": "232cf91474932d5110ed304e53b6b742a58463857c571fae803fdf2ac36d7bb3",
+      "bytes": 1801
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/langgenius/dify/releases/latest",
+      "sha256": "28069c63b0c47ae0cc39eed16eb1c9343005e624707d0282f6dc08bae3150ad2",
+      "bytes": 108900
+    },
+    "deployment.md": {
+      "requested_url": "https://docs.dify.ai/en/self-host/deploy/quick-start/docker-compose.md",
+      "sha256": "f01b77c4934d49d3c13a4ba691a2472a73a2ba34fd9df8ed6918c0b93c2b4856",
+      "bytes": 6287
+    },
+    "providers.md": {
+      "requested_url": "https://docs.dify.ai/en/cloud/use-dify/workspace/model-providers.md",
+      "sha256": "521fcfde4df351e0bb43319fe6a70c201dc1c4f36b0de9afc5e769869951884b",
+      "bytes": 7316
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

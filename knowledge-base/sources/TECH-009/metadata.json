@@ -1,0 +1,37 @@
+{
+  "source_id": "TECH-009",
+  "title": "vLLM v0.29.0 release and model registry",
+  "issuer": "vLLM project",
+  "official_url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
+  "retrieved_at": "2026-09-16T08:36:49.322235+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Release metadata and source registry only; registry membership is not a successful model/GPU deployment.",
+  "files": {
+    "source.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/releases/latest",
+      "sha256": "7e8b0642a3ca36deccc4fc123374575d07326027c8b6894ba8df83e1c5a6a185",
+      "bytes": 54321
+    },
+    "original.md": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/releases/latest",
+      "sha256": "44617ce81d64df5640d263f8a0d867c91674b7dfe8fdc483deeb257e50d9923d",
+      "bytes": 35354
+    },
+    "registry.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.29.0/vllm/model_executor/models/registry.py",
+      "sha256": "fef8293fe19cef01768a4c5bd8adc05e120202f1c1597eb264d090672894fbd7",
+      "bytes": 63102
+    },
+    "supported-models.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.29.0/docs/models/supported_models.md",
+      "sha256": "d982e37f455ad3771682904b12991d5728eec737264a9ba1596285c56cc0a0ee",
+      "bytes": 59567
+    }
+  },
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "source.json tag/date/prerelease; registry.py; supported-models.md",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "verbatim_release_body_from_api"
+}

@@ -1,0 +1,53 @@
+{
+  "source_id": "TECH-017",
+  "model_id": "moonshotai/Kimi-K3",
+  "title": "moonshotai/Kimi-K3 official model card, configuration and license",
+  "issuer": "moonshotai",
+  "official_url": "https://huggingface.co/moonshotai/Kimi-K3",
+  "revision": "f831ab66814297da540d832a5235f8e904f29d06",
+  "retrieved_at": "2026-09-16T09:11:16.162207+00:00",
+  "created_at_api": "2026-06-13T06:42:57.000Z",
+  "last_modified_api": "2026-09-02T02:22:41.000Z",
+  "license_tag": "other",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_model_card",
+  "verification_scope": "Official model repository snapshot; commercial license and deployment conditions to be inspected. No local model test. Repository creation date is not a release date.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/moonshotai/Kimi-K3",
+      "sha256": "56e485a07cc1bc77b260b3bbff96d144e4cec77e6e8b41547b69f3e476b517f6",
+      "bytes": 9273
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/README.md",
+      "sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+      "bytes": 45261
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/config.json",
+      "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213",
+      "bytes": 7006
+    },
+    "LICENSE": {
+      "requested_url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/LICENSE",
+      "sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887",
+      "bytes": 3065
+    },
+    "generation_config.json": {
+      "requested_url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/generation_config.json",
+      "sha256": "c6648c25e9705af7fba8847e243840d21b5cc63ddeb6297f750a7ddbb6a02836",
+      "bytes": 53
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/model.safetensors.index.json",
+      "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd",
+      "bytes": 59764096
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official source and license inspection 2026-09-16",
+  "locator": "Model Summary; Deployment; Kimi K3 LICENSE items 1-5; config/index",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md; knowledge-base/models/license-review-2026-09-16.md"
+}

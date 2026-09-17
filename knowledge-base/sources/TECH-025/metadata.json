@@ -1,0 +1,47 @@
+{
+  "source_id": "TECH-025",
+  "title": "ggml-org/llama.cpp official repository and license snapshot",
+  "issuer": "ggml-org",
+  "repository": "ggml-org/llama.cpp",
+  "official_url": "https://github.com/ggml-org/llama.cpp",
+  "revision": "c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+  "commit_date": "2026-09-16T16:50:26Z",
+  "retrieved_at": "2026-09-16T17:06:48.839560+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately. Protocol/model support is limited to inspected documents and code paths; HEAD capabilities are not automatically release capabilities.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/ggml-org/llama.cpp/commits/HEAD",
+      "sha256": "2cc7b51f508c4aeb1d0ff414356f8e534839b22f8da403ba403d35c8e809bd11",
+      "bytes": 10673
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/c6824a9e42ceeda5d58089fa274ddd816e59e68e/README.md",
+      "sha256": "e58520857253729851cc02313883c9d2a8b2ae86abe212aaf1bcbd7db8bfefb4",
+      "bytes": 7351
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/c6824a9e42ceeda5d58089fa274ddd816e59e68e/LICENSE",
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "bytes": 1078
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/latest",
+      "sha256": "9dbe4af63cf392d17e9afb826fdbb1c8677774980469a1eb1a536c3ad4a9e20b",
+      "bytes": 22424
+    },
+    "server.md": {
+      "requested_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/c6824a9e42ceeda5d58089fa274ddd816e59e68e/tools/server/README.md",
+      "sha256": "57e27013809e4976e71a76fe83a5930779634401d6dbdf2d941fd5432889eb9e",
+      "bytes": 106112
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

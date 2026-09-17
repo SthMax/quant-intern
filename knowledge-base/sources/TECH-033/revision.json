@@ -1,0 +1,101 @@
+{
+  "sha": "9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb",
+  "node_id": "C_kwDOJQ_29doAKDkyOTE4NTZkMWVhNGE0Y2VlYTlmOGZlZjhjZTE0ZjRmNmM4MWU4ZWI",
+  "commit": {
+    "author": {
+      "name": "Henry Heng",
+      "email": "henryheng@flowiseai.com",
+      "date": "2026-08-13T12:38:19Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-08-13T12:38:19Z"
+    },
+    "message": "Update README.md (#6728)",
+    "tree": {
+      "sha": "ebc9f99171dd855f8127135dfde4adac366425c8",
+      "url": "https://api.github.com/repos/FlowiseAI/Flowise/git/trees/ebc9f99171dd855f8127135dfde4adac366425c8"
+    },
+    "url": "https://api.github.com/repos/FlowiseAI/Flowise/git/commits/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfbq7CRC1aQ7uu5UhlAAAhQUQACbL0+0md4EDtU08dBOn2E3V\n0Bf6e8R06Zz+21HWMqF3aNgOHN18r6AJnWjG0GvsUUIdq68apUlc0b+lKruPv12z\nb45skUK1wS0+UQ93bFt1HqRT/Yj8TOpFLbTRocYl4Thy8XdeL/xWVHx54apYgGiw\nEwuURKI9o+MMQUcsPXi5O7URsd521VTsIWFy+9kDbJ4gi0zbr9OMypgR+bIcUjbR\nDwhHYAw0WCoZNs0F6p0apgnnMrtZunxaBB2wXuy0BQQenZ32WnpG7ruKq552sTDP\nDqgxhhQksFBwm9WJR/FJ8lOQOwcZGQX2kYaQFKG426cZ2A9rLTPUuNHgv1OV9nqD\nQWwmn6Ev0sbWXRyDJCtGtZjybzyxZXhoh3JIdbEOKOwj3H6xgY/4JRi+aDkG3T5d\n8ybDr0NZ4RpCrueG/ST/9KwiDW3a7yKp9rFV0r8b7GIhp1sR3nEblys/6agrtzMl\nuHE5Z4amD5N6ygtFQTOLiYIF8EscvJ02oroDS1ECmUfZcwlNJ8RL83KxL/45h2cv\nX4Rd6uHqfIbaWSGfRa18RZAcEnbCgX+RnWc/DSvtm+1on/Vj0cwnxcwpLOKCcvrq\nb7tT6NJIE5X61Fqf2DEXi86UEqVSfjtvMkyS2xUVdTPtwenD+w/r3YdgG0NN4DB7\nSA93TEJ7IUQgXOhdkfTO\n=d35B\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree ebc9f99171dd855f8127135dfde4adac366425c8\nparent abe4a8601a058047b350c260676826e21dd14101\nauthor Henry Heng <henryheng@flowiseai.com> 1786624699 +0100\ncommitter GitHub <noreply@github.com> 1786624699 +0100\n\nUpdate README.md (#6728)",
+      "verified_at": "2026-08-13T12:38:24Z"
+    }
+  },
+  "url": "https://api.github.com/repos/FlowiseAI/Flowise/commits/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb",
+  "html_url": "https://github.com/FlowiseAI/Flowise/commit/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb",
+  "comments_url": "https://api.github.com/repos/FlowiseAI/Flowise/commits/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb/comments",
+  "author": {
+    "login": "HenryHengZJ",
+    "id": 26460777,
+    "node_id": "MDQ6VXNlcjI2NDYwNzc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26460777?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/HenryHengZJ",
+    "html_url": "https://github.com/HenryHengZJ",
+    "followers_url": "https://api.github.com/users/HenryHengZJ/followers",
+    "following_url": "https://api.github.com/users/HenryHengZJ/following{/other_user}",
+    "gists_url": "https://api.github.com/users/HenryHengZJ/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/HenryHengZJ/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/HenryHengZJ/subscriptions",
+    "organizations_url": "https://api.github.com/users/HenryHengZJ/orgs",
+    "repos_url": "https://api.github.com/users/HenryHengZJ/repos",
+    "events_url": "https://api.github.com/users/HenryHengZJ/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/HenryHengZJ/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "abe4a8601a058047b350c260676826e21dd14101",
+      "url": "https://api.github.com/repos/FlowiseAI/Flowise/commits/abe4a8601a058047b350c260676826e21dd14101",
+      "html_url": "https://github.com/FlowiseAI/Flowise/commit/abe4a8601a058047b350c260676826e21dd14101"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "7bda289a24d77ae605a40b91dad7b2ac98a6e636",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/FlowiseAI/Flowise/blob/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb/README.md",
+      "raw_url": "https://github.com/FlowiseAI/Flowise/raw/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb/README.md",
+      "contents_url": "https://api.github.com/repos/FlowiseAI/Flowise/contents/README.md?ref=9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb",
+      "patch": "@@ -17,6 +17,8 @@ English | [繁體中文](./i18n/README-TW.md) | [简体中文](./i18n/README-ZH.\n \n </div>\n \n+<h2>Flowise has been archived. Refer to [Future of Flowise](https://github.com/FlowiseAI/Flowise/discussions/6727)</h2>\n+\n <h3>Build AI Agents, Visually</h3>\n <a href=\"https://github.com/FlowiseAI/Flowise\">\n <img width=\"100%\" src=\"https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_agentflow.gif?raw=true\"></a>"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "source_id": "TECH-023",
+  "title": "ml-explore/mlx-lm official repository and license snapshot",
+  "issuer": "ml-explore",
+  "repository": "ml-explore/mlx-lm",
+  "official_url": "https://github.com/ml-explore/mlx-lm",
+  "revision": "872ae88d1fac77350db23c8c04fe8dd372a9e3e8",
+  "commit_date": "2026-09-15T17:53:42Z",
+  "retrieved_at": "2026-09-16T17:06:47.956310+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately. Protocol/model support is limited to inspected documents and code paths; HEAD capabilities are not automatically release capabilities.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/ml-explore/mlx-lm/commits/HEAD",
+      "sha256": "6ea46355995f07fc8de4007a5e5d3e35195434acd5c8091130c6ec12e5dbc0e7",
+      "bytes": 30053
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/872ae88d1fac77350db23c8c04fe8dd372a9e3e8/README.md",
+      "sha256": "625b4478800ad2fd5d393792f7ca8d4006be9c95b725cc239a9e67b7aa891875",
+      "bytes": 8590
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/872ae88d1fac77350db23c8c04fe8dd372a9e3e8/LICENSE",
+      "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+      "bytes": 1066
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/ml-explore/mlx-lm/releases/latest",
+      "sha256": "13d514ff9a4bfa300c68289cddf2863efb25099cba6b5a6d1ad148b8d2b353f4",
+      "bytes": 4956
+    },
+    "server.py": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/872ae88d1fac77350db23c8c04fe8dd372a9e3e8/mlx_lm/server.py",
+      "sha256": "57392576de114af80ede723976b9dd156dc234f856b9943b8b44b8b78bc27f79",
+      "bytes": 70765
+    },
+    "package-release.json": {
+      "requested_url": "https://pypi.org/pypi/mlx-lm/json",
+      "sha256": "914610c4167442d24a085857067b22f274663c756efed19372de7b80e62800fb",
+      "bytes": 159003
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

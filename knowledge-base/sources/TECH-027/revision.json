@@ -1,0 +1,113 @@
+{
+  "sha": "e64c0ea59f7505b0c8124c9b449332a3a8058c76",
+  "node_id": "C_kwDOMOvJbNoAKGU2NGMwZWE1OWY3NTA1YjBjODEyNGM5YjQ0OTMzMmEzYTgwNThjNzY",
+  "commit": {
+    "author": {
+      "name": "Joel Farthing",
+      "email": "farthing@me.com",
+      "date": "2026-09-16T15:39:27Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-16T15:39:27Z"
+    },
+    "message": "qwen4exp: index the PLE token history by position (#2460)",
+    "tree": {
+      "sha": "b27ff49b9e5943fa3500add858be8268b54a1511",
+      "url": "https://api.github.com/repos/ikawrakow/ik_llama.cpp/git/trees/b27ff49b9e5943fa3500add858be8268b54a1511"
+    },
+    "url": "https://api.github.com/repos/ikawrakow/ik_llama.cpp/git/commits/e64c0ea59f7505b0c8124c9b449332a3a8058c76",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqrgvCRC1aQ7uu5UhlAAAX8oQAD2/JnyE7qOp5QcOOVNFN5HC\njvnR5kGlz9ARYQ81ZYQAxjkkEZVPrLZuArOfAuVyIIvC/+B14zENVZ/rT8olQQsy\nzLH5w14S2DIpeOAPjlLH27Aloe7bexWqlw960dpM2lpvOvJwMy9lmDa3ZEMHaCvj\nRPFs8h/NpUyWKeYFjkmX97EdjP7C+tHj6XQ5RE9n4UoU8BYrg/8se4EzqEp7MfLP\nCxQ/g0rUJj2CNTJJLkxE/jvuX/y95ceVdsiRu2TYno/GLgOhN4cPNtiNlyPNzwfQ\nSBHLjWzIR5wHIap755xSdLSjnuB/zBfeykv9s1cRfpmfBRUAD6qf1Vy8ktdgdg2N\nnH6sUXOBJSwheEeM6N8JiAFiKHfOJKjcbzy3rt3imYHRLXpIxTVdlGLvxbz/bSlC\nQEKKB0+gDtJIQkI4HH8nPWfj4pbhEyYrNsYs0qMZu5Who9AEe6aba+k0pHKJluEn\nBS7hQKew1yxMZyVZ3Le4vOnlaLeiLTBUb84xbzAb7IJ6yUhw/gzMM9APhStuZhG+\ngBaj4BAzFU7n6IUDdx/gw66T8te4klwBgYNQ8IojED2RSk3LxobmW8dCMD62VLv+\nESRBpaPRBmkSJC8EAEn4VKJWRbXixmnaalgBJzbv4z7GmoqUQ1VNcHz4zAHSE8Bp\nfVFUewCqwxTVODEXZPW0\n=NtGW\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree b27ff49b9e5943fa3500add858be8268b54a1511\nparent d127900654be0632d5af7305e6ebde44e5c79cd2\nauthor Joel Farthing <farthing@me.com> 1789573167 -0500\ncommitter GitHub <noreply@github.com> 1789573167 +0200\n\nqwen4exp: index the PLE token history by position (#2460)",
+      "verified_at": "2026-09-16T15:39:28Z"
+    }
+  },
+  "url": "https://api.github.com/repos/ikawrakow/ik_llama.cpp/commits/e64c0ea59f7505b0c8124c9b449332a3a8058c76",
+  "html_url": "https://github.com/ikawrakow/ik_llama.cpp/commit/e64c0ea59f7505b0c8124c9b449332a3a8058c76",
+  "comments_url": "https://api.github.com/repos/ikawrakow/ik_llama.cpp/commits/e64c0ea59f7505b0c8124c9b449332a3a8058c76/comments",
+  "author": {
+    "login": "joelfarthing",
+    "id": 262452229,
+    "node_id": "U_kgDOD6S0BQ",
+    "avatar_url": "https://avatars.githubusercontent.com/u/262452229?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/joelfarthing",
+    "html_url": "https://github.com/joelfarthing",
+    "followers_url": "https://api.github.com/users/joelfarthing/followers",
+    "following_url": "https://api.github.com/users/joelfarthing/following{/other_user}",
+    "gists_url": "https://api.github.com/users/joelfarthing/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/joelfarthing/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/joelfarthing/subscriptions",
+    "organizations_url": "https://api.github.com/users/joelfarthing/orgs",
+    "repos_url": "https://api.github.com/users/joelfarthing/repos",
+    "events_url": "https://api.github.com/users/joelfarthing/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/joelfarthing/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "d127900654be0632d5af7305e6ebde44e5c79cd2",
+      "url": "https://api.github.com/repos/ikawrakow/ik_llama.cpp/commits/d127900654be0632d5af7305e6ebde44e5c79cd2",
+      "html_url": "https://github.com/ikawrakow/ik_llama.cpp/commit/d127900654be0632d5af7305e6ebde44e5c79cd2"
+    }
+  ],
+  "stats": {
+    "total": 46,
+    "additions": 12,
+    "deletions": 34
+  },
+  "files": [
+    {
+      "sha": "163f00800eb36e16d7608782bfca60f70f3b703d",
+      "filename": "src/llama-context.h",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 7,
+      "changes": 9,
+      "blob_url": "https://github.com/ikawrakow/ik_llama.cpp/blob/e64c0ea59f7505b0c8124c9b449332a3a8058c76/src%2Fllama-context.h",
+      "raw_url": "https://github.com/ikawrakow/ik_llama.cpp/raw/e64c0ea59f7505b0c8124c9b449332a3a8058c76/src%2Fllama-context.h",
+      "contents_url": "https://api.github.com/repos/ikawrakow/ik_llama.cpp/contents/src%2Fllama-context.h?ref=e64c0ea59f7505b0c8124c9b449332a3a8058c76",
+      "patch": "@@ -676,13 +676,8 @@ struct llama_context {\n     // pool every block; set on state restore and defrag, cleared by that graph's host fill\n     bool qsa_pooled_stale = false;\n \n-    // each sequence's recent tokens, read by the n-gram hash when a ubatch does not carry its\n-    // first tokens' predecessors; trusted only while contiguous with the incoming position\n-    struct ple_history {\n-        llama_pos next_pos = -1;\n-        std::vector<llama_token> toks;\n-    };\n-    std::map<llama_seq_id, ple_history> ple_hist;\n+    // token at each position of a sequence, read by the PLE n-gram hash\n+    std::map<llama_seq_id, std::vector<llama_token>> ple_hist;\n \n     struct swa_window_view_state {\n         bool active       = false;"
+    },
+    {
+      "sha": "91b8ba9a2360a5720470529401ace8a6e0ffdfe6",
+      "filename": "src/llama.cpp",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 27,
+      "changes": 37,
+      "blob_url": "https://github.com/ikawrakow/ik_llama.cpp/blob/e64c0ea59f7505b0c8124c9b449332a3a8058c76/src%2Fllama.cpp",
+      "raw_url": "https://github.com/ikawrakow/ik_llama.cpp/raw/e64c0ea59f7505b0c8124c9b449332a3a8058c76/src%2Fllama.cpp",
+      "contents_url": "https://api.github.com/repos/ikawrakow/ik_llama.cpp/contents/src%2Fllama.cpp?ref=e64c0ea59f7505b0c8124c9b449332a3a8058c76",
+      "patch": "@@ -6445,27 +6445,11 @@ static void llama_set_inputs(llama_context & lctx, const llama_batch & batch) {\n             return batch.token ? batch.token[k] : img_tok;\n         };\n \n-        // snapshot before any update: one pass would let a token read an earlier token of this\n-        // same ubatch as prior context\n-        std::map<llama_seq_id, std::vector<llama_token>> snap;\n-        for (int32_t i = 0; i < n_tokens; ++i) {\n-            const llama_seq_id seq = batch.seq_id[i][0];\n-            if (snap.count(seq)) {\n-                continue;\n-            }\n-            auto & h = lctx.ple_hist[seq];\n-            if (h.next_pos != batch.pos[i]) {\n-                h.toks.assign(n_gram - 1, eos);\n-            }\n-            h.toks.resize(n_gram - 1, eos);\n-            snap[seq] = h.toks;\n-        }\n-\n         for (int32_t i = 0; i < n_tokens; ++i) {\n             const llama_pos    pos = batch.pos[i];\n             const llama_seq_id seq = batch.seq_id[i][0];\n \n-            const auto & hist = snap[seq];\n+            auto & hist = lctx.ple_hist[seq];\n \n             // predecessor s (1-based) of this token: from the ubatch when it is there, from the\n             // sequence's own history when it is not, EOS past a segment boundary\n@@ -6474,11 +6458,9 @@ static void llama_set_inputs(llama_context & lctx, const llama_batch & batch) {\n                 if (j >= 0 && batch.seq_id[j][0] == seq && batch.pos[j] == pos - s) {\n                     return tok_of(j);\n                 }\n-                // s - i positions before this ubatch started, most recent last\n-                const int32_t back = s - i;\n-                const int32_t k    = (int32_t) hist.size() - back;\n-                if (back > 0 && k >= 0 && pos - s >= 0) {\n-                    return hist[k];\n+                const llama_pos p = pos - s;\n+                if (p >= 0 && p < (llama_pos) hist.size()) {\n+                    return hist[p];\n                 }\n                 return eos;\n             };\n@@ -6506,12 +6488,10 @@ static void llama_set_inputs(llama_context & lctx, const llama_batch & batch) {\n                 }\n             }\n \n-            auto & h = lctx.ple_hist[seq];\n-            h.toks.push_back(tok_of(i));\n-            if ((int32_t) h.toks.size() > n_gram - 1) {\n-                h.toks.erase(h.toks.begin(), h.toks.end() - (n_gram - 1));\n+            if ((llama_pos) hist.size() <= pos) {\n+                hist.resize(pos + 1, eos);\n             }\n-            h.next_pos = pos + 1;\n+            hist[pos] = tok_of(i);\n         }\n     }\n \n@@ -10334,6 +10314,9 @@ void llama_kv_cache_seq_cp(struct llama_context * ctx, llama_seq_id seq_id_src,\n         return;\n     }\n     llama_kv_cache_seq_cp(ctx->kv_self, seq_id_src, seq_id_dst, p0, p1);\n+    if (auto it = ctx->ple_hist.find(seq_id_src); it != ctx->ple_hist.end()) {\n+        ctx->ple_hist[seq_id_dst] = it->second;\n+    }\n }\n \n void llama_kv_cache_seq_keep(struct llama_context * ctx, llama_seq_id seq_id) {"
+    }
+  ]
+}

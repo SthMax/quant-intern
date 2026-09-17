@@ -1,0 +1,54 @@
+{
+  "source_id": "TECH-020",
+  "title": "vllm-project/vllm official repository and license snapshot",
+  "issuer": "vllm-project",
+  "repository": "vllm-project/vllm",
+  "official_url": "https://github.com/vllm-project/vllm",
+  "revision": "6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+  "commit_date": "2026-09-16T16:48:30Z",
+  "retrieved_at": "2026-09-16T17:06:48.187644+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately. Protocol/model support is limited to inspected documents and code paths; HEAD capabilities are not automatically release capabilities.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/commits/HEAD",
+      "sha256": "22558e2c6e2a3cc0c8df6d99a547dd77a4155892e48a221ad98e1aba0efdc0e2",
+      "bytes": 17043
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/README.md",
+      "sha256": "8d2e7cd8d120bcd91ddfa85ef957f7246021b4a3f46f2e1f4ccf084ec6c20026",
+      "bytes": 5708
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/releases/latest",
+      "sha256": "949abf5e9b9ed36f2c7523508373265298c9a79b518848afbbd6c85582c4a1da",
+      "bytes": 54321
+    },
+    "registry.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/vllm/model_executor/models/registry.py",
+      "sha256": "64c80d8c6659833a9abf836180f2b7549903db2a664e22bc38e38c258a6f572e",
+      "bytes": 64391
+    },
+    "openai-server.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/docs/serving/online_serving/openai_compatible_server.md",
+      "sha256": "b81dab8000fc75a8346909a8e3dcb078be309f550ff9c68203810c6b8ab2c438",
+      "bytes": 9389
+    }
+  },
+  "retrieval_failures": {
+    "openai-server.md": "Earlier old path returned 404; recovered at docs/serving/online_serving/openai_compatible_server.md"
+  },
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

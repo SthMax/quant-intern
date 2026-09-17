@@ -1,0 +1,42 @@
+{
+  "source_id": "TECH-040",
+  "title": "NVIDIA/TensorRT-LLM official repository and license snapshot",
+  "issuer": "NVIDIA",
+  "repository": "NVIDIA/TensorRT-LLM",
+  "official_url": "https://github.com/NVIDIA/TensorRT-LLM",
+  "revision": "fffdfba7279a467e9df8c191aac332ccab8d2982",
+  "commit_date": "2026-09-16T17:02:32Z",
+  "retrieved_at": "2026-09-16T17:06:54.650235+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/commits/HEAD",
+      "sha256": "f357ccd4e7fe39b90e06b66dba03fb53eb0b37a6d6453abfc71421baa9404a6b",
+      "bytes": 18923
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/fffdfba7279a467e9df8c191aac332ccab8d2982/README.md",
+      "sha256": "800f0eb2d2cfd564c5aee0cc02ec55c1546900d7b59b8bac5e9794d298ffae22",
+      "bytes": 29235
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/NVIDIA/TensorRT-LLM/fffdfba7279a467e9df8c191aac332ccab8d2982/LICENSE",
+      "sha256": "a56e691155bb532ea212f701d3ecacb2db549fa64757f9bad3e06bc9177f46ea",
+      "bytes": 40678
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/releases/latest",
+      "sha256": "23c82954fcd260a753a7ec0ef074ddb229107ac19fe83860a76c1bd7616e565a",
+      "bytes": 2452
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

@@ -1,0 +1,209 @@
+{
+  "sha": "b782847db9a18667f00918ea341197f201b22bb4",
+  "node_id": "C_kwDON91aY9oAKGI3ODI4NDdkYjlhMTg2NjdmMDA5MThlYTM0MTE5N2YyMDFiMjJiYjQ",
+  "commit": {
+    "author": {
+      "name": "Alice T'Poteat",
+      "email": "poteat@users.noreply.github.com",
+      "date": "2026-09-16T04:36:03Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-16T04:36:03Z"
+    },
+    "message": "diff: the first edit opens the pane only where the layout docks it (#94653)\n\n* mods: the declarations are 2.1.273's, which add the vscode surface, plus a render viewport's layout\n\n* diff: the first edit opens the pane only where the layout docks it beside the transcript",
+    "tree": {
+      "sha": "2f35426ef609009e57e4957dac99041b1ca5d193",
+      "url": "https://api.github.com/repos/anthropics/claude-code/git/trees/2f35426ef609009e57e4957dac99041b1ca5d193"
+    },
+    "url": "https://api.github.com/repos/anthropics/claude-code/git/commits/b782847db9a18667f00918ea341197f201b22bb4",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqhyzCRC1aQ7uu5UhlAAA+rcQAAgwBJ7EmCpLboyxhfcGId9T\nhhgrWuF4kih2hTb3JgVuvjhpzKlgfCodIjEFq+tDs3ezB1WoYULHNNg7s+XqPgA2\na340P5aerbgcJ67fxZbDZmA8RPhW5gz0tYL5U6Xh3NhyAPBuHbyS9jzKLMwuz+Nh\ntxKPzIObB/K/D5ubzX4ybJYOiCzw+om8lwL6P3cqp5Kdnc4bof6IzxhhJtFUn/Oo\nY66wlhwGyJeoKCgzfs4ejXQJMIaOTkGIeeJPR87ejeWo6RYCg0sVLA3Vqr7XZLj4\nNoodahNRHJDg/0Y+LuqRSyszXJyV6Uvku4L2ZEYjBiey8pbE0xSmAXtkfZgYYBkw\njZFbrPzjcs9hzA7l1e/dAEEL22MR25Vdr8VFIYE4DUZvRvCp1QdL6AXxOURfPW+w\nV6VAUgJiQlqj8WK3x8jyi+L0OB09Zz6rWOi/b5pazGWXhlV+a66jCdlUBmos8e1L\nsDsFSuBPY2jkPbTlfBEY2DE+WosT6sK5ct+0fZ9INQZ2wWOy5BZC2CBfQPdomXBu\nCA6Tvy6U0eQUdo52vEuxYiQJWZsYF4BdBz9DM80/tgsvpE1OUHxth4sebojUcJjs\nVxcYESQJ4aJgkUu14LFxMyH6qCZVdNyKnW/a7WrGYgTaLGJMXGIdjqOwpfyvGrbZ\nIECgzNTU8ikqiu1EptRe\n=tcJF\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 2f35426ef609009e57e4957dac99041b1ca5d193\nparent 7dd06361110d4417f3edefaf075f41923f0e04c5\nauthor Alice T'Poteat <poteat@users.noreply.github.com> 1789533363 -0700\ncommitter GitHub <noreply@github.com> 1789533363 -0700\n\ndiff: the first edit opens the pane only where the layout docks it (#94653)\n\n* mods: the declarations are 2.1.273's, which add the vscode surface, plus a render viewport's layout\n\n* diff: the first edit opens the pane only where the layout docks it beside the transcript",
+      "verified_at": "2026-09-16T04:36:03Z"
+    }
+  },
+  "url": "https://api.github.com/repos/anthropics/claude-code/commits/b782847db9a18667f00918ea341197f201b22bb4",
+  "html_url": "https://github.com/anthropics/claude-code/commit/b782847db9a18667f00918ea341197f201b22bb4",
+  "comments_url": "https://api.github.com/repos/anthropics/claude-code/commits/b782847db9a18667f00918ea341197f201b22bb4/comments",
+  "author": {
+    "login": "poteat",
+    "id": 7668446,
+    "node_id": "MDQ6VXNlcjc2Njg0NDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7668446?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/poteat",
+    "html_url": "https://github.com/poteat",
+    "followers_url": "https://api.github.com/users/poteat/followers",
+    "following_url": "https://api.github.com/users/poteat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/poteat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/poteat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/poteat/subscriptions",
+    "organizations_url": "https://api.github.com/users/poteat/orgs",
+    "repos_url": "https://api.github.com/users/poteat/repos",
+    "events_url": "https://api.github.com/users/poteat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/poteat/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7dd06361110d4417f3edefaf075f41923f0e04c5",
+      "url": "https://api.github.com/repos/anthropics/claude-code/commits/7dd06361110d4417f3edefaf075f41923f0e04c5",
+      "html_url": "https://github.com/anthropics/claude-code/commit/7dd06361110d4417f3edefaf075f41923f0e04c5"
+    }
+  ],
+  "stats": {
+    "total": 229,
+    "additions": 185,
+    "deletions": 44
+  },
+  "files": [
+    {
+      "sha": "cc754bd33c90886379939e07179dd3853eafbe5e",
+      "filename": "mods/diff/README.md",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 3,
+      "changes": 9,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2FREADME.md",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2FREADME.md",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Fdiff%2FREADME.md?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -14,8 +14,11 @@ through Buttons that declare the engine's own actions. The pane refreshes\n as Claude edits and runs shell commands, and while it is open it polls\n the repository's HEAD so a commit or checkout made elsewhere shows too.\n The first successful edit of a session opens the pane by itself where the\n-terminal is wide enough (144 columns when the person never chose, 110 when\n-they kept it open before; a person who closed it is left alone).\n+layout docks it beside the transcript (the fullscreen layout, which each\n+drawing's `viewport` says) and the terminal is wide enough (144 columns\n+when the person never chose, 110 when they kept it open before; a person\n+who closed it is left alone); where the surface does not say, nothing\n+opens by itself.\n \n Under the fullscreen layout a terminal under 110 columns gets the\n built-in's line asking for a wider one and nothing opens. Without that\n@@ -58,7 +61,7 @@ moved file by.\n | event | what the hook does |\n | --- | --- |\n | `session.start` | Binds the engine once and registers `/diff` (a session where another `/diff` is listed leaves the plugin idle); asks nothing of the repository, which `/diff` or the first edit pins when it comes. |\n-| `ui.render` of `PromptHint` | Reads the terminal's width, which decides whether the first edit opens the pane. |\n+| `ui.render` of `PromptHint` | Reads the terminal's width and whether its layout docks a pane, which decide whether the first edit opens the pane. |\n | `ui.render` of `Pane` | Draws the pane: docked, the header, base line, source picker, file list and toggles over the window of hunks; inline, the dialog. |\n | `command.run` of `diff` | Pins the repository when none is, opens or closes the pane (focused and closing on Escape without the fullscreen layout), says which, and remembers the choice. |\n | `ui.close` of the pane | Backs out of the dialog's detail view instead of closing; else remembers the person's close as `/diff`'s. |"
+    },
+    {
+      "sha": "905a6f6af0ea8387095c7aa4885c3cc0ccc15fba",
+      "filename": "mods/diff/hooks/pane-state/pane-model/pane-model.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 2,
+      "changes": 5,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Fhooks%2Fpane-state%2Fpane-model%2Fpane-model.ts",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Fhooks%2Fpane-state%2Fpane-model%2Fpane-model.ts",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Fdiff%2Fhooks%2Fpane-state%2Fpane-model%2Fpane-model.ts?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -9,8 +9,9 @@ import type { Source } from '../source'\n  * Everything one drawing of the pane reads.\n  *\n  * The last good fetch, what the person picked, the bodies read so far, the\n- * turns and todos, how the surface seated it, whether fullscreen (once\n- * `/diff` said), the dialog's view, and the docked scroll in its last box.\n+ * turns and todos, how the surface seated it, whether the layout docks a\n+ * pane (once a drawing or `/diff` said), the dialog's view, and the docked\n+ * scroll in its last box.\n  */\n export type PaneModel = {\n   words: Backend.BackendWords"
+    },
+    {
+      "sha": "019db9dd162102443339113034acefd524292922",
+      "filename": "mods/diff/hooks/register.ts",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Fhooks%2Fregister.ts",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Fhooks%2Fregister.ts",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Fdiff%2Fhooks%2Fregister.ts?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -452,7 +452,7 @@ export function register(on: On) {\n \n     const hasRoom =\n       preference !== false &&\n-      model.isFullscreen !== false &&\n+      model.isFullscreen === true &&\n       columns !== null &&\n       columns >= floor\n \n@@ -622,6 +622,11 @@ export function register(on: On) {\n   on('ui.render', { component: 'PromptHint' }, ($, e, next) => {\n     if (isOnPaneSurface(e)) {\n       columns = e.viewport?.columns ?? columns\n+\n+      model = {\n+        ...model,\n+        isFullscreen: e.viewport?.isFullscreen ?? model.isFullscreen,\n+      }\n     }\n \n     return next(e)"
+    },
+    {
+      "sha": "485a149ff462aace60b0fe2fb1b17c0272f00aae",
+      "filename": "mods/diff/tests/fixtures/hint-at.ts",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 3,
+      "changes": 10,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Fhint-at.ts",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Fhint-at.ts",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Fdiff%2Ftests%2Ffixtures%2Fhint-at.ts?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -3,13 +3,17 @@ import type { RenderInput } from 'claude-code'\n import { HINT } from './hint.js'\n \n /**\n- * The prompt's hint on a terminal so many columns wide: drawing it is how\n- * the plugin learns the width.\n+ * The prompt's hint on a fullscreen terminal so many columns wide: drawing\n+ * it is how the plugin learns the width.\n  *\n  * @param columns the terminal's width\n  * @returns the `ui.render` input\n  */\n export const hintAt = (columns: number): RenderInput<'PromptHint'> => ({\n   ...HINT,\n-  viewport: { columns, rows: HINT.viewport?.rows ?? columns },\n+  viewport: {\n+    columns,\n+    rows: HINT.viewport?.rows ?? columns,\n+    isFullscreen: true,\n+  },\n })"
+    },
+    {
+      "sha": "1205ef8c4a19c6eb21f1c789799a6b48281e2d18",
+      "filename": "mods/diff/tests/fixtures/hint.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 3,
+      "changes": 7,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Fhint.ts",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Fhint.ts",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Fdiff%2Ftests%2Ffixtures%2Fhint.ts?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -1,13 +1,14 @@\n import type { RenderInput } from 'claude-code'\n \n /**\n- * The prompt's hint on a 160-column terminal: drawing it is how the plugin\n- * learns how wide the terminal is.\n+ * The prompt's hint on a 160-column terminal under the fullscreen layout:\n+ * drawing it is how the plugin learns how wide the terminal is and whether a\n+ * pane docks beside the transcript there.\n  */\n export const HINT: RenderInput<'PromptHint'> = {\n   component: 'PromptHint',\n   surface: 'terminal',\n   requestId: 'hint',\n-  viewport: { columns: 160, rows: 40 },\n+  viewport: { columns: 160, rows: 40, isFullscreen: true },\n   props: { isDraft: false, isWorking: false, hint: '' },\n }"
+    },
+    {
+      "sha": "aa75150711ec11ccb9815eb034d681d53da5298b",
+      "filename": "mods/diff/tests/fixtures/index.ts",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Findex.ts",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Findex.ts",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Fdiff%2Ftests%2Ffixtures%2Findex.ts?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -25,6 +25,7 @@ export * from './in-repository.js'\n export * from './inline-pane.js'\n export * from './keeping.js'\n export * from './kind-walk-of'\n+export * from './main-screen-hint.js'\n export * from './many-file-count.js'\n export * from './many-files.js'\n export * from './mode-label-of'\n@@ -51,6 +52,7 @@ export * from './truncate-start'\n export * from './turn-diffs-of'\n export * from './two-files.js'\n export * from './typed-prompt-of.js'\n+export * from './unsaid-hint.js'\n export * from './vs-main.js'\n export * from './wheel-over-list.js'\n export * from './wheel-tick.js'"
+    },
+    {
+      "sha": "fab2a36fd653fec2d5d78edb736ecb02c47dc9cd",
+      "filename": "mods/diff/tests/fixtures/main-screen-hint.ts",
+      "status": "added",
+      "additions": 12,
+      "deletions": 0,
+      "changes": 12,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Fmain-screen-hint.ts",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Fmain-screen-hint.ts",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Fdiff%2Ftests%2Ffixtures%2Fmain-screen-hint.ts?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -0,0 +1,12 @@\n+import type { RenderInput } from 'claude-code'\n+\n+import { HINT } from './hint.js'\n+\n+/**\n+ * The prompt's hint on the same wide terminal on its main screen\n+ * (`CLAUDE_CODE_NO_FLICKER=0`), where nothing docks and a pane opens inline.\n+ */\n+export const MAIN_SCREEN_HINT: RenderInput<'PromptHint'> = {\n+  ...HINT,\n+  viewport: { columns: 160, rows: 40, isFullscreen: false },\n+}"
+    },
+    {
+      "sha": "d70bcfb41bd906f3c467994ad590c551af4fc965",
+      "filename": "mods/diff/tests/fixtures/unsaid-hint.ts",
+      "status": "added",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Funsaid-hint.ts",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Ffixtures%2Funsaid-hint.ts",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Fdiff%2Ftests%2Ffixtures%2Funsaid-hint.ts?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -0,0 +1,13 @@\n+import type { RenderInput } from 'claude-code'\n+\n+import { HINT } from './hint.js'\n+\n+/**\n+ * The prompt's hint from a surface that measured its size but did not say\n+ * whether it docks a pane: an engine that predates the word, or a remote\n+ * surface that has not reported it.\n+ */\n+export const UNSAID_HINT: RenderInput<'PromptHint'> = {\n+  ...HINT,\n+  viewport: { columns: 160, rows: 40 },\n+}"
+    },
+    {
+      "sha": "19967e1496e8748f916a88122fe3e9c9299826fc",
+      "filename": "mods/diff/tests/register.test.ts",
+      "status": "modified",
+      "additions": 64,
+      "deletions": 0,
+      "changes": 64,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Fregister.test.ts",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Fdiff%2Ftests%2Fregister.test.ts",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Fdiff%2Ftests%2Fregister.test.ts?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -348,6 +348,70 @@ describe('register', () => {\n     expect(world.opened.map(pane => pane.id)).toEqual(['diff'])\n   })\n \n+  test('on the main screen the first edit opens nothing, and /diff still opens the dialog', async ($, on) => {\n+    const world = Fixtures.inRepository(on)\n+\n+    on('tool.call', () => ({ result: 'edited' }))\n+\n+    await $.session.start(Fixtures.SESSION)\n+    await $.ui.render(Fixtures.MAIN_SCREEN_HINT)\n+\n+    await $.tool.call({\n+      tool: 'Edit',\n+      file_path: '/work/app.ts',\n+      old_string: '1',\n+      new_string: '2',\n+    })\n+\n+    await world.clock.advance(Fixtures.SETTLE_MS)\n+\n+    expect(world.opened, 'a pane there would be an unasked dialog').toEqual([])\n+    expect(world.runs, 'so nothing was asked of the repository').toEqual([])\n+\n+    expect(await $.command.run(Fixtures.DIALOG_DIFF)).toEqual({})\n+\n+    expect(\n+      world.opened[0],\n+      \"the person's /diff opens the dialog, not dismisses one\",\n+    ).toMatchObject({ id: 'diff', focus: true })\n+  })\n+\n+  test('a surface that does not say whether it docks a pane opens nothing at the first edit', async ($, on) => {\n+    const world = Fixtures.inRepository(on)\n+\n+    on('tool.call', () => ({ result: 'edited' }))\n+\n+    await $.session.start(Fixtures.SESSION)\n+    await $.ui.render(Fixtures.UNSAID_HINT)\n+\n+    await $.tool.call({\n+      tool: 'Edit',\n+      file_path: '/work/app.ts',\n+      old_string: '1',\n+      new_string: '2',\n+    })\n+\n+    await world.clock.advance(Fixtures.SETTLE_MS)\n+\n+    expect(world.opened, 'unknown is not a dock').toEqual([])\n+\n+    await $.ui.render(Fixtures.HINT)\n+\n+    await $.tool.call({\n+      tool: 'Edit',\n+      file_path: '/work/app.ts',\n+      old_string: '2',\n+      new_string: '3',\n+    })\n+\n+    await world.clock.advance(Fixtures.SETTLE_MS)\n+\n+    expect(\n+      world.opened.map(pane => pane.id),\n+      'once a drawing says the layout docks, the next edit opens it',\n+    ).toEqual(['diff'])\n+  })\n+\n   test('an edit that failed or was refused opens nothing', async ($, on) => {\n     const world = Fixtures.inRepository(on)\n "
+    },
+    {
+      "sha": "d7d4073618a6a82cf2d39427f4c0f11993c3ea17",
+      "filename": "mods/types/claude-code.d.ts",
+      "status": "modified",
+      "additions": 68,
+      "deletions": 32,
+      "changes": 100,
+      "blob_url": "https://github.com/anthropics/claude-code/blob/b782847db9a18667f00918ea341197f201b22bb4/mods%2Ftypes%2Fclaude-code.d.ts",
+      "raw_url": "https://github.com/anthropics/claude-code/raw/b782847db9a18667f00918ea341197f201b22bb4/mods%2Ftypes%2Fclaude-code.d.ts",
+      "contents_url": "https://api.github.com/repos/anthropics/claude-code/contents/mods%2Ftypes%2Fclaude-code.d.ts?ref=b782847db9a18667f00918ea341197f201b22bb4",
+      "patch": "@@ -1,4 +1,4 @@\n-// Written by Claude Code 2.1.271.\n+// Written by Claude Code 2.1.273.\n // Claude Code function hooks: the plugin API's TypeScript declarations.\n //\n // EARLY ACCESS: this surface may change between releases without notice.\n@@ -634,9 +634,9 @@ declare module 'claude-code' {\n    * The props of `Button`, every surface's pressable leaf: an address, a\n    * label, the closure a press runs, and the label styles a hover overrides.\n    *\n-   * The terminal draws `[ label ]` (or `1: label` when `plain`), a desktop a\n-   * native button; a click, a `hotkey`, the chord for its `action`, or Enter\n-   * while it has the focus raises `ui.press`, whose bottom is `onPress`.\n+   * The terminal draws `[ label ]` (when `plain`, `1: label` or the label\n+   * alone), a desktop a native button; a click, a `hotkey`, the chord for its\n+   * `action`, or Enter under the focus raises `ui.press`, its bottom `onPress`.\n    */\n   export type ButtonProps = {\n       /**\n@@ -668,7 +668,11 @@ declare module 'claude-code' {\n       action?: string;\n       /**\n        * Drawn without chrome: the hotkey in the accent color, a colon, the\n-       * label (`1: Yes`), as a survey's row reads.\n+       * label (`1: Yes`), as a survey's row reads; no `hotkey`, the label alone.\n+       *\n+       * A one-glyph label (`'\\u{1F50A}'`, a speaker) is then a control by\n+       * itself: the focus and the pointer still invert it, `dimColor` and `hover`\n+       * still apply. A desktop draws its native button either way.\n        */\n       plain?: true;\n       /**\n@@ -2147,7 +2151,7 @@ declare module 'claude-code' {\n           repo: () => Promise<SessionRepo | null>;\n           /**\n            * Returns every surface the session draws on, each once: `terminal` under\n-           * the REPL first, then `desktop` and `mobile` in the order they attached.\n+           * the REPL first, then the remote ones in the order they attached.\n            *\n            * A session may draw on several at once (a terminal and two phones):\n            * clients attach (`session.attach`) and detach, and a render hook still\n@@ -2714,9 +2718,9 @@ declare module 'claude-code' {\n    * The element constructors each surface draws, by `e.surface`: what\n    * `$.ui.resolve(e)` returns and a `ui.resolve` hook passes on; no globals.\n    *\n-   * All carry `Box`, `Text`, `Button`, `Link`, `Code`; terminal and desktop add\n-   * `Input`, `Select`, `Client`; desktop and mobile `Svg`; terminal `Raster`.\n-   * Narrowed on `e.surface`, that table; unnarrowed, the union; else fragments.\n+   * All carry `Box`, `Text`, `Button`, `Link`, `Code`; every remote surface\n+   * `Svg`; all but mobile `Input` and `Select`; terminal and desktop `Client`;\n+   * terminal `Raster`. Narrowed on `e.surface`, that table; else the union.\n    */\n   export type Elements = {\n       terminal: {\n@@ -2755,6 +2759,23 @@ declare module 'claude-code' {\n           Link: ElementConstructor<LinkProps>;\n           Code: ElementConstructor<CodeProps>;\n       };\n+      /**\n+       * The desktop's table without `Client`: a remote `Client`'s module, presses\n+       * and posts (ui_client_module, ui_client_press, ui_message) name no surface.\n+       *\n+       * They are the desktop's alone today, not a limit of the editor's webview:\n+       * the table gains `Client` when those asks name a surface.\n+       */\n+      vscode: {\n+          Box: ElementConstructor<BoxProps>;\n+          Text: ElementConstructor<TextProps>;\n+          Button: ElementConstructor<ButtonProps>;\n+          Input: ElementConstructor<InputProps>;\n+          Select: ElementConstructor<SelectProps>;\n+          Svg: ElementConstructor<SvgProps>;\n+          Link: ElementConstructor<LinkProps>;\n+          Code: ElementConstructor<CodeProps>;\n+      };\n   };\n \n   /**\n@@ -5963,11 +5984,11 @@ declare module 'claude-code' {\n           action?: string;\n           /**\n            * Drawn without chrome: the hotkey in the accent color, a colon,\n-           * then the label (`1: Yes`), as a survey's row reads.\n+           * then the label (`1: Yes`); without a `hotkey`, the label alone.\n            *\n-           * In JSX the label may be the one string child\n-           * (`<Button hotkey=\"1\" plain onPress={...}>Yes</Button>`); the key\n-           * defaults to the label.\n+           * The focus still inverts it. In JSX the label may be the one string\n+           * child (`<Button hotkey=\"1\" plain onPress={...}>Yes</Button>`); the\n+           * key defaults to the label.\n            */\n           plain?: true;\n           /**\n@@ -6136,8 +6157,8 @@ declare module 'claude-code' {\n       children?: undefined;\n   } | {\n       /**\n-       * A vector drawing, the desktop and mobile surfaces' alone: the SVG\n-       * markup is the element's data, drawn in an isolated box, off the page.\n+       * A vector drawing, the remote surfaces' alone: the SVG markup is the\n+       * element's data, drawn in an isolated box, off the page.\n        *\n        * A leaf: hooks above wrap or replace it whole, nothing reaches inside;\n        * a press other plugins should see goes on an enclosing Button. On a\n@@ -6624,23 +6645,25 @@ declare module 'claude-code' {\n \n   /**\n    * Where a render event's component is drawn: `terminal` is Ink, which draws\n-   * the hook's whole tree; `desktop` (Claude Code Desktop) and `mobile` (the\n-   * Claude mobile app) are remote surfaces that draw the tree themselves.\n+   * the hook's whole tree; the rest are remote surfaces drawing it themselves.\n    *\n-   * A remote surface asks over the wire (ui_render), draws with the props the\n-   * hook handed core and draws the tree where it has a slot for it. Each\n-   * surface's ask is its own evaluation, since a tree may hold an element only\n-   * some surfaces draw (Svg, Client).\n+   * `desktop` is Claude Code Desktop, `mobile` the Claude mobile app, `vscode`\n+   * Claude Code for VS Code. A remote surface asks over the wire (ui_render),\n+   * draws with the props the hook handed core, and draws the tree where it has\n+   * a slot for it.\n+   *\n+   * Each surface's ask is its own evaluation, since a tree may hold an element\n+   * only some surfaces draw (Svg, Client).\n    */\n-  export type RenderSurface = 'terminal' | 'desktop' | 'mobile';\n+  export type RenderSurface = 'terminal' | 'desktop' | 'mobile' | 'vscode';\n \n   /**\n    * The size of what a surface draws into, in character cells of the\n-   * surface's monospace metric: on the terminal, the conversation's columns and\n-   * screen rows; on a remote surface, the pane's width and height divided by the\n-   * advance and line height of its code font. A pixel-sized companion\n-   * arrives with the first element that lays out in pixels; until then\n-   * every element on every surface is cell-based, and so is this.\n+   * surface's monospace metric, and whether its layout docks a pane.\n+   *\n+   * On the terminal, the conversation's columns and screen rows; on a remote\n+   * surface, the pane's width and height over the advance and line height of\n+   * its code font. Cell-based until the first element lays out in pixels.\n    */\n   export type RenderViewport = {\n       /**\n@@ -6650,10 +6673,24 @@ declare module 'claude-code' {\n       columns: number;\n       /**\n        * Cells down the whole surface, not the room left for this component.\n+       *\n        * Informational: a change of height alone re-draws nothing and keys no\n        * new evaluation, so a hook reads it as of the last width or props change.\n        */\n       rows: number;\n+      /**\n+       * Whether this surface docks a pane beside the transcript, so a pane a\n+       * plugin opens unasked is a sidebar, not a takeover; absent is unknown.\n+       *\n+       * What `command.run`'s `presentation.isFullscreen` says. The terminal always\n+       * says: `true` fullscreen, `false` on the main screen, fixed per session; a\n+       * remote surface once its client reports it with the size, absent before.\n+       *\n+       * @remarks The desktop and VS Code report it once they place panes; the\n+       *   mobile app, which has no dock, `false`. A change re-draws the sites.\n+       * @example if (e.viewport?.isFullscreen === true) void $.ui.open({ id })\n+       */\n+      isFullscreen?: boolean;\n   };\n \n   /**\n@@ -7681,13 +7718,12 @@ declare module 'claude-code' {\n   };\n \n   /**\n-   * The props of `Svg`, the desktop and mobile surfaces' vector leaf: the\n-   * markup is the element's data, as a string is a Text's, drawn isolated.\n+   * The props of `Svg`, the remote surfaces' vector leaf: the markup is the\n+   * element's data, as a string is a Text's, drawn isolated.\n    *\n    * A leaf: no children. The surface never lets the markup reach the page\n-   * (the engine bounds it; the desktop draws it as an image, or in a\n-   * sandboxed frame when `isInteractive`; the mobile app in a sandboxed web\n-   * view).\n+   * (the engine bounds it; the desktop and the editor draw it as an image, or\n+   * in a sandboxed frame when `isInteractive`; the mobile app in a web view).\n    */\n   export type SvgProps = {\n       /**"
+    }
+  ]
+}

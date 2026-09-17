@@ -1,0 +1,113 @@
+{
+  "sha": "26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea",
+  "node_id": "C_kwDOPTymldoAKDI2ZDJlYWUyZWMwNzU4NGU4N2Q1OGI5Y2M4YzlkMDhhM2Y5OGIwZWE",
+  "commit": {
+    "author": {
+      "name": "langchain-oss-automated-triage[bot]",
+      "email": "248757908+langchain-oss-automated-triage[bot]@users.noreply.github.com",
+      "date": "2026-09-16T16:08:10Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-16T16:08:10Z"
+    },
+    "message": "chore(deps): bump `genai-prices` in `deepagents-code` to 0.1.7 (#6332)\n\nBumps `genai-prices` from `0.1.6` to `0.1.7`.\n\nOpened automatically by `bump_genai_prices.yml`.\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+    "tree": {
+      "sha": "71830d589b20658af75f8e06fb8e66130ae407ba",
+      "url": "https://api.github.com/repos/langchain-ai/deepagents/git/trees/71830d589b20658af75f8e06fb8e66130ae407ba"
+    },
+    "url": "https://api.github.com/repos/langchain-ai/deepagents/git/commits/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqr7qCRC1aQ7uu5UhlAAACUkQALGN4jO+6gIYixWnTGHnGHNX\nQbI5taTEUme3wGoXx63qXQn1GD+wOAVwTcdHfqVKR4+uNFLWvzjshaDunIhgkI1z\n4lrRojqTGExZU/L8z3JAVpvGyVntkMh5g8VHqmQBLFkPpJtZebbPCtsajQ1pfBm1\n0Hge6gT+ejfQUpVgVmuYPJebJEK+Ia82dIr2CPdnBL4FUZpI1af3XRwI7lP6k8MQ\nOO4Vksh9Bd4dVYPvA2yCzQn5UU4kxZZyMg9kcl4N/9V7/PW2pzfBuJJwzceUgzdA\npdBG8MlWQljBrINdubcNlNOrvIZodHL83wHFFJIdnOvIshE7tgrQhGAz0UEkazhA\nsUoaMLxWySshVapraVRyTXBmqk5HPKLISbz8xlipqsdhx7lemkaK2658ETuY+4PU\nA7tuX+YuANTuWOzqV8eEkFvgzWd/GMPzrFzLLQ7FKZYznA4EoSC6cE17wWXh0F9k\nxYoW4KXn0yQLgaPPjQ4lF35pA21Uw162/obDXX7q4b/S248Ohh6QMoBL+HIDFfdb\nSQs82saFdKqWbR/ioyNQvH0SgvnfWGE+KocRKfIj4s5qM4rBGJYcqeS4yFfATb3x\nIdeLMpenV5mWp581q5m2jKoLRBA2fXg7H+Ui0yjnnUUgSKyVaAJzwWH5fnzYG7iG\n+cH/JBiyPPiP3UX5D6bb\n=GkoX\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 71830d589b20658af75f8e06fb8e66130ae407ba\nparent 06e588610c08e7544ee77ac09aa971921a5c893e\nauthor langchain-oss-automated-triage[bot] <248757908+langchain-oss-automated-triage[bot]@users.noreply.github.com> 1789574890 -0400\ncommitter GitHub <noreply@github.com> 1789574890 -0400\n\nchore(deps): bump `genai-prices` in `deepagents-code` to 0.1.7 (#6332)\n\nBumps `genai-prices` from `0.1.6` to `0.1.7`.\n\nOpened automatically by `bump_genai_prices.yml`.\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+      "verified_at": "2026-09-16T16:08:11Z"
+    }
+  },
+  "url": "https://api.github.com/repos/langchain-ai/deepagents/commits/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea",
+  "html_url": "https://github.com/langchain-ai/deepagents/commit/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea",
+  "comments_url": "https://api.github.com/repos/langchain-ai/deepagents/commits/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea/comments",
+  "author": {
+    "login": "langchain-oss-automated-triage[bot]",
+    "id": 248757908,
+    "node_id": "BOT_kgDODtO-lA",
+    "avatar_url": "https://avatars.githubusercontent.com/in/2441712?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D",
+    "html_url": "https://github.com/apps/langchain-oss-automated-triage",
+    "followers_url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/langchain-oss-automated-triage%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "06e588610c08e7544ee77ac09aa971921a5c893e",
+      "url": "https://api.github.com/repos/langchain-ai/deepagents/commits/06e588610c08e7544ee77ac09aa971921a5c893e",
+      "html_url": "https://github.com/langchain-ai/deepagents/commit/06e588610c08e7544ee77ac09aa971921a5c893e"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "c5ef313b72ddad04b701bc003ba2ff7bc66463ab",
+      "filename": "libs/code/pyproject.toml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/langchain-ai/deepagents/blob/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea/libs%2Fcode%2Fpyproject.toml",
+      "raw_url": "https://github.com/langchain-ai/deepagents/raw/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea/libs%2Fcode%2Fpyproject.toml",
+      "contents_url": "https://api.github.com/repos/langchain-ai/deepagents/contents/libs%2Fcode%2Fpyproject.toml?ref=26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea",
+      "patch": "@@ -71,7 +71,7 @@ dependencies = [\n     # compatibility promise, and this range spans every 0.1.x patch, so re-verify\n     # both against `cost_tracking._build_price_overrides` and\n     # `cost_tracking._find_override_model` when widening it.\n-    \"genai-prices>=0.1.6,<0.2.0\",\n+    \"genai-prices>=0.1.7,<0.2.0\",\n \n     # Clipboard\n     \"pyperclip>=1.11.0,<2.0.0\","
+    },
+    {
+      "sha": "b4433464591ab2d92004131f1cc983aef3def212",
+      "filename": "libs/code/uv.lock",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/langchain-ai/deepagents/blob/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea/libs%2Fcode%2Fuv.lock",
+      "raw_url": "https://github.com/langchain-ai/deepagents/raw/26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea/libs%2Fcode%2Fuv.lock",
+      "contents_url": "https://api.github.com/repos/langchain-ai/deepagents/contents/libs%2Fcode%2Fuv.lock?ref=26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea",
+      "patch": "@@ -1210,7 +1210,7 @@ requires-dist = [\n     { name = \"deepagents-code\", extras = [\"agentcore\", \"daytona\", \"modal\", \"runloop\", \"vercel\"], marker = \"extra == 'all-sandboxes'\" },\n     { name = \"deepagents-code\", extras = [\"anthropic\", \"baseten\", \"bedrock\", \"cohere\", \"deepseek\", \"fireworks\", \"google-genai\", \"groq\", \"huggingface\", \"ibm\", \"litellm\", \"meta\", \"mistralai\", \"nvidia\", \"ollama\", \"openai\", \"openrouter\", \"perplexity\", \"together\", \"vertex\", \"xai\"], marker = \"extra == 'all-providers'\" },\n     { name = \"filelock\", specifier = \">=3.29.7,<3.30\" },\n-    { name = \"genai-prices\", specifier = \">=0.1.6,<0.2.0\" },\n+    { name = \"genai-prices\", specifier = \">=0.1.7,<0.2.0\" },\n     { name = \"httpx\", specifier = \">=0.28.1,<1.0.0\" },\n     { name = \"langchain\", specifier = \">=1.4.0,<2.0.0\" },\n     { name = \"langchain-agentcore-codeinterpreter\", marker = \"extra == 'agentcore'\", specifier = \">=0.0.5,<1.0.0\" },\n@@ -1576,15 +1576,15 @@ wheels = [\n \n [[package]]\n name = \"genai-prices\"\n-version = \"0.1.6\"\n+version = \"0.1.7\"\n source = { registry = \"https://pypi.org/simple\" }\n dependencies = [\n     { name = \"httpx2\" },\n     { name = \"pydantic\" },\n ]\n-sdist = { url = \"https://files.pythonhosted.org/packages/1a/16/e5a507d42c0eb629b48ebe6c278f2d8c3f929bb6b28f18108bdd66d8ae12/genai_prices-0.1.6.tar.gz\", hash = \"sha256:802c1e4cc3ed5e70a09083b83af441a58d91f62e12768f7f1b6b26c98a33fcac\", size = 111810, upload-time = \"2026-09-02T14:53:54.895Z\" }\n+sdist = { url = \"https://files.pythonhosted.org/packages/b5/62/5f294af24a7ae407e6fa1a7ff36d310bed36b89ea6cea7eb7cfac5c305ff/genai_prices-0.1.7.tar.gz\", hash = \"sha256:4305395c5891796860c697cc3a49ab50b751ed62c8ff1911e291ea8da77f3a91\", size = 114996, upload-time = \"2026-09-15T11:24:10.852Z\" }\n wheels = [\n-    { url = \"https://files.pythonhosted.org/packages/48/a1/43fa2a4c5557cd977e83eecec265b0b77b726b0c7b9f2f180b46c6fdb458/genai_prices-0.1.6-py3-none-any.whl\", hash = \"sha256:35ac8043dbcf2958488129413bfecba7304fe12a68ad4a78c5b0d15281e82814\", size = 118834, upload-time = \"2026-09-02T14:53:53.758Z\" },\n+    { url = \"https://files.pythonhosted.org/packages/d5/4a/9e04f3dca5ffe74133779ab5e9925ffb6411afbeac55d26fa0e148722599/genai_prices-0.1.7-py3-none-any.whl\", hash = \"sha256:090ba285549e0d2ea3187d05f091a5f0ae722e652143fa844ac809205aecd023\", size = 121970, upload-time = \"2026-09-15T11:24:09.54Z\" },\n ]\n \n [[package]]"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "source_id": "TECH-006",
+  "model_id": "google/gemma-4-26B-A4B-it",
+  "title": "google/gemma-4-26B-A4B-it official model card and configuration",
+  "issuer": "google",
+  "official_url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+  "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "retrieved_at": "2026-09-16T08:32:42.628892+00:00",
+  "created_at_api": "2026-03-11T21:25:57.000Z",
+  "last_modified_api": "2026-07-20T16:42:12.000Z",
+  "license_tag": "apache-2.0",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Official model card, configuration and license metadata; no local inference or license approval. createdAt is repository creation, not a release announcement.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/google/gemma-4-26B-A4B-it",
+      "sha256": "f03b35c9971b5666c7105bb056c4f73c26fc293e5b22492b097fc8d0a126dd89",
+      "bytes": 24325
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/google/gemma-4-26B-A4B-it/resolve/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md",
+      "sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+      "bytes": 27979
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/google/gemma-4-26B-A4B-it/resolve/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json",
+      "sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+      "bytes": 3815
+    },
+    "generation_config.json": {
+      "requested_url": "https://huggingface.co/google/gemma-4-26B-A4B-it/resolve/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/generation_config.json",
+      "sha256": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de",
+      "bytes": 208
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/google/gemma-4-26B-A4B-it/resolve/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/model.safetensors.index.json",
+      "sha256": "907826a6e46ff454272bd6db1fee629d5531a2303be22986d825a0871d7dc7a7",
+      "bytes": 103196
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "Models Overview; Benchmark Results; Getting Started; config and tensor index",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "verbatim_model_card"
+}

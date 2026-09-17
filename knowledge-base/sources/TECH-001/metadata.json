@@ -1,0 +1,50 @@
+{
+  "source_id": "TECH-001",
+  "model_id": "Qwen/Qwen3.5-4B",
+  "title": "Qwen/Qwen3.5-4B official model card and configuration",
+  "issuer": "Qwen",
+  "official_url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "retrieved_at": "2026-09-16T08:32:41.282583+00:00",
+  "created_at_api": "2026-02-27T14:45:03.000Z",
+  "last_modified_api": "2026-03-02T00:52:52.000Z",
+  "license_tag": "apache-2.0",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Official model card, configuration and license metadata; no local inference or license approval. createdAt is repository creation, not a release announcement.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3.5-4B",
+      "sha256": "e8be336e878a4c2b308b4f9f4d8bccf9637b51dfd10e39f60bf69960bb6bb5cc",
+      "bytes": 20831
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md",
+      "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb",
+      "bytes": 77661
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json",
+      "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+      "bytes": 3161
+    },
+    "LICENSE": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE",
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "bytes": 11544
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/model.safetensors.index.json",
+      "sha256": "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d",
+      "bytes": 76196
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "Model Overview; Benchmark Results; vLLM; LICENSE; config and tensor index",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "verbatim_model_card",
+  "selection_status": "Historical first-pass candidate, superseded by user-prioritized pool on 2026-09-16",
+  "collection_role": "supporting"
+}

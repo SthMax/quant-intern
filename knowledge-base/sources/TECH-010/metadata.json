@@ -1,0 +1,27 @@
+{
+  "source_id": "TECH-010",
+  "title": "Qwen3.8-27B vLLM deployment recipe",
+  "issuer": "vLLM project",
+  "official_url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+  "retrieved_at": "2026-09-16T08:36:48.734396+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Verbatim YAML recipe at a fixed commit; no local replication.",
+  "files": {
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/recipes/52153344950065304f2f1de22de74192a8b9da73/models/Qwen/Qwen3.8-27B.yaml",
+      "sha256": "ee5e88eade060552930912d9eedcc3afdb7c1aabe5e356130789734e211d7037",
+      "bytes": 23909
+    },
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/recipes/commits/main",
+      "sha256": "15ff87f66d6a9291cf2a55225d2ad9a9421e2281dffb9bfd993c487e2a5d3f28",
+      "bytes": 52216
+    }
+  },
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "model; hardware comments; dependencies; deployment examples",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "verbatim_yaml_recipe"
+}

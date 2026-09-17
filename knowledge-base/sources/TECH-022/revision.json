@@ -1,0 +1,186 @@
+{
+  "sha": "688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+  "node_id": "C_kwDOSV6N_NoAKDY4OGJiYjA0ZjViNGZmYjgxNmIxMjhjOTRlYzgwNWFkNGEwZmJjNzI",
+  "commit": {
+    "author": {
+      "name": "Pengzhan Zhao",
+      "email": "borontion@gmail.com",
+      "date": "2026-09-16T03:50:01Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-16T03:50:01Z"
+    },
+    "message": "ci(dsv41): add deepseek v4.1 flash eval (#1580)\n\nSigned-off-by: Pengzhan Zhao <borontion@gmail.com>",
+    "tree": {
+      "sha": "7ec1afd849e0ebb87a604e11f233b754a76d7a4e",
+      "url": "https://api.github.com/repos/lightseekorg/tokenspeed/git/trees/7ec1afd849e0ebb87a604e11f233b754a76d7a4e"
+    },
+    "url": "https://api.github.com/repos/lightseekorg/tokenspeed/git/commits/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqhHpCRC1aQ7uu5UhlAAA0dMQABmoE7ygfafDSjdmI+JgRtIb\n4vKg/aA1w76fPkMBAfvcb7tM63j6SV5M0Y2ZgRkZ4+97LDpKYOCbBN1FErww5Wj+\n99nHyEHZn1WsuY1g1Wk/JKcqbnGJJdH5GBzyaPs++9j7AoJm6rWjkrY/VMU/fiwV\nCRGeVzDPOzdRXtXBfkWghS+9/7H9DPu8yK5mn907W8Qt1kpBFlvP5lq2YSGm9mpY\nb6MNxB3l+pXshxqPwxyUlr1KMc5mllPaPZcltzgW8Dk7OkIqqzI1dufPyCzbe+ea\nr5AxjZHsVyl/378r8N2Jh5FMdYQh2MTeSYxYAeXXJLvGHDtROdGPpfnqKEO7o0re\noI4j2rqR11cifxcUUZcAfe/JAd4iengPP0wPoQFCUnkXL/JTr5+0q7ULRHp7pSyw\nJSMuLKbGX3qD0to9Fp207l1l9zxVxD/+pv9+r3tp2U70D28VhTP3g63hyBmxWIw7\nSoDdyC8DQ0lqFBRfyTP/3jd3Yjr8/h0U4Sy4XTHLirFJpD7dIBtqlNFaym+k5Aqm\nNcgs/K3mNIXhPqvoU4InQ+HpyEWspCqDibUHGTowuAxlVR2AVSme9A13BpNhLdxy\n4Ewlqh+5IXuOVnfYW6BKT8MlO+HNeUiA1K9PYKmmMh4nJhZjDaFPky1XxTCZrq/j\nvRxvgrubbRKjLuIw+CSz\n=PDkT\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 7ec1afd849e0ebb87a604e11f233b754a76d7a4e\nparent 764a549fb8dfd7616fa0118326c95157f3c2939e\nauthor Pengzhan Zhao <borontion@gmail.com> 1789530601 -0700\ncommitter GitHub <noreply@github.com> 1789530601 -0700\n\nci(dsv41): add deepseek v4.1 flash eval (#1580)\n\nSigned-off-by: Pengzhan Zhao <borontion@gmail.com>",
+      "verified_at": "2026-09-16T03:50:02Z"
+    }
+  },
+  "url": "https://api.github.com/repos/lightseekorg/tokenspeed/commits/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+  "html_url": "https://github.com/lightseekorg/tokenspeed/commit/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+  "comments_url": "https://api.github.com/repos/lightseekorg/tokenspeed/commits/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/comments",
+  "author": {
+    "login": "borontion",
+    "id": 25846776,
+    "node_id": "MDQ6VXNlcjI1ODQ2Nzc2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25846776?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/borontion",
+    "html_url": "https://github.com/borontion",
+    "followers_url": "https://api.github.com/users/borontion/followers",
+    "following_url": "https://api.github.com/users/borontion/following{/other_user}",
+    "gists_url": "https://api.github.com/users/borontion/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/borontion/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/borontion/subscriptions",
+    "organizations_url": "https://api.github.com/users/borontion/orgs",
+    "repos_url": "https://api.github.com/users/borontion/repos",
+    "events_url": "https://api.github.com/users/borontion/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/borontion/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "764a549fb8dfd7616fa0118326c95157f3c2939e",
+      "url": "https://api.github.com/repos/lightseekorg/tokenspeed/commits/764a549fb8dfd7616fa0118326c95157f3c2939e",
+      "html_url": "https://github.com/lightseekorg/tokenspeed/commit/764a549fb8dfd7616fa0118326c95157f3c2939e"
+    }
+  ],
+  "stats": {
+    "total": 243,
+    "additions": 188,
+    "deletions": 55
+  },
+  "files": [
+    {
+      "sha": "8d3fc089c047c0bbe060f7399134df2919ebdfac",
+      "filename": ".github/workflows/k8s-dispatch.yml",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/lightseekorg/tokenspeed/blob/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/.github%2Fworkflows%2Fk8s-dispatch.yml",
+      "raw_url": "https://github.com/lightseekorg/tokenspeed/raw/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/.github%2Fworkflows%2Fk8s-dispatch.yml",
+      "contents_url": "https://api.github.com/repos/lightseekorg/tokenspeed/contents/.github%2Fworkflows%2Fk8s-dispatch.yml?ref=688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+      "patch": "@@ -20,10 +20,11 @@ on:\n         type: choice\n         options:\n           - all\n+          - test/ci/eval/deepseek-v4.1-flash-evalscope-gsm8k-amd.yaml\n+          - test/ci/eval/deepseek-v4.1-flash-evalscope-gsm8k.yaml\n           - test/ci/eval/deepseek-v4-flash-evalscope-gsm8k.yaml\n           - test/ci/eval/deepseek-v4-flash-mtp-evalscope-gsm8k-amd.yaml\n           - test/ci/eval/deepseek-v4-flash-mtp-evalscope-gsm8k.yaml\n-          - test/ci/eval/deepseek-v4-pro-evalscope-gsm8k-amd.yaml\n           - test/ci/eval/glm-5.2-nvfp4-mtp-evalscope-aime26.yaml\n           - test/ci/eval/glm-5.3-flash-fp8-mtp-evalscope-aime26.yaml\n           - test/ci/eval/glm-5.3-flash-fp8-mtp-evalscope-aime26-amd.yaml"
+    },
+    {
+      "sha": "a5e4b28c41cd76b419adda58a3a992b19b6c77ad",
+      "filename": ".github/workflows/slurm-dispatch.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/lightseekorg/tokenspeed/blob/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/.github%2Fworkflows%2Fslurm-dispatch.yml",
+      "raw_url": "https://github.com/lightseekorg/tokenspeed/raw/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/.github%2Fworkflows%2Fslurm-dispatch.yml",
+      "contents_url": "https://api.github.com/repos/lightseekorg/tokenspeed/contents/.github%2Fworkflows%2Fslurm-dispatch.yml?ref=688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+      "patch": "@@ -28,6 +28,7 @@ on:\n         type: choice\n         options:\n           - \"off\"\n+          - test/ci/eval/deepseek-v4.1-flash-evalscope-gsm8k.yaml\n           - test/ci/eval/deepseek-v4-flash-evalscope-gsm8k.yaml\n           - test/ci/eval/deepseek-v4-flash-mtp-evalscope-gsm8k.yaml\n           - test/ci/eval/glm-5.2-nvfp4-mtp-evalscope-aime26.yaml"
+    },
+    {
+      "sha": "4f3429d835416013a2e2a6b2bd28312b35cf4ea6",
+      "filename": "test/ci/eval/deepseek-v4.1-flash-evalscope-gsm8k-amd.yaml",
+      "status": "added",
+      "additions": 53,
+      "deletions": 0,
+      "changes": 53,
+      "blob_url": "https://github.com/lightseekorg/tokenspeed/blob/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/test%2Fci%2Feval%2Fdeepseek-v4.1-flash-evalscope-gsm8k-amd.yaml",
+      "raw_url": "https://github.com/lightseekorg/tokenspeed/raw/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/test%2Fci%2Feval%2Fdeepseek-v4.1-flash-evalscope-gsm8k-amd.yaml",
+      "contents_url": "https://api.github.com/repos/lightseekorg/tokenspeed/contents/test%2Fci%2Feval%2Fdeepseek-v4.1-flash-evalscope-gsm8k-amd.yaml?ref=688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+      "patch": "@@ -0,0 +1,53 @@\n+api_version: ci.tokenspeed.io/v1\n+name: eval-deepseek-v4.1-flash-gsm8k-amd\n+type: eval\n+workflow_stage: model-test\n+triggers:\n+  - per-commit\n+  - manual\n+runner:\n+  labels:\n+    - amd-mi35x-4gpu-test\n+env:\n+  CI: \"true\"\n+install:\n+  - bash test/ci_system/install_deps_rocm.sh\n+server:\n+  command: >-\n+    ts serve\n+    --model deepseek-ai/DeepSeek-V4.1-Flash\n+    --tensor-parallel-size 4\n+    --dtype bfloat16\n+    --max-model-len 1048576\n+    --max-total-tokens 1048576\n+    --max-num-seqs 32\n+    --chunked-prefill-size 8192\n+    --gpu-memory-utilization 0.9\n+    --disable-kvstore\n+    --disable-prefill-graph\n+    --trust-remote-code\n+    --max-cudagraph-capture-size 32\n+    --reasoning-parser deepseek_v31\n+    --host 127.0.0.1\n+    --port 8000\n+  ready:\n+    url: http://127.0.0.1:8000/readiness\n+    timeout: 1800\n+    interval: 10\n+eval:\n+  install:\n+    - python3 -m uv venv --seed --clear /tmp/evalscope-perf && python3 -m uv pip install --python /tmp/evalscope-perf/bin/python 'evalscope[perf]==1.11.1'\n+  command: >-\n+    HF_HOME=${RUNNER_TEMP:-/tmp}/hf-eval-cache\n+    /tmp/evalscope-perf/bin/evalscope eval\n+    --model deepseek-ai/DeepSeek-V4.1-Flash\n+    --api-url http://127.0.0.1:8000/v1\n+    --api-key EMPTY_TOKEN\n+    --datasets gsm8k\n+    --dataset-hub huggingface\n+    --dataset-args '{\"gsm8k\":{\"dataset_id\":\"openai/gsm8k\"}}'\n+    --eval-batch-size 32\n+    --generation-config '{\"do_sample\":false,\"temperature\":0.0,\"max_tokens\":512}'\n+report:\n+  github_step_summary: true\n+score_threshold: 0.90"
+    },
+    {
+      "sha": "6c2112783ee4818398cd00057a3e48a6dfd828a7",
+      "filename": "test/ci/eval/deepseek-v4.1-flash-evalscope-gsm8k.yaml",
+      "status": "renamed",
+      "additions": 16,
+      "deletions": 15,
+      "changes": 31,
+      "blob_url": "https://github.com/lightseekorg/tokenspeed/blob/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/test%2Fci%2Feval%2Fdeepseek-v4.1-flash-evalscope-gsm8k.yaml",
+      "raw_url": "https://github.com/lightseekorg/tokenspeed/raw/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/test%2Fci%2Feval%2Fdeepseek-v4.1-flash-evalscope-gsm8k.yaml",
+      "contents_url": "https://api.github.com/repos/lightseekorg/tokenspeed/contents/test%2Fci%2Feval%2Fdeepseek-v4.1-flash-evalscope-gsm8k.yaml?ref=688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+      "patch": "@@ -1,33 +1,35 @@\n api_version: ci.tokenspeed.io/v1\n-name: eval-deepseek-v4-pro-gsm8k-amd\n+name: eval-deepseek-v4.1-flash-gsm8k\n type: eval\n workflow_stage: model-test\n triggers:\n   - per-commit\n   - manual\n runner:\n   labels:\n-    - amd-mi35x-8gpu-test\n+    - b200-4gpu\n env:\n   CI: \"true\"\n install:\n   - bash test/ci_system/install_deps.sh\n server:\n   command: >-\n     ts serve\n-    --model deepseek-ai/DeepSeek-V4-Pro\n-    --tensor-parallel-size 8\n+    --model deepseek-ai/DeepSeek-V4.1-Flash\n+    --tensor-parallel-size 4\n     --enable-expert-parallel\n-    --dense-tp-size 1\n-    --kv-cache-dtype fp8_e4m3\n-    --attention-use-fp4-indexer-cache\n-    --max-model-len 4096\n-    --max-total-tokens 16384\n+    --moe-backend mega_moe\n+    --dtype bfloat16\n+    --max-model-len 1048576\n+    --max-total-tokens 1048576\n+    --max-num-seqs 32\n     --chunked-prefill-size 8192\n-    --prefill-graph-max-tokens 8192\n     --gpu-memory-utilization 0.9\n     --disable-kvstore\n+    --disable-prefill-graph\n     --trust-remote-code\n+    --max-cudagraph-capture-size 32\n+    --reasoning-parser deepseek_v31\n     --host 127.0.0.1\n     --port 8000\n   ready:\n@@ -36,19 +38,18 @@ server:\n     interval: 10\n eval:\n   install:\n-    - python3 -m uv venv --seed --clear /tmp/evalscope-perf && python3 -m uv pip install --python /tmp/evalscope-perf/bin/python 'evalscope[perf]'\n+    - python3 -m uv venv --seed --clear /tmp/evalscope-perf && python3 -m uv pip install --python /tmp/evalscope-perf/bin/python 'evalscope[perf]==1.11.1'\n   command: >-\n-    python3 -c \"import urllib.request,json;urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8000/v1/completions',json.dumps({'model':'deepseek-ai/DeepSeek-V4-Pro','prompt':' '.join(['hello']*300),'max_tokens':2}).encode(),{'Content-Type':'application/json'}),timeout=120).read()\" &&\n     HF_HOME=${RUNNER_TEMP:-/tmp}/hf-eval-cache\n     /tmp/evalscope-perf/bin/evalscope eval\n-    --model deepseek-ai/DeepSeek-V4-Pro\n+    --model deepseek-ai/DeepSeek-V4.1-Flash\n     --api-url http://127.0.0.1:8000/v1\n     --api-key EMPTY_TOKEN\n     --datasets gsm8k\n     --dataset-hub huggingface\n     --dataset-args '{\"gsm8k\":{\"dataset_id\":\"openai/gsm8k\"}}'\n-    --eval-batch-size 16\n-    --generation-config '{\"do_sample\":false,\"temperature\":0.0,\"max_tokens\":256}'\n+    --eval-batch-size 32\n+    --generation-config '{\"do_sample\":false,\"temperature\":0.0,\"max_tokens\":512}'\n report:\n   github_step_summary: true\n score_threshold: 0.90",
+      "previous_filename": "test/ci/eval/deepseek-v4-pro-evalscope-gsm8k-amd.yaml"
+    },
+    {
+      "sha": "f0bb4072936bdf67670fd654d82c88997f7a2f40",
+      "filename": "test/ci_system/test_eval_configs.py",
+      "status": "modified",
+      "additions": 40,
+      "deletions": 0,
+      "changes": 40,
+      "blob_url": "https://github.com/lightseekorg/tokenspeed/blob/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/test%2Fci_system%2Ftest_eval_configs.py",
+      "raw_url": "https://github.com/lightseekorg/tokenspeed/raw/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/test%2Fci_system%2Ftest_eval_configs.py",
+      "contents_url": "https://api.github.com/repos/lightseekorg/tokenspeed/contents/test%2Fci_system%2Ftest_eval_configs.py?ref=688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+      "patch": "@@ -171,6 +171,46 @@ def test_qwen38_flash_next_runs_gsm8k_with_kvstore_enabled():\n     assert task[\"score_threshold\"] == 0.96\n \n \n+def test_deepseek_v41_flash_runs_tp4_gsm8k_on_b200_and_mi35x():\n+    filenames = (\n+        \"deepseek-v4.1-flash-evalscope-gsm8k.yaml\",\n+        \"deepseek-v4.1-flash-evalscope-gsm8k-amd.yaml\",\n+    )\n+    labels = (\"b200-4gpu\", \"amd-mi35x-4gpu-test\")\n+\n+    for filename, label in zip(filenames, labels, strict=True):\n+        task = yaml.safe_load((EVAL_CONFIG_DIR / filename).read_text(encoding=\"utf-8\"))\n+        server_tokens = shlex.split(task[\"server\"][\"command\"])\n+        eval_tokens = shlex.split(task[\"eval\"][\"command\"])\n+\n+        assert task[\"triggers\"] == [\"per-commit\", \"manual\"]\n+        assert task[\"runner\"][\"labels\"] == [label]\n+        assert flag_value(server_tokens, \"--model\") == \"deepseek-ai/DeepSeek-V4.1-Flash\"\n+        assert flag_value(server_tokens, \"--tensor-parallel-size\") == \"4\"\n+        assert flag_value(server_tokens, \"--dtype\") == \"bfloat16\"\n+        assert flag_value(server_tokens, \"--max-model-len\") == \"1048576\"\n+        assert flag_value(server_tokens, \"--max-total-tokens\") == \"1048576\"\n+        assert flag_value(server_tokens, \"--max-num-seqs\") == \"32\"\n+        assert flag_value(server_tokens, \"--chunked-prefill-size\") == \"8192\"\n+        assert flag_value(server_tokens, \"--gpu-memory-utilization\") == \"0.9\"\n+        assert flag_value(server_tokens, \"--max-cudagraph-capture-size\") == \"32\"\n+        assert flag_value(server_tokens, \"--reasoning-parser\") == \"deepseek_v31\"\n+        assert \"--disable-kvstore\" in server_tokens\n+        assert \"--disable-prefill-graph\" in server_tokens\n+        assert \"--trust-remote-code\" in server_tokens\n+        assert flag_value(eval_tokens, \"--model\") == \"deepseek-ai/DeepSeek-V4.1-Flash\"\n+        assert flag_value(eval_tokens, \"--datasets\") == \"gsm8k\"\n+        assert flag_value(eval_tokens, \"--eval-batch-size\") == \"32\"\n+        assert task[\"score_threshold\"] == 0.90\n+\n+        if label == \"b200-4gpu\":\n+            assert \"--enable-expert-parallel\" in server_tokens\n+            assert flag_value(server_tokens, \"--moe-backend\") == \"mega_moe\"\n+        else:\n+            assert \"--enable-expert-parallel\" not in server_tokens\n+            assert \"--moe-backend\" not in server_tokens\n+\n+\n def test_kimi_k3_amd_gates_use_eagle3():\n     filenames = (\n         \"kimi-k3-eagle3-mxfp4-tp8ep1-evalscope-aime26-amd.yaml\","
+    },
+    {
+      "sha": "796e6d296084a189d44e28b6db857a6dbf79defa",
+      "filename": "tokenspeed-kernel/python/tokenspeed_kernel/ops/attention/dsv41/triton.py",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 9,
+      "changes": 11,
+      "blob_url": "https://github.com/lightseekorg/tokenspeed/blob/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/tokenspeed-kernel%2Fpython%2Ftokenspeed_kernel%2Fops%2Fattention%2Fdsv41%2Ftriton.py",
+      "raw_url": "https://github.com/lightseekorg/tokenspeed/raw/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/tokenspeed-kernel%2Fpython%2Ftokenspeed_kernel%2Fops%2Fattention%2Fdsv41%2Ftriton.py",
+      "contents_url": "https://api.github.com/repos/lightseekorg/tokenspeed/contents/tokenspeed-kernel%2Fpython%2Ftokenspeed_kernel%2Fops%2Fattention%2Fdsv41%2Ftriton.py?ref=688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+      "patch": "@@ -1075,15 +1075,8 @@ def _compressor_pool(\n     denominator = old_exp + new_exp\n     old_weight = tl.div_rn(old_exp, denominator)\n     new_weight = tl.div_rn(new_exp, denominator)\n-    # Preserve separate FP32 products/addition before the caller's BF16 cast.\n-    pooled = tl.inline_asm_elementwise(\n-        \"{ .reg .f32 a, b; mul.rn.f32 a, $1, $2; mul.rn.f32 b, $3, $4; add.rn.f32 $0, a, b; }\",\n-        constraints=\"=f,f,f,f,f\",\n-        args=[old_content, old_weight, current, new_weight],\n-        dtype=tl.float32,\n-        is_pure=True,\n-        pack=1,\n-    )\n+    # The launch disables FP fusion so these remain separate FP32 operations.\n+    pooled = old_content * old_weight + current * new_weight\n     pooled = tl.where(live, pooled, 0.0)\n     if HAS_NORM:\n         # The released compressor rounds pooled inputs to BF16 before RMSNorm."
+    },
+    {
+      "sha": "44029cf422528c1c31f6fb1a48588cc523e5d140",
+      "filename": "tokenspeed-kernel/python/tokenspeed_kernel/ops/moe/deep_gemm/dsv4_mega_moe.py",
+      "status": "modified",
+      "additions": 66,
+      "deletions": 30,
+      "changes": 96,
+      "blob_url": "https://github.com/lightseekorg/tokenspeed/blob/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/tokenspeed-kernel%2Fpython%2Ftokenspeed_kernel%2Fops%2Fmoe%2Fdeep_gemm%2Fdsv4_mega_moe.py",
+      "raw_url": "https://github.com/lightseekorg/tokenspeed/raw/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/tokenspeed-kernel%2Fpython%2Ftokenspeed_kernel%2Fops%2Fmoe%2Fdeep_gemm%2Fdsv4_mega_moe.py",
+      "contents_url": "https://api.github.com/repos/lightseekorg/tokenspeed/contents/tokenspeed-kernel%2Fpython%2Ftokenspeed_kernel%2Fops%2Fmoe%2Fdeep_gemm%2Fdsv4_mega_moe.py?ref=688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+      "patch": "@@ -52,8 +52,6 @@\n         get_pdl,\n         get_symm_buffer_for_mega_moe,\n         set_pdl,\n-        transform_sf_into_required_layout,\n-        transform_weights_for_mega_moe,\n     )\n     from tokenspeed_kernel.ops._deep_gemm.mega_moe_bf16 import (\n         prepare_mega_moe_bf16_jit,\n@@ -80,12 +78,6 @@ class _DeepGemmMegaMoEState:\n     device: torch.device\n \n \n-def _ue8m0_to_float(scale: torch.Tensor) -> torch.Tensor:\n-    if scale.dtype == torch.uint8:\n-        return (scale.to(torch.int32) << 23).view(torch.float32)\n-    return scale.float()\n-\n-\n def _expected_shapes(\n     num_local_experts: int,\n     hidden_size: int,\n@@ -107,6 +99,62 @@ def _expected_shapes(\n     )\n \n \n+def _interleave_gate_up_(weight: torch.Tensor, granularity: int) -> torch.Tensor:\n+    \"\"\"Interleave gate/up blocks in place with one-expert scratch space.\"\"\"\n+    squeeze_group_dim = weight.ndim == 2\n+    if squeeze_group_dim:\n+        weight = weight.unsqueeze(0)\n+    groups, rows, *rest = weight.shape\n+    half = rows // 2\n+    blocks = half // granularity\n+    for group in range(groups):\n+        source = weight[group].clone().view(2, blocks, granularity, *rest)\n+        weight[group].view(blocks, 2, granularity, *rest).copy_(source.transpose(0, 1))\n+    return weight.squeeze(0) if squeeze_group_dim else weight\n+\n+\n+def _pack_ue8m0_scale_(scale: torch.Tensor) -> torch.Tensor:\n+    \"\"\"Pack UE8M0 bytes into DeepGEMM's layout with one-expert scratch.\"\"\"\n+    squeeze_group_dim = scale.ndim == 2\n+    if squeeze_group_dim:\n+        scale = scale.unsqueeze(0)\n+    groups, rows, columns = scale.shape\n+    if columns % 4:\n+        raise ValueError(\"MegaMoE UE8M0 scale columns must be divisible by four\")\n+    packed_columns = columns // 4\n+    for group in range(groups):\n+        source = scale[group].clone().view(rows, packed_columns, 4)\n+        scale[group].view(packed_columns, rows, 4).copy_(source.permute(1, 0, 2))\n+    packed = scale.view(torch.int32)\n+    output = torch.as_strided(\n+        packed,\n+        size=(groups, rows, packed_columns),\n+        stride=(rows * packed_columns, 1, rows),\n+    )\n+    return output.squeeze(0) if squeeze_group_dim else output\n+\n+\n+def _reorder_scale_rows_(\n+    scale: torch.Tensor, interleave_gate_up: bool, granularity: int\n+) -> torch.Tensor:\n+    \"\"\"Apply MegaMoE gate/up and UTCCP row permutations in place.\"\"\"\n+    grouped = scale if scale.ndim == 3 else scale.unsqueeze(0)\n+    groups, rows, packed_columns = grouped.shape\n+    if rows % 128:\n+        raise ValueError(\"MegaMoE scale rows must be divisible by 128\")\n+    for group in range(groups):\n+        source = grouped[group].contiguous()\n+        if interleave_gate_up:\n+            half = rows // 2\n+            blocks = half // granularity\n+            source = source.view(2, blocks, granularity, packed_columns)\n+            source = source.transpose(0, 1).reshape(rows, packed_columns)\n+        source = source.view(-1, 4, 32, packed_columns)\n+        source = source.transpose(1, 2).reshape(rows, packed_columns)\n+        grouped[group].copy_(source)\n+    return scale\n+\n+\n def _deep_gemm_dsv4_mega_moe_process_weights(\n     *,\n     w13_weight: torch.Tensor,\n@@ -135,29 +183,17 @@ def _deep_gemm_dsv4_mega_moe_process_weights(\n     if w13_weight.dtype != torch.uint8 or w2_weight.dtype != torch.uint8:\n         raise ValueError(\"MegaMoE packed checkpoint weights must have dtype uint8\")\n \n-    w13_scale = transform_sf_into_required_layout(\n-        sf=_ue8m0_to_float(w13_weight_scale).contiguous(),\n-        mn=2 * intermediate_size,\n-        k=hidden_size,\n-        recipe=(1, _MXFP4_BLOCK_SIZE),\n-        num_groups=num_local_experts,\n-    )\n-    w2_scale = transform_sf_into_required_layout(\n-        sf=_ue8m0_to_float(w2_weight_scale).contiguous(),\n-        mn=hidden_size,\n-        k=intermediate_size,\n-        recipe=(1, _MXFP4_BLOCK_SIZE),\n-        num_groups=num_local_experts,\n-    )\n-    l1_weights, l2_weights = transform_weights_for_mega_moe(\n-        (w13_weight.view(torch.int8).contiguous(), w13_scale),\n-        (w2_weight.view(torch.int8).contiguous(), w2_scale),\n-    )\n-    # DeepGEMM may return the contiguous L2 input itself. Break that reference\n-    # so callers can release all canonical checkpoint tensors after processing.\n+    w13_weight = _interleave_gate_up_(w13_weight.view(torch.int8), 8)\n+    w13_scale = _pack_ue8m0_scale_(w13_weight_scale)\n+    w13_scale = _reorder_scale_rows_(w13_scale, True, 8)\n+    w2_scale = _pack_ue8m0_scale_(w2_weight_scale)\n+    w2_scale = _reorder_scale_rows_(w2_scale, False, 8)\n+\n+    # The opaque state takes ownership of the canonical tensor storage when the\n+    # model drops its parameters after this callback returns.\n     return _DeepGemmMegaMoEState(\n-        l1_weights=l1_weights,\n-        l2_weights=(l2_weights[0].clone(), l2_weights[1]),\n+        l1_weights=(w13_weight, w13_scale),\n+        l2_weights=(w2_weight.view(torch.int8), w2_scale),\n         device=w13_weight.device,\n     )\n "
+    },
+    {
+      "sha": "bd5def61509f7d39a594abaacbc84374075c1b41",
+      "filename": "tokenspeed-kernel/test/ops/test_attention_dsv41.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/lightseekorg/tokenspeed/blob/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/tokenspeed-kernel%2Ftest%2Fops%2Ftest_attention_dsv41.py",
+      "raw_url": "https://github.com/lightseekorg/tokenspeed/raw/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/tokenspeed-kernel%2Ftest%2Fops%2Ftest_attention_dsv41.py",
+      "contents_url": "https://api.github.com/repos/lightseekorg/tokenspeed/contents/tokenspeed-kernel%2Ftest%2Fops%2Ftest_attention_dsv41.py?ref=688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+      "patch": "@@ -730,6 +730,14 @@ def test_compressor_fused_norm_preserves_pooled_bf16_boundary(device):\n     raw = dsv41.compressor_pool(\n         content, scores, previous, tail, slots, active, None, None, 0.0\n     )\n+    maximum = torch.maximum(scores[previous], scores)\n+    old_exp = torch.exp(scores[previous] - maximum)\n+    new_exp = torch.exp(scores - maximum)\n+    expected_raw = (content[previous] * old_exp + content * new_exp) / (\n+        old_exp + new_exp\n+    )\n+    expected_raw[~active] = 0\n+    torch.testing.assert_close(raw, expected_raw, rtol=1e-6, atol=1e-6)\n     rounded = raw.bfloat16().float()\n     expected = (\n         rounded"
+    }
+  ]
+}

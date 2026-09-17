@@ -1,0 +1,69 @@
+{
+  "source_id": "TECH-037",
+  "title": "deepseek-ai/deepseek-harness official repository and license snapshot",
+  "issuer": "deepseek-ai",
+  "repository": "deepseek-ai/deepseek-harness",
+  "official_url": "https://github.com/deepseek-ai/deepseek-harness",
+  "revision": "0d1f50007f9bca3f52b06e1c3074fa14d5fb0720",
+  "commit_date": "2026-09-15T03:16:06Z",
+  "retrieved_at": "2026-09-16T17:06:52.774156+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/deepseek-ai/deepseek-harness/commits/HEAD",
+      "sha256": "7dd8e930ce4747ee9b80830486e77b992e54f4dc72ea0512afc53f03598b9b8c",
+      "bytes": 357438
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/0d1f50007f9bca3f52b06e1c3074fa14d5fb0720/README.md",
+      "sha256": "b43a2af65d10028e5de61e4603f946bfce9b777df079e92745491c7700a6d58e",
+      "bytes": 2444
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/0d1f50007f9bca3f52b06e1c3074fa14d5fb0720/LICENSE",
+      "sha256": "ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be",
+      "bytes": 1065
+    },
+    "tree.json": {
+      "requested_url": "https://api.github.com/repos/deepseek-ai/deepseek-harness/git/trees/0d1f50007f9bca3f52b06e1c3074fa14d5fb0720?recursive=1",
+      "sha256": "e84d321f89eafcb97d66116131ac72b49efc521ee3ef72da6e2016834f97bded",
+      "bytes": 4285844
+    },
+    "architecture.md": {
+      "requested_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/0d1f50007f9bca3f52b06e1c3074fa14d5fb0720/docs/architecture.md",
+      "sha256": "11b6793755e704105d0c87111f8bb86f19ff247b49380471ae4047604c01f313",
+      "bytes": 18493
+    },
+    "providers.md": {
+      "requested_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/0d1f50007f9bca3f52b06e1c3074fa14d5fb0720/docs/user/guide/providers.md",
+      "sha256": "6c1838eaaccbc74f1c09c62c90bdf7bab04d0dc0b268bcea097c39952143d332",
+      "bytes": 13515
+    },
+    "sandbox.md": {
+      "requested_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/0d1f50007f9bca3f52b06e1c3074fa14d5fb0720/docs/subsystems/sandbox.md",
+      "sha256": "a8bb9cf5405aa8470785d9442786e9e6940265fb46c21608ef15c82993a62ca7",
+      "bytes": 12950
+    },
+    "approval.md": {
+      "requested_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/0d1f50007f9bca3f52b06e1c3074fa14d5fb0720/docs/subsystems/approval.md",
+      "sha256": "5a427a89d2c7b3edb8dd67db25545a915f6869f57e627fdd1c80dc51d8065d98",
+      "bytes": 9345
+    },
+    "safety.md": {
+      "requested_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/0d1f50007f9bca3f52b06e1c3074fa14d5fb0720/SAFETY.md",
+      "sha256": "62075bb51e0f7790441e7722ff12063107b4866019332e71ef01b63b6f880fee",
+      "bytes": 1673
+    }
+  },
+  "retrieval_failures": {
+    "latest_release": "curl: (56) The requested URL returned error: 404\n"
+  },
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

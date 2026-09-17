@@ -1,0 +1,48 @@
+{
+  "source_id": "TECH-014",
+  "model_id": "google/gemma-4-31B-it",
+  "title": "google/gemma-4-31B-it official model card, configuration and license",
+  "issuer": "google",
+  "official_url": "https://huggingface.co/google/gemma-4-31B-it",
+  "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "retrieved_at": "2026-09-16T09:11:12.692422+00:00",
+  "created_at_api": "2026-03-11T18:22:36.000Z",
+  "last_modified_api": "2026-07-20T16:42:18.000Z",
+  "license_tag": "apache-2.0",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_model_card",
+  "verification_scope": "Official model repository snapshot; commercial license and deployment conditions to be inspected. No local model test. Repository creation date is not a release date.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+      "sha256": "d9062b09f586f517ea1f56dc8d8e06a87c590cdaa1df175fb064bf69dcc881dd",
+      "bytes": 24266
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/google/gemma-4-31B-it/resolve/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+      "sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+      "bytes": 27963
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/google/gemma-4-31B-it/resolve/842da3794eaa0b77d5f08bae87a17459d91ff475/config.json",
+      "sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+      "bytes": 4621
+    },
+    "generation_config.json": {
+      "requested_url": "https://huggingface.co/google/gemma-4-31B-it/resolve/842da3794eaa0b77d5f08bae87a17459d91ff475/generation_config.json",
+      "sha256": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de",
+      "bytes": 208
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/google/gemma-4-31B-it/resolve/842da3794eaa0b77d5f08bae87a17459d91ff475/model.safetensors.index.json",
+      "sha256": "d4aff3b976d69c123a29d1c085d7ba4de1ac3f4ca1726a7f81e1b11462a64ea2",
+      "bytes": 120246
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official source and license inspection 2026-09-16",
+  "locator": "Models Overview; License link; config/index",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md; knowledge-base/models/license-review-2026-09-16.md"
+}

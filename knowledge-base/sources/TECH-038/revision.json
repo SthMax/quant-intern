@@ -1,0 +1,129 @@
+{
+  "sha": "fd346b8dbaa24573a0244bc917811849d27c4cf4",
+  "node_id": "C_kwDOOYsS4doAKGZkMzQ2YjhkYmFhMjQ1NzNhMDI0NGJjOTE3ODExODQ5ZDI3YzRjZjQ",
+  "commit": {
+    "author": {
+      "name": "felixxia-oai",
+      "email": "felixxia@openai.com",
+      "date": "2026-09-16T16:45:27Z"
+    },
+    "committer": {
+      "name": "copyberry",
+      "email": "copyberry@app.openai.com",
+      "date": "2026-09-16T16:59:47Z"
+    },
+    "message": "Centralize Guardian action preparation for review (#45987)\n\n## What changed\n\nMove duplicated action preparation into `codex_guardian_context::action_for_review`, shared by approval rendering and cached-evidence size checks. Preserve the existing behavior: omit top-level `tool_description` and `connector_description` metadata from MCP tool calls while keeping tool arguments intact.\n\n## Testing\n\nAdd unit tests verifying that MCP arguments retain description fields, including nested fields, and that other action types remain unchanged.\n\nGitOrigin-RevId: 8e890fb263556596f695177f917750377c04d43c",
+    "tree": {
+      "sha": "123f0623085ae15aa94a40ae8d62369712a0ed86",
+      "url": "https://api.github.com/repos/openai/codex/git/trees/123f0623085ae15aa94a40ae8d62369712a0ed86"
+    },
+    "url": "https://api.github.com/repos/openai/codex/git/commits/fd346b8dbaa24573a0244bc917811849d27c4cf4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/openai/codex/commits/fd346b8dbaa24573a0244bc917811849d27c4cf4",
+  "html_url": "https://github.com/openai/codex/commit/fd346b8dbaa24573a0244bc917811849d27c4cf4",
+  "comments_url": "https://api.github.com/repos/openai/codex/commits/fd346b8dbaa24573a0244bc917811849d27c4cf4/comments",
+  "author": {
+    "login": "felixxia-oai",
+    "id": 288149840,
+    "node_id": "U_kgDOESzRUA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/288149840?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/felixxia-oai",
+    "html_url": "https://github.com/felixxia-oai",
+    "followers_url": "https://api.github.com/users/felixxia-oai/followers",
+    "following_url": "https://api.github.com/users/felixxia-oai/following{/other_user}",
+    "gists_url": "https://api.github.com/users/felixxia-oai/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/felixxia-oai/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/felixxia-oai/subscriptions",
+    "organizations_url": "https://api.github.com/users/felixxia-oai/orgs",
+    "repos_url": "https://api.github.com/users/felixxia-oai/repos",
+    "events_url": "https://api.github.com/users/felixxia-oai/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/felixxia-oai/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": null,
+  "parents": [
+    {
+      "sha": "66dfadbe6680a5aa2dad0dc80f3b1092d7a59258",
+      "url": "https://api.github.com/repos/openai/codex/commits/66dfadbe6680a5aa2dad0dc80f3b1092d7a59258",
+      "html_url": "https://github.com/openai/codex/commit/66dfadbe6680a5aa2dad0dc80f3b1092d7a59258"
+    }
+  ],
+  "stats": {
+    "total": 83,
+    "additions": 61,
+    "deletions": 22
+  },
+  "files": [
+    {
+      "sha": "e1c67e52b008dc47f8f738f8cc776972c186f620",
+      "filename": "codex-rs/core/src/guardian/approval_request.rs",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 14,
+      "changes": 16,
+      "blob_url": "https://github.com/openai/codex/blob/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fcore%2Fsrc%2Fguardian%2Fapproval_request.rs",
+      "raw_url": "https://github.com/openai/codex/raw/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fcore%2Fsrc%2Fguardian%2Fapproval_request.rs",
+      "contents_url": "https://api.github.com/repos/openai/codex/contents/codex-rs%2Fcore%2Fsrc%2Fguardian%2Fapproval_request.rs?ref=fd346b8dbaa24573a0244bc917811849d27c4cf4",
+      "patch": "@@ -537,20 +537,8 @@ pub(crate) fn guardian_request_turn_id<'a>(\n pub(crate) fn format_guardian_action_pretty(\n     action: &GuardianApprovalRequest,\n ) -> serde_json::Result<String> {\n-    let mut value = guardian_action_for_review(action)?;\n+    let mut value =\n+        codex_guardian_context::action_for_review(guardian_approval_request_to_json(action)?);\n     value.sort_all_objects();\n     serde_json::to_string_pretty(&value)\n }\n-\n-fn guardian_action_for_review(action: &GuardianApprovalRequest) -> serde_json::Result<Value> {\n-    let mut value = guardian_approval_request_to_json(action)?;\n-    if matches!(action, GuardianApprovalRequest::McpToolCall { .. })\n-        && let Some(fields) = value.as_object_mut()\n-    {\n-        // Only host-provided metadata is optional. A nested argument named\n-        // \"description\" is still part of the exact action under review.\n-        fields.remove(\"tool_description\");\n-        fields.remove(\"connector_description\");\n-    }\n-    Ok(value)\n-}"
+    },
+    {
+      "sha": "a557ce184506bddf3e7164519f38622190b316b7",
+      "filename": "codex-rs/ext/guardian-v2/src/async_scorer/approval.rs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 8,
+      "changes": 9,
+      "blob_url": "https://github.com/openai/codex/blob/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fext%2Fguardian-v2%2Fsrc%2Fasync_scorer%2Fapproval.rs",
+      "raw_url": "https://github.com/openai/codex/raw/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fext%2Fguardian-v2%2Fsrc%2Fasync_scorer%2Fapproval.rs",
+      "contents_url": "https://api.github.com/repos/openai/codex/contents/codex-rs%2Fext%2Fguardian-v2%2Fsrc%2Fasync_scorer%2Fapproval.rs?ref=fd346b8dbaa24573a0244bc917811849d27c4cf4",
+      "patch": "@@ -140,14 +140,7 @@ async fn cached_evidence(\n         return Err(GuardianReviewReason::MissingScore);\n     };\n     // Elicitations and intercepted execs can expand beyond the original scored action.\n-    let mut action = input.action.clone();\n-    if action.get(\"tool\").and_then(serde_json::Value::as_str) == Some(\"mcp_tool_call\")\n-        && let Some(fields) = action.as_object_mut()\n-    {\n-        // Match the action renderer: host descriptions are optional, arguments are not.\n-        fields.remove(\"tool_description\");\n-        fields.remove(\"connector_description\");\n-    }\n+    let action = codex_guardian_context::action_for_review(input.action.clone());\n     let max_action_bytes = TruncationPolicy::Tokens(config.max_action_tokens).byte_budget();\n     let action_fits = serde_json::to_string_pretty(&action)\n         .is_ok_and(|action| action.len().saturating_add(1) <= max_action_bytes);"
+    },
+    {
+      "sha": "3883de031e5e4ef4d14161ea08456fb39ce248c6",
+      "filename": "codex-rs/guardian-context/src/action.rs",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/openai/codex/blob/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fguardian-context%2Fsrc%2Faction.rs",
+      "raw_url": "https://github.com/openai/codex/raw/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fguardian-context%2Fsrc%2Faction.rs",
+      "contents_url": "https://api.github.com/repos/openai/codex/contents/codex-rs%2Fguardian-context%2Fsrc%2Faction.rs?ref=fd346b8dbaa24573a0244bc917811849d27c4cf4",
+      "patch": "@@ -8,6 +8,18 @@ use crate::SectionError;\n use crate::SectionInput;\n use crate::SectionScope;\n \n+/// Projects an approval action onto the exact JSON reviewed and measured by Guardian.\n+/// Host descriptions are optional; nested tool arguments must remain complete.\n+pub fn action_for_review(mut action: serde_json::Value) -> serde_json::Value {\n+    if action.get(\"tool\").and_then(serde_json::Value::as_str) == Some(\"mcp_tool_call\")\n+        && let Some(fields) = action.as_object_mut()\n+    {\n+        fields.remove(\"tool_description\");\n+        fields.remove(\"connector_description\");\n+    }\n+    action\n+}\n+\n /// Host-prepared action evidence. JSON stays complete through request admission.\n #[derive(Clone, PartialEq)]\n pub struct PlannedAction {\n@@ -111,6 +123,10 @@ impl PlannedAction {\n \n pub(crate) struct PlannedActionSection;\n \n+#[cfg(test)]\n+#[path = \"action_tests.rs\"]\n+mod tests;\n+\n impl SectionContributor for PlannedActionSection {\n     fn scope(&self) -> SectionScope {\n         SectionScope::Shared"
+    },
+    {
+      "sha": "c1efc4331afc5680d53764355aa98a311f1dee24",
+      "filename": "codex-rs/guardian-context/src/action_tests.rs",
+      "status": "added",
+      "additions": 41,
+      "deletions": 0,
+      "changes": 41,
+      "blob_url": "https://github.com/openai/codex/blob/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fguardian-context%2Fsrc%2Faction_tests.rs",
+      "raw_url": "https://github.com/openai/codex/raw/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fguardian-context%2Fsrc%2Faction_tests.rs",
+      "contents_url": "https://api.github.com/repos/openai/codex/contents/codex-rs%2Fguardian-context%2Fsrc%2Faction_tests.rs?ref=fd346b8dbaa24573a0244bc917811849d27c4cf4",
+      "patch": "@@ -0,0 +1,41 @@\n+//! Approval projections omit optional host metadata without changing the actual action.\n+\n+use super::action_for_review;\n+use pretty_assertions::assert_eq;\n+use serde_json::json;\n+\n+#[test]\n+fn mcp_projection_preserves_arguments_with_description_fields() {\n+    let arguments = json!({\n+        \"description\": \"required argument\",\n+        \"tool_description\": \"also an argument\",\n+        \"nested\": {\"connector_description\": \"required nested argument\"},\n+    });\n+    let action = json!({\n+        \"tool\": \"mcp_tool_call\",\n+        \"server\": \"example\",\n+        \"tool_name\": \"publish\",\n+        \"tool_description\": \"optional host metadata\",\n+        \"connector_description\": \"optional connector metadata\",\n+        \"arguments\": arguments,\n+    });\n+    assert_eq!(\n+        action_for_review(action),\n+        json!({\n+            \"tool\": \"mcp_tool_call\",\n+            \"server\": \"example\",\n+            \"tool_name\": \"publish\",\n+            \"arguments\": arguments,\n+        }),\n+    );\n+}\n+\n+#[test]\n+fn other_actions_preserve_description_fields() {\n+    let action = json!({\n+        \"tool\": \"custom_action\",\n+        \"tool_description\": \"required argument\",\n+        \"connector_description\": \"also required\",\n+    });\n+    assert_eq!(action_for_review(action.clone()), action);\n+}"
+    },
+    {
+      "sha": "36bce55ae141c14f791f67a8fce191b7e13aedda",
+      "filename": "codex-rs/guardian-context/src/lib.rs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/openai/codex/blob/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fguardian-context%2Fsrc%2Flib.rs",
+      "raw_url": "https://github.com/openai/codex/raw/fd346b8dbaa24573a0244bc917811849d27c4cf4/codex-rs%2Fguardian-context%2Fsrc%2Flib.rs",
+      "contents_url": "https://api.github.com/repos/openai/codex/contents/codex-rs%2Fguardian-context%2Fsrc%2Flib.rs?ref=fd346b8dbaa24573a0244bc917811849d27c4cf4",
+      "patch": "@@ -23,6 +23,7 @@ use transcript::ConversationTranscriptSection;\n pub use action::ActionPresentation;\n pub use action::PlannedAction;\n pub use action::PlannedActionKind;\n+pub use action::action_for_review;\n pub use authorization::GuardianRootMessage;\n pub use section::ContextSection;\n "
+    }
+  ]
+}

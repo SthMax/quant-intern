@@ -1,0 +1,62 @@
+{
+  "source_id": "TECH-035",
+  "title": "anomalyco/opencode official repository and license snapshot",
+  "issuer": "anomalyco",
+  "repository": "anomalyco/opencode",
+  "official_url": "https://github.com/anomalyco/opencode",
+  "revision": "2e018f70f2d13080de3dd5fda8720acf77ebd296",
+  "commit_date": "2026-09-16T16:47:21Z",
+  "retrieved_at": "2026-09-16T17:06:52.026906+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/anomalyco/opencode/commits/HEAD",
+      "sha256": "d7697aef061bbb5c80455647f505b22ca5af5a3608fe4e347fae4703079a31d2",
+      "bytes": 10747
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/anomalyco/opencode/2e018f70f2d13080de3dd5fda8720acf77ebd296/README.md",
+      "sha256": "400890a3082e225c440561825270a911cd7df90a9f64f85166aed330201e50ba",
+      "bytes": 5402
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/anomalyco/opencode/2e018f70f2d13080de3dd5fda8720acf77ebd296/LICENSE",
+      "sha256": "625f0f619133f89bbbb2abe37369613dfa1885eba1e50d02170deb62bb42cb6b",
+      "bytes": 1065
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/anomalyco/opencode/releases/latest",
+      "sha256": "546fa382f30e2dd6efcedd08bd80e5e55f7e7ce8bae8f493537ee3b1d30805ab",
+      "bytes": 76502
+    },
+    "tree.json": {
+      "requested_url": "https://api.github.com/repos/anomalyco/opencode/git/trees/2e018f70f2d13080de3dd5fda8720acf77ebd296?recursive=1",
+      "sha256": "e7e6f097af316b478da607574ffda469ae46dd702ca851824341798c66e5b3f6",
+      "bytes": 2306714
+    },
+    "providers.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/anomalyco/opencode/2e018f70f2d13080de3dd5fda8720acf77ebd296/packages/web/src/content/docs/providers.mdx",
+      "sha256": "d311c7efcafb23100c993047dc71d3dab90f7f2890c841010323eb95a7ac03c7",
+      "bytes": 66892
+    },
+    "permissions.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/anomalyco/opencode/2e018f70f2d13080de3dd5fda8720acf77ebd296/packages/web/src/content/docs/permissions.mdx",
+      "sha256": "e929098f6f772186eeb4f0eb55e332c477d88e30cb1efc45d0839dfa333b5163",
+      "bytes": 7449
+    },
+    "models.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/anomalyco/opencode/2e018f70f2d13080de3dd5fda8720acf77ebd296/packages/web/src/content/docs/models.mdx",
+      "sha256": "2c8f7c813c7e80e55d71801d8f0b3ce23884f2c279dc4a1bac122e79198f2482",
+      "bytes": 5530
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

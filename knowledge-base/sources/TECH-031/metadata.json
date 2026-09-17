@@ -1,0 +1,42 @@
+{
+  "source_id": "TECH-031",
+  "title": "run-llama/llama_index official repository and license snapshot",
+  "issuer": "run-llama",
+  "repository": "run-llama/llama_index",
+  "official_url": "https://github.com/run-llama/llama_index",
+  "revision": "fd4a517ad6490f0c8464a13fdf133760b696434a",
+  "commit_date": "2026-09-15T23:21:14Z",
+  "retrieved_at": "2026-09-16T17:06:50.624012+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/run-llama/llama_index/commits/HEAD",
+      "sha256": "d72ebe5e7938fdfb6ba9a2376647fbc970bbcb36c76274841c03696b8c7709eb",
+      "bytes": 65221
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/run-llama/llama_index/fd4a517ad6490f0c8464a13fdf133760b696434a/README.md",
+      "sha256": "c2738208d11688fc21e087a72b0ac9bafed02a2ac18e3794e01982972a291c29",
+      "bytes": 11556
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/run-llama/llama_index/fd4a517ad6490f0c8464a13fdf133760b696434a/LICENSE",
+      "sha256": "24f40b5190fdacabc24ddbb5f76364d15e4f030925220ea300d8a2dd4993c8cb",
+      "bytes": 1065
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/run-llama/llama_index/releases/latest",
+      "sha256": "25a4c7aa7c89ef5e1a5e61b2dac04c6292b609cb52d5dd4db3d91c6d362b3507",
+      "bytes": 15577
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

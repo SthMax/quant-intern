@@ -1,0 +1,125 @@
+{
+  "sha": "fffdfba7279a467e9df8c191aac332ccab8d2982",
+  "node_id": "C_kwDOKH5No9oAKGZmZmRmYmE3Mjc5YTQ2N2U5ZGY4YzE5MWFhYzMzMmNjYWI4ZDI5ODI",
+  "commit": {
+    "author": {
+      "name": "TensorRT LLM",
+      "email": "90828364+tensorrt-cicd@users.noreply.github.com",
+      "date": "2026-09-16T17:02:32Z"
+    },
+    "committer": {
+      "name": "TensorRT LLM",
+      "email": "90828364+tensorrt-cicd@users.noreply.github.com",
+      "date": "2026-09-16T17:02:32Z"
+    },
+    "message": "[None][infra] Check in most recent lock file from nightly pipeline\n\nSigned-off-by: TensorRT LLM <90828364+tensorrt-cicd@users.noreply.github.com>",
+    "tree": {
+      "sha": "efb2016969914f44d5ac83de13da0f9ec3064dfd",
+      "url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/git/trees/efb2016969914f44d5ac83de13da0f9ec3064dfd"
+    },
+    "url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/git/commits/fffdfba7279a467e9df8c191aac332ccab8d2982",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/commits/fffdfba7279a467e9df8c191aac332ccab8d2982",
+  "html_url": "https://github.com/NVIDIA/TensorRT-LLM/commit/fffdfba7279a467e9df8c191aac332ccab8d2982",
+  "comments_url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/commits/fffdfba7279a467e9df8c191aac332ccab8d2982/comments",
+  "author": {
+    "login": "tensorrt-cicd",
+    "id": 90828364,
+    "node_id": "MDQ6VXNlcjkwODI4MzY0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/90828364?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorrt-cicd",
+    "html_url": "https://github.com/tensorrt-cicd",
+    "followers_url": "https://api.github.com/users/tensorrt-cicd/followers",
+    "following_url": "https://api.github.com/users/tensorrt-cicd/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorrt-cicd/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorrt-cicd/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorrt-cicd/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorrt-cicd/orgs",
+    "repos_url": "https://api.github.com/users/tensorrt-cicd/repos",
+    "events_url": "https://api.github.com/users/tensorrt-cicd/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorrt-cicd/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "tensorrt-cicd",
+    "id": 90828364,
+    "node_id": "MDQ6VXNlcjkwODI4MzY0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/90828364?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tensorrt-cicd",
+    "html_url": "https://github.com/tensorrt-cicd",
+    "followers_url": "https://api.github.com/users/tensorrt-cicd/followers",
+    "following_url": "https://api.github.com/users/tensorrt-cicd/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tensorrt-cicd/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tensorrt-cicd/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tensorrt-cicd/subscriptions",
+    "organizations_url": "https://api.github.com/users/tensorrt-cicd/orgs",
+    "repos_url": "https://api.github.com/users/tensorrt-cicd/repos",
+    "events_url": "https://api.github.com/users/tensorrt-cicd/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tensorrt-cicd/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "97f84eb314a0761a88fea68bc3b9ea29604af77e",
+      "url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/commits/97f84eb314a0761a88fea68bc3b9ea29604af77e",
+      "html_url": "https://github.com/NVIDIA/TensorRT-LLM/commit/97f84eb314a0761a88fea68bc3b9ea29604af77e"
+    }
+  ],
+  "stats": {
+    "total": 78,
+    "additions": 39,
+    "deletions": 39
+  },
+  "files": [
+    {
+      "sha": "3c95c6a05ac3e27048947fd4debb9222ea9f503e",
+      "filename": "security_scanning/examples/ray_orchestrator/poetry.lock",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/NVIDIA/TensorRT-LLM/blob/fffdfba7279a467e9df8c191aac332ccab8d2982/security_scanning%2Fexamples%2Fray_orchestrator%2Fpoetry.lock",
+      "raw_url": "https://github.com/NVIDIA/TensorRT-LLM/raw/fffdfba7279a467e9df8c191aac332ccab8d2982/security_scanning%2Fexamples%2Fray_orchestrator%2Fpoetry.lock",
+      "contents_url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/contents/security_scanning%2Fexamples%2Fray_orchestrator%2Fpoetry.lock?ref=fffdfba7279a467e9df8c191aac332ccab8d2982",
+      "patch": "@@ -1408,14 +1408,14 @@ files = [\n \n [[package]]\n name = \"platformdirs\"\n-version = \"4.11.8\"\n+version = \"4.11.9\"\n description = \"A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`.\"\n optional = false\n python-versions = \">=3.10\"\n groups = [\"main\"]\n files = [\n-    {file = \"platformdirs-4.11.8-py3-none-any.whl\", hash = \"sha256:52f2f181bbfde907966932cc8312d967d02976422d66d537ea16092b8e291081\"},\n-    {file = \"platformdirs-4.11.8.tar.gz\", hash = \"sha256:f23abafea7dd4276d1f29104b83598d7dcc567cafd07c9c951e66665645437fc\"},\n+    {file = \"platformdirs-4.11.9-py3-none-any.whl\", hash = \"sha256:0a3958f58a9e30321eaef0a424dd0b77cce242886b36b8aa992f9731ef2d59c1\"},\n+    {file = \"platformdirs-4.11.9.tar.gz\", hash = \"sha256:e2c66a8d384596cd98e3c4aea2d761df7bac95d9d8a2cc3946daa8cdafdaebc1\"},\n ]\n \n [[package]]"
+    },
+    {
+      "sha": "39083e82a7422e85865a478bfa04397f44053ab6",
+      "filename": "security_scanning/metadata.json",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/NVIDIA/TensorRT-LLM/blob/fffdfba7279a467e9df8c191aac332ccab8d2982/security_scanning%2Fmetadata.json",
+      "raw_url": "https://github.com/NVIDIA/TensorRT-LLM/raw/fffdfba7279a467e9df8c191aac332ccab8d2982/security_scanning%2Fmetadata.json",
+      "contents_url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/contents/security_scanning%2Fmetadata.json?ref=fffdfba7279a467e9df8c191aac332ccab8d2982",
+      "patch": "@@ -1,4 +1,4 @@\n {\n-  \"commit_hash\": \"1f73bc5f309545571ebce1e34a8e9c872d1e3dd0\",\n-  \"timestamp\": \"2026-09-16T02:49:34Z\"\n+  \"commit_hash\": \"97f84eb314a0761a88fea68bc3b9ea29604af77e\",\n+  \"timestamp\": \"2026-09-16T16:42:05Z\"\n }"
+    },
+    {
+      "sha": "865325325ff3f2cca8d0e998ebdf735e2608f42a",
+      "filename": "security_scanning/poetry.lock",
+      "status": "modified",
+      "additions": 34,
+      "deletions": 34,
+      "changes": 68,
+      "blob_url": "https://github.com/NVIDIA/TensorRT-LLM/blob/fffdfba7279a467e9df8c191aac332ccab8d2982/security_scanning%2Fpoetry.lock",
+      "raw_url": "https://github.com/NVIDIA/TensorRT-LLM/raw/fffdfba7279a467e9df8c191aac332ccab8d2982/security_scanning%2Fpoetry.lock",
+      "contents_url": "https://api.github.com/repos/NVIDIA/TensorRT-LLM/contents/security_scanning%2Fpoetry.lock?ref=fffdfba7279a467e9df8c191aac332ccab8d2982",
+      "patch": "@@ -274,41 +274,41 @@ trio = [\"trio (>=0.32.0)\"]\n \n [[package]]\n name = \"apache-tvm-ffi\"\n-version = \"0.1.14\"\n+version = \"0.1.14.post0\"\n description = \"tvm ffi\"\n optional = false\n python-versions = \">=3.9\"\n groups = [\"main\"]\n files = [\n-    {file = \"apache_tvm_ffi-0.1.14-cp310-cp310-macosx_11_0_arm64.whl\", hash = \"sha256:34ae778307acd2570f8759dca4b6e8b7e76fad5823dbc0c8e5803aee802e811b\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp310-cp310-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:30428782774198548483f18d9439e44ec2361faafde8584e46b65e3267d8cc65\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:2cab0a73d262fb827ee8713f1973258771c0403ce99618cecf1faf6e4f78b413\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp310-cp310-win_amd64.whl\", hash = \"sha256:dceab873037f2f7cba174b7814582193a33fbe61ffe9a0291b8e5752aa9197d1\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp311-cp311-macosx_11_0_arm64.whl\", hash = \"sha256:d9dcde95e55946d876672598fe0993014d430690f637b2f7d6d09390cb06d25f\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp311-cp311-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:3adace54e2f9a2ce7d3f0b774f44726d5caf3b56bcfd913554887384b0bf6af9\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:68825366d077ac1bf47782f9397cf4a2da266c47677910ca5c7f9052d653cefb\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp311-cp311-win_amd64.whl\", hash = \"sha256:551d5a0725d5f6a412a49909c9e0fd8011ec57111cc5a2d21aed62e51ac5f5a6\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp312-cp312-macosx_11_0_arm64.whl\", hash = \"sha256:0554a487471c6092cbf9bc035da76309d94207c03495f510714fc2b7a99641c6\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:dff8ae6410cfaad79ea60d9eab7c851d51fc7c3be2d6925bd9d3399e99d8bbed\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:25a901a15ba027d0c55db8ea1a2cfa994c53e1234cc4e92a009f4b44e657a982\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp312-cp312-win_amd64.whl\", hash = \"sha256:a6af0a29916494a33d40dc469951d9a631b2f5938003a1bfaabc2a7a33e6e3a2\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp313-cp313-macosx_11_0_arm64.whl\", hash = \"sha256:23793338331b9c63af7c0547f005db4dfb8828f6f1b32afe7e17e9ae3e8f6206\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp313-cp313-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:9593ef8fd4948d6b6552874c35c1dccf50e537355a8046d9a38407adec4aabf7\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:406ab20f757c653067020af5d0a5d2a4364e9a9cc7237df72cbfe8037d9c512f\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp313-cp313-win_amd64.whl\", hash = \"sha256:00c669eb0ac1a400e33e1f3e948ad0e400948b34bc202f8a88358e6318dea9ec\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp314-cp314-macosx_11_0_arm64.whl\", hash = \"sha256:5d8e66c73b75ddaecf97f82cb206d4661ba3b3332c62ed051e82e9ac26ca08f5\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp314-cp314-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:38460850ab5753b15e85f36db2642c3a142e788316fba405925c16644d4c0605\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:bf6e71065be780fffb3bfb0cf9c1b494f7cf28e685c0a4150fff8deed5d6f578\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp314-cp314-win_amd64.whl\", hash = \"sha256:12ea8d275f2b4633e8c407b134b555df067747a7da7c7a7e154e87ab9ac963e9\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp314-cp314t-macosx_11_0_arm64.whl\", hash = \"sha256:71e8844cfd2369659feabe7b595e8401441b831e307d2eaf3c979067a5433db4\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp314-cp314t-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:d5f170ab2fc84ed4c348ed752366410d0cdf75aa5d4d4aa4e3340147a0f6e097\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp314-cp314t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:b1c920f85105d96bfb5a533f849086dcf7d3d8e23aa240b7fb6c4a944d7fa052\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp314-cp314t-win_amd64.whl\", hash = \"sha256:83ad07d831363e1a95f33ab74656250cf48ba61d59b7070609566f9bf38ca47c\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp39-cp39-macosx_11_0_arm64.whl\", hash = \"sha256:aec80f24b39b12d43ca192004c7eb6c4e0a585be8c020412824e02dce411005e\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp39-cp39-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:edba5caf5b99ac8a05c0ba4d0389b16ed7160252573290000b730aa700ad94ff\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:a2f3006e721d20ad604a0026f09d80212ff82a980299326d8a08b6aee64abdfc\"},\n-    {file = \"apache_tvm_ffi-0.1.14-cp39-cp39-win_amd64.whl\", hash = \"sha256:dfca8f92e41d27174d412e5597a37dc3b21929bed2bc9be46f1d949c1e617647\"},\n-    {file = \"apache_tvm_ffi-0.1.14.tar.gz\", hash = \"sha256:1a54bf6188b233ff3926388f95b5f3f424119ff4ec64b833e3ee0e1b620e9da1\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp310-cp310-macosx_11_0_arm64.whl\", hash = \"sha256:8b826bfefe59e328f1c36f806be3904c3ae157fb8c3ee45c470cafe8c7b9294b\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp310-cp310-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:cdd453329684f7a26043de02d3de50c11882589c6c0de91029c7c59c65e35bd9\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:7450ed7b1621fac077fbe931c9efd8b41ae65260e056ca5912cf00e927db1699\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp310-cp310-win_amd64.whl\", hash = \"sha256:dc4dcda9b7d990452200e06ac3d677b6b675c761b23d0970a05b8bf78e1609cb\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp311-cp311-macosx_11_0_arm64.whl\", hash = \"sha256:7b23d2fd4cc889f65aa50afe3c674e072349d33505735966f041afe35a882211\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp311-cp311-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:d1a011a0743acb88ffc650c70bfb1376fa90cb7196b042598c6d0c1e690ce185\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:85733ec11d2c9dd258aa134e3fba9c4373a8f45c261f2a3a3df20daed92aa699\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp311-cp311-win_amd64.whl\", hash = \"sha256:32bb19f7455fc7b5104c9f8804a907d4c4a85128cd39ec636bbfaa549e3f17d9\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp312-cp312-macosx_11_0_arm64.whl\", hash = \"sha256:6f5480307d47c73c5d3f170f3b0d122e9d20f358dee32237827d18fe883c39f9\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:8efb2234473980271c665eea40bfdfbb154c46e0dda195e1c3a36963318aa029\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:fbff37582722fa382b04cdb15654a6bf78172d86ea7afb95b91110e3f04a934b\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp312-cp312-win_amd64.whl\", hash = \"sha256:d285efd9cf25f26e524027039b14c12ac707f4b4bec20efd368eb157d79b358b\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp313-cp313-macosx_11_0_arm64.whl\", hash = \"sha256:883e399dbbe6a99201fa60f75a7f33711b6a932e96484abd1a19d783a46fba48\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp313-cp313-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:9003b2bec3f4aa8debaadd18ce9dae9112172009a8344ed10279645b4674a073\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:70a2cd855fcd3a9dda94d0d328d6356d7337de5268b7d79a0172a89e9c4ca8a7\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp313-cp313-win_amd64.whl\", hash = \"sha256:d9b69637a1f9c2c81f0df8debaf578bcba29c80d1249e41777c0b053ebaddf39\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp314-cp314-macosx_11_0_arm64.whl\", hash = \"sha256:2b17b815dd9cb25ae87d1a9cbff34270118b5f4a95c789948447116c37e02ed8\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp314-cp314-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:67e8fc285bda5f019173a6e2b10a66f7e6b23cb7ce103419e578b775517165e1\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:1c1f8ed242d2c1603a138b43cb3977c462b90fc8d21d91fddf02d6b0eee4591a\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp314-cp314-win_amd64.whl\", hash = \"sha256:c9e0dab3931e77be2086db1acfcc5c42a40101e7f5f5ad435f6dee770bb15c76\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp314-cp314t-macosx_11_0_arm64.whl\", hash = \"sha256:9b562741956934c2e76d88cf9c4249898238f4a068a57b665b05fb20a8d52be6\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp314-cp314t-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:235ac180db4399e2ce1617065545fc2c23c0f314962c920b34e4f820cca99cff\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp314-cp314t-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:aeb45c1eeccf889ea5c327c19cd8d5a8c1d5f03b67177fd1c5281bbfeb2f2fd8\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp314-cp314t-win_amd64.whl\", hash = \"sha256:b996ce779ae5106445c7d5b778abdf8bfbb82866e94df0974341fbc083936341\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp39-cp39-macosx_11_0_arm64.whl\", hash = \"sha256:c6f44d9ac40682bf1b7bd88eb207476938a5f76b5e5bb5af9e4d266ace5ebb9e\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp39-cp39-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl\", hash = \"sha256:1de6bb3356b0607408b009db6b66ea6e7ffc36a3119533bfe5a2aaf90b2d459d\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\", hash = \"sha256:7025c8920b45b841b0fe072459691862eb4315ae702ff1c3f7e8cbf02c8000af\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0-cp39-cp39-win_amd64.whl\", hash = \"sha256:8348b31db043d103155696795638e1c0170325f519fd94d0844a1e99b763fe10\"},\n+    {file = \"apache_tvm_ffi-0.1.14.post0.tar.gz\", hash = \"sha256:53cb68ac05ca84fd32042211c13fcee372729dcbff537f8689289b7f2f7d765d\"},\n ]\n \n [package.dependencies]\n@@ -5029,14 +5029,14 @@ files = [\n \n [[package]]\n name = \"pyproject-hooks\"\n-version = \"1.3.0\"\n+version = \"1.3.3\"\n description = \"Wrappers to call pyproject.toml-based build backend hooks.\"\n optional = false\n python-versions = \">=3.8\"\n groups = [\"main\"]\n files = [\n-    {file = \"pyproject_hooks-1.3.0-py3-none-any.whl\", hash = \"sha256:733909c6ac133d222c0b8cfc11364f19d363793d8fbcd8bb7240c5220af8d35d\"},\n-    {file = \"pyproject_hooks-1.3.0.tar.gz\", hash = \"sha256:26dfd4229ff1820b7964be33bd3eb64367eb7c841215defe11341450c219ce20\"},\n+    {file = \"pyproject_hooks-1.3.3-py3-none-any.whl\", hash = \"sha256:5fc53fdac9f7bd63fbcdc868fb5f90b4784d78a53a3d3388cd738b807441a20b\"},\n+    {file = \"pyproject_hooks-1.3.3.tar.gz\", hash = \"sha256:defda19b854fa0d3bd4f76ea4ddcba8abd7dcfcdd585a6690ade050744fc5f43\"},\n ]\n \n [[package]]\n@@ -7129,4 +7129,4 @@ type = [\"pytest-mypy (>=1.0.1) ; platform_python_implementation != \\\"PyPy\\\"\"]\n [metadata]\n lock-version = \"2.1\"\n python-versions = \">=3.10,<3.13\"\n-content-hash = \"b9cc0338d7fc59039f430804ba2f04b73853403e5b12f2ecf3a5ca0ad533b1d7\"\n+content-hash = \"2cf0c778de39ae9200ae01b6ec0d1d9806eeafb14735f36d7804bfb6b4a69925\""
+    }
+  ]
+}

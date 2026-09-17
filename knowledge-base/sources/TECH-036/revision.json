@@ -1,0 +1,173 @@
+{
+  "sha": "509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+  "node_id": "C_kwDOPbFNk9oAKDUwOWVlMmJkMGJhOWZjM2QzMWZiOTZmZThmNWE2ZWY3M2I1MTgzM2M",
+  "commit": {
+    "author": {
+      "name": "Christian Klotz",
+      "email": "hello@christianklotz.co.uk",
+      "date": "2026-09-16T16:21:17Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-16T16:21:17Z"
+    },
+    "message": "fix(coding-agent): fail closed on user bash hook errors (#9662)\n\n* fix(coding-agent): fail closed on user bash hook errors\n\nPrevent failed execution-routing hooks from falling back to the local shell.\n\nFixes #9068\n\n* fix(coding-agent): validate user bash hook results\n\n* docs(coding-agent): clarify user bash result semantics\n\n* docs(coding-agent): streamline user bash semantics\n\n* fix(coding-agent): strengthen user bash regressions\n\n* docs(coding-agent): clarify user bash breaking change",
+    "tree": {
+      "sha": "bc7396cb648251cfa7b8095ef2b4b503999ba1d4",
+      "url": "https://api.github.com/repos/earendil-works/pi/git/trees/bc7396cb648251cfa7b8095ef2b4b503999ba1d4"
+    },
+    "url": "https://api.github.com/repos/earendil-works/pi/git/commits/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqsH+CRC1aQ7uu5UhlAAAfPYQADgDxPa+di4L2zZmsPG6rl1l\n7tS6W/g2vMbcrfzv4AIHHTlg2l0a9ZE01ivBCRsYPood+CTbF6lAsNI0avhHFD+I\nF58OV8drcH3QV0WWmzPkZBXQVA6zR69axE8iqQY0AXFgbDfq24szGJTlU6DvedoZ\ndtIxM3y4TT/Fb8O6QVrZxImND6Ili7ZiBuGPJ9uy8JU8J86yqHpLwfz2T36cvxnH\nJ7x43gq4d0RMR3tltlB+HWxq07/X/7PLDsEATPfihhiie2QPi8G0uw6D86ipmwQd\neqJFtMpnBQPvGcAJbQW/kGseMFpazdOdBI7OiOKFXBoz7S7HOMp7LuaBhCo9yPLZ\nmGV3t8V7nuQJ+49KNhym1Se4eNeTblWyyHkm2w4EVyiC60COgKcUQaqJBckbKS0R\nviqh6LIWfUfhnNrfi9Kkut01XdaCmKD0p2OcA0EQ7HrxSmYbnRuTstekqxKdM92Y\nIdx5w/4ajyAD2Mcz+Ewx6fDmq/wAy4oTRsE1EFmXa2ENLhACMBxieOIchKjYBowI\nZbnO/JYx4Pw130uxWdBNhnKLIYQ428cFRPrAbuIuNSAuBhpBAcQA8CtMp6rUlpVT\n+LhDd90vV0EObWXEc6PC1n+ukLaCeA1RuQrk1thnomSs/zWitEhVR6laQ5ERk4Yg\n4Ot8eTOKDQ9kE9DeT04z\n=jJ3p\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree bc7396cb648251cfa7b8095ef2b4b503999ba1d4\nparent bdee230f1ea4beec1972c54716433ced691a92b5\nauthor Christian Klotz <hello@christianklotz.co.uk> 1789575677 +0100\ncommitter GitHub <noreply@github.com> 1789575677 +0100\n\nfix(coding-agent): fail closed on user bash hook errors (#9662)\n\n* fix(coding-agent): fail closed on user bash hook errors\n\nPrevent failed execution-routing hooks from falling back to the local shell.\n\nFixes #9068\n\n* fix(coding-agent): validate user bash hook results\n\n* docs(coding-agent): clarify user bash result semantics\n\n* docs(coding-agent): streamline user bash semantics\n\n* fix(coding-agent): strengthen user bash regressions\n\n* docs(coding-agent): clarify user bash breaking change",
+      "verified_at": "2026-09-16T16:21:18Z"
+    }
+  },
+  "url": "https://api.github.com/repos/earendil-works/pi/commits/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+  "html_url": "https://github.com/earendil-works/pi/commit/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+  "comments_url": "https://api.github.com/repos/earendil-works/pi/commits/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/comments",
+  "author": {
+    "login": "christianklotz",
+    "id": 69443,
+    "node_id": "MDQ6VXNlcjY5NDQz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/69443?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/christianklotz",
+    "html_url": "https://github.com/christianklotz",
+    "followers_url": "https://api.github.com/users/christianklotz/followers",
+    "following_url": "https://api.github.com/users/christianklotz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/christianklotz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/christianklotz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/christianklotz/subscriptions",
+    "organizations_url": "https://api.github.com/users/christianklotz/orgs",
+    "repos_url": "https://api.github.com/users/christianklotz/repos",
+    "events_url": "https://api.github.com/users/christianklotz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/christianklotz/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "bdee230f1ea4beec1972c54716433ced691a92b5",
+      "url": "https://api.github.com/repos/earendil-works/pi/commits/bdee230f1ea4beec1972c54716433ced691a92b5",
+      "html_url": "https://github.com/earendil-works/pi/commit/bdee230f1ea4beec1972c54716433ced691a92b5"
+    }
+  ],
+  "stats": {
+    "total": 427,
+    "additions": 413,
+    "deletions": 14
+  },
+  "files": [
+    {
+      "sha": "f17b1b9707514f144c39d7233223f2be521cfa84",
+      "filename": "packages/coding-agent/CHANGELOG.md",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/earendil-works/pi/blob/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2FCHANGELOG.md",
+      "raw_url": "https://github.com/earendil-works/pi/raw/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2FCHANGELOG.md",
+      "contents_url": "https://api.github.com/repos/earendil-works/pi/contents/packages%2Fcoding-agent%2FCHANGELOG.md?ref=509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+      "patch": "@@ -2,6 +2,10 @@\n \n ## [Unreleased]\n \n+### Breaking Changes\n+\n+- `user_bash` now fails closed: errors or invalid defined results abort the command without invoking later handlers or executing locally. Return `undefined` to continue propagation; otherwise return `{ operations }` or `{ result }` ([#9068](https://github.com/earendil-works/pi/issues/9068)).\n+\n ### Added\n \n - Added `ctx.modelRegistry.stream()` and `streamSimple()` for extension model calls through configured providers with resolved authentication ([#8964](https://github.com/earendil-works/pi/issues/8964))."
+    },
+    {
+      "sha": "9b666e649d8f32fe0c1e12e5ffa591cc387d01c4",
+      "filename": "packages/coding-agent/docs/extensions.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/earendil-works/pi/blob/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Fdocs%2Fextensions.md",
+      "raw_url": "https://github.com/earendil-works/pi/raw/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Fdocs%2Fextensions.md",
+      "contents_url": "https://api.github.com/repos/earendil-works/pi/contents/packages%2Fcoding-agent%2Fdocs%2Fextensions.md?ref=509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+      "patch": "@@ -909,6 +909,8 @@ pi.on(\"user_bash\", (event, ctx) => {\n });\n ```\n \n+Returning `undefined` continues to the next handler, then local execution if none handles the event. A valid result stops propagation: `operations` executes the command through the supplied backend, while `result` records the completed command without executing it.\n+\n ### Input Events\n \n #### input"
+    },
+    {
+      "sha": "68d0086948f72c3ba3f3d671e5ef784ffcfddb65",
+      "filename": "packages/coding-agent/src/core/extensions/runner.ts",
+      "status": "modified",
+      "additions": 33,
+      "deletions": 2,
+      "changes": 35,
+      "blob_url": "https://github.com/earendil-works/pi/blob/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Fsrc%2Fcore%2Fextensions%2Frunner.ts",
+      "raw_url": "https://github.com/earendil-works/pi/raw/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Fsrc%2Fcore%2Fextensions%2Frunner.ts",
+      "contents_url": "https://api.github.com/repos/earendil-works/pi/contents/packages%2Fcoding-agent%2Fsrc%2Fcore%2Fextensions%2Frunner.ts?ref=509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+      "patch": "@@ -118,6 +118,32 @@ const buildBuiltinKeybindings = (resolvedKeybindings: KeybindingsConfig): BuiltI\n \treturn builtinKeybindings;\n };\n \n+function isUserBashEventResult(value: unknown): value is UserBashEventResult {\n+\tif (typeof value !== \"object\" || value === null) return false;\n+\tconst candidate = value as Record<string, unknown>;\n+\tconst hasOperations = candidate.operations !== undefined;\n+\tconst hasResult = candidate.result !== undefined;\n+\tif (hasOperations === hasResult) return false;\n+\n+\tif (hasOperations) {\n+\t\tconst operations = candidate.operations;\n+\t\tif (typeof operations !== \"object\" || operations === null) return false;\n+\t\treturn typeof (operations as Record<string, unknown>).exec === \"function\";\n+\t}\n+\n+\tconst result = candidate.result;\n+\tif (typeof result !== \"object\" || result === null) return false;\n+\tconst resultRecord = result as Record<string, unknown>;\n+\treturn (\n+\t\ttypeof resultRecord.output === \"string\" &&\n+\t\t\"exitCode\" in resultRecord &&\n+\t\t(resultRecord.exitCode === undefined || typeof resultRecord.exitCode === \"number\") &&\n+\t\ttypeof resultRecord.cancelled === \"boolean\" &&\n+\t\ttypeof resultRecord.truncated === \"boolean\" &&\n+\t\t(resultRecord.fullOutputPath === undefined || typeof resultRecord.fullOutputPath === \"string\")\n+\t);\n+}\n+\n /** Combined result from all before_agent_start handlers. */\n interface BeforeAgentStartCombinedResult {\n \tmessages: NonNullable<BeforeAgentStartEventResult[\"message\"]>[];\n@@ -1019,9 +1045,13 @@ export class ExtensionRunner {\n \t\t\tfor (const handler of handlers) {\n \t\t\t\ttry {\n \t\t\t\t\tconst handlerResult = await handler(event, ctx);\n-\t\t\t\t\tif (handlerResult) {\n-\t\t\t\t\t\treturn handlerResult as UserBashEventResult;\n+\t\t\t\t\tif (handlerResult === undefined) continue;\n+\t\t\t\t\tif (!isUserBashEventResult(handlerResult)) {\n+\t\t\t\t\t\tthrow new Error(\n+\t\t\t\t\t\t\t\"Invalid user_bash handler result: return undefined for local execution or exactly one valid { operations } or { result } object\",\n+\t\t\t\t\t\t);\n \t\t\t\t\t}\n+\t\t\t\t\treturn handlerResult;\n \t\t\t\t} catch (err) {\n \t\t\t\t\tconst message = err instanceof Error ? err.message : String(err);\n \t\t\t\t\tconst stack = err instanceof Error ? err.stack : undefined;\n@@ -1031,6 +1061,7 @@ export class ExtensionRunner {\n \t\t\t\t\t\terror: message,\n \t\t\t\t\t\tstack,\n \t\t\t\t\t});\n+\t\t\t\t\tthrow err;\n \t\t\t\t}\n \t\t\t}\n \t\t}"
+    },
+    {
+      "sha": "afbd82b74100a4f213e2370e3576ab7a70cb7ae6",
+      "filename": "packages/coding-agent/src/core/extensions/types.ts",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 6,
+      "changes": 17,
+      "blob_url": "https://github.com/earendil-works/pi/blob/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Fsrc%2Fcore%2Fextensions%2Ftypes.ts",
+      "raw_url": "https://github.com/earendil-works/pi/raw/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Fsrc%2Fcore%2Fextensions%2Ftypes.ts",
+      "contents_url": "https://api.github.com/repos/earendil-works/pi/contents/packages%2Fcoding-agent%2Fsrc%2Fcore%2Fextensions%2Ftypes.ts?ref=509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+      "patch": "@@ -1134,12 +1134,17 @@ export interface ToolCallEventResult {\n }\n \n /** Result from user_bash event handler */\n-export interface UserBashEventResult {\n-\t/** Custom operations to use for execution */\n-\toperations?: BashOperations;\n-\t/** Full replacement: extension handled execution, use this result */\n-\tresult?: BashResult;\n-}\n+export type UserBashEventResult =\n+\t| {\n+\t\t\t/** Custom operations to use for execution */\n+\t\t\toperations: BashOperations;\n+\t\t\tresult?: never;\n+\t  }\n+\t| {\n+\t\t\toperations?: never;\n+\t\t\t/** Full replacement: extension handled execution, use this result */\n+\t\t\tresult: BashResult;\n+\t  };\n \n export interface ToolResultEventResult {\n \tcontent?: (TextContent | ImageContent)[];"
+    },
+    {
+      "sha": "81d6e0dea0e001195877edca1d3d0ef2dc651546",
+      "filename": "packages/coding-agent/src/modes/interactive/interactive-mode.ts",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 6,
+      "changes": 19,
+      "blob_url": "https://github.com/earendil-works/pi/blob/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Fsrc%2Fmodes%2Finteractive%2Finteractive-mode.ts",
+      "raw_url": "https://github.com/earendil-works/pi/raw/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Fsrc%2Fmodes%2Finteractive%2Finteractive-mode.ts",
+      "contents_url": "https://api.github.com/repos/earendil-works/pi/contents/packages%2Fcoding-agent%2Fsrc%2Fmodes%2Finteractive%2Finteractive-mode.ts?ref=509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+      "patch": "@@ -76,6 +76,7 @@ import type {\n \tExtensionWidgetOptions,\n \tMarkdownTransformer,\n \tProjectTrustContext,\n+\tUserBashEventResult,\n \tWorkingIndicatorOptions,\n } from \"../../core/extensions/index.ts\";\n import { FooterDataProvider, type ReadonlyFooterDataProvider } from \"../../core/footer-data-provider.ts\";\n@@ -6507,12 +6508,18 @@ export class InteractiveMode {\n \t\tconst extensionRunner = this.session.extensionRunner;\n \n \t\t// Emit user_bash event to let extensions intercept\n-\t\tconst eventResult = await extensionRunner.emitUserBash({\n-\t\t\ttype: \"user_bash\",\n-\t\t\tcommand,\n-\t\t\texcludeFromContext,\n-\t\t\tcwd: this.sessionManager.getCwd(),\n-\t\t});\n+\t\tlet eventResult: UserBashEventResult | undefined;\n+\t\ttry {\n+\t\t\teventResult = await extensionRunner.emitUserBash({\n+\t\t\t\ttype: \"user_bash\",\n+\t\t\t\tcommand,\n+\t\t\t\texcludeFromContext,\n+\t\t\t\tcwd: this.sessionManager.getCwd(),\n+\t\t\t});\n+\t\t} catch {\n+\t\t\t// The extension runner already reported the error. Do not fall back to local execution.\n+\t\t\treturn;\n+\t\t}\n \n \t\t// If extension returned a full result, use it directly\n \t\tif (eventResult?.result) {"
+    },
+    {
+      "sha": "88088685d32cd168cc49d889145b08cdc2bdd480",
+      "filename": "packages/coding-agent/test/extensions-runner.test.ts",
+      "status": "modified",
+      "additions": 78,
+      "deletions": 0,
+      "changes": 78,
+      "blob_url": "https://github.com/earendil-works/pi/blob/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Ftest%2Fextensions-runner.test.ts",
+      "raw_url": "https://github.com/earendil-works/pi/raw/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Ftest%2Fextensions-runner.test.ts",
+      "contents_url": "https://api.github.com/repos/earendil-works/pi/contents/packages%2Fcoding-agent%2Ftest%2Fextensions-runner.test.ts?ref=509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+      "patch": "@@ -617,6 +617,84 @@ describe(\"ExtensionRunner\", () => {\n \t\t\texpect(errors[0].error).toContain(\"Handler error!\");\n \t\t\texpect(errors[0].event).toBe(\"context\");\n \t\t});\n+\n+\t\t// Regression test for #9068.\n+\t\tit(\"fails closed when a user_bash handler throws\", async () => {\n+\t\t\tconst extCode = `\n+\t\t\t\texport default function(pi) {\n+\t\t\t\t\tpi.on(\"user_bash\", async () => {\n+\t\t\t\t\t\tthrow new Error(\"Routing failed\");\n+\t\t\t\t\t});\n+\t\t\t\t}\n+\t\t\t`;\n+\t\t\tfs.writeFileSync(path.join(extensionsDir, \"throws.ts\"), extCode);\n+\n+\t\t\tconst result = await discoverAndLoadExtensions([], tempDir, tempDir);\n+\t\t\tconst runner = new ExtensionRunner(result.extensions, result.runtime, tempDir, sessionManager, modelRegistry);\n+\t\t\tconst errors: Array<{ event: string; error: string }> = [];\n+\t\t\trunner.onError((error) => errors.push(error));\n+\n+\t\t\tawait expect(\n+\t\t\t\trunner.emitUserBash({ type: \"user_bash\", command: \"pwd\", excludeFromContext: false, cwd: tempDir }),\n+\t\t\t).rejects.toThrow(\"Routing failed\");\n+\t\t\texpect(errors).toMatchObject([{ event: \"user_bash\", error: \"Routing failed\" }]);\n+\t\t});\n+\n+\t\t// Regression test for #9068.\n+\t\tit.each([\n+\t\t\t[\"an empty object\", \"{}\"],\n+\t\t\t[\"null operations\", \"{ operations: null }\"],\n+\t\t\t[\"operations without exec\", \"{ operations: {} }\"],\n+\t\t\t[\"a null result\", \"{ result: null }\"],\n+\t\t\t[\"an incomplete result\", '{ result: { output: \"handled\" } }'],\n+\t\t\t[\n+\t\t\t\t\"operations and a result\",\n+\t\t\t\t'{ operations: { exec: async () => ({ exitCode: 0 }) }, result: { output: \"handled\", exitCode: 0, cancelled: false, truncated: false } }',\n+\t\t\t],\n+\t\t])(\"fails closed when a user_bash handler returns %s\", async (_description, handlerResult) => {\n+\t\t\tconst extCode = `\n+\t\t\t\texport default function(pi) {\n+\t\t\t\t\tpi.on(\"user_bash\", async () => (${handlerResult}));\n+\t\t\t\t}\n+\t\t\t`;\n+\t\t\tfs.writeFileSync(path.join(extensionsDir, \"invalid-result.ts\"), extCode);\n+\n+\t\t\tconst result = await discoverAndLoadExtensions([], tempDir, tempDir);\n+\t\t\tconst runner = new ExtensionRunner(result.extensions, result.runtime, tempDir, sessionManager, modelRegistry);\n+\t\t\tconst errors: Array<{ event: string; error: string }> = [];\n+\t\t\trunner.onError((error) => errors.push(error));\n+\n+\t\t\tawait expect(\n+\t\t\t\trunner.emitUserBash({ type: \"user_bash\", command: \"pwd\", excludeFromContext: false, cwd: tempDir }),\n+\t\t\t).rejects.toThrow(\"Invalid user_bash handler result\");\n+\t\t\texpect(errors).toMatchObject([\n+\t\t\t\t{ event: \"user_bash\", error: expect.stringContaining(\"Invalid user_bash handler result\") },\n+\t\t\t]);\n+\t\t});\n+\n+\t\tit(\"accepts valid user_bash operations and result overrides\", async () => {\n+\t\t\tconst extCode = `\n+\t\t\t\texport default function(pi) {\n+\t\t\t\t\tpi.on(\"user_bash\", async (event) => {\n+\t\t\t\t\t\tif (event.command === \"operations\") {\n+\t\t\t\t\t\t\treturn { operations: { exec: async () => ({ exitCode: 0 }) } };\n+\t\t\t\t\t\t}\n+\t\t\t\t\t\treturn { result: { output: \"handled\", exitCode: 0, cancelled: false, truncated: false } };\n+\t\t\t\t\t});\n+\t\t\t\t}\n+\t\t\t`;\n+\t\t\tfs.writeFileSync(path.join(extensionsDir, \"valid-results.ts\"), extCode);\n+\n+\t\t\tconst result = await discoverAndLoadExtensions([], tempDir, tempDir);\n+\t\t\tconst runner = new ExtensionRunner(result.extensions, result.runtime, tempDir, sessionManager, modelRegistry);\n+\t\t\tconst event = { type: \"user_bash\" as const, excludeFromContext: false, cwd: tempDir };\n+\n+\t\t\tconst operations = await runner.emitUserBash({ ...event, command: \"operations\" });\n+\t\t\texpect(operations).toEqual({ operations: { exec: expect.any(Function) } });\n+\t\t\tawait expect(runner.emitUserBash({ ...event, command: \"result\" })).resolves.toEqual({\n+\t\t\t\tresult: { output: \"handled\", exitCode: 0, cancelled: false, truncated: false },\n+\t\t\t});\n+\t\t});\n \t});\n \n \tdescribe(\"message and entry renderers\", () => {"
+    },
+    {
+      "sha": "58c0ec18b1104d2c9b98c0eed1381e407e2570fc",
+      "filename": "packages/coding-agent/test/suite/regressions/9068-user-bash-fail-closed.test.ts",
+      "status": "added",
+      "additions": 272,
+      "deletions": 0,
+      "changes": 272,
+      "blob_url": "https://github.com/earendil-works/pi/blob/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Ftest%2Fsuite%2Fregressions%2F9068-user-bash-fail-closed.test.ts",
+      "raw_url": "https://github.com/earendil-works/pi/raw/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages%2Fcoding-agent%2Ftest%2Fsuite%2Fregressions%2F9068-user-bash-fail-closed.test.ts",
+      "contents_url": "https://api.github.com/repos/earendil-works/pi/contents/packages%2Fcoding-agent%2Ftest%2Fsuite%2Fregressions%2F9068-user-bash-fail-closed.test.ts?ref=509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+      "patch": "@@ -0,0 +1,272 @@\n+import { afterEach, describe, expect, test, vi } from \"vitest\";\n+import type { AgentSessionRuntime } from \"../../../src/core/agent-session-runtime.ts\";\n+import type { ExtensionAPI, UserBashEvent, UserBashEventResult } from \"../../../src/core/extensions/types.ts\";\n+import { InteractiveMode } from \"../../../src/modes/interactive/interactive-mode.ts\";\n+import { runRpcMode } from \"../../../src/modes/rpc/rpc-mode.ts\";\n+import { createHarness, type Harness } from \"../harness.ts\";\n+\n+// Regression for https://github.com/earendil-works/pi/issues/9068\n+\n+const rpcIo = vi.hoisted(() => ({\n+\toutputLines: [] as string[],\n+\tlineHandler: undefined as ((line: string) => void) | undefined,\n+}));\n+\n+vi.mock(\"../../../src/core/output-guard.js\", () => ({\n+\tflushRawStdout: vi.fn(async () => {}),\n+\ttakeOverStdout: vi.fn(),\n+\twaitForRawStdoutBackpressure: vi.fn(async () => {}),\n+\twriteRawStdout: (line: string) => {\n+\t\trpcIo.outputLines.push(line);\n+\t},\n+}));\n+\n+vi.mock(\"../../../src/modes/interactive/theme/theme.js\", () => ({ theme: {} }));\n+\n+vi.mock(\"../../../src/modes/interactive/components/bash-execution.js\", () => ({\n+\tBashExecutionComponent: class {\n+\t\tappendOutput(): void {}\n+\t\tsetComplete(): void {}\n+\t},\n+}));\n+\n+vi.mock(\"../../../src/modes/rpc/jsonl.js\", () => ({\n+\tattachJsonlLineReader: vi.fn((_stream: NodeJS.ReadableStream, onLine: (line: string) => void) => {\n+\t\trpcIo.lineHandler = onLine;\n+\t\treturn () => {\n+\t\t\trpcIo.lineHandler = undefined;\n+\t\t};\n+\t}),\n+\tserializeJsonLine: (value: unknown) => `${JSON.stringify(value)}\\n`,\n+}));\n+\n+type NodeListener = Parameters<typeof process.on>[1];\n+\n+type ListenerSnapshot = {\n+\tstdinEnd: NodeListener[];\n+\tsignals: Map<NodeJS.Signals, NodeListener[]>;\n+};\n+\n+function takeListenerSnapshot(): ListenerSnapshot {\n+\tconst signals: NodeJS.Signals[] = process.platform === \"win32\" ? [\"SIGTERM\"] : [\"SIGTERM\", \"SIGHUP\"];\n+\treturn {\n+\t\tstdinEnd: process.stdin.listeners(\"end\") as NodeListener[],\n+\t\tsignals: new Map(signals.map((signal) => [signal, process.listeners(signal) as NodeListener[]])),\n+\t};\n+}\n+\n+function restoreListeners(snapshot: ListenerSnapshot): void {\n+\tfor (const listener of process.stdin.listeners(\"end\") as NodeListener[]) {\n+\t\tif (!snapshot.stdinEnd.includes(listener)) process.stdin.off(\"end\", listener);\n+\t}\n+\tfor (const [signal, previousListeners] of snapshot.signals) {\n+\t\tfor (const listener of process.listeners(signal) as NodeListener[]) {\n+\t\t\tif (!previousListeners.includes(listener)) process.off(signal, listener);\n+\t\t}\n+\t}\n+}\n+\n+function parseOutputLines(): Array<Record<string, unknown>> {\n+\treturn rpcIo.outputLines\n+\t\t.flatMap((line) => line.split(\"\\n\"))\n+\t\t.filter((line) => line.trim().length > 0)\n+\t\t.map((line) => JSON.parse(line) as Record<string, unknown>);\n+}\n+\n+function createRuntimeHost(harness: Harness): AgentSessionRuntime {\n+\treturn {\n+\t\tsession: harness.session,\n+\t\tnewSession: vi.fn(async () => ({ cancelled: true })),\n+\t\tswitchSession: vi.fn(async () => ({ cancelled: true })),\n+\t\tfork: vi.fn(async () => ({ cancelled: true, selectedText: \"\" })),\n+\t\tdispose: vi.fn(async () => {}),\n+\t\tsetRebindSession: vi.fn(),\n+\t} as unknown as AgentSessionRuntime;\n+}\n+\n+async function startRpcHarness(extension: (pi: ExtensionAPI) => void): Promise<{\n+\tharness: Harness;\n+\tsend(command: Record<string, unknown>): void;\n+\tcleanup(): void;\n+}> {\n+\tconst listenerSnapshot = takeListenerSnapshot();\n+\tconst harness = await createHarness({ extensionFactories: [extension] });\n+\tconst cleanup = () => {\n+\t\tharness.cleanup();\n+\t\trestoreListeners(listenerSnapshot);\n+\t};\n+\n+\ttry {\n+\t\tvoid runRpcMode(createRuntimeHost(harness));\n+\t\tawait vi.waitFor(() => expect(rpcIo.lineHandler).toBeDefined());\n+\t} catch (error) {\n+\t\tcleanup();\n+\t\tthrow error;\n+\t}\n+\n+\treturn {\n+\t\tharness,\n+\t\tsend(command) {\n+\t\t\tif (!rpcIo.lineHandler) throw new Error(\"RPC line handler is not attached\");\n+\t\t\trpcIo.lineHandler(JSON.stringify(command));\n+\t\t},\n+\t\tcleanup,\n+\t};\n+}\n+\n+type InteractiveBashContext = {\n+\tdefaultEditor: { onSubmit?: (text: string) => Promise<void> | void };\n+\teditor: { addToHistory?: (text: string) => void };\n+\tsession: Harness[\"session\"];\n+\tsessionManager: Harness[\"sessionManager\"];\n+\tui: { requestRender(): void };\n+\tchatContainer: { addChild(component: unknown): void };\n+\tpendingMessagesContainer: { addChild(component: unknown): void };\n+\tpendingBashComponents: unknown[];\n+\tisBashMode: boolean;\n+\thandleBashCommand(command: string, excludeFromContext?: boolean): Promise<void>;\n+\tshowError(message: string): void;\n+\tupdateEditorBorderColor(): void;\n+};\n+\n+const interactiveModePrototype = InteractiveMode.prototype as unknown as {\n+\tsetupEditorSubmitHandler(this: InteractiveBashContext): void;\n+\thandleBashCommand(this: InteractiveBashContext, command: string, excludeFromContext?: boolean): Promise<void>;\n+};\n+\n+const localResult = {\n+\toutput: \"local output\",\n+\texitCode: 0,\n+\tcancelled: false,\n+\ttruncated: false,\n+};\n+\n+const rpcCases: Array<{\n+\tname: string;\n+\textension: (pi: ExtensionAPI) => void;\n+\terror?: string;\n+\texecuteCount: number;\n+}> = [\n+\t{\n+\t\tname: \"fails the request without executing bash when a handler throws\",\n+\t\textension: (pi) => {\n+\t\t\tpi.on(\"user_bash\", async () => {\n+\t\t\t\tthrow new Error(\"Routing failed\");\n+\t\t\t});\n+\t\t},\n+\t\terror: \"Routing failed\",\n+\t\texecuteCount: 0,\n+\t},\n+\t{\n+\t\tname: \"fails the request without executing bash when a handler returns an empty result\",\n+\t\textension: (pi) => {\n+\t\t\tpi.on(\"user_bash\", async () => ({}) as unknown as UserBashEventResult);\n+\t\t},\n+\t\terror: \"Invalid user_bash handler result\",\n+\t\texecuteCount: 0,\n+\t},\n+\t{\n+\t\tname: \"executes bash normally when a handler returns undefined\",\n+\t\textension: (pi) => {\n+\t\t\tpi.on(\"user_bash\", async () => undefined);\n+\t\t},\n+\t\texecuteCount: 1,\n+\t},\n+];\n+\n+afterEach(() => {\n+\trpcIo.outputLines = [];\n+\trpcIo.lineHandler = undefined;\n+});\n+\n+describe(\"RPC user_bash failure handling (#9068)\", () => {\n+\ttest.each(rpcCases)(\"$name\", async ({ extension, error, executeCount }) => {\n+\t\tconst rpc = await startRpcHarness(extension);\n+\t\tconst executeBash = vi.spyOn(rpc.harness.session, \"executeBash\").mockResolvedValue(localResult);\n+\n+\t\ttry {\n+\t\t\trpc.send({ id: \"bash-request\", type: \"bash\", command: \"pwd\" });\n+\n+\t\t\tawait vi.waitFor(() => {\n+\t\t\t\tconst response = parseOutputLines().find(\n+\t\t\t\t\t(output) => output.type === \"response\" && output.id === \"bash-request\",\n+\t\t\t\t);\n+\t\t\t\texpect(response).toMatchObject({\n+\t\t\t\t\tid: \"bash-request\",\n+\t\t\t\t\ttype: \"response\",\n+\t\t\t\t\tcommand: \"bash\",\n+\t\t\t\t\tsuccess: error === undefined,\n+\t\t\t\t\t...(error ? { error: expect.stringContaining(error) } : { data: localResult }),\n+\t\t\t\t});\n+\t\t\t});\n+\n+\t\t\tif (error) {\n+\t\t\t\texpect(parseOutputLines()).toEqual(\n+\t\t\t\t\texpect.arrayContaining([\n+\t\t\t\t\t\texpect.objectContaining({\n+\t\t\t\t\t\t\ttype: \"extension_error\",\n+\t\t\t\t\t\t\tevent: \"user_bash\",\n+\t\t\t\t\t\t\terror: expect.stringContaining(error),\n+\t\t\t\t\t\t}),\n+\t\t\t\t\t]),\n+\t\t\t\t);\n+\t\t\t}\n+\t\t\texpect(executeBash).toHaveBeenCalledTimes(executeCount);\n+\t\t} finally {\n+\t\t\texecuteBash.mockRestore();\n+\t\t\trpc.cleanup();\n+\t\t}\n+\t});\n+});\n+\n+describe(\"Interactive user_bash failure handling (#9068)\", () => {\n+\ttest.each([\n+\t\t[\"!pwd\", false],\n+\t\t[\"!!pwd\", true],\n+\t])(\"fails closed for %s when a handler returns an empty result\", async (input, excludeFromContext) => {\n+\t\tconst events: UserBashEvent[] = [];\n+\t\tconst harness = await createHarness({\n+\t\t\textensionFactories: [\n+\t\t\t\t(pi) => {\n+\t\t\t\t\tpi.on(\"user_bash\", async (event) => {\n+\t\t\t\t\t\tevents.push(event);\n+\t\t\t\t\t\treturn {} as unknown as UserBashEventResult;\n+\t\t\t\t\t});\n+\t\t\t\t},\n+\t\t\t],\n+\t\t});\n+\t\tconst executeBash = vi.spyOn(harness.session, \"executeBash\").mockResolvedValue(localResult);\n+\t\tconst context: InteractiveBashContext = {\n+\t\t\tdefaultEditor: {},\n+\t\t\teditor: { addToHistory: vi.fn() },\n+\t\t\tsession: harness.session,\n+\t\t\tsessionManager: harness.sessionManager,\n+\t\t\tui: { requestRender: vi.fn() },\n+\t\t\tchatContainer: { addChild: vi.fn() },\n+\t\t\tpendingMessagesContainer: { addChild: vi.fn() },\n+\t\t\tpendingBashComponents: [],\n+\t\t\tisBashMode: true,\n+\t\t\thandleBashCommand: interactiveModePrototype.handleBashCommand,\n+\t\t\tshowError: vi.fn(),\n+\t\t\tupdateEditorBorderColor: vi.fn(),\n+\t\t};\n+\t\tinteractiveModePrototype.setupEditorSubmitHandler.call(context);\n+\n+\t\ttry {\n+\t\t\tawait context.defaultEditor.onSubmit?.(input);\n+\n+\t\t\texpect(events).toEqual([\n+\t\t\t\t{\n+\t\t\t\t\ttype: \"user_bash\",\n+\t\t\t\t\tcommand: \"pwd\",\n+\t\t\t\t\texcludeFromContext,\n+\t\t\t\t\tcwd: harness.sessionManager.getCwd(),\n+\t\t\t\t},\n+\t\t\t]);\n+\t\t\texpect(executeBash).not.toHaveBeenCalled();\n+\t\t} finally {\n+\t\t\texecuteBash.mockRestore();\n+\t\t\tharness.cleanup();\n+\t\t}\n+\t});\n+});"
+    }
+  ]
+}

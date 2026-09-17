@@ -1,0 +1,72 @@
+{
+  "source_id": "TECH-022",
+  "title": "lightseekorg/tokenspeed official repository and license snapshot",
+  "issuer": "lightseekorg",
+  "repository": "lightseekorg/tokenspeed",
+  "official_url": "https://github.com/lightseekorg/tokenspeed",
+  "revision": "688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+  "commit_date": "2026-09-16T03:50:01Z",
+  "retrieved_at": "2026-09-16T17:06:48.215760+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately. Protocol/model support is limited to inspected documents and code paths; HEAD capabilities are not automatically release capabilities.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/lightseekorg/tokenspeed/commits/HEAD",
+      "sha256": "1906caf2dc548a52d9a679546f1fc4df898a503a68fc6c55e6fb5359472073d2",
+      "bytes": 25899
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/lightseekorg/tokenspeed/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/README.md",
+      "sha256": "ed4a0136e74ee006f84331c328d1c550569ac3db4a8e56f5333175759db48912",
+      "bytes": 5839
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/lightseekorg/tokenspeed/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/LICENSE",
+      "sha256": "ef0cb6e89d6bdfb8f9b3f30b707a6c9ad6518b02e6823d1222fcfdb645ca48ff",
+      "bytes": 1101
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/lightseekorg/tokenspeed/releases/latest",
+      "sha256": "1cd49ffe645593dd3b72d272bc19e9cca42a0e49856e6aa7cf64b1637b9c6986",
+      "bytes": 76818
+    },
+    "tree.json": {
+      "requested_url": "https://api.github.com/repos/lightseekorg/tokenspeed/git/trees/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72?recursive=1",
+      "sha256": "bb309aff6f92aa370ef00cdbf1b77e564aed7510755a79ef2b89344a8c61ffc3",
+      "bytes": 743607
+    },
+    "getting-started.md": {
+      "requested_url": "https://raw.githubusercontent.com/lightseekorg/tokenspeed/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/docs/guides/getting-started.md",
+      "sha256": "b99518281ac2fc49e1a9f204f400dc2ba4ebe4a183d7d7c34dcfb0ded8190ac6",
+      "bytes": 1394
+    },
+    "launching.md": {
+      "requested_url": "https://raw.githubusercontent.com/lightseekorg/tokenspeed/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/docs/guides/launching.md",
+      "sha256": "2c92a95cb1cb279ef2e5cf64e0cb0cfab22b87242597c9f607edf55a75b81b9f",
+      "bytes": 1884
+    },
+    "models.md": {
+      "requested_url": "https://raw.githubusercontent.com/lightseekorg/tokenspeed/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/docs/recipes/models.md",
+      "sha256": "5384910aa89299a8b187801e2ec029286e2fcf41f1a557d6ae4e52ecfa60f37a",
+      "bytes": 35508
+    },
+    "compatible-parameters.md": {
+      "requested_url": "https://raw.githubusercontent.com/lightseekorg/tokenspeed/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/docs/configuration/compatible-parameters.md",
+      "sha256": "e1852729a79e009dda5b785c78732b7b7f200015f692784586be116f1c8238fd",
+      "bytes": 4061
+    },
+    "parallelism.md": {
+      "requested_url": "https://raw.githubusercontent.com/lightseekorg/tokenspeed/688bbb04f5b4ffb816b128c94ec805ad4a0fbc72/docs/serving/parallelism.md",
+      "sha256": "fadbf2908385088295a0a10c2021f2b4440997600fb90a9db4238232ad16d917",
+      "bytes": 13912
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

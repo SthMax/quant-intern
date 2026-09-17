@@ -1,0 +1,55 @@
+{
+  "source_id": "TECH-003",
+  "model_id": "Qwen/Qwen3.5-35B-A3B",
+  "title": "Qwen/Qwen3.5-35B-A3B official model card and configuration",
+  "issuer": "Qwen",
+  "official_url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+  "revision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+  "retrieved_at": "2026-09-16T08:32:41.571348+00:00",
+  "created_at_api": "2026-02-24T09:39:25.000Z",
+  "last_modified_api": "2026-04-24T02:38:38.000Z",
+  "license_tag": "apache-2.0",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Official model card, configuration and license metadata; no local inference or license approval. createdAt is repository creation, not a release announcement.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3.5-35B-A3B",
+      "sha256": "eefcc6fed694c00c8612714bc7eb90bbdfb4bec6fcd33d732b9d2d8f4f40afa8",
+      "bytes": 21202
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/resolve/59d61f3ce65a6d9863b86d2e96597125219dc754/README.md",
+      "sha256": "71c3bbc2eadadd5980bbdbb15df958c27d42ede24821015602a021109aacf492",
+      "bytes": 93160
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/resolve/59d61f3ce65a6d9863b86d2e96597125219dc754/config.json",
+      "sha256": "5e4d7f74fec2f360eb9cfbfcd6ec0c4c76e684d3a11caaed259d9fd9bfbc7944",
+      "bytes": 3544
+    },
+    "LICENSE": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/resolve/59d61f3ce65a6d9863b86d2e96597125219dc754/LICENSE",
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "bytes": 11544
+    },
+    "generation_config.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/resolve/59d61f3ce65a6d9863b86d2e96597125219dc754/generation_config.json",
+      "sha256": "4f25002776b741773666203dcea8f54619f177ace3ae483d311102092a4658e0",
+      "bytes": 244
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B/resolve/59d61f3ce65a6d9863b86d2e96597125219dc754/model.safetensors.index.json",
+      "sha256": "d8d0b7ca4e61ae107e3e87a3ff21136b3ac7c789e64bb24267227ca804e04205",
+      "bytes": 187463
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "Model Overview; Benchmark Results; vLLM; LICENSE; config and tensor index",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "verbatim_model_card",
+  "selection_status": "Historical first-pass candidate, superseded by user-prioritized pool on 2026-09-16",
+  "collection_role": "supporting"
+}

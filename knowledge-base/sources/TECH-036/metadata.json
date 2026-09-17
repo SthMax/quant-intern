@@ -1,0 +1,57 @@
+{
+  "source_id": "TECH-036",
+  "title": "earendil-works/pi official repository and license snapshot",
+  "issuer": "earendil-works",
+  "repository": "earendil-works/pi",
+  "official_url": "https://github.com/earendil-works/pi",
+  "revision": "509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+  "commit_date": "2026-09-16T16:21:17Z",
+  "retrieved_at": "2026-09-16T17:06:52.483141+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/earendil-works/pi/commits/HEAD",
+      "sha256": "07b2f78578c52c6b837a57b43e6a0fa34da03ac25716f17872256927c765b9eb",
+      "bytes": 30259
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/README.md",
+      "sha256": "e0ca2fd607c5ce7c7646964ee1da7495ac1c4b68a2b1d05faad24f224df74c8b",
+      "bytes": 6789
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/LICENSE",
+      "sha256": "0457f5bcec3b3b211605dfb5d1a49042fd638f3686a410fe099c24a25af13c48",
+      "bytes": 1069
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/earendil-works/pi/releases/latest",
+      "sha256": "4d2e76f6ece62061988059ad1e6bd04aeb7d62ad5411bb257ab746dbd920c1cd",
+      "bytes": 23481
+    },
+    "coding-agent.md": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages/coding-agent/README.md",
+      "sha256": "b5daa09877da34d122818e03436b51755bc1b5044ae8ab810df63f02888f1ebe",
+      "bytes": 33107
+    },
+    "models.md": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages/coding-agent/docs/models.md",
+      "sha256": "95da50b435cc876f4624508b59379ed90c32e5b9ac6c744a362ad072b4151785",
+      "bytes": 25553
+    },
+    "containerization.md": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c/packages/coding-agent/docs/containerization.md",
+      "sha256": "08c73601853f124668f311e03cf31e6413512fa08814acb11f5810d31f56c0c2",
+      "bytes": 6868
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

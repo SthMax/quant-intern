@@ -1,0 +1,57 @@
+{
+  "source_id": "TECH-039",
+  "title": "anthropics/claude-code official repository and license snapshot",
+  "issuer": "anthropics",
+  "repository": "anthropics/claude-code",
+  "official_url": "https://github.com/anthropics/claude-code",
+  "revision": "b782847db9a18667f00918ea341197f201b22bb4",
+  "commit_date": "2026-09-16T04:36:03Z",
+  "retrieved_at": "2026-09-16T17:06:54.343181+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/anthropics/claude-code/commits/HEAD",
+      "sha256": "d4704f84eae13b626948d3e2f58cf920c2dda1573ca44203d06a816a93c79066",
+      "bytes": 29924
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/anthropics/claude-code/b782847db9a18667f00918ea341197f201b22bb4/README.md",
+      "sha256": "aa0d8b80ac083e1591be0789273f447058cc9187b4331634a5614155da27778d",
+      "bytes": 2873
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/anthropics/claude-code/b782847db9a18667f00918ea341197f201b22bb4/LICENSE.md",
+      "sha256": "728158fd1037143fad6907e8fa34804177e598b7326519503fe83cafdef849e6",
+      "bytes": 150
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/anthropics/claude-code/releases/latest",
+      "sha256": "ad97061b26da24b4a4facfa04b27caf6ace63a3d24b4678646ec35d594ed499d",
+      "bytes": 31008
+    },
+    "llm-gateway.md": {
+      "requested_url": "https://code.claude.com/docs/en/llm-gateway.md",
+      "sha256": "236a7b796b0255310652fa290588809971d92ef4f8b43f2a3da5c1b16544f85f",
+      "bytes": 6182
+    },
+    "third-party.md": {
+      "requested_url": "https://code.claude.com/docs/en/third-party-integrations.md",
+      "sha256": "55a0b5d1f8715031fa8f598901575cb3fec78b534ab5c1a3fe5b7d212b48497c",
+      "bytes": 13605
+    },
+    "model-config.md": {
+      "requested_url": "https://code.claude.com/docs/en/model-config.md",
+      "sha256": "98334d9d22a0f7fb9cd93b108e5ba48ddad767952f1922e1c3ab74a0e96ca505",
+      "bytes": 111200
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

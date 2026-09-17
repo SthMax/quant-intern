@@ -1,0 +1,125 @@
+{
+  "sha": "5c1f28271295bb13034f4cf8964f74c117357d40",
+  "node_id": "C_kwDOIPDwltoAKDVjMWYyODI3MTI5NWJiMTMwMzRmNGNmODk2NGY3NGMxMTczNTdkNDA",
+  "commit": {
+    "author": {
+      "name": "Sydney Runkle",
+      "email": "54324534+sydney-runkle@users.noreply.github.com",
+      "date": "2026-09-16T16:50:09Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-16T16:50:09Z"
+    },
+    "message": "release(langchain): 1.4.1 (#40498)\n\nBumps the `langchain` package from 1.4.0 to 1.4.1 so the fixes merged\nsince the previous release can be published, including support for open\nMCP object arguments.\n\nUpdates the package version, importable `__version__`, and lockfile\npackage entry. `uv lock` resolved successfully; its unrelated workspace\ndependency churn was intentionally excluded.\n\nMade by [Open\nSWE](https://openswe.vercel.app/agents/3165441c-7638-5635-ae33-7d39299acb38)\n· openai:gpt-5.6-sol (medium)\n\nCo-authored-by: John Kennedy <65985482+jkennedyvz@users.noreply.github.com>\nCo-authored-by: open-swe[bot] <open-swe@users.noreply.github.com>",
+    "tree": {
+      "sha": "bd132f768948768b603ceb92f956c0387a235456",
+      "url": "https://api.github.com/repos/langchain-ai/langchain/git/trees/bd132f768948768b603ceb92f956c0387a235456"
+    },
+    "url": "https://api.github.com/repos/langchain-ai/langchain/git/commits/5c1f28271295bb13034f4cf8964f74c117357d40",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqsjBCRC1aQ7uu5UhlAAAdPIQACJmBOPrZ/1P/enzPXkBuKLf\nDITbrQMllaqy07Lm64eRIM8FfHrZtiKhe6pddp3tEu9p4F2Yuk3G9KjfzI2uEhXD\nzuHRDc4zeCFxhVO1fTMbLoPpRAyobTGi8nSXoCf+TGqdXEbK1gTzvsS/bT6ieYX3\nmdTQ2oRW+i5kJSSyHGG9dU/QZ3MZlbYLWmtR0l/M3aMJDwXLeBNBCCZTkYlMsAxd\nXc69bb3jv5/h1K6s7dI5/Lpy5uzRWXIdp8l09jYM8By9zec061i2SGnUzzp7xGn7\nw+nKe00mVeg+u9kiTyH+fNvWNB8jSS2V9qYOatpBtx1el/W9umodm/yiKWFp+kgl\nMsB9v05Ff18GNvhaLdX/O/v6iu0USm+XVTknInQYPFpPbOOulJPxdZBobjvUaBFF\nFZrPeqjnAhbabaRRf8e/rG67Xdkx6xcDtPjhhG7xtkyUNkOKMwnaTySZDJ4BxvAz\nOMA/yH24z2i076Il6TMlVrL5JMn1rsVrGKX0ljw9moZUt/ljIc3HFiTdmKffNj+Y\nxWH4XqiZAqbFJ0w5m8tcnp742W1QJKE8lSfeUTlYpfRjIVLSJzabVeoTwULEfV8I\nWIYabt4ql2UL8ry24f/5EmZERVW/zY49ff+dviTSKrX6HsKMrtC7MShL1yZP2Ov+\nZJiciN30TS+czYDnZHPF\n=uRg4\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree bd132f768948768b603ceb92f956c0387a235456\nparent 86f58e3403a6cf564f444009575eb2989f21dff5\nauthor Sydney Runkle <54324534+sydney-runkle@users.noreply.github.com> 1789577409 -0700\ncommitter GitHub <noreply@github.com> 1789577409 +0000\n\nrelease(langchain): 1.4.1 (#40498)\n\nBumps the `langchain` package from 1.4.0 to 1.4.1 so the fixes merged\nsince the previous release can be published, including support for open\nMCP object arguments.\n\nUpdates the package version, importable `__version__`, and lockfile\npackage entry. `uv lock` resolved successfully; its unrelated workspace\ndependency churn was intentionally excluded.\n\nMade by [Open\nSWE](https://openswe.vercel.app/agents/3165441c-7638-5635-ae33-7d39299acb38)\n· openai:gpt-5.6-sol (medium)\n\nCo-authored-by: John Kennedy <65985482+jkennedyvz@users.noreply.github.com>\nCo-authored-by: open-swe[bot] <open-swe@users.noreply.github.com>",
+      "verified_at": "2026-09-16T16:50:09Z"
+    }
+  },
+  "url": "https://api.github.com/repos/langchain-ai/langchain/commits/5c1f28271295bb13034f4cf8964f74c117357d40",
+  "html_url": "https://github.com/langchain-ai/langchain/commit/5c1f28271295bb13034f4cf8964f74c117357d40",
+  "comments_url": "https://api.github.com/repos/langchain-ai/langchain/commits/5c1f28271295bb13034f4cf8964f74c117357d40/comments",
+  "author": {
+    "login": "sydney-runkle",
+    "id": 54324534,
+    "node_id": "MDQ6VXNlcjU0MzI0NTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/54324534?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sydney-runkle",
+    "html_url": "https://github.com/sydney-runkle",
+    "followers_url": "https://api.github.com/users/sydney-runkle/followers",
+    "following_url": "https://api.github.com/users/sydney-runkle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sydney-runkle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sydney-runkle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sydney-runkle/subscriptions",
+    "organizations_url": "https://api.github.com/users/sydney-runkle/orgs",
+    "repos_url": "https://api.github.com/users/sydney-runkle/repos",
+    "events_url": "https://api.github.com/users/sydney-runkle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sydney-runkle/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "86f58e3403a6cf564f444009575eb2989f21dff5",
+      "url": "https://api.github.com/repos/langchain-ai/langchain/commits/86f58e3403a6cf564f444009575eb2989f21dff5",
+      "html_url": "https://github.com/langchain-ai/langchain/commit/86f58e3403a6cf564f444009575eb2989f21dff5"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "e048c530ff1544a1f60079116fc0577f268c7f02",
+      "filename": "libs/langchain_v1/langchain/__init__.py",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/langchain-ai/langchain/blob/5c1f28271295bb13034f4cf8964f74c117357d40/libs%2Flangchain_v1%2Flangchain%2F__init__.py",
+      "raw_url": "https://github.com/langchain-ai/langchain/raw/5c1f28271295bb13034f4cf8964f74c117357d40/libs%2Flangchain_v1%2Flangchain%2F__init__.py",
+      "contents_url": "https://api.github.com/repos/langchain-ai/langchain/contents/libs%2Flangchain_v1%2Flangchain%2F__init__.py?ref=5c1f28271295bb13034f4cf8964f74c117357d40",
+      "patch": "@@ -1,3 +1,3 @@\n \"\"\"Main entrypoint into LangChain.\"\"\"\n \n-__version__ = \"1.4.0\"\n+__version__ = \"1.4.1\""
+    },
+    {
+      "sha": "54e001d316149262beea7b7b75b93de8f8054e82",
+      "filename": "libs/langchain_v1/pyproject.toml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/langchain-ai/langchain/blob/5c1f28271295bb13034f4cf8964f74c117357d40/libs%2Flangchain_v1%2Fpyproject.toml",
+      "raw_url": "https://github.com/langchain-ai/langchain/raw/5c1f28271295bb13034f4cf8964f74c117357d40/libs%2Flangchain_v1%2Fpyproject.toml",
+      "contents_url": "https://api.github.com/repos/langchain-ai/langchain/contents/libs%2Flangchain_v1%2Fpyproject.toml?ref=5c1f28271295bb13034f4cf8964f74c117357d40",
+      "patch": "@@ -21,7 +21,7 @@ classifiers = [\n     \"Topic :: Software Development :: Libraries :: Python Modules\",\n ]\n \n-version = \"1.4.0\"\n+version = \"1.4.1\"\n requires-python = \">=3.10.0,<4.0.0\"\n dependencies = [\n     \"langchain-core>=1.6.0,<2.0.0\","
+    },
+    {
+      "sha": "78bd0716398ceb5f98eccc83d7a7dc450cdafc99",
+      "filename": "libs/langchain_v1/uv.lock",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/langchain-ai/langchain/blob/5c1f28271295bb13034f4cf8964f74c117357d40/libs%2Flangchain_v1%2Fuv.lock",
+      "raw_url": "https://github.com/langchain-ai/langchain/raw/5c1f28271295bb13034f4cf8964f74c117357d40/libs%2Flangchain_v1%2Fuv.lock",
+      "contents_url": "https://api.github.com/repos/langchain-ai/langchain/contents/libs%2Flangchain_v1%2Fuv.lock?ref=5c1f28271295bb13034f4cf8964f74c117357d40",
+      "patch": "@@ -2283,7 +2283,7 @@ wheels = [\n \n [[package]]\n name = \"langchain\"\n-version = \"1.4.0\"\n+version = \"1.4.1\"\n source = { editable = \".\" }\n dependencies = [\n     { name = \"langchain-core\" },"
+    }
+  ]
+}

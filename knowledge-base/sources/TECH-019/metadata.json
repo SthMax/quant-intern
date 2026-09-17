@@ -1,0 +1,22 @@
+{
+  "source_id": "TECH-019",
+  "title": "Apache License Version 2.0",
+  "issuer": "Apache Software Foundation",
+  "official_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+  "retrieved_at": "2026-09-16T09:13:07.810683+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_license_text",
+  "verification_scope": "Sections 1-4 and 6-9 inspected for entity definition, grants, distribution and warranty conditions.",
+  "files": {
+    "original.md": {
+      "requested_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    }
+  },
+  "reviewer": "Codex; official source and license inspection 2026-09-16",
+  "locator": "Sections 1-4 and 6-9",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md; knowledge-base/models/license-review-2026-09-16.md"
+}

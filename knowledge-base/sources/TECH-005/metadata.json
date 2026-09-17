@@ -1,0 +1,45 @@
+{
+  "source_id": "TECH-005",
+  "model_id": "google/gemma-4-12B-it",
+  "title": "google/gemma-4-12B-it official model card and configuration",
+  "issuer": "google",
+  "official_url": "https://huggingface.co/google/gemma-4-12B-it",
+  "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "retrieved_at": "2026-09-16T08:32:42.365478+00:00",
+  "created_at_api": "2026-05-23T01:17:15.000Z",
+  "last_modified_api": "2026-07-20T16:42:08.000Z",
+  "license_tag": "apache-2.0",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Official model card, configuration and license metadata; no local inference or license approval. createdAt is repository creation, not a release announcement.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/google/gemma-4-12B-it",
+      "sha256": "5a240dfbfc2f6d5a2b44cb2d6e0702a3d6297965f51a8cb3a39f8a93a78d2741",
+      "bytes": 23101
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/google/gemma-4-12B-it/resolve/707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7/README.md",
+      "sha256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+      "bytes": 28484
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/google/gemma-4-12B-it/resolve/707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7/config.json",
+      "sha256": "478c46e8d2c52d5c2d85bf67e3b3e8c90e7c9d91086cee27e3c267907e936bd9",
+      "bytes": 4423
+    },
+    "generation_config.json": {
+      "requested_url": "https://huggingface.co/google/gemma-4-12B-it/resolve/707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7/generation_config.json",
+      "sha256": "a8349d9bd64cc5841297fcb5002f0fdc4749c473c8f1b10ea337f9ce4ee7014e",
+      "bytes": 260
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "Models Overview; Benchmark Results; Getting Started; config and API tensor metadata",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "verbatim_model_card",
+  "selection_status": "Historical first-pass candidate, superseded by user-prioritized pool on 2026-09-16",
+  "collection_role": "supporting"
+}

@@ -1,0 +1,47 @@
+{
+  "source_id": "TECH-024",
+  "title": "Blaizzy/mlx-vlm official repository and license snapshot",
+  "issuer": "Blaizzy",
+  "repository": "Blaizzy/mlx-vlm",
+  "official_url": "https://github.com/Blaizzy/mlx-vlm",
+  "revision": "c72f637e03780616004bcd4168e1db03ce7b5c41",
+  "commit_date": "2026-09-16T15:28:51Z",
+  "retrieved_at": "2026-09-16T17:06:48.055775+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately. Protocol/model support is limited to inspected documents and code paths; HEAD capabilities are not automatically release capabilities.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/Blaizzy/mlx-vlm/commits/HEAD",
+      "sha256": "3dbe87234f31d6f60489387227b17995d7c11da38fa52656c3500ca65e608269",
+      "bytes": 201204
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/Blaizzy/mlx-vlm/c72f637e03780616004bcd4168e1db03ce7b5c41/README.md",
+      "sha256": "c1da5561982ad88e5f3adea0a41a16ff69d9c634b1546b5993f420a86505d346",
+      "bytes": 67447
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/Blaizzy/mlx-vlm/c72f637e03780616004bcd4168e1db03ce7b5c41/LICENSE",
+      "sha256": "f74c448746be3376e27dee43e2be9ec9d55f4820cd7466c603a6c7d1fd2d25b8",
+      "bytes": 1069
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/Blaizzy/mlx-vlm/releases/latest",
+      "sha256": "679803884c18ea8fa1d0d05641e6294cbcc7dfe02fbdec8a8362c4cb081cf0fb",
+      "bytes": 5701
+    },
+    "gemma4.md": {
+      "requested_url": "https://raw.githubusercontent.com/Blaizzy/mlx-vlm/c72f637e03780616004bcd4168e1db03ce7b5c41/mlx_vlm/models/gemma4/README.md",
+      "sha256": "5e3a36958f86002f7a203cbb4c12500f6c9fee35be00dfa51262298e220befac",
+      "bytes": 8752
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

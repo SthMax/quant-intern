@@ -1,0 +1,52 @@
+{
+  "source_id": "TECH-038",
+  "title": "openai/codex official repository and license snapshot",
+  "issuer": "openai",
+  "repository": "openai/codex",
+  "official_url": "https://github.com/openai/codex",
+  "revision": "fd346b8dbaa24573a0244bc917811849d27c4cf4",
+  "commit_date": "2026-09-16T16:59:47Z",
+  "retrieved_at": "2026-09-16T17:06:54.116845+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately. Protocol/model support is limited to inspected documents and code paths; HEAD capabilities are not automatically release capabilities.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/openai/codex/commits/HEAD",
+      "sha256": "f2eea447c68779717f15417883660a37dcce02e2705dc6dd9fa10dd309cc9a8e",
+      "bytes": 11657
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/openai/codex/fd346b8dbaa24573a0244bc917811849d27c4cf4/README.md",
+      "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+      "bytes": 3334
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/openai/codex/fd346b8dbaa24573a0244bc917811849d27c4cf4/LICENSE",
+      "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+      "bytes": 10926
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/openai/codex/releases/latest",
+      "sha256": "afcc30eee256cf504e2e76916adf5ee8b62f9514911da2e42e1876e59ae6f51d",
+      "bytes": 343878
+    },
+    "config-advanced.md": {
+      "requested_url": "https://learn.chatgpt.com/docs/config-file/config-advanced.md",
+      "sha256": "08a695b708b3f9a178751bf4be7088e4ee598bf8aba4ef9c67711b117e9279f9",
+      "bytes": 52319
+    },
+    "config-reference.md": {
+      "requested_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
+      "sha256": "70b83fbc16382697a3bee781d3a00b7f2d18dacc75a807ffa2d545ccacf4dd3a",
+      "bytes": 112475
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

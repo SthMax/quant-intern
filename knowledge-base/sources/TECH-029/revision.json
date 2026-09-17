@@ -1,0 +1,125 @@
+{
+  "sha": "230927fb3a9ac9b2893a30322b4dfea7cdea9a8f",
+  "node_id": "C_kwDOKFU0ldoAKDIzMDkyN2ZiM2E5YWM5YjI4OTNhMzAzMjJiNGRmZWE3Y2RlYTlhOGY",
+  "commit": {
+    "author": {
+      "name": "Lauren Hirata Singh",
+      "email": "lauren@langchain.dev",
+      "date": "2026-09-14T19:45:19Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-14T19:45:19Z"
+    },
+    "message": "docs: publish the generated llms.txt instead of a hand-written copy (#8922)\n\n## Why\n\n`docs/llms.txt` is written by hand and was last touched in February, so\nthe index served at <https://langchain-ai.github.io/langgraph/llms.txt>\nhad drifted badly:\n\n- 12 pages listed, against the 43 the docs site publishes.\n- One entry, `/oss/python/langgraph/why-langgraph`, now 404s.\n\nThe deploy workflow only fires on `docs/**` pushes, so nothing brought\nthe file back in line as the docs site changed. It is served verbatim:\n`generate_redirects.py` copies it into `docs/_site` via a `static_files`\nlist, and `deploy-redirects.yml` uploads that directory to Pages.\n\nThe docs site already generates exactly this index, and regenerates it\non every deploy:\n\n```\nhttps://docs.langchain.com/oss/python/langgraph/llms.txt\n```\n\n## What changed\n\n`generate_redirects.py` now fetches that index at build time and writes\nit into `_site`, so the published file cannot drift from the docs site.\nThe committed `docs/llms.txt` stays as a fallback only, refreshed here\nto current content.\n\n`deploy-redirects.yml` gains a weekly `schedule:` trigger, so docs\nchanges that never touch this repo still reach the deployed file. The\n`permissions:` block is unchanged.\n\n## Fetching remote content in CI\n\nThe fetched body is published on a public Pages site, so it is validated\nbefore it is written:\n\n- The URL is a hardcoded module constant, never built from input.\n- Both that URL and the post-redirect `response.url` are checked against\nan HTTPS-plus-single-host allowlist. `urlopen` follows redirects, so\nchecking only the request URL would not be enough.\n- 30 second timeout, response capped at 1MB, decoded as UTF-8.\n- The body must open with a markdown heading and contain a\ndocs.langchain.com link, which rejects an error page or a truncated\nresponse.\n\nAny failure returns `None` and falls back to the committed copy, so a\ndocs.langchain.com outage degrades to a stale file rather than a broken\ndeploy or a published error page.\n\n## Verification\n\nRan `python docs/generate_redirects.py`: 294 redirect files, `llms.txt`\nfetched, 43 entries.\n\nEach rejection path was exercised against a stubbed `urlopen` and all\nfall back to the committed file:\n\n| Case | Result |\n|---|---|\n| Network error | falls back |\n| Timeout | falls back |\n| Redirect to another host | falls back |\n| Body over 1MB | falls back |\n| Invalid UTF-8 | falls back |\n| HTML error page | falls back |\n| Empty body | falls back |\n| Valid index | published |\n\nAllowlist rejects `http://docs.langchain.com/...`,\n`https://evil.com/...`, and `https://docs.langchain.com.evil.com/...`.\n\n## Note on ordering\n\nThe fallback committed here is labelled \"LangGraph (Python)\", which is\nwhat the docs site will serve once langchain-ai/docs#6032 deploys. Until\nthen the fetched file reads \"Open source (Python)\". No action needed; it\nself-corrects.\n\n---\n\nWritten with Claude Code; I reviewed the diff and ran the verification\nabove.",
+    "tree": {
+      "sha": "1c5572ddeaea0fdcf62f4e3a4d657200f0c7c738",
+      "url": "https://api.github.com/repos/langchain-ai/langgraph/git/trees/1c5572ddeaea0fdcf62f4e3a4d657200f0c7c738"
+    },
+    "url": "https://api.github.com/repos/langchain-ai/langgraph/git/commits/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqE7PCRC1aQ7uu5UhlAAA/pgQAEXSROkVRUk8dY2iDyrWb+bM\nRP1q4aq5dJZUqYu5XnUxnmUhv0KLdWtLiqyW8u5W8nG7VJUkYNaFBNPRdieH51qM\nCKpU+FumWX6jnVLKJFKHEEeYEsJ3ZJ9+3gTqE9aPOxUanqfv6pLBkDeEugOSM7CK\n0QUgWM3LPZdTmNnDqkyOlVPmkmyzU4vVjNlbYFN3im1LQGOgm6esoi24u8EglqYr\nkyNz0Ey7RrhoFYZ0HzzugmhDJjz5RxIQwbX26w4b5++LBK0ta23DtaLuM0WfEsn8\nT8pv7kNQ1WOzpIuRfz/tOlSePkfYvXe04+PWjlaJB3LBWHZmLk6qpUYrWGKtUBh4\nKtZK0c6cU7FAhVj+N+TwuFf60O/R94ZxLasRApYCWrMr82rmO2mqYLBfVdBmBDsM\n0nwlRN4+CSEbruceNLQ+F8PxucIKY9YN+CHWwaCwIHS1ZcttoLRAoOgTNUn8FyjL\nDknnq0jdIeCLamZzZYohZg7/5IvmMjKSuWfFpm0BFcd3NROX4+7FeXrYcllvvNqz\nwhtLmpnIEK39JKUL8sVf5G69QMp0pFYGf6vJn/r2g0/fHCUID1YRpJSSRYmB2Sw1\nVVP+fdl0gYD4Gjp6QIVF7p1BwRrvAPZTVQxHLUqSbfJe6btXxUtM8scDkLd5Cm9k\nzbNH1hdIELWvtJzfe+9a\n=EW1j\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 1c5572ddeaea0fdcf62f4e3a4d657200f0c7c738\nparent e539ac122f4126f6dd850581c1494948cf620e31\nauthor Lauren Hirata Singh <lauren@langchain.dev> 1789415119 -0400\ncommitter GitHub <noreply@github.com> 1789415119 -0400\n\ndocs: publish the generated llms.txt instead of a hand-written copy (#8922)\n\n## Why\n\n`docs/llms.txt` is written by hand and was last touched in February, so\nthe index served at <https://langchain-ai.github.io/langgraph/llms.txt>\nhad drifted badly:\n\n- 12 pages listed, against the 43 the docs site publishes.\n- One entry, `/oss/python/langgraph/why-langgraph`, now 404s.\n\nThe deploy workflow only fires on `docs/**` pushes, so nothing brought\nthe file back in line as the docs site changed. It is served verbatim:\n`generate_redirects.py` copies it into `docs/_site` via a `static_files`\nlist, and `deploy-redirects.yml` uploads that directory to Pages.\n\nThe docs site already generates exactly this index, and regenerates it\non every deploy:\n\n```\nhttps://docs.langchain.com/oss/python/langgraph/llms.txt\n```\n\n## What changed\n\n`generate_redirects.py` now fetches that index at build time and writes\nit into `_site`, so the published file cannot drift from the docs site.\nThe committed `docs/llms.txt` stays as a fallback only, refreshed here\nto current content.\n\n`deploy-redirects.yml` gains a weekly `schedule:` trigger, so docs\nchanges that never touch this repo still reach the deployed file. The\n`permissions:` block is unchanged.\n\n## Fetching remote content in CI\n\nThe fetched body is published on a public Pages site, so it is validated\nbefore it is written:\n\n- The URL is a hardcoded module constant, never built from input.\n- Both that URL and the post-redirect `response.url` are checked against\nan HTTPS-plus-single-host allowlist. `urlopen` follows redirects, so\nchecking only the request URL would not be enough.\n- 30 second timeout, response capped at 1MB, decoded as UTF-8.\n- The body must open with a markdown heading and contain a\ndocs.langchain.com link, which rejects an error page or a truncated\nresponse.\n\nAny failure returns `None` and falls back to the committed copy, so a\ndocs.langchain.com outage degrades to a stale file rather than a broken\ndeploy or a published error page.\n\n## Verification\n\nRan `python docs/generate_redirects.py`: 294 redirect files, `llms.txt`\nfetched, 43 entries.\n\nEach rejection path was exercised against a stubbed `urlopen` and all\nfall back to the committed file:\n\n| Case | Result |\n|---|---|\n| Network error | falls back |\n| Timeout | falls back |\n| Redirect to another host | falls back |\n| Body over 1MB | falls back |\n| Invalid UTF-8 | falls back |\n| HTML error page | falls back |\n| Empty body | falls back |\n| Valid index | published |\n\nAllowlist rejects `http://docs.langchain.com/...`,\n`https://evil.com/...`, and `https://docs.langchain.com.evil.com/...`.\n\n## Note on ordering\n\nThe fallback committed here is labelled \"LangGraph (Python)\", which is\nwhat the docs site will serve once langchain-ai/docs#6032 deploys. Until\nthen the fetched file reads \"Open source (Python)\". No action needed; it\nself-corrects.\n\n---\n\nWritten with Claude Code; I reviewed the diff and ran the verification\nabove.",
+      "verified_at": "2026-09-14T19:45:20Z"
+    }
+  },
+  "url": "https://api.github.com/repos/langchain-ai/langgraph/commits/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f",
+  "html_url": "https://github.com/langchain-ai/langgraph/commit/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f",
+  "comments_url": "https://api.github.com/repos/langchain-ai/langgraph/commits/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f/comments",
+  "author": {
+    "login": "lnhsingh",
+    "id": 15386648,
+    "node_id": "MDQ6VXNlcjE1Mzg2NjQ4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15386648?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lnhsingh",
+    "html_url": "https://github.com/lnhsingh",
+    "followers_url": "https://api.github.com/users/lnhsingh/followers",
+    "following_url": "https://api.github.com/users/lnhsingh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lnhsingh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lnhsingh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lnhsingh/subscriptions",
+    "organizations_url": "https://api.github.com/users/lnhsingh/orgs",
+    "repos_url": "https://api.github.com/users/lnhsingh/repos",
+    "events_url": "https://api.github.com/users/lnhsingh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lnhsingh/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e539ac122f4126f6dd850581c1494948cf620e31",
+      "url": "https://api.github.com/repos/langchain-ai/langgraph/commits/e539ac122f4126f6dd850581c1494948cf620e31",
+      "html_url": "https://github.com/langchain-ai/langgraph/commit/e539ac122f4126f6dd850581c1494948cf620e31"
+    }
+  ],
+  "stats": {
+    "total": 178,
+    "additions": 136,
+    "deletions": 42
+  },
+  "files": [
+    {
+      "sha": "bed8aad74d1f762a16d91576948f565c622ab5fa",
+      "filename": ".github/workflows/deploy-redirects.yml",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/langchain-ai/langgraph/blob/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f/.github%2Fworkflows%2Fdeploy-redirects.yml",
+      "raw_url": "https://github.com/langchain-ai/langgraph/raw/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f/.github%2Fworkflows%2Fdeploy-redirects.yml",
+      "contents_url": "https://api.github.com/repos/langchain-ai/langgraph/contents/.github%2Fworkflows%2Fdeploy-redirects.yml?ref=230927fb3a9ac9b2893a30322b4dfea7cdea9a8f",
+      "patch": "@@ -7,6 +7,10 @@ on:\n     paths:\n       - 'docs/**'\n       - '.github/workflows/deploy-redirects.yml'\n+  # llms.txt is fetched from docs.langchain.com at build time, so redeploy on a\n+  # schedule to pick up docs changes that never touch this repo.\n+  schedule:\n+    - cron: '17 6 * * 1'\n   workflow_dispatch:\n \n permissions:"
+    },
+    {
+      "sha": "0afad1aadea99e264fc3f9acbd1a18f7d3476573",
+      "filename": "docs/generate_redirects.py",
+      "status": "modified",
+      "additions": 83,
+      "deletions": 7,
+      "changes": 90,
+      "blob_url": "https://github.com/langchain-ai/langgraph/blob/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f/docs%2Fgenerate_redirects.py",
+      "raw_url": "https://github.com/langchain-ai/langgraph/raw/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f/docs%2Fgenerate_redirects.py",
+      "contents_url": "https://api.github.com/repos/langchain-ai/langgraph/contents/docs%2Fgenerate_redirects.py?ref=230927fb3a9ac9b2893a30322b4dfea7cdea9a8f",
+      "patch": "@@ -12,13 +12,26 @@\n To add new redirects, simply edit redirects.json and re-run this script.\n \"\"\"\n \n+import http.client\n import json\n import os\n+import urllib.error\n+import urllib.parse\n+import urllib.request\n from pathlib import Path\n \n # Default fallback URL for any path not in the redirect map\n DEFAULT_REDIRECT = \"https://docs.langchain.com/oss/python/langgraph/overview\"\n \n+# The docs site regenerates this index on every deploy, so fetching it here\n+# keeps the published llms.txt from drifting. The URL is a hardcoded constant,\n+# never built from input, and both it and the post-redirect URL are checked\n+# against ALLOWED_LLMS_HOST before anything is read.\n+CANONICAL_LLMS_URL = \"https://docs.langchain.com/oss/python/langgraph/llms.txt\"\n+ALLOWED_LLMS_HOST = \"docs.langchain.com\"\n+LLMS_FETCH_TIMEOUT = 30\n+LLMS_MAX_BYTES = 1_000_000\n+\n HTML_TEMPLATE = \"\"\"<!doctype html>\n <html lang=\"en\">\n <head>\n@@ -75,6 +88,64 @@\n \"\"\"\n \n \n+def is_allowed_llms_url(url):\n+    \"\"\"Return True if url is HTTPS on the one host we accept content from.\"\"\"\n+    parsed = urllib.parse.urlsplit(url)\n+    return parsed.scheme == \"https\" and parsed.hostname == ALLOWED_LLMS_HOST\n+\n+\n+def fetch_canonical_llms_txt():\n+    \"\"\"Return the published LangGraph index, or None if it cannot be used.\n+\n+    Returning None leaves the caller on the committed docs/llms.txt, so a\n+    docs.langchain.com outage degrades to a stale file rather than a broken\n+    deploy or a published error page.\n+    \"\"\"\n+    if not is_allowed_llms_url(CANONICAL_LLMS_URL):\n+        print(f\"Refusing to fetch {CANONICAL_LLMS_URL}: host not allowed\")\n+        return None\n+\n+    try:\n+        with urllib.request.urlopen(  # noqa: S310 - constant, allowlisted URL\n+            CANONICAL_LLMS_URL, timeout=LLMS_FETCH_TIMEOUT\n+        ) as response:\n+            # urlopen follows redirects, so re-check where it actually landed.\n+            if not is_allowed_llms_url(response.url):\n+                print(f\"Refusing {CANONICAL_LLMS_URL}: redirected to {response.url}\")\n+                return None\n+            body = response.read(LLMS_MAX_BYTES + 1)\n+    # A connection dropped mid-body raises http.client.IncompleteRead, which\n+    # descends from HTTPException rather than OSError, so catching only the\n+    # urllib and OS errors would let it escape and fail the whole deploy.\n+    except (\n+        urllib.error.URLError,\n+        http.client.HTTPException,\n+        TimeoutError,\n+        OSError,\n+    ) as exc:\n+        print(f\"Could not fetch {CANONICAL_LLMS_URL}: {type(exc).__name__}: {exc}\")\n+        return None\n+\n+    if len(body) > LLMS_MAX_BYTES:\n+        print(f\"Refusing {CANONICAL_LLMS_URL}: larger than {LLMS_MAX_BYTES} bytes\")\n+        return None\n+\n+    try:\n+        text = body.decode(\"utf-8\")\n+    except UnicodeDecodeError as exc:\n+        print(f\"Refusing {CANONICAL_LLMS_URL}: not valid UTF-8: {exc}\")\n+        return None\n+\n+    # An index opens with a markdown heading and links to the docs site. A\n+    # body that does not is an error page or a truncated response, not content\n+    # worth publishing.\n+    if not text.startswith(\"# \") or f\"https://{ALLOWED_LLMS_HOST}/\" not in text:\n+        print(f\"Refusing {CANONICAL_LLMS_URL}: does not look like an llms.txt index\")\n+        return None\n+\n+    return text\n+\n+\n def generate_redirects():\n     script_dir = Path(__file__).parent\n     output_dir = script_dir / \"_site\"\n@@ -126,14 +197,19 @@ def generate_redirects():\n     catchall_404.write_text(CATCHALL_404_TEMPLATE.format(default_url=DEFAULT_REDIRECT))\n     print(f\"Created: {catchall_404}\")\n \n-    # Copy static files (like llms.txt) that can't be redirected via HTML\n-    static_files = [\"llms.txt\"]\n-    for static_file in static_files:\n-        src = script_dir / static_file\n+    # llms.txt can't be redirected via HTML, so publish the docs site's own\n+    # generated index. The committed copy is only a fallback.\n+    llms_txt = fetch_canonical_llms_txt()\n+    if llms_txt is not None:\n+        (output_dir / \"llms.txt\").write_text(llms_txt)\n+        print(f\"Fetched: {output_dir / 'llms.txt'} (from {CANONICAL_LLMS_URL})\")\n+    else:\n+        src = script_dir / \"llms.txt\"\n         if src.exists():\n-            dst = output_dir / static_file\n-            dst.write_text(src.read_text())\n-            print(f\"Copied: {dst}\")\n+            (output_dir / \"llms.txt\").write_text(src.read_text())\n+            print(f\"Copied: {output_dir / 'llms.txt'} (fallback, may be stale)\")\n+        else:\n+            print(\"No llms.txt fetched and no committed fallback; skipping\")\n \n     print(f\"\\nGenerated {len(redirects)} redirect files in {output_dir}\")\n "
+    },
+    {
+      "sha": "3f498c6db45211c97fd0bd528d5cf07d20150914",
+      "filename": "docs/llms.txt",
+      "status": "modified",
+      "additions": 49,
+      "deletions": 35,
+      "changes": 84,
+      "blob_url": "https://github.com/langchain-ai/langgraph/blob/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f/docs%2Fllms.txt",
+      "raw_url": "https://github.com/langchain-ai/langgraph/raw/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f/docs%2Fllms.txt",
+      "contents_url": "https://api.github.com/repos/langchain-ai/langgraph/contents/docs%2Fllms.txt?ref=230927fb3a9ac9b2893a30322b4dfea7cdea9a8f",
+      "patch": "@@ -1,35 +1,49 @@\n-# LangGraph\n-\n-LangGraph documentation has moved to docs.langchain.com.\n-\n-## Overview\n-\n-- [LangGraph Overview](https://docs.langchain.com/oss/python/langgraph/overview): Introduction to LangGraph, a library for building stateful, multi-actor applications with LLMs.\n-- [Why LangGraph?](https://docs.langchain.com/oss/python/langgraph/why-langgraph): Motivation for LangGraph and its key features.\n-\n-## Core Concepts\n-\n-- [Graph API](https://docs.langchain.com/oss/python/langgraph/graph-api): Learn how to define state, create nodes, and connect them with edges.\n-- [Streaming](https://docs.langchain.com/oss/python/langgraph/streaming): Stream outputs from your graph for better UX.\n-- [Persistence](https://docs.langchain.com/oss/python/langgraph/persistence): Add memory and checkpointing to your graphs.\n-- [Add Memory](https://docs.langchain.com/oss/python/langgraph/add-memory): Implement short-term and long-term memory.\n-- [Workflows & Agents](https://docs.langchain.com/oss/python/langgraph/workflows-agents): Build agents and workflows with LangGraph.\n-\n-## How-To Guides\n-\n-- [Use Subgraphs](https://docs.langchain.com/oss/python/langgraph/use-subgraphs): Compose graphs using subgraphs.\n-- [Observability](https://docs.langchain.com/oss/python/langgraph/observability): Add tracing and debugging to your graphs.\n-- [Common Errors](https://docs.langchain.com/oss/python/langgraph/common-errors): Troubleshoot common LangGraph errors.\n-\n-## Tutorials\n-\n-- [Agentic RAG](https://docs.langchain.com/oss/python/langgraph/agentic-rag): Build an agentic RAG system with LangGraph.\n-- [SQL Agent](https://docs.langchain.com/oss/python/langgraph/sql-agent): Create a SQL agent with LangGraph.\n-\n-## Reference\n-\n-- [API Reference](https://reference.langchain.com/python/langgraph/): Complete API documentation for LangGraph.\n-\n-## LangGraph Platform\n-\n-For deploying LangGraph applications in production, see the [LangSmith documentation](https://docs.langchain.com/langsmith/agent-server).\n+# Docs by LangChain: LangGraph (Python)\n+\n+> Markdown index of the LangGraph (Python) documentation.\n+\n+## LangGraph (Python)\n+\n+- [Memory](https://docs.langchain.com/oss/python/langgraph/add-memory.md)\n+- [Build a custom RAG agent with LangGraph](https://docs.langchain.com/oss/python/langgraph/agentic-rag.md)\n+- [Application structure](https://docs.langchain.com/oss/python/langgraph/application-structure.md)\n+- [Backward compatibility](https://docs.langchain.com/oss/python/langgraph/backward-compatibility.md)\n+- [Case studies](https://docs.langchain.com/oss/python/langgraph/case-studies.md)\n+- [Changelog](https://docs.langchain.com/oss/python/langgraph/changelog-js.md)\n+- [Changelog](https://docs.langchain.com/oss/python/langgraph/changelog-py.md)\n+- [Checkpointers](https://docs.langchain.com/oss/python/langgraph/checkpointers.md)\n+- [Choosing between Graph and Functional APIs](https://docs.langchain.com/oss/python/langgraph/choosing-apis.md)\n+- [Deployment](https://docs.langchain.com/oss/python/langgraph/deploy.md)\n+- [GRAPH_RECURSION_LIMIT](https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT.md)\n+- [INVALID_CHAT_HISTORY](https://docs.langchain.com/oss/python/langgraph/errors/INVALID_CHAT_HISTORY.md)\n+- [INVALID_CONCURRENT_GRAPH_UPDATE](https://docs.langchain.com/oss/python/langgraph/errors/INVALID_CONCURRENT_GRAPH_UPDATE.md)\n+- [INVALID_GRAPH_NODE_RETURN_VALUE](https://docs.langchain.com/oss/python/langgraph/errors/INVALID_GRAPH_NODE_RETURN_VALUE.md)\n+- [MISSING_CHECKPOINTER](https://docs.langchain.com/oss/python/langgraph/errors/MISSING_CHECKPOINTER.md)\n+- [MULTIPLE_SUBGRAPHS](https://docs.langchain.com/oss/python/langgraph/errors/MULTIPLE_SUBGRAPHS.md)\n+- [Event streaming](https://docs.langchain.com/oss/python/langgraph/event-streaming.md)\n+- [Fault tolerance](https://docs.langchain.com/oss/python/langgraph/fault-tolerance.md)\n+- [Custom stream channels](https://docs.langchain.com/oss/python/langgraph/frontend/custom-stream-channels.md)\n+- [Graph execution](https://docs.langchain.com/oss/python/langgraph/frontend/graph-execution.md)\n+- [Overview](https://docs.langchain.com/oss/python/langgraph/frontend/overview.md)\n+- [Functional API overview](https://docs.langchain.com/oss/python/langgraph/functional-api.md)\n+- [Graph API overview](https://docs.langchain.com/oss/python/langgraph/graph-api.md)\n+- [Install LangGraph](https://docs.langchain.com/oss/python/langgraph/install.md)\n+- [Interrupts](https://docs.langchain.com/oss/python/langgraph/interrupts.md)\n+- [Run a local server](https://docs.langchain.com/oss/python/langgraph/local-server.md)\n+- [LangSmith Observability](https://docs.langchain.com/oss/python/langgraph/observability.md)\n+- [LangGraph overview](https://docs.langchain.com/oss/python/langgraph/overview.md)\n+- [Persistence](https://docs.langchain.com/oss/python/langgraph/persistence.md)\n+- [LangGraph runtime](https://docs.langchain.com/oss/python/langgraph/pregel.md)\n+- [Quickstart](https://docs.langchain.com/oss/python/langgraph/quickstart.md)\n+- [Build a custom SQL agent](https://docs.langchain.com/oss/python/langgraph/sql-agent.md)\n+- [Stores](https://docs.langchain.com/oss/python/langgraph/stores.md)\n+- [Streaming](https://docs.langchain.com/oss/python/langgraph/streaming.md)\n+- [LangSmith Studio](https://docs.langchain.com/oss/python/langgraph/studio.md)\n+- [Test](https://docs.langchain.com/oss/python/langgraph/test.md)\n+- [Thinking in LangGraph](https://docs.langchain.com/oss/python/langgraph/thinking-in-langgraph.md)\n+- [Agent Chat UI](https://docs.langchain.com/oss/python/langgraph/ui.md)\n+- [Use the functional API](https://docs.langchain.com/oss/python/langgraph/use-functional-api.md)\n+- [Use the graph API](https://docs.langchain.com/oss/python/langgraph/use-graph-api.md)\n+- [Subgraphs](https://docs.langchain.com/oss/python/langgraph/use-subgraphs.md)\n+- [Use time-travel](https://docs.langchain.com/oss/python/langgraph/use-time-travel.md)\n+- [Workflows and agents](https://docs.langchain.com/oss/python/langgraph/workflows-agents.md)"
+    }
+  ]
+}

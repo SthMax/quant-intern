@@ -1,0 +1,161 @@
+{
+  "sha": "c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+  "node_id": "C_kwDOJH_K4NoAKGM2ODI0YTllNDJjZWVkYTVkNTgwODlmYTI3NGRkZDgxNmU1OWU2OGU",
+  "commit": {
+    "author": {
+      "name": "Eve",
+      "email": "139727413+netrunnereve@users.noreply.github.com",
+      "date": "2026-09-16T16:50:26Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-16T16:50:26Z"
+    },
+    "message": "ci: switch fast jobs back to github (#28959)\n\n* switch jobs to ubuntu-slim\n\n* ubuntu slim almost takes 15 minutes for check requirements so use something faster",
+    "tree": {
+      "sha": "8d66d3a284f572cfb615682642ffd2b2a0fe22ec",
+      "url": "https://api.github.com/repos/ggml-org/llama.cpp/git/trees/8d66d3a284f572cfb615682642ffd2b2a0fe22ec"
+    },
+    "url": "https://api.github.com/repos/ggml-org/llama.cpp/git/commits/c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqsjSCRC1aQ7uu5UhlAAA5IgQACH8UwvKAhrPHqPCfyV8c53g\nv4XXJaUjzLnxI9Ermk1VoceTkVuSGF9ZAnD6cmJ4+yxcftlkBOniXaK0QtAQcrRE\n8cAfgsCujLWP/ujbS1IY1EieZdMvSymLQ5NdLVDyFzin3tXGaApWAnSGjODlsho0\nPC1JJ1hRBX2kpV8wFF7zsQPmWJS15TB6IDEWelIP/ksE2UodMUDVh5EVovp7T/mK\nXr6GMrk0tRiQ0GISfzZWAtrfhtn4b9d91d7PwCCP44X+o53P+ymmfgHK8B8xfhU7\nRRcoKJf4c5EYTBlTwxoH7H8XCyUsXF8pw6ieBf12ATKNKue51k8uKm+Wj+qkm8GE\n9YAhtwPf77X87JWG1spLyPjHlbpa4l9/Eq/byqMYd1hffJZAUv7A2oUoa92dTIyk\ngoG3gB43Z1wD9qOm3uYEVNi4Vn2sS7jjIx94IeO64ii87mrqXY/0DKZ6y6RM6pRj\nA1lpIR+VHjYV2xP3IoXev5woF2XwClFP1SVUG/XUqo55K5zKBlN1HTLfbbDBer30\nzqyjwjwHPnvfoWTJYomrRde9leNLcBrzwfUyavLdw1WwlBsrktXLMe8L9AfD/fF0\n1GzvjAwrjsnPBSg/R643mSzp8+9HujclYcwYvrgBIlImJP19qTlcvvuL4QH4Z4sS\npKiqA/scUMprP8mHSBP6\n=uuSP\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 8d66d3a284f572cfb615682642ffd2b2a0fe22ec\nparent 2f3fd02526682adbd3ba771d929d271e477a35c5\nauthor Eve <139727413+netrunnereve@users.noreply.github.com> 1789577426 +0000\ncommitter GitHub <noreply@github.com> 1789577426 +0000\n\nci: switch fast jobs back to github (#28959)\n\n* switch jobs to ubuntu-slim\n\n* ubuntu slim almost takes 15 minutes for check requirements so use something faster",
+      "verified_at": "2026-09-16T16:50:27Z"
+    }
+  },
+  "url": "https://api.github.com/repos/ggml-org/llama.cpp/commits/c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+  "html_url": "https://github.com/ggml-org/llama.cpp/commit/c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+  "comments_url": "https://api.github.com/repos/ggml-org/llama.cpp/commits/c6824a9e42ceeda5d58089fa274ddd816e59e68e/comments",
+  "author": {
+    "login": "netrunnereve",
+    "id": 139727413,
+    "node_id": "U_kgDOCFQSNQ",
+    "avatar_url": "https://avatars.githubusercontent.com/u/139727413?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/netrunnereve",
+    "html_url": "https://github.com/netrunnereve",
+    "followers_url": "https://api.github.com/users/netrunnereve/followers",
+    "following_url": "https://api.github.com/users/netrunnereve/following{/other_user}",
+    "gists_url": "https://api.github.com/users/netrunnereve/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/netrunnereve/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/netrunnereve/subscriptions",
+    "organizations_url": "https://api.github.com/users/netrunnereve/orgs",
+    "repos_url": "https://api.github.com/users/netrunnereve/repos",
+    "events_url": "https://api.github.com/users/netrunnereve/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/netrunnereve/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2f3fd02526682adbd3ba771d929d271e477a35c5",
+      "url": "https://api.github.com/repos/ggml-org/llama.cpp/commits/2f3fd02526682adbd3ba771d929d271e477a35c5",
+      "html_url": "https://github.com/ggml-org/llama.cpp/commit/2f3fd02526682adbd3ba771d929d271e477a35c5"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 6,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "1671ed7b8bd2775ed5b9f322d39f49a1af42b5f2",
+      "filename": ".github/workflows/check-vendor.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ggml-org/llama.cpp/blob/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fcheck-vendor.yml",
+      "raw_url": "https://github.com/ggml-org/llama.cpp/raw/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fcheck-vendor.yml",
+      "contents_url": "https://api.github.com/repos/ggml-org/llama.cpp/contents/.github%2Fworkflows%2Fcheck-vendor.yml?ref=c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+      "patch": "@@ -19,7 +19,7 @@ on:\n \n jobs:\n   check-vendor:\n-    runs-on: [self-hosted, fast]\n+    runs-on: ubuntu-slim\n \n     steps:\n       - name: Checkout"
+    },
+    {
+      "sha": "bfb79f6983f2ca68a55c5378c8b6fb9958a65155",
+      "filename": ".github/workflows/pre-tokenizer-hashes.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ggml-org/llama.cpp/blob/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fpre-tokenizer-hashes.yml",
+      "raw_url": "https://github.com/ggml-org/llama.cpp/raw/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fpre-tokenizer-hashes.yml",
+      "contents_url": "https://api.github.com/repos/ggml-org/llama.cpp/contents/.github%2Fworkflows%2Fpre-tokenizer-hashes.yml?ref=c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+      "patch": "@@ -12,7 +12,7 @@ on:\n \n jobs:\n     pre-tokenizer-hashes:\n-        runs-on: [self-hosted, fast]\n+        runs-on: ubuntu-slim\n \n         steps:\n         - name: Checkout repository"
+    },
+    {
+      "sha": "e21c7da57202c77d66337520cc618b3dd3053d7e",
+      "filename": ".github/workflows/python-check-requirements.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ggml-org/llama.cpp/blob/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fpython-check-requirements.yml",
+      "raw_url": "https://github.com/ggml-org/llama.cpp/raw/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fpython-check-requirements.yml",
+      "contents_url": "https://api.github.com/repos/ggml-org/llama.cpp/contents/.github%2Fworkflows%2Fpython-check-requirements.yml?ref=c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+      "patch": "@@ -20,7 +20,7 @@ concurrency:\n \n jobs:\n   python-check-requirements:\n-    runs-on: [self-hosted, CPU, fast]\n+    runs-on: ${{ 'ubuntu-24.04-arm' || 'ubuntu-24.04' }}\n     name: check-requirements\n     steps:\n       - name: Check out source repository"
+    },
+    {
+      "sha": "1e5d64c1aee6d088476093bc63595fb9f884c569",
+      "filename": ".github/workflows/python-lint.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ggml-org/llama.cpp/blob/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fpython-lint.yml",
+      "raw_url": "https://github.com/ggml-org/llama.cpp/raw/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fpython-lint.yml",
+      "contents_url": "https://api.github.com/repos/ggml-org/llama.cpp/contents/.github%2Fworkflows%2Fpython-lint.yml?ref=c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+      "patch": "@@ -21,7 +21,7 @@ concurrency:\n \n jobs:\n   flake8-lint:\n-    runs-on: [self-hosted, fast]\n+    runs-on: ubuntu-slim\n     name: Lint\n     steps:\n       - name: Check out source repository"
+    },
+    {
+      "sha": "f3695be96f7597582c34900894616c479a68ddf6",
+      "filename": ".github/workflows/python-type-check.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ggml-org/llama.cpp/blob/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fpython-type-check.yml",
+      "raw_url": "https://github.com/ggml-org/llama.cpp/raw/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fpython-type-check.yml",
+      "contents_url": "https://api.github.com/repos/ggml-org/llama.cpp/contents/.github%2Fworkflows%2Fpython-type-check.yml?ref=c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+      "patch": "@@ -22,7 +22,7 @@ concurrency:\n \n jobs:\n   python-type-check:\n-    runs-on: [self-hosted, fast]\n+    runs-on: ubuntu-slim\n     name: python type-check\n     steps:\n       - name: Check out source repository"
+    },
+    {
+      "sha": "bb01c7e56bab059a4a3ec4513d9d3bfa01b18c3e",
+      "filename": ".github/workflows/update-ops-docs.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ggml-org/llama.cpp/blob/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fupdate-ops-docs.yml",
+      "raw_url": "https://github.com/ggml-org/llama.cpp/raw/c6824a9e42ceeda5d58089fa274ddd816e59e68e/.github%2Fworkflows%2Fupdate-ops-docs.yml",
+      "contents_url": "https://api.github.com/repos/ggml-org/llama.cpp/contents/.github%2Fworkflows%2Fupdate-ops-docs.yml?ref=c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+      "patch": "@@ -16,7 +16,7 @@ on:\n \n jobs:\n     update-ops-docs:\n-        runs-on: [self-hosted, fast, ARM64]\n+        runs-on: ubuntu-slim\n \n         steps:\n         - name: Checkout repository"
+    }
+  ]
+}

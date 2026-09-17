@@ -9,7 +9,8 @@
 The confirmed brief is reproduced below with Markdown formatting normalized.
 Original wording, including the missing company-count number, is retained.
 Execution plans and wording questions are maintained separately in
-[the Week 2 plan](weekly/week-02-plan.md). The overview is supplied project
+[the Week 2 plan](weekly/week-02-plan.md) and the current
+[Weeks 3–5 plan](weekly/week-03-05-plan.md). The overview is supplied project
 context; its industry claims require research citations before use as findings.
 
 ## 1. Project Overview

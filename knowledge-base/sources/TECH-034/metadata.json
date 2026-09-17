@@ -1,0 +1,42 @@
+{
+  "source_id": "TECH-034",
+  "title": "n8n-io/n8n official repository and license snapshot",
+  "issuer": "n8n-io",
+  "repository": "n8n-io/n8n",
+  "official_url": "https://github.com/n8n-io/n8n",
+  "revision": "f960330ecb34b208ce8669c98ecf145fe7c589a8",
+  "commit_date": "2026-09-16T16:11:49Z",
+  "retrieved_at": "2026-09-16T17:06:52.527483+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/n8n-io/n8n/commits/HEAD",
+      "sha256": "bc855cfb07b298e64d9ed22d7ba0024af5149a45804ee1d16460239254566610",
+      "bytes": 67642
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/n8n-io/n8n/f960330ecb34b208ce8669c98ecf145fe7c589a8/README.md",
+      "sha256": "75c64f04b8b1e7d435496f6ebd2dbf3ea5ff7d3ff3d944d7fcf98cf1a7df2242",
+      "bytes": 4023
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/n8n-io/n8n/f960330ecb34b208ce8669c98ecf145fe7c589a8/LICENSE.md",
+      "sha256": "d2f621f59aa4c10eab79b6333e59d9d3d5b53307dcfd16dbd75e40e679e84965",
+      "bytes": 4445
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/n8n-io/n8n/releases/latest",
+      "sha256": "a9e9d5058b1afdea53c8972d8841afe3be73bfb138230d9db4fd32b09cbcc67a",
+      "bytes": 9557
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

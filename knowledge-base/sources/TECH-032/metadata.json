@@ -1,0 +1,42 @@
+{
+  "source_id": "TECH-032",
+  "title": "deepset-ai/haystack official repository and license snapshot",
+  "issuer": "deepset-ai",
+  "repository": "deepset-ai/haystack",
+  "official_url": "https://github.com/deepset-ai/haystack",
+  "revision": "0defdcff64950ca54f4dac0d21fe4eb30ed745d7",
+  "commit_date": "2026-09-16T06:19:17Z",
+  "retrieved_at": "2026-09-16T17:06:52.087466+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/deepset-ai/haystack/commits/HEAD",
+      "sha256": "f19ba7c1dc4ce1cf6d5ac80eba2e5e8788cc3455487816f6268e25ac9efb48b2",
+      "bytes": 101070
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/deepset-ai/haystack/0defdcff64950ca54f4dac0d21fe4eb30ed745d7/README.md",
+      "sha256": "5397ea185aada9cb992cbc544da04466b4d06ad39e2a2e7078016f2b931362d6",
+      "bytes": 14041
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/deepset-ai/haystack/0defdcff64950ca54f4dac0d21fe4eb30ed745d7/LICENSE",
+      "sha256": "3f0a3af7e9b0f3b6358aaa3c7501ab522a67dc5483b870e9a8b3db41ea42e249",
+      "bytes": 11343
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/deepset-ai/haystack/releases/latest",
+      "sha256": "fd70a2df831469cdc93dde8a22fda73bf6784d93d816dd0cfdc4983505ee7798",
+      "bytes": 2684
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

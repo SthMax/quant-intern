@@ -1,0 +1,32 @@
+{
+  "source_id": "TECH-018",
+  "title": "Muse Spark 1.2 open-weights announcement and Meta model inventory",
+  "issuer": "Meta",
+  "official_url": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
+  "retrieved_at": "2026-09-16T09:13:09.964391+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "mechanical_visible_text_extraction",
+  "verification_scope": "Article published 2026-08-20 precedes a planned open-weight release; model inventory is a snapshot, not proof of absence everywhere.",
+  "files": {
+    "source.html": {
+      "requested_url": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
+      "sha256": "5e1b1eb86249bf65daaef746602a7ed249861ac11c44ea59c7cd6ea396919158",
+      "bytes": 228422
+    },
+    "original.md": {
+      "requested_url": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
+      "sha256": "017b1b38f58c5c3bf817dff79495b8d7a7c77a003a8c92e09730ebac1861ff0b",
+      "bytes": 6137
+    },
+    "model-inventory.json": {
+      "requested_url": "https://huggingface.co/api/models?author=meta-models&limit=100",
+      "sha256": "004ff8147af2b802c24c9331a85f95cd8e848dbdee54f29a24715d2eff225a56",
+      "bytes": 2012
+    }
+  },
+  "reviewer": "Codex; official source and license inspection 2026-09-16",
+  "locator": "Article introduction and Try Muse Spark; model-inventory.json",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md; knowledge-base/models/license-review-2026-09-16.md"
+}

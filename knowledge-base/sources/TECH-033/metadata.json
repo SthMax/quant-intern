@@ -1,0 +1,42 @@
+{
+  "source_id": "TECH-033",
+  "title": "FlowiseAI/Flowise official repository and license snapshot",
+  "issuer": "FlowiseAI",
+  "repository": "FlowiseAI/Flowise",
+  "official_url": "https://github.com/FlowiseAI/Flowise",
+  "revision": "9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb",
+  "commit_date": "2026-08-13T12:38:19Z",
+  "retrieved_at": "2026-09-16T17:06:52.401228+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/FlowiseAI/Flowise/commits/HEAD",
+      "sha256": "29e378a930f071da613fc0d09a71b313a49eff55051a4067068eef4cb996dae9",
+      "bytes": 5928
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/FlowiseAI/Flowise/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb/README.md",
+      "sha256": "21b4384ec2e295295dee10992fd9ee7ef4b0a0c9cb77a493bca39174a1c09a51",
+      "bytes": 7850
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/FlowiseAI/Flowise/9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb/LICENSE.md",
+      "sha256": "eb8cc244c81eb4a556f9ac22edc3033ac4fa12f7ef7a8899bb5ddc4578c2dd73",
+      "bytes": 10541
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/FlowiseAI/Flowise/releases/latest",
+      "sha256": "42c240e36c4220e0f2b3a95ca3789a2a71614e6e2e6e6ed4f63033f4018ab3bb",
+      "bytes": 4260
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "TECH-012",
+  "title": "Gemma 4 Apache License 2.0",
+  "issuer": "Google",
+  "official_url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+  "retrieved_at": "2026-09-16T08:37:56.364393+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Official license page linked by Gemma 4 model cards. License text inspected; no internal approval inferred.",
+  "extraction_method": "Python HTMLParser visible text, excluding script/style/noscript; no translation",
+  "files": {
+    "source.html": {
+      "requested_url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+      "sha256": "4021d9c44e988431ffa4da2d3eb40c8e60fb2e7c96313d26ad7026bb8598f1b9",
+      "bytes": 259052
+    },
+    "original.md": {
+      "requested_url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+      "sha256": "8e1cc6f1bcefa392da1737cf70f701c0907b861bdb0fa84d8b13885966b827fe",
+      "bytes": 13808
+    }
+  },
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "Apache License 2.0 text linked by Gemma 4 model cards",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "mechanical_visible_text_extraction"
+}

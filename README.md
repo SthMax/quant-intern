@@ -17,20 +17,34 @@ The confirmed plan also requires a reusable financial NLP evaluation framework
 covering named-entity recognition, financial question answering, and
 multi-document summarization.
 
-## Current work: Week 2, 7–11 September 2026
+## Current work: Weeks 3–5, technical feasibility
 
-The Friday, 11 September presentation covers Phase 1: the company landscape and
-regulatory/MRM/CSRC research, emphasizing data privacy, model interpretability,
-and outsourcing restrictions.
+Use [the Weeks 3–5 execution plan](weekly/week-03-05-plan.md) for the mentor
+feedback, schedule, deliverables, and acceptance criteria. Model research and
+deployment are the main workstream. Phase 1 report/PPT restructuring follows
+a separate [fixing plan](reports/phase1-llm-industry-2026-09-09/editorial/fixing-plan.md)
+and does not gate research progress.
 
-Use [the Week 2 execution plan](weekly/week-02-plan.md) for daily work,
-deliverables, acceptance criteria, and unresolved inputs. Use
-[the checkpoint outline](presentation/deck-outline.md) for presentation structure.
+Phase 1 has produced a source-linked report and a 27-slide presentation. Phase 2
+will compare 5–8 models, deploy one model on a local GPU, and develop reference
+architectures using maintainable software and explicit workload assumptions.
+Full three-year TCO and pilot recommendations remain in Weeks 6–8.
 
-The supplied final brief still omits the number after “at least” in the company
-target. Research can proceed; the count requirement remains unconfirmed.
-As of the 6 September repository review, the knowledge base contains templates
-and no verified external research findings.
+The [16 September model research](knowledge-base/models/model-survey-2026-09-16.md)
+now follows the user's professional-workstation and quality requirements: eight
+core Qwen, Gemma, DeepSeek, GLM and Kimi candidates, plus a pending-release
+watchlist. The [license review](knowledge-base/models/license-review-2026-09-16.md)
+examines commercial use, affiliates and internal-use conditions. Local
+financial-task and performance tests have not started.
+
+The 17 September [serving framework survey](knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md)
+and [harness survey](knowledge-base/infrastructure/harness-survey-2026-09-17.md)
+compare GPU, Apple and heterogeneous runtime paths, workflow platforms and
+general agents, including licenses and self-hosted API compatibility.
+
+The [Week 2 plan](weekly/week-02-plan.md) retains the historical research record.
+The missing minimum company count and outstanding human/internal reviews remain
+open; completed research artifacts do not establish those approvals.
 
 ## Research and version control
 
@@ -67,10 +81,16 @@ The September 2026 delivery bundle contains:
 | [Company index](knowledge-base/companies/index.md) | Phase 1 database, candidates, coverage |
 | [Regulatory index](knowledge-base/regulation/index.md) | Phase 1 provision map and MRM/internal questions |
 | [Model evaluation](knowledge-base/models/benchmark-plan.md) | Phase 2 survey and reusable benchmark framework |
+| [Current model survey](knowledge-base/models/model-survey-2026-09-16.md) | Eight core candidates, professional workstation/shared deployment, and watchlist |
+| [Model license review](knowledge-base/models/license-review-2026-09-16.md) | Commercial use, affiliate boundaries and custom model-license conditions |
+| [Report fixing plan](reports/phase1-llm-industry-2026-09-09/editorial/fixing-plan.md) | Independent Phase 1 report/PPT restructuring workstream |
 | [Proof-of-concept plan](knowledge-base/models/poc-plan.md) | Phase 2 local GPU execution record template |
 | [Reference architecture](knowledge-base/infrastructure/reference-architecture.md) | Phase 2 hardware/software/security specification template |
+| [Serving frameworks](knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md) | GPU, Apple and heterogeneous runtimes, model support and evaluation |
+| [Harnesses](knowledge-base/infrastructure/harness-survey-2026-09-17.md) | Workflow platforms, general agents, licenses and local-model compatibility |
 | [TCO model](knowledge-base/infrastructure/tco-model.md) | Phase 3 three-year on-premise/API comparison |
 | [Pilot scorecard](knowledge-base/pilots/scorecard.md) | Phase 3 selection, ROI, and proposal template |
 | [Week 1 record](weekly/week-01.md) | Historical setup and corrections |
-| [Week 2 plan](weekly/week-02-plan.md) | Current execution plan |
+| [Week 2 plan](weekly/week-02-plan.md) | Historical Phase 1 execution and delivery record |
+| [Weeks 3–5 plan](weekly/week-03-05-plan.md) | Current execution plan, mentor feedback, and deployment scenarios |
 | [Repository alignment review](weekly/repo-alignment-review-2026-09-06.md) | Whole-repository review against the final brief |

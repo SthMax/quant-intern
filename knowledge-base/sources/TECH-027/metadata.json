@@ -1,0 +1,54 @@
+{
+  "source_id": "TECH-027",
+  "title": "ikawrakow/ik_llama.cpp official repository and license snapshot",
+  "issuer": "ikawrakow",
+  "repository": "ikawrakow/ik_llama.cpp",
+  "official_url": "https://github.com/ikawrakow/ik_llama.cpp",
+  "revision": "e64c0ea59f7505b0c8124c9b449332a3a8058c76",
+  "commit_date": "2026-09-16T15:39:27Z",
+  "retrieved_at": "2026-09-16T17:06:50.095645+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately. Protocol/model support is limited to inspected documents and code paths; HEAD capabilities are not automatically release capabilities.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/ikawrakow/ik_llama.cpp/commits/HEAD",
+      "sha256": "509a830c715c88da52af24410ac4f094cc4d35579f6c9d44a5879c4d5e9e8ac1",
+      "bytes": 10051
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/ikawrakow/ik_llama.cpp/e64c0ea59f7505b0c8124c9b449332a3a8058c76/README.md",
+      "sha256": "913b33d3a94789ed5fb308fd2294a87f46cb974680e166f75202a0d466e4f466",
+      "bytes": 27157
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/ikawrakow/ik_llama.cpp/e64c0ea59f7505b0c8124c9b449332a3a8058c76/LICENSE",
+      "sha256": "153f7caf00796585022b1984edc8c80e5d885c58a68a832ef7bc198696e56380",
+      "bytes": 1350
+    },
+    "tree.json": {
+      "requested_url": "https://api.github.com/repos/ikawrakow/ik_llama.cpp/git/trees/e64c0ea59f7505b0c8124c9b449332a3a8058c76?recursive=1",
+      "sha256": "2e5e514a08c03c57fea7aa542905dd4889eff537c94d6c2e6e1445b13502bf22",
+      "bytes": 983301
+    },
+    "function-calling.md": {
+      "requested_url": "https://raw.githubusercontent.com/ikawrakow/ik_llama.cpp/e64c0ea59f7505b0c8124c9b449332a3a8058c76/docs/function-calling.md",
+      "sha256": "9d05fc66bff4304b038a00e70d1e39f004c36e7f1e0626882b20b69d7715d07a",
+      "bytes": 20787
+    },
+    "parameters.md": {
+      "requested_url": "https://raw.githubusercontent.com/ikawrakow/ik_llama.cpp/e64c0ea59f7505b0c8124c9b449332a3a8058c76/docs/parameters.md",
+      "sha256": "b4c51e92e99c455052566a9155ff1db56c963fa5e03d2404b954c30f2c9411c5",
+      "bytes": 51378
+    }
+  },
+  "retrieval_failures": {
+    "latest_release": "curl: (56) The requested URL returned error: 404\n"
+  },
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

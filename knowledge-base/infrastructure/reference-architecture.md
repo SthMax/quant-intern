@@ -1,7 +1,55 @@
 # On-Premise Reference Architecture
 
 **Phase 2 — Weeks 3–5.** Required by [the final project plan](../../PROJECT_PLAN.md).
-Status: specification template; no architecture or hardware has been selected.
+Status (17 September 2026): logical deployment choices and software research are
+documented below; no physical configuration has been selected or benchmarked.
+
+## Serving and harness research — 17 September 2026
+
+- [Serving framework survey](serving-framework-survey-2026-09-17.md): vLLM,
+  SGLang, TokenSpeed, Apple MLX/Metal and CPU/GPU heterogeneous paths, with
+  licenses, version evidence, model routing and benchmark design.
+- [Harness survey](harness-survey-2026-09-17.md): workflow libraries/platforms,
+  general agents, self-hosted protocol compatibility and operating boundaries.
+
+The candidate logical design separates the user/workflow or agent application,
+model interface, inference engine, model weights, research tools, execution
+environments and persistent state. Shared inference may serve isolated
+per-user/per-task tool environments; it does not require sharing one shell or
+one set of data-access credentials.
+
+Prioritize vLLM/SGLang for shared GPU serving, with TokenSpeed as a targeted
+comparison. On Mac compare MLX-LM/MLX-VLM with llama.cpp Metal. For large-memory
+heterogeneous inference evaluate KTransformers/SGLang, llama.cpp and relevant
+ik_llama.cpp optimizations. Workflow and general-agent choices are independent:
+Dify/LangGraph address business applications; OpenCode/pi and protocol-compatible
+Codex CLI address personal research/coding agents. This is a research shortlist,
+not a selected production stack.
+
+Interfaces must specify more than an "OpenAI-compatible" label: Chat Completions,
+Responses and Anthropic Messages carry different request/event/tool semantics.
+The model service and harness combination must pass protocol and end-to-end task
+checks. The new survey distinguishes Claude Code's technically documented
+third-party endpoint routes from its proprietary license and vendor support.
+
+## Updated design basis — 16 September 2026
+
+The user clarified that this is a professional institutional deployment.
+Personal workstations should target the current 27B/35B-class Qwen and comparable
+Gemma models, with sufficient accelerator memory and supported precision for
+useful daily work. Shared service research includes DeepSeek-V4.1-Flash,
+GLM-5.3/Flash and Kimi K3. See the [current candidate pool](../models/model-survey-2026-09-16.md).
+
+Evaluate high-memory single-GPU systems, single-node multi-GPU systems and the
+shared nodes required by the selected model and workload. No purchase budget or
+device specification is confirmed. Compare costs after establishing quality and
+service requirements; do not start from an assumed low-end device ceiling.
+Maintain separate model-capability and deployment-readiness assessments.
+
+The [license review](../models/license-review-2026-09-16.md) distinguishes model
+rights, affiliate/use boundaries and internal adoption policy. A possible
+headquarters preference for US vendors is an unconfirmed scenario, not a COD
+requirement inferred from public sources.
 
 COD is the infrastructure used in MSIM. Obtain the relevant system constraints
 from the infrastructure owner before describing a design as tailored to COD.

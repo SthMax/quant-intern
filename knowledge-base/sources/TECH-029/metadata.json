@@ -1,0 +1,62 @@
+{
+  "source_id": "TECH-029",
+  "title": "langchain-ai/langgraph official repository and license snapshot",
+  "issuer": "langchain-ai",
+  "repository": "langchain-ai/langgraph",
+  "official_url": "https://github.com/langchain-ai/langgraph",
+  "revision": "230927fb3a9ac9b2893a30322b4dfea7cdea9a8f",
+  "commit_date": "2026-09-14T19:45:19Z",
+  "retrieved_at": "2026-09-16T17:06:50.148681+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/langchain-ai/langgraph/commits/HEAD",
+      "sha256": "a4eabeeaea801c4a03ab8698dff5d8ee862396262df6da99f933c145c4b211cb",
+      "bytes": 24279
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/langchain-ai/langgraph/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f/README.md",
+      "sha256": "3a13e257af1216962d53d72414a7f44ac1fc5cea34d994bdff60ea2a3b045933",
+      "bytes": 6395
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/langchain-ai/langgraph/230927fb3a9ac9b2893a30322b4dfea7cdea9a8f/LICENSE",
+      "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7",
+      "bytes": 1072
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/langchain-ai/langgraph/releases/latest",
+      "sha256": "d0500a7d5aeb3777927f7fe29f2e6aac221f143ce06cb6f594ccaea37240def8",
+      "bytes": 2347
+    },
+    "overview.md": {
+      "requested_url": "https://docs.langchain.com/oss/python/langgraph/overview.md",
+      "sha256": "3fd533906d7c1eb7644e2feac4fe33cf0739b983dbc324f3786a9a1ef72a1ac3",
+      "bytes": 8467
+    },
+    "durable-execution.md": {
+      "requested_url": "https://docs.langchain.com/oss/python/langgraph/durable-execution.md",
+      "sha256": "5b655d1b9a0a354aeac59b382f71f82a068a5edf48584be931967d5b59b7da06",
+      "bytes": 5881
+    },
+    "interrupts.md": {
+      "requested_url": "https://docs.langchain.com/oss/python/langgraph/interrupts.md",
+      "sha256": "0dfd64141f5b5ae9e57466dea7ab1c416718af05d040238a3ed5f2ab11b5bc74",
+      "bytes": 44274
+    },
+    "package-release.json": {
+      "requested_url": "https://pypi.org/pypi/langgraph/json",
+      "sha256": "9846bf14ed456a4429b90748325127ec5e3570b6892ab54bd17f1b9f5a4f6c48",
+      "bytes": 436912
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

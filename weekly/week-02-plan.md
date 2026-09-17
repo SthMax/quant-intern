@@ -202,3 +202,10 @@ ranking was performed in this fund-focused pass.
 - Committed the approved eight wording changes in `98bab07`.
 - Prepared an editable [PowerPoint deck](../presentation/phase1-llm-industry-2026-09-10/README.md) from the report, with 18 main slides and six appendix slides. Speaker notes carry the Chinese talk track and source references.
 - The deck retains the four research directions and Phase 1 scope. Actual presentation, mentor feedback and Phase 2 implementation remain future work.
+
+### 15 September 2026 — Phase 2 handoff and mentor feedback
+
+- The current report is the revised Phase 1 deliverable, and the 11 September PPT contains 20 main slides plus seven appendix slides. Current artifact descriptions are in the existing report and presentation directories.
+- The user relayed feedback from the actual mentor: organize the story by the fund manager's front, middle, and back office; connect specific work to LLM responsibilities and architecture; explain one representative case for repeated mechanisms such as RAG.
+- The mentor expects personal LLM use or a small data-center deployment serving dozens of users, with mature, maintainable software and economic viability as selection criteria.
+- Execution now follows [the Weeks 3–5 plan](week-03-05-plan.md). It retains the confirmed 5–8-model survey, one-model local GPU proof of concept, and reference architecture, with full TCO and pilot recommendations in Weeks 6–8. Model deployment and performance testing have not yet been performed.

@@ -1,0 +1,32 @@
+{
+  "source_id": "TECH-011",
+  "title": "DeepSeek-V4.1 support tracking and initial integration PR",
+  "issuer": "vLLM project",
+  "official_url": "https://github.com/vllm-project/vllm/issues/56400",
+  "retrieved_at": "2026-09-16T08:36:48.813647+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Issue body and live PR state; issue reports describe specific versions/hardware, not all deployments.",
+  "files": {
+    "source.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/issues/56400",
+      "sha256": "297df391d74e4c1b5a45c4987cdd1b4bd34e0a2efaefc0fc8398338ad80a84f9",
+      "bytes": 6826
+    },
+    "original.md": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/issues/56400",
+      "sha256": "d7c6c9de711ac86af65530f7a4d12f75c2a0323e96ae10f95b5d324f07a18bdb",
+      "bytes": 2577
+    },
+    "integration-pr.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/pulls/56214",
+      "sha256": "b7583de6a0332b46a5e703ccac7b73a589631cf81660fbb2ce2a5967fd8fca93",
+      "bytes": 61371
+    }
+  },
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "Issue body; integration-pr.json state and merged_at",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "verbatim_issue_body_from_api"
+}

@@ -1,0 +1,53 @@
+{
+  "source_id": "TECH-016",
+  "model_id": "zai-org/GLM-5.3-Flash",
+  "title": "zai-org/GLM-5.3-Flash official model card, configuration and license",
+  "issuer": "zai-org",
+  "official_url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+  "revision": "eb9eb208eb0d988989d07a6a12d0fdeb5f52574a",
+  "retrieved_at": "2026-09-16T09:11:12.753903+00:00",
+  "created_at_api": "2026-08-25T06:43:14.000Z",
+  "last_modified_api": "2026-09-07T12:13:47.000Z",
+  "license_tag": "mit",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_model_card",
+  "verification_scope": "Official model repository snapshot; commercial license and deployment conditions to be inspected. No local model test. Repository creation date is not a release date.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/zai-org/GLM-5.3-Flash",
+      "sha256": "0753a152f25b79c6024ccb8aafd0a21abae2d9f2cf2ca3b9009563721bc0fdce",
+      "bytes": 69460
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md",
+      "sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+      "bytes": 8027
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/config.json",
+      "sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+      "bytes": 69416
+    },
+    "LICENSE": {
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/LICENSE",
+      "sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+      "bytes": 1070
+    },
+    "generation_config.json": {
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/generation_config.json",
+      "sha256": "230c30609ecbbb9e6583bedde8e7bdda0c6eb8fe5fad0eaeb3d1b293d751cb4f",
+      "bytes": 194
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/model.safetensors.index.json",
+      "sha256": "3c3f40366a53c3fd7974b4eab7881a365a98c2a4329150befebab99fe7c18b05",
+      "bytes": 8406613
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official source and license inspection 2026-09-16",
+  "locator": "Introduction; Serve GLM-5.3-Flash Locally; MIT LICENSE; config/index",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md; knowledge-base/models/license-review-2026-09-16.md"
+}

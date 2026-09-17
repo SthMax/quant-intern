@@ -1,0 +1,57 @@
+{
+  "source_id": "TECH-026",
+  "title": "kvcache-ai/ktransformers official repository and license snapshot",
+  "issuer": "kvcache-ai",
+  "repository": "kvcache-ai/ktransformers",
+  "official_url": "https://github.com/kvcache-ai/ktransformers",
+  "revision": "0b954fe4ca2f9e79519da66156e6a3f92b686232",
+  "commit_date": "2026-09-16T11:14:29Z",
+  "retrieved_at": "2026-09-16T17:06:50.107511+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "README, repository license, commit and latest-release metadata; no installation or runtime test. HEAD and latest release are recorded separately. Protocol/model support is limited to inspected documents and code paths; HEAD capabilities are not automatically release capabilities.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/kvcache-ai/ktransformers/commits/HEAD",
+      "sha256": "9b92dd060b50e0080400b76d9bdebda97ea541016349813b7778d984e04d1bc7",
+      "bytes": 28691
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/kvcache-ai/ktransformers/0b954fe4ca2f9e79519da66156e6a3f92b686232/README.md",
+      "sha256": "61831dccf4c35e9ea20f4a8b9637ca3fe4ad9e78cb84fa7b0616586ab137ad18",
+      "bytes": 12010
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/kvcache-ai/ktransformers/0b954fe4ca2f9e79519da66156e6a3f92b686232/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/kvcache-ai/ktransformers/releases/latest",
+      "sha256": "ba0994372ea1d291f474ac6e18b6c51a62c166e00498d63068cb94cc7465668b",
+      "bytes": 3773
+    },
+    "tree.json": {
+      "requested_url": "https://api.github.com/repos/kvcache-ai/ktransformers/git/trees/0b954fe4ca2f9e79519da66156e6a3f92b686232?recursive=1",
+      "sha256": "0a90a536b5b7643cccbd05a96d2b6eb0bf3058f617738e78463870ab85e2cb4d",
+      "bytes": 565657
+    },
+    "kt-kernel.md": {
+      "requested_url": "https://raw.githubusercontent.com/kvcache-ai/ktransformers/0b954fe4ca2f9e79519da66156e6a3f92b686232/kt-kernel/README.md",
+      "sha256": "94c78a1a841b5b6e272c8d92678938fc4559deaeecec9da9bc4928c9a80c07d6",
+      "bytes": 30523
+    },
+    "glm53-flash.md": {
+      "requested_url": "https://raw.githubusercontent.com/kvcache-ai/ktransformers/0b954fe4ca2f9e79519da66156e6a3f92b686232/doc/en/kt-kernel/GLM-5.3-Flash-Tutorial.md",
+      "sha256": "a2b9849be44020ea7212f406d71e1432c3a442f15d92daae57ac3159f7926a25",
+      "bytes": 3872
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official documentation, license and selective source inspection on 2026-09-17",
+  "locator": "README; LICENSE; revision/release metadata; named topic documents listed in metadata.json",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

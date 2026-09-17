@@ -1,0 +1,125 @@
+{
+  "sha": "2e018f70f2d13080de3dd5fda8720acf77ebd296",
+  "node_id": "C_kwDOOiiGL9oAKDJlMDE4ZjcwZjJkMTMwODBkZTNkZDVmZGE4NzIwYWNmNzdlYmQyOTY",
+  "commit": {
+    "author": {
+      "name": "opencode-agent[bot]",
+      "email": "219766164+opencode-agent[bot]@users.noreply.github.com",
+      "date": "2026-09-16T16:47:21Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-16T16:47:21Z"
+    },
+    "message": "fix(stats): guard oversized model names (#49363)\n\nCo-authored-by: adamdotdevin <2363879+adamdotdevin@users.noreply.github.com>",
+    "tree": {
+      "sha": "edf7bbf8f8457f890701624a36bb0cae6b787b97",
+      "url": "https://api.github.com/repos/anomalyco/opencode/git/trees/edf7bbf8f8457f890701624a36bb0cae6b787b97"
+    },
+    "url": "https://api.github.com/repos/anomalyco/opencode/git/commits/2e018f70f2d13080de3dd5fda8720acf77ebd296",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqsgZCRC1aQ7uu5UhlAAAt0QQAEcNZUXiX71FCn2anR7BgaD2\nb0kWZ/D4Ggb6rk0AcRLG9Zvou6HLZwAi6F2cKvMK6ulM1Z2HlrmX6ewoVNpgWrVN\nyKG6NI1mQzEbpJcL8lOIL/ydcufxGAS0Y4Xoq+Fphd85FznuSfBLNNp6JyHmDRzO\n6jg0XnsywcoJKTb8brcyBd4m3e1zc9KRFBg4845W3il43ZrWs+thWdmtUjETbKKo\nWTr0sDrEXVioNcQNGr+RKCjvDxRja5Fl/KZOMgwXdxbuQsn/kn/jTDy9Bar2jd4+\nWT0KOatL9Ut9yv3s2T40e+Fq5kLpZvSHig3YUONdylYnZamCXt1bn/Ja/5OiLGJl\nN9Tpt+58b9LPUF/aNwkjwevMMCjdNftJpJ+gqp//EXtp6U0oPHUKizFejzD2jxUm\nWu92wE4/H51Ptp3HcPV6S+tELCBucDF4nG5ij+C34LxWmUF/v+iO7VYXpUROlxws\nsew9Ba1717ouqhqqPpIES3Ppqlz0EEgQ/xHyTljrqnZY0gYKPmMR5fO+YyyPVxcX\n7Hlc1vjPvTSx8Pm22L7Iy8a0MZsQcNftrZMMF1eE6K1W76NNSvDi9lDvmzeWwqMP\nRPwWO9N/xGCf6jdIuVZNfoM3si5mZZvKqt3xJPf+8WO0buyJx+Iib3xOChHccj/8\nkTv74JDkeATyJ/cO+Ii6\n=Mwse\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree edf7bbf8f8457f890701624a36bb0cae6b787b97\nparent 1364769e516289bcd805dd813c36e68391858ab9\nauthor opencode-agent[bot] <219766164+opencode-agent[bot]@users.noreply.github.com> 1789577241 +0000\ncommitter GitHub <noreply@github.com> 1789577241 +0000\n\nfix(stats): guard oversized model names (#49363)\n\nCo-authored-by: adamdotdevin <2363879+adamdotdevin@users.noreply.github.com>",
+      "verified_at": "2026-09-16T16:47:21Z"
+    }
+  },
+  "url": "https://api.github.com/repos/anomalyco/opencode/commits/2e018f70f2d13080de3dd5fda8720acf77ebd296",
+  "html_url": "https://github.com/anomalyco/opencode/commit/2e018f70f2d13080de3dd5fda8720acf77ebd296",
+  "comments_url": "https://api.github.com/repos/anomalyco/opencode/commits/2e018f70f2d13080de3dd5fda8720acf77ebd296/comments",
+  "author": {
+    "login": "opencode-agent[bot]",
+    "id": 219766164,
+    "node_id": "BOT_kgDODRldlA",
+    "avatar_url": "https://avatars.githubusercontent.com/in/1549082?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/opencode-agent%5Bbot%5D",
+    "html_url": "https://github.com/apps/opencode-agent",
+    "followers_url": "https://api.github.com/users/opencode-agent%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/opencode-agent%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/opencode-agent%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/opencode-agent%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/opencode-agent%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/opencode-agent%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/opencode-agent%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/opencode-agent%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/opencode-agent%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "1364769e516289bcd805dd813c36e68391858ab9",
+      "url": "https://api.github.com/repos/anomalyco/opencode/commits/1364769e516289bcd805dd813c36e68391858ab9",
+      "html_url": "https://github.com/anomalyco/opencode/commit/1364769e516289bcd805dd813c36e68391858ab9"
+    }
+  ],
+  "stats": {
+    "total": 27,
+    "additions": 24,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "7660d174dcb1d2629fbe43f85b4f9ae8a8978550",
+      "filename": "packages/stats/core/src/domain/inference.test.ts",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 0,
+      "changes": 14,
+      "blob_url": "https://github.com/anomalyco/opencode/blob/2e018f70f2d13080de3dd5fda8720acf77ebd296/packages%2Fstats%2Fcore%2Fsrc%2Fdomain%2Finference.test.ts",
+      "raw_url": "https://github.com/anomalyco/opencode/raw/2e018f70f2d13080de3dd5fda8720acf77ebd296/packages%2Fstats%2Fcore%2Fsrc%2Fdomain%2Finference.test.ts",
+      "contents_url": "https://api.github.com/repos/anomalyco/opencode/contents/packages%2Fstats%2Fcore%2Fsrc%2Fdomain%2Finference.test.ts?ref=2e018f70f2d13080de3dd5fda8720acf77ebd296",
+      "patch": "@@ -57,6 +57,20 @@ describe(\"inference stat normalization\", () => {\n     expect(statProvider(\"unknown\", \"\", \"custom-provider\")).toBe(\"custom-provider\")\n   })\n \n+  test(\"maps oversized model ids to unknown before aggregation\", () => {\n+    expect(statModel(\"x\".repeat(256), \"\")).toBe(\"x\".repeat(256))\n+    expect(statModel(\"x\".repeat(257), \"\")).toBe(\"unknown\")\n+    expect(statModel(\"big-pickle\", `provider/${\"x\".repeat(257)}`)).toBe(\"unknown\")\n+\n+    const [query] = buildStatsQueries(new Date(\"2026-09-16T00:00:00.000Z\"), new Date(\"2026-09-16T04:00:00.000Z\"), {\n+      namespace: \"inference\",\n+      table: \"generation\",\n+      dataset: \"zen\",\n+    })\n+    expect(query).toContain(\"WHEN length(\")\n+    expect(query).toContain(\") > 256 THEN 'unknown'\")\n+  })\n+\n   test(\"keeps stealth model usage without exposing the route provider\", () => {\n     expect(statProvider(\"omen-alpha\", \"gpt-test-model\", \"test-provider\")).toBe(\"unknown\")\n     expect(statProvider(\"OMEN-ALPHA-free:global\", \"gpt-test-model\", \"test-provider\")).toBe(\"unknown\")"
+    },
+    {
+      "sha": "963516625ddb743554846b1826f9fdd19dfb9957",
+      "filename": "packages/stats/core/src/domain/inference.ts",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 2,
+      "changes": 9,
+      "blob_url": "https://github.com/anomalyco/opencode/blob/2e018f70f2d13080de3dd5fda8720acf77ebd296/packages%2Fstats%2Fcore%2Fsrc%2Fdomain%2Finference.ts",
+      "raw_url": "https://github.com/anomalyco/opencode/raw/2e018f70f2d13080de3dd5fda8720acf77ebd296/packages%2Fstats%2Fcore%2Fsrc%2Fdomain%2Finference.ts",
+      "contents_url": "https://api.github.com/repos/anomalyco/opencode/contents/packages%2Fstats%2Fcore%2Fsrc%2Fdomain%2Finference.ts?ref=2e018f70f2d13080de3dd5fda8720acf77ebd296",
+      "patch": "@@ -6,6 +6,7 @@ import {\n   EXCLUDED_MODELS,\n   FREE_MODELS,\n   MODEL_AUTHOR_RULES,\n+  MODEL_NAME_MAX_LENGTH,\n   MODEL_NAME_ALIASES,\n   RETIRED_STAT_PROVIDERS,\n   STEALTH_MODELS,\n@@ -466,12 +467,16 @@ function statModelSql(model: string, providerModel: string) {\n       WHEN lower(${model}) = 'big-pickle' THEN regexp_replace(NULLIF(${providerModel}, ''), '^.*/', '')\n       ELSE ${model}\n     END, '(-free|:free|:global)+$', '')`\n-  return `COALESCE(NULLIF(CASE\n+  const value = `CASE\n ${Object.entries(MODEL_NAME_ALIASES)\n   .map(([from, to]) => `      WHEN lower(${normalized}) = ${sqlString(from)} THEN ${sqlString(to)}`)\n   .join(\"\\n\")}\n       ELSE ${normalized}\n-    END, ''), 'unknown')`\n+    END`\n+  return `CASE\n+      WHEN length(${value}) > ${MODEL_NAME_MAX_LENGTH} THEN 'unknown'\n+      ELSE COALESCE(NULLIF(${value}, ''), 'unknown')\n+    END`\n }\n \n function freeTierSql(tier: string, model: string) {"
+    },
+    {
+      "sha": "b2bffd5fc3e90dadfbe32a2005f64a293bb410e0",
+      "filename": "packages/stats/core/src/domain/model-normalization.ts",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 1,
+      "changes": 4,
+      "blob_url": "https://github.com/anomalyco/opencode/blob/2e018f70f2d13080de3dd5fda8720acf77ebd296/packages%2Fstats%2Fcore%2Fsrc%2Fdomain%2Fmodel-normalization.ts",
+      "raw_url": "https://github.com/anomalyco/opencode/raw/2e018f70f2d13080de3dd5fda8720acf77ebd296/packages%2Fstats%2Fcore%2Fsrc%2Fdomain%2Fmodel-normalization.ts",
+      "contents_url": "https://api.github.com/repos/anomalyco/opencode/contents/packages%2Fstats%2Fcore%2Fsrc%2Fdomain%2Fmodel-normalization.ts?ref=2e018f70f2d13080de3dd5fda8720acf77ebd296",
+      "patch": "@@ -16,6 +16,7 @@ export const MODEL_AUTHOR_RULES = [\n export const EXCLUDED_MODELS = new Set([\"alpha-gpt-next\"])\n export const STEALTH_MODELS = new Set([\"omen-alpha\"])\n export const FREE_MODELS = new Set([\"gpt-5-nano\", \"grok-code\", \"big-pickle\"])\n+export const MODEL_NAME_MAX_LENGTH = 256\n export const MODEL_NAME_ALIASES: Record<string, string> = {\n   \"deepseek-flash\": \"deepseek-v4.1-flash\",\n   \"deepseek-v4-flash-0731\": \"deepseek-v4-flash\",\n@@ -41,7 +42,8 @@ export function modelAuthor(value: string | undefined) {\n export function statModel(model: string | undefined, providerModel: string | undefined) {\n   const normalized = normalizeInferenceModel(model)\n   const resolved = normalized === \"big-pickle\" ? normalizeInferenceModel(providerModel?.split(\"/\").at(-1)) : normalized\n-  return MODEL_NAME_ALIASES[resolved.toLowerCase()] ?? resolved\n+  const value = MODEL_NAME_ALIASES[resolved.toLowerCase()] ?? resolved\n+  return value.length > MODEL_NAME_MAX_LENGTH ? \"unknown\" : value\n }\n \n export function statProvider("
+    }
+  ]
+}

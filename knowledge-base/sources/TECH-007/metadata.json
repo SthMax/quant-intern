@@ -1,0 +1,55 @@
+{
+  "source_id": "TECH-007",
+  "model_id": "mistralai/Mistral-Small-4-119B-2603",
+  "title": "mistralai/Mistral-Small-4-119B-2603 official model card and configuration",
+  "issuer": "mistralai",
+  "official_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+  "revision": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+  "retrieved_at": "2026-09-16T08:32:43.550704+00:00",
+  "created_at_api": "2026-01-23T13:14:14.000Z",
+  "last_modified_api": "2026-07-15T12:23:29.000Z",
+  "license_tag": "apache-2.0",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "verification_scope": "Official model card, configuration and license metadata; no local inference or license approval. createdAt is repository creation, not a release announcement.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/mistralai/Mistral-Small-4-119B-2603",
+      "sha256": "c9c4a8ed48d0143372ce78a508043833bd70f4c74b8d6b2b3dbd699f48126497",
+      "bytes": 18501
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/resolve/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md",
+      "sha256": "243f9d4f6cdb5644ca93d34d2e002822cb946803a6a7e3aed39b56d6ceeb1996",
+      "bytes": 16483
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/resolve/a11f36bebf709121056b1dbcc943d1c6afbe494d/config.json",
+      "sha256": "113ea221dcf0dc7adc2af52ad84933a5830b663b679a4753a78a98f757de8737",
+      "bytes": 2436
+    },
+    "generation_config.json": {
+      "requested_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/resolve/a11f36bebf709121056b1dbcc943d1c6afbe494d/generation_config.json",
+      "sha256": "28133232e34985995465918c59046b361186c9a707cfc4de90571fac028cb2f5",
+      "bytes": 132
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/resolve/a11f36bebf709121056b1dbcc943d1c6afbe494d/model.safetensors.index.json",
+      "sha256": "30f9eae8bd2738cad0cd3bd4f7db8e3aac177f2b644bba0ff35a46a15efc8f39",
+      "bytes": 159870
+    },
+    "params.json": {
+      "requested_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/resolve/a11f36bebf709121056b1dbcc943d1c6afbe494d/params.json",
+      "sha256": "d18e00ba8bd5722364cb629ea541c56b3b49ff0780f35a203b04c87291fbd535",
+      "bytes": 1510
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; source inspection on 2026-09-16",
+  "locator": "Key Features; Recommended Settings; Usage; License; config and tensor index",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md",
+  "text_kind": "verbatim_model_card",
+  "selection_status": "Historical first-pass candidate, superseded by user-prioritized pool on 2026-09-16",
+  "collection_role": "supporting"
+}

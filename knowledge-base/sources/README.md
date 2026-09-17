@@ -1,6 +1,6 @@
 # 原始来源与研究阅读入口
 
-2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。**125个稳定来源ID：112个主阅读记录、9个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
+2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。当时为125个来源ID。2026-09-16累计新增19项Phase 2技术/许可来源，并将5项首轮模型资料转为历史辅助阅读，2026-09-17再新增23项serving/harness来源，**当前167个稳定来源ID：149个主阅读记录、14个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
 
 默认检索按[reading-index.json](../reading-index.json)中的`collection_role=main`及`reading_path`取文本。需要身份、历史或供应商背景时再读[辅助目录](../reference/README.md)。不要把原始HTML/PDF、历史审计、图片元数据或来源链索引递归当作新文章。
 
@@ -154,3 +154,66 @@
 | FUND-108 | 🧧易方达基金 × ima首发基金研选Skill：从获取信息到分析判断，助你走通决策闭环 | Chinese | 索引 → FUND-109 | [阅读入口](FUND-109/original.md) · [原始文件](FUND-108/source.html) · [元数据](FUND-108/metadata.json) | 只保留来源链；主档为FUND-109；旧出版物不构成独立印证 |
 | FUND-355 | 中欧基金窦玉明：AI赋能时代，「三化」协同夯实长期业绩根基 | Chinese | 索引 → FUND-356 | [阅读入口](FUND-356/original.md) · [原始文件](FUND-355/source.html) · [元数据](FUND-355/metadata.json) | 只保留来源链；主档为FUND-356；旧出版物不构成独立印证 |
 | FUND-358 | 华泰柏瑞量化团队：“人机协同”迈入深水区，AI投研构筑长期护城河 | Chinese | 索引 → FUND-359 | [阅读入口](FUND-359/original.md) · [原始文件](FUND-358/source.html) · [元数据](FUND-358/metadata.json) | 只保留来源链；主档为FUND-359；旧出版物不构成独立印证 |
+
+## Phase 2模型与部署来源（2026-09-16）
+
+原始模型卡、配置、许可与索引按固定repo修订保存；未下载权重。多文件来源的获取URL、SHA-256和核对范围均在metadata中。模型初筛分析见[研究笔记](../models/model-survey-2026-09-16.md)。
+
+| ID | 标题 | 阅读与原件 | 支持范围 |
+|---|---|---|---|
+| TECH-001 | Qwen/Qwen3.5-4B official model card and configuration | [原文](TECH-001/original.md) · [元数据与其他原件](TECH-001/metadata.json) | Model/config/license claims and artifact size; not local benchmarks |
+| TECH-002 | Qwen/Qwen3.5-9B official model card and configuration | [原文](TECH-002/original.md) · [元数据与其他原件](TECH-002/metadata.json) | Model/config/license claims and artifact size; not local benchmarks |
+| TECH-003 | Qwen/Qwen3.5-35B-A3B official model card and configuration | [原文](TECH-003/original.md) · [元数据与其他原件](TECH-003/metadata.json) | Model/config/license claims and artifact size; not local benchmarks |
+| TECH-004 | Qwen/Qwen3.8-27B official model card and configuration | [原文](TECH-004/original.md) · [元数据与其他原件](TECH-004/metadata.json) | Model/config/license claims and artifact size; not local benchmarks |
+| TECH-005 | google/gemma-4-12B-it official model card and configuration | [原文](TECH-005/original.md) · [元数据与其他原件](TECH-005/metadata.json) | Model/config/license claims and artifact size; not local benchmarks |
+| TECH-006 | google/gemma-4-26B-A4B-it official model card and configuration | [原文](TECH-006/original.md) · [元数据与其他原件](TECH-006/metadata.json) | Model/config/license claims and artifact size; not local benchmarks |
+| TECH-007 | mistralai/Mistral-Small-4-119B-2603 official model card and configuration | [原文](TECH-007/original.md) · [元数据与其他原件](TECH-007/metadata.json) | Model/config/license claims and artifact size; not local benchmarks |
+| TECH-008 | deepseek-ai/DeepSeek-V4.1-Flash official model card and configuration | [原文](TECH-008/original.md) · [元数据与其他原件](TECH-008/metadata.json) | Model/config/license claims and artifact size; not local benchmarks |
+| TECH-009 | vLLM v0.29.0 release and model registry | [原文](TECH-009/original.md) · [元数据与其他原件](TECH-009/metadata.json) | Released architecture registration |
+| TECH-010 | Qwen3.8-27B vLLM deployment recipe | [原文](TECH-010/original.md) · [元数据与其他原件](TECH-010/metadata.json) | Upstream tested configurations and limits |
+| TECH-011 | DeepSeek-V4.1 support tracking and initial integration PR | [原文](TECH-011/original.md) · [元数据与其他原件](TECH-011/metadata.json) | Integration timing versus release; issue text may lag PR state |
+| TECH-012 | Gemma 4 Apache License 2.0 | [原文](TECH-012/original.md) · [元数据与其他原件](TECH-012/metadata.json) | Declared Gemma 4 license text |
+
+### 第二轮模型与许可补充
+
+候选按专业个人工作站和共享服务重排。TECH-001–003、005、007属于历史辅助来源，原件保留；当前8项候选与条款分析分别见[模型研究](../models/model-survey-2026-09-16.md)和[许可专项](../models/license-review-2026-09-16.md)。
+
+| ID | 标题 | 阅读与原件 | 支持范围 |
+|---|---|---|---|
+| TECH-013 | Qwen/Qwen3.6-35B-A3B official model card, configuration and license | [原文](TECH-013/original.md) · [元数据与其他原件](TECH-013/metadata.json) | Exact model artifact, license conditions, configuration and tensor size |
+| TECH-014 | google/gemma-4-31B-it official model card, configuration and license | [原文](TECH-014/original.md) · [元数据与其他原件](TECH-014/metadata.json) | Exact model artifact, license conditions, configuration and tensor size |
+| TECH-015 | zai-org/GLM-5.3 official model card, configuration and license | [原文](TECH-015/original.md) · [元数据与其他原件](TECH-015/metadata.json) | Exact model artifact, license conditions, configuration and tensor size |
+| TECH-016 | zai-org/GLM-5.3-Flash official model card, configuration and license | [原文](TECH-016/original.md) · [元数据与其他原件](TECH-016/metadata.json) | Exact model artifact, license conditions, configuration and tensor size |
+| TECH-017 | moonshotai/Kimi-K3 official model card, configuration and license | [原文](TECH-017/original.md) · [元数据与其他原件](TECH-017/metadata.json) | Exact model artifact, license conditions, configuration and tensor size |
+| TECH-018 | Muse Spark 1.2 open-weights announcement and Meta model inventory | [原文](TECH-018/original.md) · [元数据与其他原件](TECH-018/metadata.json) | Planned open weights and current publisher inventory; not a self-hosting grant |
+| TECH-019 | Apache License Version 2.0 | [原文](TECH-019/original.md) · [元数据与其他原件](TECH-019/metadata.json) | Apache entity definition, grants, distribution and warranty conditions |
+
+## Serving与Harness（2026-09-17）
+
+以下记录保存官方repo README、许可、commit/release与所读专题文档。代码仅用于静态核验，不表示本地执行。版本和功能层次见[serving调研](../infrastructure/serving-framework-survey-2026-09-17.md)及[harness调研](../infrastructure/harness-survey-2026-09-17.md)。
+
+| ID | 标题 | 阅读与原件 | 支持范围 |
+|---|---|---|---|
+| TECH-020 | vllm-project/vllm official repository and license snapshot | [原文](TECH-020/original.md) · [元数据/专题原件](TECH-020/metadata.json) | Serving；文档/代码证据，非本地实测 |
+| TECH-021 | sgl-project/sglang official repository and license snapshot | [原文](TECH-021/original.md) · [元数据/专题原件](TECH-021/metadata.json) | Serving；文档/代码证据，非本地实测 |
+| TECH-022 | lightseekorg/tokenspeed official repository and license snapshot | [原文](TECH-022/original.md) · [元数据/专题原件](TECH-022/metadata.json) | Serving；文档/代码证据，非本地实测 |
+| TECH-023 | ml-explore/mlx-lm official repository and license snapshot | [原文](TECH-023/original.md) · [元数据/专题原件](TECH-023/metadata.json) | Serving；文档/代码证据，非本地实测 |
+| TECH-024 | Blaizzy/mlx-vlm official repository and license snapshot | [原文](TECH-024/original.md) · [元数据/专题原件](TECH-024/metadata.json) | Serving；文档/代码证据，非本地实测 |
+| TECH-025 | ggml-org/llama.cpp official repository and license snapshot | [原文](TECH-025/original.md) · [元数据/专题原件](TECH-025/metadata.json) | Serving；文档/代码证据，非本地实测 |
+| TECH-026 | kvcache-ai/ktransformers official repository and license snapshot | [原文](TECH-026/original.md) · [元数据/专题原件](TECH-026/metadata.json) | Serving；文档/代码证据，非本地实测 |
+| TECH-027 | ikawrakow/ik_llama.cpp official repository and license snapshot | [原文](TECH-027/original.md) · [元数据/专题原件](TECH-027/metadata.json) | Serving；文档/代码证据，非本地实测 |
+| TECH-028 | langchain-ai/langchain official repository and license snapshot | [原文](TECH-028/original.md) · [元数据/专题原件](TECH-028/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-029 | langchain-ai/langgraph official repository and license snapshot | [原文](TECH-029/original.md) · [元数据/专题原件](TECH-029/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-030 | langgenius/dify official repository and license snapshot | [原文](TECH-030/original.md) · [元数据/专题原件](TECH-030/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-031 | run-llama/llama_index official repository and license snapshot | [原文](TECH-031/original.md) · [元数据/专题原件](TECH-031/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-032 | deepset-ai/haystack official repository and license snapshot | [原文](TECH-032/original.md) · [元数据/专题原件](TECH-032/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-033 | FlowiseAI/Flowise official repository and license snapshot | [原文](TECH-033/original.md) · [元数据/专题原件](TECH-033/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-034 | n8n-io/n8n official repository and license snapshot | [原文](TECH-034/original.md) · [元数据/专题原件](TECH-034/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-035 | anomalyco/opencode official repository and license snapshot | [原文](TECH-035/original.md) · [元数据/专题原件](TECH-035/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-036 | earendil-works/pi official repository and license snapshot | [原文](TECH-036/original.md) · [元数据/专题原件](TECH-036/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-037 | deepseek-ai/deepseek-harness official repository and license snapshot | [原文](TECH-037/original.md) · [元数据/专题原件](TECH-037/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-038 | openai/codex official repository and license snapshot | [原文](TECH-038/original.md) · [元数据/专题原件](TECH-038/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-039 | anthropics/claude-code official repository and license snapshot | [原文](TECH-039/original.md) · [元数据/专题原件](TECH-039/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-040 | NVIDIA/TensorRT-LLM official repository and license snapshot | [原文](TECH-040/original.md) · [元数据/专题原件](TECH-040/metadata.json) | Serving；文档/代码证据，非本地实测 |
+| TECH-041 | langchain-ai/deepagents official repository and license snapshot | [原文](TECH-041/original.md) · [元数据/专题原件](TECH-041/metadata.json) | Harness；文档/代码证据，非本地实测 |
+| TECH-042 | Run local agentic AI on the Mac using MLX — WWDC26 | [原文](TECH-042/original.md) · [元数据/专题原件](TECH-042/metadata.json) | Serving；文档/代码证据，非本地实测 |

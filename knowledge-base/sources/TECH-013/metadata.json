@@ -1,0 +1,53 @@
+{
+  "source_id": "TECH-013",
+  "model_id": "Qwen/Qwen3.6-35B-A3B",
+  "title": "Qwen/Qwen3.6-35B-A3B official model card, configuration and license",
+  "issuer": "Qwen",
+  "official_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+  "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+  "retrieved_at": "2026-09-16T09:11:12.741175+00:00",
+  "created_at_api": "2026-04-15T05:59:19.000Z",
+  "last_modified_api": "2026-04-24T02:53:42.000Z",
+  "license_tag": "apache-2.0",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_model_card",
+  "verification_scope": "Official model repository snapshot; commercial license and deployment conditions to be inspected. No local model test. Repository creation date is not a release date.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3.6-35B-A3B",
+      "sha256": "18bbc17f98994f85545174930dd096f1508c65c0be148a7a010d23e0803c7570",
+      "bytes": 21504
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md",
+      "sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+      "bytes": 64550
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/config.json",
+      "sha256": "93a4693fa9d8392fbfccd4b3c9873f4bfdcb14fdede978b123d07d19675efe99",
+      "bytes": 3686
+    },
+    "LICENSE": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/LICENSE",
+      "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+      "bytes": 11343
+    },
+    "generation_config.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/generation_config.json",
+      "sha256": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e",
+      "bytes": 202
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/model.safetensors.index.json",
+      "sha256": "41b9356101ebf8e7519e150dc811f80c4226e727301fbb032b890f006ed0be83",
+      "bytes": 98383
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official source and license inspection 2026-09-16",
+  "locator": "Model Overview; Serving Qwen3.6; LICENSE; config/index",
+  "used_in": "knowledge-base/models/model-survey-2026-09-16.md; knowledge-base/models/license-review-2026-09-16.md"
+}

@@ -1,0 +1,149 @@
+{
+  "sha": "6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+  "node_id": "C_kwDOI7xeftoAKDZjYTJiMjNlMjJhYWI4NTM0ZTAwYTg1ZThlYzUyMjI1MDhhNmVjZjM",
+  "commit": {
+    "author": {
+      "name": "Rebecca Lee",
+      "email": "110500452+rebklee@users.noreply.github.com",
+      "date": "2026-09-16T16:48:30Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-16T16:48:30Z"
+    },
+    "message": "[ROCm] Expose kFp8DynamicTokenSym on AITER PTPC linears (#54248)\n\nSigned-off-by: Rebecca Lee <rebecca.lee@amd.com>\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+    "tree": {
+      "sha": "652eae6782f5ca2fe3eb70d892c1dc808b7a9e8b",
+      "url": "https://api.github.com/repos/vllm-project/vllm/git/trees/652eae6782f5ca2fe3eb70d892c1dc808b7a9e8b"
+    },
+    "url": "https://api.github.com/repos/vllm-project/vllm/git/commits/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqsheCRC1aQ7uu5UhlAAAwPIQAJouk+QA0t/+7ME+Roq+cRQR\n990kLp9CwIvexEzGvQ0IVfjj4CEX/PmUc6oW6iCgHS+bisj94WlAlljL8l85gjFT\nygvaPqWYTFBJ2yLOqs1ynLQ2UT/dVB/9/FLS0ntvUG7vqO6Q/RM8dHjZh3Xae8Vv\nOwawXddeCxnUtVy4k7Usz4CqaXF8N1WAKHq3V9ZHFQTRn0NxAmTbECh4sWMeseFt\nR24GmD/LN9YCanhRhhNZ1P5tmrkXfYJFtK47kGFCdT5GI3xExndHd6M6Y2AraCaa\nSC9TPetX9HcmhYx1XDXW48W1pCO8hIlqzJTNm4VNGJNrQ2COzDnfpapLGNvZkL6Y\nYocc9SsYLlsNda3US8X8a1UYLcgpFMz4GfQipG2WQUDYSet1P1HDVJqBlL+ipW1r\nQi+8sDAPb1rCJgpk43n3NqsqIKW4ALE2bPczEn4HD+mj4u8jUQ3YdZMXdh8GxeOD\nRpM6JGiLS9Ld92ZNdp0D1/lOiL2T9lYIgAHGB9U/MJCIAwOw1BILyGotnG79Z76W\nwmLmEmf3jtBUycfu8spFMHShqQtCZzxpRygLnTJrxti41Bziav8VNF81EsPaH19u\nP+fjpEqKAu3JMJJMwXE5hQeuKiNCDph9WyNdpX7JCGuPLJmmG6uKWAHRkql8Ejc7\nHwqdxTKWTduA6ZZi6vdt\n=wqsX\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 652eae6782f5ca2fe3eb70d892c1dc808b7a9e8b\nparent 8c1557a79c539ffe82d004d2a0c8d7b5e71159ce\nauthor Rebecca Lee <110500452+rebklee@users.noreply.github.com> 1789577310 -0700\ncommitter GitHub <noreply@github.com> 1789577310 -0500\n\n[ROCm] Expose kFp8DynamicTokenSym on AITER PTPC linears (#54248)\n\nSigned-off-by: Rebecca Lee <rebecca.lee@amd.com>\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "verified_at": "2026-09-16T16:48:30Z"
+    }
+  },
+  "url": "https://api.github.com/repos/vllm-project/vllm/commits/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+  "html_url": "https://github.com/vllm-project/vllm/commit/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+  "comments_url": "https://api.github.com/repos/vllm-project/vllm/commits/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/comments",
+  "author": {
+    "login": "rebklee",
+    "id": 110500452,
+    "node_id": "U_kgDOBpYaZA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/110500452?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rebklee",
+    "html_url": "https://github.com/rebklee",
+    "followers_url": "https://api.github.com/users/rebklee/followers",
+    "following_url": "https://api.github.com/users/rebklee/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rebklee/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rebklee/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rebklee/subscriptions",
+    "organizations_url": "https://api.github.com/users/rebklee/orgs",
+    "repos_url": "https://api.github.com/users/rebklee/repos",
+    "events_url": "https://api.github.com/users/rebklee/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rebklee/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8c1557a79c539ffe82d004d2a0c8d7b5e71159ce",
+      "url": "https://api.github.com/repos/vllm-project/vllm/commits/8c1557a79c539ffe82d004d2a0c8d7b5e71159ce",
+      "html_url": "https://github.com/vllm-project/vllm/commit/8c1557a79c539ffe82d004d2a0c8d7b5e71159ce"
+    }
+  ],
+  "stats": {
+    "total": 108,
+    "additions": 104,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "7e346cc767215edf39189304e13a9551b1f30ed6",
+      "filename": "tests/fusion/test_quant_activation_contract.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/vllm-project/vllm/blob/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/tests%2Ffusion%2Ftest_quant_activation_contract.py",
+      "raw_url": "https://github.com/vllm-project/vllm/raw/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/tests%2Ffusion%2Ftest_quant_activation_contract.py",
+      "contents_url": "https://api.github.com/repos/vllm-project/vllm/contents/tests%2Ffusion%2Ftest_quant_activation_contract.py?ref=6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+      "patch": "@@ -24,6 +24,11 @@\n     FlashInferCutlassNvFp4LinearKernel,\n     FlashInferTrtllmNvFp4LinearKernel,\n )\n+from vllm.model_executor.kernels.linear.scaled_mm.aiter import (\n+    AiterHipbMMPerTokenFp8ScaledMMLinearKernel,\n+    AiterPerTokenFp8ScaledMMLinearKernel,\n+    AiterPreshuffledPerTokenFp8ScaledMMLinearKernel,\n+)\n from vllm.model_executor.kernels.linear.scaled_mm.cutlass import (\n     CutlassFP8ScaledMMLinearKernel,\n )\n@@ -56,6 +61,9 @@\n     FlashInferFP8ScaledMMLinearKernel,\n     FlashInferCutlassNvFp4LinearKernel,\n     PerTensorTorchFP8ScaledMMLinearKernel,\n+    AiterHipbMMPerTokenFp8ScaledMMLinearKernel,\n+    AiterPreshuffledPerTokenFp8ScaledMMLinearKernel,\n+    AiterPerTokenFp8ScaledMMLinearKernel,\n     FlashInferCutedslMxfp8LinearKernel,\n     FlashInferCutlassMxfp8LinearKernel,\n }"
+    },
+    {
+      "sha": "ced034cb1a9447ba51390a9b51560a372fcd6099",
+      "filename": "tests/quantization/test_quark.py",
+      "status": "modified",
+      "additions": 64,
+      "deletions": 1,
+      "changes": 65,
+      "blob_url": "https://github.com/vllm-project/vllm/blob/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/tests%2Fquantization%2Ftest_quark.py",
+      "raw_url": "https://github.com/vllm-project/vllm/raw/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/tests%2Fquantization%2Ftest_quark.py",
+      "contents_url": "https://api.github.com/repos/vllm-project/vllm/contents/tests%2Fquantization%2Ftest_quark.py?ref=6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+      "patch": "@@ -21,9 +21,18 @@\n \n from tests.quantization.utils import load_model_without_vllm_runner\n from vllm._aiter_ops import is_aiter_found_and_supported, rocm_aiter_ops\n-from vllm.config import set_current_vllm_config\n+from vllm.config import VllmConfig, set_current_vllm_config\n from vllm.config.cache import CacheConfig\n from vllm.forward_context import set_forward_context\n+from vllm.model_executor import parameter\n+from vllm.model_executor.kernels.linear.scaled_mm.aiter import (\n+    AiterHipbMMPerTokenFp8ScaledMMLinearKernel,\n+    AiterPerTokenFp8ScaledMMLinearKernel,\n+    AiterPreshuffledPerTokenFp8ScaledMMLinearKernel,\n+)\n+from vllm.model_executor.kernels.linear.scaled_mm.ScaledMMLinearKernel import (\n+    FP8ScaledMMLinearLayerConfig,\n+)\n from vllm.model_executor.layers.attention import Attention\n from vllm.model_executor.layers.fused_moe import (\n     FusedMoeWeightScaleSupported,\n@@ -113,6 +122,12 @@ def on_gfx950() -> bool:\n \n AITER_AVAILABLE = is_aiter_found_and_supported()\n \n+AITER_PTPC_KERNELS = (\n+    AiterHipbMMPerTokenFp8ScaledMMLinearKernel,\n+    AiterPreshuffledPerTokenFp8ScaledMMLinearKernel,\n+    AiterPerTokenFp8ScaledMMLinearKernel,\n+)\n+\n DEVICE_TYPE = current_platform.device_type\n \n \n@@ -1095,6 +1110,54 @@ def test_quark_w8a8_fp8_moe_per_block_rejects_misaligned_partition():\n         )\n \n \n+def test_quark_fp8_ptpc_exposes_kernel_input_quant_key(monkeypatch):\n+    \"\"\"QuarkW8A8Fp8 must advertise the key its kernel consumes pre-quantized.\n+\n+    Only kernel selection runs, no GEMM. The shape matters: AITER PTPC\n+    kernels decline untuned shapes, leaving a torch kernel that has no key.\n+    \"\"\"\n+    # Llama-3.1-70B qkv_proj at TP1 (aiter-tuned N, K on gfx950).\n+    N, K = 10240, 8192\n+    dtype = torch.bfloat16\n+    kernel_config = FP8ScaledMMLinearLayerConfig(\n+        weight_quant_key=kFp8StaticChannelSym,\n+        activation_quant_key=kFp8DynamicTokenSym,\n+        weight_shape=(N, K),\n+        input_dtype=dtype,\n+        out_dtype=dtype,\n+    )\n+    if not any(\n+        cls.is_supported()[0] and cls.can_implement(kernel_config)[0]\n+        for cls in AITER_PTPC_KERNELS\n+    ):\n+        pytest.skip(\"no AITER PTPC kernel is usable for this shape and environment\")\n+\n+    monkeypatch.setattr(parameter, \"get_tensor_model_parallel_rank\", lambda: 0)\n+    monkeypatch.setattr(parameter, \"get_tensor_model_parallel_world_size\", lambda: 1)\n+\n+    scheme = QuarkW8A8Fp8.__new__(QuarkW8A8Fp8)\n+    scheme.weight_qscheme = \"per_channel\"\n+    scheme.is_static_input_scheme = False\n+    scheme.input_qscheme = \"per_channel\"\n+    scheme.activation_quant_key = kFp8DynamicTokenSym\n+    scheme.weight_quant_key = kFp8StaticChannelSym\n+    scheme.out_dtype = dtype\n+    scheme.input_dtype = dtype\n+\n+    layer = torch.nn.Module()\n+    with set_current_vllm_config(VllmConfig()):\n+        scheme.create_weights(\n+            layer,\n+            output_partition_sizes=[N],\n+            input_size_per_partition=K,\n+            params_dtype=dtype,\n+            weight_loader=lambda *args, **kwargs: None,\n+        )\n+\n+    assert isinstance(scheme.fp8_linear, AITER_PTPC_KERNELS)\n+    assert layer.input_quant_key == kFp8DynamicTokenSym\n+\n+\n @pytest.mark.parametrize(\"kv_cache_dtype\", [\"auto\", \"fp8\"])\n def test_quark_fp8_w_per_tensor_a_per_tensor(\n     kv_cache_dtype: str, monkeypatch, dist_init, workspace_init"
+    },
+    {
+      "sha": "a57e7510de01f03a066cb35c6e8a76c7b622f850",
+      "filename": "vllm/model_executor/kernels/linear/scaled_mm/aiter.py",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 0,
+      "changes": 16,
+      "blob_url": "https://github.com/vllm-project/vllm/blob/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/vllm%2Fmodel_executor%2Fkernels%2Flinear%2Fscaled_mm%2Faiter.py",
+      "raw_url": "https://github.com/vllm-project/vllm/raw/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/vllm%2Fmodel_executor%2Fkernels%2Flinear%2Fscaled_mm%2Faiter.py",
+      "contents_url": "https://api.github.com/repos/vllm-project/vllm/contents/vllm%2Fmodel_executor%2Fkernels%2Flinear%2Fscaled_mm%2Faiter.py?ref=6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+      "patch": "@@ -16,6 +16,8 @@\n )\n from vllm.model_executor.layers.quantization.utils.quant_utils import (\n     GroupShape,\n+    QuantKey,\n+    kFp8DynamicTokenSym,\n )\n from vllm.model_executor.utils import replace_parameter\n from vllm.platforms import current_platform\n@@ -150,6 +152,12 @@ def is_supported(\n             return False, \"requires aiter library to be installed.\"\n         return True, None\n \n+    def input_quant_key(self) -> QuantKey | None:\n+        # Does not call get_output_padding() - torch fallbacks\n+        # resolve padding from compilation_config, which is unset in\n+        # profile_run. This kernel does not pad activations.\n+        return kFp8DynamicTokenSym\n+\n     @classmethod\n     def can_implement(cls, c: FP8ScaledMMLinearLayerConfig) -> tuple[bool, str | None]:\n         is_ptpc = (\n@@ -242,6 +250,11 @@ def is_supported(\n \n         return True, None\n \n+    def input_quant_key(self) -> QuantKey | None:\n+        # Same per-token FP8 consume path as\n+        # AiterPreshuffledPerTokenFp8ScaledMMLinearKernel.\n+        return kFp8DynamicTokenSym\n+\n     @classmethod\n     def can_implement(cls, c: FP8ScaledMMLinearLayerConfig) -> tuple[bool, str | None]:\n         is_ptpc = (\n@@ -319,6 +332,9 @@ def is_supported(\n             compute_capability\n         )\n \n+    def input_quant_key(self) -> QuantKey | None:\n+        return kFp8DynamicTokenSym\n+\n     @classmethod\n     def can_implement(cls, c: FP8ScaledMMLinearLayerConfig) -> tuple[bool, str | None]:\n         is_ptpc = ("
+    },
+    {
+      "sha": "0e12799304fb1e957e33eaaa55241214f3d83ae0",
+      "filename": "vllm/model_executor/layers/quantization/online/fp8.py",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 2,
+      "changes": 11,
+      "blob_url": "https://github.com/vllm-project/vllm/blob/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/vllm%2Fmodel_executor%2Flayers%2Fquantization%2Fonline%2Ffp8.py",
+      "raw_url": "https://github.com/vllm-project/vllm/raw/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/vllm%2Fmodel_executor%2Flayers%2Fquantization%2Fonline%2Ffp8.py",
+      "contents_url": "https://api.github.com/repos/vllm-project/vllm/contents/vllm%2Fmodel_executor%2Flayers%2Fquantization%2Fonline%2Ffp8.py?ref=6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+      "patch": "@@ -27,6 +27,10 @@\n from vllm.model_executor.layers.fused_moe.oracle.fp8 import (\n     select_fp8_moe_backend,\n )\n+from vllm.model_executor.layers.fusion.quant_activation import (\n+    QuantizedActivation,\n+    expose_input_quant_key,\n+)\n from vllm.model_executor.layers.linear import (\n     LinearMethodBase,\n )\n@@ -405,6 +409,7 @@ def process_weights_after_loading(self, layer: Module) -> None:\n         replace_parameter(layer, \"weight_scale\", weight_scale)\n \n         self.fp8_linear.process_weights_after_loading(layer)\n+        expose_input_quant_key(layer, self.fp8_linear)\n \n         layer._already_called_process_weights_after_loading = True\n \n@@ -415,8 +420,10 @@ def apply(\n         bias: torch.Tensor | None = None,\n     ) -> torch.Tensor:\n         # if batch invariant mode is enabled dequant\n-        if envs.VLLM_BATCH_INVARIANT and not isinstance(\n-            self.fp8_linear, CutlassFP8ScaledMMLinearKernel\n+        if (\n+            envs.VLLM_BATCH_INVARIANT\n+            and not isinstance(self.fp8_linear, CutlassFP8ScaledMMLinearKernel)\n+            and not isinstance(x, QuantizedActivation)\n         ):\n             weight_dequant = (\n                 layer.weight.to(x.dtype) * layer.weight_scale.to(x.dtype).t()"
+    },
+    {
+      "sha": "1ef7c1dcc9afdb6b98330a9072a20032ef0312ab",
+      "filename": "vllm/model_executor/layers/quantization/quark/schemes/quark_w8a8_fp8.py",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/vllm-project/vllm/blob/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/vllm%2Fmodel_executor%2Flayers%2Fquantization%2Fquark%2Fschemes%2Fquark_w8a8_fp8.py",
+      "raw_url": "https://github.com/vllm-project/vllm/raw/6ca2b23e22aab8534e00a85e8ec5222508a6ecf3/vllm%2Fmodel_executor%2Flayers%2Fquantization%2Fquark%2Fschemes%2Fquark_w8a8_fp8.py",
+      "contents_url": "https://api.github.com/repos/vllm-project/vllm/contents/vllm%2Fmodel_executor%2Flayers%2Fquantization%2Fquark%2Fschemes%2Fquark_w8a8_fp8.py?ref=6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+      "patch": "@@ -9,6 +9,10 @@\n from vllm.config import get_current_vllm_config\n from vllm.logger import init_logger\n from vllm.model_executor.kernels.linear import init_fp8_linear_kernel\n+from vllm.model_executor.layers.fusion.quant_activation import (\n+    QuantizedActivation,\n+    expose_input_quant_key,\n+)\n from vllm.model_executor.layers.quantization.quark.schemes import QuarkScheme\n from vllm.model_executor.layers.quantization.utils.fp8_utils import (\n     create_fp8_scale_parameter,\n@@ -195,10 +199,12 @@ def create_weights(\n             module_name=self.__class__.__name__,\n         )\n \n+        expose_input_quant_key(layer, self.fp8_linear)\n+\n     def apply_weights(\n         self,\n         layer: torch.nn.Module,\n-        x: torch.Tensor,\n+        x: torch.Tensor | QuantizedActivation,\n         bias: torch.Tensor | None = None,\n     ) -> torch.Tensor:\n         return self.fp8_linear.apply_weights(layer, x, bias)"
+    }
+  ]
+}

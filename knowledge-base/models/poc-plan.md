@@ -5,6 +5,14 @@
 **Phase 2 — Weeks 3–5.** Required by [the final project plan](../../PROJECT_PLAN.md).
 Status: plan template; no workstation, deployment, or measurements recorded.
 
+**16 September selection update:** choose among the four professional workstation
+candidates in the [current survey](model-survey-2026-09-16.md): Qwen3.8-27B,
+Qwen3.6-35B-A3B, Gemma 4 31B IT and Gemma 4 26B A4B IT. The earlier 4B/9B default
+is withdrawn. A larger shared-model experiment remains possible if hardware
+permits. Record hardware limitations separately from the target deployment
+requirements; check the [license review](license-review-2026-09-16.md) for the
+selected exact artifact.
+
 ## Confirmed minimum
 
 Deploy **one open-source model on a local GPU workstation**, measure inference
