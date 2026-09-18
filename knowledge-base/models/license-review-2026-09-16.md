@@ -101,4 +101,6 @@ MIT没有与Apache第3节相同的明确专利授权段落，不能把简短许�
 
 **2026-09-17软件层补充：**引擎和harness使用独立许可证，不能继承模型权重许可。见[serving许可表](../infrastructure/serving-framework-survey-2026-09-17.md)和[harness许可分析](../infrastructure/harness-survey-2026-09-17.md)。本轮另核对Dify的workspace/前端附加条款、Flowise企业代码例外、n8n Sustainable Use，以及Claude Code与Codex CLI不同的许可和支持边界。
 
+**2026-09-18非coding产品补充：**harness正文新增Open WebUI品牌条款、Onyx社区/企业代码边界、LibreChat代码执行服务的独立运行条件及Agno管理平台的产品分层。准确范围与原文见该调研第9节及TECH-043–053；这些条件不改变模型权重本身的许可。
+
 模型LICENSE均由官方repo固定修订取得，Google许可由模型卡链接的官方页面取得，Apache全文另由ASF取得。模型卡、许可、来源URL与SHA-256在TECH-004、006、008、012–017、019的归档及metadata中相互对应。Meta开放计划见TECH-018。人工法律审阅未完成，以上没有替代内部采用结论。

@@ -1,0 +1,39 @@
+\section{本地模型如何进入基金业务}
+
+基金公司的LLM应用从具体工作开始：研究员希望更快理解材料、查询数据和形成初稿，风控与合规人员需要整理风险信息和审核依据，运营与IT人员则处理文件、异常和代码。模型的语言能力与资料、工具和处理流程结合，形成使用者可以直接操作的业务应用。
+
+例如，研究员要求比较一家公司的数期财报。系统首先取得相关文件，解析并选出与问题有关的内容；模型组织比较方向，必要时调用计算工具核对指标，再形成带来源的分析。模型、资料系统和计算工具分别承担任务，应用负责保存上下文、展示结果并让使用者继续追问。
+
+\begin{table}[H]\small\centering
+\caption{基金业务中的工作、模型作用与交付内容}
+\begin{tabularx}{\linewidth}{@{}P{22mm}Y Y Y@{}}\toprule
+职能 & 具体工作 & LLM承担的工作 & 应用交付的内容\\\midrule
+前台投研 & 阅读公告与财报，比较公司和行业变化。 & 理解材料、提取事件、组织证据与解释。 & 比较表、事件记录、研究简报及来源。\\
+中台风控与合规 & 整理风险通知，查询制度，预审材料。 & 提取信息、关联条款、标出疑点与修改方向。 & 待复核问题、依据位置与处理记录。\\
+后台运营与IT & 处理文件、异常、工单和研究代码。 & 归类信息、形成说明、生成代码或操作步骤。 & 规范化文件、异常说明及经过检查的实现。\\\bottomrule
+\end{tabularx}
+\end{table}
+\smallnote{按公募基金的典型职能归纳。}
+
+从技术组成看，\textbf{模型、Serving framework和Harness分别解决不同问题}。模型接收上下文并产生输出；Serving framework负责模型装载、请求调度、计算和缓存；Harness组织连续的模型调用、工具操作和任务状态。员工工作台或业务应用通常还提供界面、资料管理与用户权限。\src{TECH-020}\src{TECH-029}\src{TECH-037}
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}
+\node[flow,text width=37mm,minimum height=20mm](a) at (0,0){业务应用与Harness\\界面、任务与工具组织};
+\node[flow,text width=37mm,minimum height=20mm](b) at (59mm,0){推理服务系统\\调度、缓存与执行};
+\node[flow,text width=33mm,minimum height=20mm](c) at (115mm,0){模型与权重\\理解、生成与推理};
+\node[flow,text width=39mm,minimum height=15mm,fill=teal!8](d) at (0,-34mm){资料与研究工具\\检索、数据库、计算};
+\draw[arr]([yshift=3mm]a.east)--node[above,font=\scriptsize]{模型请求}([yshift=3mm]b.west);
+\draw[arr]([yshift=-3mm]b.west)--node[below,font=\scriptsize]{返回输出}([yshift=-3mm]a.east);
+\draw[arr]([yshift=3mm]b.east)--node[above,font=\scriptsize]{执行计算}([yshift=3mm]c.west);
+\draw[arr]([yshift=-3mm]c.west)--node[below,font=\scriptsize]{生成结果}([yshift=-3mm]b.east);
+\draw[arr]([xshift=-8mm]a.south)--node[left,font=\scriptsize]{工具调用}([xshift=-8mm]d.north);
+\draw[arr]([xshift=8mm]d.north)--node[right,font=\scriptsize]{工具结果}([xshift=8mm]a.south);
+\end{tikzpicture}
+\caption{应用组织模型调用和工具操作；推理服务装载并执行模型。请求与返回分别沿独立箭头传递。}
+\end{figure}
+
+这一区分解释了同一模型可以呈现不同的使用体验。接入聊天工作台后，它用于资料阅读与写作；接入固定流程后，它按规定步骤处理公告或待审材料；接入具备文件和计算工具的Agent后，它能够围绕目标持续完成多步工作。应用层的变化也会改变调用次数、上下文长度及服务负载。
+
+本报告围绕专业个人工作站与面向数十人的共享服务展开。前者关注单人任务体验、设备资源和本机工具，后者关注多用户请求、共享资料、用户隔离与运行管理。两种形态可以使用相同模型，也可以由个人应用连接集中推理服务。
+\clearpage

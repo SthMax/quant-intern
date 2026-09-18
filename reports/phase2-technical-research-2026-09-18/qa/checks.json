@@ -1,0 +1,108 @@
+{
+  "pdf_sha256": "fe85a1093ba498460f89d30c7ec0f5e85afeb7be368cdd2ef8986f1336bc7200",
+  "physical_pages": 24,
+  "reference_count": 50,
+  "source_hashes_verified": 323,
+  "external_urls_verified": 50,
+  "model_values_verified": 8,
+  "latex_critical_warnings_absent": true,
+  "pages": [
+    {
+      "physical_page": 1,
+      "characters": 203
+    },
+    {
+      "physical_page": 2,
+      "characters": 836
+    },
+    {
+      "physical_page": 3,
+      "characters": 177
+    },
+    {
+      "physical_page": 4,
+      "characters": 1048
+    },
+    {
+      "physical_page": 5,
+      "characters": 1300
+    },
+    {
+      "physical_page": 6,
+      "characters": 1203
+    },
+    {
+      "physical_page": 7,
+      "characters": 1102
+    },
+    {
+      "physical_page": 8,
+      "characters": 1188
+    },
+    {
+      "physical_page": 9,
+      "characters": 973
+    },
+    {
+      "physical_page": 10,
+      "characters": 1386
+    },
+    {
+      "physical_page": 11,
+      "characters": 1198
+    },
+    {
+      "physical_page": 12,
+      "characters": 1017
+    },
+    {
+      "physical_page": 13,
+      "characters": 1200
+    },
+    {
+      "physical_page": 14,
+      "characters": 1184
+    },
+    {
+      "physical_page": 15,
+      "characters": 1130
+    },
+    {
+      "physical_page": 16,
+      "characters": 1214
+    },
+    {
+      "physical_page": 17,
+      "characters": 1178
+    },
+    {
+      "physical_page": 18,
+      "characters": 844
+    },
+    {
+      "physical_page": 19,
+      "characters": 1108
+    },
+    {
+      "physical_page": 20,
+      "characters": 971
+    },
+    {
+      "physical_page": 21,
+      "characters": 1190
+    },
+    {
+      "physical_page": 22,
+      "characters": 1249
+    },
+    {
+      "physical_page": 23,
+      "characters": 1363
+    },
+    {
+      "physical_page": 24,
+      "characters": 1090
+    }
+  ],
+  "visual_review": "Recorded separately in qa/review.md; machine checks do not prove layout quality."
+}

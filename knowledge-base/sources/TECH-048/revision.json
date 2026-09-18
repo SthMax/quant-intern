@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "554b331eb326f8112401c6c9951d694b30ad0e95",
+    "node_id": "C_kwDOQb6kR9oAKDU1NGIzMzFlYjMyNmY4MTEyNDAxYzZjOTk1MWQ2OTRiMzBhZDBlOTU",
+    "commit": {
+      "author": {
+        "name": "Peter Steinberger",
+        "email": "steipete@gmail.com",
+        "date": "2026-09-17T17:25:15Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T17:25:15Z"
+      },
+      "message": "test(install): use system Bash for stdin fixture (#151014)",
+      "tree": {
+        "sha": "2d6c935c8a7b7144699cfd03bdf6ffdd82f5a2fb",
+        "url": "https://api.github.com/repos/openclaw/openclaw/git/trees/2d6c935c8a7b7144699cfd03bdf6ffdd82f5a2fb"
+      },
+      "url": "https://api.github.com/repos/openclaw/openclaw/git/commits/554b331eb326f8112401c6c9951d694b30ad0e95",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrCJ7CRC1aQ7uu5UhlAAAVO0QAAqWn6UjIX8vS6XpekO6ijxW\ncbHyYJ1KEJw+IVUSdcbeFfdqEVpQUYTmkYa7lD1f4E/exDTvv0wcx/pEdbgOIJ8h\nnMFulTq9CZnqPSrZ+XF75bGTTV/aT/Rb23+8sS1X3hRaPFAlegmyZdn9TIsXV9WG\nvXDjb6lyD349GfVHXHKdA8DEfChdsc5CkW+GJKrhPWMp6AqLzrKl3nS7/zNyXKDu\njMJ0VW9f5z7d5q9kioWgrHwulSfo3bhaQbe/5WDDdHER+8MgJGvkr8BqGIkKQD1V\nUN4toNOtTK30J2PV8nyfmDDVLqXGXFYL17CJYK8GLog8NKHZkYTkde6F6F5EXOwx\nF4sKt5wpaMlL3Bo5Xsh5Rh9iWMTO9BjqteG+4zE0mq7FXnDYL7gnzJdJ1K/6LP8a\nMgQXrOG2j7WxB2WQB8TjlyQN+xYDAeHv3EMLx5D3C+/ugK1Hwku9giM1yVJgoboN\n3ocWPfnhArSsbqFf9ZK2akvQHDpXSO6w3qJPEsprurqnYxEAbAmoNRZB2ss7oBb/\nbBi7GFYWFoW59STFsL6DC7Pj+GBELar3JbUDbXPVBzxuRKDYONszm2gcMU5qZYUn\nLAjq42es9Uj9klV8VL8G0J55WopZn17VINdGoiZAYizca0QQbqXXkiabha8Ix9GE\n1eOmwMP0NRtlUC3HKEqM\n=XUFn\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2d6c935c8a7b7144699cfd03bdf6ffdd82f5a2fb\nparent d4ad94bc3b84cc6cf832ebfac523b38461fd6f9e\nauthor Peter Steinberger <steipete@gmail.com> 1789665915 -0700\ncommitter GitHub <noreply@github.com> 1789665915 -0700\n\ntest(install): use system Bash for stdin fixture (#151014)",
+        "verified_at": "2026-09-17T17:25:16Z"
+      }
+    },
+    "url": "https://api.github.com/repos/openclaw/openclaw/commits/554b331eb326f8112401c6c9951d694b30ad0e95",
+    "html_url": "https://github.com/openclaw/openclaw/commit/554b331eb326f8112401c6c9951d694b30ad0e95",
+    "comments_url": "https://api.github.com/repos/openclaw/openclaw/commits/554b331eb326f8112401c6c9951d694b30ad0e95/comments",
+    "author": {
+      "login": "steipete",
+      "id": 58493,
+      "node_id": "MDQ6VXNlcjU4NDkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58493?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/steipete",
+      "html_url": "https://github.com/steipete",
+      "followers_url": "https://api.github.com/users/steipete/followers",
+      "following_url": "https://api.github.com/users/steipete/following{/other_user}",
+      "gists_url": "https://api.github.com/users/steipete/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/steipete/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/steipete/subscriptions",
+      "organizations_url": "https://api.github.com/users/steipete/orgs",
+      "repos_url": "https://api.github.com/users/steipete/repos",
+      "events_url": "https://api.github.com/users/steipete/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/steipete/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d4ad94bc3b84cc6cf832ebfac523b38461fd6f9e",
+        "url": "https://api.github.com/repos/openclaw/openclaw/commits/d4ad94bc3b84cc6cf832ebfac523b38461fd6f9e",
+        "html_url": "https://github.com/openclaw/openclaw/commit/d4ad94bc3b84cc6cf832ebfac523b38461fd6f9e"
+      }
+    ]
+  }
+]

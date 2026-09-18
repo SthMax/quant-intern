@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "d213a3b13545b4e85524a572ac695b2181728e3b",
+    "node_id": "C_kwDOMneZ99oAKGQyMTNhM2IxMzU0NWI0ZTg1NTI0YTU3MmFjNjk1YjIxODE3MjhlM2I",
+    "commit": {
+      "author": {
+        "name": "Lifei Zhou",
+        "email": "lifei@squareup.com",
+        "date": "2026-09-17T03:25:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T03:25:45Z"
+      },
+      "message": "feat: add Live voice conversations to the desktop app (#12093)",
+      "tree": {
+        "sha": "e712a267a692de7ae7c4ed879f4c38489cbb4004",
+        "url": "https://api.github.com/repos/aaif-goose/goose/git/trees/e712a267a692de7ae7c4ed879f4c38489cbb4004"
+      },
+      "url": "https://api.github.com/repos/aaif-goose/goose/git/commits/d213a3b13545b4e85524a572ac695b2181728e3b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqq13JCRC1aQ7uu5UhlAAAVSsQACs53oPn6/zdI6jus43VvSoJ\n/l5HlNc3301O0NuFUpa7zUbrATBO6DyVTvfLLPa5FFGE7Qr9Q4xxEdME0mzIGa5a\nk6o+0G1+6wAyOiKw7dZhNSU0nQZQM8m6fjUpXOTix/KWwKnyeqp9Jpc4hCStQxHv\nmdRvvnITXWeeDTFypmMJc5tVBMSHbwC2qNulKDVOlNQuQfOpaPDeW+CFZSPx95if\n7z2AsIQT5MSt/tiyu/HnnLVZObKuqyJBYwdIgWcZHtb23j9HVxmkO4mG2cLetMBc\nDL2eJPL/RgIJW/ufx5g7snoAlJ6SiXgGspmYMWFCZTJdoVUa/qBHYJ2F4iwCKbqd\nkysfEuDD9DSWjJ08AzAYR+2qYiCVJQMvZcKJouf/7jGtV2IYEH2jKbLeydTzg/Cx\nxiqzfuUhDen54fxCIAN4UlFr7hpgOlbCkNREOtZfTgksb3EwhU3ofY5QSBqQgFyU\nvpokxjuPQynTlZRLoiwpVOaOInzAuBs4hOFDfFKu3xF+L7D/v4DicCG9FyAHu2OY\nKOp0ASFm0/dsPdga61Rj/MCn79sfiiKJLHqv1lkz/q3DaRFMhkZwnhAvdZ2KzzFC\nBLsAt/V5Xk3D876D4/LfxZLnFdD6tse2PycuLiJKjBw6aZ6rvC5cpNlYhw/ANDOl\nWaFBLj4qGS2k5LEg9YDy\n=+Caa\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e712a267a692de7ae7c4ed879f4c38489cbb4004\nparent 3952f64e71fec388e7ff8b7dc50aaae86903b66b\nauthor Lifei Zhou <lifei@squareup.com> 1789615545 +0000\ncommitter GitHub <noreply@github.com> 1789615545 +0000\n\nfeat: add Live voice conversations to the desktop app (#12093)",
+        "verified_at": "2026-09-17T03:26:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/aaif-goose/goose/commits/d213a3b13545b4e85524a572ac695b2181728e3b",
+    "html_url": "https://github.com/aaif-goose/goose/commit/d213a3b13545b4e85524a572ac695b2181728e3b",
+    "comments_url": "https://api.github.com/repos/aaif-goose/goose/commits/d213a3b13545b4e85524a572ac695b2181728e3b/comments",
+    "author": {
+      "login": "lifeizhou-ap",
+      "id": 93108087,
+      "node_id": "U_kgDOBYy3dw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93108087?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lifeizhou-ap",
+      "html_url": "https://github.com/lifeizhou-ap",
+      "followers_url": "https://api.github.com/users/lifeizhou-ap/followers",
+      "following_url": "https://api.github.com/users/lifeizhou-ap/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lifeizhou-ap/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lifeizhou-ap/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lifeizhou-ap/subscriptions",
+      "organizations_url": "https://api.github.com/users/lifeizhou-ap/orgs",
+      "repos_url": "https://api.github.com/users/lifeizhou-ap/repos",
+      "events_url": "https://api.github.com/users/lifeizhou-ap/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lifeizhou-ap/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3952f64e71fec388e7ff8b7dc50aaae86903b66b",
+        "url": "https://api.github.com/repos/aaif-goose/goose/commits/3952f64e71fec388e7ff8b7dc50aaae86903b66b",
+        "html_url": "https://github.com/aaif-goose/goose/commit/3952f64e71fec388e7ff8b7dc50aaae86903b66b"
+      }
+    ]
+  }
+]

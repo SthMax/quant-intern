@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "459fe6eca83206fde3ece88c1023fa6bc666f63e",
+    "node_id": "C_kwDOOhTcGNoAKDQ1OWZlNmVjYTgzMjA2ZmRlM2VjZTg4YzEwMjNmYTZiYzY2NmY2M2U",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-09-17T17:06:53Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T17:06:53Z"
+      },
+      "message": "Build(deps): Bump the codeql-actions group across 1 directory with 3 updates (#8480)\n\nBumps the codeql-actions group with 3 updates in the / directory: [github/codeql-action/init](https://github.com/github/codeql-action), [github/codeql-action/autobuild](https://github.com/github/codeql-action) and [github/codeql-action/analyze](https://github.com/github/codeql-action).\n\n\nUpdates `github/codeql-action/init` from 4.37.9 to 4.38.0\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/cdf488f595d80d6e07e03d4674febd5ab45fa938...b96794f015dfd88f77b49b1c93e0fa7110f94c63)\n\nUpdates `github/codeql-action/autobuild` from 4.37.9 to 4.38.0\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/cdf488f595d80d6e07e03d4674febd5ab45fa938...b96794f015dfd88f77b49b1c93e0fa7110f94c63)\n\nUpdates `github/codeql-action/analyze` from 4.37.9 to 4.38.0\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/cdf488f595d80d6e07e03d4674febd5ab45fa938...b96794f015dfd88f77b49b1c93e0fa7110f94c63)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action/init\n  dependency-version: 4.38.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: codeql-actions\n- dependency-name: github/codeql-action/autobuild\n  dependency-version: 4.38.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: codeql-actions\n- dependency-name: github/codeql-action/analyze\n  dependency-version: 4.38.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: codeql-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "63c26ee5d39bfaa7a43f4c1d50c53b3d2d98ef0a",
+        "url": "https://api.github.com/repos/microsoft/agent-framework/git/trees/63c26ee5d39bfaa7a43f4c1d50c53b3d2d98ef0a"
+      },
+      "url": "https://api.github.com/repos/microsoft/agent-framework/git/commits/459fe6eca83206fde3ece88c1023fa6bc666f63e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrB49CRC1aQ7uu5UhlAAA3R0QAHC1Oal/OZcBUKcc4VZRIIr+\nrcUvTewCEn3s3kerdevFD2A2cED0iuNILMEXwwrWPJhqiN2ksnZF9VPa7R73A2vH\nuDiBhjlcjuc80h7DpZBVB+2Km0sL/RrAIRFbI7it2n48QCH78fNjTbbL7CmK8pgz\nuPH98YMVENcK1Ys1+ANqXm/tY0qi/vQD5ZtD9mojj0/uPbGx5QIxOrN1vx3isDuM\n8kXCWQ520TwgBiQ7u6fashbB/+arli4Kd7kf+zRHAk8eH7OWkC6qjODTlsivGC30\n0QFyDlGU0NyOhJWn47XDCFETQvgurCFtRfV34qBIZTM/h498gnZNVcBv3+fUkhGX\nr7LkRfB+PNDdHwl28hcl6HpZ4IlcTSPmK+ulB6Lf5MrJfOvy5JLqYj/CNZePIUBI\n27AFYStpFEi5zZEttat9jlTMocAtuit8K+TylYWpNNfoNhU1q2q/TSW4ZyOQtj2E\nKpw9rdAJszjKd9WkFE6t7R1ZZsN90Ac3Y3PJjd3T3D5+vMXA7mCy3hGZ8VyHtYN/\ntzq4QaEmbXdiccSn5L8jRTh3js83hGi7Nq1yNNaU1rbysFlsaohXJfFBNWX6yF2F\n6JGnwU9TuNjJC5BOub13wD4V6STsyL7Ydq9/66qLagT2GH02/SUoad02UgECk9H+\nS+ak/qlCJepWtD46zp8F\n=Fx0X\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 63c26ee5d39bfaa7a43f4c1d50c53b3d2d98ef0a\nparent bc57ce8857a5a38af5d87068daf1677fa3a01d32\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1789664813 +0000\ncommitter GitHub <noreply@github.com> 1789664813 +0000\n\nBuild(deps): Bump the codeql-actions group across 1 directory with 3 updates (#8480)\n\nBumps the codeql-actions group with 3 updates in the / directory: [github/codeql-action/init](https://github.com/github/codeql-action), [github/codeql-action/autobuild](https://github.com/github/codeql-action) and [github/codeql-action/analyze](https://github.com/github/codeql-action).\n\n\nUpdates `github/codeql-action/init` from 4.37.9 to 4.38.0\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/cdf488f595d80d6e07e03d4674febd5ab45fa938...b96794f015dfd88f77b49b1c93e0fa7110f94c63)\n\nUpdates `github/codeql-action/autobuild` from 4.37.9 to 4.38.0\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/cdf488f595d80d6e07e03d4674febd5ab45fa938...b96794f015dfd88f77b49b1c93e0fa7110f94c63)\n\nUpdates `github/codeql-action/analyze` from 4.37.9 to 4.38.0\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/cdf488f595d80d6e07e03d4674febd5ab45fa938...b96794f015dfd88f77b49b1c93e0fa7110f94c63)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action/init\n  dependency-version: 4.38.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: codeql-actions\n- dependency-name: github/codeql-action/autobuild\n  dependency-version: 4.38.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: codeql-actions\n- dependency-name: github/codeql-action/analyze\n  dependency-version: 4.38.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: codeql-actions\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "verified_at": "2026-09-17T17:07:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/microsoft/agent-framework/commits/459fe6eca83206fde3ece88c1023fa6bc666f63e",
+    "html_url": "https://github.com/microsoft/agent-framework/commit/459fe6eca83206fde3ece88c1023fa6bc666f63e",
+    "comments_url": "https://api.github.com/repos/microsoft/agent-framework/commits/459fe6eca83206fde3ece88c1023fa6bc666f63e/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bc57ce8857a5a38af5d87068daf1677fa3a01d32",
+        "url": "https://api.github.com/repos/microsoft/agent-framework/commits/bc57ce8857a5a38af5d87068daf1677fa3a01d32",
+        "html_url": "https://github.com/microsoft/agent-framework/commit/bc57ce8857a5a38af5d87068daf1677fa3a01d32"
+      }
+    ]
+  }
+]

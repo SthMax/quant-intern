@@ -1,0 +1,76 @@
+{
+  "source_id": "TECH-044",
+  "title": "danny-avila/LibreChat official product, repository and license research",
+  "issuer": "danny-avila",
+  "repository": "danny-avila/LibreChat",
+  "official_url": "https://github.com/danny-avila/LibreChat",
+  "revision": "12d78909d3f5247a8d40a47f0ef5c3ac771d9c5a",
+  "commit_date": "2026-09-17T02:13:49Z",
+  "retrieved_at": "2026-09-17T17:28:17.449406+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement. Separate mature chat features from explicitly experimental stateful/attached environments; latest-release API failure does not imply no releases.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/danny-avila/LibreChat/commits?per_page=1",
+      "sha256": "59cfbe8a776c90e3bcbc72c2334e2ac67285292102be5c49f3a4383d0c22c3b1",
+      "bytes": 7466
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/danny-avila/LibreChat/12d78909d3f5247a8d40a47f0ef5c3ac771d9c5a/README.md",
+      "sha256": "3f109e0c748e15c27e2b4197af1f0e06c42563d033beace1fb5a2f1c87ba66cb",
+      "bytes": 16187
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/danny-avila/LibreChat/12d78909d3f5247a8d40a47f0ef5c3ac771d9c5a/LICENSE",
+      "sha256": "1ce5c9d51e5ab764b44142cd44d1e687f5bfe32f807c7221c14d061007309b97",
+      "bytes": 1066
+    },
+    "agents.html": {
+      "requested_url": "https://www.librechat.ai/docs/features/agents",
+      "sha256": "871b8ece31d658dcd439ad7156e39890221c3a9251754cec85f686cf7189ed48",
+      "bytes": 674879,
+      "retrieved_at": "2026-09-17T17:31:02.195467+00:00"
+    },
+    "agents.md": {
+      "requested_url": "https://www.librechat.ai/docs/features/agents",
+      "sha256": "de5b938d265f160a733be5c5d7e67fa56dcbab64d6fa2f5bad8faaa257aecc07",
+      "bytes": 56456,
+      "retrieved_at": "2026-09-17T17:31:02.195905+00:00"
+    },
+    "code-interpreter.html": {
+      "requested_url": "https://www.librechat.ai/docs/features/code_interpreter",
+      "sha256": "4f4d94f508bb82fd9ad268a87a943e925cc47a1d9610b38419faad04e0ea035b",
+      "bytes": 501063,
+      "retrieved_at": "2026-09-17T17:31:02.396339+00:00"
+    },
+    "code-interpreter.md": {
+      "requested_url": "https://www.librechat.ai/docs/features/code_interpreter",
+      "sha256": "e7ea8ad4a552ae8379c8e27e4c4ba64ad649293a20eaacbc6594a2e087ae95e8",
+      "bytes": 26960,
+      "retrieved_at": "2026-09-17T17:31:02.396447+00:00"
+    },
+    "endpoints.html": {
+      "requested_url": "https://www.librechat.ai/docs/configuration/librechat_yaml/ai_endpoints",
+      "sha256": "191a7309bcb0a9bd2d63fded758868ef93bc4b3b6251f4a4c5d266fa136bb356",
+      "bytes": 433483,
+      "retrieved_at": "2026-09-17T17:32:34.993867+00:00"
+    },
+    "endpoints.md": {
+      "requested_url": "https://www.librechat.ai/docs/configuration/librechat_yaml/ai_endpoints",
+      "sha256": "e01fbfefb5c1d72f8610d3ec6267e5ceba98c4e995f3b949a1ea07f3d617c021",
+      "bytes": 2707,
+      "retrieved_at": "2026-09-17T17:32:34.994551+00:00"
+    }
+  },
+  "retrieval_failures": {
+    "latest-release": "curl: (56) The requested URL returned error: 404\n",
+    "custom-endpoints": "curl: (56) The requested URL returned error: 404\n"
+  },
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README; Agents and Code Interpreter docs; endpoints.md; MIT LICENSE",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

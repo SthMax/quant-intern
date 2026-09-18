@@ -1,0 +1,66 @@
+{
+  "source_id": "TECH-045",
+  "title": "onyx-dot-app/onyx official product, repository and license research",
+  "issuer": "onyx-dot-app",
+  "repository": "onyx-dot-app/onyx",
+  "official_url": "https://github.com/onyx-dot-app/onyx",
+  "revision": "d7cc16686a35f936f50eaec7afc910d699c2abfd",
+  "commit_date": "2026-09-17T16:58:20Z",
+  "retrieved_at": "2026-09-17T17:28:17.604310+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/onyx-dot-app/onyx/commits?per_page=1",
+      "sha256": "73ca63dcffe1c452e570c0fb50c674c5a225a681815ab06c0daa6aadc60c7bdc",
+      "bytes": 5138
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/d7cc16686a35f936f50eaec7afc910d699c2abfd/README.md",
+      "sha256": "e39914852464f0e02b72f813876a62bb3ecca902b55a08201bc044dd17e9f375",
+      "bytes": 6111
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/d7cc16686a35f936f50eaec7afc910d699c2abfd/LICENSE",
+      "sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7",
+      "bytes": 1675
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/onyx-dot-app/onyx/releases/latest",
+      "sha256": "2b69e33b4c19eea037af5b25365de80360ecdab441bbe1686ae85ad9f1ea3ee0",
+      "bytes": 20972
+    },
+    "welcome.html": {
+      "requested_url": "https://docs.onyx.app/welcome",
+      "sha256": "36a0a009e007f4eaf7e43d86a854b5b0521d9f04431c7580f96926fac709e824",
+      "bytes": 310503,
+      "retrieved_at": "2026-09-17T17:31:02.386095+00:00"
+    },
+    "welcome.md": {
+      "requested_url": "https://docs.onyx.app/welcome",
+      "sha256": "26a31795e6abc5f187f373a28c450f952b12118ab43cd18d8eecf4f7fb0ec864",
+      "bytes": 3562,
+      "retrieved_at": "2026-09-17T17:31:02.386208+00:00"
+    },
+    "pricing-features.html": {
+      "requested_url": "https://www.onyx.app/pricing",
+      "sha256": "d449abe1c7fa6309289b9a2a66b11aa9b6526e7b9b41f6112e42e2aadba31f7c",
+      "bytes": 282126,
+      "retrieved_at": "2026-09-17T17:31:03.275928+00:00"
+    },
+    "pricing-features.md": {
+      "requested_url": "https://www.onyx.app/pricing",
+      "sha256": "ff35becd161e7b4df81a0f009b2fea6dfc573d2ba303e33fb05685eb3c8d11a5",
+      "bytes": 1984,
+      "retrieved_at": "2026-09-17T17:31:03.276069+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README full vs Lite; Community/Enterprise; pricing-features; LICENSE",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

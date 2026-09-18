@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "a71c4d0c607260d2483d73644a60dc49d036148c",
+    "node_id": "C_kwDOHSAURtoAKGE3MWM0ZDBjNjA3MjYwZDI0ODNkNzM2NDRhNjBkYzQ5ZDAzNjE0OGM",
+    "commit": {
+      "author": {
+        "name": "陈志谦",
+        "email": "89645338+simpleqt@users.noreply.github.com",
+        "date": "2026-09-17T08:45:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T08:45:33Z"
+      },
+      "message": "fix: correct streaming docstring parameter names in two model classes (#10228)\n\nStreaming parser docstrings in six model classes did not match their\nsignatures:\n\n- `libs/agno/agno/models/meta/llama.py:443`\n(`_parse_provider_response_delta`): documented `response_delta`,\nparameter is `response`\n- `libs/agno/agno/models/openai/responses.py:1291`\n(`_parse_provider_response_delta`): documented `response`, parameters\nare `stream_event` / `assistant_message` / `tool_use`; Returns said\n`ModelResponse`, the method returns `Tuple[ModelResponse, Dict[str,\nAny]]`\n- `libs/agno/agno/models/openai/responses.py:1398` (`_get_metrics`):\ndocumented `response`, parameter is `response_usage`\n- `libs/agno/agno/models/cohere/chat.py:367`\n(`_parse_provider_response_delta`): `tool_use` was not documented;\nReturns said `ModelResponse`, the method returns `Tuple[ModelResponse,\nDict[str, Any]]`\n- `libs/agno/agno/models/ollama/chat.py:407`\n(`_parse_provider_response_delta`): Returns said\n`Iterator[ModelResponse]`, the method returns `ModelResponse`\n- `libs/agno/agno/models/anthropic/claude.py:1127`\n(`_parse_provider_response_delta`): summary named\n`ModelProviderResponse`, which does not exist; Returns described an\niterator\n- `libs/agno/agno/models/groq/groq.py:530`\n(`_parse_provider_response_delta`): Returns described an iterator\n\nThe new lines reuse the existing wording for the same parameters in\n`aws/bedrock.py`, `models/base.py`, `openai/chat.py` and\n`cerebras/cerebras.py`.\n\nDocstring-only change.\n\n- [x] Check if this PR was entirely AI-generated (by Copilot, Claude\nCode, Cursor, etc.)\n\n---------\n\nCo-authored-by: Harsh <74086017+harshsinha03@users.noreply.github.com>\nCo-authored-by: Harsh Sinha <sinha03harsh@gmail.com>",
+      "tree": {
+        "sha": "2051887135ed59d3d8fa1acaee33719cb6e9c5e2",
+        "url": "https://api.github.com/repos/agno-agi/agno/git/trees/2051887135ed59d3d8fa1acaee33719cb6e9c5e2"
+      },
+      "url": "https://api.github.com/repos/agno-agi/agno/git/commits/a71c4d0c607260d2483d73644a60dc49d036148c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqq6itCRC1aQ7uu5UhlAAADD4QAEYT8kiwR2GVUlTStazEQWv4\nxKKuITI/M286vGhiy57Jh4RUFIFUxId9PcAVYxCxmXi35vXrehd30rW2N+lrEfeM\nLIwPB8scYI0JYwCduRhDxYP1jRh+ZBpKSeprCVNo1Hze/d7HYDO1N5Xw3IIB7xkh\nKmjre03S6sVHNmMhkoHYwTn4WtFcl17l1d7HJEogNHlvTLNHFT09L8VcNVjA6Lvz\nWgXlsxYrCFlXOa/fP0z4+FDEiWjfJM4MzhWUKJEW7ecWSDS+9s9NurfN/e1GWs06\n5f/HWU43fH5/iL4ipdSpQHCgxjz+VV5s1di9tSKwu1J53NJ71ylVXjMgdx4jRlpm\n22ZWK9bDzLOY+9wmsydvfMNP4rtswP1+2EeDs9cH3Ra+aEx38cX8tmYx//ximxsv\nLQtDeHkFmqDNI5V/mRAIMYIAFdtS6sNwgZvjD8XYEmeXALqeSKHKmgEjo8+wIKrq\nst4RcY4GQ7Bt0Q+Llcc6poPld/s9TmV4YbF6ZFCD0vRyWeW2EuzYAs0G4hSRUqGz\nVi0pVt9SN1WHAfCiPjt5McTvhRHGSi1OrNA6DIBK4mjj/TmKNm7WmEhrGxIw0ZQ9\n1naufM0pyBgukoU4lPOmPJNZj1OoJb39hrDfQavTa+USQLcJIiwZfWuU+i0k4egF\nR0IV8RCTpswidbUON/hy\n=7W+n\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2051887135ed59d3d8fa1acaee33719cb6e9c5e2\nparent 38039bf5bf5de2a2d912af73102543d236ace54a\nauthor 陈志谦 <89645338+simpleqt@users.noreply.github.com> 1789634733 +0800\ncommitter GitHub <noreply@github.com> 1789634733 +0530\n\nfix: correct streaming docstring parameter names in two model classes (#10228)\n\nStreaming parser docstrings in six model classes did not match their\nsignatures:\n\n- `libs/agno/agno/models/meta/llama.py:443`\n(`_parse_provider_response_delta`): documented `response_delta`,\nparameter is `response`\n- `libs/agno/agno/models/openai/responses.py:1291`\n(`_parse_provider_response_delta`): documented `response`, parameters\nare `stream_event` / `assistant_message` / `tool_use`; Returns said\n`ModelResponse`, the method returns `Tuple[ModelResponse, Dict[str,\nAny]]`\n- `libs/agno/agno/models/openai/responses.py:1398` (`_get_metrics`):\ndocumented `response`, parameter is `response_usage`\n- `libs/agno/agno/models/cohere/chat.py:367`\n(`_parse_provider_response_delta`): `tool_use` was not documented;\nReturns said `ModelResponse`, the method returns `Tuple[ModelResponse,\nDict[str, Any]]`\n- `libs/agno/agno/models/ollama/chat.py:407`\n(`_parse_provider_response_delta`): Returns said\n`Iterator[ModelResponse]`, the method returns `ModelResponse`\n- `libs/agno/agno/models/anthropic/claude.py:1127`\n(`_parse_provider_response_delta`): summary named\n`ModelProviderResponse`, which does not exist; Returns described an\niterator\n- `libs/agno/agno/models/groq/groq.py:530`\n(`_parse_provider_response_delta`): Returns described an iterator\n\nThe new lines reuse the existing wording for the same parameters in\n`aws/bedrock.py`, `models/base.py`, `openai/chat.py` and\n`cerebras/cerebras.py`.\n\nDocstring-only change.\n\n- [x] Check if this PR was entirely AI-generated (by Copilot, Claude\nCode, Cursor, etc.)\n\n---------\n\nCo-authored-by: Harsh <74086017+harshsinha03@users.noreply.github.com>\nCo-authored-by: Harsh Sinha <sinha03harsh@gmail.com>",
+        "verified_at": "2026-09-17T08:45:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/agno-agi/agno/commits/a71c4d0c607260d2483d73644a60dc49d036148c",
+    "html_url": "https://github.com/agno-agi/agno/commit/a71c4d0c607260d2483d73644a60dc49d036148c",
+    "comments_url": "https://api.github.com/repos/agno-agi/agno/commits/a71c4d0c607260d2483d73644a60dc49d036148c/comments",
+    "author": {
+      "login": "simpleqt",
+      "id": 89645338,
+      "node_id": "MDQ6VXNlcjg5NjQ1MzM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89645338?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/simpleqt",
+      "html_url": "https://github.com/simpleqt",
+      "followers_url": "https://api.github.com/users/simpleqt/followers",
+      "following_url": "https://api.github.com/users/simpleqt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/simpleqt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/simpleqt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/simpleqt/subscriptions",
+      "organizations_url": "https://api.github.com/users/simpleqt/orgs",
+      "repos_url": "https://api.github.com/users/simpleqt/repos",
+      "events_url": "https://api.github.com/users/simpleqt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/simpleqt/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "38039bf5bf5de2a2d912af73102543d236ace54a",
+        "url": "https://api.github.com/repos/agno-agi/agno/commits/38039bf5bf5de2a2d912af73102543d236ace54a",
+        "html_url": "https://github.com/agno-agi/agno/commit/38039bf5bf5de2a2d912af73102543d236ace54a"
+      }
+    ]
+  }
+]

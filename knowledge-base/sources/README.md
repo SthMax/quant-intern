@@ -1,6 +1,6 @@
 # 原始来源与研究阅读入口
 
-2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。当时为125个来源ID。2026-09-16累计新增19项Phase 2技术/许可来源，并将5项首轮模型资料转为历史辅助阅读，2026-09-17再新增23项serving/harness来源，**当前167个稳定来源ID：149个主阅读记录、14个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
+2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。当时为125个来源ID。2026-09-16累计新增19项Phase 2技术/许可来源，并将5项首轮模型资料转为历史辅助阅读，2026-09-17再新增23项serving/harness来源，当日为167项；9月18日补充13项，**当前180个稳定来源ID：161个主阅读记录、15个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
 
 默认检索按[reading-index.json](../reading-index.json)中的`collection_role=main`及`reading_path`取文本。需要身份、历史或供应商背景时再读[辅助目录](../reference/README.md)。不要把原始HTML/PDF、历史审计、图片元数据或来源链索引递归当作新文章。
 
@@ -217,3 +217,23 @@
 | TECH-040 | NVIDIA/TensorRT-LLM official repository and license snapshot | [原文](TECH-040/original.md) · [元数据/专题原件](TECH-040/metadata.json) | Serving；文档/代码证据，非本地实测 |
 | TECH-041 | langchain-ai/deepagents official repository and license snapshot | [原文](TECH-041/original.md) · [元数据/专题原件](TECH-041/metadata.json) | Harness；文档/代码证据，非本地实测 |
 | TECH-042 | Run local agentic AI on the Mac using MLX — WWDC26 | [原文](TECH-042/original.md) · [元数据/专题原件](TECH-042/metadata.json) | Serving；文档/代码证据，非本地实测 |
+
+## 非coding产品与Serving深化（2026-09-18）
+
+对应修改前检查点`9e5c2fe`。产品功能来自官方README/专题文档，拟议基金业务用法与厂商功能分开记录。部分网页的直接归档失败保留在metadata；未冒称原件已完整取得。
+
+| ID | 标题 | 阅读与原件 | 范围 |
+|---|---|---|---|
+| TECH-043 | open-webui/open-webui official product, repository and license research | [原文](TECH-043/original.md) · [元数据/专题文件](TECH-043/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-044 | danny-avila/LibreChat official product, repository and license research | [原文](TECH-044/original.md) · [元数据/专题文件](TECH-044/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-045 | onyx-dot-app/onyx official product, repository and license research | [原文](TECH-045/original.md) · [元数据/专题文件](TECH-045/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-046 | infiniflow/ragflow official product, repository and license research | [原文](TECH-046/original.md) · [元数据/专题文件](TECH-046/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-047 | aaif-goose/goose official product, repository and license research | [原文](TECH-047/original.md) · [元数据/专题文件](TECH-047/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-048 | openclaw/openclaw official product, repository and license research | [原文](TECH-048/original.md) · [元数据/专题文件](TECH-048/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-049 | microsoft/agent-framework official product, repository and license research | [原文](TECH-049/original.md) · [元数据/专题文件](TECH-049/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-050 | microsoft/autogen official product, repository and license research | [原文](TECH-050/original.md) · [元数据/专题文件](TECH-050/metadata.json) | 辅助：维护状态；官方功能和条件，非实测 |
+| TECH-051 | agno-agi/agno official product, repository and license research | [原文](TECH-051/original.md) · [元数据/专题文件](TECH-051/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-052 | crewAIInc/crewAI official product, repository and license research | [原文](TECH-052/original.md) · [元数据/专题文件](TECH-052/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-053 | Mintplex-Labs/anything-llm official product, repository and license research | [原文](TECH-053/original.md) · [元数据/专题文件](TECH-053/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-054 | vLLM v0.29.0 serving benchmark and current release | [原文](TECH-054/original.md) · [元数据/专题文件](TECH-054/metadata.json) | 主阅读；官方功能和条件，非实测 |
+| TECH-055 | SGLang throughput and memory tuning guide | [原文](TECH-055/original.md) · [元数据/专题文件](TECH-055/metadata.json) | 主阅读；官方功能和条件，非实测 |

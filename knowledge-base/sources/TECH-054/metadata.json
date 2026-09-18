@@ -1,0 +1,34 @@
+{
+  "source_id": "TECH-054",
+  "title": "vLLM v0.29.0 serving benchmark and current release",
+  "issuer": "vllm-project",
+  "official_url": "https://docs.vllm.ai/en/v0.29.0/cli/bench/serve/",
+  "retrieved_at": "2026-09-17T17:31:55.367746+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "mechanical_visible_text_extraction",
+  "verification_scope": "Official benchmark/tuning mechanics; no local measurements. Offline tuning targets are not interactive service objectives.",
+  "files": {
+    "source.html": {
+      "requested_url": "https://docs.vllm.ai/en/v0.29.0/cli/bench/serve/",
+      "sha256": "645f837987ed72fac8bfac3ce152f2a86310ff766d740ab86b166ceb53adc8cc",
+      "bytes": 663597
+    },
+    "original.md": {
+      "requested_url": "https://docs.vllm.ai/en/v0.29.0/cli/bench/serve/",
+      "sha256": "6372a24243336eed21ce78ba58abb407fe55ea95edf938b2d03a28a3b712c10b",
+      "bytes": 57979
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/releases/latest",
+      "sha256": "9ebf169b8c867aa95c2ae994f0bc90459a5c030424401bc847bd03c064a43d79",
+      "bytes": 54322
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "Benchmark goodput, request rate and percentile options; release snapshot",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

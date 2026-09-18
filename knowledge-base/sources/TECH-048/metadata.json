@@ -1,0 +1,60 @@
+{
+  "source_id": "TECH-048",
+  "title": "openclaw/openclaw official product, repository and license research",
+  "issuer": "openclaw",
+  "repository": "openclaw/openclaw",
+  "official_url": "https://github.com/openclaw/openclaw",
+  "revision": "554b331eb326f8112401c6c9951d694b30ad0e95",
+  "commit_date": "2026-09-17T17:25:15Z",
+  "retrieved_at": "2026-09-17T17:28:19.890434+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/openclaw/openclaw/commits?per_page=1",
+      "sha256": "b5c47c0a7d84c8378bfb620ceb867505812251b3c6c3b0e2268481e2020f604f",
+      "bytes": 5012
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/554b331eb326f8112401c6c9951d694b30ad0e95/README.md",
+      "sha256": "c594e29266562db197f8dff4f7cdebc56df08ef4ba8e46bb3130f75457dbe39b",
+      "bytes": 113226
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/554b331eb326f8112401c6c9951d694b30ad0e95/LICENSE",
+      "sha256": "73571b25326281d369087f469842c02444fe39faaecebda4d82ed21ff3a1c29d",
+      "bytes": 1170
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/openclaw/openclaw/releases/latest",
+      "sha256": "a62891cb425075de405a37f0dd807fb05e418a91912d69ed619e03ac1b6b9e7b",
+      "bytes": 31152
+    },
+    "local-models.md": {
+      "requested_url": "https://docs.openclaw.ai/gateway/local-models.md",
+      "sha256": "d0ecf083ce1f176a7fc7ad7583fa208d72ace5a1093e5802594764471766503f",
+      "bytes": 21849,
+      "retrieved_at": "2026-09-17T17:31:02.769782+00:00"
+    },
+    "product-overview.md": {
+      "requested_url": "https://docs.openclaw.ai/help/faq/what-is-openclaw.md",
+      "sha256": "ffcbdeb31622c020801e4aa984304707e183ca77a1942b1f26e694c6e55067b9",
+      "bytes": 6725,
+      "retrieved_at": "2026-09-17T17:31:03.152645+00:00"
+    },
+    "trust-model.md": {
+      "requested_url": "https://docs.openclaw.ai/gateway/security/trust-model.md",
+      "sha256": "cb1c56df739ce57296ddbd9830a589d35ccb3b8ddbc474be9d2378e7822ce435",
+      "bytes": 9980,
+      "retrieved_at": "2026-09-17T17:31:03.254075+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "Product overview; local models; trust boundary; LICENSE",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

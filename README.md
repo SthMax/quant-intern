@@ -41,6 +41,10 @@ The 17 September [serving framework survey](knowledge-base/infrastructure/servin
 and [harness survey](knowledge-base/infrastructure/harness-survey-2026-09-17.md)
 compare GPU, Apple and heterogeneous runtime paths, workflow platforms and
 general agents, including licenses and self-hosted API compatibility.
+Updated on 18 September after checkpoint `9e5c2fe`: the harness survey now
+explains product purpose, advantages and proposed fund-work uses, with additional
+non-coding workspaces, research platforms and task assistants. Serving research
+adds workload-specific performance and service-level comparisons.
 
 The [Week 2 plan](weekly/week-02-plan.md) retains the historical research record.
 The missing minimum company count and outstanding human/internal reviews remain
@@ -63,6 +67,16 @@ open; completed research artifacts do not establish those approvals.
   selected model references for sharing.
 
 ## Current deliverables
+
+The [Phase 2 technical research report](reports/phase2-technical-research-2026-09-18/README.md)
+is available as of 18 September: 24 pages introducing and analyzing eight models,
+licenses, serving frameworks, business applications and deployment patterns.
+The current revision clarifies model capabilities and memory requirements, repairs
+the architecture diagram, and connects non-coding applications with personal and
+shared reference stacks through a financial-report/CSV example.
+Its PDF, LaTeX source, references and validation records are kept together in the
+report directory. It presents documentary research; local PoC results remain
+outstanding.
 
 The September 2026 delivery bundle contains:
 

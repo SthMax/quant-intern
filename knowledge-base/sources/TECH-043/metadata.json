@@ -1,0 +1,54 @@
+{
+  "source_id": "TECH-043",
+  "title": "open-webui/open-webui official product, repository and license research",
+  "issuer": "open-webui",
+  "repository": "open-webui/open-webui",
+  "official_url": "https://github.com/open-webui/open-webui",
+  "revision": "0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+  "commit_date": "2026-09-04T23:43:32Z",
+  "retrieved_at": "2026-09-17T17:28:17.426818+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/open-webui/open-webui/commits?per_page=1",
+      "sha256": "a559037e7455628a1f66c9b1309b5a4e95016e8a5c962cdbea8d4748c0ec4c45",
+      "bytes": 10166
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/open-webui/open-webui/0a7c15832fb30b1903753e83f81dc7d27e5b0944/README.md",
+      "sha256": "a486231a68444cee15339ea050fe07e5e1b9b0812abcadecab5749304a81a244",
+      "bytes": 17761
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/open-webui/open-webui/0a7c15832fb30b1903753e83f81dc7d27e5b0944/LICENSE",
+      "sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+      "bytes": 2819
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/open-webui/open-webui/releases/latest",
+      "sha256": "9c271ddc7f2fd79f5d5dc3186e034f728af1fea80d8bbba80c13a25a170ff9b2",
+      "bytes": 4578
+    },
+    "features.html": {
+      "requested_url": "https://docs.openwebui.com/features/",
+      "sha256": "4fbc8274edcc4c54fd754dc35866140b95b573817d401abcc566289984190478",
+      "bytes": 49264,
+      "retrieved_at": "2026-09-17T17:31:02.357933+00:00"
+    },
+    "features.md": {
+      "requested_url": "https://docs.openwebui.com/features/",
+      "sha256": "c27bab117e5577c237171eaa8ad578f0ee21eb5b5ea2fd9874da456325920283",
+      "bytes": 9026,
+      "retrieved_at": "2026-09-17T17:31:02.358171+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README key features; LICENSE section 4; features.md",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

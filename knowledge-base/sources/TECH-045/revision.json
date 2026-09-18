@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "d7cc16686a35f936f50eaec7afc910d699c2abfd",
+    "node_id": "C_kwDOJb7SK9oAKGQ3Y2MxNjY4NmEzNWY5MzZmNTBlYWVjN2FmYzkxMGQ2OTljMmFiZmQ",
+    "commit": {
+      "author": {
+        "name": "roshan",
+        "email": "38771624+rohoswagger@users.noreply.github.com",
+        "date": "2026-09-17T16:58:20Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T16:58:20Z"
+      },
+      "message": "feat(chat): add experimental search receipts to internal search responses (#14849)",
+      "tree": {
+        "sha": "00ade28f95e5d4b7bc368f1c794638d5a349151d",
+        "url": "https://api.github.com/repos/onyx-dot-app/onyx/git/trees/00ade28f95e5d4b7bc368f1c794638d5a349151d"
+      },
+      "url": "https://api.github.com/repos/onyx-dot-app/onyx/git/commits/d7cc16686a35f936f50eaec7afc910d699c2abfd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrBw7CRC1aQ7uu5UhlAAAMm0QAKDgPlo4UD1gYBq1pXhEB42Q\npLjj6aAiGfnr6JERsisqvhBRkU7f8laeLLU9L3zYbAI/wpWAKJlz8wHgLvf/dtKu\ntdCj+AxEsXBRxwWLG3gztV3Lhr34mf2r6IALwk//q7cuHfE+VhLjprlWo7N+lT3w\n2hVYeWS+KuUf8rCz0RGve9LEqDFzy5K0bYvyLaUGSVm/VbOblF85oDNmCL8ljgv9\nnGa8Ccxr+0f3obpfvnl15zaJbuhiwjOsQgOIjp5UVVoSqVl1xwpYthggmBDuzPII\nGrkPbndvkDgicmdaFpwELKeCKwFKClGAy+/mzYUvmWW8C0ksqo5xx+cuurXLds/a\nehFdcOvKTs4V9m2R9h2+/hXQP0RwMeig8cdbZr8elZcS9RjNBPe+fXe9jj4/anqT\ng9AnHkNSZtWSvEEnpXhWIHYSXw3TnhAOtzEwHRMz5rkmM328Tqzw7UNzG9uR5ooX\nXEfFJJaalAiApDHwQ1zwJ2NKFN5KhsEEuaAMb9T4iMtSt/TVNyXFT7BeOLLrMwqK\ntt2yQiHxkuWR5berT9ZRewWlTzhZKfsD21C3Mp2JU/mCMSH/Qzhy/CFh3c4w/7sJ\ndxqWFYTlRG83WyxOtpxoEHZYYNZjSXVytG91u5+CQUuviaWGQEetRVLgFmG5zNnQ\nzy5x2GeKSsFbyGwW18kC\n=bpFW\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 00ade28f95e5d4b7bc368f1c794638d5a349151d\nparent 5fe6573c3c155e1a75b51de32d4988ee6c82164e\nauthor roshan <38771624+rohoswagger@users.noreply.github.com> 1789664300 +0000\ncommitter GitHub <noreply@github.com> 1789664300 +0000\n\nfeat(chat): add experimental search receipts to internal search responses (#14849)",
+        "verified_at": "2026-09-17T16:58:36Z"
+      }
+    },
+    "url": "https://api.github.com/repos/onyx-dot-app/onyx/commits/d7cc16686a35f936f50eaec7afc910d699c2abfd",
+    "html_url": "https://github.com/onyx-dot-app/onyx/commit/d7cc16686a35f936f50eaec7afc910d699c2abfd",
+    "comments_url": "https://api.github.com/repos/onyx-dot-app/onyx/commits/d7cc16686a35f936f50eaec7afc910d699c2abfd/comments",
+    "author": {
+      "login": "rohoswagger",
+      "id": 38771624,
+      "node_id": "MDQ6VXNlcjM4NzcxNjI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38771624?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rohoswagger",
+      "html_url": "https://github.com/rohoswagger",
+      "followers_url": "https://api.github.com/users/rohoswagger/followers",
+      "following_url": "https://api.github.com/users/rohoswagger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rohoswagger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rohoswagger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rohoswagger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rohoswagger/orgs",
+      "repos_url": "https://api.github.com/users/rohoswagger/repos",
+      "events_url": "https://api.github.com/users/rohoswagger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rohoswagger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5fe6573c3c155e1a75b51de32d4988ee6c82164e",
+        "url": "https://api.github.com/repos/onyx-dot-app/onyx/commits/5fe6573c3c155e1a75b51de32d4988ee6c82164e",
+        "html_url": "https://github.com/onyx-dot-app/onyx/commit/5fe6573c3c155e1a75b51de32d4988ee6c82164e"
+      }
+    ]
+  }
+]

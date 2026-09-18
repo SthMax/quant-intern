@@ -1,0 +1,66 @@
+{
+  "source_id": "TECH-049",
+  "title": "microsoft/agent-framework official product, repository and license research",
+  "issuer": "microsoft",
+  "repository": "microsoft/agent-framework",
+  "official_url": "https://github.com/microsoft/agent-framework",
+  "revision": "459fe6eca83206fde3ece88c1023fa6bc666f63e",
+  "commit_date": "2026-09-17T17:06:53Z",
+  "retrieved_at": "2026-09-17T17:28:19.313744+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/microsoft/agent-framework/commits?per_page=1",
+      "sha256": "f6217e6374f9cdc96a0d482f1bc95828fd198adeffd6b6f9d5e15a7daa8b19c7",
+      "bytes": 9569
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/microsoft/agent-framework/459fe6eca83206fde3ece88c1023fa6bc666f63e/README.md",
+      "sha256": "4a628aa224c014ff326587cc543a4991e483e11723a226f6fcdb22664224c58a",
+      "bytes": 13336
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/microsoft/agent-framework/459fe6eca83206fde3ece88c1023fa6bc666f63e/LICENSE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/microsoft/agent-framework/releases/latest",
+      "sha256": "e22cd998beba9eb59c2ac2479b905076c17dfba7e9bc19e8d3c21ca0cb7fae3a",
+      "bytes": 10051
+    },
+    "ollama.html": {
+      "requested_url": "https://learn.microsoft.com/en-us/agent-framework/agents/providers/ollama",
+      "sha256": "2c173599d9ffa98895eb1ddc8643c5ecf2679c77344f73a19dd40c038e0a9fa1",
+      "bytes": 56522,
+      "retrieved_at": "2026-09-17T17:31:03.356872+00:00"
+    },
+    "ollama.md": {
+      "requested_url": "https://learn.microsoft.com/en-us/agent-framework/agents/providers/ollama",
+      "sha256": "1dcf99029cb9865e738c1606b757b858cb83d4dba45e80e24a866df018d9daec",
+      "bytes": 6603,
+      "retrieved_at": "2026-09-17T17:31:03.357022+00:00"
+    },
+    "build-update.html": {
+      "requested_url": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/",
+      "sha256": "2813d09b941b9d73ac59a680015a2ff3de99dd9562ed5aa8da7f013e4eba1f9d",
+      "bytes": 238273,
+      "retrieved_at": "2026-09-17T17:31:04.118740+00:00"
+    },
+    "build-update.md": {
+      "requested_url": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/",
+      "sha256": "b0b60e659320dc97ae0cd4fa376adba7e336d725ef5c6c7d135b37c22e35ce5e",
+      "bytes": 16376,
+      "retrieved_at": "2026-09-17T17:31:04.118871+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README; Microsoft BUILD 2026 update; Ollama provider docs; LICENSE",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

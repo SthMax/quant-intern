@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
   "scope": "Main reading paths for research retrieval; supporting and redirect records are provenance/context, not independent main readings. Do not recursively ingest sources/, reference/ or audits/.",
   "counts": {
-    "main": 149,
+    "main": 161,
     "redirect": 4,
-    "supporting": 14
+    "supporting": 15
   },
-  "registered_source_ids": 167,
+  "registered_source_ids": 180,
   "records": [
     {
       "source_id": "FUND-001",
@@ -1899,11 +1899,167 @@
       "text_kind": "mechanical_visible_text_extraction",
       "available_text": true,
       "phase": 2
+    },
+    {
+      "source_id": "TECH-043",
+      "title": "open-webui/open-webui official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-043/original.md",
+      "metadata_path": "sources/TECH-043/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-044",
+      "title": "danny-avila/LibreChat official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-044/original.md",
+      "metadata_path": "sources/TECH-044/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-045",
+      "title": "onyx-dot-app/onyx official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-045/original.md",
+      "metadata_path": "sources/TECH-045/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-046",
+      "title": "infiniflow/ragflow official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-046/original.md",
+      "metadata_path": "sources/TECH-046/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-047",
+      "title": "aaif-goose/goose official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-047/original.md",
+      "metadata_path": "sources/TECH-047/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-048",
+      "title": "openclaw/openclaw official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-048/original.md",
+      "metadata_path": "sources/TECH-048/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-049",
+      "title": "microsoft/agent-framework official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-049/original.md",
+      "metadata_path": "sources/TECH-049/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-050",
+      "title": "microsoft/autogen official product, repository and license research",
+      "collection_role": "supporting",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-050/original.md",
+      "metadata_path": "sources/TECH-050/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-051",
+      "title": "agno-agi/agno official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-051/original.md",
+      "metadata_path": "sources/TECH-051/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-052",
+      "title": "crewAIInc/crewAI official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-052/original.md",
+      "metadata_path": "sources/TECH-052/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-053",
+      "title": "Mintplex-Labs/anything-llm official product, repository and license research",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-053/original.md",
+      "metadata_path": "sources/TECH-053/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-054",
+      "title": "vLLM v0.29.0 serving benchmark and current release",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-054/original.md",
+      "metadata_path": "sources/TECH-054/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "mechanical_visible_text_extraction",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-055",
+      "title": "SGLang throughput and memory tuning guide",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-055/original.md",
+      "metadata_path": "sources/TECH-055/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_official_markdown",
+      "available_text": true,
+      "phase": 2
     }
   ],
   "extra_reference_readings": [
     "reference/ccf-financial-cases.md"
   ],
   "report_selection_note": "companies/quant-research-2026-09-09.md",
-  "phase2_update": "2026-09-17: TECH-001–042 total; 23 serving/harness official records added. Five first-pass model records remain historical supporting entries. Phase 1 records unchanged."
+  "phase2_update": "2026-09-18: TECH-043–055 added after checkpoint 9e5c2fe. AutoGen maintenance notice is supporting context; non-coding product coverage and serving evaluation expanded. Phase 1 entries unchanged."
 }

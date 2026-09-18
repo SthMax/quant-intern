@@ -1,0 +1,130 @@
+{
+  "pdf": "report.pdf",
+  "pdf_sha256": "fe85a1093ba498460f89d30c7ec0f5e85afeb7be368cdd2ef8986f1336bc7200",
+  "render_command": "pdftoppm -scale-to 1400 -png report.pdf qa/render-user-final/page",
+  "rendered_pages": [
+    {
+      "physical_page": 1,
+      "path": "qa/render-user-final/page-01.png",
+      "sha256": "e8a9cba25bf751fa9f5381b16ddfa8e6b9b602b643b58322a40596dfa2d3b09a"
+    },
+    {
+      "physical_page": 2,
+      "path": "qa/render-user-final/page-02.png",
+      "sha256": "02970208d9e2e51959daed6e26b1ceedd484c41b9f300edd4428162e6ea47a1e"
+    },
+    {
+      "physical_page": 3,
+      "path": "qa/render-user-final/page-03.png",
+      "sha256": "5c96fbb500eece13d3d8e1fbb8c6b70890a3b791172fe5f86d6f7699e4ee445e"
+    },
+    {
+      "physical_page": 4,
+      "path": "qa/render-user-final/page-04.png",
+      "sha256": "0777257ac062642d966716b6174e0f16b6d6f1cda163446882a7a04ebf6537fd"
+    },
+    {
+      "physical_page": 5,
+      "path": "qa/render-user-final/page-05.png",
+      "sha256": "05719f39eddeffa94f3ae1c90558a02b075452fed99e34e8aac03a66aaee3959"
+    },
+    {
+      "physical_page": 6,
+      "path": "qa/render-user-final/page-06.png",
+      "sha256": "6af034038d921fe8d7d61ce9ddf9de228f1c1c2dea8fc91b4a3c0a71a40f5680"
+    },
+    {
+      "physical_page": 7,
+      "path": "qa/render-user-final/page-07.png",
+      "sha256": "c6ca3bc402ff66b284811ea670a4f1374656ef9b4af684c92263b66a780e5134"
+    },
+    {
+      "physical_page": 8,
+      "path": "qa/render-user-final/page-08.png",
+      "sha256": "f59c5a55d4983fb7a506e8dc23ace87bf2052ed2d9c591fd777521f916c858ab"
+    },
+    {
+      "physical_page": 9,
+      "path": "qa/render-user-final/page-09.png",
+      "sha256": "121204acd1a4c86642b1b07a3ae61695e7636d819f69b2412ff0b2fecb3b5c2d"
+    },
+    {
+      "physical_page": 10,
+      "path": "qa/render-user-final/page-10.png",
+      "sha256": "414fa3cc10fc925f27ddfcbc26f082b9638289510ae52eb712ea7fc875fe4e55"
+    },
+    {
+      "physical_page": 11,
+      "path": "qa/render-user-final/page-11.png",
+      "sha256": "06d16d2f1890b6357bfa64e79feb6e396dd700e9a518b87d26536f0013b21e08"
+    },
+    {
+      "physical_page": 12,
+      "path": "qa/render-user-final/page-12.png",
+      "sha256": "70a7deb4e99ef890cf5f4c82ed0c50edf19d0f9fd02de32d16cd89a3d887b184"
+    },
+    {
+      "physical_page": 13,
+      "path": "qa/render-user-final/page-13.png",
+      "sha256": "3ce82946fbb626cffeff725b5d250b1306d7b6faac6ad0fd390f0aec4d0da1ae"
+    },
+    {
+      "physical_page": 14,
+      "path": "qa/render-user-final/page-14.png",
+      "sha256": "f90c7ce088c1b7eb3634a60daa821ed401a2fc6e3f2362b19d2c82e0b8302bea"
+    },
+    {
+      "physical_page": 15,
+      "path": "qa/render-user-final/page-15.png",
+      "sha256": "c31b4752fc12669b2d11237fb6a4a95939cfef058c67a8bb4d342f8710ce47b1"
+    },
+    {
+      "physical_page": 16,
+      "path": "qa/render-user-final/page-16.png",
+      "sha256": "2dc59db9056bbac42d1230139048caf374bd72bd827832201fdd598b140f26bf"
+    },
+    {
+      "physical_page": 17,
+      "path": "qa/render-user-final/page-17.png",
+      "sha256": "36dcf9d9ba36d77804defe14f963b4ad8c01d7436c197cb4ca440876fe27501f"
+    },
+    {
+      "physical_page": 18,
+      "path": "qa/render-user-final/page-18.png",
+      "sha256": "92fdf37dc85e4632bf4f85097bd7fecf86900b2f831fb8d4e4710cbccbe72128"
+    },
+    {
+      "physical_page": 19,
+      "path": "qa/render-user-final/page-19.png",
+      "sha256": "06107fac2cb39b68cc53c6712f1e1009c290ab18987503cfe147f48fb81c1959"
+    },
+    {
+      "physical_page": 20,
+      "path": "qa/render-user-final/page-20.png",
+      "sha256": "af8113ba2f121a907826cb33af1918df99fdf24fd52044860498b5e5193ddd30"
+    },
+    {
+      "physical_page": 21,
+      "path": "qa/render-user-final/page-21.png",
+      "sha256": "7d898b4360c21f2689982feb3428ef62e611e98a086f64a117a1ddfb7991a0c5"
+    },
+    {
+      "physical_page": 22,
+      "path": "qa/render-user-final/page-22.png",
+      "sha256": "20b6794563843ba277e7c8cfccede4095ca916eba6b94b63c156857b173eb50e"
+    },
+    {
+      "physical_page": 23,
+      "path": "qa/render-user-final/page-23.png",
+      "sha256": "90bca8c747708c06e98bb07c7d2566fd6d128d2896118b3210e94684b22ee3fc"
+    },
+    {
+      "physical_page": 24,
+      "path": "qa/render-user-final/page-24.png",
+      "sha256": "cbbd52ce8a9af196c0d2e6236f2fb5cf06a4fb068f50443003b1494346491960"
+    }
+  ],
+  "review_date": "2026-09-18",
+  "review_method": "All 24 final pages visually inspected via contact sheets; Figure 1 inspected at page size. Model sections 2.3 and 2.4 each start on a fresh page.",
+  "embedded_fonts_verified": 7
+}

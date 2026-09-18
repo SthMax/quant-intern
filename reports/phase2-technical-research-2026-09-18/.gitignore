@@ -1,0 +1,5 @@
+build/
+qa/*.png
+qa/*.txt
+qa/render-*/
+__pycache__/

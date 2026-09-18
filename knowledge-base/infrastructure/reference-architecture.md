@@ -1,7 +1,7 @@
 # On-Premise Reference Architecture
 
 **Phase 2 — Weeks 3–5.** Required by [the final project plan](../../PROJECT_PLAN.md).
-Status (17 September 2026): logical deployment choices and software research are
+Status (18 September 2026): logical deployment choices and software research are
 documented below; no physical configuration has been selected or benchmarked.
 
 ## Serving and harness research — 17 September 2026
@@ -31,6 +31,27 @@ Responses and Anthropic Messages carry different request/event/tool semantics.
 The model service and harness combination must pass protocol and end-to-end task
 checks. The new survey distinguishes Claude Code's technically documented
 third-party endpoint routes from its proprietary license and vendor support.
+
+## Non-coding application layer — 18 September 2026
+
+The updated harness survey now separates employee-facing products from the
+frameworks used to build them. For a shared internal AI workspace, compare Open
+WebUI and LibreChat; AnythingLLM is an additional personal-document option.
+For connected enterprise research and documents, compare Onyx and RAGFlow, with
+Dify for repeatable business applications. Goose joins the personal task-agent
+shortlist; OpenClaw is evaluated against its documented trust boundary. These
+products can share an inference service without sharing all data or tool access.
+
+For custom applications, compare LangGraph, Microsoft Agent Framework, Agno and
+CrewAI by the business process to implement. The AutoGen maintenance transition
+is documented in the survey. Existing coding tools remain relevant to technical
+researchers, but are no longer the default recommendation for every non-coding
+employee.
+
+Capacity estimates should distinguish interactive chat, document batches and
+multi-step agent tasks. Report service-level-compliant request throughput and
+quality-qualified task completion separately; framework benchmark goodput does
+not evaluate the correctness of financial outputs.
 
 ## Updated design basis — 16 September 2026
 

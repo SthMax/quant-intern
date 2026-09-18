@@ -1,0 +1,29 @@
+{
+  "source_id": "TECH-055",
+  "title": "SGLang throughput and memory tuning guide",
+  "issuer": "sgl-project",
+  "official_url": "https://docs.sglang.io/docs/advanced_features/hyperparameter_tuning.md",
+  "retrieved_at": "2026-09-17T17:31:56.833000+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_official_markdown",
+  "verification_scope": "Official benchmark/tuning mechanics; no local measurements. Offline tuning targets are not interactive service objectives.",
+  "files": {
+    "original.md": {
+      "requested_url": "https://docs.sglang.io/docs/advanced_features/hyperparameter_tuning.md",
+      "sha256": "d49d903338993f552d312943a7b52f93b07aa8882121e8dfbbfa438424d6cbfc",
+      "bytes": 5631
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/sgl-project/sglang/releases/latest",
+      "sha256": "16fb7a83ba0385fd013100c67b3d1f89303db7e4a6f28effa8c5893769586c9f",
+      "bytes": 56541
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "Offline batch throughput; KV memory and scheduling/parallelism tuning; release snapshot",
+  "used_in": "knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md",
+  "collection_role": "main"
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "597b99fb576ba1dd0f3ad476663481f6aae2ef88",
+    "node_id": "C_kwDOKlrpgNoAKDU5N2I5OWZiNTc2YmExZGQwZjNhZDQ3NjY2MzQ4MWY2YWFlMmVmODg",
+    "commit": {
+      "author": {
+        "name": "gaoanze888",
+        "email": "gaoanze888@gmail.com",
+        "date": "2026-09-17T17:17:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T17:17:38Z"
+      },
+      "message": "fix(tools): preserve directory listing paths (#7548)\n\nCo-authored-by: gaoanze <gaoanze@meituan.com>\nCo-authored-by: Vidit Ostwal <110953813+Vidit-Ostwal@users.noreply.github.com>",
+      "tree": {
+        "sha": "8f4989fe4ed7e8411d37a6bb00f3a79a52341db5",
+        "url": "https://api.github.com/repos/crewAIInc/crewAI/git/trees/8f4989fe4ed7e8411d37a6bb00f3a79a52341db5"
+      },
+      "url": "https://api.github.com/repos/crewAIInc/crewAI/git/commits/597b99fb576ba1dd0f3ad476663481f6aae2ef88",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrCCyCRC1aQ7uu5UhlAAA1QUQAJa3o0s1+faxWuA6fIqrEapo\npL9bfibLRIUyeQIirZPNdJgfcB98e1bqP8Kxo35LTvhO+TBSDi2cmr3x/jrz2kws\nwIqcjj9v+Qkb3BGWJB2RB3VzzZ4smRarj27Ydu2Gv8eokjM8nLVyrvXRfymLHNtV\nK7jQMSX5ft+747aBmE7MLYXNjnlnpG+yYyyolNMeFg1Ii9aL8xYHPyaQ/6AScOaN\nkfCe+GNZe6I1ohYBt2qi6lp3mPTXsTCU84h1Ta6+ZiAFLth/FeqKgRRzfQbduyaC\n7QxK8bAeEtRNuFxltmdKjRCF+Dl/O8VkhDxwb3JR3/V91EhYMJf8l1LKUPiituuf\nILz7B75cOxuYm2OsihhR5xx/xN0vugHrJCDCHIPUobO3V8X870g0dkWJSSgqxFdR\nDGSy9cQFGnwNG2h22clI6iCzo7idMsw+EeW6WPoUTe2WeztpCe2d9Mq1yMiZSx+w\nmJptIneIm5kt3CxWNXNNQpcDZlLtFFUmHleGEOSVwdMuuCixAeLTCa1pfXcrrlZR\ndgjSAdCQeRleZRYz7d9R8vPDnI6lnrOcO/cEulMCXoz9pBfdjhCPRnFI1EEJTRAh\njw/YXlbLckQ0e4gbzWjfSq0po4dy3rEnCr5Xr8emP45ZhytgS6SdWCJzXE7tu+Rc\nOFRCEd/GGkJTWDfIoA4s\n=c/Ge\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8f4989fe4ed7e8411d37a6bb00f3a79a52341db5\nparent b9629cfb8ff9845d8c4ab992eb213a83c6113240\nauthor gaoanze888 <gaoanze888@gmail.com> 1789665458 +0800\ncommitter GitHub <noreply@github.com> 1789665458 +0530\n\nfix(tools): preserve directory listing paths (#7548)\n\nCo-authored-by: gaoanze <gaoanze@meituan.com>\nCo-authored-by: Vidit Ostwal <110953813+Vidit-Ostwal@users.noreply.github.com>",
+        "verified_at": "2026-09-17T17:17:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/crewAIInc/crewAI/commits/597b99fb576ba1dd0f3ad476663481f6aae2ef88",
+    "html_url": "https://github.com/crewAIInc/crewAI/commit/597b99fb576ba1dd0f3ad476663481f6aae2ef88",
+    "comments_url": "https://api.github.com/repos/crewAIInc/crewAI/commits/597b99fb576ba1dd0f3ad476663481f6aae2ef88/comments",
+    "author": {
+      "login": "gaoanze888",
+      "id": 214786078,
+      "node_id": "U_kgDODM1gHg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/214786078?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gaoanze888",
+      "html_url": "https://github.com/gaoanze888",
+      "followers_url": "https://api.github.com/users/gaoanze888/followers",
+      "following_url": "https://api.github.com/users/gaoanze888/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gaoanze888/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gaoanze888/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gaoanze888/subscriptions",
+      "organizations_url": "https://api.github.com/users/gaoanze888/orgs",
+      "repos_url": "https://api.github.com/users/gaoanze888/repos",
+      "events_url": "https://api.github.com/users/gaoanze888/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gaoanze888/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b9629cfb8ff9845d8c4ab992eb213a83c6113240",
+        "url": "https://api.github.com/repos/crewAIInc/crewAI/commits/b9629cfb8ff9845d8c4ab992eb213a83c6113240",
+        "html_url": "https://github.com/crewAIInc/crewAI/commit/b9629cfb8ff9845d8c4ab992eb213a83c6113240"
+      }
+    ]
+  }
+]

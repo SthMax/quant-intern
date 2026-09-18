@@ -1,6 +1,8 @@
 # Knowledge Base
 
-> 2026-09-17新增[Serving framework调研](infrastructure/serving-framework-survey-2026-09-17.md)与[Harness调研](infrastructure/harness-survey-2026-09-17.md)。当前总索引167项：149主阅读、14辅助、4来源链。新增23组官方软件/许可来源，明确框架能力、API兼容和实际运行验证的区别。
+> 2026-09-18在检查点`9e5c2fe`后深化[非coding Harness与应用调研](infrastructure/harness-survey-2026-09-17.md)，正文按产品用途、优点和基金业务用法重写；[Serving调研](infrastructure/serving-framework-survey-2026-09-17.md)增加任务负载和时延达标吞吐比较。当前索引180项：161主阅读、15辅助、4来源链。
+
+> 2026-09-17新增[Serving framework调研](infrastructure/serving-framework-survey-2026-09-17.md)与[Harness调研](infrastructure/harness-survey-2026-09-17.md)。当日总索引167项：149主阅读、14辅助、4来源链。新增23组官方软件/许可来源，明确框架能力、API兼容和实际运行验证的区别。
 
 > 2026-09-16确定主线：**面向专业个人工作站与共享服务的模型研究**。见[重排后的8模型候选](models/model-survey-2026-09-16.md)、[许可专项](models/license-review-2026-09-16.md)及[第3–5周研究计划](../weekly/week-03-05-plan.md)。当日累计新增19项官方技术/许可来源、总索引144项，首轮5项模型资料转历史辅助；报告修订按[独立计划](../reports/phase1-llm-industry-2026-09-09/editorial/fixing-plan.md)推进。
 

@@ -1,0 +1,44 @@
+{
+  "source_id": "TECH-053",
+  "title": "Mintplex-Labs/anything-llm official product, repository and license research",
+  "issuer": "Mintplex-Labs",
+  "repository": "Mintplex-Labs/anything-llm",
+  "official_url": "https://github.com/Mintplex-Labs/anything-llm",
+  "revision": "90108f98f29546dbe71df27a4da7aef302d48f08",
+  "commit_date": "2026-09-16T20:27:46Z",
+  "retrieved_at": "2026-09-17T17:28:21.246566+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement. Agent Flow webpage failed direct archival (403); main claims rely on the archived official README. Desktop/Docker/product tiers distinguished.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/Mintplex-Labs/anything-llm/commits?per_page=1",
+      "sha256": "a1a2ab1039db7f8c2f549e93fd2f0e5c7274bb8cc176f677ace1979ef562f02f",
+      "bytes": 5185
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/90108f98f29546dbe71df27a4da7aef302d48f08/README.md",
+      "sha256": "879184601ca70d5e31581991052f0e313a6429a6ac5c450742f634233c8e121c",
+      "bytes": 26510
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/90108f98f29546dbe71df27a4da7aef302d48f08/LICENSE",
+      "sha256": "782d2dc18a1ed9028ca992520f42b2e0b6187807da0d14455b8ae608e2e5692e",
+      "bytes": 1073
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/Mintplex-Labs/anything-llm/releases/latest",
+      "sha256": "420d0aa894b2de61bd0ad4d7b6eca44fec2f9be7569daab689eda860ccec81d9",
+      "bytes": 25668
+    }
+  },
+  "retrieval_failures": {
+    "agent-flows": "curl: (56) The requested URL returned error: 403\n"
+  },
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README product features and Docker-only multi-user distinction; LICENSE",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

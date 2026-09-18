@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "15b6668dd8f7a8921cecec9fae4e4d46f7947bdd",
+    "node_id": "C_kwDOK4sStNoAKDE1YjY2NjhkZDhmN2E4OTIxY2VjZWM5ZmFlNGU0ZDQ2Zjc5NDdiZGQ",
+    "commit": {
+      "author": {
+        "name": "Yingfeng",
+        "email": "yingfeng.zhang@gmail.com",
+        "date": "2026-09-17T16:07:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T16:07:49Z"
+      },
+      "message": "Refact agentic search (#19811)",
+      "tree": {
+        "sha": "b286b8396dae5f5922176aee349ccb445d5b7b17",
+        "url": "https://api.github.com/repos/infiniflow/ragflow/git/trees/b286b8396dae5f5922176aee349ccb445d5b7b17"
+      },
+      "url": "https://api.github.com/repos/infiniflow/ragflow/git/commits/15b6668dd8f7a8921cecec9fae4e4d46f7947bdd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrBBVCRC1aQ7uu5UhlAAACXAQAJZD5PloBXuM/3puiNXni+Q5\nZYjYrkxTkamrU+wCY9uZUjIpUxnTU1G9q0/ni4qX2pz4E80v6zFrbjZmFNG66ML2\nZsU9Y5cGz1s2hSzNIL+/zUpV9pdTMEfFaYV2A4pdBdBzZqwGdKXczd0K4cKZGqjg\n4HmfDyTPY8bPi2Gki44AizUO1myQQqKNm6OkZoEST4FySH592nKs+l0/OYmJ4vmi\nQjcttsXMF8Rgup+4LpYHC+6h0ljlVt4dalmHp7DAxr2NpAJuOp9SMpWUlIs9m5Vx\nTaaerBX2fjw8pHaU38eAl2dLREpNsZ7q/m6vGY42Ce0kS8pWmyZm6plTHNWhZlKZ\nQfV9Ly5E1i2luCLC4GRdvTlw8Dm4hlt6l5y++pGRK/sOZR5iJa+XVOmaU7IVpK5j\nh30hPIcJmg12pczToOqv3FDx9ODUUtMuKASPh4FA1ijDEVr58v4MyL677tZBp8AG\nibqtqY/rQaU/Uyck/EH/CLkP/VEJKXUbU9lz/TkTLJkZ4fVfwqMFTQyRsVhxo/yC\nz2L5TSqMNyNt0V38cLbY+wFzKWMGZ8npQ+0/r3ugLRnDFsusFJI9lDjyi+4W8fKV\nhBXngIa8DEPFYt0Q3ydF4F0zjMWeqUXz9BUdUDok9HROojtUVHus5gaz5i6kAfFV\nITOB3E6pCaEHfkkCZw4G\n=Oa0L\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b286b8396dae5f5922176aee349ccb445d5b7b17\nparent 34723377be814efba3cbe5b62a584a3e1d6f3637\nauthor Yingfeng <yingfeng.zhang@gmail.com> 1789661269 +0800\ncommitter GitHub <noreply@github.com> 1789661269 +0800\n\nRefact agentic search (#19811)",
+        "verified_at": "2026-09-17T16:07:50Z"
+      }
+    },
+    "url": "https://api.github.com/repos/infiniflow/ragflow/commits/15b6668dd8f7a8921cecec9fae4e4d46f7947bdd",
+    "html_url": "https://github.com/infiniflow/ragflow/commit/15b6668dd8f7a8921cecec9fae4e4d46f7947bdd",
+    "comments_url": "https://api.github.com/repos/infiniflow/ragflow/commits/15b6668dd8f7a8921cecec9fae4e4d46f7947bdd/comments",
+    "author": {
+      "login": "yingfeng",
+      "id": 7248,
+      "node_id": "MDQ6VXNlcjcyNDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7248?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yingfeng",
+      "html_url": "https://github.com/yingfeng",
+      "followers_url": "https://api.github.com/users/yingfeng/followers",
+      "following_url": "https://api.github.com/users/yingfeng/following{/other_user}",
+      "gists_url": "https://api.github.com/users/yingfeng/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/yingfeng/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/yingfeng/subscriptions",
+      "organizations_url": "https://api.github.com/users/yingfeng/orgs",
+      "repos_url": "https://api.github.com/users/yingfeng/repos",
+      "events_url": "https://api.github.com/users/yingfeng/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/yingfeng/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "34723377be814efba3cbe5b62a584a3e1d6f3637",
+        "url": "https://api.github.com/repos/infiniflow/ragflow/commits/34723377be814efba3cbe5b62a584a3e1d6f3637",
+        "html_url": "https://github.com/infiniflow/ragflow/commit/34723377be814efba3cbe5b62a584a3e1d6f3637"
+      }
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+\Needspace{8\baselineskip}
+\section{推理服务：模型怎样持续回应使用者}
+
+\subsection{从单次生成到多用户服务}
+Serving framework将模型权重装载到设备上，并持续处理应用发来的请求。对使用者而言，它主要影响开始回答前的等待、持续生成的速度，以及多人同时使用时的响应表现。对运维人员而言，它组织计算、缓存、调度和资源使用。
+
+推理过程通常包含输入处理（prefill）与逐步生成（decode）。阅读长财报时，输入处理会占用较多计算；生成较长分析时，后续decode持续使用模型。一个研究Agent在取得检索结果或计算返回值后，通常还会继续调用模型，因此其服务负载包含多轮输入处理和生成。
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[node distance=6mm]
+\node[flow,text width=30mm](a){应用提交上下文\\问题、资料、工具结果};
+\node[flow,right=of a,text width=29mm](b){输入处理\\读取现有上下文};
+\node[flow,right=of b,text width=29mm](c){逐步生成\\答案或工具指令};
+\node[flow,below=10mm of b,text width=37mm,fill=teal!8](d){应用继续处理\\展示、调用工具或结束任务};
+\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c.south)|-(d.east);
+\draw[darr](d.west)-|node[pos=.22,below,font=\scriptsize]{新的工具结果}(a.south);
+\end{tikzpicture}
+\caption{业务任务中的模型调用。多步任务会多次经过输入处理和生成，完整体验还包含工具执行时间。}
+\end{figure}
+
+连续批处理可以让多个请求共用计算批次，前缀缓存可以复用重复上下文，多卡并行则将模型或请求分配到多个设备。这些机制解释了推理服务的主要价值：在模型能力基本不变的情况下，改善硬件利用与用户响应。\src{TECH-020}\src{TECH-021}
+
+\subsection{共享GPU服务：vLLM、SGLang与TokenSpeed}
+vLLM与SGLang均围绕持续模型服务构建，提供批处理、缓存、模型适配、结构化输出和多卡执行能力。它们通过集中调度多个请求提高设备利用率，并用缓存与并行执行改善长材料、多轮任务的响应。
+
+\begin{table}[H]\small\centering
+\caption{共享GPU服务中的主要框架}
+\begin{tabularx}{\linewidth}{@{}P{29mm}Y Y@{}}\toprule
+项目 & 做什么 & 主要技术特点与价值\\\midrule
+vLLM & 将模型提供为持续运行的HTTP服务。 & 分页式注意力内存管理、连续批处理、缓存和多后端生态，适合共享模型服务。\\
+SGLang & 组织高吞吐推理、上下文缓存和分布式执行。 & RadixAttention前缀复用、调度及多种并行能力，适合长上下文与大型MoE服务比较。\\
+TokenSpeed & 围绕Agent负载优化推理执行。 & 统一管理请求和缓存，替换针对设备优化的计算组件，关注多轮Agent调用效率。\\
+TensorRT-LLM & 面向NVIDIA设备优化模型推理。 & 结合目标设备、精度与模型实现的专用路线，适合固定组合的深入比较。\\\bottomrule
+\end{tabularx}
+\source{各项目官方README及服务文档。\src{TECH-020}\src{TECH-021}\src{TECH-022}\src{TECH-040}}
+\end{table}
+
+vLLM使用PagedAttention等机制管理注意力缓存，并提供多种模型格式、推理解析器和API。其服务接口覆盖Chat Completions与Responses等协议，使应用能够通过统一接口调用不同模型。\src{TECH-020}
+
+SGLang的RadixAttention利用多个请求之间可复用的前缀减少重复计算，并支持分块prefill、连续批处理和张量、流水线、专家、数据等并行方式。对于重复读取同一资料或在相近上下文中继续工作的问题，缓存命中和调度方式会影响实际收益。当前SGLang也可作为KTransformers异构执行路线的服务层。\src{TECH-021}\src{TECH-026}
+
+TokenSpeed将请求调度、缓存管理与具体模型计算分开，便于围绕Agent反复调用的特点优化执行。其后续源码已提供Qwen3.8-27B、GLM-5.3及Flash、Kimi K3的部署配置，形成面向当前模型和特定设备的性能优化路线。\src{TECH-022}
+
+\begin{table}[H]\small\centering
+\caption{代表模型的部署支持证据与构建条件}\label{tab:build-support}
+\begin{tabularx}{\linewidth}{@{}P{28mm}Y Y@{}}\toprule
+模型与引擎 & 本轮取得的具体证据 & 对采用条件的含义\\\midrule
+Qwen3.6 / vLLM、SGLang & 模型卡列出vLLM至少0.19.0、SGLang至少0.5.10；vLLM 0.29.0已有架构入口。 & 可沿已有正式版本配置模型，配套选择精度与工具解析器。\\
+Qwen3.8 / vLLM & 官方部署配置记录具体设备与测试构建，部分为开发版本或专用镜像。 & 可按上游记录的设备、精度和镜像组合复现部署。\\
+DeepSeek V4.1 / vLLM & 初始支持于9月11日合并，晚于9月9日的v0.29.0发布。 & 本轮固定正式版与后续源码不同，复现需包含相应适配的构建。\\
+GLM-5.3-Flash / vLLM & 后续源码已有新架构入口，本轮v0.29.0注册表未见该入口。 & 部署路线跟随后续源码适配，并配套模型格式与工具解析。\\
+新模型 / TokenSpeed & v0.1.0发布于7月24日；上述模型配置来自后续源码。 & 采用包含相应模型配置的后续源码，并固定设备与修订。\\\bottomrule
+\end{tabularx}
+\source{模型卡、正式版注册表、后续源码、合并及发布记录。\src{TECH-013}\src{TECH-009}\src{TECH-010}\src{TECH-011}\src{TECH-054}\src{TECH-020}\src{TECH-022}}
+\end{table}
+
+成熟引擎提供调度、缓存和并行等共用基础，新模型通过专用适配接入这些能力。正式发布包便于统一安装与升级，后续源码能够更早使用新模型；二者主要对应不同的版本固定和维护方式。
+
+\subsection{Apple Silicon：文本、多模态与Metal路线}
+MLX是Apple Silicon上的数组计算框架，MLX-LM在其上提供文本模型装载、量化、生成和微调，并通过服务接口支持Agent应用。Apple在WWDC26演示了MLX-LM Server连接OpenCode、连续批处理和多Mac分布式推理。\src{TECH-023}\src{TECH-042}
+
+MLX-VLM是基于MLX的社区多模态项目，扩展到图像、音视频及相应模型服务。其当前文档包含Qwen3.8和Gemma 4的示例，并提供Chat Completions、Responses及结构化输出等能力。对于财报图表和扫描材料，这一方向将视觉理解与文本任务连接起来。\src{TECH-024}
+
+llama.cpp则提供Metal后端与GGUF格式，可在Mac及其他平台上运行。它的价值在于跨平台格式与执行路径较灵活，既可用于个人服务，也支持CPU/GPU混合。Ollama、LM Studio等应用入口还可以在底层引擎之上承担模型管理与使用界面。\src{TECH-025}\src{TECH-042}
+
+Apple统一内存使CPU与GPU访问同一内存体系，模型、缓存、系统和其他应用共享总容量。较大的统一内存可以容纳更大模型；多Mac运行进一步通过分片和互联组织多台设备，扩展总资源。
+
+\subsection{CPU/GPU异构：利用主存与CPU参与大型模型计算}
+CPU/GPU混合执行的共同思路，是将模型的部分权重或计算放到CPU一侧，以主存容量和CPU计算配合GPU。可以按模型层或专家分配工作，实际效果受主存带宽、CPU计算能力、处理器与内存的连接方式，以及CPU和GPU之间的传输影响。
+
+KTransformers当前以kt-kernel提供CPU优化内核和异构MoE执行，可与SGLang服务层集成。其GLM-5.3-Flash教程列出CPU专家计算、GPU专家配置和分层prefill，并给出特定GPU与CPU内核条件。该教程中的FP8权重约306 GiB，系统内存预留条件达到数百GB，说明这一路线也涉及专业级内存与主机配置。\src{TECH-026}
+
+llama.cpp同时支持CPU、全GPU和混合执行，提供较通用的模型装载与服务方式。其独立维护分支ik\_llama.cpp增加特定量化、内核和并行优化。llama.cpp提供通用执行基础，ik分支则围绕特定量化和内核进一步优化性能；后者的维护内容还包括跟进上游模型与工具格式。\src{TECH-025}\src{TECH-027}
+
+\begin{table}[H]\small\centering
+\caption{个人及异构推理路线的差异}
+\begin{tabularx}{\linewidth}{@{}P{29mm}Y Y@{}}\toprule
+路线 & 优势所在 & 影响使用体验的条件\\\midrule
+MLX-LM / MLX-VLM & 利用Apple Silicon与统一内存，分别覆盖文本和多模态。 & 模型转换、精度、上下文、API和实际Mac配置。\\
+llama.cpp & GGUF、多后端和灵活装载，兼顾Metal及CPU/GPU混合。 & 量化质量、内存带宽、权重放置及并发。\\
+KTransformers & CPU专家计算与GPU协作，扩大大型MoE的实现方式。 & CPU计算、主存连接、专家放置与服务组合。\\
+ik\_llama.cpp & 针对特定量化与设备的优化实现。 & 对应模型收益、构建和与上游的维护差异。\\\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{速度分析与业务负载}
+员工交互、批量公告处理和多步研究Agent，对服务提出不同要求。交互问答关注等待时间，批处理关注一定时间内完成的工作量，多步Agent还包含工具调用与反复prefill。用户人数、活跃会话数和同时生成的请求数由此形成不同的容量口径。
+
+vLLM的benchmark工具能够记录请求速率、时延分位数和goodput。这里的goodput表示满足指定时延目标的请求吞吐；金融业务还需要加入答案与产物质量，才能进一步衡量单位时间内完成的合格任务。\src{TECH-054}
+
+SGLang的调优文档将离线批处理作为部分参数说明的明确场景，并讨论缓存池、调度保守程度和prefill大小。离线任务可以通过较长队列和较大批次提高吞吐；员工交互更关注及时响应，对应较短等待和峰值请求管理。\src{TECH-055}
+
+从经济性看，任务质量、响应时间和吞吐共同影响业务产出。系统在相同时间内交付更多可用结果，并减少重新生成和人工修订，就能提高完整任务的处理效率；这些因素连接了推理服务与下一章的应用层。

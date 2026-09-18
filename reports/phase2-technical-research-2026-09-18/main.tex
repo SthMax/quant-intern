@@ -1,0 +1,59 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper,fontset=none]{ctexart}
+\input{preamble}
+\input{reference-labels}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\thispagestyle{empty}\setlength{\parindent}{0pt}
+\vspace*{16mm}
+{\sffamily\large\color{teal}MSIM CHINA · TECHNICAL RESEARCH\par}
+\vspace{19mm}
+{\Huge\bfseries\color{navy}本地大模型技术\\[5pt]与应用调研\par}
+\vspace{9mm}
+{\Large\color{muted}开放模型、推理服务与业务助手\par}
+\vspace{14mm}\textcolor{teal}{\rule{\linewidth}{2pt}}\vspace{8mm}
+\begin{tabularx}{\linewidth}{@{}P{28mm}Y@{}}
+研究主题 & 模型能力与许可、Serving framework、Harness与业务应用\\
+部署场景 & 专业个人工作站与面向数十人的内部共享服务\\
+研究阶段 & Phase 2技术可行性研究，第3周阶段报告\\
+资料截止 & 2026年9月18日\\
+\end{tabularx}
+\vfill
+{\large\color{navy}介绍本地模型如何成为可使用的研究工具，\\[4pt]分析模型、服务系统与业务应用之间的关系。\par}
+\vspace{16mm}
+{\small\color{muted}2026年9月\par}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+\setcounter{page}{1}
+
+\section*{摘要}
+\addcontentsline{toc}{section}{摘要}
+本地大模型的应用体系由三个相互连接的层次组成：模型承担材料理解、内容生成和工具指令生成；推理服务系统将模型运行在具体硬件上，处理多个请求与上下文；应用及Agent运行环境则把资料、模型和工具组织成用户可以完成的工作。三者共同决定系统的能力、响应速度与使用体验。
+
+当前开放模型已经形成从专业个人工作站到集中计算的多种选择。Qwen和Gemma的中等规模模型提供稠密与混合专家两条路线，兼顾长文阅读、多模态和工具调用；DeepSeek、GLM及Kimi进一步覆盖复杂研究、办公文件和长过程任务。稀疏激活、缓存优化和低精度计算，使这些能力能够对应不同规模的硬件配置。
+
+推理服务为模型提供持续运行的基础。vLLM和SGLang组织多用户请求、上下文缓存与多卡计算，MLX系列发挥Apple统一内存的特点，CPU/GPU异构路线则利用主存和CPU扩展模型容量。新模型通常先获得源码适配，再进入正式发布包；本轮已核对代表模型的部署路径、版本记录和专用构建，为理解安装与维护工作提供具体依据。
+
+非编码应用的主要差别在于工作如何组织。员工工作台支持围绕材料连续提问；固定流程将字段、计算与复核顺序预先确定；通用助手根据目标选择文件和工具操作。以两期财报和一份CSV形成比较表为例，这些形态分别适合探索式分析、重复处理和目标驱动的文件任务，开发框架则支持进一步连接内部系统。
+
+个人工作站便于保留研究环境与本机文件，集中服务可以在多人之间复用模型和资料处理组件。两种方式的经济性可以围绕任务质量、完成时间、资源利用与维护投入展开分析。模型许可中的集团条款、内部使用定义以及应用平台的企业授权，为各类使用方式规定了相应权利与义务。
+
+本报告基于官方模型卡、代码仓库、许可文本和产品文档，介绍主要方案的功能、优势、原理及业务用途，并以参考组合说明模型、推理服务与应用如何共同工作。版本、评测和资料口径集中列于附录。
+\clearpage
+\tableofcontents
+\clearpage
+\input{overview}
+\input{models}
+\input{licenses}
+\input{serving}
+\input{applications}
+\input{deployment}
+\clearpage
+\appendix
+\input{appendix}
+\clearpage
+\section{参考文献}
+本文引用对应2026年9月16日至18日取得的官方资料快照。模型及软件的具体版本、原件与内容校验记录另附于报告源码目录。正文的产品功能来自文档说明，业务例子和部署分析为本报告的归纳。
+\input{references}
+\end{document}

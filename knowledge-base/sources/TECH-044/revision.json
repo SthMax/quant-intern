@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "12d78909d3f5247a8d40a47f0ef5c3ac771d9c5a",
+    "node_id": "C_kwDOI8xhwNoAKDEyZDc4OTA5ZDNmNTI0N2E4ZDQwYTQ3ZjBlZjVjM2FjNzcxZDljNWE",
+    "commit": {
+      "author": {
+        "name": "Artyom Bogachenko",
+        "email": "32168471+SpectralOne@users.noreply.github.com",
+        "date": "2026-09-17T02:13:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T02:13:49Z"
+      },
+      "message": "👛 fix: Drop Unread Credentials From MCP Domain Validation (#16035)\n\n* fix: Resolve live OpenID bearer before the MCP early domain gate\n\n* fix: Drop unread credentials from the MCP early domain gate\n\nThe early domain gate resolves the whole server config through\n`processMCPEnv`, but decides from the URL alone. A credential placeholder in\nany other field therefore raised `OpenIDReauthRequiredError` from a stale\nrequest-time OpenID snapshot, before the connection path could refresh that\nbearer, and the tool was dropped from the agent's toolset.\n\n`buildMCPDomainValidationConfig` narrows the config to what the decision reads,\nso the gate needs no live credential. A URL placeholder still fails closed, and\nthe argument is never mutated, so direct-bearer recovery keeps the placeholder\nit knows how to refresh.\n\nReplaces the per-tool `upstreamTokenProvider` call the gate would otherwise\nmake (1 + N per request per server) and covers every credential-bearing field,\nnot only `Authorization`.\n\nCo-authored-by: Artyom Bogachenko <SpectralOne@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Lia <lia@librechat.ai>\nCo-authored-by: Artyom Bogachenko <SpectralOne@users.noreply.github.com>",
+      "tree": {
+        "sha": "40d0c17441b32e5efd460f4b5f1a656fb97622c4",
+        "url": "https://api.github.com/repos/danny-avila/LibreChat/git/trees/40d0c17441b32e5efd460f4b5f1a656fb97622c4"
+      },
+      "url": "https://api.github.com/repos/danny-avila/LibreChat/git/commits/12d78909d3f5247a8d40a47f0ef5c3ac771d9c5a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqq0zdCRC1aQ7uu5UhlAAAYHUQAInMG/kbHICugT1fD1Rli33P\n0MalGIK7cAD0acdsmKUpy/o7NnDP56/EcX8BRUuXFsy89/uxQeKFaMUmgwc3qWAF\nb9cvqjacuTzoGgynHS7NY9jCTgVwTBGVJJflQOaqe417JBNXlg2wO5JuBRrH6NF9\nPbm0m6AH1iR3K+XbZ/x863W3MnoQ4Ovfos4g0I5KxuRp6TeTRtMHSnFf6edZSKKn\nZUZKpFqR1u5RLs0o+M/R3GN2nyQZlBpJueVDh90VfAEOX2ilp73CQLrfDvEP70Pz\nl0BHx4qT2Lqmvzu89wvaYf2wg7LnJh3WWTmwNk4UVv+Gw3JceQCgDlkHr04Lc6XZ\nPcjKLZ/VyP1tCNXZK3yu4Zzvgx4aRxrEB30U2oAFxq5ncxXifvnV0nY53GwMLcx6\nJhg48aBnrc/7Wu/lbHFJK9A5xdAi5VlP47gxf9gVB6Gk/zGu0PUe1/VQM/R2ibeb\ntRa/dsPYT2zo/0NpEGhOLoSe5TBOJVCaFSjbqTz9HS6PewUHWo6bmMLfbB+k8No2\n4CHHSsK54v381TDYcUDxxuDAfNX1PREmAHtykeG9rQUxy5gkweKUXx2iRHJ5AFne\nWQLMoTfKg4+9Tize0QaW07XfyLLTVsmKCBj+V/l5rGzY3XZd/bR1GBadyl3FieFj\nlYVfCUnMVjymkddpfoH8\n=BPEA\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 40d0c17441b32e5efd460f4b5f1a656fb97622c4\nparent 2452f499a86ae215146d988e9418a481616238ad\nauthor Artyom Bogachenko <32168471+SpectralOne@users.noreply.github.com> 1789611229 +0300\ncommitter GitHub <noreply@github.com> 1789611229 -0400\n\n👛 fix: Drop Unread Credentials From MCP Domain Validation (#16035)\n\n* fix: Resolve live OpenID bearer before the MCP early domain gate\n\n* fix: Drop unread credentials from the MCP early domain gate\n\nThe early domain gate resolves the whole server config through\n`processMCPEnv`, but decides from the URL alone. A credential placeholder in\nany other field therefore raised `OpenIDReauthRequiredError` from a stale\nrequest-time OpenID snapshot, before the connection path could refresh that\nbearer, and the tool was dropped from the agent's toolset.\n\n`buildMCPDomainValidationConfig` narrows the config to what the decision reads,\nso the gate needs no live credential. A URL placeholder still fails closed, and\nthe argument is never mutated, so direct-bearer recovery keeps the placeholder\nit knows how to refresh.\n\nReplaces the per-tool `upstreamTokenProvider` call the gate would otherwise\nmake (1 + N per request per server) and covers every credential-bearing field,\nnot only `Authorization`.\n\nCo-authored-by: Artyom Bogachenko <SpectralOne@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Lia <lia@librechat.ai>\nCo-authored-by: Artyom Bogachenko <SpectralOne@users.noreply.github.com>",
+        "verified_at": "2026-09-17T02:13:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/danny-avila/LibreChat/commits/12d78909d3f5247a8d40a47f0ef5c3ac771d9c5a",
+    "html_url": "https://github.com/danny-avila/LibreChat/commit/12d78909d3f5247a8d40a47f0ef5c3ac771d9c5a",
+    "comments_url": "https://api.github.com/repos/danny-avila/LibreChat/commits/12d78909d3f5247a8d40a47f0ef5c3ac771d9c5a/comments",
+    "author": {
+      "login": "SpectralOne",
+      "id": 32168471,
+      "node_id": "MDQ6VXNlcjMyMTY4NDcx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32168471?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SpectralOne",
+      "html_url": "https://github.com/SpectralOne",
+      "followers_url": "https://api.github.com/users/SpectralOne/followers",
+      "following_url": "https://api.github.com/users/SpectralOne/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SpectralOne/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SpectralOne/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SpectralOne/subscriptions",
+      "organizations_url": "https://api.github.com/users/SpectralOne/orgs",
+      "repos_url": "https://api.github.com/users/SpectralOne/repos",
+      "events_url": "https://api.github.com/users/SpectralOne/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SpectralOne/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2452f499a86ae215146d988e9418a481616238ad",
+        "url": "https://api.github.com/repos/danny-avila/LibreChat/commits/2452f499a86ae215146d988e9418a481616238ad",
+        "html_url": "https://github.com/danny-avila/LibreChat/commit/2452f499a86ae215146d988e9418a481616238ad"
+      }
+    ]
+  }
+]

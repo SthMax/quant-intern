@@ -1,0 +1,42 @@
+{
+  "source_id": "TECH-050",
+  "title": "microsoft/autogen official product, repository and license research",
+  "issuer": "microsoft",
+  "repository": "microsoft/autogen",
+  "official_url": "https://github.com/microsoft/autogen",
+  "revision": "027ecf0a379bcc1d09956d46d12d44a3ad9cee14",
+  "commit_date": "2026-04-06T22:35:32Z",
+  "retrieved_at": "2026-09-17T17:28:19.606950+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "AutoGen maintenance status and migration recommendation. Root LICENSE may govern documentation; this record does not classify all AutoGen code licensing.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/microsoft/autogen/commits?per_page=1",
+      "sha256": "73cf321fb007796e55f99d5e68c870361a4c75b012fc2e367af8407d239facd5",
+      "bytes": 5258
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/microsoft/autogen/027ecf0a379bcc1d09956d46d12d44a3ad9cee14/README.md",
+      "sha256": "5d300aa3304aeecf1a48f68ac76a1af255b8645d666b8aa154790cb30f1dbb94",
+      "bytes": 20790
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/microsoft/autogen/027ecf0a379bcc1d09956d46d12d44a3ad9cee14/LICENSE",
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+      "bytes": 18650
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/microsoft/autogen/releases/latest",
+      "sha256": "72cb5e6222c141c35e98ee0b343e493fb65b4333ca83feb23eb8cab0e4b61c7d",
+      "bytes": 5481
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README Maintenance Mode and migration direction",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "supporting"
+}

@@ -1,0 +1,66 @@
+{
+  "source_id": "TECH-047",
+  "title": "aaif-goose/goose official product, repository and license research",
+  "issuer": "aaif-goose",
+  "repository": "aaif-goose/goose",
+  "official_url": "https://github.com/aaif-goose/goose",
+  "revision": "d213a3b13545b4e85524a572ac695b2181728e3b",
+  "commit_date": "2026-09-17T03:25:45Z",
+  "retrieved_at": "2026-09-17T17:28:17.817092+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/aaif-goose/goose/commits?per_page=1",
+      "sha256": "8d8a8641f095d07581163b7b35f1f2ce35e7f7807670296269190991f06d2e02",
+      "bytes": 5049
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/aaif-goose/goose/d213a3b13545b4e85524a572ac695b2181728e3b/README.md",
+      "sha256": "0f1df85a0c457caf1f3c4e1c0370f2da3887fffa588d207862cfc298c1d39755",
+      "bytes": 3449
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/aaif-goose/goose/d213a3b13545b4e85524a572ac695b2181728e3b/LICENSE",
+      "sha256": "44459b86c2e96fdbfd8a6b5c33d30d4b04b5293fcb2ec96fe4dcc4e0f90b8962",
+      "bytes": 11341
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/aaif-goose/goose/releases/latest",
+      "sha256": "365896d6515e434634c487e3b5e197b9352c911a2955b4f980557b7df4862184",
+      "bytes": 75427
+    },
+    "recipes.html": {
+      "requested_url": "https://goose-docs.ai/docs/guides/recipes/",
+      "sha256": "8c1f26935a3372a6d8f3cdd756ed3f7547682be3e825314c2c9f635ed781e516",
+      "bytes": 37498,
+      "retrieved_at": "2026-09-17T17:31:02.441316+00:00"
+    },
+    "recipes.md": {
+      "requested_url": "https://goose-docs.ai/docs/guides/recipes/",
+      "sha256": "8d27d42106e17717d40a143d8e4042df1fdb0b5c4d5de24f9f0c77a78b58bf19",
+      "bytes": 2651,
+      "retrieved_at": "2026-09-17T17:31:02.441440+00:00"
+    },
+    "providers.html": {
+      "requested_url": "https://goose-docs.ai/docs/getting-started/providers/",
+      "sha256": "daa2da17ee4a4b2e5812659c224eb2e9b86d4ba38184026a49b3be83fcdb0407",
+      "bytes": 228260,
+      "retrieved_at": "2026-09-17T17:31:02.928346+00:00"
+    },
+    "providers.md": {
+      "requested_url": "https://goose-docs.ai/docs/getting-started/providers/",
+      "sha256": "84f47be48857e94f4dd71025cfa8179cda19650807ce7667cd201c011fc470ec",
+      "bytes": 59124,
+      "retrieved_at": "2026-09-17T17:31:02.928482+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README purpose and platform; recipes and provider docs; LICENSE",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

@@ -1,0 +1,54 @@
+{
+  "source_id": "TECH-046",
+  "title": "infiniflow/ragflow official product, repository and license research",
+  "issuer": "infiniflow",
+  "repository": "infiniflow/ragflow",
+  "official_url": "https://github.com/infiniflow/ragflow",
+  "revision": "15b6668dd8f7a8921cecec9fae4e4d46f7947bdd",
+  "commit_date": "2026-09-17T16:07:49Z",
+  "retrieved_at": "2026-09-17T17:28:18.284408+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/infiniflow/ragflow/commits?per_page=1",
+      "sha256": "2cc5817cfa086ae515a2428898443d34022eb730bb1eb0a5045373a836147328",
+      "bytes": 4955
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/infiniflow/ragflow/15b6668dd8f7a8921cecec9fae4e4d46f7947bdd/README.md",
+      "sha256": "e321e3b65b92b34121e96d147fe9145e1e428ec1453e3cbbf4426fab09d701ad",
+      "bytes": 17682
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/infiniflow/ragflow/15b6668dd8f7a8921cecec9fae4e4d46f7947bdd/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/infiniflow/ragflow/releases/latest",
+      "sha256": "e1af93110225eecaa4cb08b908e32eadd4274bced07353fa768b7780dd5a64b7",
+      "bytes": 75797
+    },
+    "sandbox.html": {
+      "requested_url": "https://ragflow.net/docs/sandbox_quickstart",
+      "sha256": "d17c7ebe24a5271f7151d100225b15f17f19fbe27334c2fc52c0f59b90b7e9d1",
+      "bytes": 75619,
+      "retrieved_at": "2026-09-17T17:31:02.631138+00:00"
+    },
+    "sandbox.md": {
+      "requested_url": "https://ragflow.net/docs/sandbox_quickstart",
+      "sha256": "84bde30ee2691d1e6db292c8c95cb25cb875f6f36da8684a2e47b72605e2202f",
+      "bytes": 7028,
+      "retrieved_at": "2026-09-17T17:31:02.631310+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README core features; sandbox quickstart; Apache LICENSE",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

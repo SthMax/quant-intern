@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+    "node_id": "C_kwDOKdDCc9oAKDBhN2MxNTgzMmZiMzBiMTkwMzc1M2U4M2Y4MWRjN2QyN2U1YjA5NDQ",
+    "commit": {
+      "author": {
+        "name": "Classic298",
+        "email": "27028174+Classic298@users.noreply.github.com",
+        "date": "2026-09-04T23:43:32Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-04T23:43:32Z"
+      },
+      "message": "ci: run the external regression suite on release pull requests (#29313)\n\n* ci: run the external regression suite on release pull requests\n\nAdds a workflow that runs the open-webui/tests unit suite against release\ncandidates, so a release that reintroduces a fixed bug is caught before it is cut\nrather than after users report it. The suite is roughly 4500 source-level tests\npinned to specific past issues and PRs, and takes about three minutes; the\ndependency install dominates the run and is cached.\n\nIt runs only on pull requests into main whose title starts with a version, which\nis how releases are titled here, or which touch package.json. Everything else\ninto main, and every pull request into dev, skips it and reports green.\n\nTwo settings are needed for this to block anything, both outside the diff:\nrequire the Regression / Result check on main, and require branches to be up to\ndate before merging so the suite covers what actually lands.\n\nThe reusable workflow is referenced at @main so a release always runs the current\ntests. Pinning it to a tag instead is a reasonable call to make here.\n\n* ci: cancel superseded regression runs\n\nA queued run on a release PR meant a stale commit's suite kept blocking\nthe required check after newer commits shipped, wasting a runner slot\nand the author's time waiting on a result nobody needed. Cancel it\ninstead so the suite always runs against the latest push.\n\n* ci: rename the Regression workflow to Tests\n\n* Update regression.yaml\n\n* ci: gate the test suite with a job condition instead of a gate job\n\nReplaces the gate job with a condition on the suite job itself. The job existed\nto look for a version title or a change to package.json, and the package.json\ncheck is redundant: a release bumps the version in that file and carries it in\nthe title, so the title alone identifies one. That removes a runner, an API call\nand the pull-requests read permission.\n\nThe suite now runs on version-titled pull requests from dev into main, and on\nversion-titled pull requests into dev so it can be exercised outside a release.\nAn edit only re-runs it when the title itself changed, and an edit no longer\ncancels a suite that is already running, which would otherwise leave the check\ngreen with nothing behind it.\n\n* ci: match only the version prefixes releases actually use\n\nRelease pull requests are titled 0.11.3, not v0.11.3, so the leading v never\nmatched. The remaining digits are dropped with it and the dot is kept, so a\ntitle that merely starts with a digit does not run the suite.",
+      "tree": {
+        "sha": "92c7e891853dac591688a84f042cf43cdb25b2a1",
+        "url": "https://api.github.com/repos/open-webui/open-webui/git/trees/92c7e891853dac591688a84f042cf43cdb25b2a1"
+      },
+      "url": "https://api.github.com/repos/open-webui/open-webui/git/commits/0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqm1ekCRC1aQ7uu5UhlAAAUHcQADNMbyKJFsbpsOdy3h7+jjSK\nv3c1CUbZU6caMrdjXxzJ8UHNlSHwusQ8fEo5c4DgzHiM/I54vUFepcuAoi3C5OW2\nvOVni7A7GGCyZi6Z/zxrEtu/N5ig0vthjUh7EDs6EZVRXxmjfkv0KEZ1WUeISQPZ\nacV9b1SeZvhvoYpeneuUUHbdEOv2z9pJDDvGn+bZaXAVyNKg3rHy1UVslKRNz6y8\n5+oIqUVmnZ/bCS+aJ86SUagF840by9Ve8ZIFTnhP233/9VKWqehItohu6kRjzD6r\npV4JQ1YJRy4qNdaPgNHyjZNl424OKet+3jp/emGILKqkexwJkX4amPBmY9OUv/Qv\nT/gvkTJLHT/xPjyIABC1WyK+z+9kY298eih/WFyuw0JwnklPVkqpkHOcXut/OFe1\nluluXqkv90iXWOmp1GdXfBj55y0r17vMUoPS1AoHQO9WW5V8ifQ6bofgIFNLNhhB\nRbTRZmOwWCxXWW/Cw5Naeq0wEJMLb7NPUAe2N4j+EULAF19UHpZvrDStOXnzmvwN\n9nyg6ozzm+EAFrN+xAKbEUPymuCnPcleps54a/Kww+5HFxP0LlwQiLvr+2zC2vZh\n9gHwOavVlr5AaWJTSOndUFsuJ5LpAprHhX4NJ1yRSrN1znPaETsIJ1A/P58pe59G\nsAZPLI5OphBTNvfcdL0S\n=jmZu\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 92c7e891853dac591688a84f042cf43cdb25b2a1\nparent 2a960a59fe1dbbd35282f0556b3666d81102e781\nauthor Classic298 <27028174+Classic298@users.noreply.github.com> 1788565412 +0200\ncommitter GitHub <noreply@github.com> 1788565412 -0400\n\nci: run the external regression suite on release pull requests (#29313)\n\n* ci: run the external regression suite on release pull requests\n\nAdds a workflow that runs the open-webui/tests unit suite against release\ncandidates, so a release that reintroduces a fixed bug is caught before it is cut\nrather than after users report it. The suite is roughly 4500 source-level tests\npinned to specific past issues and PRs, and takes about three minutes; the\ndependency install dominates the run and is cached.\n\nIt runs only on pull requests into main whose title starts with a version, which\nis how releases are titled here, or which touch package.json. Everything else\ninto main, and every pull request into dev, skips it and reports green.\n\nTwo settings are needed for this to block anything, both outside the diff:\nrequire the Regression / Result check on main, and require branches to be up to\ndate before merging so the suite covers what actually lands.\n\nThe reusable workflow is referenced at @main so a release always runs the current\ntests. Pinning it to a tag instead is a reasonable call to make here.\n\n* ci: cancel superseded regression runs\n\nA queued run on a release PR meant a stale commit's suite kept blocking\nthe required check after newer commits shipped, wasting a runner slot\nand the author's time waiting on a result nobody needed. Cancel it\ninstead so the suite always runs against the latest push.\n\n* ci: rename the Regression workflow to Tests\n\n* Update regression.yaml\n\n* ci: gate the test suite with a job condition instead of a gate job\n\nReplaces the gate job with a condition on the suite job itself. The job existed\nto look for a version title or a change to package.json, and the package.json\ncheck is redundant: a release bumps the version in that file and carries it in\nthe title, so the title alone identifies one. That removes a runner, an API call\nand the pull-requests read permission.\n\nThe suite now runs on version-titled pull requests from dev into main, and on\nversion-titled pull requests into dev so it can be exercised outside a release.\nAn edit only re-runs it when the title itself changed, and an edit no longer\ncancels a suite that is already running, which would otherwise leave the check\ngreen with nothing behind it.\n\n* ci: match only the version prefixes releases actually use\n\nRelease pull requests are titled 0.11.3, not v0.11.3, so the leading v never\nmatched. The remaining digits are dropped with it and the dot is kept, so a\ntitle that merely starts with a digit does not run the suite.",
+        "verified_at": "2026-09-04T23:43:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/open-webui/open-webui/commits/0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+    "html_url": "https://github.com/open-webui/open-webui/commit/0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+    "comments_url": "https://api.github.com/repos/open-webui/open-webui/commits/0a7c15832fb30b1903753e83f81dc7d27e5b0944/comments",
+    "author": {
+      "login": "Classic298",
+      "id": 27028174,
+      "node_id": "MDQ6VXNlcjI3MDI4MTc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27028174?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Classic298",
+      "html_url": "https://github.com/Classic298",
+      "followers_url": "https://api.github.com/users/Classic298/followers",
+      "following_url": "https://api.github.com/users/Classic298/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Classic298/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Classic298/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Classic298/subscriptions",
+      "organizations_url": "https://api.github.com/users/Classic298/orgs",
+      "repos_url": "https://api.github.com/users/Classic298/repos",
+      "events_url": "https://api.github.com/users/Classic298/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Classic298/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2a960a59fe1dbbd35282f0556b3666d81102e781",
+        "url": "https://api.github.com/repos/open-webui/open-webui/commits/2a960a59fe1dbbd35282f0556b3666d81102e781",
+        "html_url": "https://github.com/open-webui/open-webui/commit/2a960a59fe1dbbd35282f0556b3666d81102e781"
+      }
+    ]
+  }
+]

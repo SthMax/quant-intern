@@ -1,0 +1,66 @@
+{
+  "source_id": "TECH-051",
+  "title": "agno-agi/agno official product, repository and license research",
+  "issuer": "agno-agi",
+  "repository": "agno-agi/agno",
+  "official_url": "https://github.com/agno-agi/agno",
+  "revision": "a71c4d0c607260d2483d73644a60dc49d036148c",
+  "commit_date": "2026-09-17T08:45:33Z",
+  "retrieved_at": "2026-09-17T17:28:19.627907+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/agno-agi/agno/commits?per_page=1",
+      "sha256": "7b7fb76f38f7f78ee18884ad8c91058f4e760f36aa54ab7cb1e352826eb798f0",
+      "bytes": 8438
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/agno-agi/agno/a71c4d0c607260d2483d73644a60dc49d036148c/README.md",
+      "sha256": "ee04510fcc6e82fa87258c3bba766da73bbffd1f8bd8a2320babee8bc291ff30",
+      "bytes": 4960
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/agno-agi/agno/a71c4d0c607260d2483d73644a60dc49d036148c/LICENSE",
+      "sha256": "7504bf0fe32a486487ec309d5ef30597ca87d2508450be380f6ef4772c3371ca",
+      "bytes": 11343
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/agno-agi/agno/releases/latest",
+      "sha256": "e77703efcf764d75ce4fea1898c2e0337098c6615545e1f07acc175ed2fd6554",
+      "bytes": 10055
+    },
+    "overview.html": {
+      "requested_url": "https://docs.agno.com/introduction",
+      "sha256": "76e3db4ca0282cb97edddbc62a437e548ad2b3b2a16cb51a9ccbcf49f39ecf16",
+      "bytes": 218357,
+      "retrieved_at": "2026-09-17T17:31:03.611653+00:00"
+    },
+    "overview.md": {
+      "requested_url": "https://docs.agno.com/introduction",
+      "sha256": "6dc473e9beef6dcf4527a1f3bffa224e0c9e12d56111d1967002769c69c7cf90",
+      "bytes": 3859,
+      "retrieved_at": "2026-09-17T17:31:03.611777+00:00"
+    },
+    "pricing.html": {
+      "requested_url": "https://www.agno.com/pricing",
+      "sha256": "a2006bdd374782826654e9fe15947226fc830a7375d834f8601ee68468ea0d03",
+      "bytes": 237347,
+      "retrieved_at": "2026-09-17T17:31:03.945932+00:00"
+    },
+    "pricing.md": {
+      "requested_url": "https://www.agno.com/pricing",
+      "sha256": "b13fa9896c8b780703880534569e76a982d5357a0bd8784252e353a835739ca5",
+      "bytes": 9967,
+      "retrieved_at": "2026-09-17T17:31:03.946058+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README; SDK/AgentOS/Control Plane overview; product tiers; LICENSE",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

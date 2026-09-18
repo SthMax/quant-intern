@@ -1,0 +1,32 @@
+\Needspace{8\baselineskip}
+\section{许可：模型权重与机构使用方式}
+
+\subsection{开放权重对应不同的授权条件}
+模型能否取得权重、采用哪种许可，以及机构怎样使用，是相互关联的三个问题。公开权重提供了本地运行和进一步研究的条件；具体的修改、分发、商业使用和附加义务，则由相应许可决定。
+
+本轮Qwen与Gemma候选采用Apache 2.0，DeepSeek-V4.1-Flash和GLM-5.3-Flash采用MIT。两类许可允许相应的使用、修改和分发，并规定声明保留等条件。Apache 2.0还明确列出特定范围的专利许可、分发时的修改标记和NOTICE处理，其法律主体定义涉及控制、被控制或共同控制的实体。\src{TECH-004}\src{TECH-013}\src{TECH-012}\src{TECH-019}\src{TECH-008}\src{TECH-016}
+
+GLM-5.3与Kimi K3采用各自的自定义许可。它们的重要区别集中在关联方、模型即服务业务和内部使用范围。表\ref{tab:license}概括本轮核对的条件。
+
+\begin{table}[H]\small\centering
+\caption{主要模型许可及使用条件}\label{tab:license}
+\begin{tabularx}{\linewidth}{@{}P{30mm}P{29mm}Y@{}}\toprule
+模型组 & 许可 & 与机构使用相关的内容\\\midrule
+Qwen两项、Gemma两项 & Apache 2.0 & 版权及特定专利授权；分发时保留许可与声明，标记修改，按条件处理NOTICE。\\
+DeepSeek-V4.1-Flash、GLM-5.3-Flash & MIT & 允许相应商业使用、修改和分发；保留版权及许可声明。\\
+GLM-5.3 & GLM-5.3 License & 关联方经营MaaS与集团连续12个月收入门槛共同触发安全审查要求。\\
+Kimi K3 & Kimi K3 License & MaaS协议、商业产品署名及内部使用豁免分别规定。\\\bottomrule
+\end{tabularx}
+\source{各模型固定修订的LICENSE、Google官方Gemma 4许可页及Apache全文。\src{TECH-015}\src{TECH-017}}
+\end{table}
+
+\subsection{集团主体与内部使用的差别}
+GLM-5.3的附加条件同时考察被许可方或关联方是否经营模型即服务（MaaS），以及集团合计收入是否超过门槛；满足联合条件时，商业使用前涉及Z.AI安全审查。Flash采用MIT，适用标准MIT授权条件。主模型的判断单位则同时涉及关联实体、集团收入和实际经营的服务内容。\src{TECH-015}\src{TECH-016}
+
+Kimi K3也有MaaS及商业产品条件，但另行规定内部使用豁免；其定义要求软件、输出及底层能力均不向第三方提供。GLM主模型没有同样的内部使用豁免。纯内部研究、集团跨实体共享与向客户交付内容，分别对应主体认定、第三方范围及输出提供方式等适用问题。具体金额、门槛和条款位置集中列于附录\ref{app:model-license}。\src{TECH-017}
+
+\subsection{模型来源、软件组件与内部采用}
+Google的Gemma与Qwen、DeepSeek、GLM及Kimi构成不同发布方的模型路线。机构使用时，可以分别识别权重发布者、服务供给主体和数据处理位置：本地部署由内部设备承担推理，使用托管服务则涉及相应服务商及其运行环境。
+
+应用系统还包含推理引擎、资料解析、嵌入、工具、界面和第三方扩展。这些组件各自适用相应许可。例如，一款MIT模型可以接入带商业条件的应用平台，形成模型和平台分别授权的组合。产品中的企业身份管理、支持服务和品牌修改也可能单独授权。软件许可与产品边界汇总见附录\ref{app:software-license}。
+

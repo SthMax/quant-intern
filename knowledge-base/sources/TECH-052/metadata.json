@@ -1,0 +1,54 @@
+{
+  "source_id": "TECH-052",
+  "title": "crewAIInc/crewAI official product, repository and license research",
+  "issuer": "crewAIInc",
+  "repository": "crewAIInc/crewAI",
+  "official_url": "https://github.com/crewAIInc/crewAI",
+  "revision": "597b99fb576ba1dd0f3ad476663481f6aae2ef88",
+  "commit_date": "2026-09-17T17:17:38Z",
+  "retrieved_at": "2026-09-17T17:28:20.090230+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official README/license and separately dated HEAD/release records; selected product docs will be added. No product installation or outcome measurement.",
+  "files": {
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/crewAIInc/crewAI/commits?per_page=1",
+      "sha256": "479d6221e67dec3893ed147dedcc3f7a4123c94b3a33ebe1b2fcc8b99155128a",
+      "bytes": 5269
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/crewAIInc/crewAI/597b99fb576ba1dd0f3ad476663481f6aae2ef88/README.md",
+      "sha256": "b0f39843f93676b12883d5821a34555e2146e62bd2c42dc12733fc41222de013",
+      "bytes": 32755
+    },
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/crewAIInc/crewAI/597b99fb576ba1dd0f3ad476663481f6aae2ef88/LICENSE",
+      "sha256": "28868731966f4aa37f02879839aabc797137e27ddde4e274ef9cf965f9a71774",
+      "bytes": 1055
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/crewAIInc/crewAI/releases/latest",
+      "sha256": "6756062f9b7ed99dd0172cf13072cdf43fd86119c32303360672afe3c1dd8803",
+      "bytes": 3946
+    },
+    "overview.md": {
+      "requested_url": "https://docs.crewai.com/v1.15.22/en/introduction.md",
+      "sha256": "3373ba52d5787a5a931c9b9639de78eb08b6c1cd21772f5e5de39db36b24cac4",
+      "bytes": 6586,
+      "retrieved_at": "2026-09-17T17:31:03.846357+00:00"
+    },
+    "llms.md": {
+      "requested_url": "https://docs.crewai.com/v1.15.22/en/concepts/llms.md",
+      "sha256": "43823053a3565c35dd85344fd02374b1ab55a8e4d5b95e376aef4d5b01251a84",
+      "bytes": 53160,
+      "retrieved_at": "2026-09-17T17:31:04.257474+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "reviewer": "Codex; official product/docs/license inspection 2026-09-18",
+  "locator": "README; versioned Crews/Flows and LLM docs; LICENSE",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main"
+}

@@ -1,0 +1,1794 @@
+[
+  {
+    "id": "TECH-020",
+    "number": 1,
+    "title": "vLLM：项目与模型服务文档",
+    "url": "https://github.com/vllm-project/vllm",
+    "revision": "6ca2b23e22aab8534e00a85e8ec5222508a6ecf3",
+    "retrieved_at": "2026-09-16T17:06:48.187644+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-020/revision.json",
+        "sha256": "22558e2c6e2a3cc0c8df6d99a547dd77a4155892e48a221ad98e1aba0efdc0e2"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-020/original.md",
+        "sha256": "8d2e7cd8d120bcd91ddfa85ef957f7246021b4a3f46f2e1f4ccf084ec6c20026"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-020/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-020/release.json",
+        "sha256": "949abf5e9b9ed36f2c7523508373265298c9a79b518848afbbd6c85582c4a1da"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-020/registry.py",
+        "sha256": "64c80d8c6659833a9abf836180f2b7549903db2a664e22bc38e38c258a6f572e"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-020/openai-server.md",
+        "sha256": "b81dab8000fc75a8346909a8e3dcb078be309f550ff9c68203810c6b8ab2c438"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-020/metadata.json",
+        "sha256": "cf54399c22797a2ee65170c0a59e8170124cccad75ded295c2c464ddd343f239"
+      }
+    ]
+  },
+  {
+    "id": "TECH-029",
+    "number": 2,
+    "title": "LangGraph：状态流程、持久运行与人工中断",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "revision": "230927fb3a9ac9b2893a30322b4dfea7cdea9a8f",
+    "retrieved_at": "2026-09-16T17:06:50.148681+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-029/revision.json",
+        "sha256": "a4eabeeaea801c4a03ab8698dff5d8ee862396262df6da99f933c145c4b211cb"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-029/original.md",
+        "sha256": "3a13e257af1216962d53d72414a7f44ac1fc5cea34d994bdff60ea2a3b045933"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-029/LICENSE",
+        "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-029/release.json",
+        "sha256": "d0500a7d5aeb3777927f7fe29f2e6aac221f143ce06cb6f594ccaea37240def8"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-029/overview.md",
+        "sha256": "3fd533906d7c1eb7644e2feac4fe33cf0739b983dbc324f3786a9a1ef72a1ac3"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-029/durable-execution.md",
+        "sha256": "5b655d1b9a0a354aeac59b382f71f82a068a5edf48584be931967d5b59b7da06"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-029/interrupts.md",
+        "sha256": "0dfd64141f5b5ae9e57466dea7ab1c416718af05d040238a3ed5f2ab11b5bc74"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-029/package-release.json",
+        "sha256": "9846bf14ed456a4429b90748325127ec5e3570b6892ab54bd17f1b9f5a4f6c48"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-029/metadata.json",
+        "sha256": "8eaaf4b6c9b0fb3637b5bde2273fd02c36e63c26c178cd7d919e6cef0ac22bd4"
+      }
+    ]
+  },
+  {
+    "id": "TECH-037",
+    "number": 3,
+    "title": "DeepSeek Harness：架构、模型与预览状态",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "revision": "0d1f50007f9bca3f52b06e1c3074fa14d5fb0720",
+    "retrieved_at": "2026-09-16T17:06:52.774156+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-037/revision.json",
+        "sha256": "7dd8e930ce4747ee9b80830486e77b992e54f4dc72ea0512afc53f03598b9b8c"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-037/original.md",
+        "sha256": "b43a2af65d10028e5de61e4603f946bfce9b777df079e92745491c7700a6d58e"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-037/LICENSE",
+        "sha256": "ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-037/tree.json",
+        "sha256": "e84d321f89eafcb97d66116131ac72b49efc521ee3ef72da6e2016834f97bded"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-037/architecture.md",
+        "sha256": "11b6793755e704105d0c87111f8bb86f19ff247b49380471ae4047604c01f313"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-037/providers.md",
+        "sha256": "6c1838eaaccbc74f1c09c62c90bdf7bab04d0dc0b268bcea097c39952143d332"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-037/sandbox.md",
+        "sha256": "a8bb9cf5405aa8470785d9442786e9e6940265fb46c21608ef15c82993a62ca7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-037/approval.md",
+        "sha256": "5a427a89d2c7b3edb8dd67db25545a915f6869f57e627fdd1c80dc51d8065d98"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-037/safety.md",
+        "sha256": "62075bb51e0f7790441e7722ff12063107b4866019332e71ef01b63b6f880fee"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-037/metadata.json",
+        "sha256": "17fec4dce27cd79ba0e6cac75c3d8359cf732602dea2a9d0c8c126e847eada5b"
+      }
+    ]
+  },
+  {
+    "id": "TECH-004",
+    "number": 4,
+    "title": "Qwen3.8-27B：模型卡、配置与许可",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "retrieved_at": "2026-09-16T08:32:41.571421+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-004/model-info.json",
+        "sha256": "0360cd3836d13fdecfc46f708a2291ad15fb28c89726a726af274b5a51c31c0a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-004/original.md",
+        "sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-004/config.json",
+        "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-004/LICENSE",
+        "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-004/generation_config.json",
+        "sha256": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-004/model.safetensors.index.json",
+        "sha256": "77042094076611b69791a610065f28b7013b8c621795fa86ddccc8bac7d1b9df"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-004/metadata.json",
+        "sha256": "876dd1a1ded2b94310a2554e75c059636fa3bd91d0323addd8c553ed203fa3c7"
+      }
+    ]
+  },
+  {
+    "id": "TECH-013",
+    "number": 5,
+    "title": "Qwen3.6-35B-A3B：模型卡、配置与许可",
+    "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+    "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+    "retrieved_at": "2026-09-16T09:11:12.741175+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-013/model-info.json",
+        "sha256": "18bbc17f98994f85545174930dd096f1508c65c0be148a7a010d23e0803c7570"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-013/original.md",
+        "sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-013/config.json",
+        "sha256": "93a4693fa9d8392fbfccd4b3c9873f4bfdcb14fdede978b123d07d19675efe99"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-013/LICENSE",
+        "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-013/generation_config.json",
+        "sha256": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-013/model.safetensors.index.json",
+        "sha256": "41b9356101ebf8e7519e150dc811f80c4226e727301fbb032b890f006ed0be83"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-013/metadata.json",
+        "sha256": "6fcb68100d3e35ec52a8fad94bd1851457fa823d1b275f36fcdabd0780754c2f"
+      }
+    ]
+  },
+  {
+    "id": "TECH-014",
+    "number": 6,
+    "title": "Gemma 4 31B：模型卡与配置",
+    "url": "https://huggingface.co/google/gemma-4-31B-it",
+    "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "retrieved_at": "2026-09-16T09:11:12.692422+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-014/model-info.json",
+        "sha256": "d9062b09f586f517ea1f56dc8d8e06a87c590cdaa1df175fb064bf69dcc881dd"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-014/original.md",
+        "sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-014/config.json",
+        "sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-014/generation_config.json",
+        "sha256": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-014/model.safetensors.index.json",
+        "sha256": "d4aff3b976d69c123a29d1c085d7ba4de1ac3f4ca1726a7f81e1b11462a64ea2"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-014/metadata.json",
+        "sha256": "fef36e005f6b87527ec24cce36db0264815ee57775300799679f1465afc3db94"
+      }
+    ]
+  },
+  {
+    "id": "TECH-006",
+    "number": 7,
+    "title": "Gemma 4 26B A4B：模型卡与配置",
+    "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+    "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+    "retrieved_at": "2026-09-16T08:32:42.628892+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-006/model-info.json",
+        "sha256": "f03b35c9971b5666c7105bb056c4f73c26fc293e5b22492b097fc8d0a126dd89"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-006/original.md",
+        "sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-006/config.json",
+        "sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-006/generation_config.json",
+        "sha256": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-006/model.safetensors.index.json",
+        "sha256": "907826a6e46ff454272bd6db1fee629d5531a2303be22986d825a0871d7dc7a7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-006/metadata.json",
+        "sha256": "b33cac457e0d6cd535997a88f2746a3853406108d76ec2d60f9ef7d6301a7315"
+      }
+    ]
+  },
+  {
+    "id": "TECH-008",
+    "number": 8,
+    "title": "DeepSeek-V4.1-Flash：模型卡、配置与许可",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "revision": "dba1be0a40aa45a94ad051997016db3960a90277",
+    "retrieved_at": "2026-09-16T08:32:42.890657+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-008/model-info.json",
+        "sha256": "7533fd7f1a985cbee31b78681d9c8286e6d6ae625b1df7f2b63ecd09aab98204"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-008/original.md",
+        "sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-008/config.json",
+        "sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-008/LICENSE",
+        "sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-008/model.safetensors.index.json",
+        "sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-008/metadata.json",
+        "sha256": "754f96893e5470fd51956b9edc9e2edfa98f8977427338de583c6e52130d0255"
+      }
+    ]
+  },
+  {
+    "id": "TECH-016",
+    "number": 9,
+    "title": "GLM-5.3-Flash：模型卡与MIT许可",
+    "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+    "revision": "eb9eb208eb0d988989d07a6a12d0fdeb5f52574a",
+    "retrieved_at": "2026-09-16T09:11:12.753903+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-016/model-info.json",
+        "sha256": "0753a152f25b79c6024ccb8aafd0a21abae2d9f2cf2ca3b9009563721bc0fdce"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-016/original.md",
+        "sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-016/config.json",
+        "sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-016/LICENSE",
+        "sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-016/generation_config.json",
+        "sha256": "230c30609ecbbb9e6583bedde8e7bdda0c6eb8fe5fad0eaeb3d1b293d751cb4f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-016/model.safetensors.index.json",
+        "sha256": "3c3f40366a53c3fd7974b4eab7881a365a98c2a4329150befebab99fe7c18b05"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-016/metadata.json",
+        "sha256": "82021461ceb57c0321d689f0b3d2c544f609bb6dd2da836f456a49a50bc21852"
+      }
+    ]
+  },
+  {
+    "id": "TECH-015",
+    "number": 10,
+    "title": "GLM-5.3：模型卡与自定义许可",
+    "url": "https://huggingface.co/zai-org/GLM-5.3",
+    "revision": "aca966e4e02791568aa6a4ced368624b3d897f42",
+    "retrieved_at": "2026-09-16T09:11:13.790077+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-015/model-info.json",
+        "sha256": "514349e7dc3bc4a1f94a1aacf906d081684c17561a85c55099b8e5ce2d8808a5"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-015/original.md",
+        "sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-015/config.json",
+        "sha256": "3ac72612095574542f7fff847ada8e59d9199dd8af44bdf625d7e02615572e69"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-015/LICENSE",
+        "sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-015/generation_config.json",
+        "sha256": "ac76b43d8683d3b930126870fc8be73d8679308fe752fa1f381096d8354f6a55"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-015/model.safetensors.index.json",
+        "sha256": "e0fe7f28c1f853d4824e4d796374e3dacf1fe470988773952c79b063768134bf"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-015/metadata.json",
+        "sha256": "a649a6d4d5fb92f0c291f5532de453dc6d64c6d91d7a8c8a0514c127b33a7eb8"
+      }
+    ]
+  },
+  {
+    "id": "TECH-017",
+    "number": 11,
+    "title": "Kimi K3：模型卡与自定义许可",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3",
+    "revision": "f831ab66814297da540d832a5235f8e904f29d06",
+    "retrieved_at": "2026-09-16T09:11:16.162207+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-017/model-info.json",
+        "sha256": "56e485a07cc1bc77b260b3bbff96d144e4cec77e6e8b41547b69f3e476b517f6"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-017/original.md",
+        "sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-017/config.json",
+        "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-017/LICENSE",
+        "sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-017/generation_config.json",
+        "sha256": "c6648c25e9705af7fba8847e243840d21b5cc63ddeb6297f750a7ddbb6a02836"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-017/model.safetensors.index.json",
+        "sha256": "a1c5210650ce71d2d3ae9ec5a101ac4afd3cf4b10091be589853437eb967febd"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-017/metadata.json",
+        "sha256": "26169f4d95c62908e76a0682a6c206ea1e8f12e34b29e3ff4f1e3c2990b76db9"
+      }
+    ]
+  },
+  {
+    "id": "TECH-012",
+    "number": 12,
+    "title": "Gemma 4：Apache 2.0许可",
+    "url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+    "revision": null,
+    "retrieved_at": "2026-09-16T08:37:56.364393+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-012/source.html",
+        "sha256": "4021d9c44e988431ffa4da2d3eb40c8e60fb2e7c96313d26ad7026bb8598f1b9"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-012/original.md",
+        "sha256": "8e1cc6f1bcefa392da1737cf70f701c0907b861bdb0fa84d8b13885966b827fe"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-012/metadata.json",
+        "sha256": "c03edac1c4e2d0488c524961b6456425d77233d061de22b00af7682de0218535"
+      }
+    ]
+  },
+  {
+    "id": "TECH-019",
+    "number": 13,
+    "title": "Apache License 2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "revision": null,
+    "retrieved_at": "2026-09-16T09:13:07.810683+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-019/original.md",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-019/metadata.json",
+        "sha256": "c66f3cbc7c55c6aaaa86c45d29d102eb2bc40ef5a8069d5b1840c1eac91f49cf"
+      }
+    ]
+  },
+  {
+    "id": "TECH-021",
+    "number": 14,
+    "title": "SGLang：项目与服务接口文档",
+    "url": "https://github.com/sgl-project/sglang",
+    "revision": "b02e16a895add01a0cfe24bb74922de92ab4d895",
+    "retrieved_at": "2026-09-16T17:06:48.805008+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-021/revision.json",
+        "sha256": "1b0423b47a19f89446f9c7cd4eb63d32e68910c4aa9eaf161b45814d3f636cc9"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-021/original.md",
+        "sha256": "ee6908559f95fe54c3f6773ed23e163d76c984f4750445830a343eac6edca1d0"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-021/LICENSE",
+        "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-021/release.json",
+        "sha256": "16fb7a83ba0385fd013100c67b3d1f89303db7e4a6f28effa8c5893769586c9f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-021/openai-api.md",
+        "sha256": "7e64949b85c19f8de13792ba92e6ffa1c6beaf88ae4061ace2ddb47ac1292dac"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-021/anthropic-api.md",
+        "sha256": "ef4ff2a0f32e1209d105861f3398805af124b7b54f3961e2656263c22ec67022"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-021/metadata.json",
+        "sha256": "a9539b196b4d165c69a5d64b197498e51dd9c7eb29df98b84b23d0fac634f011"
+      }
+    ]
+  },
+  {
+    "id": "TECH-022",
+    "number": 15,
+    "title": "TokenSpeed：调度、模型与服务文档",
+    "url": "https://github.com/lightseekorg/tokenspeed",
+    "revision": "688bbb04f5b4ffb816b128c94ec805ad4a0fbc72",
+    "retrieved_at": "2026-09-16T17:06:48.215760+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-022/revision.json",
+        "sha256": "1906caf2dc548a52d9a679546f1fc4df898a503a68fc6c55e6fb5359472073d2"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/original.md",
+        "sha256": "ed4a0136e74ee006f84331c328d1c550569ac3db4a8e56f5333175759db48912"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/LICENSE",
+        "sha256": "ef0cb6e89d6bdfb8f9b3f30b707a6c9ad6518b02e6823d1222fcfdb645ca48ff"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/release.json",
+        "sha256": "1cd49ffe645593dd3b72d272bc19e9cca42a0e49856e6aa7cf64b1637b9c6986"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/tree.json",
+        "sha256": "bb309aff6f92aa370ef00cdbf1b77e564aed7510755a79ef2b89344a8c61ffc3"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/getting-started.md",
+        "sha256": "b99518281ac2fc49e1a9f204f400dc2ba4ebe4a183d7d7c34dcfb0ded8190ac6"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/launching.md",
+        "sha256": "2c92a95cb1cb279ef2e5cf64e0cb0cfab22b87242597c9f607edf55a75b81b9f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/models.md",
+        "sha256": "5384910aa89299a8b187801e2ec029286e2fcf41f1a557d6ae4e52ecfa60f37a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/compatible-parameters.md",
+        "sha256": "e1852729a79e009dda5b785c78732b7b7f200015f692784586be116f1c8238fd"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/parallelism.md",
+        "sha256": "fadbf2908385088295a0a10c2021f2b4440997600fb90a9db4238232ad16d917"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-022/metadata.json",
+        "sha256": "c11dfc45fb1179a208bf4fd546cecac33edcdd819a23be3e3f10720540bf277b"
+      }
+    ]
+  },
+  {
+    "id": "TECH-040",
+    "number": 16,
+    "title": "TensorRT-LLM：项目与许可",
+    "url": "https://github.com/NVIDIA/TensorRT-LLM",
+    "revision": "fffdfba7279a467e9df8c191aac332ccab8d2982",
+    "retrieved_at": "2026-09-16T17:06:54.650235+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-040/revision.json",
+        "sha256": "f357ccd4e7fe39b90e06b66dba03fb53eb0b37a6d6453abfc71421baa9404a6b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-040/original.md",
+        "sha256": "800f0eb2d2cfd564c5aee0cc02ec55c1546900d7b59b8bac5e9794d298ffae22"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-040/LICENSE",
+        "sha256": "a56e691155bb532ea212f701d3ecacb2db549fa64757f9bad3e06bc9177f46ea"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-040/release.json",
+        "sha256": "23c82954fcd260a753a7ec0ef074ddb229107ac19fe83860a76c1bd7616e565a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-040/metadata.json",
+        "sha256": "6ae18c7ff7d500ac592edec0d576ceda7e972b74c558c735afff69713efe3b84"
+      }
+    ]
+  },
+  {
+    "id": "TECH-026",
+    "number": 17,
+    "title": "KTransformers：异构推理与GLM Flash教程",
+    "url": "https://github.com/kvcache-ai/ktransformers",
+    "revision": "0b954fe4ca2f9e79519da66156e6a3f92b686232",
+    "retrieved_at": "2026-09-16T17:06:50.107511+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-026/revision.json",
+        "sha256": "9b92dd060b50e0080400b76d9bdebda97ea541016349813b7778d984e04d1bc7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-026/original.md",
+        "sha256": "61831dccf4c35e9ea20f4a8b9637ca3fe4ad9e78cb84fa7b0616586ab137ad18"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-026/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-026/release.json",
+        "sha256": "ba0994372ea1d291f474ac6e18b6c51a62c166e00498d63068cb94cc7465668b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-026/tree.json",
+        "sha256": "0a90a536b5b7643cccbd05a96d2b6eb0bf3058f617738e78463870ab85e2cb4d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-026/kt-kernel.md",
+        "sha256": "94c78a1a841b5b6e272c8d92678938fc4559deaeecec9da9bc4928c9a80c07d6"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-026/glm53-flash.md",
+        "sha256": "a2b9849be44020ea7212f406d71e1432c3a442f15d92daae57ac3159f7926a25"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-026/metadata.json",
+        "sha256": "fb57f4b08ff9231c94d7739e859153cdad22ce5998fdafb7c4ff703795a2d24b"
+      }
+    ]
+  },
+  {
+    "id": "TECH-009",
+    "number": 18,
+    "title": "vLLM v0.29.0：固定正式版架构注册表",
+    "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
+    "revision": null,
+    "retrieved_at": "2026-09-16T08:36:49.322235+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-009/source.json",
+        "sha256": "7e8b0642a3ca36deccc4fc123374575d07326027c8b6894ba8df83e1c5a6a185"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-009/original.md",
+        "sha256": "44617ce81d64df5640d263f8a0d867c91674b7dfe8fdc483deeb257e50d9923d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-009/registry.py",
+        "sha256": "fef8293fe19cef01768a4c5bd8adc05e120202f1c1597eb264d090672894fbd7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-009/supported-models.md",
+        "sha256": "d982e37f455ad3771682904b12991d5728eec737264a9ba1596285c56cc0a0ee"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-009/metadata.json",
+        "sha256": "20ccaa835d6a8b1cd1cbf3a8247f0c811de14a033b268527da75d7070a430425"
+      }
+    ]
+  },
+  {
+    "id": "TECH-010",
+    "number": 19,
+    "title": "Qwen3.8-27B：vLLM官方部署配置与上游测试构建",
+    "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+    "revision": null,
+    "retrieved_at": "2026-09-16T08:36:48.734396+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-010/original.md",
+        "sha256": "ee5e88eade060552930912d9eedcc3afdb7c1aabe5e356130789734e211d7037"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-010/revision.json",
+        "sha256": "15ff87f66d6a9291cf2a55225d2ad9a9421e2281dffb9bfd993c487e2a5d3f28"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-010/metadata.json",
+        "sha256": "cfcee99a2d2c3f3463fd95bdf019b8deb4c5b6a415631150d73767d12b912520"
+      }
+    ]
+  },
+  {
+    "id": "TECH-011",
+    "number": 20,
+    "title": "DeepSeek-V4.1-Flash：vLLM初始支持合并记录",
+    "url": "https://github.com/vllm-project/vllm/issues/56400",
+    "revision": null,
+    "retrieved_at": "2026-09-16T08:36:48.813647+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-011/source.json",
+        "sha256": "297df391d74e4c1b5a45c4987cdd1b4bd34e0a2efaefc0fc8398338ad80a84f9"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-011/original.md",
+        "sha256": "d7c6c9de711ac86af65530f7a4d12f75c2a0323e96ae10f95b5d324f07a18bdb"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-011/integration-pr.json",
+        "sha256": "b7583de6a0332b46a5e703ccac7b73a589631cf81660fbb2ce2a5967fd8fca93"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-011/metadata.json",
+        "sha256": "8042b74c6714be3576ae48061c1cad08a0367438b435a46711316a484b99d4f0"
+      }
+    ]
+  },
+  {
+    "id": "TECH-054",
+    "number": 21,
+    "title": "vLLM v0.29.0：发布记录与服务benchmark参数",
+    "url": "https://docs.vllm.ai/en/v0.29.0/cli/bench/serve/",
+    "revision": null,
+    "retrieved_at": "2026-09-17T17:31:55.367746+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-054/source.html",
+        "sha256": "645f837987ed72fac8bfac3ce152f2a86310ff766d740ab86b166ceb53adc8cc"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-054/original.md",
+        "sha256": "6372a24243336eed21ce78ba58abb407fe55ea95edf938b2d03a28a3b712c10b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-054/release.json",
+        "sha256": "9ebf169b8c867aa95c2ae994f0bc90459a5c030424401bc847bd03c064a43d79"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-054/metadata.json",
+        "sha256": "3953b083532552642f6f1523301df99a50decbed33e0a66388a4fce89d3698b8"
+      }
+    ]
+  },
+  {
+    "id": "TECH-023",
+    "number": 22,
+    "title": "MLX-LM：项目与服务实现",
+    "url": "https://github.com/ml-explore/mlx-lm",
+    "revision": "872ae88d1fac77350db23c8c04fe8dd372a9e3e8",
+    "retrieved_at": "2026-09-16T17:06:47.956310+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-023/revision.json",
+        "sha256": "6ea46355995f07fc8de4007a5e5d3e35195434acd5c8091130c6ec12e5dbc0e7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-023/original.md",
+        "sha256": "625b4478800ad2fd5d393792f7ca8d4006be9c95b725cc239a9e67b7aa891875"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-023/LICENSE",
+        "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-023/release.json",
+        "sha256": "13d514ff9a4bfa300c68289cddf2863efb25099cba6b5a6d1ad148b8d2b353f4"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-023/server.py",
+        "sha256": "57392576de114af80ede723976b9dd156dc234f856b9943b8b44b8b78bc27f79"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-023/package-release.json",
+        "sha256": "914610c4167442d24a085857067b22f274663c756efed19372de7b80e62800fb"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-023/metadata.json",
+        "sha256": "dcf051b7bc1174343f9455483c74ea0249d59f13906d6bebe6c3956cfb4be76a"
+      }
+    ]
+  },
+  {
+    "id": "TECH-042",
+    "number": 23,
+    "title": "Apple WWDC26：在Mac上运行本地Agent",
+    "url": "https://developer.apple.com/videos/play/wwdc2026/232/",
+    "revision": null,
+    "retrieved_at": "2026-09-16T17:11:03.873316+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-042/source.html",
+        "sha256": "f7331464c140e002694e93e66a745b55882e06132f1d84f1e5237a414a73730d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-042/original.md",
+        "sha256": "2943206cca437270c8039830b93ce8187824156b993573142055ca3d5f4c81f0"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-042/metadata.json",
+        "sha256": "34ac2a50f14a7919482b407cb0cf59c176583a1ee9355cf39a6c5ddef51ba00e"
+      }
+    ]
+  },
+  {
+    "id": "TECH-024",
+    "number": 24,
+    "title": "MLX-VLM：多模态与服务文档",
+    "url": "https://github.com/Blaizzy/mlx-vlm",
+    "revision": "c72f637e03780616004bcd4168e1db03ce7b5c41",
+    "retrieved_at": "2026-09-16T17:06:48.055775+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-024/revision.json",
+        "sha256": "3dbe87234f31d6f60489387227b17995d7c11da38fa52656c3500ca65e608269"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-024/original.md",
+        "sha256": "c1da5561982ad88e5f3adea0a41a16ff69d9c634b1546b5993f420a86505d346"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-024/LICENSE",
+        "sha256": "f74c448746be3376e27dee43e2be9ec9d55f4820cd7466c603a6c7d1fd2d25b8"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-024/release.json",
+        "sha256": "679803884c18ea8fa1d0d05641e6294cbcc7dfe02fbdec8a8362c4cb081cf0fb"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-024/gemma4.md",
+        "sha256": "5e3a36958f86002f7a203cbb4c12500f6c9fee35be00dfa51262298e220befac"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-024/metadata.json",
+        "sha256": "629def43d332b29f679f440ce91dc830a08cc60617631e1cf930f6bdae983921"
+      }
+    ]
+  },
+  {
+    "id": "TECH-025",
+    "number": 25,
+    "title": "llama.cpp：项目与HTTP服务文档",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "revision": "c6824a9e42ceeda5d58089fa274ddd816e59e68e",
+    "retrieved_at": "2026-09-16T17:06:48.839560+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-025/revision.json",
+        "sha256": "2cc7b51f508c4aeb1d0ff414356f8e534839b22f8da403ba403d35c8e809bd11"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-025/original.md",
+        "sha256": "e58520857253729851cc02313883c9d2a8b2ae86abe212aaf1bcbd7db8bfefb4"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-025/LICENSE",
+        "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-025/release.json",
+        "sha256": "9dbe4af63cf392d17e9afb826fdbb1c8677774980469a1eb1a536c3ad4a9e20b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-025/server.md",
+        "sha256": "57e27013809e4976e71a76fe83a5930779634401d6dbdf2d941fd5432889eb9e"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-025/metadata.json",
+        "sha256": "13651a8fb9a8d8f44bf49cf7cab84c4e99e3dc1d6784a339fd4ae9d74837af74"
+      }
+    ]
+  },
+  {
+    "id": "TECH-027",
+    "number": 26,
+    "title": "ik_llama.cpp：量化与工具调用文档",
+    "url": "https://github.com/ikawrakow/ik_llama.cpp",
+    "revision": "e64c0ea59f7505b0c8124c9b449332a3a8058c76",
+    "retrieved_at": "2026-09-16T17:06:50.095645+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-027/revision.json",
+        "sha256": "509a830c715c88da52af24410ac4f094cc4d35579f6c9d44a5879c4d5e9e8ac1"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-027/original.md",
+        "sha256": "913b33d3a94789ed5fb308fd2294a87f46cb974680e166f75202a0d466e4f466"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-027/LICENSE",
+        "sha256": "153f7caf00796585022b1984edc8c80e5d885c58a68a832ef7bc198696e56380"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-027/tree.json",
+        "sha256": "2e5e514a08c03c57fea7aa542905dd4889eff537c94d6c2e6e1445b13502bf22"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-027/function-calling.md",
+        "sha256": "9d05fc66bff4304b038a00e70d1e39f004c36e7f1e0626882b20b69d7715d07a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-027/parameters.md",
+        "sha256": "b4c51e92e99c455052566a9155ff1db56c963fa5e03d2404b954c30f2c9411c5"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-027/metadata.json",
+        "sha256": "93c6da709d83de55a4c2d3595236f1c3f712141e157a17febe0ba8a1a02fe750"
+      }
+    ]
+  },
+  {
+    "id": "TECH-055",
+    "number": 27,
+    "title": "SGLang：吞吐与内存调优指南",
+    "url": "https://docs.sglang.io/docs/advanced_features/hyperparameter_tuning.md",
+    "revision": null,
+    "retrieved_at": "2026-09-17T17:31:56.833000+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-055/original.md",
+        "sha256": "d49d903338993f552d312943a7b52f93b07aa8882121e8dfbbfa438424d6cbfc"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-055/release.json",
+        "sha256": "16fb7a83ba0385fd013100c67b3d1f89303db7e4a6f28effa8c5893769586c9f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-055/metadata.json",
+        "sha256": "2729c939a60180544e006f1cdf3812393673fa9ee51d72cc8c6edfcd952e2be1"
+      }
+    ]
+  },
+  {
+    "id": "TECH-043",
+    "number": 28,
+    "title": "Open WebUI：产品功能与许可",
+    "url": "https://github.com/open-webui/open-webui",
+    "revision": "0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+    "retrieved_at": "2026-09-17T17:28:17.426818+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-043/revision.json",
+        "sha256": "a559037e7455628a1f66c9b1309b5a4e95016e8a5c962cdbea8d4748c0ec4c45"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-043/original.md",
+        "sha256": "a486231a68444cee15339ea050fe07e5e1b9b0812abcadecab5749304a81a244"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-043/LICENSE",
+        "sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-043/release.json",
+        "sha256": "9c271ddc7f2fd79f5d5dc3186e034f728af1fea80d8bbba80c13a25a170ff9b2"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-043/features.html",
+        "sha256": "4fbc8274edcc4c54fd754dc35866140b95b573817d401abcc566289984190478"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-043/features.md",
+        "sha256": "c27bab117e5577c237171eaa8ad578f0ee21eb5b5ea2fd9874da456325920283"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-043/metadata.json",
+        "sha256": "e6a6fd5fabb968739618b8568d4deaa414013f32113b54236b52931c1845e47f"
+      }
+    ]
+  },
+  {
+    "id": "TECH-044",
+    "number": 29,
+    "title": "LibreChat：Agents与代码执行服务",
+    "url": "https://github.com/danny-avila/LibreChat",
+    "revision": "12d78909d3f5247a8d40a47f0ef5c3ac771d9c5a",
+    "retrieved_at": "2026-09-17T17:28:17.449406+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-044/revision.json",
+        "sha256": "59cfbe8a776c90e3bcbc72c2334e2ac67285292102be5c49f3a4383d0c22c3b1"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-044/original.md",
+        "sha256": "3f109e0c748e15c27e2b4197af1f0e06c42563d033beace1fb5a2f1c87ba66cb"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-044/LICENSE",
+        "sha256": "1ce5c9d51e5ab764b44142cd44d1e687f5bfe32f807c7221c14d061007309b97"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-044/agents.html",
+        "sha256": "871b8ece31d658dcd439ad7156e39890221c3a9251754cec85f686cf7189ed48"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-044/agents.md",
+        "sha256": "de5b938d265f160a733be5c5d7e67fa56dcbab64d6fa2f5bad8faaa257aecc07"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-044/code-interpreter.html",
+        "sha256": "4f4d94f508bb82fd9ad268a87a943e925cc47a1d9610b38419faad04e0ea035b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-044/code-interpreter.md",
+        "sha256": "e7ea8ad4a552ae8379c8e27e4c4ba64ad649293a20eaacbc6594a2e087ae95e8"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-044/endpoints.html",
+        "sha256": "191a7309bcb0a9bd2d63fded758868ef93bc4b3b6251f4a4c5d266fa136bb356"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-044/endpoints.md",
+        "sha256": "e01fbfefb5c1d72f8610d3ec6267e5ceba98c4e995f3b949a1ea07f3d617c021"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-044/metadata.json",
+        "sha256": "e4b31afa5403a18cf521883aceda1e5a26b77b2944763c70bf363fbbc623ab4f"
+      }
+    ]
+  },
+  {
+    "id": "TECH-045",
+    "number": 30,
+    "title": "Onyx：研究平台与产品版本",
+    "url": "https://github.com/onyx-dot-app/onyx",
+    "revision": "d7cc16686a35f936f50eaec7afc910d699c2abfd",
+    "retrieved_at": "2026-09-17T17:28:17.604310+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-045/revision.json",
+        "sha256": "73ca63dcffe1c452e570c0fb50c674c5a225a681815ab06c0daa6aadc60c7bdc"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-045/original.md",
+        "sha256": "e39914852464f0e02b72f813876a62bb3ecca902b55a08201bc044dd17e9f375"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-045/LICENSE",
+        "sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-045/release.json",
+        "sha256": "2b69e33b4c19eea037af5b25365de80360ecdab441bbe1686ae85ad9f1ea3ee0"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-045/welcome.html",
+        "sha256": "36a0a009e007f4eaf7e43d86a854b5b0521d9f04431c7580f96926fac709e824"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-045/welcome.md",
+        "sha256": "26a31795e6abc5f187f373a28c450f952b12118ab43cd18d8eecf4f7fb0ec864"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-045/pricing-features.html",
+        "sha256": "d449abe1c7fa6309289b9a2a66b11aa9b6526e7b9b41f6112e42e2aadba31f7c"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-045/pricing-features.md",
+        "sha256": "ff35becd161e7b4df81a0f009b2fea6dfc573d2ba303e33fb05685eb3c8d11a5"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-045/metadata.json",
+        "sha256": "552ae0cb0216d010c890faa50dd5fcf38664363c4b2ca38412a7137a61418e34"
+      }
+    ]
+  },
+  {
+    "id": "TECH-030",
+    "number": 31,
+    "title": "Dify：产品、部署与许可",
+    "url": "https://github.com/langgenius/dify",
+    "revision": "9c6c48b50ba99512801873350702326a44dc62de",
+    "retrieved_at": "2026-09-16T17:06:50.745220+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-030/revision.json",
+        "sha256": "4701eca4b1de56402452162d706ca0c01a0068fc720e3534a36eb979429e9120"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-030/original.md",
+        "sha256": "51647e1180794278e006c7e1925eec056d5b68a036893143849ef83ad695e7e2"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-030/LICENSE",
+        "sha256": "232cf91474932d5110ed304e53b6b742a58463857c571fae803fdf2ac36d7bb3"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-030/release.json",
+        "sha256": "28069c63b0c47ae0cc39eed16eb1c9343005e624707d0282f6dc08bae3150ad2"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-030/deployment.md",
+        "sha256": "f01b77c4934d49d3c13a4ba691a2472a73a2ba34fd9df8ed6918c0b93c2b4856"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-030/providers.md",
+        "sha256": "521fcfde4df351e0bb43319fe6a70c201dc1c4f36b0de9afc5e769869951884b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-030/metadata.json",
+        "sha256": "36f127a807d86b8dbd9dc851c9146d17f10c24a2e9fa37903708911be12aa38a"
+      }
+    ]
+  },
+  {
+    "id": "TECH-047",
+    "number": 32,
+    "title": "Goose：通用任务助手、Recipes与模型连接",
+    "url": "https://github.com/aaif-goose/goose",
+    "revision": "d213a3b13545b4e85524a572ac695b2181728e3b",
+    "retrieved_at": "2026-09-17T17:28:17.817092+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-047/revision.json",
+        "sha256": "8d8a8641f095d07581163b7b35f1f2ce35e7f7807670296269190991f06d2e02"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-047/original.md",
+        "sha256": "0f1df85a0c457caf1f3c4e1c0370f2da3887fffa588d207862cfc298c1d39755"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-047/LICENSE",
+        "sha256": "44459b86c2e96fdbfd8a6b5c33d30d4b04b5293fcb2ec96fe4dcc4e0f90b8962"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-047/release.json",
+        "sha256": "365896d6515e434634c487e3b5e197b9352c911a2955b4f980557b7df4862184"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-047/recipes.html",
+        "sha256": "8c1f26935a3372a6d8f3cdd756ed3f7547682be3e825314c2c9f635ed781e516"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-047/recipes.md",
+        "sha256": "8d27d42106e17717d40a143d8e4042df1fdb0b5c4d5de24f9f0c77a78b58bf19"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-047/providers.html",
+        "sha256": "daa2da17ee4a4b2e5812659c224eb2e9b86d4ba38184026a49b3be83fcdb0407"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-047/providers.md",
+        "sha256": "84f47be48857e94f4dd71025cfa8179cda19650807ce7667cd201c011fc470ec"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-047/metadata.json",
+        "sha256": "951297ef290f6636175e35c635b5688034a3bdaf5175f7ec25eb3b3991245d97"
+      }
+    ]
+  },
+  {
+    "id": "TECH-049",
+    "number": 33,
+    "title": "Microsoft Agent Framework：项目与BUILD 2026更新",
+    "url": "https://github.com/microsoft/agent-framework",
+    "revision": "459fe6eca83206fde3ece88c1023fa6bc666f63e",
+    "retrieved_at": "2026-09-17T17:28:19.313744+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-049/revision.json",
+        "sha256": "f6217e6374f9cdc96a0d482f1bc95828fd198adeffd6b6f9d5e15a7daa8b19c7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-049/original.md",
+        "sha256": "4a628aa224c014ff326587cc543a4991e483e11723a226f6fcdb22664224c58a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-049/LICENSE",
+        "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-049/release.json",
+        "sha256": "e22cd998beba9eb59c2ac2479b905076c17dfba7e9bc19e8d3c21ca0cb7fae3a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-049/ollama.html",
+        "sha256": "2c173599d9ffa98895eb1ddc8643c5ecf2679c77344f73a19dd40c038e0a9fa1"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-049/ollama.md",
+        "sha256": "1dcf99029cb9865e738c1606b757b858cb83d4dba45e80e24a866df018d9daec"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-049/build-update.html",
+        "sha256": "2813d09b941b9d73ac59a680015a2ff3de99dd9562ed5aa8da7f013e4eba1f9d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-049/build-update.md",
+        "sha256": "b0b60e659320dc97ae0cd4fa376adba7e336d725ef5c6c7d135b37c22e35ce5e"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-049/metadata.json",
+        "sha256": "5068e0c7d1a01d0502b456166b602489af82b9e08e94aa4cf6b5c4b128626897"
+      }
+    ]
+  },
+  {
+    "id": "TECH-053",
+    "number": 34,
+    "title": "AnythingLLM：个人与团队资料应用",
+    "url": "https://github.com/Mintplex-Labs/anything-llm",
+    "revision": "90108f98f29546dbe71df27a4da7aef302d48f08",
+    "retrieved_at": "2026-09-17T17:28:21.246566+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-053/revision.json",
+        "sha256": "a1a2ab1039db7f8c2f549e93fd2f0e5c7274bb8cc176f677ace1979ef562f02f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-053/original.md",
+        "sha256": "879184601ca70d5e31581991052f0e313a6429a6ac5c450742f634233c8e121c"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-053/LICENSE",
+        "sha256": "782d2dc18a1ed9028ca992520f42b2e0b6187807da0d14455b8ae608e2e5692e"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-053/release.json",
+        "sha256": "420d0aa894b2de61bd0ad4d7b6eca44fec2f9be7569daab689eda860ccec81d9"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-053/metadata.json",
+        "sha256": "ff566d7c86c6f3c1630086bc90370136463e837c5c5220746fde990d2b11dbd6"
+      }
+    ]
+  },
+  {
+    "id": "TECH-046",
+    "number": 35,
+    "title": "RAGFlow：文档与Agent能力",
+    "url": "https://github.com/infiniflow/ragflow",
+    "revision": "15b6668dd8f7a8921cecec9fae4e4d46f7947bdd",
+    "retrieved_at": "2026-09-17T17:28:18.284408+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-046/revision.json",
+        "sha256": "2cc5817cfa086ae515a2428898443d34022eb730bb1eb0a5045373a836147328"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-046/original.md",
+        "sha256": "e321e3b65b92b34121e96d147fe9145e1e428ec1453e3cbbf4426fab09d701ad"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-046/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-046/release.json",
+        "sha256": "e1af93110225eecaa4cb08b908e32eadd4274bced07353fa768b7780dd5a64b7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-046/sandbox.html",
+        "sha256": "d17c7ebe24a5271f7151d100225b15f17f19fbe27334c2fc52c0f59b90b7e9d1"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-046/sandbox.md",
+        "sha256": "84bde30ee2691d1e6db292c8c95cb25cb875f6f36da8684a2e47b72605e2202f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-046/metadata.json",
+        "sha256": "7501c9f136f0d32289f132a0d13362c881bc86ac8c207a6ea65a4a63323772fb"
+      }
+    ]
+  },
+  {
+    "id": "TECH-034",
+    "number": 36,
+    "title": "n8n：自动化平台与许可",
+    "url": "https://github.com/n8n-io/n8n",
+    "revision": "f960330ecb34b208ce8669c98ecf145fe7c589a8",
+    "retrieved_at": "2026-09-16T17:06:52.527483+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-034/revision.json",
+        "sha256": "bc855cfb07b298e64d9ed22d7ba0024af5149a45804ee1d16460239254566610"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-034/original.md",
+        "sha256": "75c64f04b8b1e7d435496f6ebd2dbf3ea5ff7d3ff3d944d7fcf98cf1a7df2242"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-034/LICENSE",
+        "sha256": "d2f621f59aa4c10eab79b6333e59d9d3d5b53307dcfd16dbd75e40e679e84965"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-034/release.json",
+        "sha256": "a9e9d5058b1afdea53c8972d8841afe3be73bfb138230d9db4fd32b09cbcc67a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-034/metadata.json",
+        "sha256": "fb5b132376e99089dae11063b872cc18b3663db631a6f036be62224d5ae8bcb8"
+      }
+    ]
+  },
+  {
+    "id": "TECH-033",
+    "number": 37,
+    "title": "Flowise：产品及分层许可",
+    "url": "https://github.com/FlowiseAI/Flowise",
+    "revision": "9291856d1ea4a4ceea9f8fef8ce14f4f6c81e8eb",
+    "retrieved_at": "2026-09-16T17:06:52.401228+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-033/revision.json",
+        "sha256": "29e378a930f071da613fc0d09a71b313a49eff55051a4067068eef4cb996dae9"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-033/original.md",
+        "sha256": "21b4384ec2e295295dee10992fd9ee7ef4b0a0c9cb77a493bca39174a1c09a51"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-033/LICENSE",
+        "sha256": "eb8cc244c81eb4a556f9ac22edc3033ac4fa12f7ef7a8899bb5ddc4578c2dd73"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-033/release.json",
+        "sha256": "42c240e36c4220e0f2b3a95ca3789a2a71614e6e2e6e6ed4f63033f4018ab3bb"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-033/metadata.json",
+        "sha256": "aafa66db73df2759bfc8b7a06a2e3c150abbe7265a8ed139132c22109d9e576c"
+      }
+    ]
+  },
+  {
+    "id": "TECH-048",
+    "number": 38,
+    "title": "OpenClaw：个人助手、模型与信任边界",
+    "url": "https://github.com/openclaw/openclaw",
+    "revision": "554b331eb326f8112401c6c9951d694b30ad0e95",
+    "retrieved_at": "2026-09-17T17:28:19.890434+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-048/revision.json",
+        "sha256": "b5c47c0a7d84c8378bfb620ceb867505812251b3c6c3b0e2268481e2020f604f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-048/original.md",
+        "sha256": "c594e29266562db197f8dff4f7cdebc56df08ef4ba8e46bb3130f75457dbe39b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-048/LICENSE",
+        "sha256": "73571b25326281d369087f469842c02444fe39faaecebda4d82ed21ff3a1c29d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-048/release.json",
+        "sha256": "a62891cb425075de405a37f0dd807fb05e418a91912d69ed619e03ac1b6b9e7b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-048/local-models.md",
+        "sha256": "d0ecf083ce1f176a7fc7ad7583fa208d72ace5a1093e5802594764471766503f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-048/product-overview.md",
+        "sha256": "ffcbdeb31622c020801e4aa984304707e183ca77a1942b1f26e694c6e55067b9"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-048/trust-model.md",
+        "sha256": "cb1c56df739ce57296ddbd9830a589d35ccb3b8ddbc474be9d2378e7822ce435"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-048/metadata.json",
+        "sha256": "983f9b2d76ffd3738b278097b704b7b133c126f1114a28e655a687083e0adb7d"
+      }
+    ]
+  },
+  {
+    "id": "TECH-051",
+    "number": 39,
+    "title": "Agno：SDK、AgentOS与管理产品",
+    "url": "https://github.com/agno-agi/agno",
+    "revision": "a71c4d0c607260d2483d73644a60dc49d036148c",
+    "retrieved_at": "2026-09-17T17:28:19.627907+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-051/revision.json",
+        "sha256": "7b7fb76f38f7f78ee18884ad8c91058f4e760f36aa54ab7cb1e352826eb798f0"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-051/original.md",
+        "sha256": "ee04510fcc6e82fa87258c3bba766da73bbffd1f8bd8a2320babee8bc291ff30"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-051/LICENSE",
+        "sha256": "7504bf0fe32a486487ec309d5ef30597ca87d2508450be380f6ef4772c3371ca"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-051/release.json",
+        "sha256": "e77703efcf764d75ce4fea1898c2e0337098c6615545e1f07acc175ed2fd6554"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-051/overview.html",
+        "sha256": "76e3db4ca0282cb97edddbc62a437e548ad2b3b2a16cb51a9ccbcf49f39ecf16"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-051/overview.md",
+        "sha256": "6dc473e9beef6dcf4527a1f3bffa224e0c9e12d56111d1967002769c69c7cf90"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-051/pricing.html",
+        "sha256": "a2006bdd374782826654e9fe15947226fc830a7375d834f8601ee68468ea0d03"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-051/pricing.md",
+        "sha256": "b13fa9896c8b780703880534569e76a982d5357a0bd8784252e353a835739ca5"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-051/metadata.json",
+        "sha256": "7a5c8331739e0692e84b04051b2655c97d05cd7ab87057a6636f5c61573d9283"
+      }
+    ]
+  },
+  {
+    "id": "TECH-052",
+    "number": 40,
+    "title": "CrewAI：Crews、Flows与模型连接",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "revision": "597b99fb576ba1dd0f3ad476663481f6aae2ef88",
+    "retrieved_at": "2026-09-17T17:28:20.090230+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-052/revision.json",
+        "sha256": "479d6221e67dec3893ed147dedcc3f7a4123c94b3a33ebe1b2fcc8b99155128a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-052/original.md",
+        "sha256": "b0f39843f93676b12883d5821a34555e2146e62bd2c42dc12733fc41222de013"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-052/LICENSE",
+        "sha256": "28868731966f4aa37f02879839aabc797137e27ddde4e274ef9cf965f9a71774"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-052/release.json",
+        "sha256": "6756062f9b7ed99dd0172cf13072cdf43fd86119c32303360672afe3c1dd8803"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-052/overview.md",
+        "sha256": "3373ba52d5787a5a931c9b9639de78eb08b6c1cd21772f5e5de39db36b24cac4"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-052/llms.md",
+        "sha256": "43823053a3565c35dd85344fd02374b1ab55a8e4d5b95e376aef4d5b01251a84"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-052/metadata.json",
+        "sha256": "473f9582b9cc71cb2156b0e6aef1181f0de83d894851976143d26b1f89fafe1a"
+      }
+    ]
+  },
+  {
+    "id": "TECH-032",
+    "number": 41,
+    "title": "Haystack：检索与Agent流程",
+    "url": "https://github.com/deepset-ai/haystack",
+    "revision": "0defdcff64950ca54f4dac0d21fe4eb30ed745d7",
+    "retrieved_at": "2026-09-16T17:06:52.087466+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-032/revision.json",
+        "sha256": "f19ba7c1dc4ce1cf6d5ac80eba2e5e8788cc3455487816f6268e25ac9efb48b2"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-032/original.md",
+        "sha256": "5397ea185aada9cb992cbc544da04466b4d06ad39e2a2e7078016f2b931362d6"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-032/LICENSE",
+        "sha256": "3f0a3af7e9b0f3b6358aaa3c7501ab522a67dc5483b870e9a8b3db41ea42e249"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-032/release.json",
+        "sha256": "fd70a2df831469cdc93dde8a22fda73bf6784d93d816dd0cfdc4983505ee7798"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-032/metadata.json",
+        "sha256": "3a25dc118955923a80bd7ffbbcc9e8271fdb550450f5410a5fe723888b59ce34"
+      }
+    ]
+  },
+  {
+    "id": "TECH-031",
+    "number": 42,
+    "title": "LlamaIndex：项目与文档处理方向",
+    "url": "https://github.com/run-llama/llama_index",
+    "revision": "fd4a517ad6490f0c8464a13fdf133760b696434a",
+    "retrieved_at": "2026-09-16T17:06:50.624012+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-031/revision.json",
+        "sha256": "d72ebe5e7938fdfb6ba9a2376647fbc970bbcb36c76274841c03696b8c7709eb"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-031/original.md",
+        "sha256": "c2738208d11688fc21e087a72b0ac9bafed02a2ac18e3794e01982972a291c29"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-031/LICENSE",
+        "sha256": "24f40b5190fdacabc24ddbb5f76364d15e4f030925220ea300d8a2dd4993c8cb"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-031/release.json",
+        "sha256": "25a4c7aa7c89ef5e1a5e61b2dac04c6292b609cb52d5dd4db3d91c6d362b3507"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-031/metadata.json",
+        "sha256": "dcde16717d003ddbeed4fe31b4f3da69a6efa809a9fcf5b7a51ca3b87a8b8ff3"
+      }
+    ]
+  },
+  {
+    "id": "TECH-028",
+    "number": 43,
+    "title": "LangChain：框架概览",
+    "url": "https://github.com/langchain-ai/langchain",
+    "revision": "5c1f28271295bb13034f4cf8964f74c117357d40",
+    "retrieved_at": "2026-09-16T17:06:50.172651+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-028/revision.json",
+        "sha256": "3fb0d0cf7d6c5849f1d7bcd547afae9d991e4a93dffff318356b193403053b75"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-028/original.md",
+        "sha256": "7e8f7983153194ce3e1d277e03c14623a2f7e3c6238ef71f066403a9f3398ad3"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-028/LICENSE",
+        "sha256": "4ec67e4ca6e6721dba849b2ca82261597c86a61ee214bbf21416006b7b2d0478"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-028/release.json",
+        "sha256": "efe38034d07fc105d8accba78142eede47fb3c990e878a223388a04272ef86a1"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-028/overview.md",
+        "sha256": "145958e74fa57c76b44396c2b9d6c79332220d0b0ea9925789baa17820b4fa38"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-028/package-release.json",
+        "sha256": "30e234af65b88325d894e03b1ead19a1007303077e9aeecbc8d312a8e03de1f9"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-028/metadata.json",
+        "sha256": "722eb3e0f4df091cb20f19e92a34f060f22a836eb2f752a8a99d68337f58ab11"
+      }
+    ]
+  },
+  {
+    "id": "TECH-041",
+    "number": 44,
+    "title": "Deep Agents：Agent能力与本地模型连接",
+    "url": "https://github.com/langchain-ai/deepagents",
+    "revision": "26d2eae2ec07584e87d58b9cc8c9d08a3f98b0ea",
+    "retrieved_at": "2026-09-16T17:11:03.095549+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-041/revision.json",
+        "sha256": "c68b0d1fc673ba30fee28a9f14b76f52d285040a571b5308c7e990d46f3219fc"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-041/original.md",
+        "sha256": "569c79f865abd0d677a71e83ba5c3b971318146a4421e3851a0e25ee2d3b1146"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-041/LICENSE",
+        "sha256": "4ec67e4ca6e6721dba849b2ca82261597c86a61ee214bbf21416006b7b2d0478"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-041/release.json",
+        "sha256": "d0c51b58850eeabb442aa8733277f2e5a7190234290e43a9eae94a5db12a79ea"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-041/metadata.json",
+        "sha256": "d9874e74358c34f36bdddc589fd198d5985aa25ee5353101e99c6f3ae2e2fe30"
+      }
+    ]
+  },
+  {
+    "id": "TECH-050",
+    "number": 45,
+    "title": "AutoGen：维护状态说明",
+    "url": "https://github.com/microsoft/autogen",
+    "revision": "027ecf0a379bcc1d09956d46d12d44a3ad9cee14",
+    "retrieved_at": "2026-09-17T17:28:19.606950+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-050/revision.json",
+        "sha256": "73cf321fb007796e55f99d5e68c870361a4c75b012fc2e367af8407d239facd5"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-050/original.md",
+        "sha256": "5d300aa3304aeecf1a48f68ac76a1af255b8645d666b8aa154790cb30f1dbb94"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-050/LICENSE",
+        "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-050/release.json",
+        "sha256": "72cb5e6222c141c35e98ee0b343e493fb65b4333ca83feb23eb8cab0e4b61c7d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-050/metadata.json",
+        "sha256": "be7206c3178ef40aa107037046ba1e42c1504804a14fdb7f23b0ef9a3a9e0bf9"
+      }
+    ]
+  },
+  {
+    "id": "TECH-035",
+    "number": 46,
+    "title": "OpenCode：模型连接与权限",
+    "url": "https://github.com/anomalyco/opencode",
+    "revision": "2e018f70f2d13080de3dd5fda8720acf77ebd296",
+    "retrieved_at": "2026-09-16T17:06:52.026906+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-035/revision.json",
+        "sha256": "d7697aef061bbb5c80455647f505b22ca5af5a3608fe4e347fae4703079a31d2"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-035/original.md",
+        "sha256": "400890a3082e225c440561825270a911cd7df90a9f64f85166aed330201e50ba"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-035/LICENSE",
+        "sha256": "625f0f619133f89bbbb2abe37369613dfa1885eba1e50d02170deb62bb42cb6b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-035/release.json",
+        "sha256": "546fa382f30e2dd6efcedd08bd80e5e55f7e7ce8bae8f493537ee3b1d30805ab"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-035/tree.json",
+        "sha256": "e7e6f097af316b478da607574ffda469ae46dd702ca851824341798c66e5b3f6"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-035/providers.mdx",
+        "sha256": "d311c7efcafb23100c993047dc71d3dab90f7f2890c841010323eb95a7ac03c7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-035/permissions.mdx",
+        "sha256": "e929098f6f772186eeb4f0eb55e332c477d88e30cb1efc45d0839dfa333b5163"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-035/models.mdx",
+        "sha256": "2c8f7c813c7e80e55d71801d8f0b3ce23884f2c279dc4a1bac122e79198f2482"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-035/metadata.json",
+        "sha256": "7b872ccdd01b288c150c80892ed28f10d7694c41ff1115f9742ead9e020dc3ad"
+      }
+    ]
+  },
+  {
+    "id": "TECH-036",
+    "number": 47,
+    "title": "pi：Agent、模型与执行环境",
+    "url": "https://github.com/earendil-works/pi",
+    "revision": "509ee2bd0ba9fc3d31fb96fe8f5a6ef73b51833c",
+    "retrieved_at": "2026-09-16T17:06:52.483141+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-036/revision.json",
+        "sha256": "07b2f78578c52c6b837a57b43e6a0fa34da03ac25716f17872256927c765b9eb"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-036/original.md",
+        "sha256": "e0ca2fd607c5ce7c7646964ee1da7495ac1c4b68a2b1d05faad24f224df74c8b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-036/LICENSE",
+        "sha256": "0457f5bcec3b3b211605dfb5d1a49042fd638f3686a410fe099c24a25af13c48"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-036/release.json",
+        "sha256": "4d2e76f6ece62061988059ad1e6bd04aeb7d62ad5411bb257ab746dbd920c1cd"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-036/coding-agent.md",
+        "sha256": "b5daa09877da34d122818e03436b51755bc1b5044ae8ab810df63f02888f1ebe"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-036/models.md",
+        "sha256": "95da50b435cc876f4624508b59379ed90c32e5b9ac6c744a362ad072b4151785"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-036/containerization.md",
+        "sha256": "08c73601853f124668f311e03cf31e6413512fa08814acb11f5810d31f56c0c2"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-036/metadata.json",
+        "sha256": "404fc74e758633ef142fce6fd7da38226142a07ed3c6d5965feb8ec18bfb29aa"
+      }
+    ]
+  },
+  {
+    "id": "TECH-038",
+    "number": 48,
+    "title": "Codex CLI：项目许可与官方配置文档",
+    "url": "https://github.com/openai/codex",
+    "revision": "fd346b8dbaa24573a0244bc917811849d27c4cf4",
+    "retrieved_at": "2026-09-16T17:06:54.116845+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-038/revision.json",
+        "sha256": "f2eea447c68779717f15417883660a37dcce02e2705dc6dd9fa10dd309cc9a8e"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-038/original.md",
+        "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-038/LICENSE",
+        "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-038/release.json",
+        "sha256": "afcc30eee256cf504e2e76916adf5ee8b62f9514911da2e42e1876e59ae6f51d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-038/config-advanced.md",
+        "sha256": "08a695b708b3f9a178751bf4be7088e4ee598bf8aba4ef9c67711b117e9279f9"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-038/config-reference.md",
+        "sha256": "70b83fbc16382697a3bee781d3a00b7f2d18dacc75a807ffa2d545ccacf4dd3a"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-038/metadata.json",
+        "sha256": "7c49d72d9c6ee38c9412b3efa7de298b25c87577ccba1d4ad2ed26aee286c441"
+      }
+    ]
+  },
+  {
+    "id": "TECH-039",
+    "number": 49,
+    "title": "Claude Code：许可、网关与企业部署文档",
+    "url": "https://github.com/anthropics/claude-code",
+    "revision": "b782847db9a18667f00918ea341197f201b22bb4",
+    "retrieved_at": "2026-09-16T17:06:54.343181+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-039/revision.json",
+        "sha256": "d4704f84eae13b626948d3e2f58cf920c2dda1573ca44203d06a816a93c79066"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-039/original.md",
+        "sha256": "aa0d8b80ac083e1591be0789273f447058cc9187b4331634a5614155da27778d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-039/LICENSE",
+        "sha256": "728158fd1037143fad6907e8fa34804177e598b7326519503fe83cafdef849e6"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-039/release.json",
+        "sha256": "ad97061b26da24b4a4facfa04b27caf6ace63a3d24b4678646ec35d594ed499d"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-039/llm-gateway.md",
+        "sha256": "236a7b796b0255310652fa290588809971d92ef4f8b43f2a3da5c1b16544f85f"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-039/third-party.md",
+        "sha256": "55a0b5d1f8715031fa8f598901575cb3fec78b534ab5c1a3fe5b7d212b48497c"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-039/model-config.md",
+        "sha256": "98334d9d22a0f7fb9cd93b108e5ba48ddad767952f1922e1c3ab74a0e96ca505"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-039/metadata.json",
+        "sha256": "67dfa6b7e92ee9e557f46ee8f19dd6d4a752b7ef03e9d5cd61146a6964bf60e4"
+      }
+    ]
+  },
+  {
+    "id": "TECH-018",
+    "number": 50,
+    "title": "Muse Spark 1.2：多模态能力与开放权重计划",
+    "url": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
+    "revision": null,
+    "retrieved_at": "2026-09-16T09:13:09.964391+00:00",
+    "files": [
+      {
+        "path": "knowledge-base/sources/TECH-018/source.html",
+        "sha256": "5e1b1eb86249bf65daaef746602a7ed249861ac11c44ea59c7cd6ea396919158"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-018/original.md",
+        "sha256": "017b1b38f58c5c3bf817dff79495b8d7a7c77a003a8c92e09730ebac1861ff0b"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-018/model-inventory.json",
+        "sha256": "004ff8147af2b802c24c9331a85f95cd8e848dbdee54f29a24715d2eff225a56"
+      },
+      {
+        "path": "knowledge-base/sources/TECH-018/metadata.json",
+        "sha256": "13da6def0c5280da54f95c1444cf85572481aebd619785d3cd2a590663d39a5b"
+      }
+    ]
+  }
+]

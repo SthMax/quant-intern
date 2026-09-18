@@ -1,0 +1,56 @@
+\usepackage[left=22mm,right=22mm,top=23mm,bottom=23mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\setCJKmainfont{Songti.ttc}[Path=/System/Library/Fonts/Supplemental/,FontIndex=6,BoldFont=Songti.ttc,BoldFeatures={FontIndex=1},ItalicFont=Songti.ttc,ItalicFeatures={FontIndex=6}]
+\setCJKsansfont{STHeiti Medium.ttc}[Path=/System/Library/Fonts/,FontIndex=1]
+\setCJKmonofont{Songti.ttc}[Path=/System/Library/Fonts/Supplemental/,FontIndex=6]
+\setmainfont{texgyrepagella}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setsansfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setmonofont{lmmono10-regular.otf}[Scale=0.90]
+\usepackage{xcolor,graphicx,booktabs,tabularx,longtable,array,multirow}
+\usepackage{enumitem,caption,float,fancyhdr,lastpage,needspace}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows.meta,positioning,fit,calc,backgrounds}
+\pgfplotsset{compat=1.18}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref,xurl}
+\definecolor{navy}{HTML}{17334D}
+\definecolor{teal}{HTML}{008B83}
+\definecolor{gold}{HTML}{B67722}
+\definecolor{muted}{HTML}{586776}
+\definecolor{linegray}{HTML}{DBE3E8}
+\definecolor{pale}{HTML}{F1F6F8}
+\hypersetup{colorlinks=true,linkcolor=teal,urlcolor=teal,bookmarksnumbered=true,pdftitle={本地大模型技术与应用调研：开放模型、推理服务与业务助手},pdfauthor={MSIM China internship research},pdfsubject={Phase 2 Week 3 technical research; model, serving and business agent applications}}
+\urlstyle{same}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{muted}本地大模型技术与应用研究}
+\fancyhead[R]{\small\sffamily\color{muted}PHASE 2 · 2026.09.18}
+\fancyfoot[L]{\scriptsize\color{muted}本地大模型技术与应用调研}
+\fancyfoot[R]{\small\thepage\ / \pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{1.5em}
+\linespread{1.22}
+\clubpenalty=10000
+\widowpenalty=10000
+\ctexset{section={format=\Large\bfseries\color{navy},beforeskip=10pt,afterskip=10pt},subsection={format=\large\bfseries\color{navy},beforeskip=9pt,afterskip=5pt},subsubsection={format=\normalsize\bfseries\color{navy}}}
+\setcounter{tocdepth}{1}
+\setlist[itemize]{leftmargin=1.6em,itemsep=3pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.8em,itemsep=3pt,topsep=3pt}
+\captionsetup{font=small,labelfont={bf,color=navy},skip=6pt}
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{5pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\src}[1]{\hyperref[ref:#1]{\textcolor{teal}{\mbox{[\csname refnum@#1\endcsname]}}}\allowbreak\hspace{.08em}}
+\newcommand{\source}[1]{\par\vspace{1pt}{\footnotesize\color{muted}\raggedright\noindent 依据：#1\par}}
+\newcommand{\smallnote}[1]{{\footnotesize\color{muted}#1\par}}
+\newtcolorbox{takeaway}[1][]{colback=pale,colframe=teal,boxrule=0pt,borderline west={2pt}{0pt}{teal},sharp corners,left=10pt,right=10pt,top=7pt,bottom=7pt,fonttitle=\bfseries,coltitle=white,colbacktitle=teal,title=#1}
+\newtcolorbox{boundary}[1][]{colback=gold!6,colframe=gold!35,boxrule=.4pt,sharp corners,left=8pt,right=8pt,top=5pt,bottom=5pt,fonttitle=\bfseries,coltitle=navy,title=#1}
+\newcommand{\referenceentry}[5]{\par\noindent\begin{minipage}{\linewidth}\label{ref:#1}\small\textbf{\color{navy}[\csname refnum@#1\endcsname] #2}\\{\footnotesize #3。#4。\href{#5}{原始出处}}\end{minipage}\par\vspace{6pt}}
+\tikzset{flow/.style={draw=linegray,fill=pale,rounded corners=2pt,align=center,minimum height=12mm,text width=25mm,inner sep=4pt,font=\small},flowwide/.style={flow,text width=35mm},arr/.style={-{Stealth[length=2mm]},thick,teal},darr/.style={arr,dashed}}
+\newcommand{\flowfive}[5]{\begin{tikzpicture}[node distance=5mm]\node[flow](a){#1};\node[flow,right=of a](b){#2};\node[flow,right=of b](c){#3};\node[flow,right=of c](d){#4};\node[flow,right=of d](e){#5};\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);\end{tikzpicture}}
+\emergencystretch=2em
+
+\newcommand{\product}[1]{\textsf{#1}}

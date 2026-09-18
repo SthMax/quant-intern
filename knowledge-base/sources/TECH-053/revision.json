@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "90108f98f29546dbe71df27a4da7aef302d48f08",
+    "node_id": "C_kwDOJrGO5NoAKDkwMTA4Zjk4ZjI5NTQ2ZGJlNzFkZjI3YTRkYTdhZWYzMDJkNDhmMDg",
+    "commit": {
+      "author": {
+        "name": "Sean Hatfield",
+        "email": "seanhatfield5@gmail.com",
+        "date": "2026-09-16T20:27:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-16T20:27:46Z"
+      },
+      "message": "Bump embed submodule (#6389)\n\nbump embed submodule + regenerate prebuild for lithuanian locale",
+      "tree": {
+        "sha": "79cd326a3041e21758b9950d0454d9e4b410d0d5",
+        "url": "https://api.github.com/repos/Mintplex-Labs/anything-llm/git/trees/79cd326a3041e21758b9950d0454d9e4b410d0d5"
+      },
+      "url": "https://api.github.com/repos/Mintplex-Labs/anything-llm/git/commits/90108f98f29546dbe71df27a4da7aef302d48f08",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqvvCCRC1aQ7uu5UhlAAACKYQAKAMhcP7FIrB++pF35jAHfPR\ngdHHe3MDHlB+IIUQ3u1kvSmFpNiuBBhSCwQIkBp8Av0qIWfcZ3KrwvXA1Jv2Axaw\nw1cs0FQ+CqP0sfGJSTwFVN7yxRe3D2+CReOSGn8Wz5KV/stbCUtJga87STzcjme5\nS2WlzVddYoFz93k15uKb2hZqL3UdWedvcWwIcBCOINl+qHlOyNg2YhxFuUsteMel\nBbCyVKZTIeAu9C/s0yV9lGdouZbbW3w7OAJhF3MzJ4n9N2HH94xvr3vA7ri/SnYQ\nVSUJlRDuG0e5jXHhapuLnH4Qj8moHcI28hYhbbOK9b5HuHcGvrSxQgPc/92k7SKB\njN71QtpG7J1QKX5jcqp+FPgPuGJWVplCjSvrdZDNKNKPVyEA3FFOHqaVLL3f7C9A\nDNHq1efReo5yAnAaPf6xzSsQF2u/hW0Twl+ufiWDI4nUPpk2KYiijQYNsKBAyAB6\nPjQcELn3oqxH+S5WjVPoOwQ8v+KiNOpH0NcMQZ/pdrG8EBjSy5Gla/z+Dm3kJafi\nvhFCjwxzJ3tdaE1rUW8ehD0N37Az5unHWaRaQROR4H7SQhU8E1B9cRRJj/9ic8Bq\ngiPtYcp87p8q3x7eSwJnP45+hS2IFyho+P7/OO87KjA5xAvhILgnviB6yI02dyBj\ngax+okrVNH+jq1VEpWU9\n=qFg6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 79cd326a3041e21758b9950d0454d9e4b410d0d5\nparent 67d0f42b1173222283deead532add958a57d42fe\nauthor Sean Hatfield <seanhatfield5@gmail.com> 1789590466 -0700\ncommitter GitHub <noreply@github.com> 1789590466 -0700\n\nBump embed submodule (#6389)\n\nbump embed submodule + regenerate prebuild for lithuanian locale",
+        "verified_at": "2026-09-16T20:27:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/Mintplex-Labs/anything-llm/commits/90108f98f29546dbe71df27a4da7aef302d48f08",
+    "html_url": "https://github.com/Mintplex-Labs/anything-llm/commit/90108f98f29546dbe71df27a4da7aef302d48f08",
+    "comments_url": "https://api.github.com/repos/Mintplex-Labs/anything-llm/commits/90108f98f29546dbe71df27a4da7aef302d48f08/comments",
+    "author": {
+      "login": "shatfield4",
+      "id": 2336488,
+      "node_id": "MDQ6VXNlcjIzMzY0ODg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2336488?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shatfield4",
+      "html_url": "https://github.com/shatfield4",
+      "followers_url": "https://api.github.com/users/shatfield4/followers",
+      "following_url": "https://api.github.com/users/shatfield4/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shatfield4/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shatfield4/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shatfield4/subscriptions",
+      "organizations_url": "https://api.github.com/users/shatfield4/orgs",
+      "repos_url": "https://api.github.com/users/shatfield4/repos",
+      "events_url": "https://api.github.com/users/shatfield4/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shatfield4/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "67d0f42b1173222283deead532add958a57d42fe",
+        "url": "https://api.github.com/repos/Mintplex-Labs/anything-llm/commits/67d0f42b1173222283deead532add958a57d42fe",
+        "html_url": "https://github.com/Mintplex-Labs/anything-llm/commit/67d0f42b1173222283deead532add958a57d42fe"
+      }
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+\section{版本与资料口径}
+
+\subsection{模型制品与上下文}
+正文权重体量来自固定模型修订的\texttt{model.safetensors.index.json}中\texttt{metadata.total\_size}，按十进制GB换算并保留两位小数。该数字统计对应制品的数值数组（tensor）字节；运行内存另包含上下文缓存与计算开销。
+
+Qwen卡片的语言模型参数口径与完整多模态制品不同。Gemma的API元素统计与分片索引中另报的参数数存在差异，本文保留原始记录，并使用索引字节数描述体量。DeepSeek与Kimi使用混合量化及打包数组，逻辑参数量采用模型卡口径，制品大小采用实际字节口径。
+
+DeepSeek表中的条件记忆指Engram，通过按输入查找的方式稀疏访问相应参数。Kimi采用MXFP4等混合低精度格式；FP8、BF16分别涉及8位和16位浮点表示，混合制品按各部分的实际字节合计。
+
+上下文数字来自模型卡或配置，表示对应资料中的能力或配置上限。运行时可用长度还受内存、并发、引擎与具体任务质量影响。全部8项模型的原始索引及模型修订均列入报告来源清单。
+
+\subsection{后续模型观察}
+Meta已公开讨论Muse Spark 1.2的开放权重计划，本轮资料取得的是计划信息。Qwen4、GLM-5.4、DeepSeek-V4.1-Pro及Kimi-K3.1等后续型号列入持续观察，公开权重、许可与规格发布后可沿本报告的模型、推理和应用三层结构补充分析。\src{TECH-018}
+
+\subsection{软件版本快照}
+下表列示本轮取得的部分版本信息。源码HEAD、GitHub latest-release、包索引和在线文档分别记录修订与更新时间，部署支持表据此区分正式版本和后续适配。
+
+{\small
+\begin{longtable}{@{}P{44mm}P{41mm}P{69mm}@{}}
+\caption{主要软件的版本与成熟度资料}\label{tab:versions}\\
+\toprule 项目 & 本轮版本记录 & 资料说明\\\midrule
+\endfirsthead
+\toprule 项目 & 本轮版本记录 & 资料说明\\\midrule
+\endhead
+\bottomrule\endfoot
+vLLM & v0.29.0 & 9月18日再次读取latest-release，仍为该版本。\\
+SGLang & v0.5.19 & 9月18日再次读取latest-release，仍为该版本。\\
+TokenSpeed & v0.1.0 & 7月24日发布；本文模型配置来自后续源码。\\
+MLX-LM & 0.31.3 & GitHub/PyPI快照；所读源码另有固定修订。\\
+MLX-VLM & v0.7.1 & 源码与文档能力仍按对应修订判断。\\
+llama.cpp & v0.4.1 & 模型格式、后端和API由具体构建决定。\\
+KTransformers & v0.7.1 & kt-kernel及服务组合需要对应依赖。\\
+ik\_llama.cpp & 固定源码commit & 本轮latest-release API未取得记录。\\
+Open WebUI & v0.11.3 & 产品功能与品牌许可采用当前资料快照。\\
+LibreChat & 源码及当前文档 & latest-release API未取得记录，部分新功能为实验性。\\
+Onyx & v4.7.7 & Community与Enterprise内容区分。\\
+RAGFlow & v0.27.2 & 资料处理及代码沙箱分别配置。\\
+Goose & v1.50.1 & 当前官方仓库为aaif-goose/goose。\\
+OpenClaw & v2026.9.4 & 个人/团队使用需结合官方信任模型。\\
+Agno & v3.0.10 & SDK、运行时与管理产品分层。\\
+CrewAI & 1.15.22 & 已取得对应版本概念文档。\\
+AnythingLLM & v1.16.1 & 桌面、Docker及商业产品区分。\\
+Microsoft Agent Framework & .NET子包1.21.0 & 不是所有语言包的统一版本号。\\
+Codex CLI & 正式release 0.154.0 & 本机包0.149.1，未升级或执行模型。\\
+Claude Code & v2.1.273 & 商业许可与厂商支持范围单独判断。\\
+\end{longtable}
+}
+\smallnote{依据各官方repo的release记录、所读包索引及专题文档；完整修订、时间与哈希保存在报告数据清单。}
+
+\subsection{自定义模型许可的门槛与定义}\label{app:model-license}
+GLM-5.3许可第2项同时考察两个条件：被许可方或关联方经营模型即服务（Model as a Service，MaaS）业务，以及被许可方及关联方在任意连续12个月内合计总收入超过100亿美元。两项均成立时，任何商业使用前需通过Z.AI安全审查。\src{TECH-015}（LICENSE第2项）
+
+该许可中的MaaS强调第三方对推理或微调输入、参数或训练数据的实质控制，并排除仅将模型嵌入特定功能的终端产品及单纯转发其他方托管请求的情况。触发条件同时包括相应服务业务与集团合计收入。
+
+Kimi K3的第2项将相应集团收入门槛设为连续12个月2,000万美元，并在同时经营MaaS时要求单独协议；第3项对使用模型的商业产品或服务规定署名条件，其门槛为超过1亿月活或每月2,000万美元收入。第4项则规定，符合定义的内部使用，以及通过Moonshot官方产品或认证推理合作方的使用，不适用第2、3项。\src{TECH-017}（LICENSE第2--4项）
+
+Kimi的内部使用定义要求软件、输出及底层能力均不向第三方提供。声明保留等其余许可义务继续适用。
+
+\subsection{软件许可与产品边界}\label{app:software-license}
+\begin{table}[H]\small\centering
+\caption{软件核心与商业产品的许可区别}
+\begin{tabularx}{\linewidth}{@{}P{35mm}Y@{}}\toprule
+类别 & 本轮资料所体现的条件\\\midrule
+标准许可核心 & 多数引擎及开发框架采用MIT或Apache 2.0，第三方组件、模型和企业支持另行适用。\\
+Open WebUI & LICENSE第4项规定品牌保留；滚动30天内不超过50名自然人、书面许可或企业授权等为相应例外。该人数用于判断品牌修改例外。\\
+Dify & 修改版Apache许可对多租户及前端标识设限；每个workspace计为一个租户。多租户服务和去除或修改前端标识涉及附加授权；不使用其前端时，标识限制不适用。\\
+Onyx / Flowise & 普通代码与指定企业目录或文件分别授权。\\
+n8n & Sustainable Use及企业许可，内部用途与对外提供方式分别判断。\\
+Agno等产品体系 & 开放SDK与商业管理界面、托管产品分别授权。\\
+Claude Code & 当前repo保留所有权利，软件修改与使用适用其商业授权。\\\bottomrule
+\end{tabularx}
+\source{对应项目LICENSE及产品说明。\src{TECH-043}\src{TECH-030}\src{TECH-045}\src{TECH-033}\src{TECH-034}\src{TECH-051}\src{TECH-039}}
+\end{table}
+
+\subsection{应用连接的协议差异}\label{app:protocol}
+Chat Completions、Responses和Anthropic Messages采用不同请求与事件形式，工具调用、思考内容、状态和流式输出的处理也有差别。下表将已归档接口与相应客户端配置对应。
+
+\begin{table}[H]\small\centering
+\caption{本轮核对的部分应用接口差异}
+\begin{tabularx}{\linewidth}{@{}P{34mm}Y Y@{}}\toprule
+组件 & 已核对的接口信息 & 对应用连接的影响\\\midrule
+MLX-LM服务快照 & 原生POST路由为Completions及Chat Completions。 & 对应采用Completions及Chat Completions的客户端。\\
+MLX-VLM / llama.cpp & 当前文档列出Responses；llama.cpp另列Messages。 & 提供多协议接入，工具循环配套相应模型解析器。\\
+Codex CLI & 当前自定义模型服务配置使用Responses。 & 服务需要满足该协议及实际请求所用功能。\\
+OpenCode / pi & 提供自定义模型连接；pi可明确选择协议。 & 模型、工具解析与上下文设置共同影响任务表现。\\\bottomrule
+\end{tabularx}
+\source{固定源码或官方配置文档。\src{TECH-023}\src{TECH-024}\src{TECH-025}\src{TECH-038}\src{TECH-035}\src{TECH-036}}
+\end{table}
+
+\subsection{研究方法与评测口径}
+本报告为官方资料研究，尚未执行本项目的本地模型或工作流实验。功能和性能描述注明发布方与任务口径，权重体量取自制品索引；财报比较使用虚构数据，部署组合为架构设计示例。
+
+Gemma的66.4\%与44.1\%对应同卡MRCR v2的128K、8 needle平均结果；GLM的73.0为Toolathlon Verified三次独立运行的pass@1平均结果；Kimi的71.6和54.4来自其模型卡引用的Vals AI金融任务成绩，模型列标为最高思考强度。正文按各自评测解释能力特点，跨模型比较另需统一任务、工具和生成预算。
