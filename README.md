@@ -1,4 +1,4 @@
-# MSIM China On-Premise LLM Feasibility Study
+# Intern On-Premise LLM Feasibility Study
 
 Local research workspace for the two-month internship. The
 [final, mentor-confirmed project plan](PROJECT_PLAN.md) controls project scope.
