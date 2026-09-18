@@ -1,0 +1,26 @@
+{
+  "source_id": "TECH-063",
+  "title": "MCP：连接工具、资料与业务系统的协议",
+  "issuer": "Model Context Protocol",
+  "official_url": "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+  "retrieved_at": "2026-09-18T02:28:27.684543+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_official_markdown",
+  "verification_scope": "Official format/protocol overview for architectural comparison.",
+  "files": {
+    "original.md": {
+      "requested_url": "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro.md",
+      "final_url": "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro.md",
+      "sha256": "8c4b6d50834e3147518b8d857e51040489c66c4af71635ce295c85a567c8409b",
+      "bytes": 3261,
+      "retrieved_at": "2026-09-18T02:28:27.684543+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "locator": "Overview, workflow roles, progressive disclosure or external tools/data connection",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main",
+  "research_checkpoint": "d3057af"
+}

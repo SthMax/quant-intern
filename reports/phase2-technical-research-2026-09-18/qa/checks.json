@@ -1,9 +1,9 @@
 {
-  "pdf_sha256": "fe85a1093ba498460f89d30c7ec0f5e85afeb7be368cdd2ef8986f1336bc7200",
-  "physical_pages": 24,
-  "reference_count": 50,
-  "source_hashes_verified": 323,
-  "external_urls_verified": 50,
+  "pdf_sha256": "8679e3b1153c56dc6e239f29c712ee57ae7676499d1d0664420ae8c6cf473afb",
+  "physical_pages": 26,
+  "reference_count": 56,
+  "source_hashes_verified": 399,
+  "external_urls_verified": 54,
   "model_values_verified": 8,
   "latex_critical_warnings_absent": true,
   "pages": [
@@ -13,7 +13,7 @@
     },
     {
       "physical_page": 2,
-      "characters": 836
+      "characters": 871
     },
     {
       "physical_page": 3,
@@ -53,15 +53,15 @@
     },
     {
       "physical_page": 12,
-      "characters": 1017
+      "characters": 1079
     },
     {
       "physical_page": 13,
-      "characters": 1200
+      "characters": 981
     },
     {
       "physical_page": 14,
-      "characters": 1184
+      "characters": 1108
     },
     {
       "physical_page": 15,
@@ -69,39 +69,47 @@
     },
     {
       "physical_page": 16,
-      "characters": 1214
+      "characters": 1167
     },
     {
       "physical_page": 17,
-      "characters": 1178
+      "characters": 1284
     },
     {
       "physical_page": 18,
-      "characters": 844
+      "characters": 1090
     },
     {
       "physical_page": 19,
-      "characters": 1108
+      "characters": 1214
     },
     {
       "physical_page": 20,
-      "characters": 971
+      "characters": 1001
     },
     {
       "physical_page": 21,
-      "characters": 1190
+      "characters": 1115
     },
     {
       "physical_page": 22,
-      "characters": 1249
+      "characters": 1280
     },
     {
       "physical_page": 23,
-      "characters": 1363
+      "characters": 1163
     },
     {
       "physical_page": 24,
-      "characters": 1090
+      "characters": 1388
+    },
+    {
+      "physical_page": 25,
+      "characters": 1450
+    },
+    {
+      "physical_page": 26,
+      "characters": 1334
     }
   ],
   "visual_review": "Recorded separately in qa/review.md; machine checks do not prove layout quality."

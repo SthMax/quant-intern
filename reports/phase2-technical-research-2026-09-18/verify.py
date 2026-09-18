@@ -29,7 +29,7 @@ assert expected == {unquote(u) for u in urls}
 text = '\n'.join(p.extract_text() or '' for p in reader.pages)
 for marker in ['TECH-', '用户要求', 'mentor', '检查点', '9e5c2fe', '\ufffd']:
     assert marker not in text, marker
-for term in ['Qwen3.8', 'Gemma', 'Kimi', 'Open WebUI', 'LibreChat', 'RAGFlow', 'Goose', 'OpenClaw', 'TokenSpeed']:
+for term in ['Qwen3.8', 'Gemma', 'Kimi', 'Open WebUI', 'LibreChat', 'RAGFlow', 'Hermes', 'LobeHub', 'Cherry Studio', 'OpenClaw', 'TokenSpeed']:
     assert term in text, term
 model_source = (HERE / 'models.tex').read_text()
 for model in json.loads((HERE / 'data/model-artifacts.json').read_text()):

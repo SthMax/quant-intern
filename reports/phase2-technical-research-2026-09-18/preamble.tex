@@ -48,7 +48,7 @@
 \newcommand{\smallnote}[1]{{\footnotesize\color{muted}#1\par}}
 \newtcolorbox{takeaway}[1][]{colback=pale,colframe=teal,boxrule=0pt,borderline west={2pt}{0pt}{teal},sharp corners,left=10pt,right=10pt,top=7pt,bottom=7pt,fonttitle=\bfseries,coltitle=white,colbacktitle=teal,title=#1}
 \newtcolorbox{boundary}[1][]{colback=gold!6,colframe=gold!35,boxrule=.4pt,sharp corners,left=8pt,right=8pt,top=5pt,bottom=5pt,fonttitle=\bfseries,coltitle=navy,title=#1}
-\newcommand{\referenceentry}[5]{\par\noindent\begin{minipage}{\linewidth}\label{ref:#1}\small\textbf{\color{navy}[\csname refnum@#1\endcsname] #2}\\{\footnotesize #3。#4。\href{#5}{原始出处}}\end{minipage}\par\vspace{6pt}}
+\newcommand{\referenceentry}[5]{\par\noindent\begin{minipage}{\linewidth}\label{ref:#1}\small\textbf{\color{navy}[\csname refnum@#1\endcsname] #2}\\{\footnotesize #3。#4。\href{#5}{原始出处}}\end{minipage}\par\vspace{3pt}}
 \tikzset{flow/.style={draw=linegray,fill=pale,rounded corners=2pt,align=center,minimum height=12mm,text width=25mm,inner sep=4pt,font=\small},flowwide/.style={flow,text width=35mm},arr/.style={-{Stealth[length=2mm]},thick,teal},darr/.style={arr,dashed}}
 \newcommand{\flowfive}[5]{\begin{tikzpicture}[node distance=5mm]\node[flow](a){#1};\node[flow,right=of a](b){#2};\node[flow,right=of b](c){#3};\node[flow,right=of c](d){#4};\node[flow,right=of d](e){#5};\draw[arr](a)--(b);\draw[arr](b)--(c);\draw[arr](c)--(d);\draw[arr](d)--(e);\end{tikzpicture}}
 \emergencystretch=2em

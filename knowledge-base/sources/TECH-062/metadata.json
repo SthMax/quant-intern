@@ -1,0 +1,26 @@
+{
+  "source_id": "TECH-062",
+  "title": "Agent Skills：可复用方法与脚本的开放格式",
+  "issuer": "Agent Skills",
+  "official_url": "https://agentskills.io/home",
+  "retrieved_at": "2026-09-18T02:28:27.454837+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_official_markdown",
+  "verification_scope": "Official format/protocol overview for architectural comparison.",
+  "files": {
+    "original.md": {
+      "requested_url": "https://agentskills.io/home.md",
+      "final_url": "https://agentskills.io/home.md",
+      "sha256": "7be41261358594f02801b994f22b1d55a265062c7ba481f439360c2ccac3d828",
+      "bytes": 26531,
+      "retrieved_at": "2026-09-18T02:28:27.454837+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "locator": "Overview, workflow roles, progressive disclosure or external tools/data connection",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main",
+  "research_checkpoint": "d3057af"
+}

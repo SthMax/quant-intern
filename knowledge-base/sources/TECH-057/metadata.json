@@ -1,0 +1,157 @@
+{
+  "source_id": "TECH-057",
+  "title": "LobeHub：Agent工作空间、自托管与Coding Agent整合",
+  "issuer": "lobehub",
+  "repository": "lobehub/lobehub",
+  "official_url": "https://github.com/lobehub/lobehub",
+  "revision": "270a4a50cb3205724bb0acc70c3bff3a0860da09",
+  "commit_date": "2026-09-18T02:14:27Z",
+  "release_tag": "v2.2.17",
+  "release_published_at": "2026-09-11T09:20:12Z",
+  "retrieved_at": "2026-09-18T02:29:53.448510+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official repository, product documentation, license and selected release-tag copies; documentary comparison. No software execution.",
+  "files": {
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/LICENSE",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/LICENSE",
+      "sha256": "790a8c42f10beb4f5e9122e05a8e65d5522de49f89ac69cd31063c0f2be93ea4",
+      "bytes": 1118,
+      "retrieved_at": "2026-09-18T02:25:07.496468+00:00"
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/README.md",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/README.md",
+      "sha256": "e0c3fea3e70dcf0cd23bbc9a5173909c7a2f4fa78530fae4b2dbf308a99aed90",
+      "bytes": 39136,
+      "retrieved_at": "2026-09-18T02:25:06.495743+00:00"
+    },
+    "claude-code.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/agent/claude-code.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/agent/claude-code.mdx",
+      "sha256": "9e3da2ad447823e6eedae62a930a865aa4049ed75c17f3054ba833f3cc5e9368",
+      "bytes": 6794,
+      "retrieved_at": "2026-09-18T02:28:19.956693+00:00"
+    },
+    "codex.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/agent/codex.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/agent/codex.mdx",
+      "sha256": "235d6da31674493ab69e9d44fceeb035d60e1f50234a76267966de8227c659c5",
+      "bytes": 5926,
+      "retrieved_at": "2026-09-18T02:28:19.897475+00:00"
+    },
+    "desktop.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/self-hosting/advanced/desktop.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/self-hosting/advanced/desktop.mdx",
+      "sha256": "32911d76773999cde46a036f67417b669730207dd6f789efcd028c736064aa1f",
+      "bytes": 4767,
+      "retrieved_at": "2026-09-18T02:28:19.761423+00:00"
+    },
+    "mcp.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/community/mcp-market.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/community/mcp-market.mdx",
+      "sha256": "c6e41c2f51a9c24f3da7ca43c7abec99ef7c5038720607867faed8e5c7bcff54",
+      "bytes": 14257,
+      "retrieved_at": "2026-09-18T02:28:19.939769+00:00"
+    },
+    "memory.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/getting-started/memory.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/getting-started/memory.mdx",
+      "sha256": "50a87230f2b67d5744c469cbd051078ceb90488843267ba81ccac46ef0dcbc0b",
+      "bytes": 12612,
+      "retrieved_at": "2026-09-18T02:28:19.818037+00:00"
+    },
+    "ollama.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/providers/ollama.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/providers/ollama.mdx",
+      "sha256": "ef23a7954d1287586bc7cb902888913e6ff157801e5338cad3308242df7a9b5e",
+      "bytes": 5546,
+      "retrieved_at": "2026-09-18T02:28:20.282186+00:00"
+    },
+    "release-codex.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/v2.2.17/docs/usage/agent/codex.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/v2.2.17/docs/usage/agent/codex.mdx",
+      "sha256": "235d6da31674493ab69e9d44fceeb035d60e1f50234a76267966de8227c659c5",
+      "bytes": 5926,
+      "retrieved_at": "2026-09-18T02:28:20.612541+00:00"
+    },
+    "release-skills.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/v2.2.17/docs/usage/community/skills-and-tools.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/v2.2.17/docs/usage/community/skills-and-tools.mdx",
+      "sha256": "8ef42a64bebb6d686b84da3ac927194d18e55cc56645b249f85ac19372caadbd",
+      "bytes": 7353,
+      "retrieved_at": "2026-09-18T02:28:20.281844+00:00"
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/lobehub/lobehub/releases/latest",
+      "final_url": "https://api.github.com/repos/lobehub/lobehub/releases/latest",
+      "sha256": "0832440d2da8553c89ca44199d3f5432c482f8d4c41cb7b0af6f00175dc40a60",
+      "bytes": 48614,
+      "retrieved_at": "2026-09-18T02:25:02.245752+00:00"
+    },
+    "repo.json": {
+      "requested_url": "https://api.github.com/repos/lobehub/lobehub",
+      "final_url": "https://api.github.com/repos/lobehub/lobehub",
+      "sha256": "cf91554ed658d91ce859ba8c1e2c9662f86bc4267485224eee8f4ef532866a45",
+      "bytes": 6325,
+      "retrieved_at": "2026-09-18T02:25:01.036716+00:00"
+    },
+    "resources.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/getting-started/resource.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/getting-started/resource.mdx",
+      "sha256": "4323a2f58114a51d570bec43119d7a93341992524c95794ebfeb741b7f6d530b",
+      "bytes": 10254,
+      "retrieved_at": "2026-09-18T02:28:19.796268+00:00"
+    },
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/lobehub/lobehub/commits?per_page=1",
+      "final_url": "https://api.github.com/repos/lobehub/lobehub/commits?per_page=1",
+      "sha256": "36712b6655fb5d7f259ee5e85777b661b632cb54b7ea483881c92ff7976eb0d1",
+      "bytes": 4598,
+      "retrieved_at": "2026-09-18T02:25:01.564777+00:00"
+    },
+    "sandbox.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/agent/sandbox.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/agent/sandbox.mdx",
+      "sha256": "e8e9543f5985c07fa40422fe7961a6c9b54a406bc168ba640046bd9b80942cef",
+      "bytes": 5181,
+      "retrieved_at": "2026-09-18T02:28:20.280936+00:00"
+    },
+    "scheduled-task.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/agent/scheduled-task.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/agent/scheduled-task.mdx",
+      "sha256": "7a9a926adf7fdf9ce59106f66beed98f79ddaeba8e9f48f054a08fb2f35b3b52",
+      "bytes": 6340,
+      "retrieved_at": "2026-09-18T02:28:19.881787+00:00"
+    },
+    "self-host.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/self-hosting/start.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/self-hosting/start.mdx",
+      "sha256": "cfd38ee9fade2bde835a8a0b58fa34f464f69a051970fdbc3aaa94a6b013d0fc",
+      "bytes": 6258,
+      "retrieved_at": "2026-09-18T02:28:19.674722+00:00"
+    },
+    "skill-management.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/community/skill-management.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/community/skill-management.mdx",
+      "sha256": "85c82ee7e56668108461a30bc4fabbc6e72a1227fd9541d2015b49b11316c2b2",
+      "bytes": 6626,
+      "retrieved_at": "2026-09-18T02:29:53.448510+00:00"
+    },
+    "skills.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/community/skills-and-tools.mdx",
+      "final_url": "https://raw.githubusercontent.com/lobehub/lobehub/270a4a50cb3205724bb0acc70c3bff3a0860da09/docs/usage/community/skills-and-tools.mdx",
+      "sha256": "8ef42a64bebb6d686b84da3ac927194d18e55cc56645b249f85ac19372caadbd",
+      "bytes": 7353,
+      "retrieved_at": "2026-09-18T02:28:19.885322+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "locator": "README, LICENSE, selected product/runtime documents; release-* files preserve formal-tag comparisons",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main",
+  "research_checkpoint": "d3057af"
+}

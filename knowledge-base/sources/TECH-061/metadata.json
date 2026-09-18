@@ -1,0 +1,122 @@
+{
+  "source_id": "TECH-061",
+  "title": "OpenClaw：团队、记忆与Codex Harness整合",
+  "issuer": "openclaw",
+  "repository": "openclaw/openclaw",
+  "official_url": "https://github.com/openclaw/openclaw",
+  "revision": "cc96aefe25bb208aa17dd5620a433d528ccda4be",
+  "commit_date": "2026-09-18T02:23:01Z",
+  "release_tag": "v2026.9.4",
+  "release_published_at": "2026-09-11T03:46:22Z",
+  "retrieved_at": "2026-09-18T02:28:21.717075+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official repository, product documentation, license and selected release-tag copies; documentary comparison. No software execution.",
+  "files": {
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/LICENSE",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/LICENSE",
+      "sha256": "73571b25326281d369087f469842c02444fe39faaecebda4d82ed21ff3a1c29d",
+      "bytes": 1170,
+      "retrieved_at": "2026-09-18T02:25:04.402956+00:00"
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/README.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/README.md",
+      "sha256": "c594e29266562db197f8dff4f7cdebc56df08ef4ba8e46bb3130f75457dbe39b",
+      "bytes": 113226,
+      "retrieved_at": "2026-09-18T02:25:03.538429+00:00"
+    },
+    "acp-agents.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/tools/acp-agents.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/tools/acp-agents.md",
+      "sha256": "a8c62abe043fe95fa4a1a5c8fc44dd00f8548597b90ed45dbed3a2083f8eea1a",
+      "bytes": 13611,
+      "retrieved_at": "2026-09-18T02:28:21.717075+00:00"
+    },
+    "active-memory.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/concepts/active-memory.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/concepts/active-memory.md",
+      "sha256": "f1c6c1c2314cdbf2b6d25928f66a9a1a43d339444ca56fa7f45d6a6eaaab9d69",
+      "bytes": 7282,
+      "retrieved_at": "2026-09-18T02:28:21.117519+00:00"
+    },
+    "codex-harness.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/plugins/codex-harness.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/plugins/codex-harness.md",
+      "sha256": "70a567b55ae7ca248820ab3e7cc4624e051a599d89fe02e10baf15d0031c7106",
+      "bytes": 37749,
+      "retrieved_at": "2026-09-18T02:28:21.417429+00:00"
+    },
+    "local-models.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/gateway/local-models.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/gateway/local-models.md",
+      "sha256": "d0ecf083ce1f176a7fc7ad7583fa208d72ace5a1093e5802594764471766503f",
+      "bytes": 21849,
+      "retrieved_at": "2026-09-18T02:28:21.296344+00:00"
+    },
+    "memory.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/concepts/memory.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/concepts/memory.md",
+      "sha256": "eb952386265644f10d2d8e715aad45cdc294d0989691f75a57900376bc4b4212",
+      "bytes": 15623,
+      "retrieved_at": "2026-09-18T02:28:21.156734+00:00"
+    },
+    "release-codex-harness.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/v2026.9.4/docs/plugins/codex-harness.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/v2026.9.4/docs/plugins/codex-harness.md",
+      "sha256": "6812c10547d67d75489f84c8aac91c3d336337217850d50479ca45b0159a7f4e",
+      "bytes": 16689,
+      "retrieved_at": "2026-09-18T02:28:21.553929+00:00"
+    },
+    "release-teams.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/v2026.9.4/docs/start/teams.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/v2026.9.4/docs/start/teams.md",
+      "sha256": "e243b7474f86bc07b450ca0148249cfa45a23a6c615391bfb6689d0139b5ea59",
+      "bytes": 9814,
+      "retrieved_at": "2026-09-18T02:28:21.610729+00:00"
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/openclaw/openclaw/releases/latest",
+      "final_url": "https://api.github.com/repos/openclaw/openclaw/releases/latest",
+      "sha256": "f7081c216093b15670fc3c634f6d97c2150deb1cba864a83136352f6df33a7c7",
+      "bytes": 27052,
+      "retrieved_at": "2026-09-18T02:25:01.961615+00:00"
+    },
+    "repo.json": {
+      "requested_url": "https://api.github.com/repos/openclaw/openclaw",
+      "final_url": "https://api.github.com/repos/openclaw/openclaw",
+      "sha256": "b7bed0429d3762d8cc40c2bbc926180ffa6bc1473c0e4df7f7465d6c9336d665",
+      "bytes": 6249,
+      "retrieved_at": "2026-09-18T02:25:00.870762+00:00"
+    },
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/openclaw/openclaw/commits?per_page=1",
+      "final_url": "https://api.github.com/repos/openclaw/openclaw/commits?per_page=1",
+      "sha256": "bed0c312cddaaf7e6f7bf57b8b32453ad7969e7a2de05ca606e74d9ff6d56b3b",
+      "bytes": 6218,
+      "retrieved_at": "2026-09-18T02:25:01.391871+00:00"
+    },
+    "skills.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/tools/skills.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/tools/skills.md",
+      "sha256": "8ff0dae6c5c0473025db186e205c21685dd8386a4a0fef8bff7409ec0f2f535f",
+      "bytes": 37140,
+      "retrieved_at": "2026-09-18T02:28:21.270194+00:00"
+    },
+    "teams.md": {
+      "requested_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/start/teams.md",
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/cc96aefe25bb208aa17dd5620a433d528ccda4be/docs/start/teams.md",
+      "sha256": "d03da4ad7d3475f2e4d0ed5842840f49769c0c25d6fe723f922a8bd0633ccd06",
+      "bytes": 10245,
+      "retrieved_at": "2026-09-18T02:28:21.056954+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "locator": "README, LICENSE, selected product/runtime documents; release-* files preserve formal-tag comparisons",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main",
+  "research_checkpoint": "d3057af"
+}

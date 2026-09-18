@@ -10,13 +10,14 @@
 \caption{AI应用的主要形态与业务价值}\label{tab:application-types}
 \begin{tabularx}{\linewidth}{@{}P{28mm}Y Y@{}}\toprule
 应用形态 & 代表项目 & 使用者得到的能力\\\midrule
-员工AI工作台 & Open WebUI、LibreChat、AnythingLLM & 在统一入口聊天、上传文件、使用资料与专用助手。\\
+员工AI工作台 & Open WebUI、LobeHub、Cherry Studio & 在统一入口聊天、上传文件、使用资料与专用助手。\\
 资料研究平台 & Onyx、RAGFlow & 在大量资料中查找证据、比较信息、形成可追溯回答。\\
 固定流程平台 & Dify、n8n、Flowise & 把一次有效操作固化为可以重复运行的处理流程。\\
-通用任务助手 & Goose、OpenClaw & 接收一个目标，组合文件和工具操作，持续交付结果。\\
+通用任务助手 & Hermes Agent、OpenClaw & 接收一个目标，组合文件和工具操作，持续交付结果。\\
+通用Agent执行 & Codex、Claude Code、OpenCode、pi & 按业务方法读取材料、运行工具并生成文件。\\
 应用开发框架 & LangGraph、Microsoft Agent Framework、Agno、CrewAI & 由工程团队定义业务步骤、工具、状态和人工处理。\\\bottomrule
 \end{tabularx}
-\source{根据官方产品定位与功能归纳，类别可重叠。\src{TECH-043}\src{TECH-044}\src{TECH-045}\src{TECH-030}\src{TECH-047}\src{TECH-049}}
+\source{根据官方产品定位与功能归纳，类别可重叠。\src{TECH-043}\src{TECH-044}\src{TECH-045}\src{TECH-030}\src{TECH-056}\src{TECH-049}}
 \end{table}
 
 \subsection{贯穿示例：两期财报与一份CSV形成比较表}\label{sec:case}
@@ -43,12 +44,30 @@ Open WebUI提供自托管的多模型工作台。员工通过浏览器选择模�
 
 这一形态的优势在于把分散的模型使用方式集中到一个入口。研究员可以围绕公开财报连续提问，运营人员可以查询允许访问的制度资料，团队还可以保存面向不同工作的专用配置。模型服务与使用界面分离，也便于后台更换模型。
 
-\subsubsection{LibreChat与AnythingLLM}
-LibreChat将多模型聊天、专用Agent、文件搜索和工具操作结合。用户可以为一个助手保存指令、资料和工具，并将其共享给同事。其当前文档还覆盖文件上传、代码执行与生成结果下载。\src{TECH-044}
+\subsubsection{LobeHub：以Agent和项目组织持续工作}
+LobeHub把Agent、项目、资料、Pages和任务组织到同一工作空间。当前产品包含Agent Groups、可编辑记忆和工具管理，使用者可以围绕一个行业或研究项目积累材料、讨论问题并共同修改产物。其优势是将对话、分工和结果保存在持续的工作环境中。\src{TECH-057}
 
-在上述比较任务中，使用者可以先上传三份文件，要求列出指标，再追问增长率、要求核对CSV，最后下载结果；任务方向由连续提问逐步确定。LibreChat可将文件搜索、计算与下载接在同一会话中，其优势是保留探索和修正空间。代码执行通过可自托管的计算服务提供；持久会话和附接工作环境则是当前标为实验性的新功能。\src{TECH-044}（Agents、Code Interpreter文档）
+在财报比较任务中，可以让不同职责的Agent整理材料、核对数据，再在同一页面形成说明。桌面端还可以驱动本机Codex和Claude Code，将文件变化、任务进度和工具输出显示在聊天中。自托管服务负责保存对话、Agent和文件，桌面端连接本机操作；官方Cloud Sandbox及定时任务另提供云端执行方式。\src{TECH-057}
 
-AnythingLLM将模型连接、资料导入、文档聊天与Agent能力整合在一起，提供桌面和自托管方式。围绕行业或项目建立资料工作空间后，使用者可以持续整理材料、查询信息和形成草稿。其优势是个人资料与模型入口比较集中；当前README将多人及权限能力对应到Docker路线，桌面、团队部署和Pro产品提供的管理功能不同。\src{TECH-053}
+\subsubsection{Cherry Studio：以个人电脑为中心的AI工作台}
+Cherry Studio提供Windows、macOS和Linux桌面客户端，将多模型对话、专用助手、文件、知识库和MCP集中起来。日常翻译、材料阅读、多模型比较和数据整理可以在同一个应用中进行，适合专业个人工作站。生成模型可连接Ollama、LM Studio或内部服务，本地嵌入和OCR组件则承担相应资料处理。\src{TECH-058}
+
+Cherry Studio可以在同一界面中使用Claude Code、pi或DeepSeek Harness执行任务，并统一保存会话和进度；Code Mate中的Skill还可以调用Codex或Claude Code的命令行程序完成子任务。使用者因此可以从聊天进入文件和工具操作，再把结果保留在原来的工作空间。社区版侧重桌面使用，Enterprise提供集中模型、员工、共享知识库和权限管理。\src{TECH-058}
+
+\begin{table}[H]\small\centering
+\caption{员工工作台的侧重点与部署形态}\label{tab:workbenches}
+\begin{tabularx}{\linewidth}{@{}P{28mm}Y Y@{}}\toprule
+项目 & 主要优点 & 工作与部署形态\\\midrule
+Open WebUI & 统一模型、资料与共享工具入口。 & 自托管Web，便于部门日常问答、读文件和写作。\\
+LobeHub & 项目、Agent协作、文字产物与任务相联系。 & Web及自托管服务配合桌面；桌面可驱动Coding Agent。\\
+Cherry Studio & 本机模型入口、资料和操作环境集中。 & 跨平台桌面；Enterprise另提供共享与管理后台。\\
+LibreChat & 专用Agent、文件搜索与计算形成连续体验。 & 自托管多人工作台；代码执行服务可自托管。\\
+AnythingLLM & 围绕资料工作空间导入、查询和积累文档。 & 桌面个人路线；Docker提供多人及权限能力。\\\bottomrule
+\end{tabularx}
+\source{官方产品、运行时及版本说明。\src{TECH-043}\src{TECH-057}\src{TECH-058}\src{TECH-044}\src{TECH-053}}
+\end{table}
+
+以Open WebUI作为统一聊天工作台的参照，LobeHub的增量在于项目与Agent协作，Cherry Studio的增量在于本机资料与操作环境。LibreChat提供完整的专用Agent与文件分析能力，其中持久会话和附接环境为实验性功能；AnythingLLM则更集中于文档工作空间。\src{TECH-044}\src{TECH-053}
 
 \subsection{资料研究平台：让回答能够回到证据}
 \subsubsection{Onyx：连接企业资料的搜索与研究助手}
@@ -90,15 +109,47 @@ Flowise通过Chatflow与Agentflow展示模型、资料和工具之间的关系�
 
 这些平台改变的是工作组织方式。它们把重复的人工操作转成可运行、可检查的过程，模型负责语言理解，资料、规则和工具提供处理依据与执行能力。
 
-\subsection{通用任务助手：围绕一个目标持续完成工作}
-\subsubsection{Goose与OpenClaw}
-Goose提供桌面应用、CLI和API，通过模型与工具完成研究、写作、自动化和数据分析。其当前官方项目为aaif-goose/goose，具有自定义模型服务和扩展能力，并以Recipes保存可复用的指令、工具及设置。\src{TECH-047}
+\subsection{通用任务助手：Hermes与OpenClaw}
+\subsubsection{Hermes Agent：把有效方法积累为可复用Skill}
+Hermes Agent由Nous Research开发，将工具执行、跨会话记忆、历史搜索、Skills和定时任务组合起来。Hermes Desktop与CLI、Gateway使用同一个Agent核心，共享会话、配置、记忆和Skills；桌面提供文件拖入、预览、目录及任务进度。它可以连接内部模型服务，并通过本机、容器或远程执行环境使用工具。\src{TECH-056}
 
-对于同一比较任务，研究员可以一次提出“读取这两期财报和CSV，生成比较表及三条说明”。Goose依据目标选择读取、计算和写文件的步骤；这些能力通过配置的文件、解析和执行工具提供。处理顺序由助手在任务中决定，便于临时增加分析问题或更换产物格式。桌面入口提供交互界面，Recipes保存有效的方法，扩展机制连接所需的文件和业务工具。
+其突出特点是把重复工作的经验留在可编辑的记忆和方法文件中。Memory保存项目背景和个人偏好，Skills保存处理步骤、脚本及模板，历史搜索找回以往任务。Agent可以创建和更新Skill，把已经有效的方法用于后续工作。\src{TECH-056}
 
-OpenClaw更强调持续个人任务。它将会话、记忆、工具和不同入口连接到自托管Gateway，使关注主题和工作背景可以延续到多次交互。资料整理、会议准备和持续跟踪因此可以围绕同一个助手开展。\src{TECH-048}
+在财报比较例子中，第一次任务确定期间、币种、指标公式和引用格式，再将方法与校验脚本保存为“财报比较”Skill。下一次更换公司或期间，助手继续使用同一方法。Hermes的产品组织因此较贴近个人研究中“完成任务、积累方法、反复复用”的工作过程。
 
-两者的使用形态各有重点：Goose提供面向电脑任务的通用操作入口，OpenClaw强调持续状态与多渠道访问。OpenClaw官方以一个Gateway对应一个信任边界；当不同人员需要严格隔离时，其个人助手配置与企业共享平台存在不同的管理要求。\src{TECH-048}（Trust model）
+\subsubsection{OpenClaw：连接持续入口、设备与Agent执行}
+OpenClaw通过Gateway连接消息渠道、设备、会话、工具及模型，适合从不同入口继续同一个任务。当前官方文档也提供团队配置、共享会话和角色；同一Gateway内组织互相信任的团队协作，租户级隔离则使用分开的Gateway。\src{TECH-061}
+
+OpenClaw同时提供记忆、Skills和可替换的Agent运行环境。其Codex插件将底层执行交给Codex的后台服务接口（app-server），OpenClaw继续负责消息渠道、工具交付及可见会话。两者的侧重点由此形成区别：Hermes围绕方法积累组织个人工作，OpenClaw围绕渠道、设备及持续访问组织任务。\src{TECH-061}
+
+\subsection{Coding Agent与Skills／MCP：通用的工作执行方式}\label{sec:general-execution}
+\subsubsection{从代码任务扩展到资料、计算和文件交付}
+Coding Agent已经形成一套通用执行能力：读取文件、选择工具、运行命令、检查结果、修正错误并继续任务。把输入换为财报和CSV、把输出换为比较表和报告，就可以用同一套能力完成非编码工作。业务方法由Skill保存，资料与系统能力通过MCP连接，计算和校验交给固定脚本。
+
+这一路线已有明确的官方实践。Anthropic在介绍Claude Agent SDK时说明，Claude Code已用于深度研究、视频制作和笔记，并将相同执行循环推广为供应用调用的Agent SDK。Codex则提供Skills、MCP、非交互执行和SDK，支持把任务接入现有应用及调度系统。\src{TECH-060}\src{TECH-059}
+
+\begin{table}[H]\small\centering
+\caption{通用Agent、Skill、脚本与MCP的分工}\label{tab:skills-mcp}
+\begin{tabularx}{\linewidth}{@{}P{28mm}Y Y@{}}\toprule
+部分 & 主要作用 & 财报比较中的内容\\\midrule
+Agent harness & 选择操作、执行、检查与继续任务。 & 读取材料、发现单位差异、查阅脚注并修正。\\
+Skill & 保存适用条件、业务方法、模板及配套资料。 & 期间对齐、指标定义、引用格式和交付要求。\\
+脚本或业务服务 & 按固定规则计算、校验和生成结果。 & 增长率、毛利率、CSV加总及字段检查。\\
+MCP & 提供统一的资料、工具和系统接口。 & 查询财报和数据、调用计算服务、保存产物。\\\bottomrule
+\end{tabularx}
+\source{Agent Skills标准、MCP说明与Codex／Claude文档；业务内容为本报告示例。\src{TECH-062}\src{TECH-063}\src{TECH-059}\src{TECH-060}}
+\end{table}
+
+Skill以包含\texttt{SKILL.md}的目录保存方法，并可以附带脚本、参考资料和模板，Agent在相关任务中按需加载。MCP把工具和数据能力提供给Agent；若一个业务服务内部已有固定流程，也可以将整个流程作为一个工具调用。以本例而言，Skill说明怎样比较财报，程序完成数值校验，Agent据工具结果生成表格与三条说明。
+
+\subsubsection{从直接使用到嵌入业务系统}
+使用者可以直接在Codex或Claude Code中交付任务，也可以通过现成员工工作台调用它们。LobeHub桌面端已经能驱动两款CLI；Cherry Studio将不同Agent运行时接入统一会话，并提供调用CLI的Skill；OpenClaw则通过app-server接入Codex。这些整合分别复用界面、任务状态和底层执行能力，相应文档已进入本轮取得的正式发布标签。\src{TECH-057}\src{TECH-058}\src{TECH-061}
+
+程序化运行进一步使Agent成为业务流程的一部分。Codex的\texttt{exec}模式及TypeScript SDK、Claude的非交互CLI与Python／TypeScript Agent SDK，都可以由应用启动任务、取得结果并继续会话。工程团队因而能够复用成熟harness，将开发重点放在业务Skill、数据工具、输出模板和校验规则。\src{TECH-059}\src{TECH-060}
+
+固定流程平台与这一路线承担不同工作。开放式材料分析由Agent根据问题安排步骤；大量重复处理可以由固定脚本或Dify流程执行；跨人员审批、长期状态和统一调度由外层业务平台组织。一种组合是业务平台触发任务，Agent完成资料分析，程序核对数字，再由平台保存结果和安排复核。
+
+在本地部署中，Hermes、OpenCode和pi可配置内部模型服务，Codex CLI通过自定义Responses provider连接模型。LobeHub或Cherry Studio中的普通聊天连接与外部Agent使用的模型配置分别管理；Claude Code及其SDK采用Claude的官方产品路线。软件授权和接口细节集中列于附录。\src{TECH-035}\src{TECH-036}\src{TECH-038}\src{TECH-039}
 
 \subsection{开发框架：把业务逻辑落实为专用系统}
 现成应用提供使用入口，开发框架则让团队进一步掌握处理步骤、工具和任务状态。对于具有特定数据接口、审批过程或输出格式的工作，框架决定了这些规则怎样进入实际应用。
@@ -126,10 +177,3 @@ Microsoft Agent Framework提供.NET和Python等开发路线，包含工具、工
 Agno当前区分SDK、AgentOS运行时与Control Plane管理界面，适合把多个专用助手作为持续服务管理。CrewAI则通过Crews表达协作分工，通过Flows控制整体处理顺序。多Agent适合将资料搜集、数字核对和写作拆成独立工作，再汇总为完整产物；模型调用和结果整合构成相应的运行成本。\src{TECH-051}\src{TECH-052}
 
 Haystack和LlamaIndex更接近资料与检索工作。其中Haystack强调显式组件与流程，LlamaIndex当前公开方向更加重视文档解析及相关产品。开放组件提供可复用的开发能力，商业管理平台和托管服务则承担额外的运行工作。\src{TECH-032}\src{TECH-031}
-
-\subsection{编码Agent与研究人员的文件工作}
-OpenCode、pi和Codex CLI提供模型与工具结合的编码工作环境，也可以用于技术研究人员的资料、脚本和文件任务。OpenCode侧重较完整的交互体验，pi侧重精简与可扩展性，Codex CLI提供开源的本地Agent与自定义模型服务配置。\src{TECH-035}\src{TECH-036}\src{TECH-038}
-
-这类工具把脚本、文件和计算环境放在同一工作空间，适合技术研究人员直接处理数据与产物。面向部门同事的工作台则进一步提供浏览器界面、现成文件管理和协作入口。
-
-Claude Code则属于商业产品。当前公开仓库的许可保留所有权利，Anthropic官方也明确不支持通过gateway将其路由到非Claude模型。SGLang等引擎已有相关技术适配文档；软件许可与官方支持范围见附录。\src{TECH-039}\src{TECH-021}

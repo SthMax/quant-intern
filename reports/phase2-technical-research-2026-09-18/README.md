@@ -2,7 +2,8 @@
 
 Phase 2第3周阶段报告，资料截至2026年9月18日。沿用Phase 1报告的LaTeX排版和正式叙述方式，以介绍与分析为主。
 
-- [PDF报告](report.pdf)：24个物理页，正文页码1–23；含5幅流程/结构图、15张表、50项来源。
+- [GitHub Release](https://github.com/SthMax/ms-intern/releases/tag/phase2-week3-2026-09-18)：本次交付附件为最终PDF。
+- [PDF报告](report.pdf)：26个物理页，正文页码1–25；含5幅流程/结构图、17张表、56项来源。
 - [主文件](main.tex)：摘要、目录与章节组织。
 - [模型](models.tex)、[许可](licenses.tex)、[推理服务](serving.tex)、[业务应用](applications.tex)、[部署分析](deployment.tex)。
 - [版本与口径附录](appendix.tex)、[参考文献](references.tex)。
@@ -12,7 +13,9 @@ Phase 2第3周阶段报告，资料截至2026年9月18日。沿用Phase 1报告�
 
 ## 内容与表达
 
-报告从基金业务中的材料、任务和产物出发，介绍模型、Serving framework、Harness与完整应用的分工。模型部分覆盖8项候选及许可差异；应用部分重点解释员工工作台、资料研究平台、固定流程与通用助手做什么、具有什么优点，并以说明性业务任务分析其用途。修订版以两期虚构财报和一份CSV贯穿工作台、固定流程与通用助手，并给出专业个人机和部门共享两套参考组合。
+报告从基金业务中的材料、任务和产物出发，介绍模型、Serving framework、Harness与完整应用的分工。模型部分覆盖8项候选及许可差异；应用部分重点解释员工工作台、资料研究平台、固定流程与通用助手做什么、具有什么优点，并以说明性业务任务分析其用途。修订版以两期虚构财报和一份CSV贯穿工作台、固定流程与通用助手，并给出Hermes个人助手和部门共享两套参考组合。
+
+本轮Harness重点为Open WebUI、LobeHub、Cherry Studio与Hermes／OpenClaw；Coding Agent＋Skills／MCP单独成节，介绍通用执行、方法复用、脚本与系统接口的分工。详细来源见知识库TECH-056–063，修改前检查点为`d3057af`。
 
 第2章按“规模与架构—Qwen与Gemma—大型模型—显存与内存”组织，评测结果融入具体模型介绍。正文直接介绍能力、优势、原理和业务价值，摘要与结论归纳三层系统如何形成工作效率。版本、协议、许可门槛及研究方法集中于附录。图1分开呈现模型和工具的请求与返回。
 
@@ -33,8 +36,8 @@ python3 prepare.py
 
 ```bash
 python3 verify.py
-mkdir -p qa/render-user-final
-pdftoppm -scale-to 1400 -png report.pdf qa/render-user-final/page
+mkdir -p qa/render-harness-final
+pdftoppm -scale-to 1400 -png report.pdf qa/render-harness-final/page
 ```
 
 PNG、抽取文本及编译文件已由本目录`.gitignore`排除。源码、PDF、数据清单和检查记录集中保存在本目录。此前Phase 1报告与PPT保持不变。

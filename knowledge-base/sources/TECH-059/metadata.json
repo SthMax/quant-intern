@@ -1,0 +1,94 @@
+{
+  "source_id": "TECH-059",
+  "title": "Codex：Skills、MCP、非交互执行与SDK",
+  "issuer": "openai",
+  "repository": "openai/codex",
+  "official_url": "https://github.com/openai/codex",
+  "revision": "7498521d288b9b3b96ffba4eedf089d8d6e06a84",
+  "commit_date": "2026-09-18T00:59:10Z",
+  "release_tag": "rust-v0.155.0",
+  "release_published_at": "2026-09-17T23:14:43Z",
+  "retrieved_at": "2026-09-18T02:28:21.881098+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official repository, product documentation, license and selected release-tag copies; documentary comparison. No software execution.",
+  "files": {
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/openai/codex/7498521d288b9b3b96ffba4eedf089d8d6e06a84/LICENSE",
+      "final_url": "https://raw.githubusercontent.com/openai/codex/7498521d288b9b3b96ffba4eedf089d8d6e06a84/LICENSE",
+      "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+      "bytes": 10926,
+      "retrieved_at": "2026-09-18T02:25:03.847229+00:00"
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/openai/codex/7498521d288b9b3b96ffba4eedf089d8d6e06a84/README.md",
+      "final_url": "https://raw.githubusercontent.com/openai/codex/7498521d288b9b3b96ffba4eedf089d8d6e06a84/README.md",
+      "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+      "bytes": 3334,
+      "retrieved_at": "2026-09-18T02:25:03.074978+00:00"
+    },
+    "mcp.md": {
+      "requested_url": "https://learn.chatgpt.com/docs/extend/mcp.md?surface=cli",
+      "final_url": "https://learn.chatgpt.com/docs/extend/mcp.md?surface=cli",
+      "sha256": "978cad2319d28ce8e888e890cb6bd5c5a0631d3dc0b463fc66928ba419982f1a",
+      "bytes": 18227,
+      "retrieved_at": "2026-09-18T02:28:21.756617+00:00"
+    },
+    "noninteractive.md": {
+      "requested_url": "https://learn.chatgpt.com/docs/non-interactive-mode.md",
+      "final_url": "https://learn.chatgpt.com/docs/non-interactive-mode.md",
+      "sha256": "cd4a99999324ff8a1c73e08a767126cea7c5db0bc977adc5f44eee0285b41fd8",
+      "bytes": 15063,
+      "retrieved_at": "2026-09-18T02:28:21.806640+00:00"
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/openai/codex/releases/latest",
+      "final_url": "https://api.github.com/repos/openai/codex/releases/latest",
+      "sha256": "349eaf136c5217149f3207f5dcadffca6ec6488ab3299815b6f052e7c9905905",
+      "bytes": 302805,
+      "retrieved_at": "2026-09-18T02:25:02.343060+00:00"
+    },
+    "repo.json": {
+      "requested_url": "https://api.github.com/repos/openai/codex",
+      "final_url": "https://api.github.com/repos/openai/codex",
+      "sha256": "52373844cb05acbae660a8e0ec15b637e22d799d603ab10548f45d0b5264e042",
+      "bytes": 5974,
+      "retrieved_at": "2026-09-18T02:25:00.885677+00:00"
+    },
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/openai/codex/commits?per_page=1",
+      "final_url": "https://api.github.com/repos/openai/codex/commits?per_page=1",
+      "sha256": "baa0345fcdd5ca5424050ec7522844ede4781e0d171353eec275169d2a321519",
+      "bytes": 3359,
+      "retrieved_at": "2026-09-18T02:25:01.376410+00:00"
+    },
+    "sdk-readme.md": {
+      "requested_url": "https://raw.githubusercontent.com/openai/codex/7498521d288b9b3b96ffba4eedf089d8d6e06a84/sdk/typescript/README.md",
+      "final_url": "https://raw.githubusercontent.com/openai/codex/7498521d288b9b3b96ffba4eedf089d8d6e06a84/sdk/typescript/README.md",
+      "sha256": "bc454b26a6920efb1826912be6b6ba96348ab39d9f4e70078465deb586dbbfe7",
+      "bytes": 5147,
+      "retrieved_at": "2026-09-18T02:28:21.677059+00:00"
+    },
+    "sdk.md": {
+      "requested_url": "https://learn.chatgpt.com/docs/codex-sdk.md",
+      "final_url": "https://learn.chatgpt.com/docs/codex-sdk.md",
+      "sha256": "49130c4d5e733fce538876da0518f14ba7f3b3a9a14c5efb3d84694b3eab6e45",
+      "bytes": 4603,
+      "retrieved_at": "2026-09-18T02:28:21.881098+00:00"
+    },
+    "skills.md": {
+      "requested_url": "https://learn.chatgpt.com/docs/build-skills.md",
+      "final_url": "https://learn.chatgpt.com/docs/build-skills.md",
+      "sha256": "d15791562748e64a53dfec534b8558aa522e732cec0fdedcf7257fa4ef486a20",
+      "bytes": 10925,
+      "retrieved_at": "2026-09-18T02:28:21.652008+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "locator": "README, LICENSE, selected product/runtime documents; release-* files preserve formal-tag comparisons",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main",
+  "research_checkpoint": "d3057af"
+}

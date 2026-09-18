@@ -48,6 +48,14 @@ titles = {
 51: 'Agno：SDK、AgentOS与管理产品', 52: 'CrewAI：Crews、Flows与模型连接',
 53: 'AnythingLLM：个人与团队资料应用', 54: 'vLLM v0.29.0：发布记录与服务benchmark参数',
 55: 'SGLang：吞吐与内存调优指南',
+56: 'Hermes Agent：桌面、记忆与Skills',
+57: 'LobeHub：Agent工作空间、自托管与Coding Agent整合',
+58: 'Cherry Studio：桌面、Agent运行时与企业版',
+59: 'Codex：Skills、MCP、非交互执行与SDK',
+60: 'Claude Code与Agent SDK：通用任务、Skills与MCP',
+61: 'OpenClaw：团队、记忆与Codex Harness整合',
+62: 'Agent Skills：业务方法、脚本与资源格式',
+63: 'Model Context Protocol：资料、工具与系统连接',
 }
 
 body = expand(HERE / 'main.tex')

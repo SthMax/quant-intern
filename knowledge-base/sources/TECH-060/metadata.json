@@ -1,0 +1,110 @@
+{
+  "source_id": "TECH-060",
+  "title": "Claude Code与Agent SDK：通用任务、Skills及MCP",
+  "issuer": "anthropics",
+  "repository": "anthropics/claude-code",
+  "official_url": "https://github.com/anthropics/claude-code",
+  "revision": "31a3b00bef145a0393d9dbf840a98674fec07712",
+  "commit_date": "2026-09-18T02:12:04Z",
+  "release_tag": "v2.1.276",
+  "release_published_at": "2026-09-18T02:12:26Z",
+  "retrieved_at": "2026-09-18T02:28:24.141821+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official repository, product documentation, license and selected release-tag copies; documentary comparison. No software execution.",
+  "files": {
+    "LICENSE.md": {
+      "requested_url": "https://raw.githubusercontent.com/anthropics/claude-code/31a3b00bef145a0393d9dbf840a98674fec07712/LICENSE.md",
+      "final_url": "https://raw.githubusercontent.com/anthropics/claude-code/31a3b00bef145a0393d9dbf840a98674fec07712/LICENSE.md",
+      "sha256": "728158fd1037143fad6907e8fa34804177e598b7326519503fe83cafdef849e6",
+      "bytes": 150,
+      "retrieved_at": "2026-09-18T02:28:21.524638+00:00"
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/anthropics/claude-code/31a3b00bef145a0393d9dbf840a98674fec07712/README.md",
+      "final_url": "https://raw.githubusercontent.com/anthropics/claude-code/31a3b00bef145a0393d9dbf840a98674fec07712/README.md",
+      "sha256": "aa0d8b80ac083e1591be0789273f447058cc9187b4331634a5614155da27778d",
+      "bytes": 2873,
+      "retrieved_at": "2026-09-18T02:25:03.812638+00:00"
+    },
+    "agent-sdk-article.html": {
+      "requested_url": "https://claude.com/blog/building-agents-with-the-claude-agent-sdk",
+      "final_url": "https://claude.com/blog/building-agents-with-the-claude-agent-sdk",
+      "sha256": "83e64f01630b7cd3e766914f90b3a7860eb2a52fa180d8defab5b28eee8b0208",
+      "bytes": 555454,
+      "retrieved_at": "2026-09-18T02:28:24.141821+00:00"
+    },
+    "agent-sdk-article.md": {
+      "requested_url": "https://claude.com/blog/building-agents-with-the-claude-agent-sdk",
+      "final_url": "https://claude.com/blog/building-agents-with-the-claude-agent-sdk",
+      "sha256": "046d54f89b1245e4ff7521024830b64a44fa8bd1803d40de0820d1941138cd19",
+      "bytes": 15279,
+      "retrieved_at": "2026-09-18T02:28:24.141821+00:00",
+      "extraction_method": "Defuddle from separately preserved HTML"
+    },
+    "headless.md": {
+      "requested_url": "https://code.claude.com/docs/en/headless.md",
+      "final_url": "https://code.claude.com/docs/en/headless.md",
+      "sha256": "a17fc295554efd8ec6860edf3ea0b45ba60edfe431bb888ff5bc1d86530c759c",
+      "bytes": 36448,
+      "retrieved_at": "2026-09-18T02:28:22.597291+00:00"
+    },
+    "mcp.md": {
+      "requested_url": "https://code.claude.com/docs/en/mcp.md",
+      "final_url": "https://code.claude.com/docs/en/mcp.md",
+      "sha256": "d872a8aded51160476e935bad371f10a06e31d244f23f3f4f28f057c0f0ca36e",
+      "bytes": 117610,
+      "retrieved_at": "2026-09-18T02:28:22.526646+00:00"
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/anthropics/claude-code/releases/latest",
+      "final_url": "https://api.github.com/repos/anthropics/claude-code/releases/latest",
+      "sha256": "2880a31509eec54329b035e3a748c7f320dc0cc6a254aa954716fa1b327c77bb",
+      "bytes": 17209,
+      "retrieved_at": "2026-09-18T02:25:02.004348+00:00"
+    },
+    "repo.json": {
+      "requested_url": "https://api.github.com/repos/anthropics/claude-code",
+      "final_url": "https://api.github.com/repos/anthropics/claude-code",
+      "sha256": "64c297e0b3a57d0ec851a89c0451499ec46549962d78565195edde88320de74e",
+      "bytes": 6879,
+      "retrieved_at": "2026-09-18T02:25:00.936912+00:00"
+    },
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/anthropics/claude-code/commits?per_page=1",
+      "final_url": "https://api.github.com/repos/anthropics/claude-code/commits?per_page=1",
+      "sha256": "500f8ac694156d92b4e070e64a12ca7df395cbab54ebc48cad9e824956b09e13",
+      "bytes": 3392,
+      "retrieved_at": "2026-09-18T02:25:01.472144+00:00"
+    },
+    "sdk-overview.html": {
+      "requested_url": "https://platform.claude.com/docs/en/agent-sdk/overview.md",
+      "final_url": "https://code.claude.com/docs/en/agent-sdk",
+      "sha256": "3badb6ff95176dfe63ad9da66223839ba33a2c5af463d81a9b14ebb2441263ce",
+      "bytes": 377816,
+      "retrieved_at": "2026-09-18T02:28:23.979070+00:00"
+    },
+    "sdk-overview.md": {
+      "requested_url": "https://platform.claude.com/docs/en/agent-sdk/overview.md",
+      "final_url": "https://code.claude.com/docs/en/agent-sdk",
+      "sha256": "4bd8545b307f2d23353ca76d0e5257fdde5322603ba02f9675d45f811186e663",
+      "bytes": 6109,
+      "retrieved_at": "2026-09-18T02:28:23.979070+00:00",
+      "extraction_method": "Defuddle from separately preserved HTML"
+    },
+    "skills.md": {
+      "requested_url": "https://code.claude.com/docs/en/skills.md",
+      "final_url": "https://code.claude.com/docs/en/skills.md",
+      "sha256": "5a2e0e2ee821fb7b79bff173358f48c036a2c9406a0446bc8292aa0221eee4af",
+      "bytes": 115336,
+      "retrieved_at": "2026-09-18T02:28:22.295937+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "locator": "README, LICENSE, selected product/runtime documents; release-* files preserve formal-tag comparisons",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main",
+  "research_checkpoint": "d3057af"
+}

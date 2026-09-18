@@ -1,5 +1,10 @@
 \section{版本与资料口径}
 
+\subsection{研究方法与评测口径}
+本报告为官方资料研究，尚未执行本项目的本地模型或工作流实验。功能和性能描述注明发布方与任务口径，权重体量取自制品索引；财报比较使用虚构数据，部署组合为架构设计示例。
+
+Gemma的66.4\%与44.1\%对应同卡MRCR v2的128K、8 needle平均结果；GLM的73.0为Toolathlon Verified三次独立运行的pass@1平均结果；Kimi的71.6和54.4来自其模型卡引用的Vals AI金融任务成绩，模型列标为最高思考强度。正文按各自评测解释能力特点，跨模型比较另需统一任务、工具和生成预算。
+
 \subsection{模型制品与上下文}
 正文权重体量来自固定模型修订的\texttt{model.safetensors.index.json}中\texttt{metadata.total\_size}，按十进制GB换算并保留两位小数。该数字统计对应制品的数值数组（tensor）字节；运行内存另包含上下文缓存与计算开销。
 
@@ -35,14 +40,16 @@ Open WebUI & v0.11.3 & 产品功能与品牌许可采用当前资料快照。\\
 LibreChat & 源码及当前文档 & latest-release API未取得记录，部分新功能为实验性。\\
 Onyx & v4.7.7 & Community与Enterprise内容区分。\\
 RAGFlow & v0.27.2 & 资料处理及代码沙箱分别配置。\\
-Goose & v1.50.1 & 当前官方仓库为aaif-goose/goose。\\
-OpenClaw & v2026.9.4 & 个人/团队使用需结合官方信任模型。\\
+Hermes Agent & v2026.9.14 & 桌面与Skills文档同时保存源码及正式标签。\\
+LobeHub & v2.2.17 & 开发分支canary；Codex整合另存正式标签文档。\\
+Cherry Studio & v2.0.14 & Agent运行时与Code Mate文档另存正式标签。\\
+OpenClaw & v2026.9.4 & 团队与Codex整合另存正式标签文档。\\
 Agno & v3.0.10 & SDK、运行时与管理产品分层。\\
 CrewAI & 1.15.22 & 已取得对应版本概念文档。\\
 AnythingLLM & v1.16.1 & 桌面、Docker及商业产品区分。\\
 Microsoft Agent Framework & .NET子包1.21.0 & 不是所有语言包的统一版本号。\\
-Codex CLI & 正式release 0.154.0 & 本机包0.149.1，未升级或执行模型。\\
-Claude Code & v2.1.273 & 商业许可与厂商支持范围单独判断。\\
+Codex CLI & 正式release 0.155.0 & 9月18日取得新发布记录及官方执行文档。\\
+Claude Code & v2.1.276 & CLI与Agent SDK能力分别记录。\\
 \end{longtable}
 }
 \smallnote{依据各官方repo的release记录、所读包索引及专题文档；完整修订、时间与哈希保存在报告数据清单。}
@@ -63,13 +70,16 @@ Kimi的内部使用定义要求软件、输出及底层能力均不向第三方�
 类别 & 本轮资料所体现的条件\\\midrule
 标准许可核心 & 多数引擎及开发框架采用MIT或Apache 2.0，第三方组件、模型和企业支持另行适用。\\
 Open WebUI & LICENSE第4项规定品牌保留；滚动30天内不超过50名自然人、书面许可或企业授权等为相应例外。该人数用于判断品牌修改例外。\\
+LobeHub & Community License基于Apache并附加商用条件；原版可商用，开发并分发衍生作品需商业许可。\\
+Cherry Studio & 社区版AGPL-3.0，允许商用；修改、分发及条款规定的网络交互涉及相应源码义务。企业版另提供集中管理与商业授权。\\
+Hermes / OpenClaw & 核心均为MIT，模型、第三方扩展及工具服务各自适用相应授权。\\
 Dify & 修改版Apache许可对多租户及前端标识设限；每个workspace计为一个租户。多租户服务和去除或修改前端标识涉及附加授权；不使用其前端时，标识限制不适用。\\
 Onyx / Flowise & 普通代码与指定企业目录或文件分别授权。\\
 n8n & Sustainable Use及企业许可，内部用途与对外提供方式分别判断。\\
 Agno等产品体系 & 开放SDK与商业管理界面、托管产品分别授权。\\
 Claude Code & 当前repo保留所有权利，软件修改与使用适用其商业授权。\\\bottomrule
 \end{tabularx}
-\source{对应项目LICENSE及产品说明。\src{TECH-043}\src{TECH-030}\src{TECH-045}\src{TECH-033}\src{TECH-034}\src{TECH-051}\src{TECH-039}}
+\source{对应项目LICENSE及产品说明。\src{TECH-043}\src{TECH-057}\src{TECH-058}\src{TECH-056}\src{TECH-061}\src{TECH-030}\src{TECH-045}\src{TECH-033}\src{TECH-034}\src{TECH-051}\src{TECH-039}}
 \end{table}
 
 \subsection{应用连接的协议差异}\label{app:protocol}
@@ -86,8 +96,3 @@ OpenCode / pi & 提供自定义模型连接；pi可明确选择协议。 & 模�
 \end{tabularx}
 \source{固定源码或官方配置文档。\src{TECH-023}\src{TECH-024}\src{TECH-025}\src{TECH-038}\src{TECH-035}\src{TECH-036}}
 \end{table}
-
-\subsection{研究方法与评测口径}
-本报告为官方资料研究，尚未执行本项目的本地模型或工作流实验。功能和性能描述注明发布方与任务口径，权重体量取自制品索引；财报比较使用虚构数据，部署组合为架构设计示例。
-
-Gemma的66.4\%与44.1\%对应同卡MRCR v2的128K、8 needle平均结果；GLM的73.0为Toolathlon Verified三次独立运行的pass@1平均结果；Kimi的71.6和54.4来自其模型卡引用的Vals AI金融任务成绩，模型列标为最高思考强度。正文按各自评测解释能力特点，跨模型比较另需统一任务、工具和生成预算。

@@ -1,6 +1,6 @@
 # 原始来源与研究阅读入口
 
-2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。当时为125个来源ID。2026-09-16累计新增19项Phase 2技术/许可来源，并将5项首轮模型资料转为历史辅助阅读，2026-09-17再新增23项serving/harness来源，当日为167项；9月18日补充13项，**当前180个稳定来源ID：161个主阅读记录、15个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
+2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。当时为125个来源ID。2026-09-16累计新增19项Phase 2技术/许可来源，并将5项首轮模型资料转为历史辅助阅读，2026-09-17再新增23项serving/harness来源，当日为167项；9月18日先补充13项，再新增8项Harness专题来源，**当前188个稳定来源ID：169个主阅读记录、15个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
 
 默认检索按[reading-index.json](../reading-index.json)中的`collection_role=main`及`reading_path`取文本。需要身份、历史或供应商背景时再读[辅助目录](../reference/README.md)。不要把原始HTML/PDF、历史审计、图片元数据或来源链索引递归当作新文章。
 
@@ -237,3 +237,18 @@
 | TECH-053 | Mintplex-Labs/anything-llm official product, repository and license research | [原文](TECH-053/original.md) · [元数据/专题文件](TECH-053/metadata.json) | 主阅读；官方功能和条件，非实测 |
 | TECH-054 | vLLM v0.29.0 serving benchmark and current release | [原文](TECH-054/original.md) · [元数据/专题文件](TECH-054/metadata.json) | 主阅读；官方功能和条件，非实测 |
 | TECH-055 | SGLang throughput and memory tuning guide | [原文](TECH-055/original.md) · [元数据/专题文件](TECH-055/metadata.json) | 主阅读；官方功能和条件，非实测 |
+
+## 9月18日：Hermes、工作台与Coding Agent工作流
+
+检查点`d3057af`之后新增，原有TECH记录保持原样。
+
+| ID | 标题 | 阅读与原件 | 范围 |
+|---|---|---|---|
+| TECH-056 | Hermes Agent：桌面、记忆、技能学习与本地执行 | [原文](TECH-056/original.md) · [元数据与专题](TECH-056/metadata.json) | 主阅读；官方功能、许可与版本 |
+| TECH-057 | LobeHub：Agent工作空间、自托管与Coding Agent整合 | [原文](TECH-057/original.md) · [元数据与专题](TECH-057/metadata.json) | 主阅读；官方功能、许可与版本 |
+| TECH-058 | Cherry Studio：桌面工作台、Agent运行时与企业版 | [原文](TECH-058/original.md) · [元数据与专题](TECH-058/metadata.json) | 主阅读；官方功能、许可与版本 |
+| TECH-059 | Codex：Skills、MCP、非交互执行与SDK | [原文](TECH-059/original.md) · [元数据与专题](TECH-059/metadata.json) | 主阅读；官方功能、许可与版本 |
+| TECH-060 | Claude Code与Agent SDK：通用任务、Skills及MCP | [原文](TECH-060/original.md) · [元数据与专题](TECH-060/metadata.json) | 主阅读；官方功能、许可与版本 |
+| TECH-061 | OpenClaw：团队、记忆与Codex Harness整合 | [原文](TECH-061/original.md) · [元数据与专题](TECH-061/metadata.json) | 主阅读；官方功能、许可与版本 |
+| TECH-062 | Agent Skills：可复用方法与脚本的开放格式 | [原文](TECH-062/original.md) · [元数据与专题](TECH-062/metadata.json) | 主阅读；官方功能、许可与版本 |
+| TECH-063 | MCP：连接工具、资料与业务系统的协议 | [原文](TECH-063/original.md) · [元数据与专题](TECH-063/metadata.json) | 主阅读；官方功能、许可与版本 |

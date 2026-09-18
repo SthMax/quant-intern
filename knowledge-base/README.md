@@ -1,6 +1,8 @@
 # Knowledge Base
 
-> 2026-09-18在检查点`9e5c2fe`后深化[非coding Harness与应用调研](infrastructure/harness-survey-2026-09-17.md)，正文按产品用途、优点和基金业务用法重写；[Serving调研](infrastructure/serving-framework-survey-2026-09-17.md)增加任务负载和时延达标吞吐比较。当前索引180项：161主阅读、15辅助、4来源链。
+> 2026-09-18新增[Harness比较与Coding Agent工作流研究](infrastructure/harness-survey-2026-09-17.md)：Open WebUI/LobeHub/Cherry Studio、Hermes/OpenClaw，以及Skills/MCP与通用执行环境。新增TECH-056–063；当前188项：169主阅读、15辅助、4来源链。修改前检查点为`d3057af`。
+
+> 2026-09-18在检查点`9e5c2fe`后深化[非coding Harness与应用调研](infrastructure/harness-survey-2026-09-17.md)，正文按产品用途、优点和基金业务用法重写；[Serving调研](infrastructure/serving-framework-survey-2026-09-17.md)增加任务负载和时延达标吞吐比较。该轮索引180项：161主阅读、15辅助、4来源链。
 
 > 2026-09-17新增[Serving framework调研](infrastructure/serving-framework-survey-2026-09-17.md)与[Harness调研](infrastructure/harness-survey-2026-09-17.md)。当日总索引167项：149主阅读、14辅助、4来源链。新增23组官方软件/许可来源，明确框架能力、API兼容和实际运行验证的区别。
 

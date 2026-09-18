@@ -69,11 +69,13 @@ open; completed research artifacts do not establish those approvals.
 ## Current deliverables
 
 The [Phase 2 technical research report](reports/phase2-technical-research-2026-09-18/README.md)
-is available as of 18 September: 24 pages introducing and analyzing eight models,
+is available as of 18 September: 26 pages introducing and analyzing eight models,
 licenses, serving frameworks, business applications and deployment patterns.
-The current revision clarifies model capabilities and memory requirements, repairs
-the architecture diagram, and connects non-coding applications with personal and
-shared reference stacks through a financial-report/CSV example.
+The current revision compares Open WebUI, LobeHub and Cherry Studio, focuses
+personal task agents on Hermes and OpenClaw, and explains coding agents with
+Skills/MCP as a general execution route. A financial-report/CSV example connects
+these applications with personal and shared reference stacks.
+The final PDF is distributed in the [Week 3 release](https://github.com/SthMax/ms-intern/releases/tag/phase2-week3-2026-09-18).
 Its PDF, LaTeX source, references and validation records are kept together in the
 report directory. It presents documentary research; local PoC results remain
 outstanding.

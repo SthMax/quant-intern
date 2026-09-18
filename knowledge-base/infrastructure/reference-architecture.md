@@ -22,8 +22,8 @@ Prioritize vLLM/SGLang for shared GPU serving, with TokenSpeed as a targeted
 comparison. On Mac compare MLX-LM/MLX-VLM with llama.cpp Metal. For large-memory
 heterogeneous inference evaluate KTransformers/SGLang, llama.cpp and relevant
 ik_llama.cpp optimizations. Workflow and general-agent choices are independent:
-Dify/LangGraph address business applications; OpenCode/pi and protocol-compatible
-Codex CLI address personal research/coding agents. This is a research shortlist,
+Dify/LangGraph address business processes; Hermes, OpenCode/pi and
+protocol-compatible Codex CLI address general research and file tasks. This is a research shortlist,
 not a selected production stack.
 
 Interfaces must specify more than an "OpenAI-compatible" label: Chat Completions,
@@ -32,26 +32,40 @@ The model service and harness combination must pass protocol and end-to-end task
 checks. The new survey distinguishes Claude Code's technically documented
 third-party endpoint routes from its proprietary license and vendor support.
 
-## Non-coding application layer — 18 September 2026
+## Employee workspaces and general execution — 18 September 2026
 
-The updated harness survey now separates employee-facing products from the
-frameworks used to build them. For a shared internal AI workspace, compare Open
-WebUI and LibreChat; AnythingLLM is an additional personal-document option.
-For connected enterprise research and documents, compare Onyx and RAGFlow, with
-Dify for repeatable business applications. Goose joins the personal task-agent
-shortlist; OpenClaw is evaluated against its documented trust boundary. These
-products can share an inference service without sharing all data or tool access.
+The [harness survey](harness-survey-2026-09-17.md) uses Open WebUI as the
+shared-chat reference and adds LobeHub for agent/project collaboration and
+Cherry Studio for the personal desktop. LibreChat and AnythingLLM remain
+comparators. Hermes Agent is the principal personal-task example; OpenClaw
+illustrates persistent channels, device integration and replaceable harnesses.
 
-For custom applications, compare LangGraph, Microsoft Agent Framework, Agno and
-CrewAI by the business process to implement. The AutoGen maintenance transition
-is documented in the survey. Existing coding tools remain relevant to technical
-researchers, but are no longer the default recommendation for every non-coding
-employee.
+Coding agents are also general execution environments. Codex and Claude Code
+provide file operations, tools, context management and resumable work; Skills
+package business methods, scripts provide fixed calculations and validation,
+and MCP connects data and business services. LobeHub Desktop, Cherry Studio
+and OpenClaw already document integrations with coding-agent runtimes.
 
-Capacity estimates should distinguish interactive chat, document batches and
-multi-step agent tasks. Report service-level-compliant request throughput and
-quality-qualified task completion separately; framework benchmark goodput does
-not evaluate the correctness of financial outputs.
+A reference task can therefore use either a dedicated process application or
+a general agent with a reusable business Skill. A business platform may trigger
+and track the task, call Codex/Claude Agent SDK for research, validate outputs
+with fixed code, then manage review and delivery. Local-model routes use the
+selected harness's own provider configuration; ordinary workspace chat and
+embedded/external agent drivers have separate runtime configurations.
+
+```mermaid
+flowchart LR
+    U[Employee workspace or task platform] --> A[General agent runtime]
+    K[Business Skill and output template] --> A
+    A <--> M[Local or shared model service]
+    A <--> T[MCP tools and fixed calculation services]
+    A --> R[Files, citations and task records]
+```
+
+Onyx/RAGFlow remain document/retrieval components; Dify/n8n and custom business
+systems organize fixed processing, approvals and durable task state. These
+components can be combined with the general-agent route. Primary evidence is
+archived in TECH-056–063, with formal-release copies for selected integrations.
 
 ## Updated design basis — 16 September 2026
 

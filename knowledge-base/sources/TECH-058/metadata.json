@@ -1,0 +1,122 @@
+{
+  "source_id": "TECH-058",
+  "title": "Cherry Studio：桌面工作台、Agent运行时与企业版",
+  "issuer": "CherryHQ",
+  "repository": "CherryHQ/cherry-studio",
+  "official_url": "https://github.com/CherryHQ/cherry-studio",
+  "revision": "142f3463f287b5da7246d15230d53b46298f72ff",
+  "commit_date": "2026-09-17T19:03:48Z",
+  "release_tag": "v2.0.14",
+  "release_published_at": "2026-09-09T13:19:14Z",
+  "retrieved_at": "2026-09-18T02:28:21.602373+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official repository, product documentation, license and selected release-tag copies; documentary comparison. No software execution.",
+  "files": {
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/LICENSE",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "bytes": 34523,
+      "retrieved_at": "2026-09-18T02:25:04.456870+00:00"
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/README.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/README.md",
+      "sha256": "e775f21999c1bf39e7b7dcf00bedb693c5cd28d0f059bd153fdaf18535b52ef4",
+      "bytes": 19398,
+      "retrieved_at": "2026-09-18T02:25:03.495798+00:00"
+    },
+    "agent-loop.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/docs/references/ai/agent-loop.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/docs/references/ai/agent-loop.md",
+      "sha256": "ad3cd072aecfd63147b59ca97dffd97c9d2cb31a9dfecdbd6f86d3d1809c9a13",
+      "bytes": 6695,
+      "retrieved_at": "2026-09-18T02:28:20.296203+00:00"
+    },
+    "agent-runtime.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/docs/references/ai/agent-session-runtime.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/docs/references/ai/agent-session-runtime.md",
+      "sha256": "45d111b9c9a1938a33b1d47f9b3bce555524493442ff0bb41cea690bbe776735",
+      "bytes": 52501,
+      "retrieved_at": "2026-09-18T02:28:20.612660+00:00"
+    },
+    "claude-code-skill.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/resources/code-cli-skills/code-mate-claude-code/SKILL.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/resources/code-cli-skills/code-mate-claude-code/SKILL.md",
+      "sha256": "a770224363cb19910046920013ced7af63d0b5540074c405aa0a83999d3c0b21",
+      "bytes": 1407,
+      "retrieved_at": "2026-09-18T02:28:20.985448+00:00"
+    },
+    "codex-skill.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/resources/code-cli-skills/code-mate-codex/SKILL.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/resources/code-cli-skills/code-mate-codex/SKILL.md",
+      "sha256": "f46b1e22ab1e36bbe9657f62007c1df0f85b156a4a43e7fa1d4baf443ba0382f",
+      "bytes": 1449,
+      "retrieved_at": "2026-09-18T02:28:20.415067+00:00"
+    },
+    "document-tools.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/resources/skills/cherry-tool-guide/references/documents.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/resources/skills/cherry-tool-guide/references/documents.md",
+      "sha256": "b042df83ec3dba233face5f8a0b56ecb2d0951e7f8ea2691cd30386943ca98c6",
+      "bytes": 3205,
+      "retrieved_at": "2026-09-18T02:28:20.521408+00:00"
+    },
+    "local-models.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/docs/references/ai/local-models.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/docs/references/ai/local-models.md",
+      "sha256": "5c1f963f740d14136c552009d3ecbb94cabd21d131436fc86a810f13b4ce2124",
+      "bytes": 19293,
+      "retrieved_at": "2026-09-18T02:28:20.651416+00:00"
+    },
+    "release-agent-runtime.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/v2.0.14/docs/references/ai/agent-session-runtime.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/v2.0.14/docs/references/ai/agent-session-runtime.md",
+      "sha256": "a1973f67584b850be3cb4730c7706139623df3082a9ea86d5bd8f51611026bdf",
+      "bytes": 52051,
+      "retrieved_at": "2026-09-18T02:28:21.602373+00:00"
+    },
+    "release-codex-skill.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/v2.0.14/resources/code-cli-skills/code-mate-codex/SKILL.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/v2.0.14/resources/code-cli-skills/code-mate-codex/SKILL.md",
+      "sha256": "f46b1e22ab1e36bbe9657f62007c1df0f85b156a4a43e7fa1d4baf443ba0382f",
+      "bytes": 1449,
+      "retrieved_at": "2026-09-18T02:28:20.873185+00:00"
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/CherryHQ/cherry-studio/releases/latest",
+      "final_url": "https://api.github.com/repos/CherryHQ/cherry-studio/releases/latest",
+      "sha256": "dc84024034d1edd73897fb7b7bfaf3ac4d7159b4b8d49d1d1bcf0ae872e15c29",
+      "bytes": 81953,
+      "retrieved_at": "2026-09-18T02:25:02.566400+00:00"
+    },
+    "repo.json": {
+      "requested_url": "https://api.github.com/repos/CherryHQ/cherry-studio",
+      "final_url": "https://api.github.com/repos/CherryHQ/cherry-studio",
+      "sha256": "52fa19cfa3cc8a3ae36f1329931528a768887e3c0c8313378446d57e8030eed6",
+      "bytes": 6606,
+      "retrieved_at": "2026-09-18T02:25:00.992561+00:00"
+    },
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/CherryHQ/cherry-studio/commits?per_page=1",
+      "final_url": "https://api.github.com/repos/CherryHQ/cherry-studio/commits?per_page=1",
+      "sha256": "171afd05793a56251280d67b37c68896304eeacbfa4a9ad72f38f463f7a9d4e2",
+      "bytes": 4379,
+      "retrieved_at": "2026-09-18T02:25:01.835388+00:00"
+    },
+    "skills.md": {
+      "requested_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/resources/skills/cherry-tool-guide/references/skills.md",
+      "final_url": "https://raw.githubusercontent.com/CherryHQ/cherry-studio/142f3463f287b5da7246d15230d53b46298f72ff/resources/skills/cherry-tool-guide/references/skills.md",
+      "sha256": "40384230b938e20a4213d4761dd6c3a464d64727d873cc552c9f9f869523ff14",
+      "bytes": 1959,
+      "retrieved_at": "2026-09-18T02:28:20.415972+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "locator": "README, LICENSE, selected product/runtime documents; release-* files preserve formal-tag comparisons",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main",
+  "research_checkpoint": "d3057af"
+}

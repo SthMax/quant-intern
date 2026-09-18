@@ -4,11 +4,11 @@
   "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
   "scope": "Main reading paths for research retrieval; supporting and redirect records are provenance/context, not independent main readings. Do not recursively ingest sources/, reference/ or audits/.",
   "counts": {
-    "main": 161,
+    "main": 169,
     "redirect": 4,
     "supporting": 15
   },
-  "registered_source_ids": 180,
+  "registered_source_ids": 188,
   "records": [
     {
       "source_id": "FUND-001",
@@ -2055,11 +2055,107 @@
       "text_kind": "verbatim_official_markdown",
       "available_text": true,
       "phase": 2
+    },
+    {
+      "source_id": "TECH-056",
+      "title": "Hermes Agent：桌面、记忆、技能学习与本地执行",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-056/original.md",
+      "metadata_path": "sources/TECH-056/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-057",
+      "title": "LobeHub：Agent工作空间、自托管与Coding Agent整合",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-057/original.md",
+      "metadata_path": "sources/TECH-057/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-058",
+      "title": "Cherry Studio：桌面工作台、Agent运行时与企业版",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-058/original.md",
+      "metadata_path": "sources/TECH-058/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-059",
+      "title": "Codex：Skills、MCP、非交互执行与SDK",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-059/original.md",
+      "metadata_path": "sources/TECH-059/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-060",
+      "title": "Claude Code与Agent SDK：通用任务、Skills及MCP",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-060/original.md",
+      "metadata_path": "sources/TECH-060/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-061",
+      "title": "OpenClaw：团队、记忆与Codex Harness整合",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-061/original.md",
+      "metadata_path": "sources/TECH-061/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_repository_readme",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-062",
+      "title": "Agent Skills：可复用方法与脚本的开放格式",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-062/original.md",
+      "metadata_path": "sources/TECH-062/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_official_markdown",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-063",
+      "title": "MCP：连接工具、资料与业务系统的协议",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-063/original.md",
+      "metadata_path": "sources/TECH-063/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_official_markdown",
+      "available_text": true,
+      "phase": 2
     }
   ],
   "extra_reference_readings": [
     "reference/ccf-financial-cases.md"
   ],
   "report_selection_note": "companies/quant-research-2026-09-09.md",
-  "phase2_update": "2026-09-18: TECH-043–055 added after checkpoint 9e5c2fe. AutoGen maintenance notice is supporting context; non-coding product coverage and serving evaluation expanded. Phase 1 entries unchanged."
+  "phase2_update": "2026-09-18: TECH-056–063 added after checkpoint d3057af; Hermes/LobeHub/Cherry comparison and coding agents with Skills/MCP."
 }

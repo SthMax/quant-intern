@@ -104,3 +104,13 @@ MIT没有与Apache第3节相同的明确专利授权段落，不能把简短许�
 **2026-09-18非coding产品补充：**harness正文新增Open WebUI品牌条款、Onyx社区/企业代码边界、LibreChat代码执行服务的独立运行条件及Agno管理平台的产品分层。准确范围与原文见该调研第9节及TECH-043–053；这些条件不改变模型权重本身的许可。
 
 模型LICENSE均由官方repo固定修订取得，Google许可由模型卡链接的官方页面取得，Apache全文另由ASF取得。模型卡、许可、来源URL与SHA-256在TECH-004、006、008、012–017、019的归档及metadata中相互对应。Meta开放计划见TECH-018。人工法律审阅未完成，以上没有替代内部采用结论。
+
+
+## 9月18日补充：本轮工作台与通用Agent
+
+| 项目 | 当前官方许可与产品安排 | 原文 |
+|---|---|---|
+| Hermes Agent / OpenClaw | 核心MIT，按许可保留声明；模型及第三方工具单独适用各自授权。 | [Hermes](../sources/TECH-056/LICENSE)、[OpenClaw](../sources/TECH-061/LICENSE) |
+| LobeHub | Community License基于Apache附加条件：允许不修改源码的前后台商用；开发并分发衍生作品需商业许可。 | [LICENSE](../sources/TECH-057/LICENSE) |
+| Cherry Studio | 社区版AGPL-3.0，原文允许商用；修改和分发对应相应源码义务，第13节规定修改版本通过网络与用户交互时的源码提供要求。Enterprise另有集中管理与商业授权。 | [LICENSE](../sources/TECH-058/LICENSE)、[产品区别](../sources/TECH-058/original.md) |
+| Codex CLI / Claude Code | Codex CLI核心Apache 2.0；Claude Code为商业产品。复用Skills、MCP或在第三方桌面内启动CLI时，实际模型服务和该软件授权继续分别适用。 | [Codex](../sources/TECH-059/LICENSE)、[Claude Code](../sources/TECH-060/LICENSE.md) |

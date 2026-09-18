@@ -1,0 +1,122 @@
+{
+  "source_id": "TECH-056",
+  "title": "Hermes Agent：桌面、记忆、技能学习与本地执行",
+  "issuer": "NousResearch",
+  "repository": "NousResearch/hermes-agent",
+  "official_url": "https://github.com/NousResearch/hermes-agent",
+  "revision": "e83b1d51f13a08b424636f0b519db86a35aa7bd7",
+  "commit_date": "2026-09-18T01:52:15Z",
+  "release_tag": "v2026.9.14",
+  "release_published_at": "2026-09-14T16:04:14Z",
+  "retrieved_at": "2026-09-18T02:28:19.645793+00:00",
+  "archive_status": "raw",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "verbatim_repository_readme",
+  "verification_scope": "Official repository, product documentation, license and selected release-tag copies; documentary comparison. No software execution.",
+  "files": {
+    "LICENSE": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/LICENSE",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/LICENSE",
+      "sha256": "821556e6336796450ab852d375117b48a4887e71d255794fd6318d99982a5ab6",
+      "bytes": 1070,
+      "retrieved_at": "2026-09-18T02:25:03.846376+00:00"
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/README.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/README.md",
+      "sha256": "1d733df90c2836c1b9cd8d7307d2d222023456b7b55b5036c2fbb54fd8bcfdf4",
+      "bytes": 17688,
+      "retrieved_at": "2026-09-18T02:25:02.567866+00:00"
+    },
+    "cron.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/cron.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/cron.md",
+      "sha256": "8e5d0ad11fa0db11642a990b0e94e4993d97194192c71467f04403385c073462",
+      "bytes": 67495,
+      "retrieved_at": "2026-09-18T02:28:19.645793+00:00"
+    },
+    "desktop.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/desktop.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/desktop.md",
+      "sha256": "96e3c1632b92ae241457bffc0a3367d7456e99ca78315d3bd5f1f652329cb4b6",
+      "bytes": 71832,
+      "retrieved_at": "2026-09-18T02:28:19.361259+00:00"
+    },
+    "local-models.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/local-models.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/local-models.md",
+      "sha256": "9cbb864ed687d81bc2802186e2e6cb0dfe5004a967aa132d2f67ebcd11d736df",
+      "bytes": 6375,
+      "retrieved_at": "2026-09-18T02:28:19.161335+00:00"
+    },
+    "mcp.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/mcp.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/mcp.md",
+      "sha256": "c64c47b3a7d3a1c3362e04cefa239df8c4f17ee86f2f168291449aaae516cab5",
+      "bytes": 42022,
+      "retrieved_at": "2026-09-18T02:28:19.355283+00:00"
+    },
+    "memory.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/memory.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/memory.md",
+      "sha256": "7f84b8d73f50517fefdc0831975cd72dfae9b69785190b878aa14eeba4045b2d",
+      "bytes": 25290,
+      "retrieved_at": "2026-09-18T02:28:19.319458+00:00"
+    },
+    "release-desktop.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/v2026.9.14/website/docs/user-guide/desktop.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/v2026.9.14/website/docs/user-guide/desktop.md",
+      "sha256": "de9012f4c93c4971fc0a5c700999cc4ee9492ecb94057cfcd3f8f83739ef0d85",
+      "bytes": 64272,
+      "retrieved_at": "2026-09-18T02:28:19.341114+00:00"
+    },
+    "release-skills.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/v2026.9.14/website/docs/user-guide/features/skills.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/v2026.9.14/website/docs/user-guide/features/skills.md",
+      "sha256": "e8004cffc6ac27c2b3f6e36c0c477fe696267c7dbbe3caadfdc17108d4c5ed94",
+      "bytes": 52828,
+      "retrieved_at": "2026-09-18T02:28:19.326823+00:00"
+    },
+    "release.json": {
+      "requested_url": "https://api.github.com/repos/NousResearch/hermes-agent/releases/latest",
+      "final_url": "https://api.github.com/repos/NousResearch/hermes-agent/releases/latest",
+      "sha256": "81de72aa87b9aa21de44ff4ef640c616e189b33fe638849f6be985f987750b03",
+      "bytes": 5010,
+      "retrieved_at": "2026-09-18T02:25:01.720647+00:00"
+    },
+    "repo.json": {
+      "requested_url": "https://api.github.com/repos/NousResearch/hermes-agent",
+      "final_url": "https://api.github.com/repos/NousResearch/hermes-agent",
+      "sha256": "25ba6de0708644d27af189dfea9daaa31bc02a133a2f6620a40451430a91c31a",
+      "bytes": 6747,
+      "retrieved_at": "2026-09-18T02:25:00.712123+00:00"
+    },
+    "revision.json": {
+      "requested_url": "https://api.github.com/repos/NousResearch/hermes-agent/commits?per_page=1",
+      "final_url": "https://api.github.com/repos/NousResearch/hermes-agent/commits?per_page=1",
+      "sha256": "dd7641a0cd4420e76eae73e1ee3d2979cb4375b5e207a4f39a7b3672c32d76a7",
+      "bytes": 3735,
+      "retrieved_at": "2026-09-18T02:25:01.230534+00:00"
+    },
+    "skills.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/skills.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/skills.md",
+      "sha256": "65bf68bf767205101b471ad4c5b3dfd663b282dfa0fe1cc5c32397cc2fbab1b6",
+      "bytes": 56911,
+      "retrieved_at": "2026-09-18T02:28:19.348439+00:00"
+    },
+    "tools.md": {
+      "requested_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/tools.md",
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/e83b1d51f13a08b424636f0b519db86a35aa7bd7/website/docs/user-guide/features/tools.md",
+      "sha256": "bfb1183328b486c09307dbf2355a3d09680fd918dc9a069920e00b7503020878",
+      "bytes": 14555,
+      "retrieved_at": "2026-09-18T02:28:19.393333+00:00"
+    }
+  },
+  "retrieval_failures": {},
+  "locator": "README, LICENSE, selected product/runtime documents; release-* files preserve formal-tag comparisons",
+  "used_in": "knowledge-base/infrastructure/harness-survey-2026-09-17.md",
+  "collection_role": "main",
+  "research_checkpoint": "d3057af"
+}
