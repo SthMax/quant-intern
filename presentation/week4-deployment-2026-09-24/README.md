@@ -1,6 +1,6 @@
 # 第四周：本地大模型部署方案
 
-[第四周Release：四份PDF](https://github.com/SthMax/ms-intern/releases/tag/phase2-week4-2026-09-24)
+[第四周Release：四份PDF](https://github.com/SthMax/quant-intern/releases/tag/phase2-week4-2026-09-24)
 
 [演示PDF](output/week4-deployment-options.pdf)
 

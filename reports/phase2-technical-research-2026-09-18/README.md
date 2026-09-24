@@ -4,7 +4,7 @@
 
 Phase 2第3周阶段报告，资料截至2026年9月18日。沿用Phase 1报告的LaTeX排版和正式叙述方式，以介绍与分析为主。
 
-- [GitHub Release](https://github.com/SthMax/ms-intern/releases/tag/phase2-week3-2026-09-18)：本次交付附件为最终PDF。
+- [GitHub Release](https://github.com/SthMax/quant-intern/releases/tag/phase2-week3-2026-09-18)：本次交付附件为最终PDF。
 - [PDF报告](report.pdf)：26个物理页，正文页码1–25；含5幅流程/结构图、17张表、56项来源。
 - [主文件](main.tex)：摘要、目录与章节组织。
 - [模型](models.tex)、[许可](licenses.tex)、[推理服务](serving.tex)、[业务应用](applications.tex)、[部署分析](deployment.tex)。

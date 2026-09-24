@@ -68,7 +68,7 @@ open; completed research artifacts do not establish those approvals.
   or personal data in this repository.
 - Internal MRM and other firm requirements require authorized internal
   evidence; public guidance cannot establish unpublished firm policy.
-- Git is backed up to the public [project repository](https://github.com/SthMax/ms-intern)
+- Git is backed up to the public [project repository](https://github.com/SthMax/quant-intern)
   repository. Releases package finalized research reports, presentations and
   selected model references for sharing.
 
@@ -82,7 +82,7 @@ contains 12 main slides and four appendix slides, with editable LaTeX sources,
 speaker notes and traced calculation inputs.
 
 Detailed scenario documents are available as [three companion PDFs](reports/week4-deployment-2026-09-24/README.md), including the updated four-hardware personal deployment comparison.
-The four finalized PDFs are packaged in the [Week 4 release](https://github.com/SthMax/ms-intern/releases/tag/phase2-week4-2026-09-24).
+The four finalized PDFs are packaged in the [Week 4 release](https://github.com/SthMax/quant-intern/releases/tag/phase2-week4-2026-09-24).
 
 The [Phase 2 technical research report](reports/phase2-technical-research-2026-09-18/README.md)
 is available as of 18 September: 26 pages introducing and analyzing eight models,
@@ -91,7 +91,7 @@ The current revision compares Open WebUI, LobeHub and Cherry Studio, focuses
 personal task agents on Hermes and OpenClaw, and explains coding agents with
 Skills/MCP as a general execution route. A financial-report/CSV example connects
 these applications with personal and shared reference stacks.
-The final PDF is distributed in the [Week 3 release](https://github.com/SthMax/ms-intern/releases/tag/phase2-week3-2026-09-18).
+The final PDF is distributed in the [Week 3 release](https://github.com/SthMax/quant-intern/releases/tag/phase2-week3-2026-09-18).
 Its PDF, LaTeX source, references and validation records are kept together in the
 report directory. It presents documentary research; local PoC results remain
 outstanding.

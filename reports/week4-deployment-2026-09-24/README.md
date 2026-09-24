@@ -1,6 +1,6 @@
 # 第四周：三套部署方案PDF
 
-[第四周Release：四份PDF](https://github.com/SthMax/ms-intern/releases/tag/phase2-week4-2026-09-24)
+[第四周Release：四份PDF](https://github.com/SthMax/quant-intern/releases/tag/phase2-week4-2026-09-24)
 
 资料整理于2026年9月24日。三份PDF分别对应知识库的现行场景Markdown，保留详细方案、表格、计算口径、历史负载对照及来源；架构图按原有节点和连接关系排版。
 

@@ -273,7 +273,7 @@ RAG作为汇报中的详细技术案例，与首个GPU任务有不同目的。�
 
 **2026年9月18日，Harness继续深化：**先以`d3057af`保存24页报告及知识库，再新增TECH-056–063。比较Hermes／OpenClaw、Open WebUI／LobeHub／Cherry Studio，并保留LibreChat和AnythingLLM对照；新增Coding Agent＋Skills／MCP的通用执行分析，核对LobeHub、Cherry及OpenClaw的正式标签整合文档。报告同步更新为26页、5幅图、17张表、56项来源；来源总索引188项。完成原件、链接、数值和逐页版面检查；本轮仍为综合研究与报告深化。
 
-**2026年9月18日，阶段交付发布：**按用户授权提交本轮研究与报告，并发布[`phase2-week3-2026-09-18`](https://github.com/SthMax/ms-intern/releases/tag/phase2-week3-2026-09-18)；交付附件为26页最终PDF，含5幅图、17张表及56项来源。
+**2026年9月18日，阶段交付发布：**按用户授权提交本轮研究与报告，并发布[`phase2-week3-2026-09-18`](https://github.com/SthMax/quant-intern/releases/tag/phase2-week3-2026-09-18)；交付附件为26页最终PDF，含5幅图、17张表及56项来源。
 
 
 ## 第4周讨论输入（2026年9月21日）
