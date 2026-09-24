@@ -11,7 +11,7 @@ Historical setup record. Current execution is tracked in
 - [x] Correct the initial misunderstanding of the two-month objectives and
   Week 1–2 presentation scope.
 - [x] Receive and adopt the final mentor-confirmed plan on 6 September.
-- [x] Record COD as the infrastructure used in MSIM and MRM as model risk
+- [x] Record COD as the infrastructure used in the host organization and MRM as model risk
   management.
 - [x] Review existing files against the confirmed three-phase schedule.
 - [x] Derive the Week 2 execution plan.

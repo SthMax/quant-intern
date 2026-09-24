@@ -1,0 +1,513 @@
+{
+  "as_of": "2026-09-24",
+  "price_observed": "2026-09-21 / 2026-09-24; exact observation and estimate types in scenario sources",
+  "performance_status": "uncalibrated engineering estimates",
+  "sources": {
+    "knowledge-base/infrastructure/scenario-2-enterprise-rag-2026-09-23.md": {
+      "sha256": "63c9f19cbbe5b96787c8a686c243a78c663e1e749835259c21505e3ce4fd1f2b"
+    },
+    "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md": {
+      "sha256": "4d91ff8e3537408901f8fd010be438e606487398b390924e7683285dcd5f23ee"
+    },
+    "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md": {
+      "sha256": "3c1952f1606244bc8bb8254ea2bb2dac5002fa3eea6e613f190ac9f4b3739c24"
+    },
+    "knowledge-base/infrastructure/data/scenario-2-rag-2026-09-23/results.json": {
+      "sha256": "32c274078afc2a76004a4db9d966409ed52ce35e58111896e824f774707e0244"
+    },
+    "knowledge-base/infrastructure/data/scenario-3-agent-2026-09-23/long-context-results.json": {
+      "sha256": "eba6cf6e4e84942ec2f488743bfd994f39028936b3e91a9fc1976ecdd7909a1d"
+    },
+    "knowledge-base/infrastructure/data/scenario-3-agent-2026-09-23/results.json": {
+      "sha256": "92c8a4158cf684d7bb48f21b5bab11f3130c373e291ad521cc98fe0bcf03188e"
+    },
+    "knowledge-base/infrastructure/data/scenario-1-personal-agent-2026-09-24/results.json": {
+      "sha256": "9086dd2ae0c418885b22b522cc74d7d0b9ab902a2b141348c364d26a072cf147"
+    },
+    "knowledge-base/infrastructure/data/hardware-prices-2026-09-21.json": {
+      "sha256": "cd4e0ee69fb23b2a4c170ebc5029c74317f14fb6b1bf4679362d1bcc73943108"
+    },
+    "knowledge-base/infrastructure/data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json": {
+      "sha256": "8652a4eb080f7c06f53ddad44ced8d8061c06e4c70566019bd9da3e859cfd8e8"
+    }
+  },
+  "figures": {
+    "S1H2First": {
+      "display": "37.4",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H2/Qwen27/base/C20/burst_ttft_last_s"
+    },
+    "S1H2End": {
+      "display": "65.3",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H2/Qwen27/base/C20/burst_e2e_last_s"
+    },
+    "S1H2Rate": {
+      "display": "21",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H2/Qwen27/base/C20/per_request_decode_tps_min"
+    },
+    "S1H2Total": {
+      "display": "432",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H2/Qwen27/base/C20/decode_peak_total_tps"
+    },
+    "S1H2Wall": {
+      "display": "184",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H2/Qwen27/base/C20/burst_output_tps_including_prefill_and_retrieval"
+    },
+    "S1H2Price": {
+      "display": "74-141",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H2/hardware_wan_cny"
+    },
+    "S1H2Enterprise": {
+      "display": "84.5-158",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H2/enterprise_initial_excluding_license_wan_cny"
+    },
+    "S1H2Custom": {
+      "display": "91.5-168.5",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H2/custom_initial_wan_cny"
+    },
+    "S1H3First": {
+      "display": "16.5",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H3/Qwen27/base/C20/burst_ttft_last_s"
+    },
+    "S1H3End": {
+      "display": "41.8",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H3/Qwen27/base/C20/burst_e2e_last_s"
+    },
+    "S1H3Rate": {
+      "display": "24",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H3/Qwen27/base/C20/per_request_decode_tps_min"
+    },
+    "S1H3Total": {
+      "display": "475",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H3/Qwen27/base/C20/decode_peak_total_tps"
+    },
+    "S1H3Wall": {
+      "display": "287",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H3/Qwen27/base/C20/burst_output_tps_including_prefill_and_retrieval"
+    },
+    "S1H3Price": {
+      "display": "121-226",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H3/hardware_wan_cny"
+    },
+    "S1H3Enterprise": {
+      "display": "131.5-243",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H3/enterprise_initial_excluding_license_wan_cny"
+    },
+    "S1H3Custom": {
+      "display": "138.5-253.5",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H3/custom_initial_wan_cny"
+    },
+    "S1H4First": {
+      "display": "7.5",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H4/Qwen27/base/C20/burst_ttft_last_s"
+    },
+    "S1H4End": {
+      "display": "16.4",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H4/Qwen27/base/C20/burst_e2e_last_s"
+    },
+    "S1H4Rate": {
+      "display": "67",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H4/Qwen27/base/C20/per_request_decode_tps_min"
+    },
+    "S1H4Total": {
+      "display": "1,343",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H4/Qwen27/base/C20/decode_peak_total_tps"
+    },
+    "S1H4Wall": {
+      "display": "730",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H4/Qwen27/base/C20/burst_output_tps_including_prefill_and_retrieval"
+    },
+    "S1H4Price": {
+      "display": "181-371",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H4/hardware_wan_cny"
+    },
+    "S1H4Enterprise": {
+      "display": "191.5-388",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H4/enterprise_initial_excluding_license_wan_cny"
+    },
+    "S1H4Custom": {
+      "display": "198.5-398.5",
+      "source": "data/scenario-2-rag-2026-09-23/results.json",
+      "selection": "H4/custom_initial_wan_cny"
+    },
+    "CentralWorkers": {
+      "display": "12-26",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A0/zero-new-GPU/incremental_central_hardware_wan"
+    },
+    "DesktopGateway": {
+      "display": "6-13",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A0/zero-new-GPU/incremental_desktop_hardware_wan"
+    },
+    "S2A2First": {
+      "display": "3.1",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A2/base/C20/262K/warm1k/ttft_last_s"
+    },
+    "S2A2End": {
+      "display": "243.5",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A2/base/C20/262K/warm1k/batch_completion_s"
+    },
+    "S2A2Rate": {
+      "display": "34",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A2/base/C20/262K/warm1k/per_request_decode_tps_min"
+    },
+    "S2A2Total": {
+      "display": "682",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A2/base/C20/262K/warm1k/decode_total_tps"
+    },
+    "S2A2Wall": {
+      "display": "673",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A2/base/C20/262K/warm1k/whole_request_output_tps"
+    },
+    "S2A2NewPrice": {
+      "display": "181-371",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A2/incremental_central_hardware_wan"
+    },
+    "S2A2Combined": {
+      "display": "255-512",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A2/combined_s1_s2_central_hardware_wan"
+    },
+    "S2A2Setup": {
+      "display": "201-406",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A2/incremental_central_with_implementation_wan"
+    },
+    "AgentA2C5": {
+      "display": "1,048,576",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A2/resident5/equal_context_tokens_per_sequence"
+    },
+    "AgentA2C20": {
+      "display": "566,016",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A2/resident20/equal_context_tokens_per_sequence"
+    },
+    "AgentA2C30": {
+      "display": "376,832",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A2/resident30/equal_context_tokens_per_sequence"
+    },
+    "AgentA2C50": {
+      "display": "225,792",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A2/resident50/equal_context_tokens_per_sequence"
+    },
+    "S2A3First": {
+      "display": "1.6",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A3/base/C20/262K/warm1k/ttft_last_s"
+    },
+    "S2A3End": {
+      "display": "159.2",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A3/base/C20/262K/warm1k/batch_completion_s"
+    },
+    "S2A3Rate": {
+      "display": "52",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A3/base/C20/262K/warm1k/per_request_decode_tps_min"
+    },
+    "S2A3Total": {
+      "display": "1,040",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A3/base/C20/262K/warm1k/decode_total_tps"
+    },
+    "S2A3Wall": {
+      "display": "1,029",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A3/base/C20/262K/warm1k/whole_request_output_tps"
+    },
+    "S2A3NewPrice": {
+      "display": "302-378",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A3/incremental_central_hardware_wan"
+    },
+    "S2A3Combined": {
+      "display": "376-519",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A3/combined_s1_s2_central_hardware_wan"
+    },
+    "S2A3Setup": {
+      "display": "322-413",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A3/incremental_central_with_implementation_wan"
+    },
+    "AgentA3C5": {
+      "display": "1,048,576",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A3/resident5/equal_context_tokens_per_sequence"
+    },
+    "AgentA3C20": {
+      "display": "1,048,576",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A3/resident20/equal_context_tokens_per_sequence"
+    },
+    "AgentA3C30": {
+      "display": "755,200",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A3/resident30/equal_context_tokens_per_sequence"
+    },
+    "AgentA3C50": {
+      "display": "452,608",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A3/resident50/equal_context_tokens_per_sequence"
+    },
+    "S2A4First": {
+      "display": "4.2",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A4/base/C20/262K/warm1k/ttft_last_s"
+    },
+    "S2A4End": {
+      "display": "300.4",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A4/base/C20/262K/warm1k/batch_completion_s"
+    },
+    "S2A4Rate": {
+      "display": "28",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A4/base/C20/262K/warm1k/per_request_decode_tps_min"
+    },
+    "S2A4Total": {
+      "display": "553",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A4/base/C20/262K/warm1k/decode_total_tps"
+    },
+    "S2A4Wall": {
+      "display": "545",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A4/base/C20/262K/warm1k/whole_request_output_tps"
+    },
+    "S2A4NewPrice": {
+      "display": "302-378",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A4/incremental_central_hardware_wan"
+    },
+    "S2A4Combined": {
+      "display": "376-519",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A4/combined_s1_s2_central_hardware_wan"
+    },
+    "S2A4Setup": {
+      "display": "322-413",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A4/incremental_central_with_implementation_wan"
+    },
+    "AgentA4C5": {
+      "display": "1,048,576",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A4/resident5/equal_context_tokens_per_sequence"
+    },
+    "AgentA4C20": {
+      "display": "322,816",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A4/resident20/equal_context_tokens_per_sequence"
+    },
+    "AgentA4C30": {
+      "display": "214,784",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A4/resident30/equal_context_tokens_per_sequence"
+    },
+    "AgentA4C50": {
+      "display": "128,512",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A4/resident50/equal_context_tokens_per_sequence"
+    },
+    "S2A5First": {
+      "display": "1.9",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A5/base/C20/262K/warm1k/ttft_last_s"
+    },
+    "S2A5End": {
+      "display": "148.9",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A5/base/C20/262K/warm1k/batch_completion_s"
+    },
+    "S2A5Rate": {
+      "display": "56",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A5/base/C20/262K/warm1k/per_request_decode_tps_min"
+    },
+    "S2A5Total": {
+      "display": "1,114",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A5/base/C20/262K/warm1k/decode_total_tps"
+    },
+    "S2A5Wall": {
+      "display": "1,100",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A5/base/C20/262K/warm1k/whole_request_output_tps"
+    },
+    "S2A5NewPrice": {
+      "display": "231-362",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A5/incremental_central_hardware_wan"
+    },
+    "S2A5Combined": {
+      "display": "305-503",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A5/combined_s1_s2_central_hardware_wan"
+    },
+    "S2A5Setup": {
+      "display": "251-397",
+      "source": "data/scenario-3-agent-2026-09-23/results.json",
+      "selection": "A5/incremental_central_with_implementation_wan"
+    },
+    "AgentA5C5": {
+      "display": "1,048,576",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A5/resident5/equal_context_tokens_per_sequence"
+    },
+    "AgentA5C20": {
+      "display": "1,048,576",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A5/resident20/equal_context_tokens_per_sequence"
+    },
+    "AgentA5C30": {
+      "display": "1,048,576",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A5/resident30/equal_context_tokens_per_sequence"
+    },
+    "AgentA5C50": {
+      "display": "1,048,576",
+      "source": "data/scenario-3-agent-2026-09-23/long-context-results.json",
+      "selection": "A5/resident50/equal_context_tokens_per_sequence"
+    },
+    "FOne131": {
+      "display": "20.3",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "6000d/C1/131072/base; 6000d524 uses95percent memory"
+    },
+    "FOne262": {
+      "display": "16.8",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "6000d/C1/262144/base; 6000d524 uses95percent memory"
+    },
+    "FOne524": {
+      "display": "12.5",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "6000d/C1/524288/base; 6000d524 uses95percent memory"
+    },
+    "FOneCache": {
+      "display": "38.6",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "6000d/cache_pool_gb"
+    },
+    "FOnePrice": {
+      "display": "13.2-24.5",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "6000d/hardware cash budget CNY / 10000"
+    },
+    "FTwo131": {
+      "display": "26.7",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "2x6000d/C1/131072/base; 6000d524 uses95percent memory"
+    },
+    "FTwo262": {
+      "display": "22.6",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "2x6000d/C1/262144/base; 6000d524 uses95percent memory"
+    },
+    "FTwo524": {
+      "display": "17.3",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "2x6000d/C1/524288/base; 6000d524 uses95percent memory"
+    },
+    "FTwoCache": {
+      "display": "108.2",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "2x6000d/cache_pool_gb"
+    },
+    "FTwoPrice": {
+      "display": "20.9-38.0",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "2x6000d/hardware cash budget CNY / 10000"
+    },
+    "FMac131": {
+      "display": "17.5",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "mac_ultra/C1/131072/base; 6000d524 uses95percent memory"
+    },
+    "FMac262": {
+      "display": "14.5",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "mac_ultra/C1/262144/base; 6000d524 uses95percent memory"
+    },
+    "FMac524": {
+      "display": "10.8",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "mac_ultra/C1/524288/base; 6000d524 uses95percent memory"
+    },
+    "FMacCache": {
+      "display": "164.6",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "mac_ultra/cache_pool_gb"
+    },
+    "FMacPrice": {
+      "display": "9.05",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "mac_ultra/hardware cash budget CNY / 10000"
+    },
+    "FSpark131": {
+      "display": "4.1",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "spark/C1/131072/base; 6000d524 uses95percent memory"
+    },
+    "FSpark262": {
+      "display": "3.4",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "spark/C1/262144/base; 6000d524 uses95percent memory"
+    },
+    "FSpark524": {
+      "display": "2.5",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "spark/C1/524288/base; 6000d524 uses95percent memory"
+    },
+    "FSparkCache": {
+      "display": "56.6",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "spark/cache_pool_gb"
+    },
+    "FSparkPrice": {
+      "display": "4-5",
+      "source": "data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json",
+      "selection": "spark/hardware cash budget CNY / 10000"
+    }
+  },
+  "order": [
+    1,
+    2,
+    3
+  ],
+  "main_slides": 12,
+  "appendix_slides": 4
+}

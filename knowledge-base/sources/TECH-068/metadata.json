@@ -1,0 +1,77 @@
+{
+  "source_id": "TECH-068",
+  "retrieved_at": "2026-09-23T09:38:04.559396+00:00",
+  "human_check_status": "pending",
+  "evidence_state": "verified-primary",
+  "files": {
+    "onyx-permissions.html": {
+      "requested_url": "https://docs.onyx.app/admins/permissions/understanding_permissions",
+      "final_url": "https://docs.onyx.app/admins/permissions/understanding_permissions",
+      "retrieved_at": "2026-09-23T09:37:38.113122+00:00",
+      "sha256": "6d548430c6b05882fd3a299fe10548b36db494725db02ead0fa404e0ca9937f4",
+      "bytes": 422475
+    },
+    "onyx-connectors.html": {
+      "requested_url": "https://docs.onyx.app/admins/connectors/overview",
+      "final_url": "https://docs.onyx.app/admins/connectors/overview",
+      "retrieved_at": "2026-09-23T09:37:38.073099+00:00",
+      "sha256": "a09f51a35ed3248cf730baa2d4673911cfb9bf88ab2f887289f89b3e42ad4576",
+      "bytes": 536800
+    },
+    "onyx-custom-inference.html": {
+      "requested_url": "https://docs.onyx.app/admins/ai_models/custom_inference_provider",
+      "final_url": "https://docs.onyx.app/admins/ai_models/custom_inference_provider",
+      "retrieved_at": "2026-09-23T09:37:38.102354+00:00",
+      "sha256": "ea9af7c2167c49bb4402cdb875e2a4f233bd84b24f96d92183b73d95c8b76c9b",
+      "bytes": 337827
+    },
+    "onyx-pricing.html": {
+      "requested_url": "https://onyx.app/pricing",
+      "final_url": "https://onyx.app/pricing",
+      "retrieved_at": "2026-09-23T09:37:38.645657+00:00",
+      "sha256": "982671ebc86935c40f7d4abd52e39ec75c028ddc8e9f70876ffd81aab26833b3",
+      "bytes": 282712
+    },
+    "onyx-sizing.md": {
+      "requested_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/deployment/helm/charts/onyx/SIZING.md",
+      "final_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/deployment/helm/charts/onyx/SIZING.md",
+      "retrieved_at": "2026-09-23T09:37:38.354541+00:00",
+      "sha256": "da70519f78566009d4bc62ab46b7ae97c647703ac4d95155f31f7812d0055ca8",
+      "bytes": 6673
+    },
+    "original.md": {
+      "derived_from": "Authored reading index over archived sources",
+      "sha256": "14d7d52e33acb94d8708e554e69b0c27d7e6e2a290dd59fd567ba16ddaaca27b",
+      "bytes": 603
+    },
+    "onyx-connectors.md": {
+      "derived_from": "onyx-connectors.html",
+      "sha256": "6b2227aac83fa91c5d200f22c91bd40d9b99ad4386f3e7762c237d517acd0115",
+      "bytes": 6944
+    },
+    "onyx-permissions.md": {
+      "derived_from": "onyx-permissions.html",
+      "sha256": "0c347fd266170ee78308c39af86079bd76a6990a8eb96777857abeb3a804fd91",
+      "bytes": 12024
+    },
+    "onyx-custom-inference.md": {
+      "derived_from": "onyx-custom-inference.html",
+      "sha256": "aecade0b2fa8876f945410f86ce713bf787b6008a46469769457dca81f6669aa",
+      "bytes": 209
+    },
+    "onyx-pricing.md": {
+      "derived_from": "onyx-pricing.html",
+      "sha256": "6a071c29f07d634ef0cef17aca86e8f21087f02036d165935f0ed86f00b3f0a8",
+      "bytes": 1325
+    }
+  },
+  "retrieval_failures": {},
+  "title": "Onyx Enterprise：本地模型、权限、连接器、部署与价格",
+  "issuer": "Onyx",
+  "official_url": "https://docs.onyx.app/admins/connectors/overview",
+  "text_kind": "authored_source_index",
+  "reviewer": "Codex; primary-source inspection 2026-09-23",
+  "archive_status": "originals_and_extractions",
+  "used_in": "knowledge-base/infrastructure/scenario-2-enterprise-rag-2026-09-23.md",
+  "verification_scope": "官方企业权限与原生连接器、OpenAI兼容自建模型、当前Helm sizing（OpenSearch）、Enterprise询价。NAS完整权限适配作为交付范围，未假定原生开箱可用。"
+}

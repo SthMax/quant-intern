@@ -1,26 +1,121 @@
 {
-  "pdf_sha256": "635023f131b08d258703c1177b577579f1b00726c350a675a7da364acb3b70a6",
+  "pdf": "report.pdf",
+  "pdf_sha256": "2ae52ad56194e0f6683b53747b83416d3ada722ce7b0e74d63eb1fb5850bf73b",
+  "review_date": "2026-09-21",
   "physical_pages": 21,
-  "pdfium": {
-    "directory": "qa/render-assertive",
-    "resolution_dpi": 110,
-    "antialias": true,
-    "scope": "All 21 physical pages; final phrase changed only physical page 5"
-  },
-  "poppler": {
-    "directory": "qa/render-assertive-poppler",
-    "resolution_dpi": 110,
-    "physical_pages": [
-      2,
-      5,
-      10,
-      13,
-      14,
-      16
-    ],
-    "scope": "Current PDF: abstract, edited company cases, quant workflow, recommendations, company table and governance table"
-  },
-  "images_are_ignored_intermediates": true,
-  "revision_baseline": "15b46fb",
-  "direct_editing_baseline": "User-edited main.tex saved in editorial/user-edits-2026-09-11.patch"
+  "render_command": "pdftoppm -scale-to 1400 -png report.pdf qa/render-intern-2026-09-21-after/page",
+  "rendered_pages": [
+    {
+      "physical_page": 1,
+      "path": "qa/render-intern-2026-09-21-after/page-01.png",
+      "sha256": "4b7ef08e93db633f85871cc56bbd44d1450fcc77f010130a6b08828a4e3d91b4"
+    },
+    {
+      "physical_page": 2,
+      "path": "qa/render-intern-2026-09-21-after/page-02.png",
+      "sha256": "7f0d929a75f773ae5e22b0938f4165e697c7ceb72ae1bec9625138c11d310aa7"
+    },
+    {
+      "physical_page": 3,
+      "path": "qa/render-intern-2026-09-21-after/page-03.png",
+      "sha256": "7b5d4050f6b57f789c19a23ace73670b7b81feb35e458129aad023a951c38eec"
+    },
+    {
+      "physical_page": 4,
+      "path": "qa/render-intern-2026-09-21-after/page-04.png",
+      "sha256": "65f130cc1bea9c9d80f29b492b32e3b037713db7314dfce018f2d2ef8168e991"
+    },
+    {
+      "physical_page": 5,
+      "path": "qa/render-intern-2026-09-21-after/page-05.png",
+      "sha256": "3bd96dba3cbbc51a4cb59d8d3f05597156d4fd04ad2bd18ed8de1ea159d5c97c"
+    },
+    {
+      "physical_page": 6,
+      "path": "qa/render-intern-2026-09-21-after/page-06.png",
+      "sha256": "0cadf31ca2839af425d48b5b9205db2eaabe37b2106982906beebea51d389355"
+    },
+    {
+      "physical_page": 7,
+      "path": "qa/render-intern-2026-09-21-after/page-07.png",
+      "sha256": "97c829a4a4b9e39c68d6a582fed5d4fedf374590db7ef0dbd6d633fd76a61118"
+    },
+    {
+      "physical_page": 8,
+      "path": "qa/render-intern-2026-09-21-after/page-08.png",
+      "sha256": "11595dd3715139854170db362b86a9d1cbcacf177066a1b397ba559aa4c8bbc3"
+    },
+    {
+      "physical_page": 9,
+      "path": "qa/render-intern-2026-09-21-after/page-09.png",
+      "sha256": "de819f63f5578f16af676a13901bf3aebf7150db38fa2f4f75fc90112b61b6bd"
+    },
+    {
+      "physical_page": 10,
+      "path": "qa/render-intern-2026-09-21-after/page-10.png",
+      "sha256": "1199b7fe25c5eeeedf6138e0247f8363571be53e6c7336f1ecd493e14d27b0a8"
+    },
+    {
+      "physical_page": 11,
+      "path": "qa/render-intern-2026-09-21-after/page-11.png",
+      "sha256": "537936d528d2e05dc9cbf625c865fb0fd5e018bfa5d9f75b4c3df52cecfdd0d9"
+    },
+    {
+      "physical_page": 12,
+      "path": "qa/render-intern-2026-09-21-after/page-12.png",
+      "sha256": "326139edd698fd528bbec80c7fa95a01798a86fdf07e1d59f3b2f69c3644d2cb"
+    },
+    {
+      "physical_page": 13,
+      "path": "qa/render-intern-2026-09-21-after/page-13.png",
+      "sha256": "911755a7651fa1cc26e493c95c25e96a6f5bbcc9b221f21907a5da1053e4da2e"
+    },
+    {
+      "physical_page": 14,
+      "path": "qa/render-intern-2026-09-21-after/page-14.png",
+      "sha256": "89436b233379ef59e8aadb04eb1be20c1fd7b9d774157a2510a72ab2952f55b0"
+    },
+    {
+      "physical_page": 15,
+      "path": "qa/render-intern-2026-09-21-after/page-15.png",
+      "sha256": "c84bd50070c5fd014d34ed2d60e0ae3eb63f582532327a233e200b091eefef95"
+    },
+    {
+      "physical_page": 16,
+      "path": "qa/render-intern-2026-09-21-after/page-16.png",
+      "sha256": "78117ee5b6833103cae89cb9557433e9bba9a1a6ac12ae32dafd4c0c75c60b5c"
+    },
+    {
+      "physical_page": 17,
+      "path": "qa/render-intern-2026-09-21-after/page-17.png",
+      "sha256": "76bfdda220d1201ce3ce840d3e30b4d5b6b80e47f14f9936a92c36e67dd34e60"
+    },
+    {
+      "physical_page": 18,
+      "path": "qa/render-intern-2026-09-21-after/page-18.png",
+      "sha256": "123582d3f0f7a112240f35e5aaf6f505407dc8eefaeb748d57a29cf1db8e4ace"
+    },
+    {
+      "physical_page": 19,
+      "path": "qa/render-intern-2026-09-21-after/page-19.png",
+      "sha256": "a8576cbdc249d0279da21db19179c4a48ce495787da43f4dcea8becd99ead45c"
+    },
+    {
+      "physical_page": 20,
+      "path": "qa/render-intern-2026-09-21-after/page-20.png",
+      "sha256": "97084186f6baa975986d2a054d281def897a15c27ac8ee26b7ed26e5aaa3eea1"
+    },
+    {
+      "physical_page": 21,
+      "path": "qa/render-intern-2026-09-21-after/page-21.png",
+      "sha256": "f47f51b8c2ae207a130118575f03d87c28c80cf1c03f66cd5d28fb46c86a54a4"
+    }
+  ],
+  "baseline_commit": "a4e2a3b",
+  "visual_changed_pages": [
+    1
+  ],
+  "unchanged_pages_pixel_identical": 20,
+  "embedded_fonts_verified": 7,
+  "review_method": "All pages compared against the baseline rendering; cover visually inspected; remaining pages pixel-identical."
 }

@@ -134,7 +134,7 @@ conditions; it is not general authorization to send internal research abroad.
 ## 既有核验记录 / Prior verification
 
 Official Chinese text inspected. No quantitative threshold calculation has been
-performed for MSIM. Current-status sweep and human check remain pending.
+performed for the host organization. Current-status sweep and human check remain pending.
 ## 2026-09-09 公开来源复核
 
 本轮已执行主汇报相关条文、版本/性质和适用边界的公开来源复核。逐条结论及检索限制见[复核结果](review-results-2026-09-09.md)。原件和历史摘录保留；内部政策、机构适用性与人工抽查状态不据此改为通过。

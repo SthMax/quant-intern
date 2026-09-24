@@ -1,0 +1,2013 @@
+{
+  "as_of": "2026-09-24",
+  "status": "Analytical sensitivity scenarios; no local hardware/model run",
+  "supersedes": "Mixed-hardware / quantized-KV selection in speed-target-review.json; previous calculation retained as history",
+  "assumptions": {
+    "model": "Qwen3.8-27B",
+    "weights_gb": 31.0,
+    "mac_weights_note": "MXFP8 engineering budget; actual conversion footprint unmeasured",
+    "kv_dtype": "BF16/FP16",
+    "kv_bytes_token": 65536,
+    "recurrent_dtype": "FP32",
+    "convolution_dtype": "BF16/FP16",
+    "state_bytes": 153944064,
+    "extra_state_copies": 8,
+    "cache_padding": 1.15,
+    "main_memory_fraction": 0.9,
+    "runtime_reserve_gb_per_device": 6,
+    "output_tokens": 8192,
+    "single_active_user": true,
+    "speculative_decoding": false,
+    "native_context": 262144,
+    "extended_context": 524288,
+    "extension": "YaRN factor 2",
+    "tp2_efficiency": 0.75,
+    "tp2_link_gb_s": 24,
+    "tp2_collective_latency_us": 30,
+    "effective_tflops_note": "Engineering assumptions carried from earlier scenario math, not vendor peaks",
+    "uncertainty": "45/60/75% are sensitivity choices, not a measured range or confidence interval",
+    "prefill_note": "F(N)-F(K) assumes all named prefix KV and recurrent checkpoint are reusable; first model loading and queue are excluded"
+  },
+  "sources": {
+    "config": "knowledge-base/sources/TECH-070/qwen27/config.json",
+    "config_sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+    "price_ledger": "knowledge-base/infrastructure/data/hardware-prices-2026-09-21.json",
+    "price_ledger_sha256": "cd4e0ee69fb23b2a4c170ebc5029c74317f14fb6b1bf4679362d1bcc73943108",
+    "evidence": "knowledge-base/sources/TECH-075/four-hardware-evidence.md"
+  },
+  "profiles": [
+    {
+      "id": "6000d",
+      "name": "1 x RTX PRO 6000D 84GB",
+      "memory_gb": 84,
+      "os_tools_gb": 0,
+      "bw_gb_s": 1398,
+      "tp": 1,
+      "tp_efficiency": 1,
+      "effective_tflops_per_device": {
+        "low": 60,
+        "base": 100,
+        "high": 145
+      },
+      "weights_format": "Official block-scaled FP8; 31 GB from archived tensor inventory"
+    },
+    {
+      "id": "2x6000d",
+      "name": "2 x RTX PRO 6000D 84GB, TP2",
+      "memory_gb": 168,
+      "os_tools_gb": 0,
+      "bw_gb_s": 1398,
+      "tp": 2,
+      "tp_efficiency": 0.75,
+      "effective_tflops_per_device": {
+        "low": 60,
+        "base": 100,
+        "high": 145
+      },
+      "weights_format": "One official FP8 model sharded by TP2; not two replicas"
+    },
+    {
+      "id": "mac_ultra",
+      "name": "M5 Ultra 80-GPU-core, 256GB / 2TB",
+      "memory_gb": 256,
+      "os_tools_gb": 32,
+      "bw_gb_s": 1200,
+      "tp": 1,
+      "tp_efficiency": 1,
+      "effective_tflops_per_device": {
+        "low": 16,
+        "base": 32,
+        "high": 50
+      },
+      "weights_format": "MLX MXFP8, converted from BF16; 31 GB engineering budget, not measured artifact size"
+    },
+    {
+      "id": "spark",
+      "name": "NVIDIA DGX Spark, 128GB / 4TB",
+      "memory_gb": 128,
+      "os_tools_gb": 24,
+      "bw_gb_s": 273,
+      "tp": 1,
+      "tp_efficiency": 1,
+      "effective_tflops_per_device": {
+        "low": 12,
+        "base": 24,
+        "high": 40
+      },
+      "weights_format": "Official block-scaled FP8; ARM64 / SM121 engine build"
+    }
+  ],
+  "cases": [
+    {
+      "config": "6000d",
+      "context_tokens": 131072,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 27.12825415680001,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 629.1,
+      "effective_tflops": 60,
+      "compute_step_s": 0.0018671499136,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 14.909071279177828,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 14.909071279177828,
+      "decode_ms_per_token": 67.07325904307741,
+      "decode_only_seconds_for_8192": 549.4641380808902,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.6170210123779312,
+      "ideal_memory_only_tps": 35.232398895140356,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 176.65882324992,
+          "prefill_new_tokens_per_second": 695.5780511803881,
+          "ttft_compute_proxy_seconds": 176.72589650896307,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.8810377469952,
+          "prefill_new_tokens_per_second": 544.3803568725583,
+          "ttft_compute_proxy_seconds": 1.9481110060382774,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 131072,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 27.12825415680001,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 838.8,
+      "effective_tflops": 100,
+      "compute_step_s": 0.00112028994816,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 20.28194158935145,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 20.28194158935145,
+      "decode_ms_per_token": 49.304944282308064,
+      "decode_only_seconds_for_8192": 403.90610356066765,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.5913118035288507,
+      "ideal_memory_only_tps": 35.232398895140356,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 105.995293949952,
+          "prefill_new_tokens_per_second": 1159.2967519673136,
+          "ttft_compute_proxy_seconds": 106.04459889423431,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.12862264819712,
+          "prefill_new_tokens_per_second": 907.3005947875972,
+          "ttft_compute_proxy_seconds": 1.1779275924794281,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 131072,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 27.12825415680001,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 1048.5,
+      "effective_tflops": 145,
+      "compute_step_s": 0.0007726137573517241,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 25.74403118933167,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 25.74403118933167,
+      "decode_ms_per_token": 38.843955425846445,
+      "decode_only_seconds_for_8192": 318.2096828485341,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.5792442157017312,
+      "ideal_memory_only_tps": 35.232398895140356,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 73.10020272410483,
+          "prefill_new_tokens_per_second": 1680.9802903526047,
+          "ttft_compute_proxy_seconds": 73.13904667953068,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 0.7783604470324965,
+          "prefill_new_tokens_per_second": 1315.585862442016,
+          "ttft_compute_proxy_seconds": 0.8172044024583429,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 262144,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 17.24982937600001,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 629.1,
+      "effective_tflops": 60,
+      "compute_step_s": 0.0027261433728,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 12.387339925654242,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 12.387339925654242,
+      "decode_ms_per_token": 80.72758203147353,
+      "decode_only_seconds_for_8192": 661.3203520018311,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.7505959111774585,
+      "ideal_memory_only_tps": 28.962495146929957,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 474.1664548585472,
+          "prefill_new_tokens_per_second": 535.5756346698096,
+          "ttft_compute_proxy_seconds": 474.2471824405787,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 2.760647049216,
+          "prefill_new_tokens_per_second": 370.9275331994386,
+          "ttft_compute_proxy_seconds": 2.8413746312474735,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 262144,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 17.24982937600001,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 838.8,
+      "effective_tflops": 100,
+      "compute_step_s": 0.00163568602368,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 16.79382770410379,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 16.79382770410379,
+      "decode_ms_per_token": 59.545686523605156,
+      "decode_only_seconds_for_8192": 487.7982640013734,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.7193210815450644,
+      "ideal_memory_only_tps": 28.962495146929957,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 284.4998729151283,
+          "prefill_new_tokens_per_second": 892.6260577830159,
+          "ttft_compute_proxy_seconds": 284.55941860165194,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.6563882295296,
+          "prefill_new_tokens_per_second": 618.2125553323976,
+          "ttft_compute_proxy_seconds": 1.7159339160532052,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 262144,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 17.24982937600001,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 1048.5,
+      "effective_tflops": 145,
+      "compute_step_s": 0.001128059326675862,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 21.26006300646142,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 21.26006300646142,
+      "decode_ms_per_token": 47.03654921888412,
+      "decode_only_seconds_for_8192": 385.3234112010987,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.704641059472716,
+      "ideal_memory_only_tps": 28.962495146929957,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 196.20680890698506,
+          "prefill_new_tokens_per_second": 1294.307783785373,
+          "ttft_compute_proxy_seconds": 196.25384545620395,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.1423367100204138,
+          "prefill_new_tokens_per_second": 896.4082052319766,
+          "ttft_compute_proxy_seconds": 1.1893732592392978,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 524288,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_fits": false,
+      "memory_headroom_gb": -2.507020185599991,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 629.1,
+      "effective_tflops": 60,
+      "compute_step_s": 0.0044441302912,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": null,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 9.256154333002915,
+      "decode_ms_per_token": null,
+      "decode_only_seconds_for_8192": null,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 1.0177457087765132,
+      "ideal_memory_only_tps": 21.36008066387859,
+      "prefill_probes": []
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 524288,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_fits": false,
+      "memory_headroom_gb": -2.507020185599991,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 838.8,
+      "effective_tflops": 100,
+      "compute_step_s": 0.00266647817472,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": null,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 12.495755971712839,
+      "decode_ms_per_token": null,
+      "decode_only_seconds_for_8192": null,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.9753396375774918,
+      "ideal_memory_only_tps": 21.36008066387859,
+      "prefill_probes": []
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 524288,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_fits": false,
+      "memory_headroom_gb": -2.507020185599991,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 1048.5,
+      "effective_tflops": 145,
+      "compute_step_s": 0.001838950465324138,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": null,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 15.767464758577878,
+      "decode_ms_per_token": null,
+      "decode_only_seconds_for_8192": null,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.9554347470146857,
+      "ideal_memory_only_tps": 21.36008066387859,
+      "prefill_probes": []
+    },
+    {
+      "config": "2x6000d",
+      "context_tokens": 131072,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_fits": true,
+      "memory_headroom_gb": 96.72825415680002,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 943.65,
+      "effective_tflops": 90.0,
+      "compute_step_s": 0.0012447666090666667,
+      "communication_s": 0.0038946133333333335,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 20.02264453159054,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 20.02264453159054,
+      "decode_ms_per_token": 49.943452695384934,
+      "decode_only_seconds_for_8192": 409.1367644805934,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.44939565245467933,
+      "ideal_memory_only_tps": 70.46479779028071,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 124.71383523328,
+          "prefill_new_tokens_per_second": 985.2956552105886,
+          "ttft_compute_proxy_seconds": 124.76377868597538,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.3137892179967998,
+          "prefill_new_tokens_per_second": 779.424877273193,
+          "ttft_compute_proxy_seconds": 1.3637326706921848,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "2x6000d",
+      "context_tokens": 131072,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_fits": true,
+      "memory_headroom_gb": 96.72825415680002,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 1258.2,
+      "effective_tflops": 150.0,
+      "compute_step_s": 0.00074685996544,
+      "communication_s": 0.0038946133333333335,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 26.715650449470456,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 26.715650449470456,
+      "decode_ms_per_token": 37.43124285487204,
+      "decode_only_seconds_for_8192": 306.63674146711173,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.42901738637797276,
+      "ideal_memory_only_tps": 70.46479779028071,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 77.604815699968,
+          "prefill_new_tokens_per_second": 1583.4068915912735,
+          "ttft_compute_proxy_seconds": 77.64224694282288,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 0.8121791521314133,
+          "prefill_new_tokens_per_second": 1260.805571421899,
+          "ttft_compute_proxy_seconds": 0.8496103949862854,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "2x6000d",
+      "context_tokens": 131072,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_fits": true,
+      "memory_headroom_gb": 96.72825415680002,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 1572.75,
+      "effective_tflops": 217.5,
+      "compute_step_s": 0.0005150758382344827,
+      "communication_s": 0.0038946133333333335,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 33.196214212151695,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 33.196214212151695,
+      "decode_ms_per_token": 30.1239169505643,
+      "decode_only_seconds_for_8192": 246.77512765902276,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.41950594177938294,
+      "ideal_memory_only_tps": 70.46479779028071,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 55.67475488273656,
+          "prefill_new_tokens_per_second": 2207.1044633930164,
+          "ttft_compute_proxy_seconds": 55.70487879968712,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 0.5786710180216644,
+          "prefill_new_tokens_per_second": 1769.5719469428539,
+          "ttft_compute_proxy_seconds": 0.6087949349722287,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "2x6000d",
+      "context_tokens": 262144,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_fits": true,
+      "memory_headroom_gb": 86.84982937600002,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 943.65,
+      "effective_tflops": 90.0,
+      "compute_step_s": 0.0018174289152,
+      "communication_s": 0.0038946133333333335,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 16.935852247051912,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 16.935852247051912,
+      "decode_ms_per_token": 59.04633468764902,
+      "decode_only_seconds_for_8192": 483.7075737612208,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.5466824183724883,
+      "ideal_memory_only_tps": 57.92499029385991,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 330.4562951323648,
+          "prefill_new_tokens_per_second": 768.4889159042322,
+          "ttft_compute_proxy_seconds": 330.51534146705245,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.9001954194773332,
+          "prefill_new_tokens_per_second": 538.891942114912,
+          "ttft_compute_proxy_seconds": 1.9592417541649823,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "2x6000d",
+      "context_tokens": 262144,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_fits": true,
+      "memory_headroom_gb": 86.84982937600002,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 1258.2,
+      "effective_tflops": 150.0,
+      "compute_step_s": 0.00109045734912,
+      "communication_s": 0.0038946133333333335,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 22.5945786954475,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 22.5945786954475,
+      "decode_ms_per_token": 44.25840434907009,
+      "decode_only_seconds_for_8192": 362.5648484275822,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.5218925929253552,
+      "ideal_memory_only_tps": 57.92499029385991,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 204.01190717008555,
+          "prefill_new_tokens_per_second": 1244.7900885916388,
+          "ttft_compute_proxy_seconds": 204.05616557443463,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.1640228730197333,
+          "prefill_new_tokens_per_second": 879.7077993351772,
+          "ttft_compute_proxy_seconds": 1.2082812773688034,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "2x6000d",
+      "context_tokens": 262144,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_fits": true,
+      "memory_headroom_gb": 86.84982937600002,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 1572.75,
+      "effective_tflops": 217.5,
+      "compute_step_s": 0.0007520395511172414,
+      "communication_s": 0.0038946133333333335,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 28.10121799951006,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 28.10121799951006,
+      "decode_ms_per_token": 35.585646145922745,
+      "decode_only_seconds_for_8192": 291.5176132273991,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.5103220770403637,
+      "ideal_memory_only_tps": 57.92499029385991,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 145.14986449799002,
+          "prefill_new_tokens_per_second": 1749.584823095144,
+          "ttft_compute_proxy_seconds": 145.18545014413596,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 0.8213218600136092,
+          "prefill_new_tokens_per_second": 1246.7706630662826,
+          "ttft_compute_proxy_seconds": 0.8569075061595319,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "2x6000d",
+      "context_tokens": 524288,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_fits": true,
+      "memory_headroom_gb": 67.09297981440002,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 943.65,
+      "effective_tflops": 90.0,
+      "compute_step_s": 0.0029627535274666665,
+      "communication_s": 0.0038946133333333335,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 12.944632148358139,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 12.944632148358139,
+      "decode_ms_per_token": 77.2520986721772,
+      "decode_only_seconds_for_8192": 632.8491923224756,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.7412559502081064,
+      "ideal_memory_only_tps": 42.72016132775718,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 967.1211962990592,
+          "prefill_new_tokens_per_second": 533.6414939254518,
+          "ttft_compute_proxy_seconds": 967.1984483977313,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 3.0730078224384,
+          "prefill_new_tokens_per_second": 333.22401346426335,
+          "ttft_compute_proxy_seconds": 3.1502599211105773,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "2x6000d",
+      "context_tokens": 524288,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_fits": true,
+      "memory_headroom_gb": 67.09297981440002,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 1258.2,
+      "effective_tflops": 150.0,
+      "compute_step_s": 0.00177765211648,
+      "communication_s": 0.0038946133333333335,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 17.267361527852916,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 17.267361527852916,
+      "decode_ms_per_token": 57.91272733746622,
+      "decode_only_seconds_for_8192": 474.42106234852326,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.7076430060201202,
+      "ideal_memory_only_tps": 42.72016132775718,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 591.9340789314356,
+          "prefill_new_tokens_per_second": 871.8808704706796,
+          "ttft_compute_proxy_seconds": 591.991991658773,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.8677103147963732,
+          "prefill_new_tokens_per_second": 548.2648951968986,
+          "ttft_compute_proxy_seconds": 1.9256230421338394,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "2x6000d",
+      "context_tokens": 524288,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_fits": true,
+      "memory_headroom_gb": 67.09297981440002,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 1572.75,
+      "effective_tflops": 217.5,
+      "compute_step_s": 0.0012259669768827587,
+      "communication_s": 0.0038946133333333335,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 21.501166491223344,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 21.501166491223344,
+      "decode_ms_per_token": 46.50910453663965,
+      "decode_only_seconds_for_8192": 381.00258436415197,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.6919543475623251,
+      "ideal_memory_only_tps": 42.72016132775718,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 417.27800705340377,
+          "prefill_new_tokens_per_second": 1236.8157230341387,
+          "ttft_compute_proxy_seconds": 417.3245161579404,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.3066235439974987,
+          "prefill_new_tokens_per_second": 783.6993330666329,
+          "ttft_compute_proxy_seconds": 1.3531326485341384,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "mac_ultra",
+      "context_tokens": 131072,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 164.6,
+      "memory_fits": true,
+      "memory_headroom_gb": 153.12825415679998,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 540.0,
+      "effective_tflops": 16,
+      "compute_step_s": 0.007001812176,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 12.906498763776924,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 12.906498763776924,
+      "decode_ms_per_token": 77.48034678518519,
+      "decode_only_seconds_for_8192": 634.719000864237,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.7188294794202899,
+      "ideal_memory_only_tps": 30.24240248509902,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 662.4705871872,
+          "prefill_new_tokens_per_second": 185.48748031477018,
+          "ttft_compute_proxy_seconds": 662.5480675339851,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 7.053891551232,
+          "prefill_new_tokens_per_second": 145.16809516601555,
+          "ttft_compute_proxy_seconds": 7.131371898017185,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "mac_ultra",
+      "context_tokens": 131072,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 164.6,
+      "memory_fits": true,
+      "memory_headroom_gb": 153.12825415679998,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 720.0,
+      "effective_tflops": 32,
+      "compute_step_s": 0.003500906088,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 17.50998854572815,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 17.50998854572815,
+      "decode_ms_per_token": 57.11026008888889,
+      "decode_only_seconds_for_8192": 467.8472506481778,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.688878251111111,
+      "ideal_memory_only_tps": 30.24240248509902,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 331.2352935936,
+          "prefill_new_tokens_per_second": 370.97496062954036,
+          "ttft_compute_proxy_seconds": 331.2924038536889,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 3.526945775616,
+          "prefill_new_tokens_per_second": 290.3361903320311,
+          "ttft_compute_proxy_seconds": 3.5840560357048887,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "mac_ultra",
+      "context_tokens": 131072,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 164.6,
+      "memory_fits": true,
+      "memory_headroom_gb": 153.12825415679998,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 900.0,
+      "effective_tflops": 50,
+      "compute_step_s": 0.00224057989632,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 22.178747898404936,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 22.178747898404936,
+      "decode_ms_per_token": 45.088208071111104,
+      "decode_only_seconds_for_8192": 369.3626005185422,
+      "target_20_met_in_scenario": true,
+      "required_bandwidth_fraction_for_20": 0.6748195112925169,
+      "ideal_memory_only_tps": 30.24240248509902,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 211.990587899904,
+          "prefill_new_tokens_per_second": 579.6483759836568,
+          "ttft_compute_proxy_seconds": 212.03567610797512,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 2.25724529639424,
+          "prefill_new_tokens_per_second": 453.6502973937986,
+          "ttft_compute_proxy_seconds": 2.3023335044653512,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "mac_ultra",
+      "context_tokens": 262144,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 164.6,
+      "memory_fits": true,
+      "memory_headroom_gb": 143.249829376,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 540.0,
+      "effective_tflops": 16,
+      "compute_step_s": 0.010223037648,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 10.708055950900153,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 10.708055950900153,
+      "decode_ms_per_token": 93.38763306666667,
+      "decode_only_seconds_for_8192": 765.0314900821334,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.8744442365217392,
+      "ideal_memory_only_tps": 24.860510855733867,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 1778.124205719552,
+          "prefill_new_tokens_per_second": 142.82016924528253,
+          "ttft_compute_proxy_seconds": 1778.2175933526187,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 10.35242643456,
+          "prefill_new_tokens_per_second": 98.91400885318362,
+          "ttft_compute_proxy_seconds": 10.445814067626667,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "mac_ultra",
+      "context_tokens": 262144,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 164.6,
+      "memory_fits": true,
+      "memory_headroom_gb": 143.249829376,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 720.0,
+      "effective_tflops": 32,
+      "compute_step_s": 0.005111518824,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 14.484204835578437,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 14.484204835578437,
+      "decode_ms_per_token": 69.04072479999999,
+      "decode_only_seconds_for_8192": 565.5816175616,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.83800906,
+      "ideal_memory_only_tps": 24.860510855733867,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 889.062102859776,
+          "prefill_new_tokens_per_second": 285.64033849056506,
+          "ttft_compute_proxy_seconds": 889.131143584576,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 5.17621321728,
+          "prefill_new_tokens_per_second": 197.82801770636723,
+          "ttft_compute_proxy_seconds": 5.24525394208,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "mac_ultra",
+      "context_tokens": 262144,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 164.6,
+      "memory_fits": true,
+      "memory_headroom_gb": 143.249829376,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 900.0,
+      "effective_tflops": 50,
+      "compute_step_s": 0.00327137204736,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 18.304096254078708,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 18.304096254078708,
+      "decode_ms_per_token": 54.63257984,
+      "decode_only_seconds_for_8192": 447.55009404928,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.8209068342857142,
+      "ideal_memory_only_tps": 24.860510855733867,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 568.9997458302566,
+          "prefill_new_tokens_per_second": 446.31302889150794,
+          "ttft_compute_proxy_seconds": 569.0543784100967,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 3.3127764590592,
+          "prefill_new_tokens_per_second": 309.1062776661988,
+          "ttft_compute_proxy_seconds": 3.3674090388991997,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "mac_ultra",
+      "context_tokens": 524288,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 164.6,
+      "memory_fits": true,
+      "memory_headroom_gb": 123.4929798144,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 540.0,
+      "effective_tflops": 16,
+      "compute_step_s": 0.016665488592,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 7.987079740098011,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 7.987079740098011,
+      "decode_ms_per_token": 125.20220562962963,
+      "decode_only_seconds_for_8192": 1025.656468517926,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 1.1856737507246378,
+      "ideal_memory_only_tps": 18.33483318787862,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 5276.068837982208,
+          "prefill_new_tokens_per_second": 97.81828400051296,
+          "ttft_compute_proxy_seconds": 5276.194040187837,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 16.949496201216,
+          "prefill_new_tokens_per_second": 60.41477503776989,
+          "ttft_compute_proxy_seconds": 17.07469840684563,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "mac_ultra",
+      "context_tokens": 524288,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 164.6,
+      "memory_fits": true,
+      "memory_headroom_gb": 123.4929798144,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 720.0,
+      "effective_tflops": 32,
+      "compute_step_s": 0.008332744296,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 10.764070977767352,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 10.764070977767352,
+      "decode_ms_per_token": 92.90165422222222,
+      "decode_only_seconds_for_8192": 761.0503513884445,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 1.1362706777777778,
+      "ideal_memory_only_tps": 18.33483318787862,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 2638.034418991104,
+          "prefill_new_tokens_per_second": 195.63656800102592,
+          "ttft_compute_proxy_seconds": 2638.127320645326,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 8.474748100608,
+          "prefill_new_tokens_per_second": 120.82955007553979,
+          "ttft_compute_proxy_seconds": 8.567649754830223,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "mac_ultra",
+      "context_tokens": 524288,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 164.6,
+      "memory_fits": true,
+      "memory_headroom_gb": 123.4929798144,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 900.0,
+      "effective_tflops": 50,
+      "compute_step_s": 0.00533295634944,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 13.56459643128755,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 13.56459643128755,
+      "decode_ms_per_token": 73.7213233777778,
+      "decode_only_seconds_for_8192": 603.9250811107556,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 1.113081480272109,
+      "ideal_memory_only_tps": 18.33483318787862,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 1688.3420281543065,
+          "prefill_new_tokens_per_second": 305.682137501603,
+          "ttft_compute_proxy_seconds": 1688.4157494776844,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 5.42383878438912,
+          "prefill_new_tokens_per_second": 188.79617199303092,
+          "ttft_compute_proxy_seconds": 5.497560107766898,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "spark",
+      "context_tokens": 131072,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 45.12825415680001,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 122.85000000000001,
+      "effective_tflops": 12,
+      "compute_step_s": 0.009335749568,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 3.0581924917885526,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 3.0581924917885526,
+      "decode_ms_per_token": 326.9905353194953,
+      "decode_only_seconds_for_8192": 2678.7064653373054,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 3.1596900194298456,
+      "ideal_memory_only_tps": 6.880146565360027,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 883.2941162496,
+          "prefill_new_tokens_per_second": 139.11561023607763,
+          "ttft_compute_proxy_seconds": 883.6211067849196,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 9.405188734976,
+          "prefill_new_tokens_per_second": 108.87607137451165,
+          "ttft_compute_proxy_seconds": 9.732179270295497,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "spark",
+      "context_tokens": 131072,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 45.12825415680001,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 163.79999999999998,
+      "effective_tflops": 24,
+      "compute_step_s": 0.004667874784,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 4.09428480377962,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 4.09428480377962,
+      "decode_ms_per_token": 244.24290148962152,
+      "decode_only_seconds_for_8192": 2000.8378490029795,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 3.0280362686202684,
+      "ideal_memory_only_tps": 6.880146565360027,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 441.6470581248,
+          "prefill_new_tokens_per_second": 278.23122047215526,
+          "ttft_compute_proxy_seconds": 441.8913010262896,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 4.702594367488,
+          "prefill_new_tokens_per_second": 217.7521427490233,
+          "ttft_compute_proxy_seconds": 4.946837268977622,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "spark",
+      "context_tokens": 131072,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 11.471745843199999,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 45.12825415680001,
+      "traffic_gb_per_step": 39.679387264,
+      "effective_bandwidth_gb_s": 204.75,
+      "effective_tflops": 40,
+      "compute_step_s": 0.0028007248704,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 5.13361988112528,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 5.13361988112528,
+      "decode_ms_per_token": 194.79432119169718,
+      "decode_only_seconds_for_8192": 1595.7550792023833,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 2.9662396100769977,
+      "ideal_memory_only_tps": 6.880146565360027,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 122880,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 122880,
+          "analytical_prefill_seconds": 264.98823487488,
+          "prefill_new_tokens_per_second": 463.71870078692547,
+          "ttft_compute_proxy_seconds": 265.1830291960717,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 122880,
+          "cached_tokens": 121856,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 2.8215566204928,
+          "prefill_new_tokens_per_second": 362.92023791503885,
+          "ttft_compute_proxy_seconds": 3.016350941684497,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "spark",
+      "context_tokens": 262144,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 35.24982937600001,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 122.85000000000001,
+      "effective_tflops": 12,
+      "compute_step_s": 0.013630716864,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 2.5194458843903136,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 2.5194458843903136,
+      "decode_ms_per_token": 396.9126728205128,
+      "decode_only_seconds_for_8192": 3251.508615745641,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 3.8437109297658862,
+      "ideal_memory_only_tps": 5.655766219679455,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 2370.832274292736,
+          "prefill_new_tokens_per_second": 107.11512693396189,
+          "ttft_compute_proxy_seconds": 2371.229186965557,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 13.80323524608,
+          "prefill_new_tokens_per_second": 74.18550663988772,
+          "ttft_compute_proxy_seconds": 14.200147918900512,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "spark",
+      "context_tokens": 262144,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 35.24982937600001,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 163.79999999999998,
+      "effective_tflops": 24,
+      "compute_step_s": 0.006815358432,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 3.3705838506678276,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 3.3705838506678276,
+      "decode_ms_per_token": 296.68450461538464,
+      "decode_only_seconds_for_8192": 2430.439461809231,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 3.6835563076923075,
+      "ideal_memory_only_tps": 5.655766219679455,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 1185.416137146368,
+          "prefill_new_tokens_per_second": 214.23025386792378,
+          "ttft_compute_proxy_seconds": 1185.7128216509834,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 6.90161762304,
+          "prefill_new_tokens_per_second": 148.37101327977544,
+          "ttft_compute_proxy_seconds": 7.198302127655385,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "spark",
+      "context_tokens": 262144,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 21.350170623999997,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 35.24982937600001,
+      "traffic_gb_per_step": 48.269321856,
+      "effective_bandwidth_gb_s": 204.75,
+      "effective_tflops": 40,
+      "compute_step_s": 0.0040892150592,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 4.223907589365356,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 4.223907589365356,
+      "decode_ms_per_token": 236.74760369230768,
+      "decode_only_seconds_for_8192": 1939.4363694473845,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 3.6083816891679747,
+      "ideal_memory_only_tps": 5.655766219679455,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 253952,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 253952,
+          "analytical_prefill_seconds": 711.2496822878207,
+          "prefill_new_tokens_per_second": 357.05042311320636,
+          "ttft_compute_proxy_seconds": 711.486429891513,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 253952,
+          "cached_tokens": 252928,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 4.140970573824,
+          "prefill_new_tokens_per_second": 247.28502213295906,
+          "ttft_compute_proxy_seconds": 4.377718177516308,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "spark",
+      "context_tokens": 524288,
+      "efficiency": "low",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 15.492979814400009,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 122.85000000000001,
+      "effective_tflops": 12,
+      "compute_step_s": 0.022220651456,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 1.8630406258487793,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 1.8630406258487793,
+      "decode_ms_per_token": 536.7569478225478,
+      "decode_only_seconds_for_8192": 4397.1129165623115,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 5.211752750437968,
+      "ideal_memory_only_tps": 4.171174550242386,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 7034.758450642944,
+          "prefill_new_tokens_per_second": 73.36371300038472,
+          "ttft_compute_proxy_seconds": 7035.295207590766,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 22.599328268288,
+          "prefill_new_tokens_per_second": 45.311081278327414,
+          "ttft_compute_proxy_seconds": 23.136085216110548,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "spark",
+      "context_tokens": 524288,
+      "efficiency": "base",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 15.492979814400009,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 163.79999999999998,
+      "effective_tflops": 24,
+      "compute_step_s": 0.011110325728,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 2.490240058995739,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 2.490240058995739,
+      "decode_ms_per_token": 401.5677108669109,
+      "decode_only_seconds_for_8192": 3289.642687421734,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 4.994596385836386,
+      "ideal_memory_only_tps": 4.171174550242386,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 3517.379225321472,
+          "prefill_new_tokens_per_second": 146.72742600076944,
+          "ttft_compute_proxy_seconds": 3517.780793032339,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 11.299664134144,
+          "prefill_new_tokens_per_second": 90.62216255665483,
+          "ttft_compute_proxy_seconds": 11.701231845010911,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "spark",
+      "context_tokens": 524288,
+      "efficiency": "high",
+      "memory_fraction": 0.9,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_fits": true,
+      "memory_headroom_gb": 15.492979814400009,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 204.75,
+      "effective_tflops": 40,
+      "compute_step_s": 0.0066661954368,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 3.1186246668003528,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 3.1186246668003528,
+      "decode_ms_per_token": 320.6541686935287,
+      "decode_only_seconds_for_8192": 2626.798949937387,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 4.892665847349929,
+      "ideal_memory_only_tps": 4.171174550242386,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 2110.427535192883,
+          "prefill_new_tokens_per_second": 244.5457100012824,
+          "ttft_compute_proxy_seconds": 2110.748189361577,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 6.7797984804864,
+          "prefill_new_tokens_per_second": 151.03693759442473,
+          "ttft_compute_proxy_seconds": 7.100452649179929,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    }
+  ],
+  "single_6000d_95percent_memory": [
+    {
+      "config": "6000d",
+      "context_tokens": 524288,
+      "efficiency": "low",
+      "memory_fraction": 0.95,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 42.8,
+      "memory_fits": true,
+      "memory_headroom_gb": 1.6929798143999975,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 629.1,
+      "effective_tflops": 60,
+      "compute_step_s": 0.0044441302912,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.004,
+      "decode_tokens_s": 9.256154333002915,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 9.256154333002915,
+      "decode_ms_per_token": 108.03622800826578,
+      "decode_only_seconds_for_8192": 885.0327798437132,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 1.0177457087765132,
+      "ideal_memory_only_tps": 21.36008066387859,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 1406.9516901285888,
+          "prefill_new_tokens_per_second": 366.8185650019236,
+          "ttft_compute_proxy_seconds": 1407.0597263565971,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 4.5198656536576,
+          "prefill_new_tokens_per_second": 226.5554063916371,
+          "ttft_compute_proxy_seconds": 4.627901881665866,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 524288,
+      "efficiency": "base",
+      "memory_fraction": 0.95,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 42.8,
+      "memory_fits": true,
+      "memory_headroom_gb": 1.6929798143999975,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 838.8,
+      "effective_tflops": 100,
+      "compute_step_s": 0.00266647817472,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.002,
+      "decode_tokens_s": 12.495755971712839,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 12.495755971712839,
+      "decode_ms_per_token": 80.02717100619934,
+      "decode_only_seconds_for_8192": 655.582584882785,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.9753396375774918,
+      "ideal_memory_only_tps": 21.36008066387859,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 844.1710140771532,
+          "prefill_new_tokens_per_second": 611.364275003206,
+          "ttft_compute_proxy_seconds": 844.2510412481595,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 2.71191939219456,
+          "prefill_new_tokens_per_second": 377.59234398606185,
+          "ttft_compute_proxy_seconds": 2.791946563200759,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    },
+    {
+      "config": "6000d",
+      "context_tokens": 524288,
+      "efficiency": "high",
+      "memory_fraction": 0.95,
+      "cache_gb": 41.1070201856,
+      "cache_pool_gb": 42.8,
+      "memory_fits": true,
+      "memory_headroom_gb": 1.6929798143999975,
+      "traffic_gb_per_step": 65.44919104,
+      "effective_bandwidth_gb_s": 1048.5,
+      "effective_tflops": 145,
+      "compute_step_s": 0.001838950465324138,
+      "communication_s": 0.0,
+      "fixed_overhead_s": 0.001,
+      "decode_tokens_s": 15.767464758577878,
+      "arithmetic_decode_tokens_s_before_capacity_gate": 15.767464758577878,
+      "decode_ms_per_token": 63.421736804959465,
+      "decode_only_seconds_for_8192": 519.550867906228,
+      "target_20_met_in_scenario": false,
+      "required_bandwidth_fraction_for_20": 0.9554347470146857,
+      "ideal_memory_only_tps": 21.36008066387859,
+      "prefill_probes": [
+        {
+          "mode": "cold",
+          "input_tokens": 516096,
+          "cached_tokens": 0,
+          "newly_processed_tokens": 516096,
+          "analytical_prefill_seconds": 582.1869062601057,
+          "prefill_new_tokens_per_second": 886.4781987546486,
+          "ttft_compute_proxy_seconds": 582.2503279969106,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        },
+        {
+          "mode": "warm1k",
+          "input_tokens": 516096,
+          "cached_tokens": 515072,
+          "newly_processed_tokens": 1024,
+          "analytical_prefill_seconds": 1.8702892359962482,
+          "prefill_new_tokens_per_second": 547.5088987797897,
+          "ttft_compute_proxy_seconds": 1.9337109728012076,
+          "qualification": "Compute-budget proxy; excludes queue, model load, tool and host overhead; not a measured TTFT"
+        }
+      ]
+    }
+  ],
+  "capacities": [
+    {
+      "config": "6000d",
+      "resident_sessions": 1,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_only_tokens_per_session": 491008,
+      "memory_only_total_tokens": 491008,
+      "per_session_capped_at_selected_524k": 491008,
+      "fits_262k": true,
+      "fits_524k": false
+    },
+    {
+      "config": "6000d",
+      "resident_sessions": 3,
+      "cache_pool_gb": 38.60000000000001,
+      "memory_only_tokens_per_session": 149504,
+      "memory_only_total_tokens": 448512,
+      "per_session_capped_at_selected_524k": 149504,
+      "fits_262k": false,
+      "fits_524k": false
+    },
+    {
+      "config": "2x6000d",
+      "resident_sessions": 1,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_only_tokens_per_session": 1414400,
+      "memory_only_total_tokens": 1414400,
+      "per_session_capped_at_selected_524k": 524288,
+      "fits_262k": true,
+      "fits_524k": true
+    },
+    {
+      "config": "2x6000d",
+      "resident_sessions": 3,
+      "cache_pool_gb": 108.20000000000002,
+      "memory_only_tokens_per_session": 457216,
+      "memory_only_total_tokens": 1371648,
+      "per_session_capped_at_selected_524k": 457216,
+      "fits_262k": true,
+      "fits_524k": false
+    },
+    {
+      "config": "mac_ultra",
+      "resident_sessions": 1,
+      "cache_pool_gb": 164.6,
+      "memory_only_tokens_per_session": 2162688,
+      "memory_only_total_tokens": 2162688,
+      "per_session_capped_at_selected_524k": 524288,
+      "fits_262k": true,
+      "fits_524k": true
+    },
+    {
+      "config": "mac_ultra",
+      "resident_sessions": 3,
+      "cache_pool_gb": 164.6,
+      "memory_only_tokens_per_session": 706816,
+      "memory_only_total_tokens": 2120448,
+      "per_session_capped_at_selected_524k": 524288,
+      "fits_262k": true,
+      "fits_524k": true
+    },
+    {
+      "config": "spark",
+      "resident_sessions": 1,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_only_tokens_per_session": 729856,
+      "memory_only_total_tokens": 729856,
+      "per_session_capped_at_selected_524k": 524288,
+      "fits_262k": true,
+      "fits_524k": true
+    },
+    {
+      "config": "spark",
+      "resident_sessions": 3,
+      "cache_pool_gb": 56.60000000000001,
+      "memory_only_tokens_per_session": 229120,
+      "memory_only_total_tokens": 687360,
+      "per_session_capped_at_selected_524k": 229120,
+      "fits_262k": false,
+      "fits_524k": false
+    }
+  ],
+  "prices": [
+    {
+      "config": "6000d",
+      "price_class": "D_component_budget_not_quote",
+      "components_exvat_assumed_cny": {
+        "gpu": [
+          50000.0,
+          85000.0
+        ],
+        "cpu_16_to_32_cores": [
+          8000,
+          16000
+        ],
+        "host_ram_128gb_rdimm": [
+          16000,
+          34000
+        ],
+        "nvme_2x2tb": [
+          3000,
+          6000
+        ],
+        "nic_10gbe": [
+          1500,
+          3500
+        ],
+        "chassis_motherboard_risers": [
+          18000,
+          32000
+        ],
+        "psu_forced_air_cooling_cables": [
+          8000,
+          16000
+        ]
+      },
+      "subtotal_exvat_cny": [
+        104500.0,
+        192500.0
+      ],
+      "hardware_vat_preparation": 0.13,
+      "price_contingency": 0.1,
+      "delivery_and_3year_hardware_support_tax_included_cny": [
+        4000,
+        8000
+      ],
+      "total_cny": [
+        132535.0,
+        244775.0
+      ],
+      "rounded_outward_wan": [
+        13.2,
+        24.5
+      ],
+      "scope": "Integrator server, existing rack/network; 128GB CPU RAM separate from GPU memory, 4TB raw NVMe; no inference offload",
+      "qualification": "GPU uses existing 50k–85k D input per card; host components are new analytical allowances. Not an HPE OEM quote or validated OEM BOM. Supplier must match passive cooling and true TP2 PCIe P2P topology."
+    },
+    {
+      "config": "2x6000d",
+      "price_class": "D_component_budget_not_quote",
+      "components_exvat_assumed_cny": {
+        "gpu": [
+          100000.0,
+          170000.0
+        ],
+        "cpu_16_to_32_cores": [
+          8000,
+          16000
+        ],
+        "host_ram_128gb_rdimm": [
+          16000,
+          34000
+        ],
+        "nvme_2x2tb": [
+          3000,
+          6000
+        ],
+        "nic_10gbe": [
+          1500,
+          3500
+        ],
+        "chassis_motherboard_risers": [
+          25000,
+          45000
+        ],
+        "psu_forced_air_cooling_cables": [
+          12000,
+          24000
+        ]
+      },
+      "subtotal_exvat_cny": [
+        165500.0,
+        298500.0
+      ],
+      "hardware_vat_preparation": 0.13,
+      "price_contingency": 0.1,
+      "delivery_and_3year_hardware_support_tax_included_cny": [
+        6000,
+        12000
+      ],
+      "total_cny": [
+        209565.0,
+        379155.0
+      ],
+      "rounded_outward_wan": [
+        20.9,
+        38.0
+      ],
+      "scope": "Integrator server, existing rack/network; 128GB CPU RAM separate from GPU memory, 4TB raw NVMe; no inference offload",
+      "qualification": "GPU uses existing 50k–85k D input per card; host components are new analytical allowances. Not an HPE OEM quote or validated OEM BOM. Supplier must match passive cooling and true TP2 PCIe P2P topology."
+    },
+    {
+      "config": "mac_ultra",
+      "price_class": "A_official_dated_2026_09_21",
+      "total_cny": [
+        90499,
+        90499
+      ],
+      "scope": "VAT and standard shipping included; pre-order, release 2026-09-22. No AppleCare add-on.",
+      "source": "https://www.apple.com.cn/shop/buy-mac/mac-studio"
+    },
+    {
+      "config": "spark",
+      "price_class": "C_foreign_list_converted_plus_D_local_budget",
+      "usd_list": 4699,
+      "fx_usd_cny_scenario": 7.0,
+      "converted_cny": 32893,
+      "converted_plus_13percent_tax_preparation_cny": 37169.09,
+      "china_delivery_budget_cny": [
+        40000,
+        50000
+      ],
+      "scope": "NVIDIA-branded 128GB / 4TB; US listing out of stock on observation; domestic delivered price not obtained",
+      "qualification": "40k–50k is a D planning allowance for currency, tax, delivery and channel/service uncertainty; GX10/PGX prices are separate products",
+      "source": "https://marketplace.nvidia.com/en-us/enterprise/personal-ai-supercomputers/dgx-spark/"
+    }
+  ]
+}

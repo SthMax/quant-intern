@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-23",
+  "status": "passed",
+  "checks": [
+    "120 unique cases: 105 within baseline budget, 15 H1/Qwen35 conditional exclusions",
+    "request and phase-token conservation",
+    "replica timing and peak/average decode reconciliation",
+    "complete KV/recurrent/convolution state checked against archived model configs",
+    "40 context cases with separate pools, memory and model limits",
+    "displayed 20-request serving and context tables match results",
+    "single-request replica invariance",
+    "95% H1 sensitivity separated from 90% baseline",
+    "hardware prices unchanged",
+    "deterministic rerun",
+    "document local links and affiliation scan",
+    "scenario 2 document and all calculations unchanged"
+  ],
+  "source_files_hashed": 53,
+  "results_sha256": "32c274078afc2a76004a4db9d966409ed52ce35e58111896e824f774707e0244",
+  "assumptions_sha256": "5ab3244992128f5cf99f58e4a0f13f1d2b1a2db83aecc75cb35414c701af63ed",
+  "document_sha256": "8247e00cbc48abf46f5b5958ea93ad3cad4deadb31f3a4230025ea83c408d3d7",
+  "measured_gpu_benchmark": false,
+  "human_review": "pending",
+  "previous_revision": {
+    "results_sha256": "e461d3c6e89ebf0b2aeb67ea54daef7f4a735a93a5342f9248b982acce32a99f",
+    "assumptions_sha256": "1beffd854a8e3f5f987f0b86df23ecebcbac43b711bd088911e9f2a18ddf51b5",
+    "document_sha256": "b705a6088f2d9f394ec179a66ded59a64ba29285bac8e12b5e1a840d8b3f0fe8"
+  },
+  "performance_cases": 120,
+  "feasible_performance_cases": 105,
+  "context_cases": 40,
+  "model_config_hashes": {
+    "knowledge-base/sources/TECH-070/qwen27/config.json": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+    "knowledge-base/sources/TECH-070/qwen35/config.json": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845"
+  },
+  "calculation_code_sha256": "d50324dcf4aa69430431792487d83f66231a104d073397aa61c62df0100cfc57",
+  "source_files_hashed_this_revision": 2,
+  "display_primary_model": "Qwen3.8-27B-FP8",
+  "scenario_number": 2
+}

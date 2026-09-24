@@ -1,0 +1,99 @@
+{
+  "source_id": "TECH-071",
+  "retrieved_at": "2026-09-23T09:38:04.560531+00:00",
+  "human_check_status": "pending",
+  "evidence_state": "verified-primary",
+  "files": {
+    "roofline.html": {
+      "requested_url": "https://jax-ml.github.io/scaling-book/roofline/",
+      "final_url": "https://jax-ml.github.io/scaling-book/roofline/",
+      "retrieved_at": "2026-09-23T09:37:39.722475+00:00",
+      "sha256": "e840410db6facea88d8201e53e783cca605c04d798225eaa1d84b50e3ee46637",
+      "bytes": 52872
+    },
+    "inference.html": {
+      "requested_url": "https://jax-ml.github.io/scaling-book/inference/",
+      "final_url": "https://jax-ml.github.io/scaling-book/inference/",
+      "retrieved_at": "2026-09-23T09:37:39.748704+00:00",
+      "sha256": "f7211ee61614c155eb9d94fe08df96056361f0075ec4836515938fe2aaf8fbd6",
+      "bytes": 112351
+    },
+    "vllm-bench.html": {
+      "requested_url": "https://docs.vllm.ai/en/latest/cli/bench/serve/",
+      "final_url": "https://docs.vllm.ai/en/latest/cli/bench/serve/",
+      "retrieved_at": "2026-09-23T09:37:40.309864+00:00",
+      "sha256": "b48916e3955dd1900e4c2d3da8a26da82db734fe669951fd8ebb17ff58c6b6b8",
+      "bytes": 720277
+    },
+    "qwen27-recipe.html": {
+      "requested_url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "final_url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "retrieved_at": "2026-09-23T09:37:40.082235+00:00",
+      "sha256": "578bb55ddd262d70554f4fdea1ef79d12b9265477c752e2d03c52a427218cb37",
+      "bytes": 1862804
+    },
+    "qwen35-recipe.html": {
+      "requested_url": "https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B",
+      "final_url": "https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B",
+      "retrieved_at": "2026-09-23T09:37:40.404269+00:00",
+      "sha256": "1871969cf9c4ee320310449436fc21a546bef34006b11d887e42d1a43edc6139",
+      "bytes": 1835672
+    },
+    "h200.html": {
+      "requested_url": "https://www.nvidia.com/en-us/data-center/h200/",
+      "final_url": "https://www.nvidia.com/en-us/data-center/h200/",
+      "retrieved_at": "2026-09-23T09:37:40.780582+00:00",
+      "sha256": "043144cd1adf740c62bb475f877de684bc7d238e2791b9dba24dfce2813968ad",
+      "bytes": 280071
+    },
+    "original.md": {
+      "derived_from": "Authored reading index over archived sources",
+      "sha256": "3484a806fb0bfe7736a8a1f96433bb0491907c660a0093e2f8adb968ffe9c60b",
+      "bytes": 679
+    },
+    "roofline.md": {
+      "derived_from": "roofline.html",
+      "sha256": "3228490f64fee2bad41fa65f4cee22b3ce9079315936d00972a976ebb7c16cb6",
+      "bytes": 21170
+    },
+    "inference.md": {
+      "derived_from": "inference.html",
+      "sha256": "c6d25f5508cf3be1caa6a505fabfb96a0da71fa8d1be528e55ab03f030054bef",
+      "bytes": 67014
+    },
+    "vllm-bench.md": {
+      "derived_from": "vllm-bench.html",
+      "sha256": "e01a5eede8cfb274b95b4ddc74d59e371ce79f07b221c95568b165057f777150",
+      "bytes": 19923
+    },
+    "qwen35-recipe.md": {
+      "derived_from": "qwen35-recipe.html",
+      "sha256": "7bebeb978bb7755fee98505a57d7ce6277ff633126d2c079a47df7fbd15a8db3",
+      "bytes": 4954
+    },
+    "h200.md": {
+      "derived_from": "h200.html",
+      "sha256": "7c34cd84d38b743f5bbd52498c7518be384344865968e35cbf45f89bfc0ff8c0",
+      "bytes": 8295
+    },
+    "qwen27-recipe.md": {
+      "derived_from": "qwen27-recipe.html",
+      "sha256": "aaba987faea38ab8bb1f169d99b69af9a31d8d1d82e89d06dd47a624a25c2f00",
+      "bytes": 10755
+    }
+  },
+  "retrieval_failures": {
+    "hpe-specs": {
+      "requested_url": "https://www.hpe.com/es/es/collaterals/collateral.c04123180.html",
+      "error": "The read operation timed out"
+    }
+  },
+  "title": "RAG响应与吞吐计算：Roofline、GPU和推理引擎依据",
+  "issuer": "JAX / HPE / NVIDIA / vLLM",
+  "official_url": "https://jax-ml.github.io/scaling-book/inference/",
+  "text_kind": "authored_source_index",
+  "reviewer": "Codex; primary-source inspection 2026-09-23",
+  "archive_status": "originals_and_extractions",
+  "used_in": "knowledge-base/infrastructure/scenario-2-enterprise-rag-2026-09-23.md",
+  "verification_scope": "带宽取准确GPU资料；有效TFLOP/s、利用率、检索延迟和排队设置为研究者假设。正文结果是未校准分析估算，非vendor benchmark或P95。"
+}

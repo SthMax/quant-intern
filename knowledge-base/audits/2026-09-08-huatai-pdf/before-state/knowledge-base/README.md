@@ -118,6 +118,6 @@ evidence.
 Use public information in this repository. Do not place confidential internal,
 client, personal, portfolio/position, or licensed research data here without the
 user's explicit direction and an authorized storage basis. Track internal-policy
-questions without copying restricted text. COD is MSIM's infrastructure; MRM
+questions without copying restricted text. COD is the host organization's infrastructure; MRM
 means model risk management. Those clarifications do not supply architecture
 specifications or internal policy content.

@@ -1,0 +1,127 @@
+{
+  "pdfs": {
+    "output/pdf/scenario-1-personal-agent.pdf": {
+      "sha256": "53b07f742dfec4930056e76b615331010a5e0b1becba42692f71130bbc69eadd"
+    },
+    "output/pdf/scenario-2-enterprise-rag.pdf": {
+      "sha256": "d6a5ac9a24f1de3067e5343684fd8f3ccb41f1a22a398177b8fbadd884d6a495"
+    },
+    "output/pdf/scenario-3-company-agent.pdf": {
+      "sha256": "851e22632a213626f0917e20293f71efd74bb2a0aa3c9819114f70abc90539d2"
+    }
+  },
+  "rendered_pages": 37,
+  "images": {
+    "qa/render/scenario-1/page-1.png": {
+      "sha256": "af43d49fe5faf494f3f49ec4faafc6c6fde1ae75377d9aa9598d3c51bf777ffc"
+    },
+    "qa/render/scenario-1/page-2.png": {
+      "sha256": "1dfda8ee9d1a06a74da9c2f7b23510f4626e1d39c7e1cae467dfbb0ce5fb93c2"
+    },
+    "qa/render/scenario-1/page-3.png": {
+      "sha256": "08a3123dff361cd7c271b96b6649bbb5d09318c98f6b9eb402be2d545729786a"
+    },
+    "qa/render/scenario-1/page-4.png": {
+      "sha256": "e696e05dc10f0e542ac4acd4bc14c1eeab3da5a06495498321b25820570291f5"
+    },
+    "qa/render/scenario-1/page-5.png": {
+      "sha256": "758e3a32036cf1a71c6525ab46ee0e1e2644c8ee79e369e530965d012ed20b62"
+    },
+    "qa/render/scenario-2/page-01.png": {
+      "sha256": "2d95c1bbc63f06377cb19c489d83ed68dc9f1b2154483dfec909d4c3d2b62dde"
+    },
+    "qa/render/scenario-2/page-02.png": {
+      "sha256": "dcba8e3ed0460b81ca2a210d6660e377f87130ad1a0b3d874890104534537917"
+    },
+    "qa/render/scenario-2/page-03.png": {
+      "sha256": "d6d74a49d9e7bcbfb3e28f4bea6912764a203480459bd51bbd7c4626ad6e35dd"
+    },
+    "qa/render/scenario-2/page-04.png": {
+      "sha256": "7d569de35d6a97fed3d4ce21156ad81745bded6fe783781097d2091cd63d25a7"
+    },
+    "qa/render/scenario-2/page-05.png": {
+      "sha256": "4a29ef2df7c3aed78f03b57854b242e2ec59b8a9ad7c7678a41ad0fa39617408"
+    },
+    "qa/render/scenario-2/page-06.png": {
+      "sha256": "8cb0cafbe484eba632395e1c5b0c4f1f32bbb71c344eed6ed7a5c339345a4b73"
+    },
+    "qa/render/scenario-2/page-07.png": {
+      "sha256": "1eb1727f03d2b0547e7bad94b9b4e016394ec361f039ff1688ed31d92bf2fd60"
+    },
+    "qa/render/scenario-2/page-08.png": {
+      "sha256": "3bf15bea4d3f582dee5c4ab4fe9caaa2af5651f777b4ad11df5767f79c08b0c7"
+    },
+    "qa/render/scenario-2/page-09.png": {
+      "sha256": "e2e3e0e9eaca8bf97b8b71ed3fdf37e2e40cd415f278979c26cb654515a8f987"
+    },
+    "qa/render/scenario-2/page-10.png": {
+      "sha256": "ddb3d1b06eeecd308ee2747c63c798fbca46b51b4ff55bad7da7b89e11999b22"
+    },
+    "qa/render/scenario-2/page-11.png": {
+      "sha256": "5b16b37076dc014dc19eb1ac9743c67f3c290f0b47cb3a13e6c85604e28e7def"
+    },
+    "qa/render/scenario-2/page-12.png": {
+      "sha256": "7f21244d5eb63ace28ec48b8e2dea2e774368f791eb91b7eb5ad501fab933138"
+    },
+    "qa/render/scenario-2/page-13.png": {
+      "sha256": "d297b8ae55f937ca3ac35ad94712db992c36337cd9a386f74babe4723c67c1ac"
+    },
+    "qa/render/scenario-3/page-01.png": {
+      "sha256": "8e2a41f63dbc9acdeda415625334069c01430fb7aba6049abcb69b0e6983cff5"
+    },
+    "qa/render/scenario-3/page-02.png": {
+      "sha256": "1be5d825fd93bcf28876cf96b45e48cead409908535c0239942d155cf55dd4ac"
+    },
+    "qa/render/scenario-3/page-03.png": {
+      "sha256": "549d2b5ee10ce093027c4aa384a5e541fb0d82e6d9166f223989faa07a46ac96"
+    },
+    "qa/render/scenario-3/page-04.png": {
+      "sha256": "72fd2fb08ff7776dc67c536c7064b0cc4ed5caa0adb9f205be7751855fe00d98"
+    },
+    "qa/render/scenario-3/page-05.png": {
+      "sha256": "585491a382ee77a1c5f057d47786101d68b871b4887cf46131daa1ff6c82797f"
+    },
+    "qa/render/scenario-3/page-06.png": {
+      "sha256": "c6c97fce5f6332a80bd5bbc6d2f09d455c84b972d83fa38a1e863e7ce54387d5"
+    },
+    "qa/render/scenario-3/page-07.png": {
+      "sha256": "09ca62ae3a05174b723ca9b851694c91e6164e842e9c054fe154f914228503a2"
+    },
+    "qa/render/scenario-3/page-08.png": {
+      "sha256": "0a6c416ec4141d7c574deaff91d7217c2a22aea692f32242ef8e07bc0caaecba"
+    },
+    "qa/render/scenario-3/page-09.png": {
+      "sha256": "dd31845d113884b7b5d2f6b4be4d4ab2f02ca15f30c2a1ebd910b35718f0f00e"
+    },
+    "qa/render/scenario-3/page-10.png": {
+      "sha256": "4302de5c740c4ecf13e85eccc084bd69e16383cbfe7b5317ea7b90ec0e49390f"
+    },
+    "qa/render/scenario-3/page-11.png": {
+      "sha256": "4987d469ec7fb590ff9337b472d7a97a9dc8736126aa3627e6dcec6daa563ac9"
+    },
+    "qa/render/scenario-3/page-12.png": {
+      "sha256": "8bc440422c5b446867a774af81447ebc87fc78da766277abb1e967bfe40149c8"
+    },
+    "qa/render/scenario-3/page-13.png": {
+      "sha256": "74aaa610613411d18f19863f6771a3c35142392da31c38f885edb3f6d3f34277"
+    },
+    "qa/render/scenario-3/page-14.png": {
+      "sha256": "355aade54cceeb0f72a76578c4a6b3858e0a489612ecdb65933572cdf6d4075d"
+    },
+    "qa/render/scenario-3/page-15.png": {
+      "sha256": "0518e8ef9d8ba3c622fa7df980fc1f44cfbef57b2fbfb6dd99baefac4ad4f1a1"
+    },
+    "qa/render/scenario-3/page-16.png": {
+      "sha256": "0f2e78f055b20b5f21c500dfa958e296954b796996f9521a3c5557a8db9daabf"
+    },
+    "qa/render/scenario-3/page-17.png": {
+      "sha256": "87e835dba7d9deff7f809c922658dbd84671b5d567388ee054f0125fcabda4ae"
+    },
+    "qa/render/scenario-3/page-18.png": {
+      "sha256": "87f729e0613347c13d01406185f2cdd754afec069f6f187e2c6eca25c53a5228"
+    },
+    "qa/render/scenario-3/page-19.png": {
+      "sha256": "59ad3c2d7e0f37e869c0f009a06b95c3f172de9bd9f41c7848d7e19a72b0b6d9"
+    }
+  }
+}

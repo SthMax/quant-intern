@@ -7,7 +7,8 @@
 **Authority:** This document supersedes earlier project plans and phase schedules.
 
 The confirmed brief is reproduced below with Markdown formatting normalized.
-Original wording, including the missing company-count number, is retained.
+Institution names were anonymized on 21 September 2026; the confirmed scope and
+remaining wording, including the missing company-count number, are retained.
 Execution plans and wording questions are maintained separately in
 [the Week 2 plan](weekly/week-02-plan.md) and the current
 [Weeks 3–5 plan](weekly/week-03-05-plan.md). The overview is supplied project
@@ -20,7 +21,7 @@ asset management industry. While global leaders such as BlackRock, Goldman Sachs
 and JPM have already proprietary LLMs into their research, compliance, and
 client-service workflows, Onshore mutual fund is still in the early stages of
 exploration. This project aims ti conduct a systematic feasibility study on
-locally deploying (on-premise) LLMs within MSIM China, complemented by a
+locally deploying (on-premise) LLMs within the host organization, complemented by a
 comprehensive survey of existing AI adoption cases across the industry.
 
 The project is designed for a summer quantitative intern and will produce a
@@ -32,9 +33,9 @@ technology roadmap.
 ### Primary Objective
 
 Evaluate the technical, financial, and regulatory feasibility of deploying
-open-source or commercial LLMs on-premise with MSIM China/COD infrastructure,
+open-source or commercial LLMs on-premise with the host organization's COD infrastructure,
 covering model selection, hardware requirements, data security and compliance
-with Morgan Stanley and CSRC guidelines.
+with firm and CSRC guidelines.
 
 ### Secondary Objective
 
@@ -98,7 +99,7 @@ Upon completion, the department will obtain:
 - A structured knowledge base of AI/LLM practices across onshore mutual fund
   industry, enabling benchmarking and competitive intelligence.
 - A technical reference architecture with hardware and software specifications
-  for on-premise LLM deployment, tailored to the constraints of MSIMC/COD IT
+  for on-premise LLM deployment, tailored to the constraints of the host organization's COD IT
   environment.
 - A TCO comparison model that quantifies the financial trade-offs between
   on-premise LLM deployment and cloud-based LLM consumption.
@@ -109,5 +110,5 @@ Upon completion, the department will obtain:
 
 ## Mentor Clarifications
 
-- COD infrastructure is the infrastructure used in MSIM.
+- COD infrastructure is the infrastructure used in the host organization.
 - MRM is model risk management.

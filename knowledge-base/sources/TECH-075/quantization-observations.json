@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-24",
+  "capture_kind": "Authored observations from rendered publisher pages; not downloaded tensors or a raw API snapshot",
+  "retrieval_note": "Rendered pages inspected through web tools; direct local HF API retrieval failed TLS, so no full artifact SHA or exact tensor byte claim is made.",
+  "opencode_web_observations": {
+    "v1": "https://opencode.ai/docs/providers",
+    "v2": "https://opencode.ai/v2/docs/models",
+    "facts": [
+      "Custom Chat Completions and Responses providers have distinct packages.",
+      "v2 auto-discovery does not infer vLLM tool support; explicitly declare supported capabilities.",
+      "v1 and v2 configuration schemas differ."
+    ],
+    "raw_fetch_status": "HTTP 403; web-rendered pages inspected"
+  },
+  "superseded_quantizations": [
+    {
+      "repo": "mlx-community/Qwen3.6-35B-A3B-4bit",
+      "url": "https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-4bit/tree/main",
+      "displayed_repository_gb": 20.4,
+      "displayed_short_revision": "38740b8",
+      "planning_weights_gb": 20.5
+    },
+    {
+      "repo": "mlx-community/Qwen3.8-27B-4bit",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-4bit/tree/main",
+      "displayed_repository_gb": 16.1,
+      "displayed_short_revision": "10c35ca",
+      "planning_weights_gb": 16.5,
+      "config_quantization": {
+        "bits": 4,
+        "group_size": 64,
+        "mode": "affine"
+      }
+    },
+    {
+      "repo": "unsloth/Qwen3.6-35B-A3B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF/tree/main",
+      "file": "Qwen3.6-35B-A3B-UD-Q4_K_M.gguf",
+      "displayed_file_gb": 22.1,
+      "displayed_short_revision": "a483e9e",
+      "planning_weights_gb": 22.5
+    },
+    {
+      "repo": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/tree/main",
+      "file": "Qwen3.8-27B-UD-Q4_K_M.gguf",
+      "displayed_file_gb": 16.5,
+      "planning_weights_gb": 17.0
+    }
+  ],
+  "quantizations": [
+    {
+      "repo": "mlx-community/Qwen3.8-27B-8bit",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-8bit/tree/main",
+      "displayed_repository_gb": 29.5,
+      "displayed_short_revision": "815b83c",
+      "planning_weights_gb": 30.0
+    },
+    {
+      "repo": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/tree/f975863083b62f54a5e6fac11671c750c2bbc59c",
+      "file": "Qwen3.8-27B-Q8_0.gguf",
+      "displayed_file_gb": 29.0,
+      "planning_weights_gb": 29.5
+    }
+  ]
+}

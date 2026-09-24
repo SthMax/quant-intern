@@ -42,7 +42,7 @@ to be completed.
 | ChinaAMC procured an LLM security gateway | FUND-001 | Procurement completed does not prove production acceptance |
 | GF documents an assistant using DeepSeek/Qwen families | FUND-009 | Model origin is not proof of API topology or commercial partnership |
 | AMAC issued the fund-sector LLM standard in April 2026 | REG-009/010 | Group-standard adoption/binding basis needs assessment |
-| US MRM guidance changed in April 2026 | REG-007/008 | Generative/agentic AI excluded; internal MS policy not supplied |
+| US MRM guidance changed in April 2026 | REG-007/008 | Generative/agentic AI excluded; internal firm policy not supplied |
 | PIPL automated-decision protections depend on the use | REG-002 | Do not generalize to all financial summarization |
 | CSRC outsourcing retains responsibility and control requirements | REG-003/005 | Apply the exact entity/system/service definitions |
 

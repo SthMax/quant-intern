@@ -1,0 +1,1994 @@
+{
+  "status": "Conditional architecture payload capacity; physical engine blocks need profiling",
+  "units": "Decimal GB; tokens count input + history + generated tokens once per sequence, not once per GPU",
+  "scope": "Disjoint resident sequences; balanced TP; reclaimed inactive prefixes; no draft model or CPU offload",
+  "assumptions_sha256": "6f5145eda4d50b873d5322f08f34a2a705647d54d95f076f64a749be6e31c180",
+  "page_reserve_factor": 1.15,
+  "mamba_note": "One FP32 recurrent state and one BF16 convolution state per live sequence; prefix checkpoints and allocator padding are additional physical costs",
+  "user_comparison": {
+    "model": "Qwen3.8-27B",
+    "gpu": "4 x A100 40GB",
+    "tp": 4,
+    "single_request_observed_tps_approx": 40,
+    "dtype_context_framework": "not recalled"
+  },
+  "a0_decode_audit": {
+    "status": "Reconstruction of the old conditional estimate, not a measured capability",
+    "batch": 20,
+    "average_context": 8492.0,
+    "expert_union_fraction": 0.4700507153168765,
+    "weights_read_gb_per_step": 20.435633033203423,
+    "kv_read_gb_per_step": 3.4783232,
+    "recurrent_read_write_gb_per_step": 2.5165824,
+    "other_traffic_gb_per_step": 1.0,
+    "total_traffic_gb_per_step": 27.430538633203422,
+    "effective_bandwidth_gb_s": 838.8,
+    "memory_time_ms": 32.702120449694114,
+    "compute_time_ms": 2.763776426666667,
+    "fixed_overhead_ms": 3,
+    "step_ms": 35.70212044969412,
+    "aggregate_decode_tps": 560.1908163460737,
+    "per_request_decode_tps": 28.009540817303684,
+    "whole_burst_output_tps": 284.0546514416841,
+    "uncalibrated": [
+      "60% effective bandwidth",
+      "uniform independent expert routing",
+      "one memory read per distinct expert in a batch",
+      "max(memory time, compute time) with fixed 3 ms overhead"
+    ]
+  },
+  "cases": [
+    {
+      "config": "A0",
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "source_config": "knowledge-base/sources/TECH-070/qwen35/config.json",
+        "config_sha256": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 262144,
+        "history_bytes_per_token_per_replica": 20480,
+        "fixed_bytes_per_sequence_per_replica": 64389120,
+        "recurrent_bytes": 62914560,
+        "convolution_bytes": 1474560,
+        "all_history_bytes_per_token_per_replica": 20480
+      },
+      "total_gpu_gb": 84,
+      "weights_total_gb": 37.5,
+      "engine_reserve_total_gb": 6,
+      "unallocated_fraction_gb": 8.399999999999999,
+      "cache_pool_gb_per_replica": 32.10000000000001,
+      "cache_pool_gb_total": 32.10000000000001,
+      "payload_budget_gb_total": 27.913043478260878,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 5,
+          "memory_only_tokens_per_sequence": 269312,
+          "bounded_tokens_per_sequence": 262144,
+          "input_history_budget_with_8k_output_reserve": 253952,
+          "cache_gb_used_at_bounded_limit": 31.240314879999996
+        }
+      ],
+      "total_memory_only_tokens": 1346560,
+      "total_bounded_tokens": 1310720,
+      "equal_context_tokens_per_sequence": 262144
+    },
+    {
+      "config": "A0",
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "source_config": "knowledge-base/sources/TECH-070/qwen35/config.json",
+        "config_sha256": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 262144,
+        "history_bytes_per_token_per_replica": 20480,
+        "fixed_bytes_per_sequence_per_replica": 64389120,
+        "recurrent_bytes": 62914560,
+        "convolution_bytes": 1474560,
+        "all_history_bytes_per_token_per_replica": 20480
+      },
+      "total_gpu_gb": 84,
+      "weights_total_gb": 37.5,
+      "engine_reserve_total_gb": 6,
+      "unallocated_fraction_gb": 8.399999999999999,
+      "cache_pool_gb_per_replica": 32.10000000000001,
+      "cache_pool_gb_total": 32.10000000000001,
+      "payload_budget_gb_total": 27.913043478260878,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 5,
+          "memory_only_tokens_per_sequence": 269312,
+          "bounded_tokens_per_sequence": 262144,
+          "input_history_budget_with_8k_output_reserve": 253952,
+          "cache_gb_used_at_bounded_limit": 31.240314879999996
+        }
+      ],
+      "total_memory_only_tokens": 1346560,
+      "total_bounded_tokens": 1310720,
+      "equal_context_tokens_per_sequence": 262144
+    },
+    {
+      "config": "A0",
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "source_config": "knowledge-base/sources/TECH-070/qwen35/config.json",
+        "config_sha256": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 262144,
+        "history_bytes_per_token_per_replica": 20480,
+        "fixed_bytes_per_sequence_per_replica": 64389120,
+        "recurrent_bytes": 62914560,
+        "convolution_bytes": 1474560,
+        "all_history_bytes_per_token_per_replica": 20480
+      },
+      "total_gpu_gb": 84,
+      "weights_total_gb": 37.5,
+      "engine_reserve_total_gb": 6,
+      "unallocated_fraction_gb": 8.399999999999999,
+      "cache_pool_gb_per_replica": 32.10000000000001,
+      "cache_pool_gb_total": 32.10000000000001,
+      "payload_budget_gb_total": 27.913043478260878,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 20,
+          "memory_only_tokens_per_sequence": 64768,
+          "bounded_tokens_per_sequence": 64768,
+          "input_history_budget_with_8k_output_reserve": 56576,
+          "cache_gb_used_at_bounded_limit": 31.989268479999996
+        }
+      ],
+      "total_memory_only_tokens": 1295360,
+      "total_bounded_tokens": 1295360,
+      "equal_context_tokens_per_sequence": 64768
+    },
+    {
+      "config": "A0",
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "source_config": "knowledge-base/sources/TECH-070/qwen35/config.json",
+        "config_sha256": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 262144,
+        "history_bytes_per_token_per_replica": 20480,
+        "fixed_bytes_per_sequence_per_replica": 64389120,
+        "recurrent_bytes": 62914560,
+        "convolution_bytes": 1474560,
+        "all_history_bytes_per_token_per_replica": 20480
+      },
+      "total_gpu_gb": 84,
+      "weights_total_gb": 37.5,
+      "engine_reserve_total_gb": 6,
+      "unallocated_fraction_gb": 8.399999999999999,
+      "cache_pool_gb_per_replica": 32.10000000000001,
+      "cache_pool_gb_total": 32.10000000000001,
+      "payload_budget_gb_total": 27.913043478260878,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 20,
+          "memory_only_tokens_per_sequence": 64768,
+          "bounded_tokens_per_sequence": 64768,
+          "input_history_budget_with_8k_output_reserve": 56576,
+          "cache_gb_used_at_bounded_limit": 31.989268479999996
+        }
+      ],
+      "total_memory_only_tokens": 1295360,
+      "total_bounded_tokens": 1295360,
+      "equal_context_tokens_per_sequence": 64768
+    },
+    {
+      "config": "A0",
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "source_config": "knowledge-base/sources/TECH-070/qwen35/config.json",
+        "config_sha256": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 262144,
+        "history_bytes_per_token_per_replica": 20480,
+        "fixed_bytes_per_sequence_per_replica": 64389120,
+        "recurrent_bytes": 62914560,
+        "convolution_bytes": 1474560,
+        "all_history_bytes_per_token_per_replica": 20480
+      },
+      "total_gpu_gb": 84,
+      "weights_total_gb": 37.5,
+      "engine_reserve_total_gb": 6,
+      "unallocated_fraction_gb": 8.399999999999999,
+      "cache_pool_gb_per_replica": 32.10000000000001,
+      "cache_pool_gb_total": 32.10000000000001,
+      "payload_budget_gb_total": 27.913043478260878,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 30,
+          "memory_only_tokens_per_sequence": 42240,
+          "bounded_tokens_per_sequence": 42240,
+          "input_history_budget_with_8k_output_reserve": 34048,
+          "cache_gb_used_at_bounded_limit": 32.066519039999996
+        }
+      ],
+      "total_memory_only_tokens": 1267200,
+      "total_bounded_tokens": 1267200,
+      "equal_context_tokens_per_sequence": 42240
+    },
+    {
+      "config": "A0",
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "source_config": "knowledge-base/sources/TECH-070/qwen35/config.json",
+        "config_sha256": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 262144,
+        "history_bytes_per_token_per_replica": 20480,
+        "fixed_bytes_per_sequence_per_replica": 64389120,
+        "recurrent_bytes": 62914560,
+        "convolution_bytes": 1474560,
+        "all_history_bytes_per_token_per_replica": 20480
+      },
+      "total_gpu_gb": 84,
+      "weights_total_gb": 37.5,
+      "engine_reserve_total_gb": 6,
+      "unallocated_fraction_gb": 8.399999999999999,
+      "cache_pool_gb_per_replica": 32.10000000000001,
+      "cache_pool_gb_total": 32.10000000000001,
+      "payload_budget_gb_total": 27.913043478260878,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 30,
+          "memory_only_tokens_per_sequence": 42240,
+          "bounded_tokens_per_sequence": 42240,
+          "input_history_budget_with_8k_output_reserve": 34048,
+          "cache_gb_used_at_bounded_limit": 32.066519039999996
+        }
+      ],
+      "total_memory_only_tokens": 1267200,
+      "total_bounded_tokens": 1267200,
+      "equal_context_tokens_per_sequence": 42240
+    },
+    {
+      "config": "A0",
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "source_config": "knowledge-base/sources/TECH-070/qwen35/config.json",
+        "config_sha256": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 262144,
+        "history_bytes_per_token_per_replica": 20480,
+        "fixed_bytes_per_sequence_per_replica": 64389120,
+        "recurrent_bytes": 62914560,
+        "convolution_bytes": 1474560,
+        "all_history_bytes_per_token_per_replica": 20480
+      },
+      "total_gpu_gb": 84,
+      "weights_total_gb": 37.5,
+      "engine_reserve_total_gb": 6,
+      "unallocated_fraction_gb": 8.399999999999999,
+      "cache_pool_gb_per_replica": 32.10000000000001,
+      "cache_pool_gb_total": 32.10000000000001,
+      "payload_budget_gb_total": 27.913043478260878,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 50,
+          "memory_only_tokens_per_sequence": 24064,
+          "bounded_tokens_per_sequence": 24064,
+          "input_history_budget_with_8k_output_reserve": 15872,
+          "cache_gb_used_at_bounded_limit": 32.040140799999996
+        }
+      ],
+      "total_memory_only_tokens": 1203200,
+      "total_bounded_tokens": 1203200,
+      "equal_context_tokens_per_sequence": 24064
+    },
+    {
+      "config": "A0",
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "Qwen3.6-35B-A3B-FP8",
+        "source_config": "knowledge-base/sources/TECH-070/qwen35/config.json",
+        "config_sha256": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 262144,
+        "history_bytes_per_token_per_replica": 20480,
+        "fixed_bytes_per_sequence_per_replica": 64389120,
+        "recurrent_bytes": 62914560,
+        "convolution_bytes": 1474560,
+        "all_history_bytes_per_token_per_replica": 20480
+      },
+      "total_gpu_gb": 84,
+      "weights_total_gb": 37.5,
+      "engine_reserve_total_gb": 6,
+      "unallocated_fraction_gb": 8.399999999999999,
+      "cache_pool_gb_per_replica": 32.10000000000001,
+      "cache_pool_gb_total": 32.10000000000001,
+      "payload_budget_gb_total": 27.913043478260878,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 50,
+          "memory_only_tokens_per_sequence": 24064,
+          "bounded_tokens_per_sequence": 24064,
+          "input_history_budget_with_8k_output_reserve": 15872,
+          "cache_gb_used_at_bounded_limit": 32.040140799999996
+        }
+      ],
+      "total_memory_only_tokens": 1203200,
+      "total_bounded_tokens": 1203200,
+      "equal_context_tokens_per_sequence": 24064
+    },
+    {
+      "config": "A1",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 336,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 33.599999999999994,
+      "cache_pool_gb_per_replica": 95.40000000000003,
+      "cache_pool_gb_total": 95.40000000000003,
+      "payload_budget_gb_total": 82.95652173913047,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 5,
+          "memory_only_tokens_per_sequence": 718848,
+          "bounded_tokens_per_sequence": 718848,
+          "input_history_budget_with_8k_output_reserve": 710656,
+          "cache_gb_used_at_bounded_limit": 95.37994752
+        }
+      ],
+      "total_memory_only_tokens": 3594240,
+      "total_bounded_tokens": 3594240,
+      "equal_context_tokens_per_sequence": 718848
+    },
+    {
+      "config": "A1",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 336,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 33.599999999999994,
+      "cache_pool_gb_per_replica": 95.40000000000003,
+      "cache_pool_gb_total": 95.40000000000003,
+      "payload_budget_gb_total": 82.95652173913047,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 5,
+          "memory_only_tokens_per_sequence": 74240,
+          "bounded_tokens_per_sequence": 74240,
+          "input_history_budget_with_8k_output_reserve": 66048,
+          "cache_gb_used_at_bounded_limit": 95.0747136
+        }
+      ],
+      "total_memory_only_tokens": 371200,
+      "total_bounded_tokens": 371200,
+      "equal_context_tokens_per_sequence": 74240
+    },
+    {
+      "config": "A1",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 336,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 33.599999999999994,
+      "cache_pool_gb_per_replica": 95.40000000000003,
+      "cache_pool_gb_total": 95.40000000000003,
+      "payload_budget_gb_total": 82.95652173913047,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 20,
+          "memory_only_tokens_per_sequence": 178688,
+          "bounded_tokens_per_sequence": 178688,
+          "input_history_budget_with_8k_output_reserve": 170496,
+          "cache_gb_used_at_bounded_limit": 95.27820288
+        }
+      ],
+      "total_memory_only_tokens": 3573760,
+      "total_bounded_tokens": 3573760,
+      "equal_context_tokens_per_sequence": 178688
+    },
+    {
+      "config": "A1",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 336,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 33.599999999999994,
+      "cache_pool_gb_per_replica": 95.40000000000003,
+      "cache_pool_gb_total": 95.40000000000003,
+      "payload_budget_gb_total": 82.95652173913047,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 20,
+          "memory_only_tokens_per_sequence": 18432,
+          "bounded_tokens_per_sequence": 18432,
+          "input_history_budget_with_8k_output_reserve": 10240,
+          "cache_gb_used_at_bounded_limit": 94.41902592
+        }
+      ],
+      "total_memory_only_tokens": 368640,
+      "total_bounded_tokens": 368640,
+      "equal_context_tokens_per_sequence": 18432
+    },
+    {
+      "config": "A1",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 336,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 33.599999999999994,
+      "cache_pool_gb_per_replica": 95.40000000000003,
+      "cache_pool_gb_total": 95.40000000000003,
+      "payload_budget_gb_total": 82.95652173913047,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 30,
+          "memory_only_tokens_per_sequence": 118784,
+          "bounded_tokens_per_sequence": 118784,
+          "input_history_budget_with_8k_output_reserve": 110592,
+          "cache_gb_used_at_bounded_limit": 95.3008128
+        }
+      ],
+      "total_memory_only_tokens": 3563520,
+      "total_bounded_tokens": 3563520,
+      "equal_context_tokens_per_sequence": 118784
+    },
+    {
+      "config": "A1",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 336,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 33.599999999999994,
+      "cache_pool_gb_per_replica": 95.40000000000003,
+      "cache_pool_gb_total": 95.40000000000003,
+      "payload_budget_gb_total": 82.95652173913047,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 30,
+          "memory_only_tokens_per_sequence": 12288,
+          "bounded_tokens_per_sequence": 12288,
+          "input_history_budget_with_8k_output_reserve": 4096,
+          "cache_gb_used_at_bounded_limit": 94.41902592
+        }
+      ],
+      "total_memory_only_tokens": 368640,
+      "total_bounded_tokens": 368640,
+      "equal_context_tokens_per_sequence": 12288
+    },
+    {
+      "config": "A1",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 336,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 33.599999999999994,
+      "cache_pool_gb_per_replica": 95.40000000000003,
+      "cache_pool_gb_total": 95.40000000000003,
+      "payload_budget_gb_total": 82.95652173913047,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 50,
+          "memory_only_tokens_per_sequence": 70656,
+          "bounded_tokens_per_sequence": 70656,
+          "input_history_budget_with_8k_output_reserve": 62464,
+          "cache_gb_used_at_bounded_limit": 95.0747136
+        }
+      ],
+      "total_memory_only_tokens": 3532800,
+      "total_bounded_tokens": 3532800,
+      "equal_context_tokens_per_sequence": 70656
+    },
+    {
+      "config": "A1",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 336,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 33.599999999999994,
+      "cache_pool_gb_per_replica": 95.40000000000003,
+      "cache_pool_gb_total": 95.40000000000003,
+      "payload_budget_gb_total": 82.95652173913047,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 50,
+          "memory_only_tokens_per_sequence": 7424,
+          "bounded_tokens_per_sequence": 7424,
+          "input_history_budget_with_8k_output_reserve": 0,
+          "cache_gb_used_at_bounded_limit": 95.0747136
+        }
+      ],
+      "total_memory_only_tokens": 371200,
+      "total_bounded_tokens": 371200,
+      "equal_context_tokens_per_sequence": 7424
+    },
+    {
+      "config": "A2",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 564,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 56.399999999999984,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 300.6,
+      "payload_budget_gb_total": 261.3913043478261,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 5,
+          "memory_only_tokens_per_sequence": 2267904,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 139.06231296
+        }
+      ],
+      "total_memory_only_tokens": 11339520,
+      "total_bounded_tokens": 5242880,
+      "equal_context_tokens_per_sequence": 1048576
+    },
+    {
+      "config": "A2",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 564,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 56.399999999999984,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 300.6,
+      "payload_budget_gb_total": 261.3913043478261,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 5,
+          "memory_only_tokens_per_sequence": 234496,
+          "bounded_tokens_per_sequence": 234496,
+          "input_history_budget_with_8k_output_reserve": 226304,
+          "cache_gb_used_at_bounded_limit": 300.30495744
+        }
+      ],
+      "total_memory_only_tokens": 1172480,
+      "total_bounded_tokens": 1172480,
+      "equal_context_tokens_per_sequence": 234496
+    },
+    {
+      "config": "A2",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 564,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 56.399999999999984,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 300.6,
+      "payload_budget_gb_total": 261.3913043478261,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 20,
+          "memory_only_tokens_per_sequence": 566016,
+          "bounded_tokens_per_sequence": 566016,
+          "input_history_budget_with_8k_output_reserve": 557824,
+          "cache_gb_used_at_bounded_limit": 300.53105664
+        }
+      ],
+      "total_memory_only_tokens": 11320320,
+      "total_bounded_tokens": 11320320,
+      "equal_context_tokens_per_sequence": 566016
+    },
+    {
+      "config": "A2",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 564,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 56.399999999999984,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 300.6,
+      "payload_budget_gb_total": 261.3913043478261,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 20,
+          "memory_only_tokens_per_sequence": 58624,
+          "bounded_tokens_per_sequence": 58624,
+          "input_history_budget_with_8k_output_reserve": 50432,
+          "cache_gb_used_at_bounded_limit": 300.30495744
+        }
+      ],
+      "total_memory_only_tokens": 1172480,
+      "total_bounded_tokens": 1172480,
+      "equal_context_tokens_per_sequence": 58624
+    },
+    {
+      "config": "A2",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 564,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 56.399999999999984,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 300.6,
+      "payload_budget_gb_total": 261.3913043478261,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 30,
+          "memory_only_tokens_per_sequence": 376832,
+          "bounded_tokens_per_sequence": 376832,
+          "input_history_budget_with_8k_output_reserve": 368640,
+          "cache_gb_used_at_bounded_limit": 300.41800704
+        }
+      ],
+      "total_memory_only_tokens": 11304960,
+      "total_bounded_tokens": 11304960,
+      "equal_context_tokens_per_sequence": 376832
+    },
+    {
+      "config": "A2",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 564,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 56.399999999999984,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 300.6,
+      "payload_budget_gb_total": 261.3913043478261,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 30,
+          "memory_only_tokens_per_sequence": 38912,
+          "bounded_tokens_per_sequence": 38912,
+          "input_history_budget_with_8k_output_reserve": 30720,
+          "cache_gb_used_at_bounded_limit": 298.99358208
+        }
+      ],
+      "total_memory_only_tokens": 1167360,
+      "total_bounded_tokens": 1167360,
+      "equal_context_tokens_per_sequence": 38912
+    },
+    {
+      "config": "A2",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 564,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 56.399999999999984,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 300.6,
+      "payload_budget_gb_total": 261.3913043478261,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 50,
+          "memory_only_tokens_per_sequence": 225792,
+          "bounded_tokens_per_sequence": 225792,
+          "input_history_budget_with_8k_output_reserve": 217600,
+          "cache_gb_used_at_bounded_limit": 300.5988864
+        }
+      ],
+      "total_memory_only_tokens": 11289600,
+      "total_bounded_tokens": 11289600,
+      "equal_context_tokens_per_sequence": 225792
+    },
+    {
+      "config": "A2",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 564,
+      "weights_total_gb": 175,
+      "engine_reserve_total_gb": 32,
+      "unallocated_fraction_gb": 56.399999999999984,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 300.6,
+      "payload_budget_gb_total": 261.3913043478261,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 50,
+          "memory_only_tokens_per_sequence": 23296,
+          "bounded_tokens_per_sequence": 23296,
+          "input_history_budget_with_8k_output_reserve": 15104,
+          "cache_gb_used_at_bounded_limit": 298.3378944
+        }
+      ],
+      "total_memory_only_tokens": 1164800,
+      "total_bounded_tokens": 1164800,
+      "equal_context_tokens_per_sequence": 23296
+    },
+    {
+      "config": "A3",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 601.2,
+      "payload_budget_gb_total": 522.7826086956522,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 3,
+          "memory_only_tokens_per_sequence": 3780352,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 83.437387776
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 2,
+          "memory_only_tokens_per_sequence": 5671424,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 55.62492518399999
+        }
+      ],
+      "total_memory_only_tokens": 22683904,
+      "total_bounded_tokens": 5242880,
+      "equal_context_tokens_per_sequence": 1048576
+    },
+    {
+      "config": "A3",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 601.2,
+      "payload_budget_gb_total": 522.7826086956522,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 3,
+          "memory_only_tokens_per_sequence": 391168,
+          "bounded_tokens_per_sequence": 391168,
+          "input_history_budget_with_8k_output_reserve": 382976,
+          "cache_gb_used_at_bounded_limit": 300.567232512
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 2,
+          "memory_only_tokens_per_sequence": 586752,
+          "bounded_tokens_per_sequence": 586752,
+          "input_history_budget_with_8k_output_reserve": 578560,
+          "cache_gb_used_at_bounded_limit": 300.567232512
+        }
+      ],
+      "total_memory_only_tokens": 2347008,
+      "total_bounded_tokens": 2347008,
+      "equal_context_tokens_per_sequence": 391168
+    },
+    {
+      "config": "A3",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 601.2,
+      "payload_budget_gb_total": 522.7826086956522,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 10,
+          "memory_only_tokens_per_sequence": 1133312,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 278.12462592
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 10,
+          "memory_only_tokens_per_sequence": 1133312,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 278.12462592
+        }
+      ],
+      "total_memory_only_tokens": 22666240,
+      "total_bounded_tokens": 20971520,
+      "equal_context_tokens_per_sequence": 1048576
+    },
+    {
+      "config": "A3",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 601.2,
+      "payload_budget_gb_total": 522.7826086956522,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 10,
+          "memory_only_tokens_per_sequence": 117248,
+          "bounded_tokens_per_sequence": 117248,
+          "input_history_budget_with_8k_output_reserve": 109056,
+          "cache_gb_used_at_bounded_limit": 300.30495744
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 10,
+          "memory_only_tokens_per_sequence": 117248,
+          "bounded_tokens_per_sequence": 117248,
+          "input_history_budget_with_8k_output_reserve": 109056,
+          "cache_gb_used_at_bounded_limit": 300.30495744
+        }
+      ],
+      "total_memory_only_tokens": 2344960,
+      "total_bounded_tokens": 2344960,
+      "equal_context_tokens_per_sequence": 117248
+    },
+    {
+      "config": "A3",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 601.2,
+      "payload_budget_gb_total": 522.7826086956522,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 15,
+          "memory_only_tokens_per_sequence": 755200,
+          "bounded_tokens_per_sequence": 755200,
+          "input_history_budget_with_8k_output_reserve": 747008,
+          "cache_gb_used_at_bounded_limit": 300.58758144
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 15,
+          "memory_only_tokens_per_sequence": 755200,
+          "bounded_tokens_per_sequence": 755200,
+          "input_history_budget_with_8k_output_reserve": 747008,
+          "cache_gb_used_at_bounded_limit": 300.58758144
+        }
+      ],
+      "total_memory_only_tokens": 22656000,
+      "total_bounded_tokens": 22656000,
+      "equal_context_tokens_per_sequence": 755200
+    },
+    {
+      "config": "A3",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 601.2,
+      "payload_budget_gb_total": 522.7826086956522,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 15,
+          "memory_only_tokens_per_sequence": 78080,
+          "bounded_tokens_per_sequence": 78080,
+          "input_history_budget_with_8k_output_reserve": 69888,
+          "cache_gb_used_at_bounded_limit": 299.9771136
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 15,
+          "memory_only_tokens_per_sequence": 78080,
+          "bounded_tokens_per_sequence": 78080,
+          "input_history_budget_with_8k_output_reserve": 69888,
+          "cache_gb_used_at_bounded_limit": 299.9771136
+        }
+      ],
+      "total_memory_only_tokens": 2342400,
+      "total_bounded_tokens": 2342400,
+      "equal_context_tokens_per_sequence": 78080
+    },
+    {
+      "config": "A3",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 601.2,
+      "payload_budget_gb_total": 522.7826086956522,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 25,
+          "memory_only_tokens_per_sequence": 452608,
+          "bounded_tokens_per_sequence": 452608,
+          "input_history_budget_with_8k_output_reserve": 444416,
+          "cache_gb_used_at_bounded_limit": 300.5423616
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 25,
+          "memory_only_tokens_per_sequence": 452608,
+          "bounded_tokens_per_sequence": 452608,
+          "input_history_budget_with_8k_output_reserve": 444416,
+          "cache_gb_used_at_bounded_limit": 300.5423616
+        }
+      ],
+      "total_memory_only_tokens": 22630400,
+      "total_bounded_tokens": 22630400,
+      "equal_context_tokens_per_sequence": 452608
+    },
+    {
+      "config": "A3",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 300.6,
+      "cache_pool_gb_total": 601.2,
+      "payload_budget_gb_total": 522.7826086956522,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 25,
+          "memory_only_tokens_per_sequence": 46848,
+          "bounded_tokens_per_sequence": 46848,
+          "input_history_budget_with_8k_output_reserve": 38656,
+          "cache_gb_used_at_bounded_limit": 299.9771136
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 25,
+          "memory_only_tokens_per_sequence": 46848,
+          "bounded_tokens_per_sequence": 46848,
+          "input_history_budget_with_8k_output_reserve": 38656,
+          "cache_gb_used_at_bounded_limit": 299.9771136
+        }
+      ],
+      "total_memory_only_tokens": 2342400,
+      "total_bounded_tokens": 2342400,
+      "equal_context_tokens_per_sequence": 46848
+    },
+    {
+      "config": "A4",
+      "model": "MiMo-V2.6-Pro-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Pro-RL",
+        "source_config": "knowledge-base/sources/TECH-064/config.json",
+        "config_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 51200,
+        "fixed_bytes_per_sequence_per_replica": 39321600,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 358400
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 570,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 381.20000000000005,
+      "cache_pool_gb_total": 381.20000000000005,
+      "payload_budget_gb_total": 331.4782608695653,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 5,
+          "memory_only_tokens_per_sequence": 1293824,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 308.9268736
+        }
+      ],
+      "total_memory_only_tokens": 6469120,
+      "total_bounded_tokens": 5242880,
+      "equal_context_tokens_per_sequence": 1048576
+    },
+    {
+      "config": "A4",
+      "model": "MiMo-V2.6-Pro-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Pro-RL",
+        "source_config": "knowledge-base/sources/TECH-064/config.json",
+        "config_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 51200,
+        "fixed_bytes_per_sequence_per_replica": 39321600,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 358400
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 570,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 381.20000000000005,
+      "cache_pool_gb_total": 381.20000000000005,
+      "payload_budget_gb_total": 331.4782608695653,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 5,
+          "memory_only_tokens_per_sequence": 184832,
+          "bounded_tokens_per_sequence": 184832,
+          "input_history_budget_with_8k_output_reserve": 176640,
+          "cache_gb_used_at_bounded_limit": 380.9017856
+        }
+      ],
+      "total_memory_only_tokens": 924160,
+      "total_bounded_tokens": 924160,
+      "equal_context_tokens_per_sequence": 184832
+    },
+    {
+      "config": "A4",
+      "model": "MiMo-V2.6-Pro-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Pro-RL",
+        "source_config": "knowledge-base/sources/TECH-064/config.json",
+        "config_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 51200,
+        "fixed_bytes_per_sequence_per_replica": 39321600,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 358400
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 570,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 381.20000000000005,
+      "cache_pool_gb_total": 381.20000000000005,
+      "payload_budget_gb_total": 331.4782608695653,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 20,
+          "memory_only_tokens_per_sequence": 322816,
+          "bounded_tokens_per_sequence": 322816,
+          "input_history_budget_with_8k_output_reserve": 314624,
+          "cache_gb_used_at_bounded_limit": 381.0525184
+        }
+      ],
+      "total_memory_only_tokens": 6456320,
+      "total_bounded_tokens": 6456320,
+      "equal_context_tokens_per_sequence": 322816
+    },
+    {
+      "config": "A4",
+      "model": "MiMo-V2.6-Pro-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Pro-RL",
+        "source_config": "knowledge-base/sources/TECH-064/config.json",
+        "config_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 51200,
+        "fixed_bytes_per_sequence_per_replica": 39321600,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 358400
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 570,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 381.20000000000005,
+      "cache_pool_gb_total": 381.20000000000005,
+      "payload_budget_gb_total": 331.4782608695653,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 20,
+          "memory_only_tokens_per_sequence": 46080,
+          "bounded_tokens_per_sequence": 46080,
+          "input_history_budget_with_8k_output_reserve": 37888,
+          "cache_gb_used_at_bounded_limit": 379.846656
+        }
+      ],
+      "total_memory_only_tokens": 921600,
+      "total_bounded_tokens": 921600,
+      "equal_context_tokens_per_sequence": 46080
+    },
+    {
+      "config": "A4",
+      "model": "MiMo-V2.6-Pro-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Pro-RL",
+        "source_config": "knowledge-base/sources/TECH-064/config.json",
+        "config_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 51200,
+        "fixed_bytes_per_sequence_per_replica": 39321600,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 358400
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 570,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 381.20000000000005,
+      "cache_pool_gb_total": 381.20000000000005,
+      "payload_budget_gb_total": 331.4782608695653,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 30,
+          "memory_only_tokens_per_sequence": 214784,
+          "bounded_tokens_per_sequence": 214784,
+          "input_history_budget_with_8k_output_reserve": 206592,
+          "cache_gb_used_at_bounded_limit": 380.7510528
+        }
+      ],
+      "total_memory_only_tokens": 6443520,
+      "total_bounded_tokens": 6443520,
+      "equal_context_tokens_per_sequence": 214784
+    },
+    {
+      "config": "A4",
+      "model": "MiMo-V2.6-Pro-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Pro-RL",
+        "source_config": "knowledge-base/sources/TECH-064/config.json",
+        "config_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 51200,
+        "fixed_bytes_per_sequence_per_replica": 39321600,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 358400
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 570,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 381.20000000000005,
+      "cache_pool_gb_total": 381.20000000000005,
+      "payload_budget_gb_total": 331.4782608695653,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 30,
+          "memory_only_tokens_per_sequence": 30720,
+          "bounded_tokens_per_sequence": 30720,
+          "input_history_budget_with_8k_output_reserve": 22528,
+          "cache_gb_used_at_bounded_limit": 379.846656
+        }
+      ],
+      "total_memory_only_tokens": 921600,
+      "total_bounded_tokens": 921600,
+      "equal_context_tokens_per_sequence": 30720
+    },
+    {
+      "config": "A4",
+      "model": "MiMo-V2.6-Pro-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Pro-RL",
+        "source_config": "knowledge-base/sources/TECH-064/config.json",
+        "config_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 51200,
+        "fixed_bytes_per_sequence_per_replica": 39321600,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 358400
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 570,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 381.20000000000005,
+      "cache_pool_gb_total": 381.20000000000005,
+      "payload_budget_gb_total": 331.4782608695653,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 50,
+          "memory_only_tokens_per_sequence": 128512,
+          "bounded_tokens_per_sequence": 128512,
+          "input_history_budget_with_8k_output_reserve": 120320,
+          "cache_gb_used_at_bounded_limit": 380.60032
+        }
+      ],
+      "total_memory_only_tokens": 6425600,
+      "total_bounded_tokens": 6425600,
+      "equal_context_tokens_per_sequence": 128512
+    },
+    {
+      "config": "A4",
+      "model": "MiMo-V2.6-Pro-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Pro-RL",
+        "source_config": "knowledge-base/sources/TECH-064/config.json",
+        "config_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 51200,
+        "fixed_bytes_per_sequence_per_replica": 39321600,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 358400
+      },
+      "total_gpu_gb": 1128,
+      "weights_total_gb": 570,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 112.79999999999997,
+      "cache_pool_gb_per_replica": 381.20000000000005,
+      "cache_pool_gb_total": 381.20000000000005,
+      "payload_budget_gb_total": 331.4782608695653,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 50,
+          "memory_only_tokens_per_sequence": 18432,
+          "bounded_tokens_per_sequence": 18432,
+          "input_history_budget_with_8k_output_reserve": 10240,
+          "cache_gb_used_at_bounded_limit": 379.846656
+        }
+      ],
+      "total_memory_only_tokens": 921600,
+      "total_bounded_tokens": 921600,
+      "equal_context_tokens_per_sequence": 18432
+    },
+    {
+      "config": "A5",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 2048,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 204.79999999999995,
+      "cache_pool_gb_per_replica": 714.6,
+      "cache_pool_gb_total": 1429.2,
+      "payload_budget_gb_total": 1242.7826086956522,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 3,
+          "memory_only_tokens_per_sequence": 8988672,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 83.437387776
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 2,
+          "memory_only_tokens_per_sequence": 13483776,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 55.62492518399999
+        }
+      ],
+      "total_memory_only_tokens": 53933568,
+      "total_bounded_tokens": 5242880,
+      "equal_context_tokens_per_sequence": 1048576
+    },
+    {
+      "config": "A5",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 2048,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 204.79999999999995,
+      "cache_pool_gb_per_replica": 714.6,
+      "cache_pool_gb_total": 1429.2,
+      "payload_budget_gb_total": 1242.7826086956522,
+      "resident_sequences": 5,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 3,
+          "memory_only_tokens_per_sequence": 929792,
+          "bounded_tokens_per_sequence": 929792,
+          "input_history_budget_with_8k_output_reserve": 921600,
+          "cache_gb_used_at_bounded_limit": 714.437296128
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 2,
+          "memory_only_tokens_per_sequence": 1394944,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 537.1393474559999
+        }
+      ],
+      "total_memory_only_tokens": 5579264,
+      "total_bounded_tokens": 4886528,
+      "equal_context_tokens_per_sequence": 929792
+    },
+    {
+      "config": "A5",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 2048,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 204.79999999999995,
+      "cache_pool_gb_per_replica": 714.6,
+      "cache_pool_gb_total": 1429.2,
+      "payload_budget_gb_total": 1242.7826086956522,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 10,
+          "memory_only_tokens_per_sequence": 2695680,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 278.12462592
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 10,
+          "memory_only_tokens_per_sequence": 2695680,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 278.12462592
+        }
+      ],
+      "total_memory_only_tokens": 53913600,
+      "total_bounded_tokens": 20971520,
+      "equal_context_tokens_per_sequence": 1048576
+    },
+    {
+      "config": "A5",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 2048,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 204.79999999999995,
+      "cache_pool_gb_per_replica": 714.6,
+      "cache_pool_gb_total": 1429.2,
+      "payload_budget_gb_total": 1242.7826086956522,
+      "resident_sequences": 20,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 10,
+          "memory_only_tokens_per_sequence": 278784,
+          "bounded_tokens_per_sequence": 278784,
+          "input_history_budget_with_8k_output_reserve": 270592,
+          "cache_gb_used_at_bounded_limit": 714.04388352
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 10,
+          "memory_only_tokens_per_sequence": 278784,
+          "bounded_tokens_per_sequence": 278784,
+          "input_history_budget_with_8k_output_reserve": 270592,
+          "cache_gb_used_at_bounded_limit": 714.04388352
+        }
+      ],
+      "total_memory_only_tokens": 5575680,
+      "total_bounded_tokens": 5575680,
+      "equal_context_tokens_per_sequence": 278784
+    },
+    {
+      "config": "A5",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 2048,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 204.79999999999995,
+      "cache_pool_gb_per_replica": 714.6,
+      "cache_pool_gb_total": 1429.2,
+      "payload_budget_gb_total": 1242.7826086956522,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 15,
+          "memory_only_tokens_per_sequence": 1796864,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 417.18693887999996
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 15,
+          "memory_only_tokens_per_sequence": 1796864,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 417.18693887999996
+        }
+      ],
+      "total_memory_only_tokens": 53905920,
+      "total_bounded_tokens": 31457280,
+      "equal_context_tokens_per_sequence": 1048576
+    },
+    {
+      "config": "A5",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 2048,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 204.79999999999995,
+      "cache_pool_gb_per_replica": 714.6,
+      "cache_pool_gb_total": 1429.2,
+      "payload_budget_gb_total": 1242.7826086956522,
+      "resident_sequences": 30,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 15,
+          "memory_only_tokens_per_sequence": 185856,
+          "bounded_tokens_per_sequence": 185856,
+          "input_history_budget_with_8k_output_reserve": 177664,
+          "cache_gb_used_at_bounded_limit": 714.04388352
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 15,
+          "memory_only_tokens_per_sequence": 185856,
+          "bounded_tokens_per_sequence": 185856,
+          "input_history_budget_with_8k_output_reserve": 177664,
+          "cache_gb_used_at_bounded_limit": 714.04388352
+        }
+      ],
+      "total_memory_only_tokens": 5575680,
+      "total_bounded_tokens": 5575680,
+      "equal_context_tokens_per_sequence": 185856
+    },
+    {
+      "config": "A5",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "architecture_reclaimed",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 2048,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 204.79999999999995,
+      "cache_pool_gb_per_replica": 714.6,
+      "cache_pool_gb_total": 1429.2,
+      "payload_budget_gb_total": 1242.7826086956522,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 25,
+          "memory_only_tokens_per_sequence": 1077504,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 695.3115648
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 25,
+          "memory_only_tokens_per_sequence": 1077504,
+          "bounded_tokens_per_sequence": 1048576,
+          "input_history_budget_with_8k_output_reserve": 1040384,
+          "cache_gb_used_at_bounded_limit": 695.3115648
+        }
+      ],
+      "total_memory_only_tokens": 53875200,
+      "total_bounded_tokens": 52428800,
+      "equal_context_tokens_per_sequence": 1048576
+    },
+    {
+      "config": "A5",
+      "model": "MiMo-V2.6-Flash-RL",
+      "mode": "retain_all_sliding_history",
+      "layout": {
+        "model": "MiMo-V2.6-Flash-RL",
+        "source_config": "knowledge-base/sources/TECH-065/config.json",
+        "config_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+        "kv_dtype": "BF16/FP16, 2 bytes",
+        "native_context_limit": 1048576,
+        "history_bytes_per_token_per_replica": 23040,
+        "fixed_bytes_per_sequence_per_replica": 25559040,
+        "recurrent_bytes": 0,
+        "convolution_bytes": 0,
+        "all_history_bytes_per_token_per_replica": 222720
+      },
+      "total_gpu_gb": 2048,
+      "weights_total_gb": 350,
+      "engine_reserve_total_gb": 64,
+      "unallocated_fraction_gb": 204.79999999999995,
+      "cache_pool_gb_per_replica": 714.6,
+      "cache_pool_gb_total": 1429.2,
+      "payload_budget_gb_total": 1242.7826086956522,
+      "resident_sequences": 50,
+      "groups": [
+        {
+          "replica": 0,
+          "resident_sequences": 25,
+          "memory_only_tokens_per_sequence": 111360,
+          "bounded_tokens_per_sequence": 111360,
+          "input_history_budget_with_8k_output_reserve": 103168,
+          "cache_gb_used_at_bounded_limit": 713.060352
+        },
+        {
+          "replica": 1,
+          "resident_sequences": 25,
+          "memory_only_tokens_per_sequence": 111360,
+          "bounded_tokens_per_sequence": 111360,
+          "input_history_budget_with_8k_output_reserve": 103168,
+          "cache_gb_used_at_bounded_limit": 713.060352
+        }
+      ],
+      "total_memory_only_tokens": 5568000,
+      "total_bounded_tokens": 5568000,
+      "equal_context_tokens_per_sequence": 111360
+    }
+  ]
+}

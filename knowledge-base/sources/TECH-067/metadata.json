@@ -1,0 +1,135 @@
+{
+  "source_id": "TECH-067",
+  "issuer": "vLLM / SGLang",
+  "retrieved_at": "2026-09-22T05:36:56.645884+00:00",
+  "human_check_status": "pending",
+  "evidence_state": "verified-primary",
+  "files": {
+    "vllm-flash.html": {
+      "requested_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+      "final_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+      "retrieved_at": "2026-09-22T05:36:54.914399+00:00",
+      "sha256": "126d5bdd3de934dd53e1ec5fa4d1474008e1969300098c47f7d2dd96be2cdc50",
+      "bytes": 1782129
+    },
+    "vllm-pro.html": {
+      "requested_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "final_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "retrieved_at": "2026-09-22T05:36:55.215726+00:00",
+      "sha256": "f04d3cb6d7e929ba7ab28949cdcc190548c960a4ba059595a779467917d4ecf4",
+      "bytes": 1781998
+    },
+    "sglang-v25.html": {
+      "requested_url": "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.5",
+      "final_url": "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.5",
+      "retrieved_at": "2026-09-22T05:36:56.110609+00:00",
+      "sha256": "4bfcc8c73f5cb7fbde66bc05d63812364ea2e48fde5de352fabffbc7bae9d83c",
+      "bytes": 1040856
+    },
+    "vllm-latest-release.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/releases/latest",
+      "final_url": "https://api.github.com/repos/vllm-project/vllm/releases/latest",
+      "retrieved_at": "2026-09-22T05:36:56.644274+00:00",
+      "sha256": "c42f00f5614f812bc08c16cb55005b34a246e21fb21d4de7016cfdff3214a3e9",
+      "bytes": 65132
+    },
+    "sglang-latest-release.json": {
+      "requested_url": "https://api.github.com/repos/sgl-project/sglang/releases/latest",
+      "final_url": "https://api.github.com/repos/sgl-project/sglang/releases/latest",
+      "retrieved_at": "2026-09-22T05:36:56.644311+00:00",
+      "sha256": "90137898635663276e9a49d9b04994e105d0cb0cf882f43d2ef0b5b8df747c84",
+      "bytes": 87598
+    },
+    "vllm-pr-57784.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/pulls/57784",
+      "final_url": "https://api.github.com/repos/vllm-project/vllm/pulls/57784",
+      "sha256": "ce5fe239f998af11aa508d032888bf9cf8ab3b037b332ae846344682c21a6e23",
+      "bytes": 22027,
+      "retrieved_at": "2026-09-22T05:37:41.877718+00:00"
+    },
+    "vllm-pr-57784-files.json": {
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/pulls/57784/files?per_page=100",
+      "final_url": "https://api.github.com/repos/vllm-project/vllm/pulls/57784/files?per_page=100",
+      "sha256": "9c6beec6530709f4f626e252ba3c1e76234bc7d2fb736a4e356a463ca71a6eef",
+      "bytes": 6143,
+      "retrieved_at": "2026-09-22T05:37:42.369226+00:00"
+    },
+    "v030-mimo_v2.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.30.0/vllm/model_executor/models/mimo_v2.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.30.0/vllm/model_executor/models/mimo_v2.py",
+      "sha256": "1a6fb29d3f7969d4b88467084fc5a29f7dc6fe48a0555a97fdc54dd78c299d6d",
+      "bytes": 33237,
+      "retrieved_at": "2026-09-22T05:38:27.883683+00:00"
+    },
+    "v030-mimo_v2_omni.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.30.0/vllm/model_executor/models/mimo_v2_omni.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.30.0/vllm/model_executor/models/mimo_v2_omni.py",
+      "sha256": "cbff20b5ad73ed4edbf49e46d60e3957b659815582d851745241c4f5ac4c34bf",
+      "bytes": 63643,
+      "retrieved_at": "2026-09-22T05:38:27.900971+00:00"
+    },
+    "v030-registry.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.30.0/vllm/model_executor/models/registry.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.30.0/vllm/model_executor/models/registry.py",
+      "sha256": "a08a98aaae52ced32226aa647f58d682ac600b9572651a9b377b97846bc99212",
+      "bytes": 64420,
+      "retrieved_at": "2026-09-22T05:38:27.943744+00:00"
+    },
+    "v030-fp8.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.30.0/vllm/model_executor/layers/quantization/fp8.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.30.0/vllm/model_executor/layers/quantization/fp8.py",
+      "sha256": "947540b443c15e9e5b4c08ff07f7a7c0e8d8f0d8494f3964c0172a772a779fe5",
+      "bytes": 35328,
+      "retrieved_at": "2026-09-22T05:38:27.950349+00:00"
+    },
+    "glm53-nvidia.html": {
+      "requested_url": "https://docs.api.nvidia.com/nim/reference/z-ai-glm-5-3",
+      "final_url": "https://docs.api.nvidia.com/nim/reference/z-ai-glm-5-3",
+      "retrieved_at": "2026-09-22T05:40:25.091599+00:00",
+      "sha256": "8a8556f404a7687b9cc9bd12e765cee11ab9d8d53cad0757962c62a4653df0c0",
+      "bytes": 1107414
+    },
+    "original.md": {
+      "derived_from": "archived source files; see source index",
+      "sha256": "1b716b31c474c783f459efc11908241fc344523204d2a8d8a4cd2973e40170f3",
+      "bytes": 1279
+    },
+    "glm53-nvidia.md": {
+      "derived_from": "glm53-nvidia.html",
+      "sha256": "add7e7e5ef504e9da644c02c158b36896d49fc39d79a9b5eda2de3c6eac43be4",
+      "bytes": 5377
+    },
+    "sglang-v25.md": {
+      "derived_from": "sglang-v25.html",
+      "sha256": "5dfebf49702361e4c314d86907c6bfceb808d81ff1427ea43d9d30a026c63a7d",
+      "bytes": 33708
+    },
+    "vllm-pro.md": {
+      "derived_from": "vllm-pro.html",
+      "sha256": "72cf3475e9e1282bfafc42b490564835871949f68bc45306714e85fc8b237ddd",
+      "bytes": 4418
+    },
+    "vllm-flash.md": {
+      "derived_from": "vllm-flash.html",
+      "sha256": "bd3554edd4313f737cc062f83254a00eea5840d4fded555319315b0175ddf62b",
+      "bytes": 4401
+    },
+    "vllm-pr-57784.patch": {
+      "derived_from": "archived source files; see source index",
+      "sha256": "005a4a85a5157fd227d15c4d926caf2e1a3eefb5754e0b1154f29dd7213cee40",
+      "bytes": 4270
+    }
+  },
+  "retrieval_failures": {
+    "vllm-pr-in-v030.json": {
+      "error": "HTTP Error 403: rate limit exceeded",
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/compare/9b2f34cad446f73b1699e8236ec0b611a65f48af...v0.30.0"
+    }
+  },
+  "title": "MiMo-V2.6部署recipe、上游发布与GLM对照",
+  "text_kind": "authored_source_index",
+  "official_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "archive_status": "raw_source_and_extraction",
+  "reviewer": "Codex; primary source inspection 2026-09-22",
+  "used_in": "knowledge-base/models/mimo-v2.6-research-2026-09-22.md"
+}

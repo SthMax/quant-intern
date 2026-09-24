@@ -8,7 +8,7 @@ This synthesis organizes inspected provisions under the three assigned themes.
 [Source matrix](index.md) · [Master register](../source-register.md).
 
 It is a research draft. The cited source wording has been inspected; a complete
-amendment/status sweep, MSIM entity-specific applicability and internal-policy
+amendment/status sweep, institution-specific applicability and internal-policy
 confirmation remain open. Human review has not yet occurred.
 
 ## Data privacy
@@ -25,7 +25,7 @@ institutional-accountability and investor-information provisions.
 
 **Research implication:** the future architecture should make input data,
 retrieval permissions, logs, outputs and third-party flows visible. “On-premise”
-alone does not describe those flows. No MSIM dataset has been classified in this
+alone does not describe those flows. No institution-specific dataset has been classified in this
 research.
 
 ## Model interpretability and governance

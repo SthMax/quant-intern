@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "8679e3b1153c56dc6e239f29c712ee57ae7676499d1d0664420ae8c6cf473afb",
+  "pdf_sha256": "274c6824b932d32902b4977f491efb89d42c25277f66495a3e5588007a1fbdab",
   "physical_pages": 26,
   "reference_count": 56,
   "source_hashes_verified": 399,
@@ -9,7 +9,7 @@
   "pages": [
     {
       "physical_page": 1,
-      "characters": 203
+      "characters": 200
     },
     {
       "physical_page": 2,

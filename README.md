@@ -12,12 +12,18 @@ Derived schedules and templates must follow it.
 | 2 — Technical feasibility | Weeks 3–5 | Survey of 5–8 open-source LLMs; on-premise reference architecture; one-model proof of concept on a local GPU workstation |
 | 3 — Cost-benefit and recommendations | Weeks 6–8 | Three-year on-premise versus commercial API TCO; 3–5 pilot candidates with ROI metrics; final report and roadmap with 2–5 concrete proposals |
 
-COD is the infrastructure used in MSIM. MRM means model risk management.
+COD is the infrastructure used in the host organization. MRM means model risk management.
 The confirmed plan also requires a reusable financial NLP evaluation framework
 covering named-entity recognition, financial question answering, and
 multi-document summarization.
 
 ## Current work: Weeks 3–5, technical feasibility
+
+Week 4 starts on 21 September. Discussion now focuses on concrete workloads,
+concurrency definitions, hardware/software combinations and procurement costs
+for deployment in China. The current repository documents and deliverables use
+anonymized internship labels; historical release attachments retain their
+original published versions.
 
 Use [the Weeks 3–5 execution plan](weekly/week-03-05-plan.md) for the mentor
 feedback, schedule, deliverables, and acceptance criteria. Model research and
@@ -60,13 +66,23 @@ open; completed research artifacts do not establish those approvals.
   internal requirements according to the user's stated confidentiality constraints.
 - Do not store confidential internal documents, client/position data, credentials,
   or personal data in this repository.
-- Internal MRM and other Morgan Stanley requirements require authorized internal
+- Internal MRM and other firm requirements require authorized internal
   evidence; public guidance cannot establish unpublished firm policy.
-- Git is backed up to the public [SthMax/ms-intern](https://github.com/SthMax/ms-intern)
+- Git is backed up to the public [project repository](https://github.com/SthMax/ms-intern)
   repository. Releases package finalized research reports, presentations and
   selected model references for sharing.
 
 ## Current deliverables
+
+The [Week 4 Beamer presentation](presentation/week4-deployment-2026-09-24/README.md)
+integrates the three deployment scenarios in budget order: personal/team
+workstations, company RAG, and company Agents. Its
+[16-page PDF](presentation/week4-deployment-2026-09-24/output/week4-deployment-options.pdf)
+contains 12 main slides and four appendix slides, with editable LaTeX sources,
+speaker notes and traced calculation inputs.
+
+Detailed scenario documents are available as [three companion PDFs](reports/week4-deployment-2026-09-24/README.md), including the updated four-hardware personal deployment comparison.
+The four finalized PDFs are packaged in the [Week 4 release](https://github.com/SthMax/ms-intern/releases/tag/phase2-week4-2026-09-24).
 
 The [Phase 2 technical research report](reports/phase2-technical-research-2026-09-18/README.md)
 is available as of 18 September: 26 pages introducing and analyzing eight models,

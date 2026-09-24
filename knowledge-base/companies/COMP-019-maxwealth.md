@@ -47,7 +47,7 @@ itself has no publication date.
 These are case-reported measures. Evaluation dataset, sample size, operating
 period, adversarial-test design, baseline denominators and independent audit
 are not provided. They cannot be presented as general model accuracy or copied
-into MSIM's expected ROI assumptions.
+into the host organization's expected ROI assumptions.
 
 ## Architecture and governance limits
 

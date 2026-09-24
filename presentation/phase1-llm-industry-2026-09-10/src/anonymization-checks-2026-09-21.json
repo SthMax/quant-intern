@@ -1,0 +1,25 @@
+[
+  {
+    "file": "presentation/phase1-llm-industry-2026-09-10/output/fund-llm-industry-2026-09-10-final.pptx",
+    "sha256": "8a7a20c7d0fe56f6b9f535e67c48a09cd53923d3fb38bca5ab67948034f82f99",
+    "slides": 24,
+    "visual_changed_slides": [
+      1,
+      16
+    ],
+    "embedded_workbooks_preserved": 2,
+    "all_notes_preserved_except_institution_alias": true,
+    "xml_institution_scan": "passed"
+  },
+  {
+    "file": "presentation/phase1-llm-industry-2026-09-10/output/fund-llm-industry-2026-09-11-final.pptx",
+    "sha256": "0eac7b8cd542b12ac9140ec8655ba8f5f89b982f9099845384337a6b3bedef72",
+    "slides": 27,
+    "visual_changed_slides": [
+      1
+    ],
+    "embedded_workbooks_preserved": 2,
+    "all_notes_preserved_except_institution_alias": true,
+    "xml_institution_scan": "passed"
+  }
+]

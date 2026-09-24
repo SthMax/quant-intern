@@ -19,7 +19,7 @@
 - [主索引整合建议](integration.json)：新增来源字段、阅读入口及需要更新的旧记录范围。未由本subagent直接编辑全局source-register、reading-index或sources/README。
 - [本轮验证](verification.json)：新增原件/提取文本哈希与相对链接核验；既有REG原件未修改。
 
-新标准、研究文章并非全都具有法规效力。所有来源的`verified-primary`只表示取得对应官方原始来源，不表示MSIM已通过监管审查。
+新标准、研究文章并非全都具有法规效力。所有来源的`verified-primary`只表示取得对应官方原始来源，不表示实习机构已通过监管审查。
 
 ## 下载完整性与访问限制
 

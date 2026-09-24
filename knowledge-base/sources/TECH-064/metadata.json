@@ -1,0 +1,112 @@
+{
+  "source_id": "TECH-064",
+  "model_id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "title": "MiMo-V2.6-Pro-RL：模型卡、制品与许可",
+  "issuer": "Xiaomi MiMo",
+  "official_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "revision": "73875d00b30a89ef8cc353a0b60b0e9f9561952d",
+  "retrieved_at": "2026-09-22T05:35:24.794177+00:00",
+  "created_at_api": "2026-09-21T15:39:33.000Z",
+  "last_modified_api": "2026-09-22T03:52:00.000Z",
+  "license_tag": "mit",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "archive_status": "raw_source_and_extraction",
+  "text_kind": "verbatim_model_card",
+  "reviewer": "Codex; primary source inspection 2026-09-22",
+  "verification_scope": "Official fixed-revision metadata, license, configuration and weight index. No weight shard download or model execution.",
+  "files": {
+    "model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "final_url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "sha256": "90c732b015b4f55922aa08af7b8da77791f6968e9b950d40d296396e0dcc3e6a",
+      "bytes": 17316
+    },
+    "original.md": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2FREADME.md=&etag=%22bf9881e0e678d1b33d086dd4c6fa5959dc2d3daa%22",
+      "sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+      "bytes": 9770
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/config.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/config.json?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2Fconfig.json=&etag=%2274943bea08368aca2990c1e1e1c243c8c885df73%22",
+      "sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+      "bytes": 9263
+    },
+    "generation_config.json": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/generation_config.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/generation_config.json?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2Fgeneration_config.json=&etag=%22167a2b078ebc16fc7633618141c1f9869783a65c%22",
+      "sha256": "eecf00d9701921271c904a916c425ba6db61bcd190902e200d0a322bfd5572dd",
+      "bytes": 195
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/model.safetensors.index.json",
+      "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/6ab14fb5b6a2637b97d82406/17bb814b6a99fe2120e2f461ca53b1c2d7eeba3673f3193faf7878561477c681?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors.index.json%3B+filename%3D%22model.safetensors.index.json%22%3B&response-content-type=application%2Fjson%3B+charset%3Dutf-8&user_id=public&Expires=1790058927&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNmFiMTRmYjViNmEyNjM3Yjk3ZDgyNDA2LzE3YmI4MTRiNmE5OWZlMjEyMGUyZjQ2MWNhNTNiMWMyZDdlZWJhMzY3M2YzMTkzZmFmNzg3ODU2MTQ3N2M2ODFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwuc2FmZXRlbnNvcnMuaW5kZXguanNvbiUzQitmaWxlbmFtZSUzRCUyMm1vZGVsLnNhZmV0ZW5zb3JzLmluZGV4Lmpzb24lMjIlM0ImcmVzcG9uc2UtY29udGVudC10eXBlPWFwcGxpY2F0aW9uJTJGanNvbiUzQitjaGFyc2V0JTNEdXRmLTgmdXNlcl9pZD1wdWJsaWMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkVwb2NoVGltZSI6MTc5MDA1ODkyN319fV19&Signature=MEQCIE2EOjsmYI1Gv8MXvuubl4A8knSFoKzh5bN389zEXHpwAiB4m9IZmmHpehZKRniaTMglbapGKVb9jzabbPLXaexZ4w__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+      "sha256": "e855ee9dd7ae748a6258b0725ca217d382a93561d17fc3dbf84d83a152deb54b",
+      "bytes": 15201042
+    },
+    "chat_template.jinja": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/chat_template.jinja",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/chat_template.jinja?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2Fchat_template.jinja=&etag=%2292597ade0e30303fd06966e63f5983efd2d10d16%22",
+      "sha256": "11ea52e156de38a458e6b7720ad45915d65b97d4ec979a09f55e3c9bd1b4d059",
+      "bytes": 3867
+    },
+    "modeling_mimo_v2.py": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/modeling_mimo_v2.py",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/modeling_mimo_v2.py?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2Fmodeling_mimo_v2.py=&etag=%2240225ab4e30d790eab2a4dbbd74690dbb71c55ad%22",
+      "sha256": "a8c3cb3aae473bcc15f023010547c919f15eba6546e6ed7efb61a8937b12f3ad",
+      "bytes": 85516
+    },
+    "configuration_mimo_v2.py": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/configuration_mimo_v2.py",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/configuration_mimo_v2.py?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2Fconfiguration_mimo_v2.py=&etag=%22bb6f447232de5b0a5d773ccd42db63d05ae5acea%22",
+      "sha256": "773062ac9850b908eb54751b3e4dbe00e653c0e80595599409e97d0c1af2ce3e",
+      "bytes": 10049
+    },
+    "artifact-files.json": {
+      "requested_url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/revision/73875d00b30a89ef8cc353a0b60b0e9f9561952d?blobs=true",
+      "final_url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/revision/73875d00b30a89ef8cc353a0b60b0e9f9561952d?blobs=true",
+      "retrieved_at": "2026-09-22T05:36:52.554855+00:00",
+      "sha256": "904d5c5bc0ab93e8b001fdf6ba5cbfc3eaa82b2da397b4f9cc3884c46e5ef400",
+      "bytes": 44475
+    },
+    "dflash/config.json": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/dflash/config.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/dflash%2Fconfig.json?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2Fdflash%2Fconfig.json=&etag=%22c82619369420e08d64bdcf1ca5a86a7091bc851f%22",
+      "retrieved_at": "2026-09-22T05:36:52.822924+00:00",
+      "sha256": "84addf4aa8d216f15715b571ba045ae06e341eb7ac646ba4db940bad5ffaad3f",
+      "bytes": 1243
+    },
+    "dflash/model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/dflash/model.safetensors.index.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/dflash%2Fmodel.safetensors.index.json?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2Fdflash%2Fmodel.safetensors.index.json=&etag=%228a2cf5a598a020f7314483d7dabbc532f9ebd5a3%22",
+      "retrieved_at": "2026-09-22T05:36:52.931361+00:00",
+      "sha256": "a71fd48c487d70d8886e852e9f504515177ab0177d825832f7906b3804f46fc4",
+      "bytes": 4689
+    },
+    "dflash/dflash.py": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/dflash/dflash.py",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/dflash%2Fdflash.py?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2Fdflash%2Fdflash.py=&etag=%220aea03fe130ec6070d8d94f8d11c37ee9885782f%22",
+      "retrieved_at": "2026-09-22T05:36:52.834636+00:00",
+      "sha256": "da5ab1738b954800950405131f1d1d97c3345f37e32676d511d3a25dfddd9d75",
+      "bytes": 14255
+    },
+    "audio_tokenizer/config.json": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/audio_tokenizer/config.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/73875d00b30a89ef8cc353a0b60b0e9f9561952d/audio_tokenizer%2Fconfig.json?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2F73875d00b30a89ef8cc353a0b60b0e9f9561952d%2Faudio_tokenizer%2Fconfig.json=&etag=%22e0d6fd1b099bf9d1c0033a7d13ab9c384d2430dc%22",
+      "retrieved_at": "2026-09-22T05:36:52.815006+00:00",
+      "sha256": "e0702adae37947e0c980c38bae58ffa0d48bd492d523afe814aa4d73f008c7d1",
+      "bytes": 1215
+    }
+  },
+  "retrieval_failures": {
+    "LICENSE": "HTTP Error 404: Not Found"
+  },
+  "used_in": "knowledge-base/models/mimo-v2.6-research-2026-09-22.md",
+  "license_review": {
+    "weight_evidence": "MIT declaration in model-card frontmatter",
+    "standalone_license_file": "absent from fixed revision file listing; LICENSE request returned 404",
+    "bundled_modeling_and_configuration_code": "Apache-2.0 file headers"
+  }
+}

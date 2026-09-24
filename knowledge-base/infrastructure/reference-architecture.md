@@ -1,10 +1,50 @@
 # On-Premise Reference Architecture
 
 **Phase 2 — Weeks 3–5.** Required by [the final project plan](../../PROJECT_PLAN.md).
-Status (18 September 2026): logical deployment choices and software research are
-documented below; no physical configuration has been selected or benchmarked.
+Status (24 September 2026): logical deployment choices, software research and
+priced candidate hardware configurations are documented below. Physical selection
+and workload measurements are the next inputs.
+
+## Scenario 1 — personal and three-person Coding Agents
+
+The [Scenario 1 design](scenario-1-personal-agent-2026-09-24.md) connects a local
+Coding Agent to a personal model or a three-person shared model node. File tools,
+project environments and NAS identity remain on each employee's computer. The
+six workstation profiles use Qwen3.8-27B with explicit MLX/GGUF 8-bit budgets and
+separate CUDA FP8 comparisons. Unified-memory systems reserve OS/tool memory
+before model and KV allocation. Its [calculations](data/scenario-1-personal-agent-2026-09-24/)
+separate prefill, decode, per-request speed, context capacity, prefix reuse and
+shared versus independent-machine prices. All performance is conditional and
+uncalibrated; hardware prices retain their 21 September observation dates.
+The workload now fills 131,072 / 262,144 / 524,288 total tokens per session,
+with 8,192 reserved for output. Cold loading and exact-prefix continuation are
+separate; 524K uses an independently configured YaRN factor of 2. Memory admission
+reserves eight additional state checkpoints per session and checks all three
+users resident at once. The 256GB workstation therefore has a specific role in
+the three-user 524K dense-model configuration.
+
+## Scenario 3 — company Agent service
+
+The [Scenario 3 design](scenario-3-company-agent-2026-09-23.md) uses at least 262K context per resident task and adds Hermes with
+shared model inference, Skills/MCP and isolated execution. Central execution uses
+per-user/project instances and a bounded tool pool; desktop execution runs Hermes
+locally against the shared LLM endpoint. Both reuse Scenario 2's scoped retrieval
+and NAS access. Its [task simulation](data/scenario-3-agent-2026-09-23/) models
+multiple turns, growing contexts, bounded prefix retention, tool queues and task
+completion. Six resource configurations include MiMo Flash/Pro, a Qwen reuse case
+and the newly documented MI325X route. Results are analytical and uncalibrated.
 
 ## Serving and harness research — 17 September 2026
+
+The [Scenario 2 design](scenario-2-enterprise-rag-2026-09-23.md) fixes the first
+business scenario as permission-aware NAS knowledge search and RAG. It compares
+Onyx Enterprise with Milvus, an application authorization/retrieval service and
+Open WebUI. NAS remains the source of files and effective permissions. The
+document specifies ingestion, model choices, hardware and initial costs, with
+[reproducible capacity inputs and calculations](data/scenario-2-rag-2026-09-23/).
+Results separate low-load latency, cold-cache bursts, prefill-inclusive throughput
+and planning admission rates. Efficiency factors are analytical assumptions;
+measured latency percentiles and deployment validation are still separate inputs.
 
 - [Serving framework survey](serving-framework-survey-2026-09-17.md): vLLM,
   SGLang, TokenSpeed, Apple MLX/Metal and CPU/GPU heterogeneous paths, with
@@ -86,10 +126,74 @@ rights, affiliate/use boundaries and internal adoption policy. A possible
 headquarters preference for US vendors is an unconfirmed scenario, not a COD
 requirement inferred from public sources.
 
-COD is the infrastructure used in MSIM. Obtain the relevant system constraints
+COD is the infrastructure used in the host organization. Obtain the relevant system constraints
 from the infrastructure owner before describing a design as tailored to COD.
 
+## Server GPU comparison basis — 21 September 2026
+
+The [server GPU procurement study](server-gpu-procurement-2026-09-21.md) covers
+NVIDIA and AMD server GPUs for deployment
+in mainland China. Procurement research records the exact product, export or
+transfer conditions, latest vendor shipment disclosures, and complete-server
+supply evidence. The candidate pool includes regional L20/RTX PRO 6000D SKUs, licensed H200
+routes, and AMD MI308/MI325-family routes at different supply stages. It feeds personal-versus-shared
+architecture work; each physical configuration is then tied to a model and task.
+
+| Comparison field | Record for each candidate | How it affects the deployment |
+|---|---|---|
+| Product identity | Exact SKU, architecture, PCIe/SXM/OAM form and server platform | Host compatibility, installation and service options |
+| Model storage | Memory capacity, type and supported weight formats | Full model placement and room for context and execution |
+| Data movement | Memory bandwidth, GPU links, PCIe and scale-out networking | Generation speed, multi-GPU execution and communication cost |
+| Software support | Driver/runtime and official serving/model path | Repeatable deployment and ongoing maintenance |
+| Facility needs | GPU/module power, full-system power, cooling and physical format | Rack, power, cooling and operating costs |
+| Procurement status | Dated rule, license/transfer conditions, latest shipment evidence | Which concrete purchase routes can be investigated |
+| Supply and price | Vendor/OEM, country, stock or delivery statement, quote date and configuration | Acquisition budget, lead time and support |
+
+The model resource baseline is the [current ten-model survey](../models/model-survey-2026-09-16.md).
+Its indexed weight sizes support storage estimates. Runtime allocations add
+context state, execution buffers and auxiliary models; precision and multi-GPU
+layout are recorded with the chosen serving configuration.
+
+Price comparisons use complete-server scope: GPU count, CPU, RAM, storage,
+interconnect, support, delivery and tax treatment. Subsequent service analysis
+connects each configuration to workload length, active tasks, model requests,
+response time and accepted-task throughput. These inputs also feed the existing
+[three-year TCO model](tco-model.md).
+
+## MiMo-V2.6 addition — 22 September 2026
+
+The [MiMo study](../models/mimo-v2.6-research-2026-09-22.md) adds Flash and Pro
+to shared-service comparisons. Their main MXFP4/mixed-format indexes contain
+172.92GB and 566.03GB respectively; draft/audio files and runtime allocations are
+separate. Current vLLM recipes provide four-H200 and eight-H200 reference
+configurations with a dedicated V2.6 build. The study records the 22 September
+v0.30.0 source comparison and separates text, multimodal and speculative-decoding
+paths. The existing server budget supplies acquisition inputs for these configurations.
+
+The technical report also documents context state moving to CPU memory during
+tool waits and back to GPU for generation. This is a useful source for the planned
+long-agent/KV-offload comparison. The architecture study connects active model
+requests, retained contexts and tool execution time before sizing concurrency.
+
 ## Required specification areas
+
+### Priced hardware inputs — 21 September 2026
+
+- [Workstations](workstation-configurations-2026-09-21.md): seven configurations
+  across Ryzen AI Max, GB10, Apple M5 Max/Ultra and a 72GB RTX PRO tower; six
+  three-person arrangements distinguish one shared node from three independent PCs.
+- [Servers](server-gpu-procurement-2026-09-21.md): four/eight L20 and RTX PRO
+  6000D, four H200 NVL, eight HGX H200 and eight MI325X, with CPU/RAM/storage,
+  power/cooling, network and three-year hardware-support budget assumptions.
+- [Price data](data/hardware-prices-2026-09-21.json): domestic public prices,
+  overseas prices converted at an explicit scenario FX rate, component assumptions
+  and reproducible acquisition-budget arithmetic. Apple prices are pre-order
+  observations before the 22 September release; server totals are analytical estimates.
+
+Each shared workstation has separate user sessions and tool environments. Three
+independent workstations maintain separate model and context allocations. Measure
+the same knowledge-answering, document-processing and long-agent tasks to connect
+these configurations to active requests and response targets.
 
 | Layer | Required design content | Evidence / input |
 |---|---|---|

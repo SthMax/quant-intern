@@ -64,7 +64,7 @@ below-RMB-1-trillion category.
 - **GF:** official terms establish the documented assistant/model families while
   leaving topology and service availability untested.
 
-These are examples of peer practice, not a ranking of proposed MSIM pilots.
+These are examples of peer practice, not a ranking of proposed internal pilots.
 
 ## Claims to avoid
 

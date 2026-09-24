@@ -1,0 +1,4 @@
+build/
+qa/render/
+qa/contact-*.png
+qa/slide-*.txt

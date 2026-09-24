@@ -1,0 +1,244 @@
+{
+  "as_of": "2026-09-23",
+  "calibration_status": "not calibrated with target-hardware measurements",
+  "units": "Decimal GB and GB/s. GPU nominal GB treated conservatively as 1e9 bytes; replace with actual visible bytes before deployment.",
+  "evidence_notes": {
+    "bandwidth": "HPE/NVIDIA public specifications, matching prior hardware study",
+    "resident_weights": "HF FP8 dtype-element counts: 30.864GB and 37.455GB, rounded upward; metadata/engine buffers reserved separately",
+    "effective_tflops": "Engineering sensitivity assumptions, not vendor dense/sparse peak claims or measured values",
+    "efficiency": "0.45/0.60/0.75 bandwidth fractions and iteration overheads are sensitivity assumptions",
+    "moe": "expert weight union assumes independently uniform top-8 routing across requests; sharing/skew/cache can change traffic",
+    "latency": "No measured P95. Burst result is a staged-batch cold-cache scenario; no Poisson arrival assumptions.",
+    "revision": "Aligned to scenario 2: 90% memory fraction, 15% cache payload overhead, and complete recurrent/convolution states. H1/Qwen35 at 95% retained as a separate sensitivity."
+  },
+  "workload": {
+    "input_tokens": 8192,
+    "output_tokens": 600,
+    "thinking_enabled": false,
+    "speculative_decoding_enabled": false,
+    "prefix_cache_hit_rate": 0,
+    "linear_compute_margin": 1.15,
+    "memory_fraction": 0.9,
+    "engine_reserve_gb": 6,
+    "max_batch_per_replica": 32,
+    "other_activation_gb_per_step_per_request": 0.05,
+    "admission_utilization": 0.7,
+    "concurrency_levels": [
+      1,
+      5,
+      20,
+      30,
+      50
+    ],
+    "generation_calls_per_question": 1,
+    "retrieval_candidate_rerank_pairs": 20,
+    "cache_padding_factor": 1.15,
+    "kv_dtype": "BF16/FP16 (2 bytes); FP32 recurrent state; BF16 convolution state"
+  },
+  "gpus": {
+    "L20": {
+      "nominal_memory_gb": 48,
+      "bandwidth_gb_s": 864,
+      "effective_tflops": {
+        "low": 35,
+        "base": 55,
+        "high": 80
+      }
+    },
+    "6000D": {
+      "nominal_memory_gb": 84,
+      "bandwidth_gb_s": 1398,
+      "effective_tflops": {
+        "low": 60,
+        "base": 100,
+        "high": 145
+      }
+    },
+    "H200_NVL": {
+      "nominal_memory_gb": 141,
+      "bandwidth_gb_s": 4800,
+      "effective_tflops": {
+        "low": 350,
+        "base": 550,
+        "high": 800
+      }
+    }
+  },
+  "efficiency_scenarios": [
+    {
+      "id": "low",
+      "bandwidth_fraction": 0.45,
+      "step_overhead_ms": {
+        "dense": 4,
+        "moe": 5
+      },
+      "retrieval_s": 1.8
+    },
+    {
+      "id": "base",
+      "bandwidth_fraction": 0.6,
+      "step_overhead_ms": {
+        "dense": 2,
+        "moe": 3
+      },
+      "retrieval_s": 0.8
+    },
+    {
+      "id": "high",
+      "bandwidth_fraction": 0.75,
+      "step_overhead_ms": {
+        "dense": 1,
+        "moe": 1.5
+      },
+      "retrieval_s": 0.4
+    }
+  ],
+  "models": [
+    {
+      "id": "Qwen3.8-27B-FP8",
+      "kind": "dense",
+      "source_config": "knowledge-base/sources/TECH-070/qwen27/config.json",
+      "resident_weights_gb": 31.0,
+      "active_params_billion": 27,
+      "compute_factor": 1.0,
+      "full_attention_layers": 16,
+      "linear_layers": 48,
+      "query_heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "linear_value_heads": 48,
+      "linear_key_dim": 128,
+      "linear_value_dim": 128,
+      "linear_key_heads": 16,
+      "linear_conv_kernel_dim": 4,
+      "native_context_limit": 262144
+    },
+    {
+      "id": "Qwen3.6-35B-A3B-FP8",
+      "kind": "moe",
+      "source_config": "knowledge-base/sources/TECH-070/qwen35/config.json",
+      "resident_weights_gb": 37.5,
+      "active_params_billion": 3,
+      "compute_factor": 0.6,
+      "full_attention_layers": 10,
+      "linear_layers": 30,
+      "query_heads": 16,
+      "kv_heads": 2,
+      "head_dim": 256,
+      "linear_value_heads": 32,
+      "linear_key_dim": 128,
+      "linear_value_dim": 128,
+      "experts": 256,
+      "top_k": 8,
+      "expert_pool_gb": 32.2,
+      "non_expert_gb": 5.3,
+      "linear_key_heads": 16,
+      "linear_conv_kernel_dim": 4,
+      "native_context_limit": 262144
+    }
+  ],
+  "configurations": [
+    {
+      "id": "H1",
+      "gpu": "L20",
+      "physical_gpus": 4,
+      "generation_gpus": 3,
+      "auxiliary_gpus": 1,
+      "prior_price_id": "G1",
+      "gpu_server_budget_wan_cny": [
+        40,
+        74
+      ]
+    },
+    {
+      "id": "H2",
+      "gpu": "6000D",
+      "physical_gpus": 4,
+      "generation_gpus": 3,
+      "auxiliary_gpus": 1,
+      "prior_price_id": "G3",
+      "gpu_server_budget_wan_cny": [
+        62,
+        115
+      ]
+    },
+    {
+      "id": "H3",
+      "gpu": "6000D",
+      "physical_gpus": 8,
+      "generation_gpus": 7,
+      "auxiliary_gpus": 1,
+      "prior_price_id": "G4",
+      "gpu_server_budget_wan_cny": [
+        109,
+        200
+      ]
+    },
+    {
+      "id": "H4",
+      "gpu": "H200_NVL",
+      "physical_gpus": 4,
+      "generation_gpus": 3,
+      "auxiliary_gpus": 1,
+      "prior_price_id": "G5",
+      "gpu_server_budget_wan_cny": [
+        169,
+        345
+      ]
+    }
+  ],
+  "cost_assumptions": {
+    "class": "D analytical, not quotations",
+    "support_nodes_count": 2,
+    "per_support_node_wan_cny": [
+      6,
+      13
+    ],
+    "support_node_spec": "16-32 x86 cores; 128GB ECC RAM; 2x3.84TB enterprise NVMe mirrored; 10/25GbE; redundant PSU; basic hardware support",
+    "support_node_exvat_components_wan": {
+      "ram_128gb": [
+        1.6,
+        3.4
+      ],
+      "cpu_platform_psu": [
+        2.0,
+        3.8
+      ],
+      "nvme_network": [
+        0.9,
+        1.8
+      ]
+    },
+    "hardware_vat_rate": 0.13,
+    "price_reserve_fraction": 0.1,
+    "support_per_node_tax_included_wan": [
+      0.5,
+      1.0
+    ],
+    "day_cost_cny": 2500,
+    "day_cost_basis": "Explicit planning cost per engineer-day, not Onyx or integrator quote",
+    "enterprise_days": [
+      42,
+      68
+    ],
+    "custom_days": [
+      70,
+      110
+    ],
+    "onyx_license_annual_cny": null,
+    "onyx_license_sensitivity_annual_wan": [
+      10,
+      30,
+      60
+    ],
+    "license_sensitivity_basis": "Pure what-if variables; no supplier price inference",
+    "exclusions": [
+      "facility changes",
+      "existing NAS expansion",
+      "electricity",
+      "recurring staff",
+      "full high availability replicas",
+      "commercial support beyond stated scope"
+    ]
+  }
+}

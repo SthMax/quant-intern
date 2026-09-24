@@ -1,0 +1,36 @@
+@page { size: A4; margin: 18mm 17mm 19mm; }
+* { box-sizing: border-box; }
+body { margin: 0; color: #243746; font: 10.5pt/1.62 'Helvetica Neue', 'PingFang SC', 'Heiti SC', sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.kicker { color: #008b83; font-size: 9pt; letter-spacing: .08em; margin: 0 0 7mm; }
+h1 { color: #17334d; font-size: 23pt; line-height: 1.36; letter-spacing: -.025em; margin: 0 0 6mm; padding-bottom: 5mm; border-bottom: 1.5pt solid #008b83; }
+h2 { color: #17334d; font-size: 15pt; line-height: 1.4; margin: 8mm 0 3mm; padding-bottom: 1.4mm; border-bottom: .5pt solid #dbe3e8; }
+h3 { color: #008b83; font-size: 11.5pt; line-height: 1.45; margin: 5mm 0 2mm; }
+h4 { color: #17334d; font-size: 10.8pt; line-height: 1.4; margin: 4mm 0 2mm; }
+h1,h2,h3,h4 { break-after: avoid; break-inside: avoid; }
+p { margin: 2.5mm 0; orphans: 3; widows: 3; }
+strong { color: #17334d; font-weight: 650; }
+a { color: #226e91; text-decoration: none; overflow-wrap: anywhere; }
+li { padding-left: 1mm; margin: 1.5mm 0; orphans: 3; widows: 3; }
+ul,ol { padding-left: 6mm; margin: 2.5mm 0 4mm; }
+li > p { margin: 0 0 2mm; }
+blockquote { border-left: 2pt solid #008b83; margin: 4mm 0; padding: 1mm 0 1mm 4mm; color: #586776; }
+table { border-collapse: collapse; table-layout: fixed; width: 100%; margin: 3mm 0 4mm; font-size: 9pt; line-height: 1.48; }
+thead { display: table-header-group; }
+thead th { color: #17334d; background: #eef5f7; font-weight: 650; border-top: 1pt solid #658b9e; border-bottom: .75pt solid #bacbd4; }
+th,td { text-align: left; padding: 2.2mm 1.8mm; vertical-align: top; border-bottom: .45pt solid #dbe3e8; overflow-wrap: anywhere; word-break: normal; }
+tr { break-inside: avoid; }
+table.wide { font-size: 8pt; line-height: 1.45; }
+table.wide th,table.wide td { padding: 1.9mm 1.3mm; }
+td.numeric { font-variant-numeric: tabular-nums; }
+code { font-family: 'Menlo', 'PingFang SC', monospace; font-size: .86em; overflow-wrap: anywhere; white-space: normal; color: #314d65; }
+pre { border: .5pt solid #dbe3e8; padding: 3mm; margin: 3mm 0; background: #f5f8fa; white-space: pre-wrap; overflow-wrap: anywhere; break-inside: avoid; }
+pre code { font-size: 8pt; line-height: 1.5; white-space: pre-wrap; }
+figure { margin: 4mm 0 5mm; break-inside: avoid; padding: 3mm 0; }
+figure svg { display: block; width: 100%; height: auto; }
+figcaption { font-size: 8pt; color: #586776; text-align: center; margin-top: 2mm; }
+.source-note { font-size: 8pt; color: #586776; margin-top: 7mm; padding-top: 3mm; border-top: .5pt solid #dbe3e8; }
+
+table.keep { break-inside: avoid; }
+tbody tr:first-child { break-after: avoid; }
+
+tbody tr:nth-last-child(2) { break-after: avoid; }

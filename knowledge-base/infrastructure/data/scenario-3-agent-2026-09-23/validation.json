@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-23",
+  "status": "passed",
+  "cases": 432,
+  "source_files_hashed": 39,
+  "checks": [
+    "per-task model call/input/output conservation",
+    "tool duration conservation and dependency order",
+    "compaction resets and cache memory bounds",
+    "model/tool utilization within resources",
+    "tool-pool work lower bound",
+    "single-task replica invariance",
+    "incremental and combined price reconciliation",
+    "deterministic rerun",
+    "source hashes and index counts",
+    "new document local links",
+    "authored affiliation scan",
+    "scenario 1 document/results unchanged"
+  ],
+  "assumptions_sha256": "6f5145eda4d50b873d5322f08f34a2a705647d54d95f076f64a749be6e31c180",
+  "results_sha256": "92c8a4158cf684d7bb48f21b5bab11f3130c373e291ad521cc98fe0bcf03188e",
+  "document_sha256": "4d91ff8e3537408901f8fd010be438e606487398b390924e7683285dcd5f23ee",
+  "simulation_code_sha256": "0b4e2922feba58ac73c4fe6b2e94f8d0dd5f8c68f3b6b64c2b18f8fbaa298bb7",
+  "real_agent_run": false,
+  "gpu_benchmark": false,
+  "human_review": "pending",
+  "serving_results_sha256": "f1ea1e5adeb8c14780f0ef02930c4d07f6bfc639c8d4effe8c3c7a90dc857b63",
+  "serving_code_sha256": "f3e5bfb4dbe2ecdf97e159fcaa40ef28d3d614ed3bde310f21856a474464ac27",
+  "serving_cases": 144,
+  "serving_checks": [
+    "per-phase time and token conservation for 144 cases",
+    "memory and batch capacity for each active replica",
+    "displayed baseline hardware and concurrency rows match results",
+    "document local links and affiliation scan",
+    "original 432 task cases and assumptions unchanged"
+  ],
+  "kv_capacity_cases": 48,
+  "kv_capacity_sha256": "d3e9ecaa652f119cf81826ebdfc5633fbf14ef7be36c904f2c31ab8d45cfd974",
+  "kv_capacity_code_sha256": "7b41cf15625ff1e069fe6bbbd4e626ecefb6e583f80ec092e9c9e963c09d3ff8",
+  "kv_capacity_checks": [
+    "deterministic rerun",
+    "GPU memory budget conservation",
+    "independent replica memory and model-context limits",
+    "sliding retention sensitivity",
+    "A0 560 token/s formula reconstruction",
+    "all displayed context rows match calculated results",
+    "document local links and affiliation scan",
+    "existing task and serving results unchanged"
+  ],
+  "revision": "renumbered-company-agent-long-context",
+  "long_context_results_sha256": "eba6cf6e4e84942ec2f488743bfd994f39028936b3e91a9fc1976ecdd7909a1d",
+  "long_context_code_sha256": "f98491fd348f93a7f180999a0346e83ab95a52793f487e2448ef5d94f35fe00b",
+  "long_context_cases": 192,
+  "long_context_checks": [
+    "262K and 524K full-window loads",
+    "memory and batch limits before speed output",
+    "separate replica pools and model window cap",
+    "phase token conservation and overlap accounting",
+    "20 tasks context limits verified",
+    "publisher-native MiMo precision retained"
+  ]
+}

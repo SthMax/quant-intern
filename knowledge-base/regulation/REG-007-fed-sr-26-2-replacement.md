@@ -50,13 +50,13 @@ Supersedes:
 ## 研究者分析 / Project interpretation (not source text)
 
 SR 11-7 should be labelled historical when describing the current public US MRM
-reference. This letter is not a CSRC rule or a copy of Morgan Stanley internal
+reference. This letter is not a CSRC rule or a copy of internal firm
 policy. The attachment's generative-AI scope qualification is essential; see
 [REG-008](REG-008-fed-mrm-guidance-scope.md).
 
 ## 既有核验记录与限制 / Prior verification limits
 
-Replacement verified directly; internal Morgan Stanley adoption and MSIM entity
+Replacement verified directly; internal firm adoption and entity-specific
 applicability are not established. Human check pending.
 ## 2026-09-09 公开来源复核
 

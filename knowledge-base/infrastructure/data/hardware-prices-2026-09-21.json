@@ -1,0 +1,1187 @@
+{
+  "as_of": "2026-09-21",
+  "currency": "CNY",
+  "fx": {
+    "USD_CNY": 7.0,
+    "basis": "Explicit scenario assumption, not observed spot FX"
+  },
+  "status": "research price inputs; no orders or supplier inquiries; no hardware benchmark",
+  "evidence_method": "Primary vendor specification and store inspection; exact seller listings for price observations; selected Apple configurations inspected in browser; author assumptions separately marked D. No user manual verification yet.",
+  "definitions": {
+    "A-official": "Mainland official complete-system public listing",
+    "A-platform": "Mainland seller complete-system public listing, checkout/tax/support as recorded",
+    "B": "Domestic component public-price observation or sum",
+    "C": "Overseas public price converted at scenario FX",
+    "D": "Analytical budget, not supplier quote"
+  },
+  "workstation_sources": [
+    {
+      "id": "W01",
+      "url": "https://item.jd.com/product/ueICWfmAOZ_azHiXGPqA4A.html",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W02",
+      "url": "https://item.jd.com/product/pCXLcRqngwcs59mfwqehIg.html",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W03",
+      "url": "https://dlcdnwebimgs.asus.com.cn/files/media/202506/5c0fb57c-4e48-4e96-8c97-04bf8df2677c/asus-ascent-gx10-datasheet.pdf",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W04",
+      "url": "https://biz.lenovo.com.cn/search/?key=PGX",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W05",
+      "url": "https://biz.lenovo.com.cn/pd/1048906.html",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W06",
+      "url": "https://www.apple.com.cn/shop/buy-mac/mac-studio",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W07",
+      "url": "https://www.apple.com.cn/newsroom/2026/08/apple-introduces-mac-studio-with-m5-max-and-m5-ultra/",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W08",
+      "url": "https://www.apple.com.cn/mac-studio/specs/",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W09",
+      "url": "https://www.amd.com/en/blogs/2025/faqs-amd-variable-graphics-memory-vram-ai-model-sizes-quantization-mcp-more.html",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W10",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/ryzen-uma-llm/README.html",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W11",
+      "url": "https://www.nvidia.com/en-us/products/workstations/dgx-spark/",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W12",
+      "url": "https://www.nvidia.cn/products/workstations/professional-desktop-gpus/rtx-pro-5000/",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W13",
+      "url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkStation/ThinkStation_P3_Tower_Gen_2/ThinkStation_P3_Tower_Gen_2_Spec.pdf",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W14",
+      "url": "https://m.zol.com.cn/article/11960535.html",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W15",
+      "url": "https://www.pcnation.com/pny-vcnrtxpro5000b72-pb-pna100077",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W16",
+      "url": "https://blogs.nvidia.cn/blog/rtx-pro-5000-72gb-blackwell-gpu/",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W17",
+      "url": "https://www.npc.gov.cn/npc/c2/c30834/202412/t20241225_442038.html",
+      "access_date": "2026-09-21"
+    },
+    {
+      "id": "W18",
+      "url": "https://store.minisforum.com/products/minisforum-ms-s1-max-mini-pc",
+      "access_date": "2026-09-21"
+    }
+  ],
+  "workstations": [
+    {
+      "id": "W1",
+      "product": "MINISFORUM MS-S1 MAX",
+      "compute": "Ryzen AI Max+ 395 / Radeon 8060S",
+      "system_unified_memory_gb": 128,
+      "ssd_tb": 2,
+      "unit_price_cny": 26999,
+      "price_class": "A-platform",
+      "source_id": "W01",
+      "source_url": "https://item.jd.com/product/ueICWfmAOZ_azHiXGPqA4A.html",
+      "observed_date": "2026-09-21",
+      "price_scope_note": "Tax, seller authorization, mainland warranty and checkout price not fully displayed."
+    },
+    {
+      "id": "W2",
+      "product": "ASUS Ascent GX10",
+      "compute": "GB10 / 20-core Arm",
+      "system_unified_memory_gb": 128,
+      "ssd_tb": 1,
+      "unit_price_cny": 39999,
+      "price_class": "A-platform",
+      "source_id": "W02",
+      "source_url": "https://item.jd.com/product/pCXLcRqngwcs59mfwqehIg.html",
+      "observed_date": "2026-09-21",
+      "price_scope_note": "Tax and warranty not fully displayed. Adapter inclusion unresolved; separate D allowance below.",
+      "adapter_scenario": {
+        "class": "D",
+        "tax_included_allowance_cny": [
+          1000,
+          2000
+        ],
+        "complete_budget_cny": [
+          40999,
+          41999
+        ],
+        "assumption": "Adapter absent from seller bundle; remove allowance if included. Exact accessory price not obtained.",
+        "source_id": "W03"
+      }
+    },
+    {
+      "id": "W3",
+      "product": "Lenovo ThinkStation PGX",
+      "compute": "GB10 / 20-core Arm",
+      "system_unified_memory_gb": 128,
+      "ssd_tb": 4,
+      "unit_price_cny": 48999,
+      "price_class": "A-official",
+      "source_id": "W04",
+      "source_url": "https://biz.lenovo.com.cn/search/?key=PGX",
+      "observed_date": "2026-09-21",
+      "price_scope_note": "Official search-list price for product 1048906; detail page confirms 4TB. Tax, delivery and full support not displayed."
+    },
+    {
+      "id": "W4",
+      "product": "Mac Studio M5 Max",
+      "compute": "18 CPU / 40 GPU",
+      "system_unified_memory_gb": 128,
+      "ssd_tb": 1,
+      "unit_price_cny": 41749,
+      "price_class": "A-official",
+      "source_id": "W06",
+      "source_url": "https://www.apple.com.cn/shop/buy-mac/mac-studio",
+      "observed_date": "2026-09-21",
+      "price_scope_note": "VAT and standard shipping included; pre-order, release 2026-09-22. No AppleCare add-on.",
+      "price_components_cny": {
+        "m5_max_18_40_48gb_512gb": 24499,
+        "128gb_upgrade": 15000,
+        "1tb_upgrade": 2250
+      }
+    },
+    {
+      "id": "W5",
+      "product": "Mac Studio M5 Ultra",
+      "compute": "30 CPU / 64 GPU",
+      "system_unified_memory_gb": 96,
+      "ssd_tb": 1,
+      "unit_price_cny": 46999,
+      "price_class": "A-official",
+      "source_id": "W06",
+      "source_url": "https://www.apple.com.cn/shop/buy-mac/mac-studio",
+      "observed_date": "2026-09-21",
+      "price_scope_note": "VAT and standard shipping included; pre-order, release 2026-09-22. No AppleCare add-on.",
+      "price_components_cny": {
+        "m5_ultra_30_64_96gb_1tb": 46999
+      }
+    },
+    {
+      "id": "W6",
+      "product": "Mac Studio M5 Ultra",
+      "compute": "36 CPU / 80 GPU",
+      "system_unified_memory_gb": 256,
+      "ssd_tb": 2,
+      "unit_price_cny": 90499,
+      "price_class": "A-official",
+      "source_id": "W06",
+      "source_url": "https://www.apple.com.cn/shop/buy-mac/mac-studio",
+      "observed_date": "2026-09-21",
+      "price_scope_note": "VAT and standard shipping included; pre-order, release 2026-09-22. No AppleCare add-on.",
+      "price_components_cny": {
+        "m5_ultra_30_64_96gb_1tb": 46999,
+        "36_cpu_80_gpu_upgrade": 9750,
+        "256gb_upgrade": 30000,
+        "2tb_upgrade": 3750
+      }
+    },
+    {
+      "id": "W7",
+      "product": "P3 Tower Gen 2-class OEM tower, analytical configuration",
+      "gpu": "1x RTX PRO 5000 Blackwell 72GB active-cooled",
+      "cpu": "Core Ultra 9 285",
+      "host_ram_gb": 128,
+      "ram_layout": "4x32GB DDR5 UDIMM; platform rule 4400MT/s",
+      "ssd": "2x2TB NVMe, separate system/data disks, 4TB raw",
+      "network": "1x 10GbE add-in NIC, existing access switch",
+      "psu": "1100W Platinum, active air cooling",
+      "price_class": "D",
+      "source_ids": [
+        "W12",
+        "W13",
+        "W14",
+        "W15",
+        "W17"
+      ],
+      "components_exvat_assumed_cny": {
+        "gpu_rtx_pro_5000_72gb": [
+          55000,
+          85000
+        ],
+        "cpu_ultra_9_285_and_cooler": [
+          3500,
+          6000
+        ],
+        "ram_4x32gb_udimm": [
+          8000,
+          16000
+        ],
+        "ssd_2x2tb_nvme": [
+          3000,
+          7000
+        ],
+        "w880_tower_1100w_psu_cooling": [
+          12000,
+          20000
+        ],
+        "10gbe_nic_cable": [
+          1500,
+          3500
+        ]
+      },
+      "hardware_exvat_cny": [
+        83000,
+        137500
+      ],
+      "hardware_vat_rate": 0.13,
+      "price_contingency_rate": 0.1,
+      "service_tax_included_cny": [
+        3000,
+        6000
+      ],
+      "total_cny": [
+        105090.0,
+        175125.0
+      ],
+      "rounded_outward_cny": [
+        105000,
+        176000
+      ],
+      "formula": "hardware * (1 + 0.13 + 0.10) + tax-included service",
+      "market_quote_obtained": false
+    }
+  ],
+  "team_configurations": [
+    {
+      "id": "T1",
+      "workstation_id": "W3",
+      "quantity": 1,
+      "total_cny": 48999,
+      "price_class": "A-official",
+      "arrangement": "shared model service with separate user workspaces",
+      "additional_client_and_network_capex_cny": 0,
+      "reuse_assumption": "Existing three client computers, displays, input devices and suitable office network. Apple three-device quantity via enterprise channel; consumer store limit is two.",
+      "throughput_measured": false
+    },
+    {
+      "id": "T2",
+      "workstation_id": "W6",
+      "quantity": 1,
+      "total_cny": 90499,
+      "price_class": "A-official",
+      "arrangement": "shared model service with separate user workspaces",
+      "additional_client_and_network_capex_cny": 0,
+      "reuse_assumption": "Existing three client computers, displays, input devices and suitable office network. Apple three-device quantity via enterprise channel; consumer store limit is two.",
+      "throughput_measured": false
+    },
+    {
+      "id": "T3",
+      "workstation_id": "W7",
+      "quantity": 1,
+      "total_cny": [
+        105000,
+        176000
+      ],
+      "price_class": "D",
+      "arrangement": "shared model service with separate user workspaces",
+      "additional_client_and_network_capex_cny": 0,
+      "reuse_assumption": "Existing three client computers, displays, input devices and suitable office network. Apple three-device quantity via enterprise channel; consumer store limit is two.",
+      "throughput_measured": false
+    },
+    {
+      "id": "T4",
+      "workstation_id": "W1",
+      "quantity": 3,
+      "total_cny": 80997,
+      "price_class": "A-platform",
+      "arrangement": "three independent devices, no memory pooling assumed",
+      "additional_client_and_network_capex_cny": 0,
+      "reuse_assumption": "Existing three client computers, displays, input devices and suitable office network. Apple three-device quantity via enterprise channel; consumer store limit is two.",
+      "throughput_measured": false
+    },
+    {
+      "id": "T5",
+      "workstation_id": "W4",
+      "quantity": 3,
+      "total_cny": 125247,
+      "price_class": "A-official",
+      "arrangement": "three independent devices, no memory pooling assumed",
+      "additional_client_and_network_capex_cny": 0,
+      "reuse_assumption": "Existing three client computers, displays, input devices and suitable office network. Apple three-device quantity via enterprise channel; consumer store limit is two.",
+      "throughput_measured": false
+    },
+    {
+      "id": "T6",
+      "workstation_id": "W3",
+      "quantity": 3,
+      "total_cny": 146997,
+      "price_class": "A-official",
+      "arrangement": "three independent devices, no memory pooling assumed",
+      "additional_client_and_network_capex_cny": 0,
+      "reuse_assumption": "Existing three client computers, displays, input devices and suitable office network. Apple three-device quantity via enterprise channel; consumer store limit is two.",
+      "throughput_measured": false
+    }
+  ],
+  "additional_price_observations": [
+    {
+      "id": "O1",
+      "source_id": "W18",
+      "product": "MINISFORUM MS-S1 MAX 128GB/2TB US store",
+      "amount": 3799,
+      "currency": "USD",
+      "cny_at_scenario_fx": 26593,
+      "class": "C",
+      "price_date": "2026-09-21 observation",
+      "support": "2-year seller warranty on this US store; mainland seller terms separate",
+      "tax_shipping": "China import, VAT and delivery not priced",
+      "sku": "MS-S1-MAX12US",
+      "variant_id": "47071388139765",
+      "delivery": "Store selected variant estimates early October shipping; US configuration."
+    },
+    {
+      "id": "O2",
+      "source_id": "W14",
+      "product": "RTX PRO 5000 Blackwell 72GB graphics card",
+      "amount": 52949,
+      "currency": "CNY",
+      "class": "B-component historical",
+      "price_date": "2026-06-09",
+      "tax_shipping": "not stated",
+      "seller": "Chengdu Qiangchuan, advertised through ZOL"
+    },
+    {
+      "id": "O3",
+      "source_id": "W15",
+      "product": "PNY VCNRTXPRO5000B72-PB",
+      "amount": 9526.47,
+      "currency": "USD",
+      "cny_at_scenario_fx": 66685.29,
+      "class": "C",
+      "price_date": "2026-09-21 observation",
+      "stock": "Out of Stock",
+      "tax_shipping": "US listing; no China landed-cost claim"
+    }
+  ],
+  "workstation_retrieval_manifests": [
+    {
+      "manifest": "sources.json",
+      "records": [
+        {
+          "id": "apple-studio",
+          "url": "https://www.apple.com.cn/shop/buy-mac/mac-studio",
+          "final_url": "https://www.apple.com.cn/shop/buy-mac/mac-studio",
+          "status": 200,
+          "bytes": 317451,
+          "sha256": "0ed298a7feceae37c367e391a0818d97d41facbd7752957b486591382d105c2f",
+          "retrieved_at": "2026-09-21T08:50:06.304647+00:00",
+          "raw": "reports/phase2-technical-research-2026-09-18/build/workstation-pricing-2026-09-21/apple-studio.html",
+          "text": "apple-studio.md"
+        },
+        {
+          "id": "apple-ultra-96",
+          "url": "https://www.apple.com.cn/shop/buy-mac/mac-studio/m3-ultra-chip-28-core-cpu-60-core-gpu-96gb-memory-1tb-storage",
+          "final_url": "https://www.apple.com.cn/shop/buy-mac/mac-studio",
+          "status": 200,
+          "bytes": 317451,
+          "sha256": "0ed298a7feceae37c367e391a0818d97d41facbd7752957b486591382d105c2f",
+          "retrieved_at": "2026-09-21T08:50:06.684173+00:00",
+          "raw": "reports/phase2-technical-research-2026-09-18/build/workstation-pricing-2026-09-21/apple-ultra-96.html",
+          "text": "apple-ultra-96.md"
+        },
+        {
+          "id": "minisforum-cn",
+          "url": "https://www.minisforum.cn/products/MS-S1-MAX",
+          "final_url": "https://www.minisforum.cn/products/MS-S1-MAX",
+          "status": 200,
+          "bytes": 221273,
+          "sha256": "96ae2e04cf01b0775f347a34ecc53a97b0c634df4a58cd794045f1c2aaa12273",
+          "retrieved_at": "2026-09-21T08:50:06.261715+00:00",
+          "raw": "reports/phase2-technical-research-2026-09-18/build/workstation-pricing-2026-09-21/minisforum-cn.html",
+          "text": "minisforum-cn.md"
+        },
+        {
+          "id": "minisforum-us",
+          "url": "https://store.minisforum.com/products/minisforum-ms-s1-max-mini-pc",
+          "final_url": "https://store.minisforum.com/products/minisforum-ms-s1-max-mini-pc",
+          "status": 200,
+          "bytes": 1384763,
+          "sha256": "8afbc5634bf00e16a889d026f52f1b8c41dacdbf9ac2adb1cab1e71ae088cdbe",
+          "retrieved_at": "2026-09-21T08:50:07.436012+00:00",
+          "raw": "reports/phase2-technical-research-2026-09-18/build/workstation-pricing-2026-09-21/minisforum-us.html",
+          "text": "minisforum-us.md"
+        },
+        {
+          "id": "lenovo-pgx-wiki",
+          "url": "https://www.lenovo.com.cn/wiki/product-1051033.html",
+          "final_url": "https://www.lenovo.com.cn/wiki/product-1051033.html",
+          "status": 200,
+          "bytes": 13909,
+          "sha256": "36f0ba794c72aa23cfd8d883d1119ec613b0334da2eb1952e21657b299528bde",
+          "retrieved_at": "2026-09-21T08:50:06.120892+00:00",
+          "raw": "reports/phase2-technical-research-2026-09-18/build/workstation-pricing-2026-09-21/lenovo-pgx-wiki.html",
+          "text": "lenovo-pgx-wiki.md"
+        },
+        {
+          "id": "lenovo-pgx-biz",
+          "url": "https://biz.lenovo.com.cn/search/?key=PGX",
+          "final_url": "https://biz.lenovo.com.cn/search/?key=PGX",
+          "status": 200,
+          "bytes": 479023,
+          "sha256": "b169d6d86b58d0657f7abe0d85378751fca9beb516a7948d11759052f4c0266d",
+          "retrieved_at": "2026-09-21T08:50:06.706068+00:00",
+          "raw": "reports/phase2-technical-research-2026-09-18/build/workstation-pricing-2026-09-21/lenovo-pgx-biz.html",
+          "text": "lenovo-pgx-biz.md"
+        },
+        {
+          "id": "nvidia-spark",
+          "url": "https://www.nvidia.cn/products/workstations/dgx-spark/",
+          "final_url": "https://www.nvidia.cn/products/workstations/dgx-spark/",
+          "status": 200,
+          "bytes": 681504,
+          "sha256": "2492653695905087b9941507d747dad97bfb80a75d2f5a641ab7fe554eb2ef11",
+          "retrieved_at": "2026-09-21T08:50:07.427792+00:00",
+          "raw": "reports/phase2-technical-research-2026-09-18/build/workstation-pricing-2026-09-21/nvidia-spark.html",
+          "text": "nvidia-spark.md"
+        }
+      ]
+    },
+    {
+      "manifest": "sources-extra.json",
+      "records": [
+        {
+          "name": "lenovo-pgx-product",
+          "requested_url": "https://biz.lenovo.com.cn/pd/1048906.html",
+          "final_url": "https://biz.lenovo.com.cn/pd/1048906.html",
+          "retrieved_at": "2026-09-21T09:01:10.486109+00:00",
+          "sha256": "6fb93b84cdb928a61c436e1a9a37f5ab8170fd34d21131d42d8f360aaf1151d8",
+          "bytes": 537198
+        },
+        {
+          "name": "jd-minisforum-128",
+          "requested_url": "https://item.jd.com/product/ueICWfmAOZ_azHiXGPqA4A.html",
+          "final_url": "https://item.jd.com/product/ueICWfmAOZ_azHiXGPqA4A.html",
+          "retrieved_at": "2026-09-21T09:01:10.572027+00:00",
+          "sha256": "6d0527c4720e0a45ee4f3e308dbc150bfe593b7feada1866a1261bee374072bc",
+          "bytes": 135517
+        },
+        {
+          "name": "jd-asus-gx10-128",
+          "requested_url": "https://item.jd.com/product/pCXLcRqngwcs59mfwqehIg.html",
+          "final_url": "https://item.jd.com/product/pCXLcRqngwcs59mfwqehIg.html",
+          "retrieved_at": "2026-09-21T09:01:10.405358+00:00",
+          "sha256": "373dee25d8fa5f7446098bb6b707dbae9f927d4c1f6a9f38b54764d92a586da6",
+          "bytes": 72958
+        },
+        {
+          "name": "apple-release",
+          "requested_url": "https://www.apple.com.cn/newsroom/2026/08/apple-introduces-mac-studio-with-m5-max-and-m5-ultra/",
+          "final_url": "https://www.apple.com.cn/newsroom/2026/08/apple-introduces-mac-studio-with-m5-max-and-m5-ultra/",
+          "retrieved_at": "2026-09-21T09:01:11.942941+00:00",
+          "sha256": "90f00303af73cafac0adcf1e36ad9cf052ea85cff856e137cd60e493c65b5ab8",
+          "bytes": 193683
+        },
+        {
+          "name": "apple-specs",
+          "requested_url": "https://www.apple.com.cn/mac-studio/specs/",
+          "final_url": "https://www.apple.com.cn/mac-studio/specs/",
+          "retrieved_at": "2026-09-21T09:01:10.215246+00:00",
+          "sha256": "c1be519066dbf624caede9c5a0404d37ff95f0d8c5c7861a2fc9c8e004193d6e",
+          "bytes": 198790
+        }
+      ]
+    },
+    {
+      "manifest": "sources-technical.json",
+      "records": [
+        {
+          "id": "W03",
+          "requested_url": "https://dlcdnwebimgs.asus.com.cn/files/media/202506/5c0fb57c-4e48-4e96-8c97-04bf8df2677c/asus-ascent-gx10-datasheet.pdf",
+          "final_url": "https://dlcdnwebimgs.asus.com.cn/files/media/202506/5c0fb57c-4e48-4e96-8c97-04bf8df2677c/asus-ascent-gx10-datasheet.pdf",
+          "retrieved_at": "2026-09-21T09:09:45.604226+00:00",
+          "sha256": "ecc98ca2fb541951432588d9e24791304f2078bc1dd68eeadf9e3d9ceb88933c",
+          "bytes": 429202,
+          "file": "W03.pdf"
+        },
+        {
+          "id": "W09",
+          "requested_url": "https://www.amd.com/en/blogs/2025/faqs-amd-variable-graphics-memory-vram-ai-model-sizes-quantization-mcp-more.html",
+          "final_url": "https://www.amd.com/en/blogs/2025/faqs-amd-variable-graphics-memory-vram-ai-model-sizes-quantization-mcp-more.html",
+          "retrieved_at": "2026-09-21T09:09:43.098777+00:00",
+          "sha256": "cb5c51bd99c317f41157845b090e9ad90daee04203bfa9ed5ece823dfd2003db",
+          "bytes": 198187,
+          "file": "W09.html"
+        },
+        {
+          "id": "W10",
+          "requested_url": "https://rocm.blogs.amd.com/artificial-intelligence/ryzen-uma-llm/README.html",
+          "final_url": "https://rocm.blogs.amd.com/artificial-intelligence/ryzen-uma-llm/README.html",
+          "retrieved_at": "2026-09-21T09:09:43.809797+00:00",
+          "sha256": "50504adca412a21216e082257addb35526d6500637fb5fc31e203055c0a48397",
+          "bytes": 61104,
+          "file": "W10.html"
+        },
+        {
+          "id": "W11",
+          "requested_url": "https://www.nvidia.com/en-us/products/workstations/dgx-spark/",
+          "final_url": "https://www.nvidia.com/en-us/products/workstations/dgx-spark/",
+          "retrieved_at": "2026-09-21T09:09:44.478657+00:00",
+          "sha256": "9fae69f2f19197536636f3bff9a57748e9dd9b2683f8ff2925c7129502a07b30",
+          "bytes": 609232,
+          "file": "W11.html"
+        },
+        {
+          "id": "W12",
+          "requested_url": "https://www.nvidia.cn/products/workstations/professional-desktop-gpus/rtx-pro-5000/",
+          "final_url": "https://www.nvidia.cn/products/workstations/professional-desktop-gpus/rtx-pro-5000/",
+          "retrieved_at": "2026-09-21T09:09:43.728449+00:00",
+          "sha256": "a8505f2e99e89c7754f3fc720c5d6aba23c01d09d1286ef35c1c5ddf100f9743",
+          "bytes": 264131,
+          "file": "W12.html"
+        },
+        {
+          "id": "W13",
+          "requested_url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkStation/ThinkStation_P3_Tower_Gen_2/ThinkStation_P3_Tower_Gen_2_Spec.pdf",
+          "final_url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkStation/ThinkStation_P3_Tower_Gen_2/ThinkStation_P3_Tower_Gen_2_Spec.pdf",
+          "retrieved_at": "2026-09-21T09:09:45.270308+00:00",
+          "sha256": "72b1ea0811c4e92064450df0f8353b1911271b11d3e2691ad8159d9a027df11d",
+          "bytes": 1274595,
+          "file": "W13.pdf"
+        },
+        {
+          "id": "W14",
+          "requested_url": "https://m.zol.com.cn/article/11960535.html",
+          "final_url": "https://m.zol.com.cn/article/11960535.html",
+          "retrieved_at": "2026-09-21T09:09:46.891695+00:00",
+          "sha256": "e23d917236767e310974a7b0cde5cd41c3e8105093b6571b92690cd7295772dc",
+          "bytes": 144171,
+          "file": "W14.html"
+        },
+        {
+          "id": "W15",
+          "requested_url": "https://www.pcnation.com/pny-vcnrtxpro5000b72-pb-pna100077",
+          "final_url": "https://www.pcnation.com/pny-vcnrtxpro5000b72-pb-pna100077",
+          "retrieved_at": "2026-09-21T09:09:46.912607+00:00",
+          "sha256": "677367e8d57709bd80941e46265e3c5cdb3197615e131854a9deaacc0eab06d4",
+          "bytes": 363358,
+          "file": "W15.html"
+        },
+        {
+          "id": "W16",
+          "requested_url": "https://blogs.nvidia.cn/blog/rtx-pro-5000-72gb-blackwell-gpu/",
+          "final_url": "https://blogs.nvidia.cn/blog/rtx-pro-5000-72gb-blackwell-gpu/",
+          "retrieved_at": "2026-09-21T09:09:45.883093+00:00",
+          "sha256": "bd4cb398e64412c9f4770bb6f6053bf5eb548da5c4a88b001cf1a6b070380f82",
+          "bytes": 108570,
+          "file": "W16.html"
+        },
+        {
+          "id": "W17",
+          "requested_url": "https://www.npc.gov.cn/npc/c2/c30834/202412/t20241225_442038.html",
+          "error": "<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)>"
+        }
+      ]
+    }
+  ],
+  "server_scenarios": {
+    "date": "2026-09-21",
+    "currency": "CNY",
+    "status": "analytical_scenarios",
+    "not_included": [
+      "facility refurbishment",
+      "rack UPS and central cooling",
+      "cross-node high-speed network switches",
+      "software commercial licenses",
+      "electricity and operating staff",
+      "model/harness integration"
+    ],
+    "cases": [
+      {
+        "id": "G1",
+        "gpu": "4×L20",
+        "cpu": "2×Xeon6710E，各64核",
+        "ram_gb": 512,
+        "components": {
+          "gpu": [
+            96000,
+            160000
+          ],
+          "platform": [
+            80000,
+            140000
+          ],
+          "cpu": [
+            35000,
+            55000
+          ],
+          "ram": [
+            64000,
+            136000
+          ],
+          "nvme": [
+            20000,
+            35000
+          ],
+          "nic": [
+            4000,
+            10000
+          ],
+          "power_cooling_cables": [
+            15000,
+            30000
+          ]
+        },
+        "service_tax_included": [
+          20000,
+          40000
+        ],
+        "extra_us_tariff_upper": 0,
+        "price_class": "D",
+        "hardware_exvat": [
+          314000,
+          566000
+        ],
+        "hardware_vat_rate": 0.13,
+        "hardware_price_contingency_rate": 0.1,
+        "formula": "hardware*1.13 + hardware*0.10 + tax-included deployment/support; upper additionally adds unpriced US inspection import tariff*1.13",
+        "total_cny": [
+          406220.0,
+          736180.0
+        ],
+        "rounded_wan_cny": [
+          40,
+          74
+        ]
+      },
+      {
+        "id": "G2",
+        "gpu": "8×L20",
+        "cpu": "2×Xeon6710E，各64核",
+        "ram_gb": 1024,
+        "components": {
+          "gpu": [
+            192000,
+            320000
+          ],
+          "platform": [
+            100000,
+            160000
+          ],
+          "cpu": [
+            35000,
+            55000
+          ],
+          "ram": [
+            128000,
+            272000
+          ],
+          "nvme": [
+            25000,
+            45000
+          ],
+          "nic": [
+            10000,
+            20000
+          ],
+          "power_cooling_cables": [
+            30000,
+            55000
+          ]
+        },
+        "service_tax_included": [
+          25000,
+          50000
+        ],
+        "extra_us_tariff_upper": 0,
+        "price_class": "D",
+        "hardware_exvat": [
+          520000,
+          927000
+        ],
+        "hardware_vat_rate": 0.13,
+        "hardware_price_contingency_rate": 0.1,
+        "formula": "hardware*1.13 + hardware*0.10 + tax-included deployment/support; upper additionally adds unpriced US inspection import tariff*1.13",
+        "total_cny": [
+          664600.0,
+          1190210.0
+        ],
+        "rounded_wan_cny": [
+          66,
+          120
+        ]
+      },
+      {
+        "id": "G3",
+        "gpu": "4×RTX PRO6000D84GB服务器版",
+        "cpu": "2×Xeon6710E，各64核",
+        "ram_gb": 1024,
+        "components": {
+          "gpu": [
+            200000,
+            340000
+          ],
+          "platform": [
+            80000,
+            140000
+          ],
+          "cpu": [
+            35000,
+            55000
+          ],
+          "ram": [
+            128000,
+            272000
+          ],
+          "nvme": [
+            20000,
+            35000
+          ],
+          "nic": [
+            4000,
+            10000
+          ],
+          "power_cooling_cables": [
+            20000,
+            40000
+          ]
+        },
+        "service_tax_included": [
+          25000,
+          50000
+        ],
+        "extra_us_tariff_upper": 0,
+        "price_class": "D",
+        "hardware_exvat": [
+          487000,
+          892000
+        ],
+        "hardware_vat_rate": 0.13,
+        "hardware_price_contingency_rate": 0.1,
+        "formula": "hardware*1.13 + hardware*0.10 + tax-included deployment/support; upper additionally adds unpriced US inspection import tariff*1.13",
+        "total_cny": [
+          624010.0,
+          1147160.0
+        ],
+        "rounded_wan_cny": [
+          62,
+          115
+        ]
+      },
+      {
+        "id": "G4",
+        "gpu": "8×RTX PRO6000D84GB服务器版",
+        "cpu": "2×Xeon6710E，各64核",
+        "ram_gb": 2048,
+        "components": {
+          "gpu": [
+            400000,
+            680000
+          ],
+          "platform": [
+            100000,
+            160000
+          ],
+          "cpu": [
+            35000,
+            55000
+          ],
+          "ram": [
+            256000,
+            544000
+          ],
+          "nvme": [
+            25000,
+            45000
+          ],
+          "nic": [
+            10000,
+            20000
+          ],
+          "power_cooling_cables": [
+            40000,
+            70000
+          ]
+        },
+        "service_tax_included": [
+          30000,
+          60000
+        ],
+        "extra_us_tariff_upper": 0,
+        "price_class": "D",
+        "hardware_exvat": [
+          866000,
+          1574000
+        ],
+        "hardware_vat_rate": 0.13,
+        "hardware_price_contingency_rate": 0.1,
+        "formula": "hardware*1.13 + hardware*0.10 + tax-included deployment/support; upper additionally adds unpriced US inspection import tariff*1.13",
+        "total_cny": [
+          1095180.0,
+          1996020.0
+        ],
+        "rounded_wan_cny": [
+          109,
+          200
+        ]
+      },
+      {
+        "id": "G5",
+        "gpu": "4×H200NVL",
+        "cpu": "2×Xeon6710E，各64核",
+        "ram_gb": 1536,
+        "components": {
+          "gpu": [
+            940000,
+            1600000
+          ],
+          "platform": [
+            100000,
+            160000
+          ],
+          "cpu": [
+            35000,
+            55000
+          ],
+          "ram": [
+            192000,
+            408000
+          ],
+          "nvme": [
+            25000,
+            45000
+          ],
+          "nic": [
+            15000,
+            30000
+          ],
+          "power_cooling_cables": [
+            30000,
+            50000
+          ],
+          "nvlink_bridges": [
+            10000,
+            30000
+          ]
+        },
+        "service_tax_included": [
+          40000,
+          70000
+        ],
+        "extra_us_tariff_upper": 400000,
+        "price_class": "D",
+        "hardware_exvat": [
+          1347000,
+          2378000
+        ],
+        "hardware_vat_rate": 0.13,
+        "hardware_price_contingency_rate": 0.1,
+        "formula": "hardware*1.13 + hardware*0.10 + tax-included deployment/support; upper additionally adds unpriced US inspection import tariff*1.13",
+        "total_cny": [
+          1696810.0,
+          3446940.0
+        ],
+        "rounded_wan_cny": [
+          169,
+          345
+        ]
+      },
+      {
+        "id": "G6",
+        "gpu": "8×HGXH200SXM",
+        "cpu": "2×EPYC9454，各48核",
+        "ram_gb": 1536,
+        "components": {
+          "exxact_complete_system": [
+            2282588,
+            2282588
+          ],
+          "additional_storage_and_nic": [
+            25000,
+            60000
+          ]
+        },
+        "service_tax_included": [
+          70000,
+          150000
+        ],
+        "extra_us_tariff_upper": 427985.25,
+        "price_class": "D",
+        "hardware_exvat": [
+          2307588,
+          2342588
+        ],
+        "hardware_vat_rate": 0.13,
+        "hardware_price_contingency_rate": 0.1,
+        "formula": "hardware*1.13 + hardware*0.10 + tax-included deployment/support; upper additionally adds unpriced US inspection import tariff*1.13",
+        "total_cny": [
+          2908333.24,
+          3515006.57
+        ],
+        "rounded_wan_cny": [
+          290,
+          352
+        ]
+      },
+      {
+        "id": "G7",
+        "gpu": "8×MI325X",
+        "cpu": "2×EPYC9005，每颗32–48核等级",
+        "ram_gb": 1536,
+        "components": {
+          "gpu_ubb_chassis_power_cooling": [
+            1450000,
+            1750000
+          ],
+          "cpu": [
+            40000,
+            70000
+          ],
+          "ram": [
+            192000,
+            408000
+          ],
+          "nvme": [
+            30000,
+            50000
+          ],
+          "nic": [
+            10000,
+            30000
+          ]
+        },
+        "service_tax_included": [
+          80000,
+          150000
+        ],
+        "extra_us_tariff_upper": 328125.0,
+        "price_class": "D",
+        "hardware_exvat": [
+          1722000,
+          2308000
+        ],
+        "hardware_vat_rate": 0.13,
+        "hardware_price_contingency_rate": 0.1,
+        "formula": "hardware*1.13 + hardware*0.10 + tax-included deployment/support; upper additionally adds unpriced US inspection import tariff*1.13",
+        "total_cny": [
+          2198060.0,
+          3359621.25
+        ],
+        "rounded_wan_cny": [
+          219,
+          336
+        ]
+      }
+    ]
+  },
+  "server_price_sources": {
+    "fx": {
+      "USD_CNY": 7.0,
+      "type": "analysis_scenario_not_spot",
+      "as_of": "2026-09-21"
+    },
+    "sources": [
+      {
+        "id": "P01",
+        "name": "L20国内经销商历史挂牌",
+        "vendor": "成都强川科技有限公司，经ZOL刊载",
+        "date": "2026-03-03",
+        "retrieved": "2026-09-21",
+        "url": "https://m.zol.com.cn/article/11420528.html",
+        "currency": "CNY",
+        "amount": 28800,
+        "basis": "每张L20 48GB",
+        "class": "B_component_anchor",
+        "tax": "未标明",
+        "shipping": "未标明",
+        "warranty": "未标明",
+        "note": "历史促销价；没有HPE料号；不能视为当前OEM供货价"
+      },
+      {
+        "id": "P02",
+        "name": "6000D国内经销商历史挂牌",
+        "vendor": "济南信源泰达装机店，经ZOL刊载",
+        "date": "2026-05-18",
+        "retrieved": "2026-09-21",
+        "url": "https://vga.zol.com.cn/1183/11838132.html",
+        "currency": "CNY",
+        "amount": 49999,
+        "basis": "每张RTX PRO 6000D 84GB被动散热卡",
+        "class": "B_component_anchor",
+        "tax": "未标明",
+        "shipping": "未标明",
+        "warranty": "未标明",
+        "note": "促销有效期7天，已过；文章挂入工作站产品页，但正文明确6000D84GB被动卡；技术参数仍按OEM资料"
+      },
+      {
+        "id": "P03",
+        "name": "H200 NVL海外挂牌",
+        "vendor": "ViperaTech",
+        "date": null,
+        "retrieved": "2026-09-21",
+        "url": "https://viperatech.com/product/nvidia-h200-nvl-graphic-card-141-gb-passive-pcie-900-21010-0040-000",
+        "currency": "USD",
+        "amount": 33500,
+        "cny_at_scenario_fx": 234500,
+        "basis": "每张900-21010-0040-000 H200 NVL 141GB",
+        "class": "C_component_anchor",
+        "tax": "未注明税费是否包含；提示按地点核进口税",
+        "shipping": "提到DHL/UPS，未列运费",
+        "warranty": "网页称3年厂家保修",
+        "note": "网页同时标Out of stock和付款后两周发货；只采价格，交期不采信"
+      },
+      {
+        "id": "P04",
+        "name": "八卡H200完整公开配置",
+        "vendor": "Exxact",
+        "date": null,
+        "retrieved": "2026-09-21",
+        "url": "https://configurator.exxactcorp.com/configure/TS4-118380266",
+        "currency": "USD",
+        "amount": 326084,
+        "cny_at_scenario_fx": 2282588,
+        "basis": "TS4-118380266默认配置，2×EPYC9454(各48核)、24×64GB DDR5、8×H200SXM/NVSwitch、X550双口10GbE、6×3000W3+3、3年零件人工",
+        "class": "C_system_anchor",
+        "tax": "未在配置总价处列税",
+        "shipping": "未列；明确不带电源线",
+        "warranty": "3年零件人工及持续邮件电话支持，未写中国上门",
+        "note": "960GB U.2选项已选中但数量框没有可读值；目标配置的NVMe另按增量预算，不重复计入CPU/RAM/GPU"
+      },
+      {
+        "id": "P05",
+        "name": "八卡MI325X平台起价",
+        "vendor": "Supermicro美国eStore",
+        "date": null,
+        "retrieved": "2026-09-21",
+        "url": "https://store.supermicro.com/us_en/8u-gpu-superserver-as-8126gs-tnmr.html",
+        "currency": "USD",
+        "amount": 245580.19,
+        "cny_at_scenario_fx": 1719061.33,
+        "basis": "AS-8126GS-TNMR System Starting Price；页面列8卡MI325X能力，但默认CPU/RAM/SSD选项没有完整可读BOM",
+        "class": "C_starting_price_anchor",
+        "tax": "税/关税由配送流程另处理",
+        "shipping": "美国店仅美国境内交付；系统不适用普通配件免运费说明",
+        "warranty": "本产品起价处未列完整服务范围",
+        "note": "仅用于整机量级校验，不作为指定1.5TB整机成交价"
+      },
+      {
+        "id": "P06",
+        "name": "Xeon6710E建议客户价",
+        "vendor": "Intel",
+        "date": null,
+        "retrieved": "2026-09-21",
+        "url": "https://www.intel.com/content/www/us/en/products/sku/240363/intel-xeon-6710e-processor-96m-cache-2-40-ghz/specifications.html",
+        "currency": "USD",
+        "amount": 2463,
+        "cny_at_scenario_fx": 17241,
+        "basis": "每颗64核205W CPU，Intel RCP非零售报价",
+        "class": "C_RCP_anchor",
+        "tax": "不含本地交易税价承诺",
+        "shipping": "未含",
+        "warranty": "非交易报价",
+        "note": "HPE CPU料号P71117-B21在DL380aGen12配置表中存在；两颗RCP折算34482元"
+      },
+      {
+        "id": "P07",
+        "name": "64GB DDR5-5600替换条零售挂牌",
+        "vendor": "memory.net",
+        "date": "2026-08-26",
+        "retrieved": "2026-09-21",
+        "url": "https://memory.net/product/mem-dr564mc-er56-supermicro-1x-64gb-ddr5-5600-rdimm-pc5-44800r-dual-rank-x4-replacement/",
+        "currency": "USD",
+        "amount": 2988,
+        "cny_at_scenario_fx": 20916,
+        "basis": "每条64GB RDIMM，OEM replacement渠道",
+        "class": "C_component_stress_anchor",
+        "tax": "未列中国税",
+        "shipping": "美国仓，国际运输另核",
+        "warranty": "页面提供兼容性及提前替换服务说明",
+        "note": "用于零售高价压力情景；OEM打包64GB预算8000–17000元是分析折扣假设，不是实报"
+      },
+      {
+        "id": "P08",
+        "name": "HPE 4U CTO底座指示估价",
+        "vendor": "Star Networking",
+        "date": null,
+        "retrieved": "2026-09-21",
+        "url": "https://www.star-networking.com/products/hpe-p76706-b21.html",
+        "currency": "USD",
+        "amount": 16250,
+        "cny_at_scenario_fx": 113750,
+        "basis": "P76706-B21 CTO System类别估价",
+        "class": "D_vendor_indicative_anchor",
+        "tax": "未列",
+        "shipping": "未列",
+        "warranty": "需报价确认",
+        "note": "网页自身称Budgetary estimate，非固定销售价；不能作为C实价。仅校验8–16万元平台估算量级"
+      },
+      {
+        "id": "P09",
+        "name": "HPE H200 NVL海外OEM备件报价对照",
+        "vendor": "CDW美国",
+        "date": null,
+        "retrieved": "2026-09-21",
+        "url": "https://www.cdw.com/product/nvidia-h200-nvl-accelerator-gpu-computing-processor-h200-tensor-core/8299396",
+        "currency": "USD",
+        "amount": 94698.99,
+        "cny_at_scenario_fx": 662892.93,
+        "basis": "每张HPE S3U30C",
+        "class": "C_OEM_spare_comparator",
+        "tax": "结算另核",
+        "shipping": "未列",
+        "warranty": "需合同确认",
+        "note": "与普通NVIDIA料号挂牌有很大差价；用于提示原厂CTO/备件/集成方案须分开，不将D集成预算宣称为HPE报价"
+      },
+      {
+        "id": "T01",
+        "name": "HPE DL380aGen12整机配置规则",
+        "date": null,
+        "retrieved": "2026-09-21",
+        "url": "https://www.hpe.com/us/en/collaterals/collateral.a00047453enw.html",
+        "note": "GPU清单包括S4A92C/S6W21C/S3U30C；4/8DW数量、Xeon6710E、8卡前风扇、5/8PSU规则；仅用于BOM资格"
+      },
+      {
+        "id": "T02",
+        "name": "HPE电源分域冗余",
+        "date": null,
+        "retrieved": "2026-09-21",
+        "url": "https://support.hpe.com/hpesc/public/docDisplay?docId=sd00005071en_us&docLocale=en_US&page=GUID-78D09FA3-09AA-42EA-838F-D55402AEE195.html",
+        "note": "CPU域1+1，两个GPU域各2+1；PSU铭牌合计不是整机实际功耗"
+      },
+      {
+        "id": "T03",
+        "name": "增值税法",
+        "date": "2024-12-25",
+        "effective": "2026-01-01",
+        "retrieved": "2026-09-21",
+        "url": "https://www.npc.gov.cn/npc/c2/c30834/202412/t20241225_442038.html",
+        "note": "第10条一般货物13%；模型仅对硬件小计加13%现金支出准备，服务包使用含税分析值，不预设抵扣资格"
+      }
+    ]
+  }
+}

@@ -1,5 +1,19 @@
 # Knowledge Base
 
+> 2026-09-24更新[场景一四配置比较](infrastructure/scenario-1-speed-target-review-2026-09-24.md)：单6000D、双6000D、M5 Ultra 256GB、DGX Spark；统一Qwen3.8-27B FP8权重及完整精度KV，以单人20+为目标，列出人民币整机预算、131K／262K／524K速度及缓存容量。含36组主情景和单卡95%显存分支；[Beamer演示稿](../presentation/week4-deployment-2026-09-24/README.md)及[三份详细方案PDF](../reports/week4-deployment-2026-09-24/README.md)已同步。
+
+> 2026-09-24按反馈统一现行编号：**1个人／小组、2公司知识库、3公司通用Agent**。个人与知识库主用Qwen3.8-27B，权重至少8-bit；个人按131K／262K／524K满窗口计算，公司通用Agent以每任务262K、20并发为主口径，并提供5／20／30／50任务的context上限。见[Beamer演示稿](../presentation/week4-deployment-2026-09-24/README.md)及下列方案。模型／价格原始来源保留，当前200个来源ID。
+
+> 2026-09-23更新[场景二计算](infrastructure/scenario-2-enterprise-rag-2026-09-23.md)：补齐prefill、decode、每路速度与KV总context，统一90%显存和15%缓存开销；120组性能情景中105组满足预算，15组H1／35B另标边界，95%紧配单列；另有40组context容量。正文以8K问答、32K长资料和20并发为主，平台与价格沿用原方案。
+
+> 2026-09-23完成[场景三：公司共享模型＋通用Agent](infrastructure/scenario-3-company-agent-2026-09-23.md)，以Hermes、Skills／MCP和隔离执行为主线，比较集中与桌面执行。文档列六个资源档、三类完整任务、增量／合并预算；[432组任务模拟](infrastructure/data/scenario-3-agent-2026-09-23/)计入工具排队、上下文增长、缓存回收及子任务敏感性。新增TECH-072–074，当前199项：180主阅读、15辅助、4来源链。性能为未校准分析模拟。
+
+> 2026-09-23完成[场景二：Onyx Enterprise与Milvus自建RAG两条方案](infrastructure/scenario-2-enterprise-rag-2026-09-23.md)。涵盖NAS权限、Office／PDF入库、模型、四档硬件、项目预算，以及1／5／20／30／50并发下的响应与吞吐分析计算；[参数与复算脚本](infrastructure/data/scenario-2-rag-2026-09-23/)保留120组情景，均未作GPU实测校准。新增TECH-068–071，当前196项：177主阅读、15辅助、4来源链。下一步讨论场景三。
+
+> 2026-09-22完成[MiMo-V2.6 Pro／Flash详细研究](models/mimo-v2.6-research-2026-09-22.md)，加入[当前10模型候选池](models/model-survey-2026-09-16.md)。比较非coding Agent能力、GLM参数与权重、MXFP4、KV、DFlash及四／八卡部署；[许可专项](models/license-review-2026-09-16.md)同步。新增TECH-064–067，当前192项：173主阅读、15辅助、4来源链。原第三周报告保留其发布时快照。
+
+> 2026-09-21新增[中国境内部署的服务器GPU采购研究](infrastructure/server-gpu-procurement-2026-09-21.md)，覆盖NVIDIA／AMD型号、地区SKU、出口许可及原厂供货披露。现已补充七套四／八卡整机预算，并完成[个人／三人工作站配置与价格](infrastructure/workstation-configurations-2026-09-21.md)。公开价、境外换算与分析估算分别标识，逐项计算保存在[硬件价格JSON](infrastructure/data/hardware-prices-2026-09-21.json)，接入[参考架构](infrastructure/reference-architecture.md)和[TCO输入](infrastructure/tco-model.md)。本轮为第四周工作资料，原TECH索引数量保持不变。
+
 > 2026-09-18新增[Harness比较与Coding Agent工作流研究](infrastructure/harness-survey-2026-09-17.md)：Open WebUI/LobeHub/Cherry Studio、Hermes/OpenClaw，以及Skills/MCP与通用执行环境。新增TECH-056–063；当前188项：169主阅读、15辅助、4来源链。修改前检查点为`d3057af`。
 
 > 2026-09-18在检查点`9e5c2fe`后深化[非coding Harness与应用调研](infrastructure/harness-survey-2026-09-17.md)，正文按产品用途、优点和基金业务用法重写；[Serving调研](infrastructure/serving-framework-survey-2026-09-17.md)增加任务负载和时延达标吞吐比较。该轮索引180项：161主阅读、15辅助、4来源链。
@@ -143,6 +157,6 @@ evidence.
 Use public information in this repository. Do not place confidential internal,
 client, personal, portfolio/position, or licensed research data here without the
 user's explicit direction and an authorized storage basis. Track internal-policy
-questions without copying restricted text. COD is MSIM's infrastructure; MRM
+questions without copying restricted text. COD is the host organization's infrastructure; MRM
 means model risk management. Those clarifications do not supply architecture
 specifications or internal policy content.

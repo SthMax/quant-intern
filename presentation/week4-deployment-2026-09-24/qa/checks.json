@@ -1,0 +1,129 @@
+{
+  "status": "automated checks passed; visual review recorded separately",
+  "pages": 16,
+  "main_pages": 12,
+  "appendix_pages": 4,
+  "order": [
+    1,
+    2,
+    3
+  ],
+  "pdf_sha256": "c1b584ad4038705c21261cb21e1a3357a126f603f4d4c4ea33459fbd39b857cc",
+  "referenced_display_values": 56,
+  "source_files_hashed": 9,
+  "embedded_fonts": {
+    "/JRYMRO+STHeitiSC-Light": true,
+    "/JGUKHG+STHeitiSC-Medium": true,
+    "/NGTUOI+TeXGyreHeros-Regular": true,
+    "/JHLEDX+TeXGyreHeros-Bold": true
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "characters": 85,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 2,
+      "characters": 265,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 3,
+      "characters": 279,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 4,
+      "characters": 355,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 5,
+      "characters": 356,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 6,
+      "characters": 275,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 7,
+      "characters": 344,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 8,
+      "characters": 385,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 9,
+      "characters": 275,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 10,
+      "characters": 427,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 11,
+      "characters": 305,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 12,
+      "characters": 263,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 13,
+      "characters": 394,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 14,
+      "characters": 372,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 15,
+      "characters": 416,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    },
+    {
+      "page": 16,
+      "characters": 334,
+      "outside_page": [],
+      "possible_character_overlaps": []
+    }
+  ],
+  "metadata": {
+    "/Creator": "LaTeX with Beamer class",
+    "/Title": "本地大模型部署方案",
+    "/Subject": "Week 4 deployment options; 24 September 2026",
+    "/Author": "Intern research",
+    "/Keywords": "LLM, deployment, RAG, agent, workstation",
+    "/Producer": "xdvipdfmx (20260317)",
+    "/CreationDate": "D:20260924085031+08'00'"
+  },
+  "performance_status": "Engineering estimates; no new device benchmarks",
+  "price_date": "Dated observations and estimates: 2026-09-21 / 2026-09-24"
+}

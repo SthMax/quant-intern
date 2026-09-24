@@ -57,7 +57,7 @@ Relevant location: Articles 2, 18, 45.
 Do not label AMAC's group standard as universally mandatory legislation, or as
 necessarily optional for every member in every context. Verify relevant member
 agreements, association rules, regulatory incorporation, and internal adoption.
-This note classifies the source; it does not determine MSIM's obligations.
+This note classifies the source; it does not determine the host organization's obligations.
 
 ## 既有核验记录 / Prior verification
 

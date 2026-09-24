@@ -5,7 +5,7 @@
 > 本页为研究者编制的索引和摘要，不是法规原文。各 REG 证据笔记已分别链接原始文件和原语言提取文本；完整目录见[原始来源档案](../sources/README.md)。英文分析不代替中文法规原文。
 
 **Phase 1 — Weeks 1–2.** Research batch dated **6 September 2026**.
-COD means the infrastructure used in MSIM; MRM means model risk management.
+COD means the infrastructure used in the host organization; MRM means model risk management.
 
 Sixteen official law, regulatory, standard, MRM, and research sources have now
 been inspected at the cited locations. These are not sixteen binding AI rules.
@@ -20,8 +20,8 @@ Read [the thematic synthesis](synthesis-2026-09-06.md) with the source notes.
 | Outsourcing / IT governance | [REG-003](REG-003-csrc-information-technology-management.md) | CSRC consolidated 2021-amended rule inspected | Articles 2–3, 14, 21, 43–45, 51 | Accountability, internal review, important-system control and vendor limits | Determine defined service role/system scope; exceptions matter |
 | Network-data lifecycle | [REG-004](REG-004-network-data-security-regulations.md) | State Council regulation; effective 2025-01-01 | Articles 2, 9, 12, 19, 31, 37 | Safeguards, entrusted-data records, training-data and important-data provisions | Data category and processor/service role must be established |
 | Investor information / sector security | [REG-005](REG-005-csrc-network-information-security.md) | CSRC Order 218; effective 2023-05-01 | Articles 2, 4, 29–34, 75 | Institutional security responsibility and investor-data safeguards | Evaluate actual system boundaries and third-party flows |
-| Cross-border processing | [REG-006](REG-006-cross-border-data-provisions.md) | CAC Order 16; effective 2024-03-22 | Articles 2–8, 10–14 | Conditional routes/exemptions and residual obligations | No MSIM transfer-volume or exemption determination made |
-| MRM currency | [REG-007](REG-007-fed-sr-26-2-replacement.md) | US supervisory letter, 2026-04-17 | Applicability / Supersedes | Replaces SR 11-7 and SR 21-8 | Not CSRC law or unpublished Morgan Stanley policy |
+| Cross-border processing | [REG-006](REG-006-cross-border-data-provisions.md) | CAC Order 16; effective 2024-03-22 | Articles 2–8, 10–14 | Conditional routes/exemptions and residual obligations | No institution-specific transfer-volume or exemption determination made |
+| MRM currency | [REG-007](REG-007-fed-sr-26-2-replacement.md) | US supervisory letter, 2026-04-17 | Applicability / Supersedes | Replaces SR 11-7 and SR 21-8 | Not CSRC law or unpublished firm policy |
 | MRM scope | [REG-008](REG-008-fed-mrm-guidance-scope.md) | US guidance | Sections I–VII; footnote 3 | Generative/agentic AI excluded; comparative governance context | Internal LLM controls require an internal source |
 | AMAC standard publication | [REG-009](REG-009-amac-llm-standard-publication.md) | Association notice, 2026-04-03 | Announcement / attachment | T/AMAC 0004-2026 publication and commencement | Notice does not establish universal legal compulsion |
 | LLM-specific sector specification | [REG-010](REG-010-amac-llm-application-standard.md) | Group standard; cover/date checked | 9.1, 9.2, 11.2, 11.3(e), Annex B.2 | Deployment options, evaluation, data isolation, explainability recommendations | Preserve “应/宜” distinctions and check adoption/basis of filing clause |

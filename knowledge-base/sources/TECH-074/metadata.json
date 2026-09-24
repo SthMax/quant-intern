@@ -1,0 +1,82 @@
+{
+  "source_id": "TECH-074",
+  "retrieved_at": "2026-09-23T10:22:08.344870+00:00",
+  "files": {
+    "mimo-flash-recipe.html": {
+      "requested_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+      "final_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+      "retrieved_at": "2026-09-23T10:22:07.164016+00:00",
+      "sha256": "860df8601992829021176b4b66391500f206b2bdb79eeacaccc026672493db2f",
+      "bytes": 1815346
+    },
+    "mimo-pro-recipe.html": {
+      "requested_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "final_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "retrieved_at": "2026-09-23T10:22:08.343610+00:00",
+      "sha256": "81dac1a65e24350c64916aac1a39523a7d1aaae0d2af75db210eac8885495c8b",
+      "bytes": 1817469
+    },
+    "prefix-cache.html": {
+      "requested_url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/",
+      "final_url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/",
+      "retrieved_at": "2026-09-23T10:22:08.224192+00:00",
+      "sha256": "c2ee688e0eb8bf48ee1b3071f7caf214b22e3c19e3a0634b821a08b1c50ca1b3",
+      "bytes": 670817
+    },
+    "h200.html": {
+      "requested_url": "https://www.nvidia.com/en-us/data-center/h200/",
+      "final_url": "https://www.nvidia.com/en-us/data-center/h200/",
+      "retrieved_at": "2026-09-23T10:22:07.452590+00:00",
+      "sha256": "9e5e73989ccc59de6fbea11d354987a8e7de789abcfd61d42eb01fce2a042249",
+      "bytes": 280071
+    },
+    "sglang-hicache.html": {
+      "requested_url": "https://docs.sglang.io/advanced_features/hicache.html",
+      "final_url": "https://docs.sglang.io/docs/advanced_features/hicache",
+      "retrieved_at": "2026-09-23T10:22:07.891720+00:00",
+      "sha256": "922309b21c97b78b2ab518107514597edd59d4279dd93854e96c393349d31014",
+      "bytes": 397088
+    },
+    "original.md": {
+      "derived_from": "Authored index over archived primary sources",
+      "bytes": 543,
+      "sha256": "18110bd1f899cee84cb2155816e09b3b2e435340827c5982c96609f7ebe0ef16"
+    },
+    "mimo-flash-recipe.md": {
+      "derived_from": "mimo-flash-recipe.html",
+      "bytes": 4943,
+      "sha256": "6d2b327d729a5bd87df8d15b9aa100def8f5e9c3587d126054f91719b9ae0fbe"
+    },
+    "sglang-hicache.md": {
+      "derived_from": "sglang-hicache.html",
+      "bytes": 3047,
+      "sha256": "f0607ac26737a4f4f40b6791602965f15335b89e9da79df90644971092fae213"
+    },
+    "mimo-pro-recipe.md": {
+      "derived_from": "mimo-pro-recipe.html",
+      "bytes": 5818,
+      "sha256": "f81b429df7478cf5c2f1a6325c3949c2bca1fd960b6c5cfa5946c0f5b8b8d8db"
+    },
+    "h200.md": {
+      "derived_from": "h200.html",
+      "bytes": 8295,
+      "sha256": "7c34cd84d38b743f5bbd52498c7518be384344865968e35cbf45f89bfc0ff8c0"
+    },
+    "prefix-cache.md": {
+      "derived_from": "prefix-cache.html",
+      "bytes": 3730,
+      "sha256": "d8a3253650a769c2555a0f48f4610fef8f37a5b827f5a2466547737d6d1733c6"
+    }
+  },
+  "retrieval_failures": {},
+  "human_check_status": "pending",
+  "title": "MiMo Agent服务：新部署recipe、前缀缓存与分层缓存",
+  "issuer": "vLLM / SGLang / NVIDIA",
+  "official_url": "https://recipes.vllm.ai/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "text_kind": "authored_source_index",
+  "archive_status": "originals_and_extractions",
+  "evidence_state": "verified-primary",
+  "reviewer": "Codex; primary documentation inspection 2026-09-23",
+  "used_in": "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md",
+  "verification_scope": "9月23日MiMo recipe新增AMD路径并标text/multimodal，保留9月22日TECH-067旧快照。硬件／方法支持分析输入，不支持将模拟值称为实测或P95。"
+}

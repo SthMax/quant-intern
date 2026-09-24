@@ -1,12 +1,43 @@
 # 原始来源与研究阅读入口
 
-2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。当时为125个来源ID。2026-09-16累计新增19项Phase 2技术/许可来源，并将5项首轮模型资料转为历史辅助阅读，2026-09-17再新增23项serving/harness来源，当日为167项；9月18日先补充13项，再新增8项Harness专题来源，**当前188个稳定来源ID：169个主阅读记录、15个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
+
+## 2026年9月24日新增：场景一个人与三人工作站
+
+[TECH-075：Coding Agent、量化制品与推理容量依据](TECH-075/original.md)保存官方软件／硬件原文，并将量化页面观察与原件分开记录。对应[场景一方案](../infrastructure/scenario-1-personal-agent-2026-09-24.md)。当前登记200项：181主阅读、15辅助、4来源链。
+
+2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。当时为125个来源ID。2026-09-16累计新增19项Phase 2技术/许可来源，并将5项首轮模型资料转为历史辅助阅读，2026-09-17再新增23项serving/harness来源，当日为167项；9月18日先补充13项，再新增8项Harness专题来源，9月22日新增4项MiMo资料，9月23日再新增4组场景一资料，同日新增3组场景二资料，**当前199个稳定来源ID：180个主阅读记录、15个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
 
 默认检索按[reading-index.json](../reading-index.json)中的`collection_role=main`及`reading_path`取文本。需要身份、历史或供应商背景时再读[辅助目录](../reference/README.md)。不要把原始HTML/PDF、历史审计、图片元数据或来源链索引递归当作新文章。
 
 原始出版物文件保持原样；FUND-203的旧新浪HTML另存为`source.sina.html`，其主档改用已保存的微信原刊。仅删除FUND-093的两个错误门户响应及FUND-162的重复可见文本导出，删除前内容可由Git快照`103f14c`恢复。[清理与对照审查](../audits/2026-09-08-relevance-cleanup/README.md)。
 
 `original.md`可能是完整提取、明确标注的节选或来源索引，具体见元数据`text_kind`。节选不冒称全文；原文件保持可追溯。原语言、作者、风险提示及公司报告数字的解释边界继续保留。
+
+## 2026年9月23日新增：场景三通用Agent
+
+| ID | 资料与阅读入口 | 研究位置 |
+|---|---|---|
+| TECH-072 | [Hermes公司部署：API、Profiles、Desktop、Skills与MCP](TECH-072/original.md) · [metadata](TECH-072/metadata.json) | [公司共享模型与通用Agent](../infrastructure/scenario-3-company-agent-2026-09-23.md) |
+| TECH-073 | [公司工具链：MCP授权与安全规范](TECH-073/original.md) · [metadata](TECH-073/metadata.json) | [公司共享模型与通用Agent](../infrastructure/scenario-3-company-agent-2026-09-23.md) |
+| TECH-074 | [MiMo Agent服务：新部署recipe、前缀缓存与分层缓存](TECH-074/original.md) · [metadata](TECH-074/metadata.json) | [公司共享模型与通用Agent](../infrastructure/scenario-3-company-agent-2026-09-23.md) |
+
+## 2026年9月23日新增：场景二企业RAG
+
+| ID | 资料与阅读入口 | 研究位置 |
+|---|---|---|
+| TECH-068 | [Onyx Enterprise：本地模型、权限、连接器、部署与价格](TECH-068/original.md) · [metadata](TECH-068/metadata.json) | [Onyx／Milvus方案与测算](../infrastructure/scenario-2-enterprise-rag-2026-09-23.md) |
+| TECH-069 | [Milvus企业RAG：检索过滤、RBAC、NAS接入与文档处理](TECH-069/original.md) · [metadata](TECH-069/metadata.json) | [Onyx／Milvus方案与测算](../infrastructure/scenario-2-enterprise-rag-2026-09-23.md) |
+| TECH-070 | [Qwen FP8回答模型与Embedding／Reranker固定制品](TECH-070/original.md) · [metadata](TECH-070/metadata.json) | [Onyx／Milvus方案与测算](../infrastructure/scenario-2-enterprise-rag-2026-09-23.md) |
+| TECH-071 | [RAG响应与吞吐计算：Roofline、GPU和推理引擎依据](TECH-071/original.md) · [metadata](TECH-071/metadata.json) | [Onyx／Milvus方案与测算](../infrastructure/scenario-2-enterprise-rag-2026-09-23.md) |
+
+## 2026年9月22日新增：MiMo-V2.6
+
+| ID | 原始资料与入口 | 核验范围 |
+|---|---|---|
+| TECH-064 | [MiMo-V2.6-Pro-RL：模型卡、制品与许可](TECH-064/original.md) · [metadata](TECH-064/metadata.json) | 固定版本／日期的官方原文；详细分析见[专项](../models/mimo-v2.6-research-2026-09-22.md) |
+| TECH-065 | [MiMo-V2.6-Flash-RL：模型卡、制品与许可](TECH-065/original.md) · [metadata](TECH-065/metadata.json) | 固定版本／日期的官方原文；详细分析见[专项](../models/mimo-v2.6-research-2026-09-22.md) |
+| TECH-066 | [MiMo-V2.6官方中文发布与技术报告](TECH-066/original.md) · [metadata](TECH-066/metadata.json) | 固定版本／日期的官方原文；详细分析见[专项](../models/mimo-v2.6-research-2026-09-22.md) |
+| TECH-067 | [MiMo-V2.6部署recipe、上游发布与GLM对照](TECH-067/original.md) · [metadata](TECH-067/metadata.json) | 固定版本／日期的官方原文；详细分析见[专项](../models/mimo-v2.6-research-2026-09-22.md) |
 
 ## 主阅读记录
 

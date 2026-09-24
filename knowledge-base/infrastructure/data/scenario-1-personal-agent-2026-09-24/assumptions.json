@@ -1,0 +1,548 @@
+{
+  "as_of": "2026-09-24",
+  "status": "Conditional uncalibrated analysis, not target-device benchmarks",
+  "units": "Decimal GB/GBps. Context tokens count input + history + output.",
+  "price_source": "knowledge-base/infrastructure/data/hardware-prices-2026-09-21.json",
+  "price_source_sha256": "cd4e0ee69fb23b2a4c170ebc5029c74317f14fb6b1bf4679362d1bcc73943108",
+  "method_dependency": "knowledge-base/infrastructure/data/scenario-2-rag-2026-09-23/calculate_capacity.py",
+  "method_dependency_sha256": "d50324dcf4aa69430431792487d83f66231a104d073397aa61c62df0100cfc57",
+  "workload": {
+    "input_tokens": 253952,
+    "output_tokens": 8192,
+    "concurrency_levels": [
+      1,
+      3
+    ],
+    "context_quota": 262144,
+    "agent_output_reserve_tokens": 8192,
+    "memory_fraction": 0.9,
+    "cache_padding_factor": 1.15,
+    "linear_compute_margin": 1.15,
+    "other_activation_gb_per_step_per_request": 0.05,
+    "kv_precision": "BF16/FP16; recurrent FP32; convolution BF16",
+    "speculative_decoding": false,
+    "minimum_context_quota": 131072,
+    "extended_context_quota": 524288,
+    "extra_state_copies_per_sequence": 8,
+    "prefill_chunk_tokens_planned": 4096
+  },
+  "probes": [
+    {
+      "id": "131k-cold",
+      "context_profile": "131k",
+      "context_tokens": 131072,
+      "input_tokens": 122880,
+      "output_tokens": 8192,
+      "cached_tokens": 0,
+      "mode": "cold"
+    },
+    {
+      "id": "131k-warm1k",
+      "context_profile": "131k",
+      "context_tokens": 131072,
+      "input_tokens": 122880,
+      "output_tokens": 8192,
+      "cached_tokens": 121856,
+      "mode": "warm1k"
+    },
+    {
+      "id": "131k-warm8k",
+      "context_profile": "131k",
+      "context_tokens": 131072,
+      "input_tokens": 122880,
+      "output_tokens": 8192,
+      "cached_tokens": 114688,
+      "mode": "warm8k"
+    },
+    {
+      "id": "262k-cold",
+      "context_profile": "262k",
+      "context_tokens": 262144,
+      "input_tokens": 253952,
+      "output_tokens": 8192,
+      "cached_tokens": 0,
+      "mode": "cold"
+    },
+    {
+      "id": "262k-warm1k",
+      "context_profile": "262k",
+      "context_tokens": 262144,
+      "input_tokens": 253952,
+      "output_tokens": 8192,
+      "cached_tokens": 252928,
+      "mode": "warm1k"
+    },
+    {
+      "id": "262k-warm8k",
+      "context_profile": "262k",
+      "context_tokens": 262144,
+      "input_tokens": 253952,
+      "output_tokens": 8192,
+      "cached_tokens": 245760,
+      "mode": "warm8k"
+    },
+    {
+      "id": "524k-cold",
+      "context_profile": "524k",
+      "context_tokens": 524288,
+      "input_tokens": 516096,
+      "output_tokens": 8192,
+      "cached_tokens": 0,
+      "mode": "cold"
+    },
+    {
+      "id": "524k-warm1k",
+      "context_profile": "524k",
+      "context_tokens": 524288,
+      "input_tokens": 516096,
+      "output_tokens": 8192,
+      "cached_tokens": 515072,
+      "mode": "warm1k"
+    },
+    {
+      "id": "524k-warm8k",
+      "context_profile": "524k",
+      "context_tokens": 524288,
+      "input_tokens": 516096,
+      "output_tokens": 8192,
+      "cached_tokens": 507904,
+      "mode": "warm8k"
+    }
+  ],
+  "efficiency_scenarios": [
+    {
+      "id": "low",
+      "bandwidth_fraction": 0.45,
+      "step_overhead_ms": {
+        "dense": 4,
+        "moe": 5
+      },
+      "retrieval_s": 1.8
+    },
+    {
+      "id": "base",
+      "bandwidth_fraction": 0.6,
+      "step_overhead_ms": {
+        "dense": 2,
+        "moe": 3
+      },
+      "retrieval_s": 0.8
+    },
+    {
+      "id": "high",
+      "bandwidth_fraction": 0.75,
+      "step_overhead_ms": {
+        "dense": 1,
+        "moe": 1.5
+      },
+      "retrieval_s": 0.4
+    }
+  ],
+  "models": [
+    {
+      "id": "Qwen27-GGUF8",
+      "kind": "dense",
+      "source_config": "knowledge-base/sources/TECH-070/qwen27/config.json",
+      "resident_weights_gb": 29.5,
+      "active_params_billion": 27,
+      "compute_factor": 1.0,
+      "full_attention_layers": 16,
+      "linear_layers": 48,
+      "query_heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "linear_value_heads": 48,
+      "linear_key_dim": 128,
+      "linear_value_dim": 128,
+      "linear_key_heads": 16,
+      "linear_conv_kernel_dim": 4,
+      "native_context_limit": 262144,
+      "base_model": "Qwen3.8-27B-FP8",
+      "precision": "GGUF8",
+      "weight_basis": "Q8_0 file page about 29.0GB; rounded upward to 29.5GB.",
+      "artifact_url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/tree/f975863083b62f54a5e6fac11671c750c2bbc59c",
+      "extended_context_limit": 524288,
+      "extended_rope": {
+        "rope_type": "yarn",
+        "factor": 2.0,
+        "original_max_position_embeddings": 262144,
+        "rope_theta": 10000000,
+        "partial_rotary_factor": 0.25,
+        "mrope_interleaved": true,
+        "mrope_section": [
+          11,
+          11,
+          10
+        ]
+      },
+      "minimum_weight_bits": 8
+    },
+    {
+      "id": "Qwen27-MLX8",
+      "kind": "dense",
+      "source_config": "knowledge-base/sources/TECH-070/qwen27/config.json",
+      "resident_weights_gb": 30.0,
+      "active_params_billion": 27,
+      "compute_factor": 1.0,
+      "full_attention_layers": 16,
+      "linear_layers": 48,
+      "query_heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "linear_value_heads": 48,
+      "linear_key_dim": 128,
+      "linear_value_dim": 128,
+      "linear_key_heads": 16,
+      "linear_conv_kernel_dim": 4,
+      "native_context_limit": 262144,
+      "base_model": "Qwen3.8-27B-FP8",
+      "precision": "MLX8",
+      "weight_basis": "8-bit repository page about 29.5GB, short revision 815b83c; rounded upward to 30.0GB.",
+      "artifact_url": "https://huggingface.co/mlx-community/Qwen3.8-27B-8bit/tree/main",
+      "extended_context_limit": 524288,
+      "extended_rope": {
+        "rope_type": "yarn",
+        "factor": 2.0,
+        "original_max_position_embeddings": 262144,
+        "rope_theta": 10000000,
+        "partial_rotary_factor": 0.25,
+        "mrope_interleaved": true,
+        "mrope_section": [
+          11,
+          11,
+          10
+        ]
+      },
+      "minimum_weight_bits": 8
+    },
+    {
+      "id": "Qwen27-FP8",
+      "kind": "dense",
+      "source_config": "knowledge-base/sources/TECH-070/qwen27/config.json",
+      "resident_weights_gb": 31.0,
+      "active_params_billion": 27,
+      "compute_factor": 1.0,
+      "full_attention_layers": 16,
+      "linear_layers": 48,
+      "query_heads": 24,
+      "kv_heads": 4,
+      "head_dim": 256,
+      "linear_value_heads": 48,
+      "linear_key_dim": 128,
+      "linear_value_dim": 128,
+      "linear_key_heads": 16,
+      "linear_conv_kernel_dim": 4,
+      "native_context_limit": 262144,
+      "base_model": "Qwen3.8-27B-FP8",
+      "precision": "FP8",
+      "weight_basis": "Official FP8 tensor budget from archived model metadata, about 30.864GB, rounded to 31GB.",
+      "artifact_url": "../scenario-2-rag-2026-09-23/assumptions.json",
+      "extended_context_limit": 524288,
+      "extended_rope": {
+        "rope_type": "yarn",
+        "factor": 2.0,
+        "original_max_position_embeddings": 262144,
+        "rope_theta": 10000000,
+        "partial_rotary_factor": 0.25,
+        "mrope_interleaved": true,
+        "mrope_section": [
+          11,
+          11,
+          10
+        ]
+      },
+      "minimum_weight_bits": 8
+    }
+  ],
+  "configurations": [
+    {
+      "id": "P1",
+      "price_id": "W1",
+      "label": "Ryzen AI Max+ 395 / 128GB",
+      "engine": "llama.cpp / Vulkan or validated ROCm",
+      "precision": "GGUF8",
+      "memory_kind": "unified",
+      "physical_memory_gb": 128,
+      "os_and_tools_reserve_gb": 24,
+      "configured_gpu_cap_gb": 96,
+      "bandwidth_gb_s": 256,
+      "effective_tflops": {
+        "low": 1,
+        "base": 2,
+        "high": 4
+      },
+      "unit_price_cny": [
+        26999,
+        26999
+      ],
+      "price_class": "A-platform",
+      "price_observed_date": "2026-09-21",
+      "runtime_reserve_gb": 6,
+      "control_s": 0.15
+    },
+    {
+      "id": "P2",
+      "price_id": "W3",
+      "label": "GB10 PGX / 128GB",
+      "engine": "llama.cpp / CUDA",
+      "precision": "GGUF8",
+      "memory_kind": "unified",
+      "physical_memory_gb": 128,
+      "os_and_tools_reserve_gb": 24,
+      "configured_gpu_cap_gb": null,
+      "bandwidth_gb_s": 273,
+      "effective_tflops": {
+        "low": 12,
+        "base": 24,
+        "high": 40
+      },
+      "unit_price_cny": [
+        48999,
+        48999
+      ],
+      "price_class": "A-official",
+      "price_observed_date": "2026-09-21",
+      "runtime_reserve_gb": 6,
+      "control_s": 0.15
+    },
+    {
+      "id": "P3",
+      "price_id": "W4",
+      "label": "M5 Max 40 GPU / 128GB",
+      "engine": "MLX-LM",
+      "precision": "MLX8",
+      "memory_kind": "unified",
+      "physical_memory_gb": 128,
+      "os_and_tools_reserve_gb": 24,
+      "configured_gpu_cap_gb": null,
+      "bandwidth_gb_s": 614,
+      "effective_tflops": {
+        "low": 8,
+        "base": 16,
+        "high": 28
+      },
+      "unit_price_cny": [
+        41749,
+        41749
+      ],
+      "price_class": "A-official",
+      "price_observed_date": "2026-09-21",
+      "runtime_reserve_gb": 6,
+      "control_s": 0.15
+    },
+    {
+      "id": "P4",
+      "price_id": "W5",
+      "label": "M5 Ultra 64 GPU / 96GB",
+      "engine": "MLX-LM",
+      "precision": "MLX8",
+      "memory_kind": "unified",
+      "physical_memory_gb": 96,
+      "os_and_tools_reserve_gb": 24,
+      "configured_gpu_cap_gb": null,
+      "bandwidth_gb_s": 1200,
+      "effective_tflops": {
+        "low": 12,
+        "base": 24,
+        "high": 40
+      },
+      "unit_price_cny": [
+        46999,
+        46999
+      ],
+      "price_class": "A-official",
+      "price_observed_date": "2026-09-21",
+      "runtime_reserve_gb": 6,
+      "control_s": 0.15
+    },
+    {
+      "id": "P5",
+      "price_id": "W6",
+      "label": "M5 Ultra 80 GPU / 256GB",
+      "engine": "MLX-LM",
+      "precision": "MLX8",
+      "memory_kind": "unified",
+      "physical_memory_gb": 256,
+      "os_and_tools_reserve_gb": 32,
+      "configured_gpu_cap_gb": null,
+      "bandwidth_gb_s": 1200,
+      "effective_tflops": {
+        "low": 16,
+        "base": 32,
+        "high": 50
+      },
+      "unit_price_cny": [
+        90499,
+        90499
+      ],
+      "price_class": "A-official",
+      "price_observed_date": "2026-09-21",
+      "runtime_reserve_gb": 6,
+      "control_s": 0.15
+    },
+    {
+      "id": "P6",
+      "price_id": "W7",
+      "label": "RTX PRO 5000 72GB / host 128GB",
+      "engine": "llama.cpp / CUDA",
+      "precision": "GGUF8",
+      "memory_kind": "dedicated",
+      "physical_memory_gb": 72,
+      "os_and_tools_reserve_gb": 0,
+      "configured_gpu_cap_gb": null,
+      "bandwidth_gb_s": 1344,
+      "effective_tflops": {
+        "low": 45,
+        "base": 75,
+        "high": 110
+      },
+      "unit_price_cny": [
+        105000,
+        176000
+      ],
+      "price_class": "D",
+      "price_observed_date": "2026-09-21",
+      "runtime_reserve_gb": 6,
+      "control_s": 0.15
+    },
+    {
+      "id": "P2-FP8",
+      "price_id": "W3",
+      "label": "GB10 PGX / 128GB",
+      "engine": "vLLM / CUDA",
+      "precision": "FP8",
+      "memory_kind": "unified",
+      "physical_memory_gb": 128,
+      "os_and_tools_reserve_gb": 24,
+      "configured_gpu_cap_gb": null,
+      "bandwidth_gb_s": 273,
+      "effective_tflops": {
+        "low": 12,
+        "base": 24,
+        "high": 40
+      },
+      "unit_price_cny": [
+        48999,
+        48999
+      ],
+      "price_class": "A-official",
+      "price_observed_date": "2026-09-21",
+      "runtime_reserve_gb": 6,
+      "control_s": 0.15
+    },
+    {
+      "id": "P6-FP8",
+      "price_id": "W7",
+      "label": "RTX PRO 5000 72GB / host 128GB",
+      "engine": "vLLM / CUDA",
+      "precision": "FP8",
+      "memory_kind": "dedicated",
+      "physical_memory_gb": 72,
+      "os_and_tools_reserve_gb": 0,
+      "configured_gpu_cap_gb": null,
+      "bandwidth_gb_s": 1344,
+      "effective_tflops": {
+        "low": 45,
+        "base": 75,
+        "high": 110
+      },
+      "unit_price_cny": [
+        105000,
+        176000
+      ],
+      "price_class": "D",
+      "price_observed_date": "2026-09-21",
+      "runtime_reserve_gb": 6,
+      "control_s": 0.15
+    }
+  ],
+  "evidence_notes": {
+    "effective_tflops": "All low/base/high values are engineering assumptions, not vendor peaks or calibrated measurements.",
+    "quantized_weight_traffic": "Dense Qwen27: read the stated resident-weight budget per decoding step. 35B MoE and 4-bit weight estimates are removed from the current scenario.",
+    "platform_memory": "UMA first reserves OS/IDE/tool memory and respects configured GPU cap; then applies 90% budget. Actual driver working-set limits must be checked.",
+    "state_checkpoints": "Main memory admission reserves eight additional GPU-resident recurrent/convolution state copies per live sequence; 0 and 32 are sensitivities. This is an explicit budget, not every engine default. Prefix KV blocks are not duplicated in full.",
+    "price": "9/21 observed prices carried forward as dated inputs, not re-quoted on 9/24.",
+    "hf_metadata": "Quantization pages read via web; local direct HF metadata downloads failed TLS. Rounded page values used; full quantized weights and exact tensor hashes not acquired.",
+    "long_context": "Native 262144; Qwen model cards explicitly suggest YaRN factor 2 for 524288. Extension is a configured analytical scenario, not a measured quality or engine pass.",
+    "cold_vs_warm": "Cold reprocesses the complete input; warm1k/warm8k retain an exact per-user prefix and prefill only 1024/8192 new tokens. Both decode over the full history and fill the context limit after 8192 output tokens.",
+    "precision_policy": "Qwen personal and RAG configurations use at least 8-bit weights. KV stays BF16/FP16. This user constraint does not apply to MiMo publisher-native mixed precision."
+  },
+  "setup_budget": {
+    "day_cost_cny": 2500,
+    "personal_days": [
+      4,
+      8
+    ],
+    "shared_team_days": [
+      8,
+      15
+    ],
+    "three_independent_days": [
+      8,
+      12
+    ],
+    "scope": "Model/harness setup, internal endpoint, environment template, reusable skills and acceptance; analytical labour budget"
+  },
+  "revision": "Qwen3.8-27B primary; minimum 8-bit weights; full 131K/262K/524K contexts; scenario renumbered to 1.",
+  "previous_short_context_baseline": {
+    "probes": [
+      {
+        "id": "8k-cold",
+        "input_tokens": 8192,
+        "cached_tokens": 0
+      },
+      {
+        "id": "32k-cold",
+        "input_tokens": 32768,
+        "cached_tokens": 0
+      },
+      {
+        "id": "64k-cold",
+        "input_tokens": 65536,
+        "cached_tokens": 0
+      },
+      {
+        "id": "32k-reuse24k",
+        "input_tokens": 32768,
+        "cached_tokens": 24576
+      }
+    ],
+    "workload": {
+      "input_tokens": 8192,
+      "output_tokens": 600,
+      "concurrency_levels": [
+        1,
+        3
+      ],
+      "context_quota": 65536,
+      "agent_output_reserve_tokens": 8192,
+      "memory_fraction": 0.9,
+      "cache_padding_factor": 1.15,
+      "linear_compute_margin": 1.15,
+      "other_activation_gb_per_step_per_request": 0.05,
+      "kv_precision": "BF16/FP16; recurrent FP32; convolution BF16",
+      "speculative_decoding": false
+    },
+    "results_sha256": "2b96d0910d6c2649f0d2f896e274303620e6d5a43574228a63a9aca925038ed1"
+  },
+  "context_profiles": [
+    {
+      "id": "131k",
+      "context_tokens": 131072,
+      "rope_type": "default",
+      "rope_factor": 1.0
+    },
+    {
+      "id": "262k",
+      "context_tokens": 262144,
+      "rope_type": "default",
+      "rope_factor": 1.0
+    },
+    {
+      "id": "524k",
+      "context_tokens": 524288,
+      "rope_type": "yarn",
+      "rope_factor": 2.0
+    }
+  ]
+}

@@ -165,9 +165,9 @@ prove that every E Fund customer interaction remains within its internal network
 Research interpretation: the strongest transferable observation is the investment
 in shared information and engineering systems around a model. Earnings-commentary
 drafting and coding/testing are concrete pilot comparisons to revisit in later
-phases; the timing and quality metrics needed for MSIM's assessment still have to
+phases; the timing and quality metrics needed for the host organization's assessment still have to
 be measured locally. Current public evidence supports questions for architecture
-and evaluation design, without supplying MSIM/COD configuration or internal policy.
+and evaluation design, without supplying internal COD configuration or internal policy.
 
 For next Friday, the primary-evidence slide can show EFundGPT, index integration,
 coding/testing and the historical advisory workflow. Place the granular research

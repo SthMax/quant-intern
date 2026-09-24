@@ -1,0 +1,149 @@
+{
+  "source_id": "TECH-070",
+  "title": "Qwen FP8回答模型与Embedding／Reranker固定制品",
+  "issuer": "Qwen",
+  "retrieved_at": "2026-09-23T09:38:43.634746+00:00",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "files": {
+    "qwen27/model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B-FP8",
+      "final_url": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B-FP8",
+      "sha256": "c03dd334d378989bb5c4c3f796e35308462d368be4df1d7a40e90498736827fc",
+      "bytes": 64409
+    },
+    "qwen35/model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3.6-35B-A3B-FP8",
+      "final_url": "https://huggingface.co/api/models/Qwen/Qwen3.6-35B-A3B-FP8",
+      "sha256": "143e30643938fc449b6a69f7f76d0022f91fdc5517c5665ec19e26312a978e01",
+      "bytes": 48972
+    },
+    "embedding/model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B",
+      "final_url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B",
+      "sha256": "0b92fbd3d1a1f84fff0cf077dc9aba256d826fc1a814f4bacd0de88e1a0eddbc",
+      "bytes": 9159
+    },
+    "reranker/model-info.json": {
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-0.6B",
+      "final_url": "https://huggingface.co/api/models/Qwen/Qwen3-Reranker-0.6B",
+      "sha256": "2a12b9f3a2eacd8beae4bc620d8da20687ae7cd18c860861775fb7eb1daadeb7",
+      "bytes": 7700
+    },
+    "qwen27/original.md": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/resolve/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/README.md",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B-FP8/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/README.md?%2FQwen%2FQwen3.8-27B-FP8%2Fresolve%2F017b9c7af6b5689d5dd426a76e0bc077eb5ca20a%2FREADME.md=&etag=%221e511f54d9bff1cbd905b8f4fcf7c15e0566bcec%22",
+      "sha256": "a247d876f5398eed9ae898f32a984083552de57237b5e20714657e1675e26d2e",
+      "bytes": 65249
+    },
+    "qwen27/config.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/resolve/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/config.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B-FP8/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/config.json?%2FQwen%2FQwen3.8-27B-FP8%2Fresolve%2F017b9c7af6b5689d5dd426a76e0bc077eb5ca20a%2Fconfig.json=&etag=%22e66d0dcb2d8066e724407f0ded85b6c3c5cb213a%22",
+      "sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+      "bytes": 51350
+    },
+    "qwen27/LICENSE": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/resolve/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/LICENSE",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B-FP8/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/LICENSE?%2FQwen%2FQwen3.8-27B-FP8%2Fresolve%2F017b9c7af6b5689d5dd426a76e0bc077eb5ca20a%2FLICENSE=&etag=%22f938136e3adacfd92be087f6e113b5d6d97f678f%22",
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "bytes": 11544
+    },
+    "qwen27/model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/resolve/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/model.safetensors.index.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B-FP8/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/model.safetensors.index.json?%2FQwen%2FQwen3.8-27B-FP8%2Fresolve%2F017b9c7af6b5689d5dd426a76e0bc077eb5ca20a%2Fmodel.safetensors.index.json=&etag=%220ecc7a25b5d40e6f0587a80c5300a92ad3e5cf22%22",
+      "sha256": "f0838c766951bdfe76d6afbdb2771a8f67aaa2231dedb3d33cebd817729843a2",
+      "bytes": 137335
+    },
+    "qwen35/original.md": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8/resolve/95a723d08a9490559dae23d0cff1d9466213d989/README.md",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.6-35B-A3B-FP8/95a723d08a9490559dae23d0cff1d9466213d989/README.md?%2FQwen%2FQwen3.6-35B-A3B-FP8%2Fresolve%2F95a723d08a9490559dae23d0cff1d9466213d989%2FREADME.md=&etag=%22966c3e089adc1402b79cda649fa95604846014ea%22",
+      "sha256": "24c5494fb559cdfda44abe396f71c18975fec69745aae4a94679316e6e80dbdb",
+      "bytes": 64855
+    },
+    "qwen35/config.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8/resolve/95a723d08a9490559dae23d0cff1d9466213d989/config.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.6-35B-A3B-FP8/95a723d08a9490559dae23d0cff1d9466213d989/config.json?%2FQwen%2FQwen3.6-35B-A3B-FP8%2Fresolve%2F95a723d08a9490559dae23d0cff1d9466213d989%2Fconfig.json=&etag=%22c8df3b893d8070130c2b59497ddb508f41cf9168%22",
+      "sha256": "570ef7ea45a7e1d3de2b1d3c70c4ac3562d0e768acdc195778cb4f4d95025845",
+      "bytes": 37000
+    },
+    "qwen35/LICENSE": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8/resolve/95a723d08a9490559dae23d0cff1d9466213d989/LICENSE",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.6-35B-A3B-FP8/95a723d08a9490559dae23d0cff1d9466213d989/LICENSE?%2FQwen%2FQwen3.6-35B-A3B-FP8%2Fresolve%2F95a723d08a9490559dae23d0cff1d9466213d989%2FLICENSE=&etag=%221d5180a42f1c3383ba7c7bd0a50f0837ef0168df%22",
+      "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+      "bytes": 11343
+    },
+    "qwen35/model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8/resolve/95a723d08a9490559dae23d0cff1d9466213d989/model.safetensors.index.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.6-35B-A3B-FP8/95a723d08a9490559dae23d0cff1d9466213d989/model.safetensors.index.json?%2FQwen%2FQwen3.6-35B-A3B-FP8%2Fresolve%2F95a723d08a9490559dae23d0cff1d9466213d989%2Fmodel.safetensors.index.json=&etag=%223a6440878f2f2564e214496bb35fcc37cbbf7d8b%22",
+      "sha256": "6f176f344e41d35b17af12904e33401da5ebff3b49fccb8bfa0185bc2d50f9d6",
+      "bytes": 6329223
+    },
+    "embedding/original.md": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-0.6B/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md?%2FQwen%2FQwen3-Embedding-0.6B%2Fresolve%2F97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3%2FREADME.md=&etag=%2200a82ea60dfb1d8aed899c16e2b4f12673cd2f79%22",
+      "sha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3",
+      "bytes": 17237
+    },
+    "embedding/config.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/config.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Embedding-0.6B/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/config.json?%2FQwen%2FQwen3-Embedding-0.6B%2Fresolve%2F97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3%2Fconfig.json=&etag=%22cef2749ee93607b8f9a58ec72f4f6bfaf874e71d%22",
+      "sha256": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+      "bytes": 727
+    },
+    "reranker/original.md": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/resolve/e61197ed45024b0ed8a2d74b80b4d909f1255473/README.md",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/e61197ed45024b0ed8a2d74b80b4d909f1255473/README.md?%2FQwen%2FQwen3-Reranker-0.6B%2Fresolve%2Fe61197ed45024b0ed8a2d74b80b4d909f1255473%2FREADME.md=&etag=%22b8bfdef6c3cd9297bf8f5965c87edbee65a444aa%22",
+      "sha256": "5bba8c734f6dd3ae48317b4139317e45a7fce48fc55e15670b23a0dd15492ab6",
+      "bytes": 14742
+    },
+    "reranker/config.json": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/resolve/e61197ed45024b0ed8a2d74b80b4d909f1255473/config.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-Reranker-0.6B/e61197ed45024b0ed8a2d74b80b4d909f1255473/config.json?%2FQwen%2FQwen3-Reranker-0.6B%2Fresolve%2Fe61197ed45024b0ed8a2d74b80b4d909f1255473%2Fconfig.json=&etag=%2239784456e9de7a06590f8a4a38760ac1fb38d65e%22",
+      "sha256": "d479c427a9ca5295218063d4f9aca4f297ab4ac27487cca7af42c84643d51ef0",
+      "bytes": 727
+    },
+    "original.md": {
+      "derived_from": "Authored reading index over archived sources",
+      "sha256": "9f7ded002543e94722467587c96baca20b71eb2de48dc540f288dd48c047b712",
+      "bytes": 875
+    }
+  },
+  "retrieval_failures": {
+    "embedding/LICENSE": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/LICENSE",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "reranker/LICENSE": {
+      "requested_url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/resolve/e61197ed45024b0ed8a2d74b80b4d909f1255473/LICENSE",
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  "models": [
+    {
+      "label": "qwen27",
+      "model": "Qwen/Qwen3.8-27B-FP8",
+      "revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a"
+    },
+    {
+      "label": "qwen35",
+      "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+      "revision": "95a723d08a9490559dae23d0cff1d9466213d989"
+    },
+    {
+      "label": "embedding",
+      "model": "Qwen/Qwen3-Embedding-0.6B",
+      "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+    },
+    {
+      "label": "reranker",
+      "model": "Qwen/Qwen3-Reranker-0.6B",
+      "revision": "e61197ed45024b0ed8a2d74b80b4d909f1255473"
+    }
+  ],
+  "official_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8",
+  "text_kind": "authored_source_index",
+  "reviewer": "Codex; primary-source inspection 2026-09-23",
+  "archive_status": "originals_and_extractions",
+  "used_in": "knowledge-base/infrastructure/scenario-2-enterprise-rag-2026-09-23.md",
+  "verification_scope": "固定官方HF修订；按safetensors dtype计数估算制品体量，FP8索引没有total_size时不填造该字段。未下载权重。Embedding／reranker模型卡声明Apache 2.0，但独立LICENSE请求404。"
+}

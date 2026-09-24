@@ -20,7 +20,7 @@ At the 6 September review it contains **zero verified company entries and zero
 registered external research sources**. Plan the week as active source collection,
 verification, synthesis, and presentation preparation.
 
-Confirmed terminology: COD is the infrastructure used in MSIM; MRM means model
+Confirmed terminology: COD is the infrastructure used in the host organization; MRM means model
 risk management.
 
 ## Deliverables and acceptance criteria
@@ -85,7 +85,7 @@ register. Candidate entries do not count as verified entries.
 4. For privacy, interpretability, and outsourcing, distinguish source content,
    practical interpretation, and unanswered internal-policy questions.
 5. Use public MRM material with its jurisdiction/scope identified. Internal
-   Morgan Stanley model risk management requirements need authorized evidence.
+   firm model risk management requirements need authorized evidence.
 6. Follow material legal claims back to the original text during review and
    record verification status. Remove unsupported claims or present the gap.
 
@@ -100,7 +100,7 @@ regulatory instrument or legal requirement has already been verified.
 | “Top tier” / asset-size measure | User requested size-first research; working cohort is reported top-20 non-money public AUM at 2026 Q2, ETF feeders excluded | Preserve secondary ranking provenance and separate official company AUM; cohort choice is not the mentor's missing minimum |
 | AI versus LLM scope | Four report themes confirmed: research reasoning, controlled data querying, knowledge/compliance, and LLM-assisted quant; quant covers factor generation/iteration, text signals and research tools | Local deployment is a preference, not a case prerequisite; API-based frameworks qualify. Keep model serving separate from agent/framework assessment; no traditional-ML substitution or old-model tutorial expansion |
 | MRM meaning | Confirmed: model risk management | Research relevant sources; identify applicable internal document/owner separately |
-| COD meaning | Confirmed: infrastructure used in MSIM | Carry actual hardware/network/security questions into Phase 2 |
+| COD meaning | Confirmed: infrastructure used in the host organization | Carry actual hardware/network/security questions into Phase 2 |
 | Internal policy availability | Not supplied in repository | Continue public-source review and list internal applicability questions without reproducing restricted text |
 | Presentation audience/time/language/format | Mentor and quant-department colleagues; user requested LaTeX report rendered to PDF on 9 Sep; Chinese working draft | Report saved under reports; live presentation time and final delivery review remain open |
 | Research cut-off | Working proposal: 10 Sep, 17:00 | Log source dates and any subsequent material corrections |

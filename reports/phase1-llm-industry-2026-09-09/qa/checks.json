@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "635023f131b08d258703c1177b577579f1b00726c350a675a7da364acb3b70a6",
+  "pdf_sha256": "2ae52ad56194e0f6683b53747b83416d3ada722ce7b0e74d63eb1fb5850bf73b",
   "physical_pages": 21,
   "numbered_pages": 20,
   "source_entries": 46,
@@ -11,7 +11,7 @@
   "page_text_bounds": [
     {
       "physical_page": 1,
-      "characters": 186,
+      "characters": 183,
       "text_bbox": [
         62.36,
         139.89,

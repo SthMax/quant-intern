@@ -161,7 +161,7 @@ Generative AI and agentic AI models are novel and rapidly evolving. As such, the
 
 Use these principles as comparative governance context with the exclusion shown.
 They do not provide a direct US LLM rule, a CSRC interpretability requirement, or
-an internal Morgan Stanley policy determination. Ask the authorized internal MRM
+an internal firm policy determination. Ask the authorized internal MRM
 owner which controls cover the proposed LLM use.
 
 ## 既有核验记录与限制 / Prior verification limits

@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated": "2026-09-18",
+  "updated": "2026-09-24",
   "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
   "scope": "Main reading paths for research retrieval; supporting and redirect records are provenance/context, not independent main readings. Do not recursively ingest sources/, reference/ or audits/.",
   "counts": {
-    "main": 169,
+    "main": 181,
     "redirect": 4,
     "supporting": 15
   },
-  "registered_source_ids": 188,
+  "registered_source_ids": 200,
   "records": [
     {
       "source_id": "FUND-001",
@@ -2151,11 +2151,155 @@
       "text_kind": "verbatim_official_markdown",
       "available_text": true,
       "phase": 2
+    },
+    {
+      "source_id": "TECH-064",
+      "title": "MiMo-V2.6-Pro-RL：模型卡、制品与许可",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-064/original.md",
+      "metadata_path": "sources/TECH-064/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_model_card",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-065",
+      "title": "MiMo-V2.6-Flash-RL：模型卡、制品与许可",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-065/original.md",
+      "metadata_path": "sources/TECH-065/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_model_card",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-066",
+      "title": "MiMo-V2.6官方中文发布与技术报告",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-066/original.md",
+      "metadata_path": "sources/TECH-066/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "mechanically_extracted_original_language",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-067",
+      "title": "MiMo-V2.6部署recipe、上游发布与GLM对照",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-067/original.md",
+      "metadata_path": "sources/TECH-067/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-068",
+      "title": "Onyx Enterprise：本地模型、权限、连接器、部署与价格",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-068/original.md",
+      "metadata_path": "sources/TECH-068/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-069",
+      "title": "Milvus企业RAG：检索过滤、RBAC、NAS接入与文档处理",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-069/original.md",
+      "metadata_path": "sources/TECH-069/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-070",
+      "title": "Qwen FP8回答模型与Embedding／Reranker固定制品",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-070/original.md",
+      "metadata_path": "sources/TECH-070/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-071",
+      "title": "RAG响应与吞吐计算：Roofline、GPU和推理引擎依据",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-071/original.md",
+      "metadata_path": "sources/TECH-071/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-072",
+      "title": "Hermes公司部署：API、Profiles、Desktop、Skills与MCP",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-072/original.md",
+      "metadata_path": "sources/TECH-072/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-073",
+      "title": "公司工具链：MCP授权与安全规范",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-073/original.md",
+      "metadata_path": "sources/TECH-073/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-074",
+      "title": "MiMo Agent服务：新部署recipe、前缀缓存与分层缓存",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-074/original.md",
+      "metadata_path": "sources/TECH-074/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-075",
+      "title": "个人与三人工作站：Coding Agent、量化制品与推理容量依据",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-075/original.md",
+      "metadata_path": "sources/TECH-075/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true,
+      "phase": 2
     }
   ],
   "extra_reference_readings": [
     "reference/ccf-financial-cases.md"
   ],
   "report_selection_note": "companies/quant-research-2026-09-09.md",
-  "phase2_update": "2026-09-18: TECH-056–063 added after checkpoint d3057af; Hermes/LobeHub/Cherry comparison and coding agents with Skills/MCP."
+  "phase2_update": "2026-09-24: Current numbering 1 personal/team (Qwen3.8-27B >=8-bit), 2 enterprise RAG (Qwen27 FP8), 3 company Agent (MiMo publisher-native precision; >=262K per task)."
 }

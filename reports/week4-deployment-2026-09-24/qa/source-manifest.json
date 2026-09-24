@@ -1,0 +1,36 @@
+{
+  "as_of": "2026-09-24",
+  "renderer": "marked / headless Chromium; vector architecture diagrams",
+  "documents": [
+    {
+      "scenario": 1,
+      "title": "场景一：个人／小组的Qwen3.8-27B与Coding Agent部署",
+      "source": "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md",
+      "source_sha256": "3c1952f1606244bc8bb8254ea2bb2dac5002fa3eea6e613f190ac9f4b3739c24",
+      "output": "output/pdf/scenario-1-personal-agent.pdf",
+      "tables": 6,
+      "diagrams": 0,
+      "html_sha256": "ba5be03508b276ef2c2270ddebb84d35265efc7f179f908d4da1f56d44f34b2c"
+    },
+    {
+      "scenario": 2,
+      "title": "场景二：带NAS权限的公司知识库与RAG问答方案",
+      "source": "knowledge-base/infrastructure/scenario-2-enterprise-rag-2026-09-23.md",
+      "source_sha256": "63c9f19cbbe5b96787c8a686c243a78c663e1e749835259c21505e3ce4fd1f2b",
+      "output": "output/pdf/scenario-2-enterprise-rag.pdf",
+      "tables": 14,
+      "diagrams": 2,
+      "html_sha256": "97b946bd39e73c8bfe655320590b72d405628e4b2016200f0826c37f4023f2b2"
+    },
+    {
+      "scenario": 3,
+      "title": "场景三：公司共享模型、通用工具链与通用Agent",
+      "source": "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md",
+      "source_sha256": "4d91ff8e3537408901f8fd010be438e606487398b390924e7683285dcd5f23ee",
+      "output": "output/pdf/scenario-3-company-agent.pdf",
+      "tables": 26,
+      "diagrams": 1,
+      "html_sha256": "f8673f7757ce67f15a96770be0cce53c687a3d428d00130c0d9e47a904b50614"
+    }
+  ]
+}

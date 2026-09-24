@@ -1,0 +1,55 @@
+{
+  "source_id": "TECH-066",
+  "issuer": "Xiaomi MiMo",
+  "retrieved_at": "2026-09-22T05:36:56.645591+00:00",
+  "human_check_status": "pending",
+  "evidence_state": "verified-primary",
+  "files": {
+    "source.html": {
+      "requested_url": "https://mimo.mi.com/docs/zh-CN/news/latest/v2-6",
+      "final_url": "https://mimo.mi.com/docs/zh-CN/news/latest/v2-6",
+      "retrieved_at": "2026-09-22T05:36:53.460257+00:00",
+      "sha256": "48cf6c3fea57754ff9558712f687e548aaff8b940458007dc895ee294cc11ff7",
+      "bytes": 151597
+    },
+    "technical-report.pdf": {
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/73875d00b30a89ef8cc353a0b60b0e9f9561952d/MiMo_V2_6_technical_report.pdf",
+      "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/6ab14fb5b6a2637b97d82406/94d57d7651820dc98cee6b659ab52bb59107f8b64501b3766ae629117a15b62d?X-Xet-Cas-Uid=public&response-content-type=application%2Fpdf&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27MiMo_V2_6_technical_report.pdf%3B+filename%3D%22MiMo_V2_6_technical_report.pdf%22%3B&user_id=public&Expires=1790059015&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNmFiMTRmYjViNmEyNjM3Yjk3ZDgyNDA2Lzk0ZDU3ZDc2NTE4MjBkYzk4Y2VlNmI2NTlhYjUyYmI1OTEwN2Y4YjY0NTAxYjM3NjZhZTYyOTExN2ExNWI2MmRcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LXR5cGU9YXBwbGljYXRpb24lMkZwZGYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlMkElM0RVVEYtOCUyNyUyN01pTW9fVjJfNl90ZWNobmljYWxfcmVwb3J0LnBkZiUzQitmaWxlbmFtZSUzRCUyMk1pTW9fVjJfNl90ZWNobmljYWxfcmVwb3J0LnBkZiUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzkwMDU5MDE1fX19XX0_&Signature=MEYCIQCb4iXfZeKqb1rxnnwbbYd-1ZBgqD-4DM%7Ew-sde4C%7Ee1AIhAL0yODQbnLWrnjDYpmd91kJZndHDfJ58rLa7j2IJeqNP&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+      "retrieved_at": "2026-09-22T05:36:56.314492+00:00",
+      "sha256": "fb81e6e083801b3358f084ed6be953dc23b0d2e434690f4541d5eae03e01e7af",
+      "bytes": 3046687
+    },
+    "original.md": {
+      "derived_from": "source.html",
+      "sha256": "2fb2877a00fb4f690b0113d720bf3cf7aa16238ad6949857b7237881832cd190",
+      "bytes": 15464
+    },
+    "technical-report-original.md": {
+      "derived_from": "technical-report.pdf",
+      "sha256": "f30df5cd48a619276b72048dd7f6d51dd6437f76ed403911ec39ed1658668f94",
+      "bytes": 136134
+    }
+  },
+  "retrieval_failures": {},
+  "title": "MiMo-V2.6官方中文发布与技术报告",
+  "text_kind": "mechanically_extracted_original_language",
+  "official_url": "https://mimo.mi.com/docs/zh-CN/news/latest/v2-6",
+  "archive_status": "raw_source_and_extraction",
+  "reviewer": "Codex; primary source inspection 2026-09-22",
+  "used_in": "knowledge-base/models/mimo-v2.6-research-2026-09-22.md",
+  "published": "2026-09-22 (official Chinese page update date)",
+  "pdf_pages": 44,
+  "pdf_review": {
+    "read_sections": [
+      "2 architecture",
+      "4-5 training and evaluation",
+      "6.4 context caching and inference",
+      "7 open RL resources"
+    ],
+    "visually_checked_pages": [
+      6,
+      26
+    ],
+    "extraction_note": "pypdf warned on several font glyph mappings; selected table values checked against rendered original pages."
+  }
+}

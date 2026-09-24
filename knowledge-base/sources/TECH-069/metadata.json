@@ -1,0 +1,130 @@
+{
+  "source_id": "TECH-069",
+  "retrieved_at": "2026-09-23T09:38:04.560240+00:00",
+  "human_check_status": "pending",
+  "evidence_state": "verified-primary",
+  "files": {
+    "openwebui-access.html": {
+      "requested_url": "https://docs.openwebui.com/features/authentication-access/rbac/groups/",
+      "final_url": "https://docs.openwebui.com/features/authentication-access/rbac/groups/",
+      "retrieved_at": "2026-09-23T09:37:39.011352+00:00",
+      "sha256": "8a95d8368ec2e8df8bb52cb585da6570046a038191b3f3d97fa6873b1a148777",
+      "bytes": 47847
+    },
+    "openwebui-pipelines.html": {
+      "requested_url": "https://docs.openwebui.com/features/extensibility/pipelines/",
+      "final_url": "https://docs.openwebui.com/features/extensibility/pipelines/",
+      "retrieved_at": "2026-09-23T09:37:39.002751+00:00",
+      "sha256": "4e5984b23809610fec85b12f152df4f32047af59320bcae659760efb3c0e0f06",
+      "bytes": 48268
+    },
+    "docling-formats.html": {
+      "requested_url": "https://docling-project.github.io/docling/usage/supported_formats/",
+      "final_url": "https://docling-project.github.io/docling/usage/supported_formats/",
+      "retrieved_at": "2026-09-23T09:37:39.219847+00:00",
+      "sha256": "75a4f459fd9f937fded9a3e146f62c3ec5ee4860934e6335142c83eefad0e476",
+      "bytes": 87151
+    },
+    "elastic-nas.html": {
+      "requested_url": "https://www.elastic.co/docs/reference/search-connectors/es-connectors-network-drive",
+      "final_url": "https://www.elastic.co/docs/reference/search-connectors/es-connectors-network-drive",
+      "retrieved_at": "2026-09-23T09:37:40.882125+00:00",
+      "sha256": "967987608624c1cdd5367f8a1416f69ae86edb96b3bcfaa64f1883c00eef85da",
+      "bytes": 1894894
+    },
+    "milvus26-rbac.md": {
+      "requested_url": "https://raw.githubusercontent.com/milvus-io/milvus-docs/v2.6.x/site/en/adminGuide/rbac.md",
+      "final_url": "https://raw.githubusercontent.com/milvus-io/milvus-docs/v2.6.x/site/en/adminGuide/rbac.md",
+      "sha256": "b0b11547063dfb415b6b7d0370af68e1debf86b4a8f2330f8bad33916c24b353",
+      "bytes": 3044
+    },
+    "milvus26-filtered-search.md": {
+      "requested_url": "https://raw.githubusercontent.com/milvus-io/milvus-docs/v2.6.x/site/en/userGuide/search-query-get/filtered-search.md",
+      "final_url": "https://raw.githubusercontent.com/milvus-io/milvus-docs/v2.6.x/site/en/userGuide/search-query-get/filtered-search.md",
+      "retrieved_at": "2026-09-23T09:49:49.246634+00:00",
+      "sha256": "b469038935c3e90c129bbda0ed593289d24a1bba229b58bef42f2347265edcb1",
+      "bytes": 16401
+    },
+    "milvus26-array-operators.md": {
+      "requested_url": "https://raw.githubusercontent.com/milvus-io/milvus-docs/v2.6.x/site/en/userGuide/search-query-get/boolean/array-operators.md",
+      "final_url": "https://raw.githubusercontent.com/milvus-io/milvus-docs/v2.6.x/site/en/userGuide/search-query-get/boolean/array-operators.md",
+      "retrieved_at": "2026-09-23T09:49:49.155681+00:00",
+      "sha256": "1c809c01da4ed539b58f777b36bacde8859992b7cd38e98b61d3b930a1419724",
+      "bytes": 6184
+    },
+    "milvus26-full-text-search.md": {
+      "requested_url": "https://raw.githubusercontent.com/milvus-io/milvus-docs/v2.6.x/site/en/userGuide/search-query-get/full-text-search.md",
+      "final_url": "https://raw.githubusercontent.com/milvus-io/milvus-docs/v2.6.x/site/en/userGuide/search-query-get/full-text-search.md",
+      "retrieved_at": "2026-09-23T09:49:49.229157+00:00",
+      "sha256": "ea833dadd6364b23a13b49959b39e60c1729d6ffa9687f0177d8b9fa75f41b12",
+      "bytes": 27116
+    },
+    "original.md": {
+      "derived_from": "Authored reading index over archived sources",
+      "sha256": "c71ea8f6db5a0578e19dfebdd535699017ba5b893570abfb47791fcb5bc9686c",
+      "bytes": 927
+    },
+    "openwebui-access.md": {
+      "derived_from": "openwebui-access.html",
+      "sha256": "27b6f18b3807bd8a0766171ecd1305365b28b428c74614173e000dee6cd2acc4",
+      "bytes": 10248
+    },
+    "docling-formats.md": {
+      "derived_from": "docling-formats.html",
+      "sha256": "79c9a38918d263bdfe196e331104fead15f3325291e04521df514dc6bc2b76a9",
+      "bytes": 3429
+    },
+    "openwebui-pipelines.md": {
+      "derived_from": "openwebui-pipelines.html",
+      "sha256": "25db6687e0afb7fad240eb19160e5c3f0c9549b6acef5e052c9b3e4d8c7cfdb1",
+      "bytes": 7919
+    },
+    "elastic-nas.md": {
+      "derived_from": "elastic-nas.html",
+      "sha256": "70d53e153581fe0f413d11db6c2cb028a04bd2a8047f293e9a374ceccb625601",
+      "bytes": 9657
+    }
+  },
+  "retrieval_failures": {
+    "milvus-filter": {
+      "requested_url": "https://milvus.io/docs/filtered-search.md",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
+    "milvus-rbac": {
+      "requested_url": "https://milvus.io/docs/rbac.md",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
+    "milvus-bm25": {
+      "requested_url": "https://milvus.io/docs/full-text-search.md",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
+    "milvus-array": {
+      "requested_url": "https://milvus.io/docs/array-operators.md",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
+    "filtered-search": {
+      "requested_url": "https://milvus.io/docs/v2.6.x/filtered-search.md",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
+    "rbac": {
+      "requested_url": "https://milvus.io/docs/v2.6.x/rbac.md",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
+    "full-text-search": {
+      "requested_url": "https://milvus.io/docs/v2.6.x/full-text-search.md",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    },
+    "array-operators": {
+      "requested_url": "https://milvus.io/docs/v2.6.x/array-operators.md",
+      "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily"
+    }
+  },
+  "title": "Milvus企业RAG：检索过滤、RBAC、NAS接入与文档处理",
+  "issuer": "Milvus / Open WebUI / Docling / Elastic",
+  "official_url": "https://milvus.io/docs/v2.6.x/filtered-search.md",
+  "text_kind": "authored_source_index",
+  "reviewer": "Codex; primary-source inspection 2026-09-23",
+  "archive_status": "originals_and_extractions",
+  "used_in": "knowledge-base/infrastructure/scenario-2-enterprise-rag-2026-09-23.md",
+  "verification_scope": "Milvus RBAC为实例／库／collection权限；标量过滤支撑应用层文档授权。原语言页面和v2.6.x官方Markdown保持分开；前端、解析和NAS连接资料为独立组件。"
+}

@@ -2,7 +2,53 @@
 
 **Phase 3 — Weeks 6–8.** The three-year comparison horizon and API alternative are
 confirmed in [the final project plan](../../PROJECT_PLAN.md).
-Status: calculation framework; no quotes, prices, or cost results recorded.
+Status (21 September 2026): calculation framework with initial Phase 2 hardware
+price inputs. Full three-year operating costs and workload volumes remain to be measured.
+
+**24 September update:** [Scenario 1](scenario-1-personal-agent-2026-09-24.md)
+adds six workstation budgets, one shared machine versus three independent
+machines, and explicit one-time deployment labour. The [cost calculations](data/scenario-1-personal-agent-2026-09-24/results.json)
+reuse dated hardware observations and charge common setup once for a three-machine
+rollout. Recurring electricity, support and accepted-task volumes remain separate
+inputs for this three-year model.
+The revised Scenario 1 comparison uses full 131K / 262K / 524K sessions, so
+shared versus individual-machine costs are matched to the same resident context,
+KV precision, checkpoint allowance and per-user performance target.
+
+**23 September update:** [Scenario 2](scenario-2-enterprise-rag-2026-09-23.md)
+adds the Onyx Enterprise and Milvus/Open WebUI alternatives, two application/index
+nodes, initial implementation person-days, and an explicit Onyx license variable.
+The [scenario data](data/scenario-2-rag-2026-09-23/results.json) separates hardware,
+initial implementation and license sensitivity. Performance values are uncalibrated
+analytical scenarios; use measured accepted-task throughput for the later TCO.
+
+[Scenario 3](scenario-3-company-agent-2026-09-23.md) adds Agent GPU capacity,
+CPU execution workers and initial tool/skill integration. Its cost table separates
+incremental spending from the combined Scenario 2/3 hardware total. The reuse case
+assigns one existing Qwen GPU to Agents and reduces the RAG replica pool; dedicated
+GPU cases retain Scenario 2 resources. Existing NAS, retrieval integration and
+applicable platform licenses are counted once. Synthetic tasks/hour must be
+replaced with observed accepted-task rates for the final cost-per-task comparison.
+
+## Phase 2 acquisition inputs — 21 September 2026
+
+The [workstation comparison](workstation-configurations-2026-09-21.md) records
+seven personal/shared configurations and six three-person arrangements. The
+[server study](server-gpu-procurement-2026-09-21.md) adds seven four/eight-GPU
+complete-system scenarios. Reproducible amounts and sources are in the
+[hardware price ledger](data/hardware-prices-2026-09-21.json).
+
+Prices use CNY. Overseas observations use the explicit assumption USD 1 = CNY
+7.00, not an observed spot rate. Domestic posted prices retain their own tax and
+support status. Server and tower estimates separately include hardware VAT,
+price contingency and three-year hardware-support allowances. Do not add those
+included amounts again in the annual maintenance rows below. Apple and other
+compact-system public prices have different base warranties and need a separately
+priced equivalent support level for a like-for-like TCO comparison.
+
+These are acquisition inputs. Add facility changes, electricity, software and
+integration, staffing, backup/recovery, utilization and accepted-task volumes
+when calculating the three-year comparison.
 
 Compare production-grade on-premise deployment with commercial LLM API
 consumption. The brief lists OAI, Anthropic, and DeepSeek as examples.

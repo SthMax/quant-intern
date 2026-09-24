@@ -1,0 +1,58 @@
+{
+  "pdfs": {
+    "output/week4-deployment-options.pdf": {
+      "sha256": "c1b584ad4038705c21261cb21e1a3357a126f603f4d4c4ea33459fbd39b857cc"
+    }
+  },
+  "rendered_pages": 16,
+  "images": {
+    "qa/render/page-01.png": {
+      "sha256": "5d7d5b0f614541fc068c995799163fec4d9004a3c4f433663f15bfd9abb76bb4"
+    },
+    "qa/render/page-02.png": {
+      "sha256": "4a60f59719f7d0f17e801e3faba14f9a1f02c828893486a0ebb33f4fae70b2fe"
+    },
+    "qa/render/page-03.png": {
+      "sha256": "90a2d57a8500b2c053cd35519fc9825c99b5d0c4ef5a9e95b76263ad2db89fa3"
+    },
+    "qa/render/page-04.png": {
+      "sha256": "dde25de4430fb7eceff374fcc6fdb0b35c88b242005b87747e558f8de7cab960"
+    },
+    "qa/render/page-05.png": {
+      "sha256": "5d59937b169ffd716cb87077bc205d33748a2be75d5525cf84ee64ba0cb7f7a1"
+    },
+    "qa/render/page-06.png": {
+      "sha256": "75abf5a31652cb3c1bd032b16c84ec9803b8f89cea6565972ee12e1ec8257281"
+    },
+    "qa/render/page-07.png": {
+      "sha256": "4d736b0764085c9e5f0c9df25f34d17bd764f88ca692b2b2f473090228db47cf"
+    },
+    "qa/render/page-08.png": {
+      "sha256": "7918891904ea19e54e5381e6277d0f0c698e53a08135bfc035b1d75aee8c0b71"
+    },
+    "qa/render/page-09.png": {
+      "sha256": "d98655e71903087effd6dada6a2e5c5d7ae7218bf21f1de7d644f0742d0be41c"
+    },
+    "qa/render/page-10.png": {
+      "sha256": "3a0fbaee8b14e02a9206a3ff148f2d82a217c90903b3811e74baa61288c57e13"
+    },
+    "qa/render/page-11.png": {
+      "sha256": "5c13174fa6267c8e09018c3481c53b9427d05590a2dd1580b42948f9a0217292"
+    },
+    "qa/render/page-12.png": {
+      "sha256": "7f3ee6c35b69011fe26acd05547c5b1c134d61d998605c479194b8b477eb494a"
+    },
+    "qa/render/page-13.png": {
+      "sha256": "ef8f1b972b485161d293166998a6dbd83256d2bf7c1acd4d27167ae81751d6c9"
+    },
+    "qa/render/page-14.png": {
+      "sha256": "f412802c839c9efc1b8845bc84bf45c6f37d721fc4a15d174ee9ba0b3daae9da"
+    },
+    "qa/render/page-15.png": {
+      "sha256": "14529ee4541e360499dbfbd4294dcfcef83e32b30b9b050451bc5c71a89187e5"
+    },
+    "qa/render/page-16.png": {
+      "sha256": "eb7dcbdab0263d7b18687e6ce6d81b730f4c78794d8332a670784b76f461a82a"
+    }
+  }
+}

@@ -96,7 +96,7 @@ independent supporting sources, even when discovery uses different tools.
 | Optional convenience | Connect one specialist literature service, such as Consensus or SciSpace | Listed as available-to-install plugins, but neither has callable tools in this session. These can improve paper discovery; coverage must still be checked against original papers. [Consensus](https://help.consensus.app/en/articles/9922673-how-consensus-works), [SciSpace](https://scispace.com/help/en/collections/7177367-literature-review). |
 | Maintenance | Restore the standalone Playwright browser runtime | Installer download failed; in-app browser passed. |
 
-No callable connectors for Wind, Bloomberg, CNKI, or internal Morgan Stanley
+No callable connectors for Wind, Bloomberg, CNKI, or internal firm
 systems were found in this session. This does not establish whether the user
 holds subscriptions or can access a particular service through an authorized
 browser session. Public tools cannot verify unpublished internal MRM policy.

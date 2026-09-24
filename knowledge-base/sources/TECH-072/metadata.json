@@ -1,0 +1,130 @@
+{
+  "source_id": "TECH-072",
+  "retrieved_at": "2026-09-23T10:22:08.344455+00:00",
+  "files": {
+    "docker.html": {
+      "requested_url": "https://hermes-agent.nousresearch.com/docs/user-guide/docker",
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/docker",
+      "retrieved_at": "2026-09-23T10:22:07.115120+00:00",
+      "sha256": "259a067a03a9a2960b302678a8cef038bf278edbd994d8d5b6d393950ae5b92d",
+      "bytes": 213912
+    },
+    "profiles.html": {
+      "requested_url": "https://hermes-agent.nousresearch.com/docs/user-guide/profiles",
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/profiles",
+      "retrieved_at": "2026-09-23T10:22:06.891578+00:00",
+      "sha256": "4ef0276ad344d89a497ef73b035a9e7cde25371b99917c6dd395eb03c85a5b85",
+      "bytes": 91118
+    },
+    "api-server.html": {
+      "requested_url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/api-server",
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/api-server",
+      "retrieved_at": "2026-09-23T10:22:06.983356+00:00",
+      "sha256": "3f1e36f93641c31d753b3104294bbc4d0a575d593c8e1ab07e0f437e6c9a1215",
+      "bytes": 171999
+    },
+    "managed-scope.html": {
+      "requested_url": "https://hermes-agent.nousresearch.com/docs/user-guide/managed-scope",
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/managed-scope",
+      "retrieved_at": "2026-09-23T10:22:06.818513+00:00",
+      "sha256": "32239582c726f68d295b4eeae22c2ca759713a593fd636a612366b14d647aba1",
+      "bytes": 45700
+    },
+    "models.html": {
+      "requested_url": "https://hermes-agent.nousresearch.com/docs/user-guide/configuring-models",
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/configuring-models",
+      "retrieved_at": "2026-09-23T10:22:06.670394+00:00",
+      "sha256": "9b7f93f36095dd5fe56d47d0a6800ff0b86298fed749c73daf58b6eb4671a01d",
+      "bytes": 110619
+    },
+    "mcp.html": {
+      "requested_url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp",
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp",
+      "retrieved_at": "2026-09-23T10:22:07.111064+00:00",
+      "sha256": "d436e6cf82fb42df0865d95385fe52436399cecca3366177a1d54ef342ebf8af",
+      "bytes": 195936
+    },
+    "skills.html": {
+      "requested_url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/skills",
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/skills",
+      "retrieved_at": "2026-09-23T10:22:06.790767+00:00",
+      "sha256": "b5482d9cf4770ecefad119234bdc8d172e940f265aa327fbad6740652c029df3",
+      "bytes": 201663
+    },
+    "desktop.html": {
+      "requested_url": "https://hermes-agent.nousresearch.com/docs/user-guide/desktop",
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/desktop",
+      "retrieved_at": "2026-09-23T10:22:06.697385+00:00",
+      "sha256": "442029a032c71aec536a2e689d488d096567aae7e905b90353b083a121897370",
+      "bytes": 164037
+    },
+    "open-webui.html": {
+      "requested_url": "https://hermes-agent.nousresearch.com/docs/user-guide/messaging/open-webui",
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/messaging/open-webui",
+      "retrieved_at": "2026-09-23T10:37:18.703111+00:00",
+      "sha256": "99ee76fc1b1e90ac95c6b1170f8ac046696aa53970cd5df6df3524af4b5116e7",
+      "bytes": 75607
+    },
+    "original.md": {
+      "derived_from": "Authored index over archived primary sources",
+      "bytes": 625,
+      "sha256": "7026cfa781124c9cdce201087f89054f6063365b00386c1ebafde4caf04f5dbd"
+    },
+    "api-server.md": {
+      "derived_from": "api-server.html",
+      "bytes": 42909,
+      "sha256": "23093c6b722b91f44aa543b9dab14aeefdb0a8a54046684096d948df1257c95d"
+    },
+    "mcp.md": {
+      "derived_from": "mcp.html",
+      "bytes": 50699,
+      "sha256": "0c8cd39a8f81e5d481a231f0bc1cdce5d2d90c7d4d8d64d381152ac13e75aa56"
+    },
+    "profiles.md": {
+      "derived_from": "profiles.html",
+      "bytes": 23171,
+      "sha256": "a6008d66d762a1b41018d03d4611eee631007938fadebe7e994ebcbc25ae4bd3"
+    },
+    "desktop.md": {
+      "derived_from": "desktop.html",
+      "bytes": 85045,
+      "sha256": "650b9c0d4c989c71877dbb91149cf47c890a6cc89ba5d92ce0415191d75fcfe5"
+    },
+    "managed-scope.md": {
+      "derived_from": "managed-scope.html",
+      "bytes": 5963,
+      "sha256": "f21e59fcddc54cc315a0c2b1cd476ea99e4c83427c92521affa05bf80a46ec1e"
+    },
+    "skills.md": {
+      "derived_from": "skills.html",
+      "bytes": 54641,
+      "sha256": "f82315480e45736fe8dda0cf46a587c1197700706f7f4613e1558c197251d4d8"
+    },
+    "models.md": {
+      "derived_from": "models.html",
+      "bytes": 26515,
+      "sha256": "9cf15cab31bbeebcd87ab31afca0d8b2d796d374d9e870abe1a22ee1cb93e2e7"
+    },
+    "docker.md": {
+      "derived_from": "docker.html",
+      "bytes": 52828,
+      "sha256": "ad08435cb398ef3db5b45617d0494514dd5b25d0682ba1af581d64dbb532769d"
+    },
+    "open-webui.md": {
+      "derived_from": "open-webui.html",
+      "bytes": 12548,
+      "sha256": "0ad78a9b825ca55c55ec196d8be6702ded1d423635bc7147ad2cb07a7036891b"
+    }
+  },
+  "retrieval_failures": {},
+  "human_check_status": "pending",
+  "title": "Hermes公司部署：API、Profiles、Desktop、Skills与MCP",
+  "issuer": "Nous Research",
+  "official_url": "https://hermes-agent.nousresearch.com/docs/user-guide/docker",
+  "text_kind": "authored_source_index",
+  "archive_status": "originals_and_extractions",
+  "evidence_state": "verified-primary",
+  "reviewer": "Codex; primary documentation inspection 2026-09-23",
+  "used_in": "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md",
+  "verification_scope": "核查原生API与Open WebUI接入、运行位置、profile状态、Docker持久后端、MCP和Skills、managed scope。公司身份路由、资源隔离与任务管理是方案集成工作。"
+}

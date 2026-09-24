@@ -1,0 +1,460 @@
+{
+  "as_of": "2026-09-23",
+  "status": "Uncalibrated analytical task simulation; no actual agent or GPU execution",
+  "units": "Decimal GB/GBps; nominal GPU capacity conservatively treated as 1e9 bytes/GB.",
+  "source": "Scenario 1 GPU efficiency inputs; TECH-064/065 configs and indexes; prices G3/G5/G6.",
+  "models": [
+    {
+      "id": "Qwen3.6-35B-A3B-FP8",
+      "kind": "linear_moe",
+      "source_config": "knowledge-base/sources/TECH-013/config.json",
+      "resident_weights_gb": 37.5,
+      "active_params_billion": 3,
+      "compute_factor": 0.6,
+      "full_attention_layers": 10,
+      "linear_layers": 30,
+      "query_heads": 16,
+      "kv_heads": 2,
+      "head_dim": 256,
+      "linear_value_heads": 32,
+      "linear_key_dim": 128,
+      "linear_value_dim": 128,
+      "experts": 256,
+      "top_k": 8,
+      "expert_pool_gb": 32.2,
+      "non_expert_gb": 5.3,
+      "layers": 40,
+      "hidden": 2048,
+      "kv_bytes_token": 20480,
+      "state_bytes": 62914560,
+      "sliding_layers": 0,
+      "kv_dim_sum": 512,
+      "kernel_ms": {
+        "low": 5,
+        "base": 3,
+        "high": 1.5
+      },
+      "engine_reserve_gb_per_gpu": 6
+    },
+    {
+      "id": "MiMo-V2.6-Flash-RL",
+      "kind": "sliding_moe",
+      "resident_weights_gb": 175,
+      "active_params_billion": 15,
+      "compute_factor": 0.55,
+      "layers": 48,
+      "hidden": 4096,
+      "experts": 256,
+      "top_k": 8,
+      "expert_pool_gb": 160.859947008,
+      "non_expert_gb": 14.140052991999994,
+      "full_attention_layers": 9,
+      "query_heads": 64,
+      "head_dim": 192,
+      "value_dim": 128,
+      "kv_bytes_token": 23040,
+      "state_bytes": 25559040,
+      "sliding_layers": 39,
+      "kv_dim_sum": 320,
+      "kernel_ms": {
+        "low": 7,
+        "base": 4,
+        "high": 2
+      },
+      "engine_reserve_gb_per_gpu": 8
+    },
+    {
+      "id": "MiMo-V2.6-Pro-RL",
+      "kind": "sliding_moe",
+      "resident_weights_gb": 570,
+      "active_params_billion": 42,
+      "compute_factor": 0.55,
+      "layers": 70,
+      "hidden": 6144,
+      "experts": 384,
+      "top_k": 8,
+      "expert_pool_gb": 531.351207936,
+      "non_expert_gb": 38.64879206399996,
+      "full_attention_layers": 10,
+      "query_heads": 128,
+      "head_dim": 192,
+      "value_dim": 128,
+      "kv_bytes_token": 51200,
+      "state_bytes": 39321600,
+      "sliding_layers": 60,
+      "kv_dim_sum": 320,
+      "kernel_ms": {
+        "low": 7,
+        "base": 4,
+        "high": 2
+      },
+      "engine_reserve_gb_per_gpu": 8
+    }
+  ],
+  "gpus": {
+    "L20": {
+      "nominal_memory_gb": 48,
+      "bandwidth_gb_s": 864,
+      "effective_tflops": {
+        "low": 35,
+        "base": 55,
+        "high": 80
+      }
+    },
+    "6000D": {
+      "nominal_memory_gb": 84,
+      "bandwidth_gb_s": 1398,
+      "effective_tflops": {
+        "low": 60,
+        "base": 100,
+        "high": 145
+      }
+    },
+    "H200_NVL": {
+      "nominal_memory_gb": 141,
+      "bandwidth_gb_s": 4800,
+      "effective_tflops": {
+        "low": 350,
+        "base": 550,
+        "high": 800
+      }
+    },
+    "MI325X": {
+      "nominal_memory_gb": 256,
+      "bandwidth_gb_s": 6000,
+      "effective_tflops": {
+        "low": 300,
+        "base": 500,
+        "high": 750
+      }
+    }
+  },
+  "configurations": [
+    {
+      "id": "A0",
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "gpu": "6000D",
+      "tp": 1,
+      "replicas": 1,
+      "memory_efficiency": 1,
+      "compute_efficiency": 1,
+      "link_gb_s": 0,
+      "collective_latency_us": 0,
+      "collectives_per_layer": 0,
+      "gpu_increment_wan": [
+        0,
+        0
+      ],
+      "source_price": "复用场景一H2中的1张回答卡",
+      "role": "有限任务/复用对照"
+    },
+    {
+      "id": "A1",
+      "model": "MiMo-V2.6-Flash-RL",
+      "gpu": "6000D",
+      "tp": 4,
+      "replicas": 1,
+      "memory_efficiency": 0.65,
+      "compute_efficiency": 0.65,
+      "link_gb_s": 24,
+      "collective_latency_us": 40,
+      "collectives_per_layer": 4,
+      "gpu_increment_wan": [
+        62,
+        115
+      ],
+      "source_price": "G3",
+      "role": "成本优化待验证组合"
+    },
+    {
+      "id": "A2",
+      "model": "MiMo-V2.6-Flash-RL",
+      "gpu": "H200_NVL",
+      "tp": 4,
+      "replicas": 1,
+      "memory_efficiency": 0.8,
+      "compute_efficiency": 0.8,
+      "link_gb_s": 200,
+      "collective_latency_us": 12,
+      "collectives_per_layer": 4,
+      "gpu_increment_wan": [
+        169,
+        345
+      ],
+      "source_price": "G5",
+      "role": "主方案，官方TP4参考"
+    },
+    {
+      "id": "A3",
+      "model": "MiMo-V2.6-Flash-RL",
+      "gpu": "H200_NVL",
+      "tp": 4,
+      "replicas": 2,
+      "memory_efficiency": 0.8,
+      "compute_efficiency": 0.8,
+      "link_gb_s": 200,
+      "collective_latency_us": 12,
+      "collectives_per_layer": 4,
+      "gpu_increment_wan": [
+        290,
+        352
+      ],
+      "source_price": "G6，8卡HGX分为两组TP4",
+      "role": "任务吞吐扩展"
+    },
+    {
+      "id": "A4",
+      "model": "MiMo-V2.6-Pro-RL",
+      "gpu": "H200_NVL",
+      "tp": 8,
+      "replicas": 1,
+      "memory_efficiency": 0.75,
+      "compute_efficiency": 0.75,
+      "link_gb_s": 200,
+      "collective_latency_us": 12,
+      "collectives_per_layer": 4,
+      "gpu_increment_wan": [
+        290,
+        352
+      ],
+      "source_price": "G6，8卡HGX一组TP8",
+      "role": "高能力模型档"
+    },
+    {
+      "id": "A5",
+      "model": "MiMo-V2.6-Flash-RL",
+      "gpu": "MI325X",
+      "tp": 4,
+      "replicas": 2,
+      "memory_efficiency": 0.75,
+      "compute_efficiency": 0.75,
+      "link_gb_s": 180,
+      "collective_latency_us": 15,
+      "collectives_per_layer": 4,
+      "gpu_increment_wan": [
+        219,
+        336
+      ],
+      "source_price": "G7，8卡MI325X分为两组TP4",
+      "role": "AMD并列方案；9月23日官方recipe列MI325X TP4"
+    }
+  ],
+  "task_templates": [
+    {
+      "id": "T1",
+      "name": "材料汇总与简报",
+      "inputs": [
+        4096,
+        8192,
+        10240,
+        12288,
+        14336,
+        16384
+      ],
+      "outputs": [
+        384,
+        512,
+        512,
+        512,
+        384,
+        1200
+      ],
+      "tool_seconds": [
+        2,
+        5,
+        3,
+        10,
+        5,
+        0
+      ],
+      "cache_reset_turns": [],
+      "notes": "输出含思考、工具参数和最终文字；最后1200tokens为简报；6次LLM调用。"
+    },
+    {
+      "id": "T2",
+      "name": "财报与Excel比较",
+      "inputs": [
+        8192,
+        12288,
+        16384,
+        18432,
+        20480,
+        22528,
+        24576,
+        26624,
+        28672,
+        32768
+      ],
+      "outputs": [
+        512,
+        768,
+        768,
+        1024,
+        512,
+        768,
+        768,
+        512,
+        512,
+        1536
+      ],
+      "tool_seconds": [
+        5,
+        12,
+        20,
+        8,
+        5,
+        30,
+        8,
+        8,
+        5,
+        0
+      ],
+      "cache_reset_turns": [],
+      "notes": "10次LLM调用，9段工具处理，最后1536tokens为说明；Excel文件通过脚本生成。"
+    },
+    {
+      "id": "T3",
+      "name": "长程研究与报告",
+      "inputs": [
+        8192,
+        14336,
+        20480,
+        26624,
+        32768,
+        38912,
+        45056,
+        51200,
+        57344,
+        63488,
+        69632,
+        75776,
+        32768,
+        38912,
+        45056,
+        51200,
+        57344,
+        63488
+      ],
+      "outputs": [
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        2048,
+        1024,
+        1024,
+        1024,
+        1024,
+        1024,
+        2048
+      ],
+      "tool_seconds": [
+        5,
+        10,
+        15,
+        20,
+        30,
+        15,
+        20,
+        30,
+        10,
+        20,
+        10,
+        0,
+        15,
+        20,
+        30,
+        15,
+        10,
+        0
+      ],
+      "cache_reset_turns": [
+        12
+      ],
+      "notes": "18次LLM调用，包含1次压缩总结；第13轮清空旧前缀；输出总量含思考。"
+    }
+  ],
+  "concurrency_levels": [
+    1,
+    5,
+    20,
+    50
+  ],
+  "cache_scenarios": [
+    {
+      "id": "cold",
+      "stable_prefix_fraction": 0
+    },
+    {
+      "id": "reuse70",
+      "stable_prefix_fraction": 0.7
+    }
+  ],
+  "efficiency_scenarios": [
+    {
+      "id": "low",
+      "bandwidth_fraction": 0.45
+    },
+    {
+      "id": "base",
+      "bandwidth_fraction": 0.6
+    },
+    {
+      "id": "high",
+      "bandwidth_fraction": 0.75
+    }
+  ],
+  "scheduler": {
+    "memory_fraction": 0.9,
+    "cache_padding_factor": 1.15,
+    "max_batch": 32,
+    "tool_slots": 8,
+    "control_seconds_per_call": 0.15,
+    "linear_compute_margin": 1.15,
+    "other_activation_gb_per_request": 0.05,
+    "admission_utilization": 0.7,
+    "dispatch": "FIFO within model replica; task affinity; staged prefill then decode; request outputs may finish at different times. Completed prefixes retained in bounded LRU; no offload transfer modeled.",
+    "communication_assumption": "4 collective-equivalents per transformer layer; input BF16, ring volume model, explicit effective link bandwidth and latency. Aggregate time added without full overlap; not a measured topology.",
+    "cache_assumption": "reuse70 reuses 70% of the previous exact task-local prefix, rounded down to 256 tokens. LRU evictions and explicit compaction reset hits; no CPU-offload gain assumed."
+  },
+  "cost": {
+    "currency": "CNY",
+    "price_class": "D analytical",
+    "prior_scenario1_h2_hardware_wan": [
+      74,
+      141
+    ],
+    "central_worker_nodes": 2,
+    "worker_per_node_wan": [
+      6,
+      13
+    ],
+    "central_development_days": [
+      80,
+      140
+    ],
+    "desktop_development_days": [
+      50,
+      90
+    ],
+    "day_cost_cny": 2500,
+    "desktop_gateway_nodes": 1,
+    "reuse_scenario1_software_license": "Existing Onyx or self-build platform and RAG authorization service; not charged twice. New vendor support/connector licenses require separate quote.",
+    "operations_excluded": [
+      "electricity",
+      "staff",
+      "facility expansion",
+      "API/browser/data-source subscriptions",
+      "human review time",
+      "complete HA redundancy"
+    ],
+    "price_date": "2026-09-21 GPU estimates; 2026-09-23 explicit worker/implementation assumptions"
+  }
+}

@@ -21,7 +21,7 @@ No internal systems or paid financial databases were accessed.
 ## Material findings and qualifications
 
 - REG-007/008: SR 26-2 replaces SR 11-7; the April 2026 guidance excludes
-  generative and agentic AI. Internal MS MRM coverage is not established.
+  generative and agentic AI. Internal firm MRM coverage is not established.
 - REG-009/010: AMAC's April 2026 LLM application standard is directly relevant.
   Standard recommendations, statutory duties, and adoption requirements need
   separate treatment.

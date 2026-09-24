@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-24",
+  "status": "passed",
+  "revision": "renumbered-personal-qwen27-minimum8bit",
+  "serving_cases": 432,
+  "feasible_serving_cases": 252,
+  "capacity_cases": 144,
+  "cost_options": 6,
+  "checks": [
+    "deterministic rerun",
+    "only Qwen3.8-27B; minimum 8-bit model precision",
+    "full context equals input plus output",
+    "memory admission before performance",
+    "token/time conservation",
+    "prices unchanged",
+    "company MiMo precision exception recorded"
+  ],
+  "assumptions_sha256": "639f6394e42d954e8e22c06f606178b21d8dbee74e4857e0034df153db99b4b1",
+  "results_sha256": "9086dd2ae0c418885b22b522cc74d7d0b9ab902a2b141348c364d26a072cf147",
+  "calculation_code_sha256": "952c63ac3c5fd30ed71018a49e8186f4543cff2546fb8c635a87413f15462bed",
+  "document_sha256": "c44c5c072be8c76ffd193a7bd11c940a6d48786ab932b1c69ed994ccd617895e",
+  "measured_gpu_benchmark": false
+}

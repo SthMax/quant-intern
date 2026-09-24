@@ -1,0 +1,70 @@
+{
+  "source_id": "TECH-073",
+  "retrieved_at": "2026-09-23T10:22:08.344771+00:00",
+  "files": {
+    "mcp-authorization.html": {
+      "requested_url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization",
+      "final_url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization",
+      "retrieved_at": "2026-09-23T10:22:07.417720+00:00",
+      "sha256": "d074f1f58309c76b492c08adfb89becb5ed44e4224ac368868abd1c1e4e43b0b",
+      "bytes": 609222
+    },
+    "mcp-security.html": {
+      "requested_url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices",
+      "final_url": "https://modelcontextprotocol.io/docs/2025-11-25/tutorials/security/security_best_practices",
+      "retrieved_at": "2026-09-23T10:22:07.437887+00:00",
+      "sha256": "4b4880225d9ad9bf13e457b5e22009d06a3f379c198730ac25a6daabeca78093",
+      "bytes": 518881
+    },
+    "mcp26-authorization.html": {
+      "requested_url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+      "final_url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+      "retrieved_at": "2026-09-23T10:38:56.450422+00:00",
+      "sha256": "dbf70676af78b2f1122942dcfa2490aeb7ced62a09d667e3b2d59e47112f124c",
+      "bytes": 483696
+    },
+    "mcp26-security.html": {
+      "requested_url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/security_best_practices",
+      "final_url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices",
+      "retrieved_at": "2026-09-23T10:38:56.554261+00:00",
+      "sha256": "d1f2a59a96892b117908156f35a961eb361de3121d0923d074450311d684e145",
+      "bytes": 566773
+    },
+    "original.md": {
+      "derived_from": "Authored index over archived primary sources",
+      "bytes": 492,
+      "sha256": "e1b80a8d5ba379d250bab863d871cbcdc7b32bdfe0b16c5d6242145b43514b30"
+    },
+    "mcp26-authorization.md": {
+      "derived_from": "mcp26-authorization.html",
+      "bytes": 23019,
+      "sha256": "66528bf154dc2fd122ccdf47c4d931fe097897096753002e6136c51925344c00"
+    },
+    "mcp-authorization.md": {
+      "derived_from": "mcp-authorization.html",
+      "bytes": 35968,
+      "sha256": "eadf175d224898ab188e22ccdf16dcca3dcc32ccae1f16fd31895203d5d3f011"
+    },
+    "mcp-security.md": {
+      "derived_from": "mcp-security.html",
+      "bytes": 30835,
+      "sha256": "e49cf140519d57ea692bd4dd209b4f900600f6d8dc5c41cd3ff1d1d60596a276"
+    },
+    "mcp26-security.md": {
+      "derived_from": "mcp26-security.html",
+      "bytes": 37600,
+      "sha256": "69c893dd3de877d7a0acd676e6f977213b507a7a4bec5e47aeb36675b867fd2f"
+    }
+  },
+  "retrieval_failures": {},
+  "human_check_status": "pending",
+  "title": "公司工具链：MCP授权与安全规范",
+  "issuer": "Model Context Protocol",
+  "official_url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+  "text_kind": "authored_source_index",
+  "archive_status": "originals_and_extractions",
+  "evidence_state": "verified-primary",
+  "reviewer": "Codex; primary documentation inspection 2026-09-23",
+  "used_in": "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md",
+  "verification_scope": "优先阅读mcp26-*（2026-07-28）；mcp-*为2025-11-25对照。核对OAuth资源受众、scope及工具调用身份。未接入任何真实授权服务。"
+}

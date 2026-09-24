@@ -20,8 +20,8 @@ The following examples come from the brief and are starting points for assessmen
 | Model-building coding assistance | | | | Accepted coding time saved after testing/review | |
 | Automated compliance checking for fund outcomes | | | | Reviewer time and detection quality | Exact meaning of “fund outcomes” remains to be specified |
 
-Phase 1 may record peer use cases; MSIM pilot prioritization belongs to Phase 3.
-Peer-reported benefits are evidence about the peer disclosure, not measured MSIM
+Phase 1 may record peer use cases; internal pilot prioritization belongs to Phase 3.
+Peer-reported benefits are evidence about the peer disclosure, not measured internal
 ROI.
 
 ## Proposed supporting score

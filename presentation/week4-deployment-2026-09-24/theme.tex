@@ -1,0 +1,17 @@
+\definecolor{ink}{HTML}{17334D}
+\definecolor{teal}{HTML}{008B83}
+\definecolor{blue}{HTML}{3466B1}
+\definecolor{gold}{HTML}{B67722}
+\definecolor{muted}{HTML}{586776}
+\definecolor{linegray}{HTML}{DBE3E8}
+\definecolor{pale}{HTML}{F1F6F8}
+\definecolor{paper}{HTML}{FFFFFF}
+\newcommand{\V}[1]{\csname val:#1\endcsname}
+\newcommand{\T}[6][ink]{\node[anchor=north west,inner sep=0pt,outer sep=0pt,text width=#4mm,align=left,text=#1,font=\sffamily\fontsize{#5pt}{\dimexpr#5pt*13/10\relax}\selectfont] at (#2,#3) {#6};}
+\newcommand{\R}[5]{\fill[#5] (#1,#2) rectangle ++(#3,#4);}
+\newcommand{\Sep}[3]{\draw[linegray,line width=.3mm] (#1,#2)--(#3,#2);}
+\newcommand{\F}[1]{\T[muted]{15}{158}{288}{10.5}{#1}}
+\newcommand{\N}[7][pale]{\node[anchor=north west,inner sep=3mm,outer sep=0pt,draw=linegray,line width=.35mm,fill=#1,minimum width=#4mm,minimum height=#5mm,text width=\dimexpr#4mm-6mm\relax,align=center,text=ink,font=\sffamily\fontsize{#6pt}{\dimexpr#6pt*13/10\relax}\selectfont] at (#2,#3) {#7};}
+\tikzset{arr/.style={-{Stealth[length=2.5mm,width=1.8mm]},line width=.6mm,draw=teal},back/.style={-{Stealth[length=2.5mm,width=1.8mm]},line width=.55mm,draw=blue}}
+\newcommand{\StartSlide}[2]{\begin{tikzpicture}[remember picture,overlay]\begin{scope}[shift={(current page.north west)},x=1mm,y=-1mm]\R{0}{0}{320}{180}{paper}\T[teal]{15}{8}{285}{12}{#2}\T{15}{19}{291}{28}{\textbf{#1}}\Sep{15}{37}{305}\T[muted]{287}{170}{20}{10}{\insertframenumber\,/\,16}}
+\newcommand{\EndSlide}{\end{scope}\end{tikzpicture}}

@@ -73,7 +73,7 @@ specified benchmark task, observation window or isolated LLM effect (PDF p. 8).
 The wider platform's efficiency and investment claims are not causal LLM ROI.
 
 Private hardware does not establish an air gap, and described permission rules
-are not independent evidence of tested control effectiveness. No internal MSIM
+are not independent evidence of tested control effectiveness. No internal
 policy or deployment approval is inferred.
 
 ## Source trail

@@ -1,0 +1,134 @@
+{
+  "source_id": "TECH-075",
+  "retrieved_at": "2026-09-23T18:03:21.507930+00:00",
+  "files": {
+    "codex-config.md": {
+      "requested_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
+      "final_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
+      "bytes": 112516,
+      "sha256": "976e272b8feb264e735bdd1d18f80d028daf93294ac913c610aa52190f7df0aa"
+    },
+    "pi-models.md": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/main/packages/coding-agent/docs/models.md",
+      "final_url": "https://raw.githubusercontent.com/earendil-works/pi/main/packages/coding-agent/docs/models.md",
+      "bytes": 7001,
+      "sha256": "1054c905dd468ace0c00188010b69d89f163569e83a9c73714fc4ec90163c8f3"
+    },
+    "mlx-server.md": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/SERVER.md",
+      "final_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/SERVER.md",
+      "bytes": 6178,
+      "sha256": "08c8023c5459aa4c7ee1b60dc3b0261fad15b15788a59ff71f6eef2cdcf98286"
+    },
+    "mlx-server.py": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/server.py",
+      "final_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/server.py",
+      "bytes": 70765,
+      "sha256": "57392576de114af80ede723976b9dd156dc234f856b9943b8b44b8b78bc27f79"
+    },
+    "llama-server.md": {
+      "requested_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/tools/server/README.md",
+      "final_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/tools/server/README.md",
+      "bytes": 106415,
+      "sha256": "b45beb0842fcc98709b7df26d22da93db5f73f88386f0a6a9d6c18eac522b024"
+    },
+    "apple-specs.html": {
+      "requested_url": "https://www.apple.com.cn/mac-studio/specs/",
+      "final_url": "https://www.apple.com.cn/mac-studio/specs/",
+      "bytes": 199186,
+      "sha256": "86450ad9c8ac9a416aa1a834871276cfbedb42f4fce18bc26a307a0371be8fcb"
+    },
+    "amd-uma.html": {
+      "requested_url": "https://rocm.blogs.amd.com/artificial-intelligence/ryzen-uma-llm/README.html",
+      "final_url": "https://rocm.blogs.amd.com/artificial-intelligence/ryzen-uma-llm/README.html",
+      "bytes": 61104,
+      "sha256": "50504adca412a21216e082257addb35526d6500637fb5fc31e203055c0a48397"
+    },
+    "rtx5000.html": {
+      "requested_url": "https://www.nvidia.cn/products/workstations/professional-desktop-gpus/rtx-pro-5000/",
+      "final_url": "https://www.nvidia.cn/products/workstations/professional-desktop-gpus/rtx-pro-5000/",
+      "bytes": 264131,
+      "sha256": "a8505f2e99e89c7754f3fc720c5d6aba23c01d09d1286ef35c1c5ddf100f9743"
+    },
+    "spark.html": {
+      "requested_url": "https://www.nvidia.com/en-us/products/workstations/dgx-spark/",
+      "final_url": "https://www.nvidia.com/en-us/products/workstations/dgx-spark/",
+      "bytes": 610077,
+      "sha256": "034d70ece5718d37b08d031027868ea1f31e3b02bda216160da0228f8b3808b0"
+    },
+    "original.md": {
+      "derived_from": "Authored source index or review notes",
+      "updated_at": "2026-09-24",
+      "bytes": 2169,
+      "sha256": "79b08d7abce7bce8ab2961e89ed3bd6a61c70eb8a6827656898bef3f76b740a4"
+    },
+    "quantization-observations.json": {
+      "derived_from": "Authored index or source observations",
+      "bytes": 2533,
+      "sha256": "995f9748c0e491852d1ec5f5f0059fdd295cd590644e8e4dc14802a9498509fb"
+    },
+    "mlx-qwen.py": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/models/qwen3_5.py",
+      "final_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/models/qwen3_5.py",
+      "bytes": 20014,
+      "sha256": "10c59a71d8d739b8cdff38c7e9c7345deb9a9688e821ac37cb774d3086cac42e"
+    },
+    "mlx-cache.py": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/models/cache.py",
+      "final_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/models/cache.py",
+      "bytes": 58310,
+      "sha256": "8053a353e5e2e5b2beda4b6d3c5fdd1e90c49b27a145c9ad5707eeb5edf06b33"
+    },
+    "mlx-next.py": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/models/qwen3_next.py",
+      "final_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/models/qwen3_next.py",
+      "bytes": 17853,
+      "sha256": "67ca08a4d08cb7be124965e95399735e556f1eaeb21a16bc23cb88d1ac035e11"
+    },
+    "mlx-rope.py": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/models/rope_utils.py",
+      "final_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/mlx_lm/models/rope_utils.py",
+      "bytes": 12538,
+      "sha256": "d744c9f3bc83faa7f9c47f65fc3565d3690af3607fe92b43af717acd62146710"
+    },
+    "long-context-review.md": {
+      "derived_from": "Authored source index or review notes",
+      "bytes": 1640,
+      "sha256": "bc1bb8a163561df1f7fb1237c122eb7ce8ad1e6bc20c82118bc98c71d5cdf787"
+    },
+    "mlx-utils-fp8.py": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/15bcf8b929e5da67aa7f8fe6feda7fb9eda00050/mlx_lm/utils.py",
+      "revision": "15bcf8b929e5da67aa7f8fe6feda7fb9eda00050",
+      "upstream_commit_date": "2026-09-22T22:32:21Z",
+      "retrieved_at": "2026-09-24",
+      "bytes": 38688,
+      "sha256": "368a2e1fe2e3eb4fcbd44736c6d3f8b1fdf0a5a0c5b5fbfb2ff0025ae1ea0908"
+    },
+    "mlx-convert-fp8.py": {
+      "requested_url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/15bcf8b929e5da67aa7f8fe6feda7fb9eda00050/mlx_lm/convert.py",
+      "revision": "15bcf8b929e5da67aa7f8fe6feda7fb9eda00050",
+      "upstream_commit_date": "2026-09-22T22:32:21Z",
+      "retrieved_at": "2026-09-24",
+      "bytes": 7864,
+      "sha256": "68170fda3f3c70a80aa066ab5b104d6022e327903078e58c46bc3cc128a2a890"
+    },
+    "four-hardware-evidence.md": {
+      "derived_from": "Authored source index or review notes",
+      "updated_at": "2026-09-24",
+      "bytes": 3029,
+      "sha256": "3d0d825eeacecc7e2d5cc4c9fe1055922064bed0e39078e9040294789b26c26a"
+    }
+  },
+  "failed_fetches": [
+    {
+      "name": "opencode-providers.html",
+      "url": "https://opencode.ai/docs/providers",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "opencode-v2-models.html",
+      "url": "https://opencode.ai/v2/docs/models",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}
