@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checks": [
+    "source SHA-256 frozen",
+    "DeepSeek checkpoint and Engram byte arithmetic",
+    "Hopper four source page alignment",
+    "280 enterprise and 24 Spark rows",
+    "history plus 8192 output equals context",
+    "no unmeasured TTFT/decode populated",
+    "cold curve residual <1 second on the four input anchors"
+  ],
+  "matrix_rows": 280,
+  "spark_rows": 24,
+  "new_gpu_execution": false
+}

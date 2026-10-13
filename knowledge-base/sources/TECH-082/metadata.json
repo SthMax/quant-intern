@@ -1,0 +1,55 @@
+{
+  "source_id": "TECH-082",
+  "title": "Qwen27 long-context serving and vLLM prefix-cache semantics",
+  "fixed_revision": "a281ad32f0368caa2c6ebe38a0e59a75b3f22392",
+  "accessed_at": "2026-10-12",
+  "human_check_status": "pending",
+  "evidence_state": "verified-primary",
+  "text_kind": "verbatim_primary_documentation",
+  "files": {
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/features/automatic_prefix_caching.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/features/automatic_prefix_caching.md",
+      "bytes": 3709,
+      "sha256": "c393866710f3a2c6b8dc17ef24072fa9142a9caf6396cdf52810d8249e8d5b4d"
+    },
+    "optimization.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/configuration/optimization.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/configuration/optimization.md",
+      "bytes": 24144,
+      "sha256": "6464b660e86cf0724dc2042530ac588a23f50aeb6c6ec876c03622d88df35807"
+    },
+    "qwen-recipe.yaml": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/recipes/21302fdc7506d180d2e4f37beeabc6836bd6d50d/models/Qwen/Qwen3.8-27B.yaml",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/recipes/21302fdc7506d180d2e4f37beeabc6836bd6d50d/models/Qwen/Qwen3.8-27B.yaml",
+      "bytes": 25191,
+      "sha256": "ba6c578cec05ab4d8389775e9509d90e7daebe2d04de9e296486eaaafc202c42"
+    },
+    "qwen-model.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/model_executor/models/qwen3_5.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/model_executor/models/qwen3_5.py",
+      "bytes": 27942,
+      "sha256": "ea7e71303c902b9678e85ff3e9a75a7ab6e69b5770605d540ad6ab1084e18187"
+    },
+    "cache-config.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/config/cache.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/config/cache.py",
+      "bytes": 18043,
+      "sha256": "d37db21e7a6a1b477a580b54d90011d8708c4e7f6e3903221432d9a39830559b"
+    },
+    "evidence-note.md": {
+      "derived_from": "authored agent source inspection",
+      "text_kind": "authored_analysis_not_original",
+      "bytes": 904,
+      "sha256": "5558f279f2b4e20cdbf63c95ed060b006d4e3f7a667a6bde308a87c39e0ec507"
+    }
+  },
+  "verification_scope": "Current documentation and code capability; no new device measurements.",
+  "reviewer": "Codex deployment research agent; static primary document, data and code inspection",
+  "publication_date": "not stated; see fixed commit or experiment date",
+  "evidence_note": "evidence-note.md",
+  "used_in": [
+    "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md",
+    "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md"
+  ]
+}

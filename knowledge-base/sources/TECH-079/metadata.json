@@ -1,0 +1,74 @@
+{
+  "source_id": "TECH-079",
+  "title": "DeepSeek-AI official V4.1 Flash model snapshot",
+  "accessed_at": "2026-10-12",
+  "fixed_revision": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "reviewer": "Codex deployment research agent; static primary document, data and code inspection",
+  "text_kind": "verbatim primary markdown or source code",
+  "verification_scope": "Only claims explicitly located in the archived source; code inspection is not target-device execution. Source version is frozen; deployment recipe hardware assertions are publisher reports.",
+  "files": {
+    "original.md": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/README.md",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/5254448103b6254fc646dacbca1cbbf20e9216c1/README.md?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F5254448103b6254fc646dacbca1cbbf20e9216c1%2FREADME.md=&etag=%22211b83857abd5e8420df3a4f10db1096294227e6%22",
+      "accessed_at": "2026-10-12",
+      "bytes": 13110,
+      "sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251"
+    },
+    "config.json": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/config.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/5254448103b6254fc646dacbca1cbbf20e9216c1/config.json?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F5254448103b6254fc646dacbca1cbbf20e9216c1%2Fconfig.json=&etag=%2209917a9139b22d5bf8be52132787f435147b1020%22",
+      "accessed_at": "2026-10-12",
+      "bytes": 3311,
+      "sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879"
+    },
+    "model.safetensors.index.json": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/model.safetensors.index.json",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/5254448103b6254fc646dacbca1cbbf20e9216c1/model.safetensors.index.json?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F5254448103b6254fc646dacbca1cbbf20e9216c1%2Fmodel.safetensors.index.json=&etag=%2254c85064dd92c8550471302e9ae59bedbbf96ca4%22",
+      "accessed_at": "2026-10-12",
+      "bytes": 7470294,
+      "sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8"
+    },
+    "inference-README.md": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/inference/README.md",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/5254448103b6254fc646dacbca1cbbf20e9216c1/inference%2FREADME.md?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F5254448103b6254fc646dacbca1cbbf20e9216c1%2Finference%2FREADME.md=&etag=%22e0b1d6ddfb4ab06a0dc9b4542826e6d7aa07a77c%22",
+      "accessed_at": "2026-10-12",
+      "bytes": 2029,
+      "sha256": "2834402823199ee24e9a42bdf36a0fc6daf94448f444cb062c042a057a798f1c"
+    },
+    "inference-model.py": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/inference/model.py",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/5254448103b6254fc646dacbca1cbbf20e9216c1/inference%2Fmodel.py?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F5254448103b6254fc646dacbca1cbbf20e9216c1%2Finference%2Fmodel.py=&etag=%2246cc8310bb64852f3c36c9cc5dd13d47acabf6ee%22",
+      "accessed_at": "2026-10-12",
+      "bytes": 61669,
+      "sha256": "e5decd76fe70fd56ef2f10124d245c6f64fb6a0003cc9068a1d3182a168b8d2d"
+    },
+    "inference-kernel.py": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/inference/kernel.py",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/5254448103b6254fc646dacbca1cbbf20e9216c1/inference%2Fkernel.py?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F5254448103b6254fc646dacbca1cbbf20e9216c1%2Finference%2Fkernel.py=&etag=%226fa7bd5aafbe1bc62887080963cc9fdd838d89f5%22",
+      "accessed_at": "2026-10-12",
+      "bytes": 23790,
+      "sha256": "1236c3507019ed176f5dba5e04bcea58867cf654818c6cf138ed4845398c2455"
+    },
+    "LICENSE": {
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/LICENSE",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/5254448103b6254fc646dacbca1cbbf20e9216c1/LICENSE?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F5254448103b6254fc646dacbca1cbbf20e9216c1%2FLICENSE=&etag=%22d62e3bef9f054f21b7fc616365850fbf879a99ff%22",
+      "accessed_at": "2026-10-12",
+      "bytes": 1084,
+      "sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040"
+    },
+    "evidence-note.md": {
+      "derived_from": "authored agent source inspection",
+      "text_kind": "authored_analysis_not_original",
+      "bytes": 887,
+      "sha256": "31225f5d22a443e3da3af791136d0a2445837f23e33d0baa5f67596a5ba1519e"
+    }
+  },
+  "publication_date": "not stated; see fixed commit or experiment date",
+  "evidence_note": "evidence-note.md",
+  "used_in": [
+    "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md",
+    "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md"
+  ]
+}

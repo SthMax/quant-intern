@@ -1,0 +1,57 @@
+{
+  "h100-exxact.html": {
+    "requested_url": "https://configurator.exxactcorp.com/configure/TS4-193475697",
+    "final_url": "https://configurator.exxactcorp.com/configure/TS4-193475697",
+    "retrieved_date": "2026-10-12",
+    "bytes": 386241,
+    "sha256": "f8afa1fa6cffbf1c3c6695f5ebb10c52fbaaef02cff7cb49f0a20b92003471aa"
+  },
+  "h200-exxact.html": {
+    "requested_url": "https://configurator.exxactcorp.com/configure/TS4-118380266",
+    "final_url": "https://configurator.exxactcorp.com/configure/TS4-118380266",
+    "retrieved_date": "2026-10-12",
+    "bytes": 394157,
+    "sha256": "b865932d20ae4d55cdf0802ae387bdcdd3c7c793b0bc19c8cdbe7bb74b6c4a5f"
+  },
+  "a100-serverstore.html": {
+    "requested_url": "https://www.theserverstore.com/nvidia-hgx-8x-a100-80gb-sxm4-nvlink-gpu-server-zt-systems",
+    "final_url": "https://www.theserverstore.com/nvidia-hgx-8x-a100-80gb-sxm4-nvlink-gpu-server-zt-systems",
+    "retrieved_date": "2026-10-12",
+    "bytes": 140711,
+    "sha256": "d0a21cee97297edda972552e48b2db874f37ac64d9eaa205bf51580d492db0a5"
+  },
+  "nvidia-2027-q2-10q.pdf": {
+    "requested_url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+    "final_url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+    "retrieved_date": "2026-10-12",
+    "bytes": 671023,
+    "sha256": "6b5a8dc1ed21e8b2b960fd0de97103af6a2f32ccc8dd91b363f06ea192ecfebd"
+  },
+  "bis-h200-policy.html": {
+    "requested_url": "https://media.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+    "final_url": "https://media.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+    "retrieved_date": "2026-10-12",
+    "bytes": 55710,
+    "sha256": "5c6bb1554433a80dc9b6d9b7303709a5a28f59ca9b4c6cfc0e4135d5b15c64a0"
+  },
+  "fr-2026-00789.html": {
+    "requested_url": "https://www.federalregister.gov/documents/2026/01/15/2026-00789/revision-to-license-review-policy-for-advanced-computing-commodities",
+    "final_url": "https://unblock.federalregister.gov/",
+    "retrieved_date": "2026-10-12",
+    "bytes": 10596,
+    "sha256": "853f3cda1cfe37d259e3f6360f79476e3d1e1f83a9773fcbf420775387ac7564",
+    "status": "access_challenge_not_source; excluded from packet"
+  },
+  "h200-nvl-vipera.html": {
+    "requested_url": "https://viperatech.com/product/nvidia-h200-nvl-graphic-card-141-gb-passive-pcie-900-21010-0040-000",
+    "retrieved_date": "2026-10-12",
+    "bytes": 164680,
+    "sha256": "e1167630b215be8e57c5b7ca68de31719bfe19e2eb80ca2b93252ea977da0599"
+  },
+  "fr-2026-00789.pdf": {
+    "requested_url": "https://www.govinfo.gov/content/pkg/FR-2026-01-15/pdf/2026-00789.pdf",
+    "retrieved_date": "2026-10-12",
+    "bytes": 252319,
+    "sha256": "7fb7dae40d9b277a61ac64df1e1ba09a7bdab98dc6c2ed720aacdfd87edf8125"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "source_id": "TECH-084",
+  "title": "InferenceX DeepSeek-V4.1-Flash public AgentX benchmark rows and startup log excerpts",
+  "issuer": "SemiAnalysis InferenceX",
+  "source_url": "https://inferencex.semianalysis.com/api/v1/benchmarks?model=DeepSeek-V4.1-Flash",
+  "accessed_at": "2026-10-12",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "text_kind": "raw_public_API_JSON_and_mechanical_log_extraction",
+  "verification_scope": "Publisher benchmark records, frozen at access; variable-length high-cache AgentX replay with synthetic DSpark acceptance, not fixed 1M-context production SLA. Runtime changes after the run date must be evaluated separately.",
+  "files": {
+    "benchmarks.json": {
+      "requested_url": "https://inferencex.semianalysis.com/api/v1/benchmarks?model=DeepSeek-V4.1-Flash",
+      "final_url": "https://inferencex.semianalysis.com/api/v1/benchmarks?model=DeepSeek-V4.1-Flash",
+      "bytes": 783994,
+      "sha256": "4c840fd2ed6593c0f3d97599131ecdd52e340bebd70ce431ee7d57a77e5393ac",
+      "http_compression_decoded": true
+    },
+    "api-openapi.json": {
+      "requested_url": "https://inferencex.semianalysis.com/api/openapi.json",
+      "final_url": "https://inferencex.semianalysis.com/api/openapi.json",
+      "bytes": 305681,
+      "sha256": "2ffb252f42fd5686679577d9750e679820671a4e916459e6c3ebde2701d46505",
+      "http_compression_decoded": true
+    },
+    "server-h100-c20.json": {
+      "requested_url": "https://inferencex.semianalysis.com/api/v1/server-log?id=442505&offset=0&limit=170000",
+      "final_url": "https://inferencex.semianalysis.com/api/v1/server-log?id=442505&offset=0&limit=170000",
+      "bytes": 177503,
+      "sha256": "3273579c60b998348e20223f391ec6c79d0128f6ebd57b9830e3055f60fcd9b7",
+      "http_compression_decoded": true
+    },
+    "server-h200-tp4-c32.json": {
+      "requested_url": "https://inferencex.semianalysis.com/api/v1/server-log?id=442751&offset=0&limit=115000",
+      "final_url": "https://inferencex.semianalysis.com/api/v1/server-log?id=442751&offset=0&limit=115000",
+      "bytes": 121853,
+      "sha256": "56d3ff998b1e25a6c45cc109fb59db2d8589101f20da0abba030a260494e536c",
+      "http_compression_decoded": true
+    },
+    "server-h200-tp8-c32.json": {
+      "requested_url": "https://inferencex.semianalysis.com/api/v1/server-log?id=442758&offset=0&limit=170000",
+      "final_url": "https://inferencex.semianalysis.com/api/v1/server-log?id=442758&offset=0&limit=170000",
+      "bytes": 175640,
+      "sha256": "7cb059b24e4be2be74f96c4174d0587b5fa4befcdf282c754fc739f217f3862d",
+      "http_compression_decoded": true
+    },
+    "server-h200-tp4-c32.txt": {
+      "derived_from": "server-h200-tp4-c32.json",
+      "method": "exact serverLog value; startup excerpt only; original offsets retained in JSON",
+      "bytes": 117116,
+      "sha256": "5924887d1bf955642a33a657349dfd8c06af511586d8e982512816bddd91933f"
+    },
+    "server-h100-c20.txt": {
+      "derived_from": "server-h100-c20.json",
+      "method": "exact serverLog value; startup excerpt only; original offsets retained in JSON",
+      "bytes": 172438,
+      "sha256": "a78fb100a5619045bc419e42c9478d25424fef013961cac6d04c7e69dd5f2f40"
+    },
+    "server-h200-tp8-c32.txt": {
+      "derived_from": "server-h200-tp8-c32.json",
+      "method": "exact serverLog value; startup excerpt only; original offsets retained in JSON",
+      "bytes": 172902,
+      "sha256": "3881fbe71d8fa060e9a3d4593a84daf5aa9b9e2aeb96a2a7eed9a6ee4f082c41"
+    },
+    "original.md": {
+      "derived_from": "three archived startup log excerpts",
+      "method": "mechanical line filter; unmodified matching lines",
+      "bytes": 6258,
+      "sha256": "f9566fc0ab8410d171cc081901f83d1f167ae4d2e1704e968b56079ae6c2a964"
+    },
+    "evidence-note.md": {
+      "derived_from": "authored agent source inspection",
+      "text_kind": "authored_analysis_not_original",
+      "bytes": 1073,
+      "sha256": "d6a7ad5d017d04b06c552cd06c163a42d8d0c4347c4b019ce8d455633ace0e3d"
+    }
+  },
+  "reviewer": "Codex deployment research agent; static primary document, data and code inspection",
+  "publication_date": "not stated; see fixed commit or experiment date",
+  "evidence_note": "evidence-note.md",
+  "used_in": [
+    "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md",
+    "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md"
+  ]
+}

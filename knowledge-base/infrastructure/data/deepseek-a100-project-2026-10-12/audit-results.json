@@ -1,0 +1,685 @@
+{
+  "as_of": "2026-10-12",
+  "upstream_revision": "580568edd6f84537ff042ded4ee842b892bf3ff4",
+  "official_structural_reference_revision": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+  "execution": "Only this standard-library audit ran; no upstream import, API benchmark, model or GPU execution.",
+  "source_sha256": {
+    "files/README.md": "8dea9079cf1c71925339a9eb63aa662292c8d000d20b1f4d566a71d1bc6d1d1b",
+    "files/dsv41/bench_jev.py": "3450d21169e2aa72ecfffba5e4cd84a4777a53e51eb01d3722f561fb424bde09",
+    "files/dsv41/bench_long_prefill.py": "4f9085deea9c18b7c18fef52adbdf5ea688102fa8515bbe4e7bb5c2b144de804",
+    "files/dsv41/cuda/fp4_tc.cu": "1287ab5ad66e30ba2243d2edb301ede2d470bcdb5c6d152dd1c898dea03f71fc",
+    "files/dsv41/cuda/fp8_tc.cu": "c3a123ec3e7f38269bf52a02e3e3977f726d95db631bede2dda20cb0da97c1e9",
+    "files/dsv41/decode.py": "e52a1a61c8693c3bb63752eae6d364a23ac048bb1b638e35d8459f9086920fd6",
+    "files/dsv41/dspark.py": "d81783ecc3969dfb83632905b57eec23f938fe97c3da8af10451daec4ba68596",
+    "files/dsv41/engine.py": "6059c92c718d5731165a61407fa29e383cde9908e4b5600fa26d86e108b3b8b0",
+    "files/dsv41/engram.py": "d7b4ac47cab3eb133c275c5a1f1c1ebc467919823a9fdebb66792c1ae40c6058",
+    "files/dsv41/ep.py": "45c9c83507f1a0eaf9e8ad4c3b9db31e5557945013cf24dee552b991ea2293ca",
+    "files/dsv41/jev.py": "6da706c870f9d56d686ac9163fdcc33c975debfff9a77f5eac10f2350f83160e",
+    "files/dsv41/load.py": "ed47b0aad4901eb4e2a068d9ac6ff86d847739b315929fc824c8bb88d351e9dd",
+    "files/dsv41/model.py": "31b1b9f4b57044beb701a2c3ac2520501152ec28797ffe72fc47de28c546e45c",
+    "files/dsv41/mtp_accept.py": "5306efff45d509ea716936cc50ee28b0670ccaddb66c96d96f48eb63c608c0f2",
+    "files/dsv41/mtp_run.py": "fff76450473ea71a29dbd7ba6579a7e06e915f6b3be782ec5783322a74b87bf8",
+    "files/dsv41/prefix_capacity.py": "b3f9911bbf92da7138b959c6b4163e0afa3cff607cd44694d19bbace4d5e1fed",
+    "files/dsv41/serve.py": "b1b4209538eed6ffd0806bfe1cb9ac1a83346fe03090c0b282572e83a7120a3f",
+    "files/dsv41/stats.py": "54b40266844f36af1f62e42588c585472e4d96d9875a28b1a8a99f85aa7d6334",
+    "files/dsv41/test_long_prefill.py": "42d30cb9d729edd11a4b9396f1fcdee4749639cc77097115da957268c2e80206",
+    "files/dsv41/test_long_session.py": "5f1eabfd49ad8e101f7bf8b9460fcfae4155cd85a4615799d1986274244b4888",
+    "files/dsv41/test_prefix_replay.py": "70b9fc7b07040423a2c3100751de1b42a666c597079950d784324212573daaa7",
+    "files/dsv41/test_prefix_state_units.py": "fc99a2684e9ee3302be4e11ee54f271a9e3d6dfd5a6d08eec16a718d0c096cda",
+    "files/dsv41/w8.py": "5a49a0fd82c72daf2d0c53655add5f4e0c2831984fefda98088c54febc0f4a57",
+    "files/examples/benchmarks/bench_code_generation.py": "f5e14957a1fbfc1b01264fe50e91f7d0712234e242e40ce5df5dcf0c199d959c",
+    "files/examples/benchmarks/bench_concurrency.py": "f63184cfa74d02cf8b6e4f4965b61987d0f39a631fd3def1c41e7c14391efddd",
+    "files/examples/benchmarks/bench_decode_throughput.py": "022978016f518425f0535a8de3deeb8c97a4d4b464f3c58134c84129ecc1f7d2",
+    "files/examples/benchmarks/bench_jev_structured.py": "518afda9fa137b4bc76223cd750818cd93d17c0eb07ef487a3e721f77a672886",
+    "files/examples/benchmarks/bench_prefix_cache_hit.py": "be7699f9f4d29e35616e1a9bbbefb54b635c8e3782a553ebbc01f55fb4d4d279",
+    "files/examples/claude_code/dsv41-litellm.yaml": "6d2b10a6694ad1546b13ebb67f59a76075865cd3a88f9273fa50cbc41052e8ef",
+    "files/run_128k_8slots.sh": "7def6f0c5e32ce0e2217e933d7cc9eb37ccb78fcd181cd6798f5b312d6b533cd",
+    "files/run_16slots.sh": "feeeb897f114e92f7e7d056a0e0f7e31e2a2f7309204a56121551a1ce17776eb",
+    "files/run_1m_robust.sh": "f27fa952a41fa3c2f70e87df0029419c144fa097603b78997a9e062de1a86fe7",
+    "files/run_24slots.sh": "1119b2923896db1fee85a7fc5e305271fd4da497443886ece3b597306fcd52f0",
+    "files/run_32slots.sh": "10a506cebfc82065a0a63d80dea494e30980c41a9a41ecb9756a4726ee083f08",
+    "files/run_64slots.sh": "98a03b1f8defe2888de4cfbf9c35d9d1eb8113b2231de35dd486fee0d43fb6c9",
+    "files/run_mtp_4gpu.sh": "0cb31ee20dd186acd567bf9ed96af059e0a22ebcd4756af5f2b92584fb6b8479",
+    "files/run_server.sh": "5c755b2ab2b917254b5521af791bd918f0c683c6cb7c36b69c47120ba9ce3f08",
+    "files/run_server_batched.sh": "fe4da6830cf72be8e03b62132971b83bed168aae1a9fa6ec7594203c50ee5bb6",
+    "files/run_speed_agent.sh": "09b28c678dd5216f72035308d7111f800417397dba700428ac884a25bccb5def",
+    "official-inference-config.json": "2e84f45cf1dac8c7fcbb200e96667d4b913275690668ed496f24c7747207a809",
+    "original.md": "8dea9079cf1c71925339a9eb63aa662292c8d000d20b1f4d566a71d1bc6d1d1b",
+    "repository-tree.txt": "6f6e7ae48f74c44c7b9554ac754d01491d7ea45f4ca675f2217fef5788a67204",
+    "upstream.gitignore": "87b4cd67840a4199dcc0d5f32b090bd9e6d75f1290ca0e9c9937701dde06e834"
+  },
+  "jev_default_path": {
+    "call_lines": [
+      320,
+      342
+    ],
+    "constants": {
+      "sys_prompt": "<｜begin▁of▁sentence｜><｜System｜>You are a structured extraction engine. Extract field values according to schema. Output only the value.<｜User｜>",
+      "t_cache_hit_ms": 0.08,
+      "t_prefill_ms": 11.4,
+      "t_scoring_per_batch": 12.5,
+      "max_batch": 32
+    },
+    "rows": [
+      {
+        "fields": 3,
+        "readme_output_tokens": 22,
+        "hardcoded_total_ms": 23.98,
+        "calculated_effective_tokens_s": 917.4311926605504,
+        "readme_effective_tokens_s": 917.4,
+        "speedup_against_readme_ar_time": 84.18682235195996,
+        "status": "simulation_default_path_not_measured_latency"
+      },
+      {
+        "fields": 10,
+        "readme_output_tokens": 78,
+        "hardcoded_total_ms": 23.98,
+        "calculated_effective_tokens_s": 3252.7105921601333,
+        "readme_effective_tokens_s": 3252.7,
+        "speedup_against_readme_ar_time": 175.3169307756464,
+        "status": "simulation_default_path_not_measured_latency"
+      },
+      {
+        "fields": 30,
+        "readme_output_tokens": 238,
+        "hardcoded_total_ms": 23.98,
+        "calculated_effective_tokens_s": 9924.937447873228,
+        "readme_effective_tokens_s": 9924.9,
+        "speedup_against_readme_ar_time": 407.5604670558799,
+        "status": "simulation_default_path_not_measured_latency"
+      },
+      {
+        "fields": 100,
+        "readme_output_tokens": 798,
+        "hardcoded_total_ms": 61.480000000000004,
+        "calculated_effective_tokens_s": 12979.83083929733,
+        "readme_effective_tokens_s": 12979.8,
+        "speedup_against_readme_ar_time": 500.0943396226415,
+        "status": "simulation_default_path_not_measured_latency"
+      }
+    ]
+  },
+  "capacity": [
+    {
+      "context_tokens": 131072,
+      "active_requests": 1,
+      "allocated_slots_including_scratch": 2,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 419435520,
+      "compressed_kv_index_gib_per_gpu_all_slots": 0.7812595367431641,
+      "four_gpu_aggregate_gib": 3.1250381469726562,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 131072,
+      "active_requests": 5,
+      "allocated_slots_including_scratch": 6,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 419435520,
+      "compressed_kv_index_gib_per_gpu_all_slots": 2.343778610229492,
+      "four_gpu_aggregate_gib": 9.375114440917969,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 131072,
+      "active_requests": 8,
+      "allocated_slots_including_scratch": 9,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 419435520,
+      "compressed_kv_index_gib_per_gpu_all_slots": 3.5156679153442383,
+      "four_gpu_aggregate_gib": 14.062671661376953,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 131072,
+      "active_requests": 20,
+      "allocated_slots_including_scratch": 21,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 419435520,
+      "compressed_kv_index_gib_per_gpu_all_slots": 8.203225135803223,
+      "four_gpu_aggregate_gib": 32.81290054321289,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 131072,
+      "active_requests": 30,
+      "allocated_slots_including_scratch": 31,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 419435520,
+      "compressed_kv_index_gib_per_gpu_all_slots": 12.109522819519043,
+      "four_gpu_aggregate_gib": 48.43809127807617,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 131072,
+      "active_requests": 50,
+      "allocated_slots_including_scratch": 51,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 419435520,
+      "compressed_kv_index_gib_per_gpu_all_slots": 19.922118186950684,
+      "four_gpu_aggregate_gib": 79.68847274780273,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 262144,
+      "active_requests": 1,
+      "allocated_slots_including_scratch": 2,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 838865920,
+      "compressed_kv_index_gib_per_gpu_all_slots": 1.562509536743164,
+      "four_gpu_aggregate_gib": 6.250038146972656,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 262144,
+      "active_requests": 5,
+      "allocated_slots_including_scratch": 6,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 838865920,
+      "compressed_kv_index_gib_per_gpu_all_slots": 4.687528610229492,
+      "four_gpu_aggregate_gib": 18.75011444091797,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 262144,
+      "active_requests": 8,
+      "allocated_slots_including_scratch": 9,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 838865920,
+      "compressed_kv_index_gib_per_gpu_all_slots": 7.031292915344238,
+      "four_gpu_aggregate_gib": 28.125171661376953,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 262144,
+      "active_requests": 20,
+      "allocated_slots_including_scratch": 21,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 838865920,
+      "compressed_kv_index_gib_per_gpu_all_slots": 16.406350135803223,
+      "four_gpu_aggregate_gib": 65.62540054321289,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 262144,
+      "active_requests": 30,
+      "allocated_slots_including_scratch": 31,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 838865920,
+      "compressed_kv_index_gib_per_gpu_all_slots": 24.218897819519043,
+      "four_gpu_aggregate_gib": 96.87559127807617,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 262144,
+      "active_requests": 50,
+      "allocated_slots_including_scratch": 51,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 838865920,
+      "compressed_kv_index_gib_per_gpu_all_slots": 39.843993186950684,
+      "four_gpu_aggregate_gib": 159.37597274780273,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 524288,
+      "active_requests": 1,
+      "allocated_slots_including_scratch": 2,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 1677726720,
+      "compressed_kv_index_gib_per_gpu_all_slots": 3.125009536743164,
+      "four_gpu_aggregate_gib": 12.500038146972656,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 524288,
+      "active_requests": 5,
+      "allocated_slots_including_scratch": 6,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 1677726720,
+      "compressed_kv_index_gib_per_gpu_all_slots": 9.375028610229492,
+      "four_gpu_aggregate_gib": 37.50011444091797,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 524288,
+      "active_requests": 8,
+      "allocated_slots_including_scratch": 9,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 1677726720,
+      "compressed_kv_index_gib_per_gpu_all_slots": 14.062542915344238,
+      "four_gpu_aggregate_gib": 56.25017166137695,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 524288,
+      "active_requests": 20,
+      "allocated_slots_including_scratch": 21,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 1677726720,
+      "compressed_kv_index_gib_per_gpu_all_slots": 32.81260013580322,
+      "four_gpu_aggregate_gib": 131.2504005432129,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 524288,
+      "active_requests": 30,
+      "allocated_slots_including_scratch": 31,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 1677726720,
+      "compressed_kv_index_gib_per_gpu_all_slots": 48.43764781951904,
+      "four_gpu_aggregate_gib": 193.75059127807617,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 524288,
+      "active_requests": 50,
+      "allocated_slots_including_scratch": 51,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 1677726720,
+      "compressed_kv_index_gib_per_gpu_all_slots": 79.68774318695068,
+      "four_gpu_aggregate_gib": 318.75097274780273,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1000000,
+      "active_requests": 1,
+      "allocated_slots_including_scratch": 2,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3200005120,
+      "compressed_kv_index_gib_per_gpu_all_slots": 5.960474014282227,
+      "four_gpu_aggregate_gib": 23.841896057128906,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1000000,
+      "active_requests": 5,
+      "allocated_slots_including_scratch": 6,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3200005120,
+      "compressed_kv_index_gib_per_gpu_all_slots": 17.88142204284668,
+      "four_gpu_aggregate_gib": 71.52568817138672,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1000000,
+      "active_requests": 8,
+      "allocated_slots_including_scratch": 9,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3200005120,
+      "compressed_kv_index_gib_per_gpu_all_slots": 26.82213306427002,
+      "four_gpu_aggregate_gib": 107.28853225708008,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1000000,
+      "active_requests": 20,
+      "allocated_slots_including_scratch": 21,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3200005120,
+      "compressed_kv_index_gib_per_gpu_all_slots": 62.58497714996338,
+      "four_gpu_aggregate_gib": 250.33990859985352,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1000000,
+      "active_requests": 30,
+      "allocated_slots_including_scratch": 31,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3200005120,
+      "compressed_kv_index_gib_per_gpu_all_slots": 92.38734722137451,
+      "four_gpu_aggregate_gib": 369.54938888549805,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1000000,
+      "active_requests": 50,
+      "allocated_slots_including_scratch": 51,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3200005120,
+      "compressed_kv_index_gib_per_gpu_all_slots": 151.99208736419678,
+      "four_gpu_aggregate_gib": 607.9683494567871,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1048576,
+      "active_requests": 1,
+      "allocated_slots_including_scratch": 2,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3355448320,
+      "compressed_kv_index_gib_per_gpu_all_slots": 6.250009536743164,
+      "four_gpu_aggregate_gib": 25.000038146972656,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1048576,
+      "active_requests": 5,
+      "allocated_slots_including_scratch": 6,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3355448320,
+      "compressed_kv_index_gib_per_gpu_all_slots": 18.750028610229492,
+      "four_gpu_aggregate_gib": 75.00011444091797,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1048576,
+      "active_requests": 8,
+      "allocated_slots_including_scratch": 9,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3355448320,
+      "compressed_kv_index_gib_per_gpu_all_slots": 28.12504291534424,
+      "four_gpu_aggregate_gib": 112.50017166137695,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1048576,
+      "active_requests": 20,
+      "allocated_slots_including_scratch": 21,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3355448320,
+      "compressed_kv_index_gib_per_gpu_all_slots": 65.62510013580322,
+      "four_gpu_aggregate_gib": 262.5004005432129,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1048576,
+      "active_requests": 30,
+      "allocated_slots_including_scratch": 31,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3355448320,
+      "compressed_kv_index_gib_per_gpu_all_slots": 96.87514781951904,
+      "four_gpu_aggregate_gib": 387.5005912780762,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    },
+    {
+      "context_tokens": 1048576,
+      "active_requests": 50,
+      "allocated_slots_including_scratch": 51,
+      "compressed_kv_index_bytes_per_gpu_per_slot": 3355448320,
+      "compressed_kv_index_gib_per_gpu_all_slots": 159.37524318695068,
+      "four_gpu_aggregate_gib": 637.5009727478027,
+      "scope": "BF16 compressed KV and index keys only; full mirrors; no weights, SWA, graph, RoPE, scratch or DSpark"
+    }
+  ],
+  "weight_storage": {
+    "per_expert_per_layer_bytes": 18800640,
+    "per_expert_across_40_layers_bytes": 752025600,
+    "per_expert_across_40_layers_gib": 0.70037841796875,
+    "shards_92_95_99_98_gib": [
+      64.434814453125,
+      66.53594970703125,
+      69.33746337890625,
+      68.6370849609375
+    ],
+    "shards_100_100_100_84_gib": [
+      70.037841796875,
+      70.037841796875,
+      70.037841796875,
+      58.831787109375
+    ],
+    "twelve_experts_freed_gib": 8.404541015625,
+    "engram_host_bytes": 202758032400,
+    "assumption": "Official config dimensions applied to current loader shapes; author checkpoint was not received.",
+    "engram_host_gib": 188.8331327587366
+  },
+  "readme_prefill_arithmetic": [
+    {
+      "input_tokens": 2048,
+      "readme_seconds": 4.27,
+      "calculated_tokens_s": 479.62529274004686,
+      "readme_tokens_s": 479.5,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 4096,
+      "readme_seconds": 7.38,
+      "calculated_tokens_s": 555.0135501355014,
+      "readme_tokens_s": 555.2,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 8192,
+      "readme_seconds": 13.74,
+      "calculated_tokens_s": 596.2154294032023,
+      "readme_tokens_s": 596.0,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 32768,
+      "readme_seconds": 82.75,
+      "calculated_tokens_s": 395.987915407855,
+      "readme_tokens_s": 396.0,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 65536,
+      "readme_seconds": 168.39,
+      "calculated_tokens_s": 389.1917572302394,
+      "readme_tokens_s": 389.2,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 131072,
+      "readme_seconds": 361.48,
+      "calculated_tokens_s": 362.5982073697023,
+      "readme_tokens_s": 362.6,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 262144,
+      "readme_seconds": 841.28,
+      "calculated_tokens_s": 311.60136934195515,
+      "readme_tokens_s": 311.6,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 524288,
+      "readme_seconds": 2156.68,
+      "calculated_tokens_s": 243.09957898251017,
+      "readme_tokens_s": 243.1,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 819200,
+      "readme_seconds": 4198.87,
+      "calculated_tokens_s": 195.10011026776252,
+      "readme_tokens_s": 195.1,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 983040,
+      "readme_seconds": 5582.28,
+      "calculated_tokens_s": 176.10008813603045,
+      "readme_tokens_s": 176.1,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    },
+    {
+      "input_tokens": 1000000,
+      "readme_seconds": 5729.2,
+      "calculated_tokens_s": 174.544439014173,
+      "readme_tokens_s": 174.54,
+      "status": "author_report_arithmetic_checked_raw_trace_absent"
+    }
+  ],
+  "readme_concurrency": [
+    {
+      "workers": 1,
+      "configured_max_context": 1048576,
+      "actual_prompt_tokens": null,
+      "readme_wall_output_tokens_s": 50.3,
+      "readme_peak_engine_tokens_s": 50.3,
+      "wall_divided_by_workers": 50.3,
+      "peak_divided_by_workers": 50.3,
+      "status": "author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user"
+    },
+    {
+      "workers": 2,
+      "configured_max_context": 1048576,
+      "actual_prompt_tokens": null,
+      "readme_wall_output_tokens_s": 70.7,
+      "readme_peak_engine_tokens_s": 78.2,
+      "wall_divided_by_workers": 35.35,
+      "peak_divided_by_workers": 39.1,
+      "status": "author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user"
+    },
+    {
+      "workers": 4,
+      "configured_max_context": 65536,
+      "actual_prompt_tokens": null,
+      "readme_wall_output_tokens_s": 86.8,
+      "readme_peak_engine_tokens_s": 98.4,
+      "wall_divided_by_workers": 21.7,
+      "peak_divided_by_workers": 24.6,
+      "status": "author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user"
+    },
+    {
+      "workers": 8,
+      "configured_max_context": 131072,
+      "actual_prompt_tokens": null,
+      "readme_wall_output_tokens_s": 119.2,
+      "readme_peak_engine_tokens_s": 119.9,
+      "wall_divided_by_workers": 14.9,
+      "peak_divided_by_workers": 14.9875,
+      "status": "author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user"
+    },
+    {
+      "workers": 16,
+      "configured_max_context": 32768,
+      "actual_prompt_tokens": null,
+      "readme_wall_output_tokens_s": 127.4,
+      "readme_peak_engine_tokens_s": 269.3,
+      "wall_divided_by_workers": 7.9625,
+      "peak_divided_by_workers": 16.83125,
+      "status": "author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user"
+    },
+    {
+      "workers": 24,
+      "configured_max_context": 32768,
+      "actual_prompt_tokens": null,
+      "readme_wall_output_tokens_s": 141.4,
+      "readme_peak_engine_tokens_s": 321.9,
+      "wall_divided_by_workers": 5.891666666666667,
+      "peak_divided_by_workers": 13.4125,
+      "status": "author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user"
+    },
+    {
+      "workers": 32,
+      "configured_max_context": 16384,
+      "actual_prompt_tokens": null,
+      "readme_wall_output_tokens_s": 159.8,
+      "readme_peak_engine_tokens_s": 376.5,
+      "wall_divided_by_workers": 4.99375,
+      "peak_divided_by_workers": 11.765625,
+      "status": "author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user"
+    },
+    {
+      "workers": 64,
+      "configured_max_context": 8192,
+      "actual_prompt_tokens": null,
+      "readme_wall_output_tokens_s": 167.5,
+      "readme_peak_engine_tokens_s": 475.6,
+      "wall_divided_by_workers": 2.6171875,
+      "peak_divided_by_workers": 7.43125,
+      "status": "author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user"
+    }
+  ],
+  "ced_dependency_counterexample": {
+    "toy_model": "two causal sliding-average layers, window=2",
+    "input": [
+      1.0,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "full_last_output": 3.0,
+    "tail_only_last_output": 3.25,
+    "equivalent": false,
+    "custom_runtime_tail_layers": 19,
+    "official_architecture_decoder_layers": 20,
+    "actual_window": 128,
+    "single_last_output_receptive_span_custom_path": 2414,
+    "all_final_128_states_conservative_input_span_custom_path": 2541,
+    "interpretation": "Illustrates intentional approximate bounded replay, as declared in official report sections 2.2 and 3.2.2 (PDF pages 9 and 20). Non-equivalence itself is not a runtime bug or evidence of model failure. Does not quantify errors in DeepSeek logits or tasks; implementation truncation boundaries and task quality need separate verification. Global sparse inherited KV remains an additional attention branch."
+  },
+  "one_million_chunk_arithmetic": {
+    "full_chunks": 488,
+    "correct_tail": 576,
+    "readme_tail": 496,
+    "readme_sum": 999920
+  },
+  "source_anchors": {
+    "jev_default_cli": {
+      "file": "dsv41/bench_jev.py",
+      "lines": [
+        196,
+        293
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/bench_jev.py#L196-L293"
+    },
+    "jev_main_calls_and_consistency": {
+      "file": "dsv41/bench_jev.py",
+      "lines": [
+        302,
+        378
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/bench_jev.py#L302-L378"
+    },
+    "jev_actual_http_benchmark": {
+      "file": "examples/benchmarks/bench_jev_structured.py",
+      "lines": [
+        158,
+        242
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/examples/benchmarks/bench_jev_structured.py#L158-L242"
+    },
+    "jev_first_token_scoring": {
+      "file": "dsv41/jev.py",
+      "lines": [
+        505,
+        544
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/jev.py#L505-L544"
+    },
+    "full_mirror_allocation": {
+      "file": "dsv41/load.py",
+      "lines": [
+        286,
+        421
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/load.py#L286-L421"
+    },
+    "expert_allocation": {
+      "file": "dsv41/load.py",
+      "lines": [
+        181,
+        208
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/load.py#L181-L208"
+    },
+    "ced_sequential": {
+      "file": "dsv41/model.py",
+      "lines": [
+        2349,
+        2407
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/model.py#L2349-L2407"
+    },
+    "ced_pipeline": {
+      "file": "dsv41/model.py",
+      "lines": [
+        2517,
+        2550
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/model.py#L2517-L2550"
+    },
+    "global_attention_at_ratio_one": {
+      "file": "dsv41/model.py",
+      "lines": [
+        1263,
+        1319
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/model.py#L1263-L1319"
+    },
+    "serial_prefill_then_decode": {
+      "file": "dsv41/engine.py",
+      "lines": [
+        4415,
+        4574
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/engine.py#L4415-L4574"
+    },
+    "buffered_chat_stream": {
+      "file": "dsv41/serve.py",
+      "lines": [
+        237,
+        267
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/serve.py#L237-L267"
+    },
+    "peak_metric": {
+      "file": "dsv41/stats.py",
+      "lines": [
+        403,
+        449
+      ],
+      "url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/stats.py#L403-L449"
+    }
+  },
+  "validation": {
+    "all_source_hashes_match": true,
+    "jev_default_calls_exclude_engine": true,
+    "hardcoded_formula_verified": true,
+    "toy_receptive_field_counterexample_passed": true,
+    "gpu_performance_reproduced": false
+  }
+}

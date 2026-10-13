@@ -1,19 +1,54 @@
 # Three-Year TCO — On-Premise versus Commercial APIs
 
+## Current cost inputs — 12 October 2026
+
+The [Week 7 research](../../weekly/week-07-plan.md) uses **Spark＋Qwen27** for
+personal work and **DeepSeek-V4.1-Flash** for shared Agents. Spark hardware is
+**CNY58,407–61,840** rounded to whole CNY, an analytical China-delivery budget derived from the current
+US storefront price. Initial implementation adds CNY10,000–20,000 for one user
+or CNY20,000–37,500 for a shared setup; these alternatives are not added together.
+See [Scenario 1](scenario-1-personal-agent-2026-09-24.md).
+
+[Complete-server budgets](server-gpu-procurement-2026-10-12.md), in CNY10,000:
+A100 eight-card refurbished SXM **91–102**; H100 eight-card SXM **285–298**;
+H200 four-card NVL **161–283**; H200 eight-card SXM **291–304**. These are dated
+analytical budgets with separately identified foreign price anchors, tax,
+contingency and incremental support. The [price ledger](data/hardware-prices-2026-10-12.json)
+records each component and excludes unquoted software/integration and facility
+changes. Existing in-country equipment uses incremental reuse costs separately.
+
+For [Scenario 3](scenario-3-company-agent-2026-09-23.md), compare one TP8 and two
+TP4 instances on the same eight-H200 purchase. Current cache evidence supports
+20×1M as a capacity candidate. Fixed-full-context latency and accepted-task
+throughput remain unmeasured, so per-user hardware allocation is not yet a
+cost per SLA-qualified concurrent slot. Add CPU tool workers only when they are
+incremental: the historical two-node allowance is CNY120,000–260,000. The GPU
+server's host RAM/CPU and existing NAS/RAG services are counted once.
+
+The September sections below preserve earlier configuration and price inputs.
+Their MiMo task simulations and short-context RAG performance do not supply the
+new DeepSeek 1M workload rate.
+
 **Phase 3 — Weeks 6–8.** The three-year comparison horizon and API alternative are
 confirmed in [the final project plan](../../PROJECT_PLAN.md).
-Status (21 September 2026): calculation framework with initial Phase 2 hardware
-price inputs. Full three-year operating costs and workload volumes remain to be measured.
+Status (12 October 2026): updated acquisition and capacity inputs; full three-year operating costs, API consumption and accepted-task volumes remain open.
 
-**24 September update:** [Scenario 1](scenario-1-personal-agent-2026-09-24.md)
-adds six workstation budgets, one shared machine versus three independent
-machines, and explicit one-time deployment labour. The [cost calculations](data/scenario-1-personal-agent-2026-09-24/results.json)
-reuse dated hardware observations and charge common setup once for a three-machine
-rollout. Recurring electricity, support and accepted-task volumes remain separate
-inputs for this three-year model.
-The revised Scenario 1 comparison uses full 131K / 262K / 524K sessions, so
-shared versus individual-machine costs are matched to the same resident context,
-KV precision, checkpoint allowance and per-user performance target.
+**12 October update:** [external Spark measurements](dgx-spark-qwen27-external-benchmark-2026-10-12.md)
+provide latency and output-rate inputs for a separate FP8-KV/MTP3 branch. Use the
+full timing scope: CLI end-to-end output is 23.70/26.99 tokens/s at concurrency
+4/8 for 131072 input and 8192 output per request; common decode-window rates
+58.66/83.91 describe another interval. Task acceptance, human review and annual
+volumes remain separate inputs. Cold random-token rates are not warm Agent task
+rates. The immediate priority is the Thursday deployment presentation; these inputs
+then feed the full TCO and pilot assessment.
+
+**24 September acquisition baseline:** [Scenario 1](scenario-1-personal-agent-2026-09-24.md)
+now compares one/two RTX PRO 6000D, M5 Ultra 256GB and DGX Spark using FP8-family
+weights and full-precision KV. [Four-hardware cost inputs](data/scenario-1-personal-agent-2026-09-24/four-hardware-comparison.json)
+replace the earlier six-workstation selection for current comparisons. Legacy
+shared/independent-machine calculations remain historical. Add one-time software
+deployment separately and count included server delivery/hardware support once.
+Recurring electricity, support and accepted-task volume feed the three-year model.
 
 **23 September update:** [Scenario 2](scenario-2-enterprise-rag-2026-09-23.md)
 adds the Onyx Enterprise and Milvus/Open WebUI alternatives, two application/index

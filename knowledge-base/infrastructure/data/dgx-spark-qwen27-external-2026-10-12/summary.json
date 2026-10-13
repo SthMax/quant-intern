@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "source_id": "TECH-076",
+  "received_date": "2026-10-12",
+  "main_run_date": null,
+  "provenance": {
+    "kind": "user_supplied_external_measurement_summary",
+    "executor": "User friend; identity omitted",
+    "raw_files_received": false,
+    "independently_reproduced": false,
+    "test_environment": "External privately operated DGX Spark; not institutional deployment",
+    "privacy": "Hostnames and connection addresses omitted; primary and secondary machines kept separate"
+  },
+  "configuration": {
+    "model": "Qwen/Qwen3.8-27B-FP8",
+    "model_revision": null,
+    "engine": "vLLM",
+    "engine_version": null,
+    "version_reference": "environment.json (not supplied)",
+    "hardware": "Single NVIDIA DGX Spark GB10",
+    "execution_host_alias": "primary",
+    "device_count": 1,
+    "tensor_parallel_size": 1,
+    "weight_precision": "FP8",
+    "kv_precision": "FP8",
+    "kv_scales": "Engine defaults; no calibration reported",
+    "mtp_num_speculative_tokens": 3,
+    "attention_backend": "FlashInfer",
+    "yarn_factor": 4,
+    "native_context_tokens": 262144,
+    "max_model_len": 1000000,
+    "draft_max_model_len_after_fix": 1000000,
+    "draft_max_model_len_before_fix": 262144,
+    "max_num_seqs": 8,
+    "max_num_batched_tokens": 16384,
+    "gpu_memory_utilization": 0.8,
+    "enable_prefix_caching": false,
+    "text_only": true,
+    "weights_modified_for_fix": false,
+    "access": "Separate client, direct high-speed link and SSH tunnel; inference entirely on the single primary GB10",
+    "primary_nvidia_driver": "580.142",
+    "input_generation": "Custom exact-length cases send random ordinary token IDs; CLI uses random dataset with 131072 input tokens",
+    "input_length_check": "API usage",
+    "low_length_runs_before_fix": [
+      1024,
+      50000,
+      100000
+    ],
+    "post_restart_sanity_case": "fixed_sanity_50k",
+    "initial_warmup_and_pilot_excluded": true,
+    "custom_exact_length_sampling": {
+      "temperature": 0,
+      "ignore_eos": true
+    },
+    "cli_ignore_eos": true
+  },
+  "startup": {
+    "model_and_drafter_gib": 28.47,
+    "kv_pool_gib": 59.73,
+    "estimated_shared_kv_token_pool": 1806907,
+    "service_state": "after draft length fix",
+    "pool_scope": "Shared across resident requests; single request input+output limit is 1000000"
+  },
+  "single_requests": [
+    {
+      "input_tokens": 1024,
+      "completed": 3,
+      "submitted": 3,
+      "output_tokens_per_request": 2048,
+      "mean_ttft_s": 0.6,
+      "engine_prefill_tokens_s": 1876.1,
+      "mean_decode_tokens_s": 20.53,
+      "decode_min_tokens_s": 17.37,
+      "decode_max_tokens_s": 22.12
+    },
+    {
+      "input_tokens": 50000,
+      "completed": 2,
+      "submitted": 2,
+      "output_tokens_per_request": 2048,
+      "mean_ttft_s": 63.1,
+      "engine_prefill_tokens_s": 795.1,
+      "mean_decode_tokens_s": 21.01,
+      "decode_min_tokens_s": 20.95,
+      "decode_max_tokens_s": 21.07
+    },
+    {
+      "input_tokens": 100000,
+      "completed": 2,
+      "submitted": 2,
+      "output_tokens_per_request": 2048,
+      "mean_ttft_s": 144.8,
+      "engine_prefill_tokens_s": 691.7,
+      "mean_decode_tokens_s": 20.11,
+      "decode_min_tokens_s": 20.1,
+      "decode_max_tokens_s": 20.11
+    },
+    {
+      "input_tokens": 300000,
+      "completed": 1,
+      "submitted": 1,
+      "output_tokens_per_request": 2048,
+      "mean_ttft_s": 658.9,
+      "engine_prefill_tokens_s": 455.6,
+      "mean_decode_tokens_s": 17.23,
+      "decode_min_tokens_s": 17.23,
+      "decode_max_tokens_s": 17.23
+    },
+    {
+      "input_tokens": 500000,
+      "completed": 1,
+      "submitted": 1,
+      "output_tokens_per_request": 2048,
+      "mean_ttft_s": 1470.1,
+      "engine_prefill_tokens_s": 340.3,
+      "mean_decode_tokens_s": 14.82,
+      "decode_min_tokens_s": 14.82,
+      "decode_max_tokens_s": 14.82
+    }
+  ],
+  "three_simultaneous_requests": [
+    {
+      "input_tokens_per_request": 50000,
+      "completed": 3,
+      "submitted": 3,
+      "output_tokens_per_request": 4096,
+      "full_decode_mean_per_request_tokens_s": 16.85,
+      "common_decode_window_s": 207.2,
+      "common_window_mean_per_request_tokens_s": 19.69,
+      "common_window_total_tokens_s": 59.08
+    },
+    {
+      "input_tokens_per_request": 100000,
+      "completed": 3,
+      "submitted": 3,
+      "output_tokens_per_request": 4096,
+      "full_decode_mean_per_request_tokens_s": 12.45,
+      "common_decode_window_s": 232.2,
+      "common_window_mean_per_request_tokens_s": 17.47,
+      "common_window_total_tokens_s": 52.41
+    }
+  ],
+  "cli_benchmark": [
+    {
+      "concurrency": 4,
+      "completed": 4,
+      "submitted": 4,
+      "input_tokens_per_request": 131072,
+      "output_tokens_per_request": 8192,
+      "total_input_tokens": 524288,
+      "total_output_tokens": 32768,
+      "end_to_end_output_tokens_s": 23.7,
+      "mean_ttft_s": 533.4,
+      "mean_tpot_ms": 103.33
+    },
+    {
+      "concurrency": 8,
+      "completed": 8,
+      "submitted": 8,
+      "input_tokens_per_request": 131072,
+      "output_tokens_per_request": 8192,
+      "total_input_tokens": 1048576,
+      "total_output_tokens": 65536,
+      "end_to_end_output_tokens_s": 26.99,
+      "mean_ttft_s": 952.6,
+      "mean_tpot_ms": 179.33
+    }
+  ],
+  "cli_common_decode_engine_sampling": [
+    {
+      "concurrency": 4,
+      "sampling_window_s": 530.8,
+      "window_output_tokens": 31136,
+      "decode_total_tokens_s": 58.66,
+      "total_divided_by_concurrency_tokens_s": 14.66
+    },
+    {
+      "concurrency": 8,
+      "sampling_window_s": 737.9,
+      "window_output_tokens": 61915,
+      "decode_total_tokens_s": 83.91,
+      "total_divided_by_concurrency_tokens_s": 10.49
+    }
+  ],
+  "mtp_diagnostics": [
+    {
+      "case": "single_300k_broken_mtp",
+      "decode_tokens_s": 5.8,
+      "draft_acceptance_percent": 0.0,
+      "mean_acceptance_length": 1.0,
+      "role": "excluded_failure_diagnostic"
+    },
+    {
+      "case": "fixed_sanity_50k",
+      "decode_tokens_s": 19.96,
+      "draft_acceptance_percent": 91.7,
+      "mean_acceptance_length": 3.75,
+      "role": "post_restart_sanity_not_main_table"
+    },
+    {
+      "case": "single_300k",
+      "decode_tokens_s": 17.23,
+      "draft_acceptance_percent": 99.4,
+      "mean_acceptance_length": 3.98,
+      "role": "main_single"
+    },
+    {
+      "case": "single_500k",
+      "decode_tokens_s": 14.82,
+      "draft_acceptance_percent": 97.8,
+      "mean_acceptance_length": 3.93,
+      "role": "main_single"
+    },
+    {
+      "case": "parallel3_50k",
+      "decode_tokens_s": 16.85,
+      "draft_acceptance_percent": 99.2,
+      "mean_acceptance_length": 3.98,
+      "role": "whole_decode_mean_per_request"
+    },
+    {
+      "case": "parallel3_100k",
+      "decode_tokens_s": 12.45,
+      "draft_acceptance_percent": 99.3,
+      "mean_acceptance_length": 3.98,
+      "role": "whole_decode_mean_per_request"
+    }
+  ],
+  "memory_observations": [
+    {
+      "case": "single_50k",
+      "peak_kv_pool_percent": 3.89,
+      "min_host_available_gib": 13.05,
+      "preemptions": 0
+    },
+    {
+      "case": "single_100k",
+      "peak_kv_pool_percent": 6.57,
+      "min_host_available_gib": 13.08,
+      "preemptions": 0
+    },
+    {
+      "case": "single_300k",
+      "peak_kv_pool_percent": 17.48,
+      "min_host_available_gib": 13.05,
+      "preemptions": 0
+    },
+    {
+      "case": "single_500k",
+      "peak_kv_pool_percent": 28.35,
+      "min_host_available_gib": 13.01,
+      "preemptions": 0
+    },
+    {
+      "case": "parallel3_50k",
+      "peak_kv_pool_percent": 12.0,
+      "min_host_available_gib": 13.01,
+      "preemptions": 0
+    },
+    {
+      "case": "parallel3_100k",
+      "peak_kv_pool_percent": 20.35,
+      "min_host_available_gib": 13.01,
+      "preemptions": 0
+    },
+    {
+      "case": "capacity_1m",
+      "peak_kv_pool_percent": 55.39,
+      "min_host_available_gib": 12.37,
+      "preemptions": 0
+    }
+  ],
+  "capacity_probe": {
+    "case": "capacity_1m",
+    "submitted": 1,
+    "completed": 1,
+    "input_tokens": 999936,
+    "output_tokens": 64,
+    "total_tokens": 1000000,
+    "ttft_s": 4815.8,
+    "reported_ttft_minutes": 80.26,
+    "engine_prefill_tokens_s": 207.68,
+    "short_decode_tokens_s": 9.83,
+    "purpose": "Capacity validation; 64-token decode is not a 2048-token steady-speed sample"
+  },
+  "secondary_machine": {
+    "alias": "secondary",
+    "nvidia_driver": "580.173.02",
+    "observed_gpu_utilization_percent": 96,
+    "observed_clock_mhz": 611,
+    "observed_power_w": 15,
+    "requested_clock_mhz": 2418,
+    "clock_after_request_mhz": 611,
+    "dynamic_clock_restored": true,
+    "reboot_power_cycle_firmware_change_performed": false,
+    "reported_cause": "Unconfirmed; clock, driver and other device differences not isolated",
+    "original_directory_name": "qwen38-single-20260928",
+    "directory_date_is_not_primary_run_date": true,
+    "samples": [
+      {
+        "input_tokens": 50000,
+        "prefill_tokens_s_approx": 456,
+        "decode_tokens_s": 15.91
+      },
+      {
+        "input_tokens": 100000,
+        "prefill_tokens_s_approx": 352,
+        "decode_tokens_s": 14.69
+      }
+    ]
+  },
+  "measurement_methods": {
+    "prefill": "Actual input token total divided by Prometheus request_prefill_time_seconds_sum delta; includes whole chunked-prefill engine interval. Single request, no concurrent load or prefix hit.",
+    "ttft": "Client HTTP, validation, scheduling, prefill and first generation step included.",
+    "decode": "Streaming endpoint estimate from output token increments in cumulative usage between first and last content blocks; excludes TTFT. MTP may merge multiple tokens into one SSE block.",
+    "parallel3": "Barrier submission; whole decode can overlap other requests prefill. Common window begins at latest first token and ends at earliest completion; cumulative SSE tokens interpolated to window endpoints. Zero window means no three-way simultaneous decode.",
+    "cli_e2e": "Total usage output tokens divided by benchmark elapsed time, including prefill and request completion overhead.",
+    "cli_peak_and_itl": "Provider reports inspecting installed calculate_metrics: peak output counts SSE arrivals and ITL counts intervals between SSE blocks. Installed source not supplied; current online docs do not verify that installed implementation.",
+    "cli_tpot": "Uses actual usage output token counts, with a timing interval different from the engine common-window sample.",
+    "engine_sampling": "Every 2 seconds; all requests have produced a first token, remain active, none queued; trim 10 seconds at each edge. Aggregate/concurrency is a mean estimate, not individually measured request rates.",
+    "memory": "2-second telemetry; KV usage is a fraction of preallocated engine pool, distinct from total system memory use.",
+    "statistics": "Reported means/ranges copied; per-request samples, interpolation and engine-delta reconstruction require raw files."
+  },
+  "not_executed_or_evaluated": [
+    "CLI long stress run of 100 requests x 32768 output tokens",
+    "KV-scale calibration",
+    "Financial NLP or coding task quality",
+    "Ultra-long-context answer quality",
+    "Institutional local GPU deployment",
+    "This assistant rerunning or connecting to test devices"
+  ],
+  "interfering_services": "DeepSeek systemd service and watchdog reported stopped; rollback commands in environment.json. Host not specified in summary; no changes performed by this assistant.",
+  "referenced_files": [
+    {
+      "name": "environment.json",
+      "received": false
+    },
+    {
+      "name": "launch.sh",
+      "received": false
+    },
+    {
+      "name": "launch-tunnel.sh",
+      "received": false
+    },
+    {
+      "name": "reference-bench.sh",
+      "received": false
+    },
+    {
+      "name": "cli_live_metrics.csv",
+      "received": false
+    },
+    {
+      "name": "cli_decode_sampling.json",
+      "received": false
+    },
+    {
+      "name": "suite.log",
+      "received": false
+    },
+    {
+      "name": "CLI JSON/log",
+      "received": false
+    },
+    {
+      "name": "gpu_telemetry.csv",
+      "received": false
+    },
+    {
+      "name": "summary.csv",
+      "received": false
+    },
+    {
+      "name": "Custom exact-length case JSON files",
+      "received": false
+    },
+    {
+      "name": "qwen38-single-20260928/",
+      "received": false
+    }
+  ],
+  "links": {
+    "model_card": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/blob/main/README.md",
+    "vllm_bench_docs": "https://docs.vllm.ai/en/latest/cli/bench/serve/",
+    "mtp_issue": "https://github.com/vllm-project/vllm/issues/58080"
+  },
+  "limits_for_comparison": {
+    "previous_baseline": "Qwen3.8-27B FP8 weights, BF16/FP16 KV, no MTP; 90% memory budget after UMA reserves, total context 131072/262144/524288 including 8192 output tokens; analytical estimates",
+    "new_branch": "FP8 KV, MTP3, 80% engine memory budget, YaRN4, random inputs and independently specified output lengths; external measured summary",
+    "production_precision_requirement_changed": false,
+    "old_estimates_overwritten": false,
+    "warm_prefix_measurement_available": false
+  }
+}

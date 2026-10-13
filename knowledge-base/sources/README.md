@@ -1,11 +1,34 @@
 # 原始来源与研究阅读入口
 
+## 2026年10月12日新增：本周三条研究线与整机价格
+
+新增TECH-077–085、087，连同TECH-076共**211项：192主阅读、15辅助、4来源链**。TECH-086未使用。完整上游克隆位于忽略跟踪的`.research-workspace/repos/`；下表只归档实际引用的原文、代码、结果和许可。代码审阅、CPU复算与GPU实测分别登记。
+
+| ID | 原文与版本记录 | 研究用途 |
+|---|---|---|
+| TECH-077 | [DeepSeek-V4.1-Flash on A100 (sm80): custom runtime, code and benchmark claims](TECH-077/original.md) · [metadata](TECH-077/metadata.json) | [研究笔记](../infrastructure/deepseek-a100-project-review-2026-10-12.md)；Weight placement, mirrored KV, CED and benchmark call-chain audit; Jev default simulated timing is not measured throughput |
+| TECH-078 | [深入理解 AI Infra：量化分析与系统设计（固定版本精读与复算来源包）](TECH-078/original.md) · [metadata](TECH-078/metadata.json) | [研究笔记](../infrastructure/ai-infra-book-reading-2026-10-12.md)；Chapters 8, 9, 11 and related model/parallelism sections; teaching assumptions and own CPU recalculation separated |
+| TECH-079 | [DeepSeek-AI official V4.1 Flash model snapshot](TECH-079/original.md) · [metadata](TECH-079/metadata.json) | [研究笔记](../infrastructure/scenario-3-company-agent-2026-09-23.md)；Checkpoint identity and bytes, Engram host table, context and shared KV structure |
+| TECH-080 | [vLLM DeepSeek V4.1 and hybrid-cache implementation](TECH-080/original.md) · [metadata](TECH-080/metadata.json) | [研究笔记](../infrastructure/scenario-3-company-agent-2026-09-23.md)；Per-rank Hopper cache format, page alignment, Engram and pinned preview/nightly path; static inspection |
+| TECH-081 | [SGLang DeepSeek V4.1 cookbook and deployment matrix](TECH-081/original.md) · [metadata](TECH-081/metadata.json) | [研究笔记](../infrastructure/scenario-3-company-agent-2026-09-23.md)；Published hardware/feature compatibility, CED and synthetic DSpark benchmark settings |
+| TECH-082 | [Qwen27 long-context serving and vLLM prefix-cache semantics](TECH-082/original.md) · [metadata](TECH-082/metadata.json) | [研究笔记](../infrastructure/scenario-1-personal-agent-2026-09-24.md)；Qwen long-context and MTP limits, prefix/state reuse and scheduling; no new Spark measurement |
+| TECH-083 | [OpenCode and Pi custom endpoints, model context limits and compaction](TECH-083/original.md) · [metadata](TECH-083/metadata.json) | [研究笔记](../infrastructure/scenario-1-personal-agent-2026-09-24.md)；Harness context/output declarations, endpoint configuration, history compaction and source code |
+| TECH-084 | [InferenceX DeepSeek-V4.1-Flash public AgentX benchmark rows and startup log excerpts](TECH-084/original.md) · [metadata](TECH-084/metadata.json) | [研究笔记](../infrastructure/scenario-3-company-agent-2026-09-23.md)；H100/H200 actual startup pools and variable-length AgentX replay; synthetic acceptance, not full-1M SLA |
+| TECH-085 | [NVIDIA DGX Spark hardware and US storefront price observation](TECH-085/original.md) · [metadata](TECH-085/metadata.json) | [研究笔记](../infrastructure/scenario-1-personal-agent-2026-09-24.md)；DGX Spark hardware and USD6950 posted price; CNY delivery budget analytical, stock unconfirmed |
+| TECH-087 | [A100 H100 H200 complete-system prices and China delivery conditions](TECH-087/original.md) · [metadata](TECH-087/metadata.json) | [研究笔记](../infrastructure/server-gpu-procurement-2026-10-12.md)；Exact server BOM and warranties, conditional review policy and issuer shipment/tariff disclosure; budgets analytical |
+
+
+## 2026年10月12日新增 外部DGX Spark性能测试
+
+[TECH-076](TECH-076/original.md)登记用户提供的朋友实测总结：Qwen3.8-27B-FP8、单GB10、FP8 KV、MTP3；覆盖单请求、3／4／8路、1M容量与长度门限诊断。27行结果保留在来源记录和结构化数据，原始环境／日志文件待补。它属于用户提供的外部实验总结，与官方资料、项目分析估算分别标识。[分析](../infrastructure/dgx-spark-qwen27-external-benchmark-2026-10-12.md)。当前201项：182主阅读、15辅助、4来源链。
+
+
 
 ## 2026年9月24日新增：场景一个人与三人工作站
 
 [TECH-075：Coding Agent、量化制品与推理容量依据](TECH-075/original.md)保存官方软件／硬件原文，并将量化页面观察与原件分开记录。对应[场景一方案](../infrastructure/scenario-1-personal-agent-2026-09-24.md)。当前登记200项：181主阅读、15辅助、4来源链。
 
-2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。当时为125个来源ID。2026-09-16累计新增19项Phase 2技术/许可来源，并将5项首轮模型资料转为历史辅助阅读，2026-09-17再新增23项serving/harness来源，当日为167项；9月18日先补充13项，再新增8项Harness专题来源，9月22日新增4项MiMo资料，9月23日再新增4组场景一资料，同日新增3组场景二资料，**当前199个稳定来源ID：180个主阅读记录、15个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
+2026-09-08完成A/B/C/D清理，2026-09-09补充重点研究与监管复核。当时为125个来源ID。2026-09-16累计新增19项Phase 2技术/许可来源，并将5项首轮模型资料转为历史辅助阅读，2026-09-17再新增23项serving/harness来源，当日为167项；9月18日先补充13项，再新增8项Harness专题来源，9月22日新增4项MiMo资料，9月23日再新增4组场景一资料，同日新增3组场景二资料，**截至9月23日为199个稳定来源ID：180个主阅读记录、15个辅助记录、4个来源链索引。** 这些是阅读分组，不是部署数或证据等级；主阅读记录中仍有未取得正文的条目。
 
 默认检索按[reading-index.json](../reading-index.json)中的`collection_role=main`及`reading_path`取文本。需要身份、历史或供应商背景时再读[辅助目录](../reference/README.md)。不要把原始HTML/PDF、历史审计、图片元数据或来源链索引递归当作新文章。
 

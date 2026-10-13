@@ -1,0 +1,12 @@
+input_tokens,readme_seconds,calculated_tokens_s,readme_tokens_s,status
+2048,4.27,479.62529274004686,479.5,author_report_arithmetic_checked_raw_trace_absent
+4096,7.38,555.0135501355014,555.2,author_report_arithmetic_checked_raw_trace_absent
+8192,13.74,596.2154294032023,596.0,author_report_arithmetic_checked_raw_trace_absent
+32768,82.75,395.987915407855,396.0,author_report_arithmetic_checked_raw_trace_absent
+65536,168.39,389.1917572302394,389.2,author_report_arithmetic_checked_raw_trace_absent
+131072,361.48,362.5982073697023,362.6,author_report_arithmetic_checked_raw_trace_absent
+262144,841.28,311.60136934195515,311.6,author_report_arithmetic_checked_raw_trace_absent
+524288,2156.68,243.09957898251017,243.1,author_report_arithmetic_checked_raw_trace_absent
+819200,4198.87,195.10011026776252,195.1,author_report_arithmetic_checked_raw_trace_absent
+983040,5582.28,176.10008813603045,176.1,author_report_arithmetic_checked_raw_trace_absent
+1000000,5729.2,174.544439014173,174.54,author_report_arithmetic_checked_raw_trace_absent

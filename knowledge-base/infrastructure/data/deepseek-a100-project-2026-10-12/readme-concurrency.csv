@@ -1,0 +1,9 @@
+workers,configured_max_context,actual_prompt_tokens,readme_wall_output_tokens_s,readme_peak_engine_tokens_s,wall_divided_by_workers,peak_divided_by_workers,status
+1,1048576,,50.3,50.3,50.3,50.3,author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user
+2,1048576,,70.7,78.2,35.35,39.1,author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user
+4,65536,,86.8,98.4,21.7,24.6,author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user
+8,131072,,119.2,119.9,14.9,14.9875,author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user
+16,32768,,127.4,269.3,7.9625,16.83125,author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user
+24,32768,,141.4,321.9,5.891666666666667,13.4125,author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user
+32,16384,,159.8,376.5,4.99375,11.765625,author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user
+64,8192,,167.5,475.6,2.6171875,7.43125,author_report_short_prompts; horizons_are_not_actual_input; divisions_not_measured_per_user

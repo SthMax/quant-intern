@@ -1,0 +1,66 @@
+{
+  "source_id": "TECH-083",
+  "title": "OpenCode and Pi custom endpoints, model context limits and compaction",
+  "accessed_at": "2026-10-12",
+  "human_check_status": "pending",
+  "evidence_state": "verified-primary",
+  "text_kind": "verbatim_primary_documentation_and_code",
+  "verification_scope": "Documented configuration semantics at fixed revisions; no end-to-end model/Harness test",
+  "files": {
+    "pi__packages__coding-agent__docs__models.md": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/441f5767c4fe4eebbec6ebe9bb4a57f430871eba/packages/coding-agent/docs/models.md",
+      "revision": "441f5767c4fe4eebbec6ebe9bb4a57f430871eba",
+      "bytes": 12614,
+      "sha256": "d5bd0d886f0e1541648081ae01da91e1a218cd454713336d5100fc820f6c1527"
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/441f5767c4fe4eebbec6ebe9bb4a57f430871eba/packages/coding-agent/docs/models.md",
+      "revision": "441f5767c4fe4eebbec6ebe9bb4a57f430871eba",
+      "bytes": 12614,
+      "sha256": "d5bd0d886f0e1541648081ae01da91e1a218cd454713336d5100fc820f6c1527"
+    },
+    "pi__packages__coding-agent__docs__compaction.md": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/441f5767c4fe4eebbec6ebe9bb4a57f430871eba/packages/coding-agent/docs/compaction.md",
+      "revision": "441f5767c4fe4eebbec6ebe9bb4a57f430871eba",
+      "bytes": 24107,
+      "sha256": "163e80b4ec1580c6e967507492715a0acd878db8d4e4586dfd8a6001d8ec7822"
+    },
+    "pi__packages__coding-agent__docs__settings.md": {
+      "requested_url": "https://raw.githubusercontent.com/earendil-works/pi/441f5767c4fe4eebbec6ebe9bb4a57f430871eba/packages/coding-agent/docs/settings.md",
+      "revision": "441f5767c4fe4eebbec6ebe9bb4a57f430871eba",
+      "bytes": 13498,
+      "sha256": "dac1f280241a466121028bbf1bec305055357854a6a5704740a211dcfce9df22"
+    },
+    "opencode__services__www__src__docs__content__models.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/anomalyco/opencode/bcf23b6775c79a429b1511b255d6d88ab0248d4a/services/www/src/docs/content/models.mdx",
+      "revision": "bcf23b6775c79a429b1511b255d6d88ab0248d4a",
+      "bytes": 12327,
+      "sha256": "da8025042fdd202cffc7fcd69f251da17a6a80047d8723721a7746313ee7c9e9"
+    },
+    "opencode__services__www__src__docs__content__config.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/anomalyco/opencode/bcf23b6775c79a429b1511b255d6d88ab0248d4a/services/www/src/docs/content/config.mdx",
+      "revision": "bcf23b6775c79a429b1511b255d6d88ab0248d4a",
+      "bytes": 12096,
+      "sha256": "c186e17d17abcab40e28cab1c0e9d09efde9d3cd407e85fba0cfa00e5cbe38ea"
+    },
+    "opencode__packages__web__src__content__docs__config.mdx": {
+      "requested_url": "https://raw.githubusercontent.com/anomalyco/opencode/bcf23b6775c79a429b1511b255d6d88ab0248d4a/packages/web/src/content/docs/config.mdx",
+      "revision": "bcf23b6775c79a429b1511b255d6d88ab0248d4a",
+      "bytes": 26670,
+      "sha256": "939b1a7d7a5bf27245e8f13dd5add050a722541812a5b6430c2c887f895e41ad"
+    },
+    "evidence-note.md": {
+      "derived_from": "authored agent source inspection",
+      "text_kind": "authored_analysis_not_original",
+      "bytes": 908,
+      "sha256": "2f0ac5275a023615b03e98e431692ccea8a85db399209545ca8b6028fe902a5a"
+    }
+  },
+  "reviewer": "Codex deployment research agent; static primary document, data and code inspection",
+  "publication_date": "not stated; see fixed commit or experiment date",
+  "evidence_note": "evidence-note.md",
+  "used_in": [
+    "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md",
+    "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md"
+  ]
+}

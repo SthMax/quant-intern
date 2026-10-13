@@ -1,0 +1,103 @@
+{
+  "source_id": "TECH-087",
+  "title": "A100 H100 H200 complete-system prices and China delivery conditions",
+  "collection_role": "main",
+  "evidence_state": "verified-primary",
+  "text_kind": "authored_source_index",
+  "accessed": "2026-10-12",
+  "reviewer": "Root agent; direct pages, HTML default-option extraction, government PDF and issuer filing",
+  "human_check_status": "pending",
+  "scope": "Public vendor posted configurations and stated support; government policy and NVIDIA issuer disclosure. No transaction-specific China quote or licence obtained.",
+  "files": {
+    "a100-serverstore.html": {
+      "bytes": 140711,
+      "sha256": "d0a21cee97297edda972552e48b2db874f37ac64d9eaa205bf51580d492db0a5",
+      "requested_url": "https://www.theserverstore.com/nvidia-hgx-8x-a100-80gb-sxm4-nvlink-gpu-server-zt-systems",
+      "final_url": "https://www.theserverstore.com/nvidia-hgx-8x-a100-80gb-sxm4-nvlink-gpu-server-zt-systems",
+      "retrieved_date": "2026-10-12"
+    },
+    "bis-h200-policy.html": {
+      "bytes": 55710,
+      "sha256": "5c6bb1554433a80dc9b6d9b7303709a5a28f59ca9b4c6cfc0e4135d5b15c64a0",
+      "requested_url": "https://media.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "final_url": "https://media.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china",
+      "retrieved_date": "2026-10-12"
+    },
+    "fr-2026-00789-text.md": {
+      "bytes": 44536,
+      "sha256": "be80bb175b3aebf476ed39fa0a9ccccd8dfe95d84818bcba4007717d284884fa",
+      "extraction": "pypdf mechanical text; page provenance preserved"
+    },
+    "fr-2026-00789.pdf": {
+      "bytes": 252319,
+      "sha256": "7fb7dae40d9b277a61ac64df1e1ba09a7bdab98dc6c2ed720aacdfd87edf8125",
+      "requested_url": "https://www.govinfo.gov/content/pkg/FR-2026-01-15/pdf/2026-00789.pdf",
+      "retrieved_date": "2026-10-12"
+    },
+    "h100-config.md": {
+      "bytes": 3682,
+      "sha256": "591973f911cb6ff7987b3ca62f7fd0f13319b1617dfd9101655df3b1a60358a7",
+      "extraction": "Defuddle Markdown; not authored summary",
+      "requested_url": "https://configurator.exxactcorp.com/configure/TS4-193475697"
+    },
+    "h100-exxact.html": {
+      "bytes": 386241,
+      "sha256": "f8afa1fa6cffbf1c3c6695f5ebb10c52fbaaef02cff7cb49f0a20b92003471aa",
+      "requested_url": "https://configurator.exxactcorp.com/configure/TS4-193475697",
+      "final_url": "https://configurator.exxactcorp.com/configure/TS4-193475697",
+      "retrieved_date": "2026-10-12"
+    },
+    "h200-config.md": {
+      "bytes": 4075,
+      "sha256": "dd9cd2e3309dd02b508b46ad6e1b590bf488cf2536a15236c4069c882daae638",
+      "extraction": "Defuddle Markdown; not authored summary",
+      "requested_url": "https://configurator.exxactcorp.com/configure/TS4-118380266"
+    },
+    "h200-exxact.html": {
+      "bytes": 394157,
+      "sha256": "b865932d20ae4d55cdf0802ae387bdcdd3c7c793b0bc19c8cdbe7bb74b6c4a5f",
+      "requested_url": "https://configurator.exxactcorp.com/configure/TS4-118380266",
+      "final_url": "https://configurator.exxactcorp.com/configure/TS4-118380266",
+      "retrieved_date": "2026-10-12"
+    },
+    "h200-nvl-vipera.html": {
+      "bytes": 164680,
+      "sha256": "e1167630b215be8e57c5b7ca68de31719bfe19e2eb80ca2b93252ea977da0599",
+      "requested_url": "https://viperatech.com/product/nvidia-h200-nvl-graphic-card-141-gb-passive-pcie-900-21010-0040-000",
+      "retrieved_date": "2026-10-12"
+    },
+    "nvidia-10q-selected-pages.md": {
+      "bytes": 10660,
+      "sha256": "f0886724bb296d7cfed2c801abe6287af74b000a88acef4e28e68ee4774e6160",
+      "extraction": "pypdf mechanical text; page provenance preserved"
+    },
+    "nvidia-2027-q2-10q.pdf": {
+      "bytes": 671023,
+      "sha256": "6b5a8dc1ed21e8b2b960fd0de97103af6a2f32ccc8dd91b363f06ea192ecfebd",
+      "requested_url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+      "final_url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+      "retrieved_date": "2026-10-12"
+    },
+    "retrieval.json": {
+      "bytes": 2931,
+      "sha256": "bceb8bb713c25e5e8d9da675f98c41aba63fb7d7d27762bfbe28bfe1b2079fe9"
+    },
+    "original.md": {
+      "bytes": 2738,
+      "sha256": "33eb5a2a9f049b0c16a7d0307192ea49e9cc7d03ddc63dbb7e8539c1d2b06511",
+      "derived_from": "Authored source index"
+    }
+  },
+  "failed_fetches": [
+    {
+      "url": "https://www.federalregister.gov/documents/2026/01/15/2026-00789/revision-to-license-review-policy-for-advanced-computing-commodities",
+      "status": "Access-challenge HTML excluded; official govinfo PDF used instead"
+    },
+    {
+      "url": "https://www.theserverstore.com/nvidia-hgx-8x-a100-80gb-sxm4-nvlink-gpu-server-zt-systems",
+      "status": "Defuddle extraction failed; raw HTML downloaded and option values parsed; browser text independently read"
+    }
+  ],
+  "verification_scope": "Public vendor posted configurations and stated support; government policy and NVIDIA issuer disclosure. No transaction-specific China quote or licence obtained. CNY cash budgets are project analysis, not quoted vendor prices.",
+  "evidence_note": "evidence-note.md"
+}

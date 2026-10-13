@@ -1,0 +1,42 @@
+{
+  "source_id": "TECH-076",
+  "title": "Qwen3.8-27B-FP8 单台DGX Spark外部性能测试",
+  "received_at": "2026-10-12",
+  "experiment_date": null,
+  "collection_role": "main",
+  "evidence_state": "user-provided-external-test-summary",
+  "text_kind": "organized_user_summary_with_operational_identifiers_omitted",
+  "available_text": true,
+  "raw_files_received": false,
+  "independently_reproduced": false,
+  "source_url": null,
+  "source_channel": "User message in this task",
+  "redactions": [
+    "Primary/secondary hostnames replaced with anonymous labels",
+    "Direct-link IP and local forwarding address omitted"
+  ],
+  "structured_data": "../../infrastructure/data/dgx-spark-qwen27-external-2026-10-12/summary.json",
+  "related_public_sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/blob/main/README.md",
+      "accessed": "2026-10-12",
+      "supports": "262144 native context and documented YaRN factor 4 to 1000000; not external test provenance"
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm/issues/58080",
+      "accessed": "2026-10-12",
+      "supports": "Reported draft max_model_len gate and dummy proposal mechanism; not proof of the installed test revision"
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/cli/bench/serve/",
+      "accessed": "2026-10-12",
+      "supports": "Public CLI workload/metric options; installed calculate_metrics implementation remains supplied-source claim"
+    }
+  ],
+  "files": {
+    "original.md": {
+      "sha256": "50292791b54dfc12a4bf38da6eef27240e1027ac403c02e7ddc8014fcc704d3b",
+      "bytes": 8088
+    }
+  }
+}

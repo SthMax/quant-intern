@@ -1,0 +1,381 @@
+{
+  "source_id": "TECH-078",
+  "title": "深入理解 AI Infra：量化分析与系统设计（固定版本精读与复算来源包）",
+  "issuer": "李博杰 / Bojie Li (bojieli)",
+  "source_type": "author-authored technical book draft, companion source and published experiments",
+  "collection_role": "main",
+  "evidence_state": "verified-primary",
+  "verification_scope": "Book wording, equations, selected code and published result files inspected; primary for author claims, not independent GPU reproduction. Independent CPU calculations in infrastructure/data/ai-infra-book-2026-10-12.",
+  "source_url": "https://github.com/bojieli/ai-infra-book",
+  "requested_url": "https://github.com/bojieli/ai-infra-book.git",
+  "final_url": "https://github.com/bojieli/ai-infra-book.git",
+  "accessed_at": "2026-10-12",
+  "upstream_commit": "3bdcb4fcab73010eeaccf31cc10a8242a895d82e",
+  "upstream_commit_date": "2026-10-01T16:09:15+08:00",
+  "publication_date": "not stated; book identified as draft by author",
+  "original_language": "zh-CN (book); en/Python/JSON (code and records)",
+  "license": "Apache-2.0 for original book and companion code; original LICENSE preserved; third-party materials retain their own terms",
+  "retrieval_method": "GIT_LFS_SKIP_SMUDGE=1, git clone --depth 1 --filter=blob:none --sparse; selected regular files copied byte for byte; no model weights or LFS papers fetched",
+  "reviewer": "Codex ai_infra_book research agent",
+  "human_check_status": "pending",
+  "human_check_date": null,
+  "available_text": true,
+  "text_kind": "original_markdown_and_source_snapshot",
+  "independently_reproduced": false,
+  "independent_cpu_recalculation": "../../infrastructure/data/ai-infra-book-2026-10-12/results.json",
+  "reading_note": "../../infrastructure/ai-infra-book-reading-2026-10-12.md",
+  "source_supports": [
+    {
+      "sections": "8.1–8.6",
+      "claim": "Resource constraints; batch/KV/prefix/offload/speculative-decoding and goodput methods; experimental condition identities."
+    },
+    {
+      "sections": "9.1–9.7",
+      "claim": "Replica/PD/AF/EP placement, transport/fault/routing and state lifetime methods."
+    },
+    {
+      "sections": "11.1–11.5",
+      "claim": "Task/environment lifetime, memory-time, CPU-seconds, recovery and successful-task cost."
+    },
+    {
+      "sections": "2.3.6, 2.6, 6.7.4; v41_flash.py, v41_forward.py, kv_comparison.py",
+      "claim": "Author calculations for DeepSeek V4.1 shared global KV, CED, Engram and source-level operand counts; conditional on the given format and execution path."
+    }
+  ],
+  "limitations": [
+    "Companion experiments use mostly Qwen3-8B/RTX PRO 6000 and short inputs; no direct measurement for target Qwen3.8-27B/Spark or DeepSeek/A100/H100/H200 at 512K/1M.",
+    "Book is a draft; some README model-coverage summaries lag dedicated v41_forward.py implementation.",
+    "Archive is selected text/code/results, not a complete standalone clone; relative image and omitted-reference links inside originals may point to files not archived. Fixed upstream URLs remain in metadata.",
+    "Upstream selected output JSONs are author-published calculations. Our new CPU script checks selected equations and arithmetic separately, without executing unreviewed upstream deployment scripts.",
+    "Book peak/efficiency/latency/cost assumptions remain teaching inputs; no actual current GPU quote or end-to-end SLO inferred."
+  ],
+  "files": {
+    "upstream/README.md": {
+      "bytes": 17527,
+      "sha256": "a37a55c42a5043edde089ee4c0fbc734dac9cf7f6426915913b282ceeb0b6cdb",
+      "upstream_path": "README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/README.md"
+    },
+    "upstream/LICENSE": {
+      "bytes": 11338,
+      "sha256": "c1b6a99661affda21c759da02976e76cc6694c23ef564c0f1267cdf8d803ca19",
+      "upstream_path": "LICENSE",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/LICENSE"
+    },
+    "upstream/CITATION.cff": {
+      "bytes": 1116,
+      "sha256": "36022710db1906b2665cfaea3454ad9481889625e0d41e1c2b087c8afbe4dd19",
+      "upstream_path": "CITATION.cff",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/CITATION.cff"
+    },
+    "upstream/manuscripts/12-端边云协同.md": {
+      "bytes": 111017,
+      "sha256": "ef9b3f3370851e59271e6f089723f84e44a758bf5eba1765c999fa4c221d0928",
+      "upstream_path": "manuscripts/12-端边云协同.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/12-%E7%AB%AF%E8%BE%B9%E4%BA%91%E5%8D%8F%E5%90%8C.md"
+    },
+    "upstream/manuscripts/11-资源调度与运行环境.md": {
+      "bytes": 117883,
+      "sha256": "7b3b42a27bcdd5090fd396b295cb73d27a25c55da092f396375e89dd6f4624bf",
+      "upstream_path": "manuscripts/11-资源调度与运行环境.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/11-%E8%B5%84%E6%BA%90%E8%B0%83%E5%BA%A6%E4%B8%8E%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83.md"
+    },
+    "upstream/manuscripts/02-模型架构.md": {
+      "bytes": 148392,
+      "sha256": "7c1b05cfd432b4530306089e99d707e603ab57102d3e9482be36e1c52a3d6753",
+      "upstream_path": "manuscripts/02-模型架构.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/02-%E6%A8%A1%E5%9E%8B%E6%9E%B6%E6%9E%84.md"
+    },
+    "upstream/manuscripts/06-超节点.md": {
+      "bytes": 160812,
+      "sha256": "ce7728552737367bf676ff1b9e63ce82a4974d928c11c40913d59f6078962d7a",
+      "upstream_path": "manuscripts/06-超节点.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/06-%E8%B6%85%E8%8A%82%E7%82%B9.md"
+    },
+    "upstream/manuscripts/04-加速器架构.md": {
+      "bytes": 165699,
+      "sha256": "d961f92fe0d8016923deaf1e53f1023a36ef3e506262471eb2da6dbdbc44225d",
+      "upstream_path": "manuscripts/04-加速器架构.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/04-%E5%8A%A0%E9%80%9F%E5%99%A8%E6%9E%B6%E6%9E%84.md"
+    },
+    "upstream/manuscripts/03-推理与训练负载.md": {
+      "bytes": 104518,
+      "sha256": "7007b45b00b8e764a8496ae3a9aae50819f9792122693148eae3ec73d60b40bd",
+      "upstream_path": "manuscripts/03-推理与训练负载.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/03-%E6%8E%A8%E7%90%86%E4%B8%8E%E8%AE%AD%E7%BB%83%E8%B4%9F%E8%BD%BD.md"
+    },
+    "upstream/manuscripts/08-推理优化.md": {
+      "bytes": 103822,
+      "sha256": "d7d17973529ffacc7eedfa543af6ffa559ec48a6bbc2883b412a37e75bc6f5db",
+      "upstream_path": "manuscripts/08-推理优化.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/08-%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96.md"
+    },
+    "upstream/manuscripts/09-分布式推理.md": {
+      "bytes": 144151,
+      "sha256": "f3e0c6b81674a1769e54932230d194be69d369d0e4d4c195d2742549aa82c40e",
+      "upstream_path": "manuscripts/09-分布式推理.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/09-%E5%88%86%E5%B8%83%E5%BC%8F%E6%8E%A8%E7%90%86.md"
+    },
+    "upstream/manuscripts/01-初识 AI Infra.md": {
+      "bytes": 72981,
+      "sha256": "409e66d4c9f7b50846d77d1e6976079f913fd1c50b9e4374c09eefbc8027727e",
+      "upstream_path": "manuscripts/01-初识 AI Infra.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/01-%E5%88%9D%E8%AF%86%20AI%20Infra.md"
+    },
+    "upstream/calculations/README.md": {
+      "bytes": 141696,
+      "sha256": "73312da59e4f89c562e5331d103c97827ec11663e9ef87648fe13a5d7941bf9b",
+      "upstream_path": "calculations/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/README.md"
+    },
+    "upstream/calculations/configs/models/deepseek-v4.1-flash/config.json": {
+      "bytes": 3311,
+      "sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+      "upstream_path": "calculations/configs/models/deepseek-v4.1-flash/config.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/configs/models/deepseek-v4.1-flash/config.json"
+    },
+    "upstream/calculations/configs/models/deepseek-v4-flash/config.json": {
+      "bytes": 1749,
+      "sha256": "b628e63398a645abc711d92207f8737dd8140f7a4ef1e0a5b3616019e0ddd818",
+      "upstream_path": "calculations/configs/models/deepseek-v4-flash/config.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/configs/models/deepseek-v4-flash/config.json"
+    },
+    "upstream/calculations/configs/sources.lock.json": {
+      "bytes": 519000,
+      "sha256": "16eecffe54b158b1894fdf7e40ee6905e33ab8d0ee7b954ae32af5fcfb9307ec",
+      "upstream_path": "calculations/configs/sources.lock.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/configs/sources.lock.json"
+    },
+    "upstream/calculations/src/infra_calc/topics/v41_flash.py": {
+      "bytes": 10688,
+      "sha256": "43eae5df0ba0be9b0812f374aff0e5ad598f966705465a519f9474aebda30079",
+      "upstream_path": "calculations/src/infra_calc/topics/v41_flash.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/v41_flash.py"
+    },
+    "upstream/calculations/src/infra_calc/topics/v41_forward.py": {
+      "bytes": 18925,
+      "sha256": "698298d0d0f5d4a745cf048c5502022cc5d2e3b84b0ddf7a2f3147c18a0d7721",
+      "upstream_path": "calculations/src/infra_calc/topics/v41_forward.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/v41_forward.py"
+    },
+    "upstream/calculations/src/infra_calc/topics/kv_comparison.py": {
+      "bytes": 12432,
+      "sha256": "fb3c9d3d506fead25b33a5af74cb9bdf76e57838457e21586b9bfbdb1b755fa6",
+      "upstream_path": "calculations/src/infra_calc/topics/kv_comparison.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/kv_comparison.py"
+    },
+    "upstream/calculations/src/infra_calc/topics/iteration_batching.py": {
+      "bytes": 8443,
+      "sha256": "c499030d0c94368a42b8e722aab5f32a911aceafc55a135bda2c0108a99aa20f",
+      "upstream_path": "calculations/src/infra_calc/topics/iteration_batching.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/iteration_batching.py"
+    },
+    "upstream/calculations/src/infra_calc/topics/prefix_value.py": {
+      "bytes": 5940,
+      "sha256": "b53060d1f85b2adebece0900900f96a0202d011373d077b1feee68902d860040",
+      "upstream_path": "calculations/src/infra_calc/topics/prefix_value.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/prefix_value.py"
+    },
+    "upstream/calculations/src/infra_calc/topics/speculative_round.py": {
+      "bytes": 6060,
+      "sha256": "6783b9aaea280dd307a233ce29093838773876b645a9ceb7f45d8a4e28abeaf0",
+      "upstream_path": "calculations/src/infra_calc/topics/speculative_round.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/speculative_round.py"
+    },
+    "upstream/calculations/src/infra_calc/topics/pd_af_handoff.py": {
+      "bytes": 8569,
+      "sha256": "18a73ef1b17a8174485cc41c55644059157256e692a3488b050f1e2fce8c3923",
+      "upstream_path": "calculations/src/infra_calc/topics/pd_af_handoff.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/pd_af_handoff.py"
+    },
+    "upstream/calculations/src/infra_calc/topics/environment_lifecycle.py": {
+      "bytes": 12779,
+      "sha256": "ade70e15cedbb6368f6809cd07f861e154425df59ee4481be8fde9c446478c12",
+      "upstream_path": "calculations/src/infra_calc/topics/environment_lifecycle.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/environment_lifecycle.py"
+    },
+    "upstream/calculations/src/infra_calc/topics/environment_resources.py": {
+      "bytes": 20127,
+      "sha256": "eb92b82cb239aaf098a00926a3fa2bd8301f3f4b130b740007d6046fbe4f1b16",
+      "upstream_path": "calculations/src/infra_calc/topics/environment_resources.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/environment_resources.py"
+    },
+    "upstream/calculations/src/infra_calc/topics/agent_trace.py": {
+      "bytes": 8107,
+      "sha256": "a92edc05463551a1241890b63c6981df0eeae9ebeded83956e8ba108d4d99f32",
+      "upstream_path": "calculations/src/infra_calc/topics/agent_trace.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/src/infra_calc/topics/agent_trace.py"
+    },
+    "upstream/calculations/results/v41-flash-n8192-b1.json": {
+      "bytes": 31967,
+      "sha256": "fef45f42a51955e5be704a3d4ca46742626c32d5bb83b45088ff5a60a2bb2fca",
+      "upstream_path": "calculations/results/v41-flash-n8192-b1.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/results/v41-flash-n8192-b1.json"
+    },
+    "upstream/calculations/results/v41-forward-prefill-8192-ced.json": {
+      "bytes": 215483,
+      "sha256": "2c2c7a35898ca5b3bc6a582dedefdf04f373a8df0990e92b58316733122970b7",
+      "upstream_path": "calculations/results/v41-forward-prefill-8192-ced.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/results/v41-forward-prefill-8192-ced.json"
+    },
+    "upstream/calculations/results/v41-forward-decode-1m-ced.json": {
+      "bytes": 210515,
+      "sha256": "f3734d27f71b5d2275528a19e2163876a2f50dfec82c3e759acb8d4021ca35c5",
+      "upstream_path": "calculations/results/v41-forward-decode-1m-ced.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/results/v41-forward-decode-1m-ced.json"
+    },
+    "upstream/calculations/results/v41-throughline.json": {
+      "bytes": 7054,
+      "sha256": "dec1c46cf9e0410d35d106b9c48c9b4591301397b9e69a15520a8ae6b8cf403a",
+      "upstream_path": "calculations/results/v41-throughline.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/results/v41-throughline.json"
+    },
+    "upstream/calculations/results/supernode-inference-book.json": {
+      "bytes": 17114,
+      "sha256": "af9205b25f29796b311f0f7e9a2f5b5bea1d0b649654b3151216f54adcdfd9d7",
+      "upstream_path": "calculations/results/supernode-inference-book.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/results/supernode-inference-book.json"
+    },
+    "upstream/calculations/results/supernode-inference-book.md": {
+      "bytes": 7907,
+      "sha256": "1372153541da2a73dbc8bc83c03b1db4188e5a4c5f10d1a80994f12c71258027",
+      "upstream_path": "calculations/results/supernode-inference-book.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/results/supernode-inference-book.md"
+    },
+    "upstream/calculations/supernode_inference.py": {
+      "bytes": 17753,
+      "sha256": "b79d350b76cc4cb5a1771162ef590b25a68516fda932f4dabc57e5f5e28cf37c",
+      "upstream_path": "calculations/supernode_inference.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/supernode_inference.py"
+    },
+    "upstream/calculations/scenarios/supernode-inference-example.json": {
+      "bytes": 4829,
+      "sha256": "659e7c3b4f555a46906a6304490d7e89aa19f509df5fbf17ac647ee02e78d786",
+      "upstream_path": "calculations/scenarios/supernode-inference-example.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/calculations/scenarios/supernode-inference-example.json"
+    },
+    "upstream/experiments/ch08/08-01/README.md": {
+      "bytes": 5126,
+      "sha256": "e612dba9b918eb2e472de5db189759844fbaf059ed5667b731a668731b99b19c",
+      "upstream_path": "experiments/ch08/08-01/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-01/README.md"
+    },
+    "upstream/experiments/ch08/08-02/README.md": {
+      "bytes": 6480,
+      "sha256": "6d9cca0909740ce42b84ce2e8b1687c2bd77030445fd256fab22571d6fa75fe3",
+      "upstream_path": "experiments/ch08/08-02/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-02/README.md"
+    },
+    "upstream/experiments/ch08/08-03/README.md": {
+      "bytes": 6429,
+      "sha256": "61045f64712dbcb16bc246ba95fc5323ebc0daf5e6c66ae9a03cc47880ad778c",
+      "upstream_path": "experiments/ch08/08-03/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-03/README.md"
+    },
+    "upstream/experiments/ch08/08-04/README.md": {
+      "bytes": 4283,
+      "sha256": "599c2b3378f1e6866b24beb18350671be9f25e4166d2892ece9ca9e0064f49ed",
+      "upstream_path": "experiments/ch08/08-04/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-04/README.md"
+    },
+    "upstream/experiments/ch08/08-05/README.md": {
+      "bytes": 6884,
+      "sha256": "aa6657267d3e816becf9332ff915016f42258c025b7c2c3268b4b8b1764a087d",
+      "upstream_path": "experiments/ch08/08-05/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-05/README.md"
+    },
+    "upstream/experiments/ch08/08-08/README.md": {
+      "bytes": 10244,
+      "sha256": "9aca7c8b06cdb8a03ac08852e6458ddc5dbea92c910da88a7583c72b088524ae",
+      "upstream_path": "experiments/ch08/08-08/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-08/README.md"
+    },
+    "upstream/experiments/ch08/08-09/README.md": {
+      "bytes": 5993,
+      "sha256": "c72b184e97f1128dec7ae3270244c0328d66163f3665ec8453864de35d6cc90f",
+      "upstream_path": "experiments/ch08/08-09/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-09/README.md"
+    },
+    "upstream/experiments/ch08/08-01/efficiency.json": {
+      "bytes": 5219,
+      "sha256": "53b59b8d081a8eda3cc94e59b1adfb07dacf3255a318c829bb3949aa05f3fa8d",
+      "upstream_path": "experiments/ch08/08-01/efficiency.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-01/efficiency.json"
+    },
+    "upstream/experiments/ch08/08-01/efficiency.py": {
+      "bytes": 5194,
+      "sha256": "22f38700e771848850d116e23b7205f63adbc76445a8eeec51640c021ff48c80",
+      "upstream_path": "experiments/ch08/08-01/efficiency.py",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-01/efficiency.py"
+    },
+    "upstream/experiments/ch08/08-05/results/summary.json": {
+      "bytes": 7531,
+      "sha256": "f7c422b954a6d66da9731b2872f073389ba76265c2dc929ab85f44460ec4e9ae",
+      "upstream_path": "experiments/ch08/08-05/results/summary.json",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-05/results/summary.json"
+    },
+    "upstream/experiments/ch08/08-05/results/table.md": {
+      "bytes": 1069,
+      "sha256": "a98a794b56ee5afe33b1a0ee82096a309450c0bda42fb9fdefa0fed9695e3d35",
+      "upstream_path": "experiments/ch08/08-05/results/table.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch08/08-05/results/table.md"
+    },
+    "upstream/experiments/ch09/09-07/README.md": {
+      "bytes": 1116,
+      "sha256": "be51f8821632c733b2d4acc4e579ba2744c0b9898792a566305273948843c027",
+      "upstream_path": "experiments/ch09/09-07/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch09/09-07/README.md"
+    },
+    "upstream/experiments/ch09/09-07/shared-kv/README.md": {
+      "bytes": 6605,
+      "sha256": "91d2f4edcfae66a85ef97b385086b35f1731fc8993075c79946139fa1d90c39e",
+      "upstream_path": "experiments/ch09/09-07/shared-kv/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch09/09-07/shared-kv/README.md"
+    },
+    "upstream/experiments/ch09/09-07/history-preserved/README.md": {
+      "bytes": 5066,
+      "sha256": "6eb729e3c2b31759e9127305ae25d3b830e4b8289d3f26b1f7e253308c372019",
+      "upstream_path": "experiments/ch09/09-07/history-preserved/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch09/09-07/history-preserved/README.md"
+    },
+    "upstream/experiments/ch11/11-01/README.md": {
+      "bytes": 3738,
+      "sha256": "a7ce018c324f69f85316207a5ee4d412eb567cb7e933172534c3a5cc028a3980",
+      "upstream_path": "experiments/ch11/11-01/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch11/11-01/README.md"
+    },
+    "upstream/experiments/ch11/11-06/README.md": {
+      "bytes": 4970,
+      "sha256": "e62551d962432148c03b8d8f9a8d3facf4aeca35adde59f105f253adc890fa1f",
+      "upstream_path": "experiments/ch11/11-06/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch11/11-06/README.md"
+    },
+    "upstream/experiments/ch11/11-07/README.md": {
+      "bytes": 2984,
+      "sha256": "accf34ffd0878f90e5fc9de707946c5600fc0f0ce2ff0f0637ed909ffd158b27",
+      "upstream_path": "experiments/ch11/11-07/README.md",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch11/11-07/README.md"
+    },
+    "original.md": {
+      "bytes": 17527,
+      "sha256": "a37a55c42a5043edde089ee4c0fbc734dac9cf7f6426915913b282ceeb0b6cdb",
+      "upstream_path": "README.md",
+      "extraction": "byte-for-byte original README; chapter originals in upstream/manuscripts/",
+      "fixed_upstream_url": "https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/README.md"
+    }
+  },
+  "not_archived_missing_from_sparse_checkout": [],
+  "cross_source_implementation_check": {
+    "source_id": "TECH-080",
+    "scope": "Current vLLM Hopper cache row size/page alignment/TP replication differs from book production-cache layout; primary code inspected locally."
+  },
+  "cross_source_runtime_anchor": {
+    "source_id": "TECH-084",
+    "scope": "Publisher startup log: H200 TP4 35.16GiB KV,18,326,608 shared tokens; post-graph budget warning retained. Not independently reproduced."
+  },
+  "cpu_validation": {
+    "status": "passed",
+    "checks": 23,
+    "output": "../../infrastructure/data/ai-infra-book-2026-10-12/validation.json"
+  }
+}

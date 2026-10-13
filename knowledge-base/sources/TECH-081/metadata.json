@@ -1,0 +1,67 @@
+{
+  "source_id": "TECH-081",
+  "title": "SGLang DeepSeek V4.1 cookbook and deployment matrix",
+  "accessed_at": "2026-10-12",
+  "fixed_revision": "279f1fad907dd53044a7b68fcc45bd6a24467c9e",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "reviewer": "Codex deployment research agent; static primary document, data and code inspection",
+  "text_kind": "verbatim primary markdown or source code",
+  "verification_scope": "Only claims explicitly located in the archived source; code inspection is not target-device execution. Source version is frozen; deployment recipe hardware assertions are publisher reports.",
+  "files": {
+    "docs__src__snippets__configs__deepseek-ai__deepseek-v4_1.jsx": {
+      "requested_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/docs/src/snippets/configs/deepseek-ai/deepseek-v4_1.jsx",
+      "final_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/docs/src/snippets/configs/deepseek-ai/deepseek-v4_1.jsx",
+      "accessed_at": "2026-10-12",
+      "bytes": 14602,
+      "sha256": "81e9a655764cec89ed75a7bfca1b08e420988e2d569ecd19c74350aef3d906db"
+    },
+    "docs__src__snippets__agentx__deepseek-ai__deepseek-v4_1.jsx": {
+      "requested_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/docs/src/snippets/agentx/deepseek-ai/deepseek-v4_1.jsx",
+      "final_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/docs/src/snippets/agentx/deepseek-ai/deepseek-v4_1.jsx",
+      "accessed_at": "2026-10-12",
+      "bytes": 130594,
+      "sha256": "fb139f70df3a81289eb4714fe385b79e8d85077f619b474955b2b123c3418102"
+    },
+    "python__sglang__srt__models__deepseek_v4.py": {
+      "requested_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/python/sglang/srt/models/deepseek_v4.py",
+      "final_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/python/sglang/srt/models/deepseek_v4.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 234505,
+      "sha256": "7391303dc674ec909a842b1f546e1265a794206ac9f115b0e55bcdec5f4941b6"
+    },
+    "python__sglang__srt__layers__attention__deepseek_v4_backend.py": {
+      "requested_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/python/sglang/srt/layers/attention/deepseek_v4_backend.py",
+      "final_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/python/sglang/srt/layers/attention/deepseek_v4_backend.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 174620,
+      "sha256": "0b3dfcb23c85131ef069c2dc20e2e4215205e071ee980574e0bb5944b348312e"
+    },
+    "python__sglang__srt__mem_cache__memory_pool.py": {
+      "requested_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/python/sglang/srt/mem_cache/memory_pool.py",
+      "final_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/python/sglang/srt/mem_cache/memory_pool.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 252848,
+      "sha256": "049dc7f6f1f4c4fef32f0721b54808246e5f5842c1914849125d2f92cb4a20f7"
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1.mdx",
+      "final_url": "https://raw.githubusercontent.com/sgl-project/sglang/279f1fad907dd53044a7b68fcc45bd6a24467c9e/docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1.mdx",
+      "accessed_at": "2026-10-12",
+      "bytes": 18374,
+      "sha256": "6cac05cca1dd06689c20271bf47575298bed8affc186ce8f8e8b0168fe0ca94c"
+    },
+    "evidence-note.md": {
+      "derived_from": "authored agent source inspection",
+      "text_kind": "authored_analysis_not_original",
+      "bytes": 933,
+      "sha256": "f1ed645e455086aa91475cad18f3056c02cd7008401bc521982bb23a3ada6aaa"
+    }
+  },
+  "publication_date": "not stated; see fixed commit or experiment date",
+  "evidence_note": "evidence-note.md",
+  "used_in": [
+    "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md",
+    "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md"
+  ]
+}

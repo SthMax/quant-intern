@@ -1,0 +1,44 @@
+{
+  "as_of": "2026-10-12",
+  "status": "passed",
+  "checks": {
+    "index": {
+      "ids": 211,
+      "counts": {
+        "main": 192,
+        "redirect": 4,
+        "supporting": 15
+      },
+      "unique": true
+    },
+    "source_hashes": {
+      "TECH-076": 1,
+      "TECH-077": 43,
+      "TECH-078": 52,
+      "TECH-079": 8,
+      "TECH-080": 19,
+      "TECH-081": 7,
+      "TECH-082": 6,
+      "TECH-083": 8,
+      "TECH-084": 10,
+      "TECH-085": 4,
+      "TECH-087": 13
+    },
+    "authored_markdown_files_checked": 30,
+    "credential_pattern_findings": [],
+    "institution_association_findings": [],
+    "upstream_clones_ignored": true,
+    "published_pdfs_unchanged": 4,
+    "enterprise_capacity_20_users_matches_summary": true,
+    "authored_diff_whitespace": "passed",
+    "research_script_runs": [
+      "A100 source and arithmetic audit: passed",
+      "Book 23 checks: passed",
+      "Deployment 280+24 rows: passed",
+      "Four server budgets: passed"
+    ]
+  },
+  "issues": [],
+  "scope": "Source hashes, registration, authored local links, simple credential/identity patterns, unchanged historical PDFs and cross-output capacity arithmetic. No GPU run or human review.",
+  "baseline_head": "ef683180d930278674ff7a890698c7519daca4e5"
+}

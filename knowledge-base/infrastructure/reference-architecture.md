@@ -1,38 +1,68 @@
 # On-Premise Reference Architecture
 
 **Phase 2 — Weeks 3–5.** Required by [the final project plan](../../PROJECT_PLAN.md).
-Status (24 September 2026): logical deployment choices, software research and
-priced candidate hardware configurations are documented below. Physical selection
-and workload measurements are the next inputs.
+Status (12 October 2026): logical deployment choices and priced hardware scenarios
+are documented. An [external DGX Spark measurement summary](dgx-spark-qwen27-external-benchmark-2026-10-12.md)
+adds an FP8-KV/MTP3 configuration branch. Physical procurement and task-quality
+validation remain open.
 
-## Scenario 1 — personal and three-person Coding Agents
+## Current deployment choices — 12 October 2026
 
-The [Scenario 1 design](scenario-1-personal-agent-2026-09-24.md) connects a local
-Coding Agent to a personal model or a three-person shared model node. File tools,
-project environments and NAS identity remain on each employee's computer. The
-six workstation profiles use Qwen3.8-27B with explicit MLX/GGUF 8-bit budgets and
-separate CUDA FP8 comparisons. Unified-memory systems reserve OS/tool memory
-before model and KV allocation. Its [calculations](data/scenario-1-personal-agent-2026-09-24/)
-separate prefill, decode, per-request speed, context capacity, prefix reuse and
-shared versus independent-machine prices. All performance is conditional and
-uncalibrated; hardware prices retain their 21 September observation dates.
-The workload now fills 131,072 / 262,144 / 524,288 total tokens per session,
-with 8,192 reserved for output. Cold loading and exact-prefix continuation are
-separate; 524K uses an independently configured YaRN factor of 2. Memory admission
-reserves eight additional state checkpoints per session and checks all three
-users resident at once. The 256GB workstation therefore has a specific role in
-the three-user 524K dense-model configuration.
+All three scenarios include 131,072/262,144-token baseline windows. The active
+research compares 524,288 and 1,000,000 total tokens, with 8,192 reserved for
+output. Capacity counts resident histories; speed and scheduling count active
+requests. Cold input, exact-prefix continuation, cache restoration and mixed
+prefill/decode each have separate timing scopes.
 
-## Scenario 3 — company Agent service
+### Scenario 1 — DGX Spark with Qwen27
 
-The [Scenario 3 design](scenario-3-company-agent-2026-09-23.md) uses at least 262K context per resident task and adds Hermes with
-shared model inference, Skills/MCP and isolated execution. Central execution uses
-per-user/project instances and a bounded tool pool; desktop execution runs Hermes
-locally against the shared LLM endpoint. Both reuse Scenario 2's scoped retrieval
-and NAS access. Its [task simulation](data/scenario-3-agent-2026-09-23/) models
-multiple turns, growing contexts, bounded prefix retention, tool queues and task
-completion. Six resource configurations include MiMo Flash/Pro, a Qwen reuse case
-and the newly documented MI325X route. Results are analytical and uncalibrated.
+The [personal design](scenario-1-personal-agent-2026-09-24.md) selects one DGX
+Spark 128GB. OpenCode, tools, employee files and NAS identity stay on the
+employee's computer; Spark serves the model. Three-person sharing adds per-user
+routing, token admission and an interactive request queue.
+
+FP8 weights plus BF16 KV remains the original requirement. The measured
+FP8-KV/MTP3 branch separately supports one 1M capacity test and 500K input at
+14.82 output tokens/s. A 512K daily window is a roughly 15 tokens/s compromise
+candidate; the single-user 20+ target remains open at this length. Three 512K
+histories fit the observed FP8 token pool with little headroom after a 10% token
+reserve. Enabling prefix/state checkpoints requires a new pool measurement.
+The [September four-hardware comparison](scenario-1-speed-target-review-2026-09-24.md)
+retains the earlier selection analysis.
+
+### Scenario 2 — permission-aware NAS search
+
+The [one-page summary](scenario-2-enterprise-rag-2026-09-23.md) retains Onyx
+Enterprise and Milvus with a custom authorization/retrieval service plus Open
+WebUI. NAS is the file and effective-permission source. Qwen27 answers from
+retrieved content; Scenario 3 calls the same authorized retrieval interface.
+Historical short-question throughput remains tied to its original 8K workload.
+
+### Scenario 3 — DeepSeek shared Agent service
+
+The [company design](scenario-3-company-agent-2026-09-23.md) now uses provisional
+DeepSeek-V4.1-Flash, Hermes, Skills/MCP and isolated employee/project tool
+execution. The leading **capacity candidate for 20 resident active users at 1M**
+is 8×H200, comparing one TP8 instance with two TP4 replicas on the same node.
+Each instance needs about 203GB of host Engram storage; two instances budget two
+copies. Long histories and tool-waiting sessions also retain KV.
+
+Public H100/H200 startup logs anchor the cache pools. Current Hopper vLLM
+source yields about 1,827 bytes per token **per TP rank**, rather than dividing
+the single latent cache by TP. The [capacity matrix](data/week7-deployment-2026-10-12/capacity-matrix.csv)
+compares 1/5/20/30/50 active requests with one or two resident sessions per active
+request. Full-1M speed and warm p95 remain matched-workload validation fields;
+public AgentX results use variable input lengths and synthetic DSpark acceptance.
+
+vLLM/SGLang V4.1 paths are version-pinned preview/nightly integrations. Their
+model-specific release readiness must be evaluated alongside framework
+maturity. The [A100 study](deepseek-a100-project-review-2026-10-12.md) describes a
+separate custom Ampere runtime and the scope of its benchmark claims.
+
+Current complete-server budgets and China delivery conditions are in the
+[12 October procurement update](server-gpu-procurement-2026-10-12.md). The
+[AI Infra Book reading](ai-infra-book-reading-2026-10-12.md) explains the cache,
+parallelism and tool-environment tradeoffs with reproducible calculations.
 
 ## Serving and harness research — 17 September 2026
 

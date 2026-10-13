@@ -17,31 +17,41 @@ The confirmed plan also requires a reusable financial NLP evaluation framework
 covering named-entity recognition, financial question answering, and
 multi-document summarization.
 
-## Current work: Weeks 3–5, technical feasibility
+## Current work: Thursday deployment presentation
 
-Week 4 starts on 21 September. Discussion now focuses on concrete workloads,
-concurrency definitions, hardware/software combinations and procurement costs
-for deployment in China. The current repository documents and deliverables use
-anonymized internship labels; historical release attachments retain their
-original published versions.
+The [Week 7 plan](weekly/week-07-plan.md) prepares the 15 October presentation:
+Scenario 1 selects DGX Spark with provisional Qwen3.8-27B; Scenario 3 uses
+provisional DeepSeek-V4.1-Flash and compares H200/H100/A100 configurations.
+Scenario 2 is condensed. The three delegated research tasks are complete:
+[deployment capacity and experience](knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md),
+[the A100 runtime audit](knowledge-base/infrastructure/deepseek-a100-project-review-2026-10-12.md),
+and [AI Infra Book reading and worked examples](knowledge-base/infrastructure/ai-infra-book-reading-2026-10-12.md).
+The [updated price study](knowledge-base/infrastructure/server-gpu-procurement-2026-10-12.md)
+adds dated complete-system budgets and procurement evidence. Presentation authoring
+and target-device task validation remain separate next steps.
+The context study now uses 131K/262K as minimum baselines, 512K as a candidate
+daily Spark window, and 1M as the long-Agent target. It jointly compares active
+concurrency, resident sessions, cold/warm response and cost.
 
-Use [the Weeks 3–5 execution plan](weekly/week-03-05-plan.md) for the mentor
-feedback, schedule, deliverables, and acceptance criteria. Model research and
-deployment are the main workstream. Phase 1 report/PPT restructuring follows
-a separate [fixing plan](reports/phase1-llm-industry-2026-09-09/editorial/fixing-plan.md)
-and does not gate research progress.
+The [external Spark measurements](knowledge-base/infrastructure/dgx-spark-qwen27-external-benchmark-2026-10-12.md)
+provide an FP8-KV/MTP performance branch. Deployment costs feed the three-year
+TCO and pilot assessment; this presentation is the immediate priority. Current
+documents use anonymized internship labels, with historical releases retained.
+The [earlier execution record](weekly/week-03-05-plan.md) and separate
+[report fixing plan](reports/phase1-llm-industry-2026-09-09/editorial/fixing-plan.md)
+remain available.
 
-Phase 1 has produced a source-linked report and a 27-slide presentation. Phase 2
-will compare 5–8 models, deploy one model on a local GPU, and develop reference
-architectures using maintainable software and explicit workload assumptions.
-Full three-year TCO and pilot recommendations remain in Weeks 6–8.
+Phase 1 produced a source-linked report and a 27-slide presentation. Phase 2
+added model/framework research and three priced deployment scenarios. Its complete
+GPU reproduction package and sample financial-task results remain open. Phase 3
+covers three-year TCO, pilot priorities and the final report.
 
 The [16 September model research](knowledge-base/models/model-survey-2026-09-16.md)
-now follows the user's professional-workstation and quality requirements: eight
-core Qwen, Gemma, DeepSeek, GLM and Kimi candidates, plus a pending-release
-watchlist. The [license review](knowledge-base/models/license-review-2026-09-16.md)
-examines commercial use, affiliates and internal-use conditions. Local
-financial-task and performance tests have not started.
+follows the user's professional-workstation and quality requirements: eight
+initial Qwen, Gemma, DeepSeek, GLM and Kimi candidates, later expanded with two
+MiMo entries, plus a pending-release watchlist. The [license review](knowledge-base/models/license-review-2026-09-16.md)
+examines commercial use, affiliates and internal-use conditions. Financial-task evaluation remains open; the external Spark measurements are
+recorded separately from analytical estimates.
 
 The 17 September [serving framework survey](knowledge-base/infrastructure/serving-framework-survey-2026-09-17.md)
 and [harness survey](knowledge-base/infrastructure/harness-survey-2026-09-17.md)
@@ -68,8 +78,8 @@ open; completed research artifacts do not establish those approvals.
   or personal data in this repository.
 - Internal MRM and other firm requirements require authorized internal
   evidence; public guidance cannot establish unpublished firm policy.
-- Git is backed up to the public [project repository](https://github.com/SthMax/quant-intern)
-  repository. Releases package finalized research reports, presentations and
+- Git is backed up to the public [project repository](https://github.com/SthMax/quant-intern).
+  Releases package finalized research reports, presentations and
   selected model references for sharing.
 
 ## Current deliverables
@@ -81,7 +91,9 @@ workstations, company RAG, and company Agents. Its
 contains 12 main slides and four appendix slides, with editable LaTeX sources,
 speaker notes and traced calculation inputs.
 
-Detailed scenario documents are available as [three companion PDFs](reports/week4-deployment-2026-09-24/README.md), including the updated four-hardware personal deployment comparison.
+The [three companion PDFs](reports/week4-deployment-2026-09-24/README.md) retain
+the 24 September release snapshot, including that date's four-hardware comparison.
+Current scenario Markdown has since been updated with October research.
 The four finalized PDFs are packaged in the [Week 4 release](https://github.com/SthMax/quant-intern/releases/tag/phase2-week4-2026-09-24).
 
 The [Phase 2 technical research report](reports/phase2-technical-research-2026-09-18/README.md)
@@ -124,5 +136,6 @@ The September 2026 delivery bundle contains:
 | [Pilot scorecard](knowledge-base/pilots/scorecard.md) | Phase 3 selection, ROI, and proposal template |
 | [Week 1 record](weekly/week-01.md) | Historical setup and corrections |
 | [Week 2 plan](weekly/week-02-plan.md) | Historical Phase 1 execution and delivery record |
-| [Weeks 3–5 plan](weekly/week-03-05-plan.md) | Current execution plan, mentor feedback, and deployment scenarios |
+| [Week 7 plan and research progress](weekly/week-07-plan.md) | Current Thursday presentation, three research workstreams and remaining checks |
+| [Weeks 3–5 plan](weekly/week-03-05-plan.md) | Historical Phase 2 plan, mentor feedback, and deployment scenarios |
 | [Repository alignment review](weekly/repo-alignment-review-2026-09-06.md) | Whole-repository review against the final brief |

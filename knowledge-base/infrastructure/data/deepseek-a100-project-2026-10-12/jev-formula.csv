@@ -1,0 +1,5 @@
+fields,readme_output_tokens,hardcoded_total_ms,calculated_effective_tokens_s,readme_effective_tokens_s,speedup_against_readme_ar_time,status
+3,22,23.98,917.4311926605504,917.4,84.18682235195996,simulation_default_path_not_measured_latency
+10,78,23.98,3252.7105921601333,3252.7,175.3169307756464,simulation_default_path_not_measured_latency
+30,238,23.98,9924.937447873228,9924.9,407.5604670558799,simulation_default_path_not_measured_latency
+100,798,61.480000000000004,12979.83083929733,12979.8,500.0943396226415,simulation_default_path_not_measured_latency

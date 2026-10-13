@@ -1,0 +1,50 @@
+{
+  "source_id": "TECH-085",
+  "title": "NVIDIA DGX Spark hardware and US storefront price observation",
+  "issuer": "NVIDIA",
+  "accessed_at": "2026-10-12",
+  "human_check_status": "pending",
+  "evidence_state": "verified-primary",
+  "source_url": "https://marketplace.nvidia.com/en-us/enterprise/personal-ai-supercomputers/dgx-spark/",
+  "text_kind": "original_vendor_HTML_and_mechanical_text",
+  "verification_scope": "US storefront price and hardware; CNY landed price remains analytical, not a mainland quote",
+  "files": {
+    "hardware.html": {
+      "requested_url": "https://docs.nvidia.com/dgx/dgx-spark/hardware.html",
+      "final_url": "https://docs.nvidia.com/dgx/dgx-spark/hardware.html",
+      "bytes": 29371,
+      "sha256": "02675731cdfcae028528d8fd9e6cf77fcde24c9524cb42eb1a22acb9ebc68d9b"
+    },
+    "original.md": {
+      "requested_url": "https://marketplace.nvidia.com/en-us/enterprise/personal-ai-supercomputers/dgx-spark/",
+      "accessed_at": "2026-10-12",
+      "bytes": 118,
+      "sha256": "b61038b4f1614001ee602e2ac46582f18c36834e8fa462e0dd7503a3efbd8019",
+      "method": "selected verbatim visible text"
+    },
+    "storefront-web-extraction.json": {
+      "requested_url": "https://marketplace.nvidia.com/en-us/enterprise/personal-ai-supercomputers/dgx-spark/",
+      "accessed_at": "2026-10-12",
+      "bytes": 2017,
+      "sha256": "4fa92be9e7d377fa9d2cdca514a153d00a27d823f66e3f946518fb41af2bab1e",
+      "method": "web tool extraction serialized without alteration"
+    },
+    "evidence-note.md": {
+      "derived_from": "authored agent source inspection",
+      "text_kind": "authored_analysis_not_original",
+      "bytes": 923,
+      "sha256": "4913d75ca3e981fb2a42ef76adde9edb768b0dc34031793f7d03e548f37e8eb9"
+    }
+  },
+  "retrieval_limits": [
+    "Direct storefront HTML request timed out; separately archived web-tool page extraction is a retrieved text representation, not raw HTML bytes. US page title/location and current visible $6,950 retained; September search-cache copy still displays $4,699.",
+    "No mainland tax-inclusive quote obtained."
+  ],
+  "reviewer": "Codex deployment research agent; static primary document, data and code inspection",
+  "publication_date": "not stated; see fixed commit or experiment date",
+  "evidence_note": "evidence-note.md",
+  "used_in": [
+    "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md",
+    "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md"
+  ]
+}

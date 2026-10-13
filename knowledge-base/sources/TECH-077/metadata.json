@@ -1,0 +1,293 @@
+{
+  "source_id": "TECH-077",
+  "title": "DeepSeek-V4.1-Flash on A100 (sm80): custom runtime, code and benchmark claims",
+  "issuer": "shi3z / GitHub repository contributors",
+  "source_type": "public source repository with author-reported benchmarks",
+  "collection_role": "main",
+  "access_date": "2026-10-12",
+  "upstream_commit": "580568edd6f84537ff042ded4ee842b892bf3ff4",
+  "commit_date": "2026-09-20T02:55:10Z",
+  "readme_declared_dates": [
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18"
+  ],
+  "requested_url": "https://github.com/shi3z/deepseekv4.1-A100-custom",
+  "final_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/tree/580568edd6f84537ff042ded4ee842b892bf3ff4",
+  "retrieval_method": "git ls-remote + shallow blob-filtered sparse checkout; selected source files copied byte-for-byte; official model inference config retrieved separately via HTTPS",
+  "original_language": "English, code and shell",
+  "evidence_state": "verified-primary",
+  "agent_review": {
+    "reviewer": "Codex a100_project_research agent",
+    "date": "2026-10-12",
+    "method": "static source/AST inspection and deterministic CPU arithmetic audit; no upstream scripts imported or executed; no model downloaded or GPU test run"
+  },
+  "human_check": {
+    "status": "pending",
+    "date": null
+  },
+  "measurement_reproduction": false,
+  "raw_benchmark_results_available": false,
+  "raw_results_note": "Pinned tree tracks results/route_stats.pt only. README references results/prefix-audit-20260916/; those files are absent. upstream.gitignore excludes logs, JSON and dated result directories. route_stats.pt was not downloaded or deserialized.",
+  "model_identity_note": "Launch scripts prefer local DeepSeek-V4.1-Flash-Abliterated when it exists, fall back to DeepSeek-V4.1-Flash, and permit DSV41_CKPT override. Author run-specific checkpoint revision and config are absent. Official config is an external structural reference, not proof of author checkpoint contents.",
+  "official_config": {
+    "model_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "revision": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+    "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/inference/config.json",
+    "final_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/inference/config.json",
+    "access_date": "2026-10-12"
+  },
+  "license_status": "No repository-root LICENSE in pinned tree; a nested .agents skill license is not a repository license. Code reuse license remains unresolved.",
+  "analysis_path": "../../infrastructure/deepseek-a100-project-review-2026-10-12.md",
+  "audit_path": "../../infrastructure/data/deepseek-a100-project-2026-10-12/audit-results.json",
+  "files": {
+    "files/README.md": {
+      "sha256": "8dea9079cf1c71925339a9eb63aa662292c8d000d20b1f4d566a71d1bc6d1d1b",
+      "bytes": 49356,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/README.md"
+    },
+    "files/dsv41/bench_jev.py": {
+      "sha256": "3450d21169e2aa72ecfffba5e4cd84a4777a53e51eb01d3722f561fb424bde09",
+      "bytes": 15846,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/bench_jev.py"
+    },
+    "files/dsv41/bench_long_prefill.py": {
+      "sha256": "4f9085deea9c18b7c18fef52adbdf5ea688102fa8515bbe4e7bb5c2b144de804",
+      "bytes": 3318,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/bench_long_prefill.py"
+    },
+    "files/dsv41/cuda/fp4_tc.cu": {
+      "sha256": "1287ab5ad66e30ba2243d2edb301ede2d470bcdb5c6d152dd1c898dea03f71fc",
+      "bytes": 7818,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/cuda/fp4_tc.cu"
+    },
+    "files/dsv41/cuda/fp8_tc.cu": {
+      "sha256": "c3a123ec3e7f38269bf52a02e3e3977f726d95db631bede2dda20cb0da97c1e9",
+      "bytes": 9042,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/cuda/fp8_tc.cu"
+    },
+    "files/dsv41/decode.py": {
+      "sha256": "e52a1a61c8693c3bb63752eae6d364a23ac048bb1b638e35d8459f9086920fd6",
+      "bytes": 49716,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/decode.py"
+    },
+    "files/dsv41/dspark.py": {
+      "sha256": "d81783ecc3969dfb83632905b57eec23f938fe97c3da8af10451daec4ba68596",
+      "bytes": 15866,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/dspark.py"
+    },
+    "files/dsv41/engine.py": {
+      "sha256": "6059c92c718d5731165a61407fa29e383cde9908e4b5600fa26d86e108b3b8b0",
+      "bytes": 171134,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/engine.py"
+    },
+    "files/dsv41/engram.py": {
+      "sha256": "d7b4ac47cab3eb133c275c5a1f1c1ebc467919823a9fdebb66792c1ae40c6058",
+      "bytes": 11625,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/engram.py"
+    },
+    "files/dsv41/ep.py": {
+      "sha256": "45c9c83507f1a0eaf9e8ad4c3b9db31e5557945013cf24dee552b991ea2293ca",
+      "bytes": 31213,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/ep.py"
+    },
+    "files/dsv41/jev.py": {
+      "sha256": "6da706c870f9d56d686ac9163fdcc33c975debfff9a77f5eac10f2350f83160e",
+      "bytes": 29603,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/jev.py"
+    },
+    "files/dsv41/load.py": {
+      "sha256": "ed47b0aad4901eb4e2a068d9ac6ff86d847739b315929fc824c8bb88d351e9dd",
+      "bytes": 19030,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/load.py"
+    },
+    "files/dsv41/model.py": {
+      "sha256": "31b1b9f4b57044beb701a2c3ac2520501152ec28797ffe72fc47de28c546e45c",
+      "bytes": 98207,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/model.py"
+    },
+    "files/dsv41/mtp_accept.py": {
+      "sha256": "5306efff45d509ea716936cc50ee28b0670ccaddb66c96d96f48eb63c608c0f2",
+      "bytes": 3587,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/mtp_accept.py"
+    },
+    "files/dsv41/mtp_run.py": {
+      "sha256": "fff76450473ea71a29dbd7ba6579a7e06e915f6b3be782ec5783322a74b87bf8",
+      "bytes": 8841,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/mtp_run.py"
+    },
+    "files/dsv41/prefix_capacity.py": {
+      "sha256": "b3f9911bbf92da7138b959c6b4163e0afa3cff607cd44694d19bbace4d5e1fed",
+      "bytes": 1561,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/prefix_capacity.py"
+    },
+    "files/dsv41/serve.py": {
+      "sha256": "b1b4209538eed6ffd0806bfe1cb9ac1a83346fe03090c0b282572e83a7120a3f",
+      "bytes": 38441,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/serve.py"
+    },
+    "files/dsv41/stats.py": {
+      "sha256": "54b40266844f36af1f62e42588c585472e4d96d9875a28b1a8a99f85aa7d6334",
+      "bytes": 87446,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/stats.py"
+    },
+    "files/dsv41/test_long_prefill.py": {
+      "sha256": "42d30cb9d729edd11a4b9396f1fcdee4749639cc77097115da957268c2e80206",
+      "bytes": 5225,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/test_long_prefill.py"
+    },
+    "files/dsv41/test_long_session.py": {
+      "sha256": "5f1eabfd49ad8e101f7bf8b9460fcfae4155cd85a4615799d1986274244b4888",
+      "bytes": 2143,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/test_long_session.py"
+    },
+    "files/dsv41/test_prefix_replay.py": {
+      "sha256": "70b9fc7b07040423a2c3100751de1b42a666c597079950d784324212573daaa7",
+      "bytes": 5778,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/test_prefix_replay.py"
+    },
+    "files/dsv41/test_prefix_state_units.py": {
+      "sha256": "fc99a2684e9ee3302be4e11ee54f271a9e3d6dfd5a6d08eec16a718d0c096cda",
+      "bytes": 9200,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/test_prefix_state_units.py"
+    },
+    "files/dsv41/w8.py": {
+      "sha256": "5a49a0fd82c72daf2d0c53655add5f4e0c2831984fefda98088c54febc0f4a57",
+      "bytes": 4473,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/w8.py"
+    },
+    "files/examples/benchmarks/bench_code_generation.py": {
+      "sha256": "f5e14957a1fbfc1b01264fe50e91f7d0712234e242e40ce5df5dcf0c199d959c",
+      "bytes": 9608,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/examples/benchmarks/bench_code_generation.py"
+    },
+    "files/examples/benchmarks/bench_concurrency.py": {
+      "sha256": "f63184cfa74d02cf8b6e4f4965b61987d0f39a631fd3def1c41e7c14391efddd",
+      "bytes": 4019,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/examples/benchmarks/bench_concurrency.py"
+    },
+    "files/examples/benchmarks/bench_decode_throughput.py": {
+      "sha256": "022978016f518425f0535a8de3deeb8c97a4d4b464f3c58134c84129ecc1f7d2",
+      "bytes": 4492,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/examples/benchmarks/bench_decode_throughput.py"
+    },
+    "files/examples/benchmarks/bench_jev_structured.py": {
+      "sha256": "518afda9fa137b4bc76223cd750818cd93d17c0eb07ef487a3e721f77a672886",
+      "bytes": 8264,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/examples/benchmarks/bench_jev_structured.py"
+    },
+    "files/examples/benchmarks/bench_prefix_cache_hit.py": {
+      "sha256": "be7699f9f4d29e35616e1a9bbbefb54b635c8e3782a553ebbc01f55fb4d4d279",
+      "bytes": 5679,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/examples/benchmarks/bench_prefix_cache_hit.py"
+    },
+    "files/examples/claude_code/dsv41-litellm.yaml": {
+      "sha256": "6d2b10a6694ad1546b13ebb67f59a76075865cd3a88f9273fa50cbc41052e8ef",
+      "bytes": 1520,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/examples/claude_code/dsv41-litellm.yaml"
+    },
+    "files/run_128k_8slots.sh": {
+      "sha256": "7def6f0c5e32ce0e2217e933d7cc9eb37ccb78fcd181cd6798f5b312d6b533cd",
+      "bytes": 2359,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_128k_8slots.sh"
+    },
+    "files/run_16slots.sh": {
+      "sha256": "feeeb897f114e92f7e7d056a0e0f7e31e2a2f7309204a56121551a1ce17776eb",
+      "bytes": 1843,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_16slots.sh"
+    },
+    "files/run_1m_robust.sh": {
+      "sha256": "f27fa952a41fa3c2f70e87df0029419c144fa097603b78997a9e062de1a86fe7",
+      "bytes": 1225,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_1m_robust.sh"
+    },
+    "files/run_24slots.sh": {
+      "sha256": "1119b2923896db1fee85a7fc5e305271fd4da497443886ece3b597306fcd52f0",
+      "bytes": 1937,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_24slots.sh"
+    },
+    "files/run_32slots.sh": {
+      "sha256": "10a506cebfc82065a0a63d80dea494e30980c41a9a41ecb9756a4726ee083f08",
+      "bytes": 1839,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_32slots.sh"
+    },
+    "files/run_64slots.sh": {
+      "sha256": "98a03b1f8defe2888de4cfbf9c35d9d1eb8113b2231de35dd486fee0d43fb6c9",
+      "bytes": 1835,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_64slots.sh"
+    },
+    "files/run_mtp_4gpu.sh": {
+      "sha256": "0cb31ee20dd186acd567bf9ed96af059e0a22ebcd4756af5f2b92584fb6b8479",
+      "bytes": 1990,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_mtp_4gpu.sh"
+    },
+    "files/run_server.sh": {
+      "sha256": "5c755b2ab2b917254b5521af791bd918f0c683c6cb7c36b69c47120ba9ce3f08",
+      "bytes": 1259,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_server.sh"
+    },
+    "files/run_server_batched.sh": {
+      "sha256": "fe4da6830cf72be8e03b62132971b83bed168aae1a9fa6ec7594203c50ee5bb6",
+      "bytes": 1792,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_server_batched.sh"
+    },
+    "files/run_speed_agent.sh": {
+      "sha256": "09b28c678dd5216f72035308d7111f800417397dba700428ac884a25bccb5def",
+      "bytes": 1286,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/run_speed_agent.sh"
+    },
+    "official-inference-config.json": {
+      "sha256": "2e84f45cf1dac8c7fcbb200e96667d4b913275690668ed496f24c7747207a809",
+      "bytes": 1982
+    },
+    "original.md": {
+      "sha256": "8dea9079cf1c71925339a9eb63aa662292c8d000d20b1f4d566a71d1bc6d1d1b",
+      "bytes": 49356,
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/README.md"
+    },
+    "repository-tree.txt": {
+      "sha256": "6f6e7ae48f74c44c7b9554ac754d01491d7ea45f4ca675f2217fef5788a67204",
+      "bytes": 2811
+    },
+    "upstream.gitignore": {
+      "sha256": "87b4cd67840a4199dcc0d5f32b090bd9e6d75f1290ca0e9c9937701dde06e834",
+      "bytes": 388
+    }
+  },
+  "excluded_sources": [
+    {
+      "upstream_path": "examples/benchmarks/compare_official_vs_local_jev.py",
+      "reason": "Contains an embedded credential-like default; excluded from tracked source archive. Inspected only in gitignored checkout; no key value reproduced or used."
+    }
+  ],
+  "verification_scope": "Repository identity, fixed revision, archived original text, inspected code branches and own arithmetic are checked. README benchmark claims remain author-reported; Jev default timing is a simulation and raw GPU traces are absent.",
+  "retrieved_at": "2026-10-12",
+  "retrieval_time_precision": "day",
+  "cross_review": {
+    "date": "2026-10-12",
+    "topic": "CED and SWA Bounded Replay interpretation",
+    "official_report": {
+      "path": "../../models/deepseek-v4.1-flash/technical-report/DeepSeek_V41_Tech_Report.pdf",
+      "sha256": "ba68e2e40408125ae6d2f63a9a241b61c73910691c74ec1a2a7023c851eac08d",
+      "pages": [
+        9,
+        20,
+        22
+      ],
+      "sections": [
+        "2.2",
+        "3.2.2",
+        "4.2.1"
+      ],
+      "provenance": "Previously archived user-supplied technical report; exact PDF identity preserved in its metadata."
+    },
+    "book_reference": {
+      "path": "../TECH-078/upstream/manuscripts/08-推理优化.md",
+      "section": "8.3.3",
+      "upstream_revision": "3bdcb4fcab73010eeaccf31cc10a8242a895d82e"
+    },
+    "conclusion": "Official architecture intentionally uses approximate bounded replay and does not require full-forward mathematical equivalence. Review revised to distinguish this intended approximation, README SWA-only misstatement, and custom runtime boundary/quality validation. Toy example explains approximation; it is not a DeepSeek failure test.",
+    "reviewer": "Codex a100_project_research agent",
+    "human_check": "pending"
+  }
+}

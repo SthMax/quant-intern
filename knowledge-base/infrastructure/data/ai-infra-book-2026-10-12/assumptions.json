@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-10-12",
+  "purpose": "Independent CPU arithmetic for two book-reading examples; resource accounting, not GPU performance measurement",
+  "book_source_id": "TECH-078",
+  "book_commit": "3bdcb4fcab73010eeaccf31cc10a8242a895d82e",
+  "context_tokens": [
+    131072,
+    262144,
+    524288,
+    1000000
+  ],
+  "reserved_output_tokens": 8192,
+  "warm_new_tokens": [
+    1024,
+    8192
+  ],
+  "spark": {
+    "model": "Qwen3.8-27B-FP8",
+    "qwen_config_source": "knowledge-base/sources/TECH-070/qwen27/config.json",
+    "full_attention_layers": 16,
+    "query_heads": 24,
+    "kv_heads": 4,
+    "head_dim": 256,
+    "recurrent_and_convolution_state_bytes": 153944064,
+    "observed_fp8_kv_token_pool": 1806907,
+    "observed_kv_pool_gib": 59.73,
+    "observed_model_and_drafter_gib": 28.47,
+    "observations_source_id": "TECH-076",
+    "observations": [
+      {
+        "input_tokens": 500000,
+        "output_tokens": 2048,
+        "ttft_seconds": 1470.1,
+        "engine_prefill_tokens_per_second": 340.3,
+        "decode_tokens_per_second": 14.82,
+        "sample_kind": "single request, one repeat, random tokens, FP8 KV, MTP3, APC off"
+      },
+      {
+        "input_tokens": 999936,
+        "output_tokens": 64,
+        "ttft_seconds": 4815.8,
+        "engine_prefill_tokens_per_second": 207.68,
+        "decode_tokens_per_second": 9.83,
+        "sample_kind": "capacity probe only, 64 output tokens; not comparable stable decode"
+      }
+    ],
+    "notes": [
+      "Full-attention causal QK/PV FLOPs only; no dense/linear-attention projections, recurrent update, quantization, MTP or scheduling costs included.",
+      "Full-window state uses total context. Prefill uses context minus 8192 output tokens. Warm continuation starts at input minus new tokens and ends at the same input length.",
+      "FP8 raw KV assumes one byte per value; quantization scales, alignment and allocator overhead are excluded. Logged total pool is a separate observed engine figure."
+    ]
+  },
+  "deepseek": {
+    "model": "DeepSeek-V4.1-Flash",
+    "active_users": 20,
+    "resident_users_sensitivity": [
+      20,
+      40
+    ],
+    "book_global_main_entry_bytes": 288,
+    "book_global_index_entry_bytes": 68,
+    "book_swa_entry_bytes": 528,
+    "current_vllm_hopper_global_main_entry_bytes": 584,
+    "current_vllm_hopper_index_entry_bytes": 132,
+    "current_vllm_layout_evidence": "TECH-080/vllm__models__deepseek_v41__attention.py at a281ad32f0368caa2c6ebe38a0e59a75b3f22392: block 64, 576-byte page alignment, TP-replicated shared latent. 1827B/token is summed pages. The extra LCM(512,576) stride condition requires SM100 sparse logits, not this Hopper path. Hybrid grouping/other-state overhead is additional. TECH-084 H200 TP4 C32 log reports 18,326,608 shared tokens and 35.16GiB; post-graph suggests32.49GiB for0.92 budget.",
+    "declared_transfer_payload_bandwidth_GBps": [
+      25,
+      50
+    ],
+    "notes": [
+      "Production compact, BF16 reference and current serving implementation are separate execution identities.",
+      "Main/index cache is shared by four owner layers: three compression-2 and one compression-1; layers using cached entries still perform their own reads.",
+      "Transfer scenarios assume one complete unique global state object, serialized payload only; no TP replication, metadata, layout conversion, queue, restore, MTP or workspace costs included.",
+      "Hopper static page payload excludes hybrid cache group packing and other pool states; pool startup token capacity is a separate runtime observation."
+    ],
+    "current_vllm_hopper_page_aligned_bytes_per_token": 1827
+  }
+}

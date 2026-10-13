@@ -1,5 +1,9 @@
 # Model Survey and Financial NLP Evaluation Plan
 
+> 12 October research integration: [Scenario 1](../infrastructure/scenario-1-personal-agent-2026-09-24.md) and [Scenario 3](../infrastructure/scenario-3-company-agent-2026-09-23.md) now use 131K/262K baselines, 512K and 1M targets, 8K output reserve, cold/warm/cache-recovery states, and separate resident/active counts. The user-confirmed personal target is 20+ output tokens/s; shared 10/20 tokens/s and warm p95 thresholds remain planning assumptions. Public replay and random-token tests retain their own workload and acceptance conditions.
+
+> 12 October 2026: [external DGX Spark performance evidence](../infrastructure/dgx-spark-qwen27-external-benchmark-2026-10-12.md) has been recorded as TECH-076. It uses random token workloads, FP8 KV and MTP3; financial NLP quality remains a separate evaluation. The 16 September status below is the earlier research checkpoint.
+
 **Phase 2 — Weeks 3–5.** Derived from [the final project plan](../../PROJECT_PLAN.md).
 Status (16 September 2026, revised): the user reprioritized eight current models
 for professional workstations and shared services. See the [model survey](model-survey-2026-09-16.md) for archived

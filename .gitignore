@@ -12,3 +12,6 @@ confidential/
 
 # Local research tool dependencies
 .venv-research/
+
+# Upstream research checkouts and temporary work (source evidence is archived separately)
+.research-workspace/

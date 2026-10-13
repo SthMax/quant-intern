@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated": "2026-09-24",
+  "updated": "2026-10-12",
   "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
   "scope": "Main reading paths for research retrieval; supporting and redirect records are provenance/context, not independent main readings. Do not recursively ingest sources/, reference/ or audits/.",
   "counts": {
-    "main": 181,
+    "main": 192,
     "redirect": 4,
     "supporting": 15
   },
-  "registered_source_ids": 200,
+  "registered_source_ids": 211,
   "records": [
     {
       "source_id": "FUND-001",
@@ -2295,6 +2295,128 @@
       "text_kind": "authored_source_index",
       "available_text": true,
       "phase": 2
+    },
+    {
+      "source_id": "TECH-076",
+      "title": "Qwen3.8-27B-FP8 单台DGX Spark外部性能测试",
+      "collection_role": "main",
+      "evidence_state": "user-provided-external-test-summary",
+      "reading_path": "sources/TECH-076/original.md",
+      "metadata_path": "sources/TECH-076/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "organized_user_summary_with_operational_identifiers_omitted",
+      "available_text": true,
+      "phase": 2
+    },
+    {
+      "source_id": "TECH-077",
+      "title": "DeepSeek-V4.1-Flash on A100 (sm80): custom runtime, code and benchmark claims",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-077/original.md",
+      "metadata_path": "sources/TECH-077/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "original_markdown_and_source_snapshot",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-078",
+      "title": "深入理解 AI Infra：量化分析与系统设计（固定版本精读与复算来源包）",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-078/original.md",
+      "metadata_path": "sources/TECH-078/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "original_markdown_and_source_snapshot",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-079",
+      "title": "DeepSeek-AI official V4.1 Flash model snapshot",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-079/original.md",
+      "metadata_path": "sources/TECH-079/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim primary markdown or source code",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-080",
+      "title": "vLLM DeepSeek V4.1 and hybrid-cache implementation",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-080/original.md",
+      "metadata_path": "sources/TECH-080/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim primary markdown or source code",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-081",
+      "title": "SGLang DeepSeek V4.1 cookbook and deployment matrix",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-081/original.md",
+      "metadata_path": "sources/TECH-081/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim primary markdown or source code",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-082",
+      "title": "Qwen27 long-context serving and vLLM prefix-cache semantics",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-082/original.md",
+      "metadata_path": "sources/TECH-082/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_primary_documentation",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-083",
+      "title": "OpenCode and Pi custom endpoints, model context limits and compaction",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-083/original.md",
+      "metadata_path": "sources/TECH-083/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim_primary_documentation_and_code",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-084",
+      "title": "InferenceX DeepSeek-V4.1-Flash public AgentX benchmark rows and startup log excerpts",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-084/original.md",
+      "metadata_path": "sources/TECH-084/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "raw_public_API_JSON_and_mechanical_log_extraction",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-085",
+      "title": "NVIDIA DGX Spark hardware and US storefront price observation",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-085/original.md",
+      "metadata_path": "sources/TECH-085/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "original_vendor_HTML_and_mechanical_text",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-087",
+      "title": "A100 H100 H200 complete-system prices and China delivery conditions",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-087/original.md",
+      "metadata_path": "sources/TECH-087/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index",
+      "available_text": true
     }
   ],
   "extra_reference_readings": [

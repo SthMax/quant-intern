@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-12",
+  "source": "TECH-085",
+  "storefront_url": "https://marketplace.nvidia.com/en-us/enterprise/personal-ai-supercomputers/dgx-spark/",
+  "configuration": "NVIDIA DGX Spark 128GB 4TB",
+  "observed_us_price_usd": 6950,
+  "availability": "Out of Stock",
+  "price_evidence": "web-tool extracted visible en-us US page; direct HTML request timed out",
+  "usd_cny_scenario": 7.0,
+  "fx_is_spot": false,
+  "ex_vat_cny": 48650,
+  "tax_reserve_fraction": 0.13,
+  "channel_shipping_reserve_fraction": [
+    0.05,
+    0.1
+  ],
+  "support_reserve_cny": [
+    1000,
+    2000
+  ],
+  "china_cash_budget_cny": [
+    58407.0,
+    61839.5
+  ],
+  "china_quote_received": false,
+  "software_implementation_excluded": true,
+  "past_price": {
+    "date": "2026-09-24",
+    "usd": 4699,
+    "status": "historical archived observation; search cached copy still visible"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "source_id": "TECH-080",
+  "title": "vLLM DeepSeek V4.1 and hybrid-cache implementation",
+  "accessed_at": "2026-10-12",
+  "fixed_revision": "a281ad32f0368caa2c6ebe38a0e59a75b3f22392",
+  "evidence_state": "verified-primary",
+  "human_check_status": "pending",
+  "reviewer": "Codex deployment research agent; static primary document, data and code inspection",
+  "text_kind": "verbatim primary markdown or source code",
+  "verification_scope": "Only claims explicitly located in the archived source; code inspection is not target-device execution. Source version is frozen; deployment recipe hardware assertions are publisher reports.",
+  "files": {
+    "docs__features__engram.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/features/engram.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/features/engram.md",
+      "accessed_at": "2026-10-12",
+      "bytes": 7124,
+      "sha256": "b059d626fde1f73a08239cf218674c680260dd82c3f4a4712f4bf462e87dd5c9"
+    },
+    "vllm__config__engram.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/config/engram.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/config/engram.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 4987,
+      "sha256": "53bf5367af69149f7dc6dfe576921f22948cdb5cbd3e903c8bd7b310f80aa202"
+    },
+    "vllm__models__deepseek_v41__nvidia__model.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/nvidia/model.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/nvidia/model.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 70436,
+      "sha256": "5fe8b4a758ab586dd24ac218873a2c064cd3d72687b196dec4edf1b5e53f83a3"
+    },
+    "vllm__models__deepseek_v41__nvidia__model_state.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/nvidia/model_state.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/nvidia/model_state.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 28770,
+      "sha256": "53e4fe39b2723ceb0b7338bfcef6d19ef5576389160c16e5718c3b16cfdcb72b"
+    },
+    "vllm__models__deepseek_v41__attention.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/attention.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/attention.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 62956,
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb"
+    },
+    "vllm__models__deepseek_v41__sparse_mla.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/sparse_mla.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/sparse_mla.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 9903,
+      "sha256": "1b87aa3f27e7867b6508893da5f52a0f10944b59fd03aa58bd8c568f4e6aef16"
+    },
+    "vllm__models__deepseek_v41__quant_config.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/quant_config.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/quant_config.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 10756,
+      "sha256": "12ce3c1f5b7fa930c21784a7f0a8a003977259f891c599937f78704ed02059e5"
+    },
+    "vllm__models__deepseek_v41__nvidia__flashmla.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/nvidia/flashmla.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/nvidia/flashmla.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 14931,
+      "sha256": "6bfcc91c278bae8f9c95d9ec4da12ef98112b9ccf9d22547743485759c258348"
+    },
+    "vllm__models__deepseek_v41__common__ops__cache_utils.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/common/ops/cache_utils.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/common/ops/cache_utils.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 58550,
+      "sha256": "f0da7c855bc9c1be7289817e5896942fcf276d4c13113abff1fb81e8064023b5"
+    },
+    "vllm__models__deepseek_v41__common__ops__indexer_k_store.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/common/ops/indexer_k_store.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/models/deepseek_v41/common/ops/indexer_k_store.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 10183,
+      "sha256": "d89d7043ec7924f1636f8ef257acf5ed0c66687681c7e905ceb16321155360f6"
+    },
+    "vllm__v1__kv_cache_interface.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/v1/kv_cache_interface.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/v1/kv_cache_interface.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 62700,
+      "sha256": "39ea5be3054f97238f81ba070ea661f1b5975a6268ced5f413d4a057ea449d4a"
+    },
+    "vllm__v1__attention__backends__mla__sparse_indexer.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/v1/attention/backends/mla/sparse_indexer.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/v1/attention/backends/mla/sparse_indexer.py",
+      "accessed_at": "2026-10-12",
+      "bytes": 9868,
+      "sha256": "c39227f0645c6ebcb51e234fa66343b0d8b699918fda6765804fbbffac7f26a3"
+    },
+    "docs__design__hybrid_kv_cache_manager.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/design/hybrid_kv_cache_manager.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/design/hybrid_kv_cache_manager.md",
+      "accessed_at": "2026-10-12",
+      "bytes": 15575,
+      "sha256": "5a3138f8d3fddc44d69f7782510c0c97b394ee073bb743cae34bfbf281985b4a"
+    },
+    "original.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/features/engram.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/docs/features/engram.md",
+      "accessed_at": "2026-10-12",
+      "bytes": 7124,
+      "sha256": "b059d626fde1f73a08239cf218674c680260dd82c3f4a4712f4bf462e87dd5c9"
+    },
+    "recipe.yaml": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/recipes/21302fdc7506d180d2e4f37beeabc6836bd6d50d/models/deepseek-ai/DeepSeek-V4.1-Flash.yaml",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/recipes/21302fdc7506d180d2e4f37beeabc6836bd6d50d/models/deepseek-ai/DeepSeek-V4.1-Flash.yaml",
+      "accessed_at": "2026-10-12",
+      "bytes": 40996,
+      "sha256": "2aba26d8a8bb3b2b73cde4629021c8fd3959e3a2291c032b91692a33465d9860"
+    },
+    "vllm__vllm__v1__attention__backends__mla__indexer.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/v1/attention/backends/mla/indexer.py",
+      "revision": "a281ad32f0368caa2c6ebe38a0e59a75b3f22392",
+      "bytes": 80401,
+      "sha256": "415d64eec99f0e1501f2767da49e26c0ec9ab029f2ba719bc018581d1dc836a8"
+    },
+    "vllm__vllm__config__attention.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/config/attention.py",
+      "revision": "a281ad32f0368caa2c6ebe38a0e59a75b3f22392",
+      "bytes": 9763,
+      "sha256": "feb7b610718218db1e7e51477b4da112155903a90dcf3c8a6815f56a530c581c"
+    },
+    "vllm__vllm__model_executor__layers__quantization__utils__mxfp4_utils.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/a281ad32f0368caa2c6ebe38a0e59a75b3f22392/vllm/model_executor/layers/quantization/utils/mxfp4_utils.py",
+      "revision": "a281ad32f0368caa2c6ebe38a0e59a75b3f22392",
+      "bytes": 21145,
+      "sha256": "49b2c8b2104c8faad7895012939aea24f5e695d87aa4bef2b7b921d29075fd2b"
+    },
+    "evidence-note.md": {
+      "derived_from": "authored agent source inspection",
+      "text_kind": "authored_analysis_not_original",
+      "bytes": 1148,
+      "sha256": "ecaf94173edd231a9ffce42f82d2f4ad8520f5ca1d73c64207fcb79e330bfa67"
+    }
+  },
+  "publication_date": "not stated; see fixed commit or experiment date",
+  "evidence_note": "evidence-note.md",
+  "used_in": [
+    "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md",
+    "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md"
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-12",
+  "evidence_kind": "independent_cpu_resource_recalculation_not_measured_performance",
+  "spark_cases": [
+    {
+      "context_tokens": 131072,
+      "prompt_tokens": 122880,
+      "reserved_output_tokens": 8192,
+      "raw_full_attention_kv_bytes": {
+        "fp8": 4294967296,
+        "bf16": 8589934592
+      },
+      "active_recurrent_and_conv_state_bytes": 153944064,
+      "raw_kv_plus_one_active_state_gib": {
+        "fp8": 4.14337158203125,
+        "bf16": 8.14337158203125
+      },
+      "logged_pool_token_fraction_single": 0.07253942787315562,
+      "logged_pool_token_fraction_three": 0.21761828361946686,
+      "logged_pool_fits_one": true,
+      "logged_pool_fits_three": true,
+      "cold_causal_attention_pairs": 7549808640,
+      "cold_qk_pv_matrix_flops": 2968705554186240,
+      "warm": [
+        {
+          "new_tokens": 1024,
+          "cached_history_tokens": 121856,
+          "causal_attention_pairs": 125305344,
+          "qk_pv_matrix_flops": 49272066146304,
+          "qk_pv_min_effective_TFLOPS_for_5s": 9.854413229260802,
+          "qk_pv_min_effective_TFLOPS_for_10s": 4.927206614630401,
+          "fraction_of_cold_attention_work": 0.01659715497106957
+        },
+        {
+          "new_tokens": 8192,
+          "cached_history_tokens": 114688,
+          "causal_attention_pairs": 973082624,
+          "qk_pv_matrix_flops": 382631657078784,
+          "qk_pv_min_effective_TFLOPS_for_5s": 76.5263314157568,
+          "qk_pv_min_effective_TFLOPS_for_10s": 38.2631657078784,
+          "fraction_of_cold_attention_work": 0.12888838252726892
+        }
+      ]
+    },
+    {
+      "context_tokens": 262144,
+      "prompt_tokens": 253952,
+      "reserved_output_tokens": 8192,
+      "raw_full_attention_kv_bytes": {
+        "fp8": 8589934592,
+        "bf16": 17179869184
+      },
+      "active_recurrent_and_conv_state_bytes": 153944064,
+      "raw_kv_plus_one_active_state_gib": {
+        "fp8": 8.14337158203125,
+        "bf16": 16.14337158203125
+      },
+      "logged_pool_token_fraction_single": 0.14507885574631124,
+      "logged_pool_token_fraction_three": 0.4352365672389337,
+      "logged_pool_fits_one": true,
+      "logged_pool_fits_three": true,
+      "cold_causal_attention_pairs": 32245936128,
+      "cold_qk_pv_matrix_flops": 12679618020507648,
+      "warm": [
+        {
+          "new_tokens": 1024,
+          "cached_history_tokens": 252928,
+          "causal_attention_pairs": 259523072,
+          "qk_pv_matrix_flops": 102048624279552,
+          "qk_pv_min_effective_TFLOPS_for_5s": 20.409724855910397,
+          "qk_pv_min_effective_TFLOPS_for_10s": 10.204862427955199,
+          "fraction_of_cold_attention_work": 0.008048241209987674
+        },
+        {
+          "new_tokens": 8192,
+          "cached_history_tokens": 245760,
+          "causal_attention_pairs": 2046824448,
+          "qk_pv_matrix_flops": 804844122144768,
+          "qk_pv_min_effective_TFLOPS_for_5s": 160.96882442895358,
+          "qk_pv_min_effective_TFLOPS_for_10s": 80.48441221447679,
+          "fraction_of_cold_attention_work": 0.06347542337971351
+        }
+      ]
+    },
+    {
+      "context_tokens": 524288,
+      "prompt_tokens": 516096,
+      "reserved_output_tokens": 8192,
+      "raw_full_attention_kv_bytes": {
+        "fp8": 17179869184,
+        "bf16": 34359738368
+      },
+      "active_recurrent_and_conv_state_bytes": 153944064,
+      "raw_kv_plus_one_active_state_gib": {
+        "fp8": 16.14337158203125,
+        "bf16": 32.14337158203125
+      },
+      "logged_pool_token_fraction_single": 0.2901577114926225,
+      "logged_pool_token_fraction_three": 0.8704731344778674,
+      "logged_pool_fits_one": true,
+      "logged_pool_fits_three": true,
+      "cold_causal_attention_pairs": 133177798656,
+      "cold_qk_pv_matrix_flops": 52367641276317696,
+      "warm": [
+        {
+          "new_tokens": 1024,
+          "cached_history_tokens": 515072,
+          "causal_attention_pairs": 527958528,
+          "qk_pv_matrix_flops": 207601740546048,
+          "qk_pv_min_effective_TFLOPS_for_5s": 41.5203481092096,
+          "qk_pv_min_effective_TFLOPS_for_10s": 20.7601740546048,
+          "fraction_of_cold_attention_work": 0.003964313371508143
+        },
+        {
+          "new_tokens": 8192,
+          "cached_history_tokens": 507904,
+          "causal_attention_pairs": 4194308096,
+          "qk_pv_matrix_flops": 1649269052276736,
+          "qk_pv_min_effective_TFLOPS_for_5s": 329.8538104553472,
+          "qk_pv_min_effective_TFLOPS_for_10s": 164.9269052276736,
+          "fraction_of_cold_attention_work": 0.031494048845438216
+        }
+      ]
+    },
+    {
+      "context_tokens": 1000000,
+      "prompt_tokens": 991808,
+      "reserved_output_tokens": 8192,
+      "raw_full_attention_kv_bytes": {
+        "fp8": 32768000000,
+        "bf16": 65536000000
+      },
+      "active_recurrent_and_conv_state_bytes": 153944064,
+      "raw_kv_plus_one_active_state_gib": {
+        "fp8": 30.66094970703125,
+        "bf16": 61.17852783203125
+      },
+      "logged_pool_token_fraction_single": 0.5534319143154574,
+      "logged_pool_token_fraction_three": 1.6602957429463718,
+      "logged_pool_fits_one": true,
+      "logged_pool_fits_three": false,
+      "cold_causal_attention_pairs": 491842050336,
+      "cold_qk_pv_matrix_flops": 193400163664920576,
+      "warm": [
+        {
+          "new_tokens": 1024,
+          "cached_history_tokens": 990784,
+          "causal_attention_pairs": 1015087616,
+          "qk_pv_matrix_flops": 399148692013056,
+          "qk_pv_min_effective_TFLOPS_for_5s": 79.8297384026112,
+          "qk_pv_min_effective_TFLOPS_for_10s": 39.9148692013056,
+          "fraction_of_cold_attention_work": 0.002063848780938
+        },
+        {
+          "new_tokens": 8192,
+          "cached_history_tokens": 983616,
+          "causal_attention_pairs": 8091340800,
+          "qk_pv_matrix_flops": 3181644664012800,
+          "qk_pv_min_effective_TFLOPS_for_5s": 636.32893280256,
+          "qk_pv_min_effective_TFLOPS_for_10s": 318.16446640128,
+          "fraction_of_cold_attention_work": 0.016451096026605355
+        }
+      ]
+    }
+  ],
+  "deepseek_cases": [
+    {
+      "context_tokens": 131072,
+      "independent_sessions": 20,
+      "global_entries_per_session": 327680,
+      "book_production_global_bytes": 2333081600,
+      "reference_bf16_global_bytes": 8388608000,
+      "current_vllm_hopper_global_bytes_per_replicated_rank": 4692377600,
+      "current_vllm_hopper_page_aligned_bytes_per_replicated_rank": 4789370880,
+      "book_swa_bytes": 54067200,
+      "book_compressor_fp32_bytes": 491520,
+      "reference_engram_token_history_bytes": 20971520,
+      "book_production_state_budget_bytes": 2408611840,
+      "reference_bf16_state_budget_bytes": 8514928640,
+      "book_encoder_swa_only_bytes": 27033600,
+      "book_decode_main_logical_read_bytes_per_step": 166133760,
+      "book_decode_index_logical_read_bytes_per_step": 534773760,
+      "book_decode_total_logical_read_bytes_per_step": 700907520,
+      "reference_index_full_scan_bytes_per_step": 4362076160,
+      "global_payload_transfer_seconds": {
+        "25": 0.093323264,
+        "50": 0.046661632
+      },
+      "decode_total_logical_read_BW_GBps_at_20tps": 14.0181504
+    },
+    {
+      "context_tokens": 131072,
+      "independent_sessions": 40,
+      "global_entries_per_session": 327680,
+      "book_production_global_bytes": 4666163200,
+      "reference_bf16_global_bytes": 16777216000,
+      "current_vllm_hopper_global_bytes_per_replicated_rank": 9384755200,
+      "current_vllm_hopper_page_aligned_bytes_per_replicated_rank": 9578741760,
+      "book_swa_bytes": 108134400,
+      "book_compressor_fp32_bytes": 983040,
+      "reference_engram_token_history_bytes": 41943040,
+      "book_production_state_budget_bytes": 4817223680,
+      "reference_bf16_state_budget_bytes": 17029857280,
+      "book_encoder_swa_only_bytes": 54067200,
+      "book_decode_main_logical_read_bytes_per_step": 332267520,
+      "book_decode_index_logical_read_bytes_per_step": 1069547520,
+      "book_decode_total_logical_read_bytes_per_step": 1401815040,
+      "reference_index_full_scan_bytes_per_step": 8724152320,
+      "global_payload_transfer_seconds": {
+        "25": 0.186646528,
+        "50": 0.093323264
+      },
+      "decode_total_logical_read_BW_GBps_at_20tps": 28.0363008
+    },
+    {
+      "context_tokens": 262144,
+      "independent_sessions": 20,
+      "global_entries_per_session": 655360,
+      "book_production_global_bytes": 4666163200,
+      "reference_bf16_global_bytes": 16777216000,
+      "current_vllm_hopper_global_bytes_per_replicated_rank": 9384755200,
+      "current_vllm_hopper_page_aligned_bytes_per_replicated_rank": 9578741760,
+      "book_swa_bytes": 54067200,
+      "book_compressor_fp32_bytes": 491520,
+      "reference_engram_token_history_bytes": 41943040,
+      "book_production_state_budget_bytes": 4762664960,
+      "reference_bf16_state_budget_bytes": 16924508160,
+      "book_encoder_swa_only_bytes": 27033600,
+      "book_decode_main_logical_read_bytes_per_step": 166133760,
+      "book_decode_index_logical_read_bytes_per_step": 980418560,
+      "book_decode_total_logical_read_bytes_per_step": 1146552320,
+      "reference_index_full_scan_bytes_per_step": 8724152320,
+      "global_payload_transfer_seconds": {
+        "25": 0.186646528,
+        "50": 0.093323264
+      },
+      "decode_total_logical_read_BW_GBps_at_20tps": 22.9310464
+    },
+    {
+      "context_tokens": 262144,
+      "independent_sessions": 40,
+      "global_entries_per_session": 655360,
+      "book_production_global_bytes": 9332326400,
+      "reference_bf16_global_bytes": 33554432000,
+      "current_vllm_hopper_global_bytes_per_replicated_rank": 18769510400,
+      "current_vllm_hopper_page_aligned_bytes_per_replicated_rank": 19157483520,
+      "book_swa_bytes": 108134400,
+      "book_compressor_fp32_bytes": 983040,
+      "reference_engram_token_history_bytes": 83886080,
+      "book_production_state_budget_bytes": 9525329920,
+      "reference_bf16_state_budget_bytes": 33849016320,
+      "book_encoder_swa_only_bytes": 54067200,
+      "book_decode_main_logical_read_bytes_per_step": 332267520,
+      "book_decode_index_logical_read_bytes_per_step": 1960837120,
+      "book_decode_total_logical_read_bytes_per_step": 2293104640,
+      "reference_index_full_scan_bytes_per_step": 17448304640,
+      "global_payload_transfer_seconds": {
+        "25": 0.373293056,
+        "50": 0.186646528
+      },
+      "decode_total_logical_read_BW_GBps_at_20tps": 45.8620928
+    },
+    {
+      "context_tokens": 524288,
+      "independent_sessions": 20,
+      "global_entries_per_session": 1310720,
+      "book_production_global_bytes": 9332326400,
+      "reference_bf16_global_bytes": 33554432000,
+      "current_vllm_hopper_global_bytes_per_replicated_rank": 18769510400,
+      "current_vllm_hopper_page_aligned_bytes_per_replicated_rank": 19157483520,
+      "book_swa_bytes": 54067200,
+      "book_compressor_fp32_bytes": 491520,
+      "reference_engram_token_history_bytes": 83886080,
+      "book_production_state_budget_bytes": 9470771200,
+      "reference_bf16_state_budget_bytes": 33743667200,
+      "book_encoder_swa_only_bytes": 27033600,
+      "book_decode_main_logical_read_bytes_per_step": 166133760,
+      "book_decode_index_logical_read_bytes_per_step": 1871708160,
+      "book_decode_total_logical_read_bytes_per_step": 2037841920,
+      "reference_index_full_scan_bytes_per_step": 17448304640,
+      "global_payload_transfer_seconds": {
+        "25": 0.373293056,
+        "50": 0.186646528
+      },
+      "decode_total_logical_read_BW_GBps_at_20tps": 40.7568384
+    },
+    {
+      "context_tokens": 524288,
+      "independent_sessions": 40,
+      "global_entries_per_session": 1310720,
+      "book_production_global_bytes": 18664652800,
+      "reference_bf16_global_bytes": 67108864000,
+      "current_vllm_hopper_global_bytes_per_replicated_rank": 37539020800,
+      "current_vllm_hopper_page_aligned_bytes_per_replicated_rank": 38314967040,
+      "book_swa_bytes": 108134400,
+      "book_compressor_fp32_bytes": 983040,
+      "reference_engram_token_history_bytes": 167772160,
+      "book_production_state_budget_bytes": 18941542400,
+      "reference_bf16_state_budget_bytes": 67487334400,
+      "book_encoder_swa_only_bytes": 54067200,
+      "book_decode_main_logical_read_bytes_per_step": 332267520,
+      "book_decode_index_logical_read_bytes_per_step": 3743416320,
+      "book_decode_total_logical_read_bytes_per_step": 4075683840,
+      "reference_index_full_scan_bytes_per_step": 34896609280,
+      "global_payload_transfer_seconds": {
+        "25": 0.746586112,
+        "50": 0.373293056
+      },
+      "decode_total_logical_read_BW_GBps_at_20tps": 81.5136768
+    },
+    {
+      "context_tokens": 1000000,
+      "independent_sessions": 20,
+      "global_entries_per_session": 2500000,
+      "book_production_global_bytes": 17800000000,
+      "reference_bf16_global_bytes": 64000000000,
+      "current_vllm_hopper_global_bytes_per_replicated_rank": 35800000000,
+      "current_vllm_hopper_page_aligned_bytes_per_replicated_rank": 36540000000,
+      "book_swa_bytes": 54067200,
+      "book_compressor_fp32_bytes": 491520,
+      "reference_engram_token_history_bytes": 160000000,
+      "book_production_state_budget_bytes": 18014558720,
+      "reference_bf16_state_budget_bytes": 64265349120,
+      "book_encoder_swa_only_bytes": 27033600,
+      "book_decode_main_logical_read_bytes_per_step": 166133760,
+      "book_decode_index_logical_read_bytes_per_step": 3489128960,
+      "book_decode_total_logical_read_bytes_per_step": 3655262720,
+      "reference_index_full_scan_bytes_per_step": 33280000000,
+      "global_payload_transfer_seconds": {
+        "25": 0.712,
+        "50": 0.356
+      },
+      "decode_total_logical_read_BW_GBps_at_20tps": 73.1052544
+    },
+    {
+      "context_tokens": 1000000,
+      "independent_sessions": 40,
+      "global_entries_per_session": 2500000,
+      "book_production_global_bytes": 35600000000,
+      "reference_bf16_global_bytes": 128000000000,
+      "current_vllm_hopper_global_bytes_per_replicated_rank": 71600000000,
+      "current_vllm_hopper_page_aligned_bytes_per_replicated_rank": 73080000000,
+      "book_swa_bytes": 108134400,
+      "book_compressor_fp32_bytes": 983040,
+      "reference_engram_token_history_bytes": 320000000,
+      "book_production_state_budget_bytes": 36029117440,
+      "reference_bf16_state_budget_bytes": 128530698240,
+      "book_encoder_swa_only_bytes": 54067200,
+      "book_decode_main_logical_read_bytes_per_step": 332267520,
+      "book_decode_index_logical_read_bytes_per_step": 6978257920,
+      "book_decode_total_logical_read_bytes_per_step": 7310525440,
+      "reference_index_full_scan_bytes_per_step": 66560000000,
+      "global_payload_transfer_seconds": {
+        "25": 1.424,
+        "50": 0.712
+      },
+      "decode_total_logical_read_BW_GBps_at_20tps": 146.2105088
+    }
+  ],
+  "deepseek_weight_ledger": {
+    "author_published_component_payload_bytes": {
+      "vision": 970536960,
+      "backbone": 298309535168,
+      "dspark": 7932874632,
+      "engram": 203073076240
+    },
+    "independent_engram_tables_bytes": 202758032400,
+    "engram_other_component_bytes": 315043840,
+    "text_plus_dspark_bytes": 509315486040,
+    "illustrative_gpu_backbone_dspark_and_engram_projections_bytes": 306557453640,
+    "scope": "Book published checkpoint file accounting; loader residency/dtype conversion/sharding must be checked per backend."
+  },
+  "restore_frequency_cases": [
+    {
+      "context_tokens": 131072,
+      "sessions": 20,
+      "book_global_transfer_once_GB": 2.3330816,
+      "book_global_transfer_each_step_8192_TB": 19.1126044672
+    },
+    {
+      "context_tokens": 262144,
+      "sessions": 20,
+      "book_global_transfer_once_GB": 4.6661632,
+      "book_global_transfer_each_step_8192_TB": 38.2252089344
+    },
+    {
+      "context_tokens": 524288,
+      "sessions": 20,
+      "book_global_transfer_once_GB": 9.3323264,
+      "book_global_transfer_each_step_8192_TB": 76.4504178688
+    },
+    {
+      "context_tokens": 1000000,
+      "sessions": 20,
+      "book_global_transfer_once_GB": 17.8,
+      "book_global_transfer_each_step_8192_TB": 145.8176
+    }
+  ],
+  "agent_resource_example": {
+    "arrival_tasks_per_s": 0.1,
+    "rounds": 3,
+    "model_s_per_round": 60,
+    "tool_wall_s_per_round": 10,
+    "tool_cpu_s_per_round": 4,
+    "environment_GiB": 2,
+    "task_wall_s": 210,
+    "mean_resident_tasks": 21,
+    "mean_active_model_calls": 18,
+    "mean_busy_cpu_cores": 1.2,
+    "mean_resident_environment_GiB": 42,
+    "model_call_context_tokens": 1000000,
+    "note": "Self-declared steady-state teaching inputs; no queue, failures or burst headroom; active calls and resident tasks differ."
+  },
+  "external_observation_ratios": {
+    "ttft_1m_capacity_to_500k": 3.27583157608326,
+    "input_ratio": 1.999872,
+    "stable_500k_decode_output_8192_seconds_at_recorded_mean": 552.7665317139001,
+    "note": "Final value is arithmetic at a reported mean, not a measured 8192-output request; 1M decode omitted because capacity probe output is only 64."
+  },
+  "provenance": [
+    {
+      "path": "knowledge-base/infrastructure/data/ai-infra-book-2026-10-12/assumptions.json",
+      "sha256": "095cae390593223d43ae142c7319a8c7cdbc38efd7778818dc85fc313799455f"
+    },
+    {
+      "path": "knowledge-base/infrastructure/data/ai-infra-book-2026-10-12/calculate.py",
+      "sha256": "ace30fea416363fa554209392b8e12d6d60b21fe7905dff893e75e3ef0788d4d"
+    },
+    {
+      "path": "knowledge-base/sources/TECH-078/upstream/calculations/configs/models/deepseek-v4.1-flash/config.json",
+      "sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879"
+    },
+    {
+      "path": "knowledge-base/sources/TECH-078/upstream/calculations/results/v41-throughline.json",
+      "sha256": "dec1c46cf9e0410d35d106b9c48c9b4591301397b9e69a15520a8ae6b8cf403a"
+    },
+    {
+      "path": "knowledge-base/sources/TECH-078/upstream/calculations/results/v41-flash-n8192-b1.json",
+      "sha256": "fef45f42a51955e5be704a3d4ca46742626c32d5bb83b45088ff5a60a2bb2fca"
+    },
+    {
+      "path": "knowledge-base/sources/TECH-070/qwen27/config.json",
+      "sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc"
+    },
+    {
+      "path": "knowledge-base/sources/TECH-080/vllm__models__deepseek_v41__attention.py",
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb"
+    }
+  ]
+}
