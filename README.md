@@ -19,14 +19,16 @@ multi-document summarization.
 
 ## Current work: Thursday deployment presentation
 
-The [14 October presentation notes](presentation/week7-deployment-2026-10-15/speaker-notes.md)
-are ready for the user's content review. They explain Spark, company DeepSeek,
+The [15 October Beamer PDF](presentation/week7-deployment-2026-10-15/output/pdf/week7-long-context-deployment.pdf)
+is ready: 20 main slides and 5 appendix slides, based on the user-approved
+[presentation notes](presentation/week7-deployment-2026-10-15/speaker-notes.md). They explain Spark, company DeepSeek,
 the A100 runtime and AI Infra Book in four connected sections. The A100 study now
 separates architecture, speed and memory, using the official native checkpoint
 as the memory baseline and published modified-vLLM results for comparison.
 Company deployments on A100 now select a pinned modified-vLLM SM80 stack; the
 standalone runtime remains an engineering study.
-Research checkpoint: `133c798`. Beamer production follows the notes review.
+Research checkpoint: `133c798`; prose-edit checkpoint: `3899e73`. The approved
+notes are preserved, and all 25 PDF pages have been visually checked.
 
 The [Week 7 plan](weekly/week-07-plan.md) prepares the 15 October presentation:
 Scenario 1 selects DGX Spark with provisional Qwen3.8-27B; Scenario 3 uses
@@ -37,7 +39,7 @@ Scenario 2 is condensed. The three delegated research tasks are complete:
 and [AI Infra Book reading and worked examples](knowledge-base/infrastructure/ai-infra-book-reading-2026-10-12.md).
 The [updated price study](knowledge-base/infrastructure/server-gpu-procurement-2026-10-12.md)
 adds dated complete-system budgets and procurement evidence. Presentation authoring
-and target-device task validation remain separate next steps.
+is complete; target-device task validation remains open.
 The context study now uses 131K/262K as minimum baselines, 512K as a candidate
 daily Spark window, and 1M as the long-Agent target. It jointly compares active
 concurrency, resident sessions, cold/warm response and cost.

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-14",
+  "status": "passed",
+  "checkpoint_before_edit": "3899e73",
+  "reviewed_units": 85,
+  "changed_units": 80,
+  "removed_duplicate_units": [
+    "P022",
+    "P064",
+    "P083"
+  ],
+  "review_method": "One Chinese-teacher subagent reviewed six sequential batches, then the whole document and final corrections; root verified technical meaning and data.",
+  "user_feedback_checks": {
+    "standard_cache_terms": true,
+    "recovery_action_explicit": true,
+    "512k_new_input_example_explicit": true,
+    "15_vs20_target_explicit": true,
+    "shared_pool_allocation_explicit": true,
+    "bf16_capacity_statement_explicit": true,
+    "vague_context_tradeoff_removed": true
+  },
+  "arithmetic": {
+    "fp8_pool_tokens": 1806907,
+    "per_user_if_three_equal": 602302.3333333334,
+    "remaining_for_two_after_one_1m": 806907,
+    "per_user_with_10pct_reserve": 542072.1
+  },
+  "local_links": "passed",
+  "diff_whitespace": "passed",
+  "primary_sources_and_calculation_data_unchanged": true,
+  "notes_sha256": "164c0fc259c6885822b8c064c20b73a1cee5f37da809c4c1532098f7c47c135d",
+  "teacher_final_review": "Final check passed; see teacher-review.md",
+  "beamer_created": false
+}

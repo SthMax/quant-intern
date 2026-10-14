@@ -1,0 +1,236 @@
+{
+  "presentation_date": "2026-10-15",
+  "source_notes": "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+  "main_slides": 20,
+  "appendix_slides": 5,
+  "slides": [
+    {
+      "page": 1,
+      "title": "本地长上下文Agent部署与推理优化",
+      "notes_section": "开场",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md"
+      ]
+    },
+    {
+      "page": 2,
+      "title": "本次汇报的四个主题",
+      "notes_section": "开场",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md"
+      ]
+    },
+    {
+      "page": 3,
+      "title": "Spark运行模型，员工电脑执行工具",
+      "notes_section": "一.1",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/scenario-1-personal-agent-2026-09-24.md"
+      ]
+    },
+    {
+      "page": 4,
+      "title": "Spark单人生成速度与首次等待",
+      "notes_section": "一.2-3",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+        "knowledge-base/infrastructure/data/dgx-spark-qwen27-external-2026-10-12/summary.json"
+      ]
+    },
+    {
+      "page": 5,
+      "title": "缓存命中后，只对新增输入做prefill",
+      "notes_section": "一.2",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json"
+      ]
+    },
+    {
+      "page": 6,
+      "title": "三人共享1.81M token的KV Cache",
+      "notes_section": "一.4-5",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/dgx-spark-qwen27-external-2026-10-12/summary.json",
+        "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/spark-price.json"
+      ]
+    },
+    {
+      "page": 7,
+      "title": "公司知识库提供按权限检索的资料",
+      "notes_section": "二.1",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/scenario-2-enterprise-rag-2026-09-23.md"
+      ]
+    },
+    {
+      "page": 8,
+      "title": "公司Agent共享模型，各自执行任务",
+      "notes_section": "二.1-2",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json"
+      ]
+    },
+    {
+      "page": 9,
+      "title": "20个会话分别能分到多少上下文",
+      "notes_section": "二.3",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json"
+      ]
+    },
+    {
+      "page": 10,
+      "title": "等待工具的请求也占用KV Cache",
+      "notes_section": "二.4-5",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json"
+      ]
+    },
+    {
+      "page": 11,
+      "title": "服务器预算与公司推理引擎",
+      "notes_section": "二.6",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/hardware-prices-2026-10-12.json"
+      ]
+    },
+    {
+      "page": 12,
+      "title": "A100项目：新模型在四卡机器上的移植",
+      "notes_section": "三.1",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/deepseek-a100-project-review-2026-10-12.md"
+      ]
+    },
+    {
+      "page": 13,
+      "title": "模型能力、通用优化与项目实现",
+      "notes_section": "三.2、三.4",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/deepseek-a100-project-review-2026-10-12.md",
+        "knowledge-base/sources/TECH-088/tokha-ablation.md"
+      ]
+    },
+    {
+      "page": 14,
+      "title": "公开测速保留各自的硬件与负载",
+      "notes_section": "三.2",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/deepseek-a100-project-review-2026-10-12.md",
+        "knowledge-base/sources/TECH-088/kepler-performance.md"
+      ]
+    },
+    {
+      "page": 15,
+      "title": "同机消融量出每项改动的额外收益",
+      "notes_section": "三.2",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/sources/TECH-088/tokha-ablation.md"
+      ]
+    },
+    {
+      "page": 16,
+      "title": "四卡显存从官方510GB原生制品起算",
+      "notes_section": "三.3",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/deepseek-a100-project-2026-10-12/mechanism-analysis.json"
+      ]
+    },
+    {
+      "page": 17,
+      "title": "一次Agent任务的完整耗时",
+      "notes_section": "四.1",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/ai-infra-book-reading-2026-10-12.md"
+      ]
+    },
+    {
+      "page": 18,
+      "title": "合批分摊权重读取，KV按请求分别读取",
+      "notes_section": "四.2",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/ai-infra-book-reading-2026-10-12.md"
+      ]
+    },
+    {
+      "page": 19,
+      "title": "CPU不忙时，任务环境仍可能占用大量内存",
+      "notes_section": "四.4",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/ai-infra-book-reading-2026-10-12.md"
+      ]
+    },
+    {
+      "page": 20,
+      "title": "配置选择与使用方式",
+      "notes_section": "总结",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md"
+      ]
+    },
+    {
+      "page": 21,
+      "title": "Spark单请求实测与四档估算的关系",
+      "notes_section": "一.2-3、技术附注",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/dgx-spark-qwen27-external-2026-10-12/summary.json"
+      ]
+    },
+    {
+      "page": 22,
+      "title": "缓存池、运行缓冲与上下文容量",
+      "notes_section": "二.3、技术附注",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json"
+      ]
+    },
+    {
+      "page": 23,
+      "title": "公司服务的公开多轮回放参照",
+      "notes_section": "二.5",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json"
+      ]
+    },
+    {
+      "page": 24,
+      "title": "预算包含什么，哪些费用单独计算",
+      "notes_section": "一.5、二.6",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/data/hardware-prices-2026-10-12.json",
+        "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/spark-price.json"
+      ]
+    },
+    {
+      "page": 25,
+      "title": "主要来源与继续阅读",
+      "notes_section": "资料与技术附注",
+      "sources": [
+        "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+        "knowledge-base/infrastructure/deepseek-a100-project-review-2026-10-12.md",
+        "knowledge-base/infrastructure/ai-infra-book-reading-2026-10-12.md"
+      ]
+    }
+  ]
+}

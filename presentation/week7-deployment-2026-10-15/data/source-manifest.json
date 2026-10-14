@@ -1,0 +1,214 @@
+{
+  "prepared": "2026-10-14",
+  "presentation_date": "2026-10-15",
+  "notes_status": "User approved before Beamer authoring",
+  "sources": {
+    "presentation/week7-deployment-2026-10-15/speaker-notes.md": {
+      "sha256": "164c0fc259c6885822b8c064c20b73a1cee5f37da809c4c1532098f7c47c135d"
+    },
+    "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json": {
+      "sha256": "6e93e11c2c752de8b8a6b93c8a70eb65be2c3bc548fc31c0c4f4d921001f9057"
+    },
+    "knowledge-base/infrastructure/data/dgx-spark-qwen27-external-2026-10-12/summary.json": {
+      "sha256": "79a0fa84c6c794b314a5f52560a01038f939748bc27e72764ce067b0fac9e608"
+    },
+    "knowledge-base/infrastructure/data/hardware-prices-2026-10-12.json": {
+      "sha256": "ee69b39d2d32566e3a46b34ab7b0dcab5ac71cca52a3c87cc03f72e841e1b2a9"
+    },
+    "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/spark-price.json": {
+      "sha256": "161795fde822c6c76ee8482a6df58cb05fd194e144f62ed58667a7d6c8e02b78"
+    },
+    "knowledge-base/infrastructure/data/deepseek-a100-project-2026-10-12/mechanism-analysis.json": {
+      "sha256": "d4458115d7ef81430e85021cea58621731ab75354c8c64570b4f331eeeda4ce2"
+    },
+    "knowledge-base/infrastructure/data/ai-infra-book-2026-10-12/results.json": {
+      "sha256": "7e4d78e3e4e0c5f8a1189ea3ffc3ab904d4e4ff1da7df470f7c5b031cbdf6fca"
+    },
+    "knowledge-base/sources/TECH-088/tokha-ablation.md": {
+      "sha256": "061d83b3215188e7726315a5104d07a55a98332ec9a693847a8b1356ce9230e1"
+    },
+    "knowledge-base/sources/TECH-088/kepler-performance.md": {
+      "sha256": "87bea610174da5d4ea8c5deee515ddb204a95188f09614739a03eff0cf9f7b86"
+    }
+  },
+  "figures": {
+    "SparkD131": {
+      "display": "19.7",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=131072; single_fp8_mtp3_decode_shape_estimate"
+    },
+    "SparkP131": {
+      "display": "3.1",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=131072; cold_prefill_fit/60 minutes"
+    },
+    "SparkNew1131": {
+      "display": "2",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=131072; ideal_cache_1k_prefill_difference_seconds, rounded seconds"
+    },
+    "SparkNew8131": {
+      "display": "16",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=131072; ideal_cache_8k_prefill_difference_seconds, rounded seconds"
+    },
+    "SparkD262": {
+      "display": "17.7",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=262144; single_fp8_mtp3_decode_shape_estimate"
+    },
+    "SparkP262": {
+      "display": "8.6",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=262144; cold_prefill_fit/60 minutes"
+    },
+    "SparkNew1262": {
+      "display": "3",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=262144; ideal_cache_1k_prefill_difference_seconds, rounded seconds"
+    },
+    "SparkNew8262": {
+      "display": "24",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=262144; ideal_cache_8k_prefill_difference_seconds, rounded seconds"
+    },
+    "SparkD512": {
+      "display": "14.7",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=524288; single_fp8_mtp3_decode_shape_estimate"
+    },
+    "SparkP512": {
+      "display": "25.8",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=524288; cold_prefill_fit/60 minutes"
+    },
+    "SparkNew1512": {
+      "display": "5",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=524288; ideal_cache_1k_prefill_difference_seconds, rounded seconds"
+    },
+    "SparkNew8512": {
+      "display": "40",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=524288; ideal_cache_8k_prefill_difference_seconds, rounded seconds"
+    },
+    "SparkD1M": {
+      "display": "11.2",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=1000000; single_fp8_mtp3_decode_shape_estimate"
+    },
+    "SparkP1M": {
+      "display": "78.9",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=1000000; cold_prefill_fit/60 minutes"
+    },
+    "SparkNew11M": {
+      "display": "9",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=1000000; ideal_cache_1k_prefill_difference_seconds, rounded seconds"
+    },
+    "SparkNew81M": {
+      "display": "69",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "spark_matrix context=1000000; ideal_cache_8k_prefill_difference_seconds, rounded seconds"
+    },
+    "Pool": {
+      "display": "1.81",
+      "source": "knowledge-base/infrastructure/data/dgx-spark-qwen27-external-2026-10-12/summary.json",
+      "field_or_method": "startup.estimated_shared_kv_token_pool /1e6"
+    },
+    "PoolExact": {
+      "display": "1,806,907",
+      "source": "knowledge-base/infrastructure/data/dgx-spark-qwen27-external-2026-10-12/summary.json",
+      "field_or_method": "startup.estimated_shared_kv_token_pool"
+    },
+    "H100Strict": {
+      "display": "242,240",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "post_graph_budget_sensitivity anchor=442505"
+    },
+    "H100K": {
+      "display": "242",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "post_graph_budget_sensitivity; rounded K tokens"
+    },
+    "H200fourStrict": {
+      "display": "762,048",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "post_graph_budget_sensitivity anchor=442751"
+    },
+    "H200fourK": {
+      "display": "762",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "post_graph_budget_sensitivity; rounded K tokens"
+    },
+    "H200eightStrict": {
+      "display": "1,000,000",
+      "source": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+      "field_or_method": "post_graph_budget_sensitivity anchor=442758"
+    },
+    "A100Price": {
+      "display": "91-102",
+      "source": "knowledge-base/infrastructure/data/hardware-prices-2026-10-12.json",
+      "field_or_method": "A1008-SXM-refurb; rounded_outward_wan_cny"
+    },
+    "H100Price": {
+      "display": "285-298",
+      "source": "knowledge-base/infrastructure/data/hardware-prices-2026-10-12.json",
+      "field_or_method": "H1008-SXM; rounded_outward_wan_cny"
+    },
+    "H200eightPrice": {
+      "display": "291-304",
+      "source": "knowledge-base/infrastructure/data/hardware-prices-2026-10-12.json",
+      "field_or_method": "H2008-SXM; rounded_outward_wan_cny"
+    },
+    "H200fourPrice": {
+      "display": "161-283",
+      "source": "knowledge-base/infrastructure/data/hardware-prices-2026-10-12.json",
+      "field_or_method": "H2004-NVL; rounded_outward_wan_cny"
+    },
+    "NativeGB": {
+      "display": "510.29",
+      "source": "knowledge-base/infrastructure/data/deepseek-a100-project-2026-10-12/mechanism-analysis.json",
+      "field_or_method": "native_checkpoint_budget.checkpoint_bytes"
+    },
+    "EngramGB": {
+      "display": "202.76",
+      "source": "knowledge-base/infrastructure/data/deepseek-a100-project-2026-10-12/mechanism-analysis.json",
+      "field_or_method": "native_checkpoint_budget.engram_host_bytes"
+    },
+    "GPUWeightsGB": {
+      "display": "307.53",
+      "source": "knowledge-base/infrastructure/data/deepseek-a100-project-2026-10-12/mechanism-analysis.json",
+      "field_or_method": "native_checkpoint_budget.remaining_checkpoint_bytes"
+    },
+    "GPUWeightsGiB": {
+      "display": "286.41",
+      "source": "knowledge-base/infrastructure/data/deepseek-a100-project-2026-10-12/mechanism-analysis.json",
+      "field_or_method": "native_checkpoint_budget.remaining_checkpoint_gib"
+    },
+    "PerCard": {
+      "display": "71.60",
+      "source": "knowledge-base/infrastructure/data/deepseek-a100-project-2026-10-12/mechanism-analysis.json",
+      "field_or_method": "native_checkpoint_budget.ideal_four_gpu_weight_gib_each"
+    },
+    "AblationBase": {
+      "display": "2,842.48",
+      "source": "knowledge-base/sources/TECH-088/tokha-ablation.md",
+      "field_or_method": "published C128 two-run mean"
+    },
+    "AblationDense": {
+      "display": "2,926.08",
+      "source": "knowledge-base/sources/TECH-088/tokha-ablation.md",
+      "field_or_method": "published C128 two-run mean"
+    },
+    "AblationComm": {
+      "display": "2,970.50",
+      "source": "knowledge-base/sources/TECH-088/tokha-ablation.md",
+      "field_or_method": "published C128 two-run mean"
+    }
+  },
+  "main_slides": 20,
+  "appendix_slides": 5,
+  "scope": "No new GPU experiment; dates and workload conditions stay with their results."
+}

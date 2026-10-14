@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[UTF8,fontset=none]{ctex}
+\usepackage{fontspec,tikz,booktabs,tabularx,array}
+\usetikzlibrary{arrows.meta,calc,positioning,patterns}
+\geometry{paperwidth=320mm,paperheight=180mm}
+\setsansfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setmainfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold]
+\setCJKmainfont{STHeiti Light.ttc}[Path=/System/Library/Fonts/,FontIndex=1,BoldFont=STHeiti Medium.ttc,BoldFeatures={FontIndex=1}]
+\setCJKsansfont{STHeiti Light.ttc}[Path=/System/Library/Fonts/,FontIndex=1,BoldFont=STHeiti Medium.ttc,BoldFeatures={FontIndex=1}]
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\setbeamersize{text margin left=0mm,text margin right=0mm}
+\hypersetup{pdftitle={本地长上下文Agent部署与推理优化},pdfauthor={Intern research},pdfsubject={15 October 2026 presentation; research through 14 October},pdfkeywords={DGX Spark, DeepSeek, A100, vLLM, AI Infra},colorlinks=true,urlcolor=teal,linkcolor=teal}
+\title{本地长上下文Agent部署与推理优化}
+\author{Intern research}
+\date{2026年10月15日}
+\input{theme.tex}
+\input{data/slide-data.tex}
+\begin{document}
+\input{slides.tex}
+\end{document}
