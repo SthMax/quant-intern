@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-14",
+  "source_revision": "580568edd6f84537ff042ded4ee842b892bf3ff4",
+  "config_sha256": "2e84f45cf1dac8c7fcbb200e96667d4b913275690668ed496f24c7747207a809",
+  "scope": "Component-level CPU arithmetic; not whole-service speed predictions.",
+  "native_checkpoint_budget": {
+    "checkpoint_bytes": 510286023000,
+    "engram_host_bytes": 202758032400,
+    "remaining_checkpoint_bytes": 307527990600,
+    "remaining_checkpoint_gib": 286.4077599719167,
+    "ideal_four_gpu_weight_gib_each": 71.60193999297917,
+    "comparison_baseline": "Official native mixed FP4/FP8 checkpoint with Engram host offload; common to both runtime approaches.",
+    "scope": "File payload allocation; runtime copies, buffers, KV, and per-rank imbalance are additional.",
+    "index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879"
+  },
+  "routed_experts": {
+    "parameters_per_expert_per_layer": 35389440,
+    "parameters_all_layers": 543581798400,
+    "bf16_bytes": 1087163596800,
+    "bf16_comparison_role": "Hypothetical dtype teaching example only; not a released full-BF16 deployment baseline or memory savings attributable to this project.",
+    "fp4_with_one_scale_byte_per_32_values_bytes": 288777830400.0,
+    "compressed_fraction_of_bf16": 0.265625,
+    "reduction_percent": 73.4375
+  },
+  "dense_w8": {
+    "fraction_of_bf16": 0.50048828125
+  },
+  "ideal_expert_reuse": [
+    {
+      "batch": 1,
+      "expert_routing_events": 6,
+      "expected_distinct_experts": 6.0,
+      "ideal_weight_reuse": 1.0
+    },
+    {
+      "batch": 8,
+      "expert_routing_events": 48,
+      "expected_distinct_experts": 45.45544894854402,
+      "ideal_weight_reuse": 1.055979010444632
+    },
+    {
+      "batch": 32,
+      "expert_routing_events": 192,
+      "expected_distinct_experts": 152.00979995070998,
+      "ideal_weight_reuse": 1.2630764599536153
+    },
+    {
+      "batch": 64,
+      "expert_routing_events": 384,
+      "expected_distinct_experts": 243.84517469033955,
+      "ideal_weight_reuse": 1.5747697303735615
+    },
+    {
+      "batch": 256,
+      "expert_routing_events": 1536,
+      "expected_distinct_experts": 377.18542862551635,
+      "ideal_weight_reuse": 4.072267599512699
+    },
+    {
+      "batch": 1024,
+      "expert_routing_events": 6144,
+      "expected_distinct_experts": 383.999961914426,
+      "ideal_weight_reuse": 16.000001586899074
+    }
+  ],
+  "reuse_assumption": "Independent uniform selection of 6 distinct experts per token; one ideal weight read per expert. Actual tiling and route skew change traffic.",
+  "mtp": {
+    "ordinary_ms_per_token": 15.8,
+    "k3_step_ms": 31,
+    "k3_tokens": 2.53,
+    "k3_tokens_s": 81.61290322580645,
+    "k3_speedup": 1.2894838709677419,
+    "k5_step_ms": 33,
+    "k5_tokens": 2.79,
+    "k5_tokens_s": 84.54545454545455,
+    "k5_speedup": 1.3358181818181818
+  },
+  "ced": {
+    "prompt_tokens": 1000000,
+    "sequential_tail": 128,
+    "pipeline_tail": 2048,
+    "full_layer_tokens": 40000000,
+    "sequential_layer_tokens": 21002432,
+    "pipeline_layer_tokens": 21038912
+  },
+  "indexer_intermediate": {
+    "queries_per_chunk": 64,
+    "keys": 1000000,
+    "heads": 32,
+    "dtype_bytes": 4,
+    "all_heads_bytes": 8192000000,
+    "one_head_bytes": 256000000,
+    "ideal_component_ratio": 32,
+    "scope": "One score tensor; accumulator/current-head tensors and other allocations can coexist."
+  },
+  "author_throughput_table": {
+    "single_end_to_end": 50.3,
+    "c64_end_to_end": 167.5,
+    "c64_peak_engine": 475.6,
+    "end_to_end_ratio": 3.3300198807157058,
+    "peak_ratio": 9.455268389662029,
+    "workload_note": "Different configured context caps, short actual prompts; no per-run raw records."
+  },
+  "expert_rebalance": {
+    "bytes_per_expert_all_layers": 752025600.0,
+    "even_96_to_84_freed_gib": 8.404541015625,
+    "standard_98_to_84_freed_gib": 9.8052978515625
+  }
+}

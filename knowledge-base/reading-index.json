@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated": "2026-10-12",
+  "updated": "2026-10-14",
   "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
   "scope": "Main reading paths for research retrieval; supporting and redirect records are provenance/context, not independent main readings. Do not recursively ingest sources/, reference/ or audits/.",
   "counts": {
-    "main": 192,
+    "main": 193,
     "redirect": 4,
     "supporting": 15
   },
-  "registered_source_ids": 211,
+  "registered_source_ids": 212,
   "records": [
     {
       "source_id": "FUND-001",
@@ -2416,6 +2416,17 @@
       "metadata_path": "sources/TECH-087/metadata.json",
       "canonical_source_id": null,
       "text_kind": "authored_source_index",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-088",
+      "title": "A100原生权重与modified vLLM对照：作者文章、后端实现及公开消融",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-088/original.md",
+      "metadata_path": "sources/TECH-088/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index_with_original_language_files",
       "available_text": true
     }
   ],

@@ -1,0 +1,120 @@
+{
+  "source_id": "TECH-088",
+  "title": "A100原生权重与modified vLLM对照：作者文章、后端实现及公开消融",
+  "collection_role": "main",
+  "evidence_state": "verified-primary",
+  "text_kind": "authored_source_index_with_original_language_files",
+  "accessed": "2026-10-14",
+  "reviewer": "Root agent; source and code inspection",
+  "human_check_status": "pending",
+  "verification_scope": "Publisher statements and code at dated snapshots; public benchmark reports retain hardware, workload and timing. No same-host head-to-head between shi3z and modified vLLM is available in this packet.",
+  "files": {
+    "tokha-readme.md": {
+      "requested_url": "https://raw.githubusercontent.com/Tokha233/deepseek-v4.1-flash-a100-turbo/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/Tokha233/deepseek-v4.1-flash-a100-turbo/main/README.md",
+      "accessed": "2026-10-14",
+      "bytes": 4748,
+      "sha256": "bed00bbb607762760266bb9c372406210f52ccc691ab2e00cdd72dd80ed3929f",
+      "method": "original response bytes"
+    },
+    "tokha-benchmark-method.md": {
+      "requested_url": "https://raw.githubusercontent.com/Tokha233/deepseek-v4.1-flash-a100-turbo/main/benchmarks/README.md",
+      "final_url": "https://raw.githubusercontent.com/Tokha233/deepseek-v4.1-flash-a100-turbo/main/benchmarks/README.md",
+      "accessed": "2026-10-14",
+      "bytes": 2728,
+      "sha256": "211510dda0a95301fcf202fae66e74a14278ae1bd5b88dce16f8842f3946cd95",
+      "method": "original response bytes"
+    },
+    "tokha-ablation.md": {
+      "requested_url": "https://raw.githubusercontent.com/Tokha233/deepseek-v4.1-flash-a100-turbo/main/docs/concurrency-and-short-requests.zh-CN.md",
+      "final_url": "https://raw.githubusercontent.com/Tokha233/deepseek-v4.1-flash-a100-turbo/main/docs/concurrency-and-short-requests.zh-CN.md",
+      "accessed": "2026-10-14",
+      "bytes": 3102,
+      "sha256": "061d83b3215188e7726315a5104d07a55a98332ec9a693847a8b1356ce9230e1",
+      "method": "original response bytes"
+    },
+    "tokha-patch-manifest.json": {
+      "requested_url": "https://raw.githubusercontent.com/Tokha233/deepseek-v4.1-flash-a100-turbo/main/patches/manifest.json",
+      "final_url": "https://raw.githubusercontent.com/Tokha233/deepseek-v4.1-flash-a100-turbo/main/patches/manifest.json",
+      "accessed": "2026-10-14",
+      "bytes": 5774,
+      "sha256": "bc863999ab4c8fcb23a9070881867c090c29d4dd2eeb7f1cfab72cfdd5ef0e35",
+      "method": "original response bytes"
+    },
+    "kepler-performance.md": {
+      "requested_url": "https://raw.githubusercontent.com/keplerzip/deepseek-v4.1-flash-a100/main/docs/performance.md",
+      "final_url": "https://raw.githubusercontent.com/keplerzip/deepseek-v4.1-flash-a100/main/docs/performance.md",
+      "accessed": "2026-10-14",
+      "bytes": 2866,
+      "sha256": "87bea610174da5d4ea8c5deee515ddb204a95188f09614739a03eff0cf9f7b86",
+      "method": "original response bytes"
+    },
+    "kepler-architecture.md": {
+      "requested_url": "https://raw.githubusercontent.com/keplerzip/deepseek-v4.1-flash-a100/main/docs/architecture.md",
+      "final_url": "https://raw.githubusercontent.com/keplerzip/deepseek-v4.1-flash-a100/main/docs/architecture.md",
+      "accessed": "2026-10-14",
+      "bytes": 4192,
+      "sha256": "d7db16bae7d8b04e6bda8bd838affe7b7d2f18ab42344a40a737daeb99729232",
+      "method": "original response bytes"
+    },
+    "backport-readme.md": {
+      "requested_url": "https://raw.githubusercontent.com/wtdcode/vllm-backport/master-v013/README.md",
+      "final_url": "https://raw.githubusercontent.com/wtdcode/vllm-backport/master-v013/README.md",
+      "accessed": "2026-10-14",
+      "bytes": 9531,
+      "sha256": "885a8f9bfbdab541497a9bbf9c8ac64b298d33756d1906a42578e70b06f7ee2b",
+      "method": "original response bytes"
+    },
+    "vllm-cuda-graphs.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/main/docs/design/cuda_graphs.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/main/docs/design/cuda_graphs.md",
+      "accessed": "2026-10-14",
+      "bytes": 19906,
+      "sha256": "ddb442ae086789ec618d6acb2f757e9b9dff348e0c05f0256f874c0cfbbcf199",
+      "method": "original response bytes"
+    },
+    "vllm-marlin-mxfp8.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/main/vllm/model_executor/kernels/linear/mxfp8/marlin.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/main/vllm/model_executor/kernels/linear/mxfp8/marlin.py",
+      "accessed": "2026-10-14",
+      "bytes": 2181,
+      "sha256": "299c549e3e3830fe3b52ef83eca565356d6bd42e2a85805300a1bd0fe6a67e0c",
+      "method": "original response bytes"
+    },
+    "shi3z-0912-public.md": {
+      "requested_url": "https://note.com/shi3zblog/n/nd5fc5341b342",
+      "accessed": "2026-10-14",
+      "bytes": 17576,
+      "sha256": "319045fb31db281ab0ca178d2d9573c7c676352a8c6d1d2c1780b5a084d977de",
+      "method": "Defuddle original-language public-page extraction; not raw HTML",
+      "scope": "Public portion only; paid continuation not accessed"
+    },
+    "shi3z-0917-public.md": {
+      "requested_url": "https://note.com/shi3zblog/n/n93b0161463b4",
+      "accessed": "2026-10-14",
+      "bytes": 25994,
+      "sha256": "2f24a1fa9e2e483bad048ada4664c1a0c86992005497109abe562011de726534",
+      "method": "Defuddle original-language public-page extraction; not raw HTML",
+      "scope": "Public portion only; paid continuation not accessed"
+    },
+    "shi3z-bench-vllm.sh": {
+      "requested_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/bench_vllm.sh",
+      "accessed": "2026-10-14",
+      "bytes": 1061,
+      "sha256": "a60304bdfe9d3ad1f746f507f12fb9a7bf9b28adb183499ea3faa5d311c76d5b",
+      "method": "byte-for-byte copy from previously pinned clone"
+    },
+    "original.md": {
+      "bytes": 1964,
+      "sha256": "78823e5c3d4d8b759e9ea881b680654c9fcd6fd42efb9a84adaaa33d9ebca30f",
+      "method": "authored source index; linked files are source originals"
+    }
+  },
+  "retrieval_failures": [],
+  "used_in": [
+    "../../infrastructure/deepseek-a100-project-review-2026-10-12.md",
+    "../../../presentation/week7-deployment-2026-10-15/speaker-notes.md"
+  ],
+  "evidence_note": "evidence-note.md",
+  "version_policy": "Upstream branch URLs retained with exact downloaded bytes and SHA-256; shi3z comparison script uses the previously pinned commit."
+}

@@ -252,6 +252,12 @@
     "upstream.gitignore": {
       "sha256": "87b4cd67840a4199dcc0d5f32b090bd9e6d75f1290ca0e9c9937701dde06e834",
       "bytes": 388
+    },
+    "files/dsv41/moe_kernels.py": {
+      "bytes": 14818,
+      "sha256": "e8deb4db140603b21f5ebe8c4693a1b51256bbe0a926645ef4fe4b66f4cb7a9b",
+      "upstream_url": "https://github.com/shi3z/deepseekv4.1-A100-custom/blob/580568edd6f84537ff042ded4ee842b892bf3ff4/dsv41/moe_kernels.py",
+      "supplemental_read_date": "2026-10-13"
     }
   },
   "excluded_sources": [
@@ -289,5 +295,17 @@
     "conclusion": "Official architecture intentionally uses approximate bounded replay and does not require full-forward mathematical equivalence. Review revised to distinguish this intended approximation, README SWA-only misstatement, and custom runtime boundary/quality validation. Toy example explains approximation; it is not a DeepSeek failure test.",
     "reviewer": "Codex a100_project_research agent",
     "human_check": "pending"
+  },
+  "mechanism_review": {
+    "date": "2026-10-13",
+    "reviewer": "root agent",
+    "scope": "Fused dequantization, EP device-side graphs and topology-aware communication, grouped dispatch, CED workload reduction, weight/cache/temporary-memory arithmetic",
+    "source_revision_unchanged": true
+  },
+  "jev_scope_clarification": {
+    "date": "2026-10-13",
+    "subject": "Only the optional Jev Mode implemented in this pinned DeepSeek runtime and its local benchmark script. Not an evaluation of the separate TypeSafe Jev model.",
+    "presentation_scope": "Excluded from general A100 inference-speed explanation after user feedback.",
+    "note": "../../audits/2026-10-13-editorial-review/jev-scope-correction.md"
   }
 }

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-14",
+  "status": "passed",
+  "source_index": {
+    "count": 212,
+    "counts": {
+      "main": 193,
+      "redirect": 4,
+      "supporting": 15
+    },
+    "new_id": "TECH-088"
+  },
+  "new_source_files_verified": 13,
+  "authored_files_link_checked": 13,
+  "native_checkpoint_budget": {
+    "checkpoint_bytes": 510286023000,
+    "engram_host_bytes": 202758032400,
+    "remaining_checkpoint_bytes": 307527990600,
+    "remaining_checkpoint_gib": 286.4077599719167,
+    "ideal_four_gpu_weight_gib_each": 71.60193999297917,
+    "comparison_baseline": "Official native mixed FP4/FP8 checkpoint with Engram host offload; common to both runtime approaches.",
+    "scope": "File payload allocation; runtime copies, buffers, KV, and per-rank imbalance are additional.",
+    "index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879"
+  },
+  "ablation_arithmetic": "2.94% then1.52%; total4.50%, descriptive two-run means",
+  "scope_checks": {
+    "bf16_counterfactual_removed_from_notes": true,
+    "jev_excluded_from_main_text": true,
+    "company_a100_modified_vllm_selected": true,
+    "hardware_and_workload_differences_explicit": true,
+    "existing_pdfs_unchanged": 4,
+    "beamer_created": false
+  },
+  "content_sha256": {
+    "knowledge-base/infrastructure/deepseek-a100-project-review-2026-10-12.md": "5f7c404bb7a832aff3200e29c86a4bf1b0725080c05d51f5654c115671c52d25",
+    "presentation/week7-deployment-2026-10-15/speaker-notes.md": "7df91c5a2ada48971ef9b768d49969883d2cc889be1d83907e9d5075cde8aafb",
+    "knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md": "b5e9cf08bbefc93d1c8ef84358879a0d42e92d373d3159ae7cca870d93ac4bf5"
+  },
+  "review": "Root read-back against archived source and prior user-approved reasoning; user lecture review pending."
+}

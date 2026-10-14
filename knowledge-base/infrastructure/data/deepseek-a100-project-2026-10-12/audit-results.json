@@ -46,7 +46,8 @@
     "official-inference-config.json": "2e84f45cf1dac8c7fcbb200e96667d4b913275690668ed496f24c7747207a809",
     "original.md": "8dea9079cf1c71925339a9eb63aa662292c8d000d20b1f4d566a71d1bc6d1d1b",
     "repository-tree.txt": "6f6e7ae48f74c44c7b9554ac754d01491d7ea45f4ca675f2217fef5788a67204",
-    "upstream.gitignore": "87b4cd67840a4199dcc0d5f32b090bd9e6d75f1290ca0e9c9937701dde06e834"
+    "upstream.gitignore": "87b4cd67840a4199dcc0d5f32b090bd9e6d75f1290ca0e9c9937701dde06e834",
+    "files/dsv41/moe_kernels.py": "e8deb4db140603b21f5ebe8c4693a1b51256bbe0a926645ef4fe4b66f4cb7a9b"
   },
   "jev_default_path": {
     "call_lines": [

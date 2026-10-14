@@ -1,5 +1,9 @@
 # Knowledge Base
 
+> **2026-10-14 A100比较修订：**[专项文档](infrastructure/deepseek-a100-project-review-2026-10-12.md)改用官方510.286GB原生制品作显存基线，并区分模型自带能力、通用引擎能力与项目实现。[汇报讲稿](../presentation/week7-deployment-2026-10-15/speaker-notes.md)加入闪光点、评价和公司A100采用modified vLLM的说明。新增TECH-088，当前212项：193主阅读、15辅助、4来源链。
+
+> **2026-10-13讲稿修订：**[四部分汇报notes](../presentation/week7-deployment-2026-10-15/speaker-notes.md)已完成，用户审查后再制作Beamer。[A100专项](infrastructure/deepseek-a100-project-review-2026-10-12.md)按架构、提速、显存三部分重写；其他方案与读书笔记同步整理语言。新增机制算例与同版本MoE分组源码，来源ID总数保持211；[编辑审查](audits/2026-10-13-editorial-review/README.md)记录30个逐段问题和复读意见。修改前检查点为`133c798`。
+
 > **2026-10-12研究整合：**更新[场景1 Spark＋Qwen27](infrastructure/scenario-1-personal-agent-2026-09-24.md)、[场景3 DeepSeek共享服务](infrastructure/scenario-3-company-agent-2026-09-23.md)，并为[场景2](infrastructure/scenario-2-enterprise-rag-2026-09-23.md)补齐一页汇报摘要。新增[A100项目代码与性能审查](infrastructure/deepseek-a100-project-review-2026-10-12.md)、[AI Infra Book精读及分享提纲](infrastructure/ai-infra-book-reading-2026-10-12.md)、[整机价格与采购更新](infrastructure/server-gpu-procurement-2026-10-12.md)。容量与体验计算覆盖131K／262K／512K／1M、单人／多人及缓存状态；计算输入与结果均在`infrastructure/data/`。TECH-077–085、087已登记，**211项：192主阅读、15辅助、4来源链**。上游克隆集中在忽略跟踪的`.research-workspace/repos/`；已发布PDF继续保留9月24日快照；[整合检查记录](audits/2026-10-12-week7-research/README.md)已保存。
 
 > 2026-10-12更新[周四汇报计划](../weekly/week-07-plan.md)：场景1选Spark＋暂定Qwen27，场景3暂定DeepSeek-V4.1-Flash并比较H200／H100／A100，场景2压缩；另读shi3z A100项目和AI Infra Book。计划进一步按131K／262K最低基线、Spark的512K常用档候选与1M长Agent目标组织，研究在体验及并发条件下的可用context。三条深度研究已完成，下一步制作周四演示稿。研究结论、公开测量与尚待验证的真实任务指标分别登记。

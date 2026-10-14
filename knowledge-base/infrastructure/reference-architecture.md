@@ -59,6 +59,13 @@ model-specific release readiness must be evaluated alongside framework
 maturity. The [A100 study](deepseek-a100-project-review-2026-10-12.md) describes a
 separate custom Ampere runtime and the scope of its benchmark claims.
 
+**14 October A100 decision:** use a pinned modified-vLLM SM80 stack for the
+company service, with tested kernels and a maintained patch set. The shi3z
+runtime supplies engineering examples. Public modified-vLLM measurements cover
+comparable single-stream performance ranges and high aggregate output; exact
+cross-engine ranking requires matching hardware and workload. See the
+[updated A100 comparison](deepseek-a100-project-review-2026-10-12.md).
+
 Current complete-server budgets and China delivery conditions are in the
 [12 October procurement update](server-gpu-procurement-2026-10-12.md). The
 [AI Infra Book reading](ai-infra-book-reading-2026-10-12.md) explains the cache,

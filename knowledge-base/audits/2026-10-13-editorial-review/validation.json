@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-13",
+  "status": "passed",
+  "checkpoint": "133c798",
+  "editorial_review": "One independent agent: 30 baseline examples, A100 follow-up and complete four-part notes read-through. Requested corrections applied by root. User content review pending.",
+  "checks": {
+    "index": {
+      "ids": 211,
+      "counts": {
+        "main": 192,
+        "redirect": 4,
+        "supporting": 15
+      },
+      "unique": true
+    },
+    "source_hashes": {
+      "TECH-076": 1,
+      "TECH-077": 44,
+      "TECH-078": 52,
+      "TECH-079": 8,
+      "TECH-080": 19,
+      "TECH-081": 7,
+      "TECH-082": 6,
+      "TECH-083": 8,
+      "TECH-084": 10,
+      "TECH-085": 4,
+      "TECH-087": 13
+    },
+    "authored_markdown_files_checked": 11,
+    "credential_pattern_findings": [],
+    "institution_association_findings": [],
+    "upstream_clones_ignored": true,
+    "published_pdfs_unchanged": 4,
+    "enterprise_capacity_20_users_matches_summary": true,
+    "authored_diff_whitespace": "passed",
+    "note_major_sections": 4,
+    "new_beamer_files": 0,
+    "a100_source_files": 44,
+    "a100_audit_cases": {
+      "capacity": 30,
+      "prefill": 11,
+      "concurrency": 8,
+      "jev": 4
+    },
+    "mechanism_recalculation": "passed; explain_mechanisms.py uses archived config and stated author timing inputs",
+    "historical_pdfs_unchanged": 4
+  },
+  "reviewed_note": {
+    "path": "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+    "sha256": "77019038e3d29d182d8282136551bc55b9cd20d2675266b4a1e38ee3ebc32f50",
+    "han_characters": 5570
+  },
+  "scope": "Edited prose, local links, source integrity and numerical examples. No new GPU test or Beamer generation.",
+  "post_review_scope_correction": {
+    "date": "2026-10-13",
+    "reason": "User identified Jev as a separate work. Distinguished TypeSafe Jev from the optional Jev Mode in the DeepSeek repository.",
+    "lecture_and_a100_main_jev_mentions": 0,
+    "local_link_and_source_hash_check": "passed",
+    "record": "jev-scope-correction.md"
+  }
+}

@@ -19,6 +19,15 @@ multi-document summarization.
 
 ## Current work: Thursday deployment presentation
 
+The [14 October presentation notes](presentation/week7-deployment-2026-10-15/speaker-notes.md)
+are ready for the user's content review. They explain Spark, company DeepSeek,
+the A100 runtime and AI Infra Book in four connected sections. The A100 study now
+separates architecture, speed and memory, using the official native checkpoint
+as the memory baseline and published modified-vLLM results for comparison.
+Company deployments on A100 now select a pinned modified-vLLM SM80 stack; the
+standalone runtime remains an engineering study.
+Research checkpoint: `133c798`. Beamer production follows the notes review.
+
 The [Week 7 plan](weekly/week-07-plan.md) prepares the 15 October presentation:
 Scenario 1 selects DGX Spark with provisional Qwen3.8-27B; Scenario 3 uses
 provisional DeepSeek-V4.1-Flash and compares H200/H100/A100 configurations.
