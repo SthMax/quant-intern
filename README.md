@@ -19,16 +19,17 @@ multi-document summarization.
 
 ## Current work: Thursday deployment presentation
 
-The [15 October Beamer PDF](presentation/week7-deployment-2026-10-15/output/pdf/week7-long-context-deployment.pdf)
-is ready: 20 main slides and 5 appendix slides, based on the user-approved
-[presentation notes](presentation/week7-deployment-2026-10-15/speaker-notes.md). They explain Spark, company DeepSeek,
-the A100 runtime and AI Infra Book in four connected sections. The A100 study now
-separates architecture, speed and memory, using the official native checkpoint
-as the memory baseline and published modified-vLLM results for comparison.
-Company deployments on A100 now select a pinned modified-vLLM SM80 stack; the
-standalone runtime remains an engineering study.
-Research checkpoint: `133c798`; prose-edit checkpoint: `3899e73`. The approved
-notes are preserved, and all 25 PDF pages have been visually checked.
+The [15 October release](https://github.com/SthMax/quant-intern/releases/tag/phase3-week7-2026-10-15)
+packages the user-supplied Pro revision: a 34-page PDF, its editable PPTX,
+and the [presentation notes](presentation/week7-deployment-2026-10-15/speaker-notes.md).
+The notes now include the KV-offload discussion: tiered GPU/DRAM/SSD caching,
+vLLM and LMCache implementations, transfer-time estimates, and the different
+memory layouts of company servers and DGX Spark.
+
+The presentation covers Spark, company DeepSeek, the A100 runtime and AI Infra
+Book. Company A100 deployments select a pinned modified-vLLM SM80 stack.
+The [presentation directory](presentation/week7-deployment-2026-10-15/README.md)
+retains the earlier Beamer, the Pro revision brief, and dated validation records.
 
 The [Week 7 plan](weekly/week-07-plan.md) prepares the 15 October presentation:
 Scenario 1 selects DGX Spark with provisional Qwen3.8-27B; Scenario 3 uses

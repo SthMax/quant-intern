@@ -1,6 +1,6 @@
 # 本地长上下文 Agent 部署与推理优化
 
-**汇报讲稿审阅版｜2026年10月14日**
+**汇报讲稿｜2026年10月15日｜含KV offload补充**
 
 ## 开场
 
@@ -236,11 +236,100 @@ DeepSeek-V4.1-Flash的官方checkpoint约510.29GB，其中Engram表约202.76GB�
 
 经济性比较最终看**完成一项合格任务所需的时间和成本**。成本包括设备、电力、软件、工具调用、重试和人工复核；任务是否合格，则看产出是否完成要求并通过复核。
 
+## 五 KV offload与多级会话缓存
+
+### 1. 保存已有计算状态 让Agent继续任务
+
+对长前缀和多轮Agent，把已经算好的状态取回来，通常比重新做完整prefill更省时间。GPU优先处理正在运行的任务，CPU内存和SSD保存暂时不用的会话状态。用户回来，或工具返回结果后，再把需要的状态载入GPU。
+
+这里主要保存的是KV及继续推理所需的其他模型状态。如果request caching指直接返回上一次的完整答案，那是另一层应用缓存。Agent每轮追加新的工具结果，更需要复用已有前缀，并继续生成新的回答。
+
+独立显卡服务器可以组织成三个层级：
+
+| 存储位置 | 主要保存什么 |
+|---|---|
+| GPU显存 | 正在生成的会话，以及近期可直接复用的前缀 |
+| CPU内存 | 近期会继续使用、暂时不需要在GPU上驻留的缓存 |
+| NVMe SSD | 较久未使用、仍值得保留的长会话缓存 |
+
+以读完长材料后运行Excel为例：模型返回工具调用，本轮请求结束；缓存保存在CPU内存或SSD，GPU空间可以供其他请求使用。Excel结果返回后，下一轮请求查找旧前缀，将所需状态载入GPU，再处理新增工具结果并继续生成。
+
+主要收益是减少下一轮开始前的等待，并让更多会话共用一组GPU。连续生成期间，当前请求需要的缓存通常仍留在GPU上。缓存查找要对应相同模型、token前缀、位置规则和状态格式；多个实例复用时也要保持这些条件一致。
+
+### 2. AI Infra Book中的原理和实验
+
+AI Infra Book专门讨论了缓存卸载和多级存储：
+
+| 章节 | 内容 |
+|---|---|
+| 8.3.3 | Agent前缀复用，以及混合注意力模型的递推状态 |
+| 8.3.4 | 缓存准入、淘汰、换出和重新计算的收益比较 |
+| 9.5.2 | HBM、CPU内存、SSD、远端存储；逐层加载和排队期间预取 |
+| 9.5.3–9.5.4 | 持久化、部分重算和缓存所在实例的请求路由 |
+
+判断保存是否值得，可以比较：
+
+> 保存一次的时间＋k次读取时间 < k次重新prefill的时间。
+
+书中还讨论了异步写入、逐层预取和SSD写入量控制。GPU计算某一层时，可以同时读取后续层需要的缓存；请求仍在队列中时，也可以先从SSD读到CPU内存，减少开始执行后的等待。缓存空间有限时，优先保留仍在进行的多轮会话和经常复用的前缀。
+
+书中附有两个独立Qwen3-8B引擎通过LMCache共享CPU缓存的实验。在12次前缀复用机会中，4GiB池完整命中5次，8GiB池完整命中12次，说明缓存容量会影响前缀能否保留到下一次使用。该实验使用约2K／8K输入，用于解释共享机制和容量作用。
+
+来源：[第8章固定版本](https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/08-推理优化.md)、[第9章固定版本](https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/manuscripts/09-分布式推理.md)、[共享CPU缓存实验](https://github.com/bojieli/ai-infra-book/blob/3bdcb4fcab73010eeaccf31cc10a8242a895d82e/experiments/ch09/09-07/shared-kv/README.md)。
+
+### 3. vLLM原生卸载与LMCache两条实现路线
+
+**vLLM原生卸载。** 官方的OffloadingConnector可以将完成的KV块异步复制到主机内存，命中时再载入GPU。TieringOffloadingSpec在CPU缓存之外连接文件系统、对象存储等次级存储；本地NVMe可以作为文件系统层。该多级路径通过CPU内存中转，读取顺序为SSD、CPU、GPU。
+
+简单CPU卸载已有`--kv-offloading-size`和`--kv-offloading-backend native`参数，多级存储通过`--kv-transfer-config`配置。`--cpu-offload-gb`用于权重卸载，KV缓存使用前述独立参数。[vLLM官方卸载指南](https://docs.vllm.ai/en/stable/features/kv_offloading_usage/)
+
+**vLLM加LMCache。** LMCache把缓存作为独立服务管理。当前推荐的MP模式提供CPU内存缓存池、SSD等持久化存储、异步写入和缺失时的预取。多个推理实例可以连接相应缓存服务，复用兼容的前缀状态。这条路线适合继续比较双TP4实例、共享缓存池和多服务器部署。
+
+单实例可以先比较vLLM原生卸载；需要独立缓存服务和跨实例管理时，再比较LMCache MP。当前LMCache文档已将旧的进程内模式标为弃用，配置应参考MP说明。[LMCache多级存储](https://docs.lmcache.ai/mp/l2_storage.html)、[旧模式与MP模式说明](https://docs.lmcache.ai/kv_cache/storage_backends/local_storage.html)
+
+### 4. 一个1M会话的缓存读取算例
+
+按现有Hopper TP4布局，一个1M会话的全局KV在每张卡上约占1.827GB，四张卡合计7.308GB。下面估算取回这四份载荷需要多久。
+
+| 路径 | 假设有效带宽 | 载荷传输时间 |
+|---|---|---:|
+| CPU内存到四张GPU | 四卡合计24GB/s | 约0.30秒 |
+| SSD到内存，再到GPU | SSD 6GB/s，随后四卡合计24GB/s；串行相加 | 约1.52秒 |
+| 20个会话一起从内存载回 | 共146.16GB，四卡合计24GB/s | 约6.1秒 |
+
+计算分别为`7.308÷24`、`7.308÷6＋7.308÷24`和`20×7.308÷24`。表内带宽是假设值，仅计算当前布局的全局KV传输；完整首token等待还包括其他所需状态、排队、新增输入prefill和第一步生成。首次保存的时间另外计算。
+
+这个算例说明了为何长前缀适合保存：同一段百万token上下文，重新计算的工作量和搬运一次缓存的工作量相差很大。多个用户轮流调用模型、中间等待工具时，可以把重复prefill占用的GPU时间留给其他任务。许多会话同时继续时，则要按合计读取量和共享带宽预算。
+
+计算依据：[公司方案中的缓存与传输预算](../../knowledge-base/infrastructure/scenario-3-company-agent-2026-09-23.md)、[已归档计算输入与结果](../../knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json)。
+
+### 5. 公司服务器与Spark分别怎样使用
+
+公司服务器的GPU显存和主机DRAM是两类物理资源。正在运行的会话留在GPU，近期会继续使用的会话优先保存在DRAM，SSD用于延长缓存保留时间。请求进入队列后提前加载缓存，可以让读取与排队时间重叠。
+
+因此，容量表分成两个问题：GPU能同时运行多少任务，整套缓存系统能保留多少会话。此前20个生成请求加20个等待工具请求，需要保存40份上下文；分层缓存决定这些状态分别放在哪里。主机内存还要为Engram、操作系统和其他服务留出空间。
+
+Spark需要单独处理。它的CPU和GPU共用128GB LPDDR5x，CPU缓存和GPU缓存消耗同一份物理内存。因此，Spark保留更多长会话的主要扩展方向是本地NVMe或远端内存，而不是再分配一份大的CPU缓存副本。[NVIDIA内存架构说明](https://docs.nvidia.com/dgx/dgx-spark-porting-guide/overview.html)
+
+Spark可以在统一内存中保留近期会话，将闲置长会话保存到SSD，用户回来时再读入。这样改善的是重新开始任务的等待；512K持续生成仍沿用约15 token/s的现有估算。
+
+### 6. 所选模型的支持和版本
+
+LMCache已经列出Qwen3.8-27B的单GPU验证配置。它包含全注意力和递推状态，配置要求使用相应的Mamba缓存模式，并对齐引擎与缓存服务的块大小。官方说明仍将`align`前缀缓存标为实验性；本项目进一步核对的组合是FP8权重、FP8 KV和MTP3。[Qwen recipe](https://docs.lmcache.ai/recipes/qwen3_5.html)
+
+DeepSeek-V4.1-Flash也已有LMCache八GPU验证配置，按不同缓存组分别保存和读取。该recipe明确表示MTP组合尚未验证，因此公司方案需要围绕缓存卸载与DSpark的具体组合检查性能和正确性。[DeepSeek recipe](https://docs.lmcache.ai/recipes/deepseek_v41_flash.html)
+
+版本信息以发布记录交叉核对：LMCache的DeepSeek recipe仍保留“尚无包含V4.1的vLLM正式release”提示，但vLLM 0.30.0已加入该模型，0.31.0于10月5日发布。模型进入release和具体缓存／MTP组合完成验证分别判断。[vLLM 0.30.0](https://github.com/vllm-project/vllm/releases/tag/v0.30.0)、[vLLM 0.31.0](https://github.com/vllm-project/vllm/releases/tag/v0.31.0)
+
+0.31.0还增加了同机DP副本共享Engram主机表的能力。此前203GB／406GB的对照按一份／两份副本计算；最终若采用支持共享的DP布局，应据此更新主存分配。Engram是模型查找表，会话KV另行计账。
+
 ## 总结
 
 个人方案采用Spark运行Qwen3.8-27B，工具在员工电脑上执行。FP8 KV配置下，262K上下文估算约18 token/s，512K约15 token/s；共享KV Cache总容量约1.81M token。公司方案以八卡H200运行DeepSeek-V4.1-Flash为主要候选，TP8和双TP4的缓存容量都能容纳20个1M会话。
 
 A100项目用于学习硬件适配和具体优化，公司A100部署采用modified vLLM。AI Infra Book则帮助我们逐项分析计算量、数据传输、缓存和调度，再把这些因素换算成每个任务的响应时间与成本。
+
+公司方案采用GPU、DRAM和SSD分层保存会话状态，Spark重点考虑统一内存和SSD。已有前缀取回后继续计算新增输入，减少多用户Agent重复prefill的等待。
 
 ## 资料与技术附注
 

@@ -132,6 +132,12 @@
 
 **交付：**一份主题阅读笔记、章节与算例索引、约3页分享slide。以中文原稿固定版本为依据，图表和数字附出处。
 
+## 10月15日 Pro修订稿与发布
+
+用户完成Pro修订，形成34页演示稿。已将KV offload对话内容补入[讲稿第五部分](../presentation/week7-deployment-2026-10-15/speaker-notes.md)：分层缓存、AI Infra Book章节、vLLM和LMCache实现、CPU／SSD读取算例、Spark统一内存，以及模型和版本说明。
+
+[本次Release](https://github.com/SthMax/quant-intern/releases/tag/phase3-week7-2026-10-15)打包讲稿Markdown、用户提供的新版PPTX及对应PDF。文件保存在[演示稿目录](../presentation/week7-deployment-2026-10-15/README.md)，先前发布版本和研究计算保留。
+
 ## 10月14日 Beamer完成
 
 用户已认可逐段改写后的讲稿。[汇报PDF](../presentation/week7-deployment-2026-10-15/output/pdf/week7-long-context-deployment.pdf)已完成，共20页主稿、5页附录，并已逐页检查图表、箭头、表格、字体和页脚。主稿按Spark、公司DeepSeek、A100项目和AI Infra Book组织，公司知识库保留一页。

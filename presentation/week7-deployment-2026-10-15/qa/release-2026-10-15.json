@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-15",
+  "release_tag": "phase3-week7-2026-10-15",
+  "asset_count": 3,
+  "assets": [
+    {
+      "path": "presentation/week7-deployment-2026-10-15/speaker-notes.md",
+      "name": "speaker-notes.md",
+      "bytes": 32053,
+      "sha256": "7b7c88637cd35d95a8036d1de5e5e7c0cfc17c2eec30baf8de7c0ea184959069"
+    },
+    {
+      "path": "presentation/week7-deployment-2026-10-15/output/gpt-pro/week7-long-context-revised-kv-offload.pptx",
+      "name": "week7-long-context-revised-kv-offload.pptx",
+      "bytes": 231100,
+      "sha256": "c1de57fdfa22343e23f077a96d37ad90b93955c4917fe7c91d00aef1df00a94e"
+    },
+    {
+      "path": "presentation/week7-deployment-2026-10-15/output/gpt-pro/week7-long-context-revised-kv-offload.pdf",
+      "name": "week7-long-context-revised-kv-offload.pdf",
+      "bytes": 843978,
+      "sha256": "4caa33eb6c6a6cdeeac5b5bbadc8ad9522ca9eb4c85e6ca4272dfbd019a53682"
+    }
+  ],
+  "checks": {
+    "pdf_pages": 34,
+    "pptx_slides": 34,
+    "pdf_main_pages": 27,
+    "pdf_appendix_pages": 7,
+    "pdf_uri_links": 23,
+    "embedded_fonts": {
+      "/BAAAAA+NotoSansCJKsc-Regular": true,
+      "/CAAAAA+NotoSans-Regular": true,
+      "/DAAAAA+NotoSansCJKsc-Bold": true,
+      "/EAAAAA+NotoSans-Bold": true,
+      "/FAAAAA+LiberationSans-Bold": true,
+      "/GAAAAA+LiberationSans": true,
+      "/HAAAAA+DejaVuSans-Bold": true,
+      "/IAAAAA+NotoSansCJKsc-Regular": true,
+      "/JAAAAA+NotoSansCJKsc-Bold": true,
+      "/KAAAAA+DejaVuSans": true,
+      "/LAAAAA+NotoSansCJKsc-Regular": true
+    },
+    "pptx_zip_and_xml": "passed",
+    "existing_notes_body_preserved": true,
+    "markdown_local_links": "passed",
+    "anonymized_text_and_metadata": "passed",
+    "user_provided_pptx_pdf_unchanged": true,
+    "transfer_arithmetic": "7.308/24=0.3045; 7.308/6+7.308/24=1.5225; 20*7.308/24=6.09"
+  },
+  "visual_review": {
+    "scope": "Changed and added pages reviewed against the previously reviewed 32-page Pro version",
+    "pages": [
+      7,
+      11,
+      13,
+      15,
+      16,
+      19,
+      25,
+      27,
+      28,
+      31,
+      34
+    ],
+    "render_dpi": 100,
+    "result": "No clipping or overlapping content observed on reviewed pages"
+  },
+  "previous_beamer": "Retained at original bytes; historical source/QA correspond to e521364."
+}
