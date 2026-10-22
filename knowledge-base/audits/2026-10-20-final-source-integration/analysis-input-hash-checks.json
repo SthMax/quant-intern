@@ -1,0 +1,112 @@
+[
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/spark-price.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/infrastructure/data/dgx-spark-qwen27-external-2026-10-12/summary.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/infrastructure/data/scenario-2-rag-2026-09-23/assumptions.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/infrastructure/data/scenario-2-rag-2026-09-23/calculate_capacity.py",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/infrastructure/data/hardware-prices-2026-10-12.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/sources/TECH-079/config.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/sources/TECH-079/model.safetensors.index.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/sources/TECH-084/benchmarks.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.32-attention.py",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.32-engram-config.py",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/sources/TECH-089/lmcache-qwen-series.rst",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/validation.json",
+    "path": "knowledge-base/sources/TECH-089/lmcache-deepseek-v41.rst",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+    "path": "knowledge-base/infrastructure/data/tco-2026-10-20/inputs.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+    "path": "knowledge-base/sources/TECH-090/deepseek-pricing.md",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+    "path": "knowledge-base/sources/TECH-090/claude-pricing.md",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+    "path": "knowledge-base/infrastructure/data/hardware-prices-2026-10-12.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+    "path": "knowledge-base/infrastructure/data/week7-deployment-2026-10-12/results.json",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-open-platform-terms.md",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-sales-2025.md",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-1017-news.md",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+    "path": "knowledge-base/infrastructure/data/final-source-refresh-2026-10-20/model-artifact-comparison.json",
+    "status": "passed"
+  }
+]

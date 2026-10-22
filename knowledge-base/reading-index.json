@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated": "2026-10-14",
+  "updated": "2026-10-20",
   "baseline_commit": "103f14ccbb18509afd013755128618c61f30e6ad",
   "scope": "Main reading paths for research retrieval; supporting and redirect records are provenance/context, not independent main readings. Do not recursively ingest sources/, reference/ or audits/.",
   "counts": {
-    "main": 193,
+    "main": 197,
     "redirect": 4,
     "supporting": 15
   },
-  "registered_source_ids": 212,
+  "registered_source_ids": 216,
   "records": [
     {
       "source_id": "FUND-001",
@@ -2428,11 +2428,56 @@
       "canonical_source_id": null,
       "text_kind": "authored_source_index_with_original_language_files",
       "available_text": true
+    },
+    {
+      "source_id": "TECH-089",
+      "title": "最终汇报三场景配置核对：vLLM0.30–0.32、同机DP Engram共享及LMCache混合状态支持",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-089/original.md",
+      "metadata_path": "sources/TECH-089/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "verbatim source files plus labeled authored index and separate analysis",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-090",
+      "title": "三年TCO：DeepSeek现行API、Claude Sonnet 5.5计价与缓存官方资料",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-090/original.md",
+      "metadata_path": "sources/TECH-090/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index_with_original_language_extractions",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-091",
+      "title": "最终汇报公开模型评测来源包",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-091/original.md",
+      "metadata_path": "sources/TECH-091/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index_with_original_language_modelcards_benchmark_records_and_code",
+      "available_text": true
+    },
+    {
+      "source_id": "TECH-092",
+      "title": "最终汇报：模型制品、许可、引擎、采购、API与监管时效核验",
+      "collection_role": "main",
+      "evidence_state": "verified-primary",
+      "reading_path": "sources/TECH-092/original.md",
+      "metadata_path": "sources/TECH-092/metadata.json",
+      "canonical_source_id": null,
+      "text_kind": "authored_source_index_with_raw_originals_and_mechanical_extractions",
+      "available_text": true
     }
   ],
   "extra_reference_readings": [
     "reference/ccf-financial-cases.md"
   ],
   "report_selection_note": "companies/quant-research-2026-09-09.md",
-  "phase2_update": "2026-09-24: Current numbering 1 personal/team (Qwen3.8-27B >=8-bit), 2 enterprise RAG (Qwen27 FP8), 3 company Agent (MiMo publisher-native precision; >=262K per task)."
+  "phase2_update": "2026-09-24: Current numbering 1 personal/team (Qwen3.8-27B >=8-bit), 2 enterprise RAG (Qwen27 FP8), 3 company Agent (MiMo publisher-native precision; >=262K per task).",
+  "final_update": "2026-10-20: TECH-089–092 add final configurations, three-year TCO, public benchmark evidence and dated artifact/license/procurement/API/regulatory checks; original performance identities and historical records retained."
 }

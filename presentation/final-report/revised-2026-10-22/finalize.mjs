@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+const R=path.dirname(fileURLToPath(import.meta.url));
+const S='/Users/sthmax/.codex/plugins/cache/openai-primary-runtime/presentations/26.1020.11348/skills/presentations';
+process.env.RUNTIME_NODE_MODULES='/Users/sthmax/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const {finalizePresentation}=await import(pathToFileURL(path.join(S,'container_tools/artifact_tool_utils.mjs')).href);
+const {tableOwners,chartOwners}=JSON.parse(await fs.readFile(path.join(R,'build/export-spec.json'),'utf8'));
+const result=await finalizePresentation({workspaceDir:R,candidatePath:path.join(R,'build/candidate.pptx'),finalPath:path.join(R,'output/final-report-2026-10-22.pptx'),pythonExecutable:'/Users/sthmax/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',integrityValidatorPath:path.join(S,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(S,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','15240000,8572500','--validate-heading-fit',...tableOwners.flatMap(n=>['--require-native-table-slide',String(n)])],explicitTotalSlideCount:38,requiredNativeTableOwnerSlides:tableOwners,requiredNativeChartOwnerSlides:chartOwners,materializeLiteralChartWorkbooks:true,fontPolicy:{basis:'design',families:['PingFang SC']},verifyArtifactToolImport:true,receiptPath:path.join(R,'qa/finalizer.json')});
+console.log(JSON.stringify({file:result.finalPath,sha256:result.finalSha256,layoutWarnings:result.presentationLayout.warnings}));

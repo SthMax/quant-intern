@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-20",
+  "weights_pct": {
+    "business_value": 20,
+    "data_safety": 20,
+    "failure_containment": 15,
+    "evaluation_clarity": 15,
+    "governance": 15,
+    "feasibility": 10,
+    "adoption": 5
+  },
+  "pilots": [
+    {
+      "priority": 1,
+      "id": "announcement",
+      "name": "公告提取",
+      "criteria_scores": {
+        "business_value": 5,
+        "data_safety": 4,
+        "failure_containment": 5,
+        "evaluation_clarity": 5,
+        "governance": 4,
+        "feasibility": 5,
+        "adoption": 4
+      },
+      "score_100": 92.0,
+      "person_days": [
+        8,
+        12
+      ],
+      "assumed_cny_per_person_day": 2500,
+      "setup_labor_scenario_cny": [
+        20000,
+        30000
+      ],
+      "monthly_maintenance_hours": [
+        2,
+        4
+      ],
+      "monthly_tasks_assumed": 200,
+      "baseline_minutes_assumed": 8,
+      "assisted_operation_minutes_assumed": 2,
+      "extra_review_rework_minutes_assumed": 2,
+      "gross_capacity_hours_scenario": 13.3333,
+      "analyst_capacity_value_cny_per_hour_assumed": 150,
+      "analyst_capacity_value_scenario_cny": 2000.0,
+      "cash_conversion_fraction_assumed": 0,
+      "cash_savings_scenario_cny": 0.0,
+      "evidence_status": "analytical judgement and scenario; no internal measurement"
+    },
+    {
+      "priority": 2,
+      "id": "code",
+      "name": "代码与测试",
+      "criteria_scores": {
+        "business_value": 4,
+        "data_safety": 4,
+        "failure_containment": 4,
+        "evaluation_clarity": 5,
+        "governance": 4,
+        "feasibility": 4,
+        "adoption": 5
+      },
+      "score_100": 84.0,
+      "person_days": [
+        6,
+        10
+      ],
+      "assumed_cny_per_person_day": 2500,
+      "setup_labor_scenario_cny": [
+        15000,
+        25000
+      ],
+      "monthly_maintenance_hours": [
+        4,
+        6
+      ],
+      "monthly_tasks_assumed": 40,
+      "baseline_minutes_assumed": 60,
+      "assisted_operation_minutes_assumed": 20,
+      "extra_review_rework_minutes_assumed": 15,
+      "gross_capacity_hours_scenario": 16.6667,
+      "analyst_capacity_value_cny_per_hour_assumed": 150,
+      "analyst_capacity_value_scenario_cny": 2500.0,
+      "cash_conversion_fraction_assumed": 0,
+      "cash_savings_scenario_cny": 0.0,
+      "evidence_status": "analytical judgement and scenario; no internal measurement"
+    },
+    {
+      "priority": 3,
+      "id": "comparison",
+      "name": "财报比较",
+      "criteria_scores": {
+        "business_value": 5,
+        "data_safety": 4,
+        "failure_containment": 4,
+        "evaluation_clarity": 3,
+        "governance": 4,
+        "feasibility": 3,
+        "adoption": 5
+      },
+      "score_100": 80.0,
+      "person_days": [
+        12,
+        20
+      ],
+      "assumed_cny_per_person_day": 2500,
+      "setup_labor_scenario_cny": [
+        30000,
+        50000
+      ],
+      "monthly_maintenance_hours": [
+        4,
+        8
+      ],
+      "monthly_tasks_assumed": 30,
+      "baseline_minutes_assumed": 90,
+      "assisted_operation_minutes_assumed": 25,
+      "extra_review_rework_minutes_assumed": 20,
+      "gross_capacity_hours_scenario": 22.5,
+      "analyst_capacity_value_cny_per_hour_assumed": 150,
+      "analyst_capacity_value_scenario_cny": 3375.0,
+      "cash_conversion_fraction_assumed": 0,
+      "cash_savings_scenario_cny": 0.0,
+      "evidence_status": "analytical judgement and scenario; no internal measurement"
+    },
+    {
+      "priority": 4,
+      "id": "nas_qa",
+      "name": "NAS问答",
+      "criteria_scores": {
+        "business_value": 5,
+        "data_safety": 3,
+        "failure_containment": 3,
+        "evaluation_clarity": 4,
+        "governance": 3,
+        "feasibility": 2,
+        "adoption": 4
+      },
+      "score_100": 70.0,
+      "person_days": [
+        25,
+        45
+      ],
+      "assumed_cny_per_person_day": 2500,
+      "setup_labor_scenario_cny": [
+        62500,
+        112500
+      ],
+      "monthly_maintenance_hours": [
+        8,
+        16
+      ],
+      "monthly_tasks_assumed": 400,
+      "baseline_minutes_assumed": 8,
+      "assisted_operation_minutes_assumed": 2,
+      "extra_review_rework_minutes_assumed": 1,
+      "gross_capacity_hours_scenario": 33.3333,
+      "analyst_capacity_value_cny_per_hour_assumed": 150,
+      "analyst_capacity_value_scenario_cny": 5000.0,
+      "cash_conversion_fraction_assumed": 0,
+      "cash_savings_scenario_cny": 0.0,
+      "evidence_status": "analytical judgement and scenario; no internal measurement"
+    },
+    {
+      "priority": 5,
+      "id": "prescreen",
+      "name": "材料预审",
+      "criteria_scores": {
+        "business_value": 4,
+        "data_safety": 3,
+        "failure_containment": 3,
+        "evaluation_clarity": 3,
+        "governance": 2,
+        "feasibility": 3,
+        "adoption": 3
+      },
+      "score_100": 61.0,
+      "person_days": [
+        15,
+        25
+      ],
+      "assumed_cny_per_person_day": 2500,
+      "setup_labor_scenario_cny": [
+        37500,
+        62500
+      ],
+      "monthly_maintenance_hours": [
+        8,
+        12
+      ],
+      "monthly_tasks_assumed": 50,
+      "baseline_minutes_assumed": 35,
+      "assisted_operation_minutes_assumed": 10,
+      "extra_review_rework_minutes_assumed": 18,
+      "gross_capacity_hours_scenario": 5.8333,
+      "analyst_capacity_value_cny_per_hour_assumed": 150,
+      "analyst_capacity_value_scenario_cny": 875.0,
+      "cash_conversion_fraction_assumed": 0,
+      "cash_savings_scenario_cny": 0.0,
+      "evidence_status": "analytical judgement and scenario; no internal measurement"
+    }
+  ],
+  "notes": [
+    "No model calls.",
+    "Technical implementation is budgeted at 2500 CNY per person-day.",
+    "150 CNY per hour values analyst capacity only; it is not the technical implementation or maintenance rate.",
+    "Technical maintenance hours remain a separate role input, not subtracted from analyst capacity hours.",
+    "Hardware, licenses and model service are allocated through TCO, not included in setup labor.",
+    "Cash conversion is assumed to be 0%; scenario cash savings are zero, not a measured cash ROI."
+  ]
+}

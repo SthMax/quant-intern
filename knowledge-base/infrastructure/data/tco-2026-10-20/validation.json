@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": [
+    "8轮context与新增token各记一次",
+    "每轮输入=cache hit+miss/write",
+    "含重试的输入输出与工作量同口径",
+    "三年分项合计与总额一致",
+    "容量按prefill与decode工时相加后检查70%包络",
+    "公司高情景自动预算扩容，A100预算未标记验收通过",
+    "无GPU或付费API调用"
+  ],
+  "cases": 6,
+  "annual_rows": 54,
+  "sensitivity_rows": 56,
+  "curve_rows": 301
+}

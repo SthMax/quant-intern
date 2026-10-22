@@ -1,0 +1,276 @@
+{
+  "source_id": "TECH-089",
+  "title": "最终汇报三场景配置核对：vLLM0.30–0.32、同机DP Engram共享及LMCache混合状态支持",
+  "collection_role": "main",
+  "evidence_state": "verified-primary",
+  "accessed": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "reviewer": "Research agent; primary documentation, code and archived data inspection",
+  "human_check_status": "pending",
+  "verification_scope": "Vendor documentation and static source behavior at fixed release tags and the recorded LMCache commit. No new GPU measurements or model-quality validation.",
+  "original_language": "English",
+  "text_kind": "verbatim source files plus labeled authored index and separate analysis",
+  "publication_dates": {
+    "vllm0.30.0": "2026-09-22T05:20:54Z",
+    "vllm0.31.0": "2026-10-05T06:44:55Z",
+    "vllm0.32.0": "2026-10-18T06:50:48Z",
+    "LMCache_recipe_publication_date": "not stated; accessed2026-10-20"
+  },
+  "fixed_revisions": {
+    "vllm": [
+      "v0.30.0",
+      "v0.31.0",
+      "v0.32.0"
+    ],
+    "LMCache_dev": "64b05b8af88d5fc13b375cdc06b5425cd56dea47"
+  },
+  "files": {
+    "vllm-0.31-engram.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.31.0/docs/features/engram.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.31.0/docs/features/engram.md",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:45.366825+00:00",
+      "bytes": 7342,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "b7aff00de9a474ee48e149b18357e34bb4aec4f76aa6ad51253046b5633c8961"
+    },
+    "vllm-0.32-engram.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/docs/features/engram.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/docs/features/engram.md",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:44.641822+00:00",
+      "bytes": 7124,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "b059d626fde1f73a08239cf218674c680260dd82c3f4a4712f4bf462e87dd5c9"
+    },
+    "vllm-0.32-engram-config.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/vllm/config/engram.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/vllm/config/engram.py",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:44.427151+00:00",
+      "bytes": 4987,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "53bf5367af69149f7dc6dfe576921f22948cdb5cbd3e903c8bd7b310f80aa202"
+    },
+    "vllm-0.32-attention.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/vllm/models/deepseek_v41/attention.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/vllm/models/deepseek_v41/attention.py",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:45.538112+00:00",
+      "bytes": 62956,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb"
+    },
+    "vllm-0.31-attention.py": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.31.0/vllm/models/deepseek_v41/attention.py",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.31.0/vllm/models/deepseek_v41/attention.py",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:44.733777+00:00",
+      "bytes": 60347,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "12c183b169b134fc909d598d6f99bd4f8da83269a4589a5bc3162211d9364c77"
+    },
+    "vllm-0.32-kv-offloading.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/docs/features/kv_offloading_usage.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/docs/features/kv_offloading_usage.md",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:45.105746+00:00",
+      "bytes": 27882,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "26c7fc5da0b36f27da65e5cbad066df1b598fe5fe806da99e0b2aff62201382b"
+    },
+    "vllm-0.32-hybrid-cache.md": {
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/docs/design/hybrid_kv_cache_manager.md",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/docs/design/hybrid_kv_cache_manager.md",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:45.245301+00:00",
+      "bytes": 15575,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "5a3138f8d3fddc44d69f7782510c0c97b394ee073bb743cae34bfbf281985b4a"
+    },
+    "vllm-0.30-release.html": {
+      "requested_url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0",
+      "final_url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:46.449389+00:00",
+      "bytes": 603546,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "e50efbdfd024692a351928a45a64333db4cf5b21afc277f625b50383511c6bf5"
+    },
+    "vllm-0.31-release.html": {
+      "requested_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+      "final_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:46.654568+00:00",
+      "bytes": 593806,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "2b4509ca2a55bacb162ce5743e20f4b4868c21f8d61cbe4b0a4f97b014fa758b"
+    },
+    "vllm-0.32-release.html": {
+      "requested_url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+      "final_url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:46.538705+00:00",
+      "bytes": 583505,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "fe2306af1838e46cc25bf3bd670bc4a80be4c646d744b14ad90917072f79ae0a"
+    },
+    "lmcache-qwen-series.rst": {
+      "requested_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/recipes/qwen3_5.rst",
+      "final_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/recipes/qwen3_5.rst",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:45.835885+00:00",
+      "bytes": 6327,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "584905b395a9b590a96936986f39907a9fbd41460d6b9310ecb08fdcb59cade9",
+      "fixed_revision": "64b05b8af88d5fc13b375cdc06b5425cd56dea47",
+      "canonical_pinned_url": "https://raw.githubusercontent.com/LMCache/LMCache/64b05b8af88d5fc13b375cdc06b5425cd56dea47/docs/source/recipes/qwen3_5.rst",
+      "pinned_bytes_equal": true,
+      "pin_check_http": "200"
+    },
+    "lmcache-deepseek-v41.rst": {
+      "requested_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/recipes/deepseek_v41_flash.rst",
+      "final_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/recipes/deepseek_v41_flash.rst",
+      "http_status": "200",
+      "retrieved_on": "2026-10-20",
+      "retrieved_at_utc": "2026-10-19T17:29:46.115262+00:00",
+      "bytes": 5475,
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "06f56e5f2094b45e1a992278ad73c022ffa37191e00709de22b2de458e8fc397",
+      "pinned_bytes_equal": true,
+      "pin_check_http": "200",
+      "fixed_revision": "64b05b8af88d5fc13b375cdc06b5425cd56dea47",
+      "canonical_pinned_url": "https://raw.githubusercontent.com/LMCache/LMCache/64b05b8af88d5fc13b375cdc06b5425cd56dea47/docs/source/recipes/deepseek_v41_flash.rst",
+      "earlier_pin_request_http": "000"
+    },
+    "lmcache-hybrid-models.rst": {
+      "requested_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/mp/hybrid_models.rst",
+      "final_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/mp/hybrid_models.rst",
+      "http_status": "200",
+      "bytes": 11920,
+      "retrieved_on": "2026-10-20",
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "ec87f91a419a4d0590e064ed2e620dd4633e6e838852abbefeeefeca31fc924c",
+      "pinned_bytes_equal": true,
+      "pin_check_http": "200",
+      "fixed_revision": "64b05b8af88d5fc13b375cdc06b5425cd56dea47",
+      "canonical_pinned_url": "https://raw.githubusercontent.com/LMCache/LMCache/64b05b8af88d5fc13b375cdc06b5425cd56dea47/docs/source/mp/hybrid_models.rst",
+      "earlier_pin_request_http": "000"
+    },
+    "lmcache-mp-quickstart.rst": {
+      "requested_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/getting_started/quickstart.rst",
+      "final_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/getting_started/quickstart.rst",
+      "http_status": "200",
+      "bytes": 22434,
+      "retrieved_on": "2026-10-20",
+      "method": "curl original response bytes",
+      "ok": true,
+      "sha256": "1e78492bc014499390240216a966183d369009a902a1a35104fc3585ae6dee75",
+      "fixed_revision": "64b05b8af88d5fc13b375cdc06b5425cd56dea47",
+      "canonical_pinned_url": "https://raw.githubusercontent.com/LMCache/LMCache/64b05b8af88d5fc13b375cdc06b5425cd56dea47/docs/source/getting_started/quickstart.rst",
+      "pinned_bytes_equal": true,
+      "pin_check_http": "200"
+    },
+    "lmcache-l2-storage.html": {
+      "requested_url": "https://docs.lmcache.ai/mp/l2_storage.html",
+      "final_url": "https://docs.lmcache.ai/mp/l2_storage.html",
+      "retrieved_on": "2026-10-20",
+      "http_status": "200",
+      "ok": true,
+      "bytes": 149530,
+      "sha256": "89fa4dc0b5bbbf8817e422c052ef00071299d512f7ae106b88c96ac5937f9182",
+      "method": "curl original response bytes"
+    },
+    "vllm-0.30-release-original.txt": {
+      "bytes": 48509,
+      "sha256": "ad46952efee1e24bd9e6456f6917c66bd26d9a56dc811e5c0f977e592408133b",
+      "method": "mechanical original-language extraction from archived HTML; full HTML governs"
+    },
+    "vllm-0.31-release-original.txt": {
+      "bytes": 43664,
+      "sha256": "3a8fa1724611bdf1267d489e642bc9194d5813dcde8bfd75d3f41bf5b5d14873",
+      "method": "mechanical original-language extraction from archived HTML; full HTML governs"
+    },
+    "vllm-0.32-release-original.txt": {
+      "bytes": 34343,
+      "sha256": "920715bfb86c635ac5d3539e09c7380e9777fa2cdd44cf8e6f41d73c86ae4a89",
+      "method": "mechanical original-language extraction from archived HTML; full HTML governs"
+    },
+    "lmcache-l2-storage-original.txt": {
+      "bytes": 40976,
+      "sha256": "8c2a1c458b9bfa46e4e7f3cf6a94dc45d527943ff8493f1735da62725f98ded0",
+      "method": "mechanical original-language extraction from archived HTML; full HTML governs"
+    },
+    "original.md": {
+      "bytes": 4767,
+      "sha256": "0197ec8a7d1405efc4d599924cfad8ae1776db512bf110ff2bd9a62c4dbc0e74",
+      "method": "authored source index or evidence analysis"
+    },
+    "evidence-note.md": {
+      "bytes": 2970,
+      "sha256": "07cb7ea20031d98f5cb4602152ac2c80bb6304d33ef2de0832d00ee7d2578d19",
+      "method": "authored source index or evidence analysis"
+    }
+  },
+  "retrieval_failures": [
+    {
+      "requested_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/mp/hybrid_models.md",
+      "http_status": "404",
+      "response_file": "retrieval-response-lmcache-hybrid-models.md",
+      "usable_original": false
+    },
+    {
+      "requested_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/mp/l2_storage.md",
+      "http_status": "404",
+      "response_file": "retrieval-response-lmcache-l2-storage.md",
+      "usable_original": false
+    },
+    {
+      "requested_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/getting_started/quickstart.md",
+      "http_status": "404",
+      "response_file": "retrieval-response-lmcache-mp-quickstart.md",
+      "usable_original": false
+    },
+    {
+      "requested_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/mp/l2_storage.rst",
+      "http_status": "404",
+      "response_file": "retrieval-response-lmcache-l2-storage.rst",
+      "usable_original": false
+    }
+  ],
+  "retrieval_log": "retrieval.json",
+  "evidence_note": "evidence-note.md",
+  "used_in": [
+    "../../infrastructure/final-configurations-2026-10-20.md",
+    "../../infrastructure/data/final-configurations-2026-10-20/summary.json"
+  ],
+  "limits": [
+    "Two LMCache tagged-release-warning sentences are stale against vLLM release evidence; LMCache MTP caveat remains.",
+    "Generic hybrid-cache design is not sufficient to validate selected FP8/MTP combinations.",
+    "Primary publisher assertions are not independent production benchmark results."
+  ]
+}

@@ -1,0 +1,4 @@
+model,goal_pct,process_pct,protection_pct,intermediate_failure_pct,strict_success_pct,pass_power_3_pct,tasks,runs_per_task,user_simulator,reasoning_at_run,source,table
+Qwen3.8-27B,42,74,93.3,28,32.7,10,50,3,DeepSeek-V4.1-Flash,not fully disclosed per model in paper; repository template is not a run log,https://arxiv.org/html/2610.20424v1#S5.T1,Table 1; pass^3 from section 5.2
+DeepSeek-V4.1-Flash,46.7,92,96.7,9.3,43.3,26,50,3,DeepSeek-V4.1-Flash,not fully disclosed per model in paper; repository template is not a run log,https://arxiv.org/html/2610.20424v1#S5.T1,Table 1; pass^3 from section 5.2
+GLM-5.3-Flash,48,79.3,87.3,29.3,43.3,22,50,3,DeepSeek-V4.1-Flash,not fully disclosed per model in paper; repository template is not a run log,https://arxiv.org/html/2610.20424v1#S5.T1,Table 1; pass^3 from section 5.2

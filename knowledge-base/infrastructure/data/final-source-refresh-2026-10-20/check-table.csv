@@ -1,0 +1,17 @@
+check_id,category,item,relevant_date,result,ppt_pages,impact,source_file,checked_local,reviewer,human_check_status
+C01,model,1017 open weights,2026-10-17,update,P08/A03,Add self-hosted upgrade candidate; retain original benchmark identity,api/deepseek-1017-news.md,2026-10-20,W4 agent,pending
+C02,model,Qwen27FP8 exact revision/license,2026-08-14,retained/frozen,P08/P10,Use FP8 repo SHA; historical external measurement SHA remains undisclosed,models/qwen27fp8/LICENSE,2026-10-20,W4 agent,pending
+C03,model,DeepSeek original vs1017 configs/index/license,2026-10-17,same static metadata,P08/P21/P29,No automatic resource-budget replacement or runtime performance inference,models/deepseek1017/config.json,2026-10-20,W4 agent,pending
+C04,license,GLM main vsFlash; Kimi; MiMo,2026-10-20,retained,P08/A03,Retain custom triggers and missing standalone MiMo license artifact,model-revisions.json,2026-10-20,W4 agent,pending
+C05,engine,vLLM0.32 formal release,2026-10-18,update stale claim,P22/A04,Official support exists; freeze candidate build,engines/vllm-v032.json,2026-10-20,W4 agent,pending
+C06,engine,LMCache exact combinations,2026-10-20,qualified,P13/P22,MTP and exact device+precision combination remain distinct,engines/lmcache-deepseek.md,2026-10-20,W4 agent,pending
+C07,engine,same-node shared Engram,2026-10-20,W1 confirmed,P21/P22/P29,202.758GB single shared table vs405.516GB independent servers,../TECH-089/vllm-0.32-engram-config.py,2026-10-20,W4 agent,pending
+C08,hardware,Posted prices,2026-10-20,unchanged,P15/P24/P29,Keep10/12 RMB analytical budget; not delivered quote,hardware/h200-exxact.md,2026-10-20,W4 agent,pending
+C09,procurement,BIS rule/eCFR+NVIDIA filing,2026-10-20,retained,P24/P28,License review framework differs from transaction approval,hardware/ecfr-742-6.md,2026-10-20,W4 agent,pending
+C10,API,DeepSeek current alias/prices,2026-10-17,retained W2 prices,P29,API1017 separated from older local measurements,api/deepseek-pricing.md,2026-10-20,W4 agent,pending
+C11,API,DeepSeek data restrictions,2026-04-29,material scope clarification,P28/P29,Public/authorized compliant data; exclude automatic confidentialNAS upload,api/deepseek-open-platform-terms.md,2026-10-20,W4 agent,pending
+C12,API,Search/Fetch paid transition,2026-11-01 Beijing00:00,future billing input,P29/A11,Add success-call fee if selected; do not extrapolate temporary free offer,api/deepseek-pricing.md,2026-10-20,W4 agent,pending
+C13,API,Anthropic current restrictions,2025-09-04,current basis recovered,P29,Global economic comparison; mainland entity/team access not presumed,api/anthropic-sales-2025.md,2026-10-20,W4 agent,pending
+C14,API,Anthropic future policy,2026-11-12,future excluded,P28/P29,Do not backdate new detailed scope,api/anthropic-regions-future.md,2026-10-20,W4 agent,pending
+C15,software,OnyxEnterprise and OpenWebUI licenses,2026-10-20,retained,P18,Keep L inquiry;50-user threshold is debranding exception,software/onyx-ee-LICENSE,2026-10-20,W4 agent,pending
+C16,regulation,Domestic effective rules and AMAC,2026-10-20,retained/fresh checked,P28/A02,Five concrete controls; internal/public/important-system conditions,regulation/amac-t0004-2026.md,2026-10-20,W4 agent,pending

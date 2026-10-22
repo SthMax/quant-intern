@@ -1,5 +1,13 @@
 # Three-Year TCO — On-Premise versus Commercial APIs
 
+## 完整三年分析 — 2026年10月20日
+
+[三年本地部署与商业API分析](tco-analysis-2026-10-20.md)已完成，取代本文后续历史模板的待填状态。中等工作量下，个人Spark／DeepSeek API／Sonnet5.5三年含人力预算为9.05／1.66／3.75万元；20人公司八H200对应392.54／68.34／148.61万元。所有任务数、重试、缓存、税费准备、人工、PUE及容量服务包络均为可替换参数，未宣称模型质量等价或1M SLA已测。
+
+[输入、脚本与结果](data/tco-2026-10-20/README.md)保留逐年分项、28项单因素敏感性、扩容阶梯和回本边界。公司高量第2年开始预算第二台八H200；A100新购／复用仅列预算，不填写未经验证的合格任务成本。内部工时价值与对外现金回报分别计算。现行DeepSeek API为V4.1-Flash-1017，1017已开放MIT权重且与原版config／索引一致，可沿同资源架构预算；历史性能保留9月制品身份。DeepSeek普通API只对应符合条款的获准资料，Sonnet为主体／地域条件成立时的全球经济对照。官方价格及缓存条件归档于[TECH-090](../sources/TECH-090/original.md)。
+
+以下保留10月12日及以前的成本输入和方法记录；其中“尚待完成”是当时状态，当前结论以上述10月20日分析为准。
+
 ## Current cost inputs — 12 October 2026
 
 The [Week 7 research](../../weekly/week-07-plan.md) uses **Spark＋Qwen27** for

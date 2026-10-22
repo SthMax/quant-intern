@@ -1,0 +1,14 @@
+{
+  "cases": 12,
+  "families": [
+    "entity_event",
+    "financial_qa",
+    "material_prescreen",
+    "multi_document_summary",
+    "nas_qa",
+    "research_code"
+  ],
+  "evidence_ids_valid": true,
+  "model_calls": 0,
+  "scores_generated": false
+}

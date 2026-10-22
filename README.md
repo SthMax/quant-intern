@@ -17,7 +17,22 @@ The confirmed plan also requires a reusable financial NLP evaluation framework
 covering named-entity recognition, financial question answering, and
 multi-document summarization.
 
-## Current work: Thursday deployment presentation
+## Current work: final presentation
+
+The [22 October final presentation](presentation/final-report/revised-2026-10-22/README.md)
+contains 32 main slides, 6 reference slides and matching speaker notes in 16:9.
+It is written for business colleagues without an LLM background, with concrete
+financial examples, workflows and costs. It follows the
+[final-presentation plan](weekly/final-presentation-plan-2026-10-19.md), which
+reviews five published releases and the user's mentor-feedback messages.
+Each deployment scenario explains its workflow, resources, performance, caching
+and costs together. The new research completes configuration reconciliation,
+three-year local/API TCO, public-benchmark comparisons and pilot priorities,
+plus a dated source and licence review. The 22 October revision adds a professional
+presenter's review of audience fit and explanatory flow. The presentation is ready for user review;
+the latest published release remains the 15 October version below.
+
+## Latest released presentation
 
 The [15 October release](https://github.com/SthMax/quant-intern/releases/tag/phase3-week7-2026-10-15)
 packages the user-supplied Pro revision: a 34-page PDF, its editable PPTX,

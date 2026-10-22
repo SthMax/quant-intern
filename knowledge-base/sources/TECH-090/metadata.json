@@ -1,0 +1,119 @@
+{
+  "source_id": "TECH-090",
+  "title": "三年TCO：DeepSeek现行API、Claude Sonnet 5.5计价与缓存官方资料",
+  "collection_role": "main",
+  "evidence_state": "verified-primary",
+  "text_kind": "authored_source_index_with_original_language_extractions",
+  "accessed": "2026-10-20",
+  "reviewer": "W2 research agent; official page inspection and CPU arithmetic",
+  "human_check_status": "pending",
+  "verification_scope": "Official published token prices, model IDs, context and caching conditions on 2026-10-20; vendor performance/quality equivalence not inferred; hardware and operating cost assumptions separate.",
+  "files": {
+    "deepseek-pricing.md": {
+      "requested_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "final_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "accessed": "2026-10-20",
+      "bytes": 3308,
+      "sha256": "cfa7904b796b53cf53c4e40bb84aaf92b4b693e4ad6b6dfaea68c570d41e69fe",
+      "method": "Exa original-language webpage text extraction; cross-checked against opened official page using web.run; not raw HTML"
+    },
+    "deepseek-cache.md": {
+      "requested_url": "https://api-docs.deepseek.com/guides/kv_cache/",
+      "final_url": "https://api-docs.deepseek.com/guides/kv_cache/",
+      "accessed": "2026-10-20",
+      "bytes": 5371,
+      "sha256": "de06c705a5897c655b07a3452352118a311879ae785d73874fbf902d276e259d",
+      "method": "Exa original-language webpage text extraction; cross-checked against opened official page using web.run; not raw HTML"
+    },
+    "deepseek-first-call.md": {
+      "requested_url": "https://api-docs.deepseek.com/",
+      "final_url": "https://api-docs.deepseek.com/",
+      "accessed": "2026-10-20",
+      "bytes": 3329,
+      "sha256": "a0dc779411f0ec79781f8d49d69109f399047cd324d2cd4fbd4a59b4ae9cafe0",
+      "method": "Exa original-language webpage text extraction; cross-checked against opened official page using web.run; not raw HTML"
+    },
+    "claude-pricing.md": {
+      "requested_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "final_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "accessed": "2026-10-20",
+      "bytes": 30999,
+      "sha256": "02824a2dc94bdc7b80c61eda42b3631afc36a1d64f60993a60d922de8e412044",
+      "method": "Exa original-language webpage text extraction; cross-checked against opened official page using web.run; not raw HTML"
+    },
+    "claude-cache.md": {
+      "requested_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+      "final_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+      "accessed": "2026-10-20",
+      "bytes": 131165,
+      "sha256": "a2d1423e5871cace48d5a7b449fa9f31c2756fb76c85c8df3cd462b28eb2c7e3",
+      "method": "Exa original-language webpage text extraction; cross-checked against opened official page using web.run; not raw HTML"
+    },
+    "claude-sonnet55.md": {
+      "requested_url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+      "final_url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+      "accessed": "2026-10-20",
+      "bytes": 5753,
+      "sha256": "b4914f6dcd27181bb1d2cfc4163859045c1ac48c1296e3a0d27dd91d0635a0e9",
+      "method": "Exa original-language webpage text extraction; cross-checked against opened official page using web.run; not raw HTML"
+    },
+    "spark-hardware.md": {
+      "requested_url": "https://docs.nvidia.com/dgx/dgx-spark/hardware.html",
+      "final_url": "https://docs.nvidia.com/dgx/dgx-spark/hardware.html",
+      "accessed": "2026-10-20",
+      "bytes": 3472,
+      "sha256": "3ee1fa13b2be7b71e0e3d317609fbb9dee6f7e4a6cf1b8af8e9cc952d3662ca9",
+      "method": "Exa original-language webpage text extraction; cross-checked against opened official page using web.run; not raw HTML"
+    },
+    "anthropic-regions-future.md": {
+      "requested_url": "https://www.anthropic.com/legal/supported-regions",
+      "final_url": "https://www.anthropic.com/legal/supported-regions",
+      "accessed": "2026-10-20",
+      "bytes": 3597,
+      "sha256": "388a50db88b9ed6f5ccc08b26ef13fe08b6c900ca555229a1a3e0bc7912e98c7",
+      "method": "Exa original-language webpage text extraction; cross-checked against opened official page using web.run; not raw HTML",
+      "effective_date": "2026-11-12",
+      "scope": "Future-effective notice; excluded from claims about policy effective on 2026-10-20"
+    },
+    "deepseek-rate-limit.md": {
+      "requested_url": "https://api-docs.deepseek.com/quick_start/rate_limit/",
+      "final_url": "https://api-docs.deepseek.com/quick_start/rate_limit/",
+      "accessed": "2026-10-20",
+      "bytes": 4072,
+      "sha256": "48fdaab80e476e58a97a279739ffc86d3a065edd22950d3ab0c4371ed172adb0",
+      "method": "Exa original-language webpage text extraction; cross-checked against opened official page using web.run; not raw HTML"
+    }
+  },
+  "retrieval_failures": [
+    {
+      "method": "local Defuddle CLI",
+      "urls": [
+        "https://api-docs.deepseek.com/quick_start/pricing/",
+        "https://platform.claude.com/docs/en/about-claude/pricing"
+      ],
+      "result": "fetch failed under restricted network; source text recovered via allowed web tools"
+    },
+    {
+      "method": "mcp fetch raw HTML",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "result": "private-resolution refusal 198.18.0.170; no raw HTML claimed"
+    }
+  ],
+  "used_in": [
+    "../../infrastructure/tco-analysis-2026-10-20.md",
+    "../../infrastructure/data/tco-2026-10-20/inputs.json"
+  ],
+  "evidence_note": "evidence-note.md",
+  "version_policy": "Dated webpage text snapshots with SHA-256; first-party USD rates frozen only as constant-price planning inputs for 3 years.",
+  "supplemental_current_evidence": {
+    "packet": "TECH-092",
+    "verified_by": "W4; W2 read original-language archived texts and artifact comparison",
+    "files": [
+      "../TECH-092/api/deepseek-open-platform-terms.md",
+      "../TECH-092/api/anthropic-sales-2025.md",
+      "../TECH-092/api/deepseek-1017-news.md",
+      "../../infrastructure/data/final-source-refresh-2026-10-20/model-artifact-comparison.json"
+    ],
+    "effect": "1017可自托管，旧测量身份保留；DeepSeek数据范围与Sonnet现行销售限制进入比较条件；本地工具路径未产生供应商Search/Fetch费用。"
+  }
+}

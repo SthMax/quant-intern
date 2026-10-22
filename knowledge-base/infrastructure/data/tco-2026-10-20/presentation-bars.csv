@@ -1,0 +1,37 @@
+scale,route,category,cny,wan_cny,target_tasks_3yr
+personal,local,硬件与设施,60123.5,6.01235,2482.5
+personal,local,实施人工,15000,1.5,2482.5
+personal,local,持续运维人工,15000,1.5,2482.5
+personal,local,用电机位软件,342.14365229130755,0.03421436522913075,2482.5
+personal,local,供应商联网工具,0,0.0,2482.5
+personal,local,API token费,0,0.0,2482.5
+personal,deepseek,硬件与设施,0,0.0,2482.5
+personal,deepseek,实施人工,7500,0.75,2482.5
+personal,deepseek,持续运维人工,7500,0.75,2482.5
+personal,deepseek,用电机位软件,0.0,0.0,2482.5
+personal,deepseek,供应商联网工具,0.0,0.0,2482.5
+personal,deepseek,API token费,1552.3679407698,0.15523679407698002,2482.5
+personal,claude,硬件与设施,0,0.0,2482.5
+personal,claude,实施人工,7500,0.75,2482.5
+personal,claude,持续运维人工,7500,0.75,2482.5
+personal,claude,用电机位软件,0.0,0.0,2482.5
+personal,claude,供应商联网工具,0.0,0.0,2482.5
+personal,claude,API token费,22459.596794250003,2.2459596794250003,2482.5
+company,local,硬件与设施,3183646.64,318.364664,95312.5
+company,local,实施人工,112500,11.25,95312.5
+company,local,持续运维人工,450000,45.0,95312.5
+company,local,用电机位软件,179263.29809027776,17.926329809027777,95312.5
+company,local,供应商联网工具,0,0.0,95312.5
+company,local,API token费,0,0.0,95312.5
+company,deepseek,硬件与设施,180000,18.0,95312.5
+company,deepseek,实施人工,75000,7.5,95312.5
+company,deepseek,持续运维人工,300000,30.0,95312.5
+company,deepseek,用电机位软件,68830.08,6.883008,95312.5
+company,deepseek,供应商联网工具,0.0,0.0,95312.5
+company,deepseek,API token费,59601.236396625,5.9601236396625,95312.5
+company,claude,硬件与设施,180000,18.0,95312.5
+company,claude,实施人工,75000,7.5,95312.5
+company,claude,持续运维人工,300000,30.0,95312.5
+company,claude,用电机位软件,68830.08,6.883008,95312.5
+company,claude,供应商联网工具,0.0,0.0,95312.5
+company,claude,API token费,862308.2857812501,86.23082857812501,95312.5

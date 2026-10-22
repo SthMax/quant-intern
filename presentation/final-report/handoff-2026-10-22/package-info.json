@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-22",
+  "base_commit": "d937405d7211eec2f9065a7006911a58f3a88c7a",
+  "snapshot": "current working tree including uncommitted changes",
+  "repository_files": 2540,
+  "knowledge_base_files": 2346,
+  "registered_source_ids": 216,
+  "core_documents": 29,
+  "counts": {
+    "PROJECT_PLAN.md": 1,
+    "README.md": 1,
+    "RESEARCH_TOOLS.md": 1,
+    "knowledge-base": 2346,
+    "presentation": 113,
+    "reports": 67,
+    "scripts": 3,
+    "weekly": 8
+  },
+  "archive": "quant-llm-pro-handoff-2026-10-22.zip",
+  "archive_bytes": 186182087,
+  "archive_sha256": "50150b30be37a865f56787257504891636e0f35f58b80895e939b60e65d6b66e",
+  "integrity": "all entries checked against SHA-256",
+  "navigation": "all start/feedback/map local links checked"
+}

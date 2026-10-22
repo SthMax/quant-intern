@@ -1,0 +1,6 @@
+configuration,baseline_2026_10_12,observed_2026_10_20,posted_unit,analytical_cash_budget_low_cny,analytical_cash_budget_high_cny,fx_usdcny_scenario,change_usd,delivery_status,source_file,is_mainland_delivered_quote
+Spark128GB4TB,6950,6950,USD/system,58000,62000,7.0,0,NVIDIA US extracted page; Mainland delivery/stock not confirmed,hardware/spark-store.md,False
+A1008SXM4refurb,94999,94999,USD/system plus 1116 for 4x1TB option,910000,1020000,7.0,0,Refurbished; 90-day warranty; Mainland delivery not verified,hardware/a100-serverstore.html,False
+H1008SXM5,319924,319924,USD/system,2850000,2980000,7.0,0,Exxact default configured system; Mainland delivery not verified,hardware/h100-exxact.md,False
+H2004NVL,33500,33500,USD/card; system BOM analytical,1610000,2830000,7.0,0,Availability inquiry required; Mainland delivery not verified,hardware/h200-nvl-vipera.html,False
+H2008SXM,326524,326524,USD/system,2910000,3040000,7.0,0,Exxact default configured system; Mainland delivery not verified,hardware/h200-exxact.md,False

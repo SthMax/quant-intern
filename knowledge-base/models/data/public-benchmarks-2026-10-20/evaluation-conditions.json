@@ -1,0 +1,95 @@
+{
+  "snapshot_date": "2026-10-20",
+  "actual_model_calls_in_this_project": 0,
+  "comparability_rule": "Each benchmark is a separate comparison group; no combined score or overall rank is calculated.",
+  "Finance Agent v2": {
+    "author": "Vals AI",
+    "page_updated": "2026-10-18",
+    "dataset_total_across_splits": 927,
+    "per_model_evaluated_sample_count": "not stated on the inspected leaderboard page",
+    "harness": "shared default multi-turn harness",
+    "tools": ["edgar_search", "web_search", "parse_html_page", "retrieve_information", "calculator", "price_history"],
+    "timeout_hours_per_task": 2,
+    "primary_metric": "dealbreaker-gated severity-weighted partial credit",
+    "secondary_metric": "all checks pass",
+    "judge_panel": ["GPT-5.4", "Gemini-3.1-Pro", "Claude Sonnet 4.6"],
+    "per_model_thinking_precision_weights_revision": "not disclosed on the inspected benchmark page",
+    "source": "https://www.vals.ai/benchmarks/fabv2"
+  },
+  "ExtractBench": {
+    "author": "LlamaIndex / benchmark authors",
+    "code_and_csv_revision": "56b8fdd91b2cf3648caf75c717c68441ecf4d43f",
+    "documents": 370,
+    "short": {"documents": 252, "pages": "<=10"},
+    "medium": {"documents": 98, "pages": "11-50"},
+    "long": {"documents": 20, "pages": ">50"},
+    "finance_domain_documents": 145,
+    "language": "English",
+    "metric": "document-macro unified value F1; deterministic normalization and record matching",
+    "grounding_metric": "separate; displayed value F1 does not establish grounding F1",
+    "temperature_in_inspected_pipeline_code": 0,
+    "pipeline_precision_thinking_input_output": "see extractbench.csv and archived pipeline/provider sources",
+    "weights_revision_at_run": "not disclosed",
+    "source": "https://github.com/run-llama/ExtractBench/blob/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/README.md"
+  },
+  "Artificial Analysis selected evaluations": {
+    "model_labels": "preserved in artificial-analysis.csv; no effort suffix is not assumed to mean a specific value",
+    "suite_language": "primarily English, text-based",
+    "general_temperature": "0 for non-reasoning; 0.6 for reasoning unless model lab recommends otherwise",
+    "general_output_limit": "16,384 for non-reasoning, adjusted for smaller limits; creator-disclosed maximum for reasoning models",
+    "AA-LCR v1.1": {
+      "tasks": 100,
+      "repeats": 3,
+      "input_tokens": "approximately 100K per question measured with cl100k_base",
+      "minimum_context": "128K",
+      "tools": false,
+      "judge": "GPT-5.6 Luna medium equality checker",
+      "metric": "pass@1 across repeats",
+      "version_note": "v1.1 changes system prompt, 16 answer keys and judge; not directly comparable with v1.0"
+    },
+    "AutomationBench-AA": {
+      "dataset_version": "1.0.6",
+      "private_tasks": 657,
+      "repeats": 1,
+      "harness": "AutomationBench multi-turn simulated SaaS API environment",
+      "turn_cap": 50,
+      "metric": "zero on any guardrail violation or error; otherwise percentage of objectives completed",
+      "judge": "programmatic final state checks"
+    },
+    "Terminal-Bench 4.0": {
+      "tasks": 66,
+      "repeats": 3,
+      "harness": "mini-swe-agent; native bash tool; full transcript, no compaction",
+      "max_steps": 500,
+      "timeouts": "upstream per-task limits",
+      "metric": "all verification tests pass; pass@1 averaged over repeats",
+      "grading": "separate verifier container"
+    },
+    "SciCode": {"usage": "archived as supplemental only; source marks Under review", "tasks": "288 subproblems", "repeats": 3, "tools": false, "execution_timeout_seconds": 300},
+    "source": "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+  },
+  "BizBench v1": {
+    "paper_date": "2026-10-14",
+    "paper_version": "2610.20424v1",
+    "tasks": 50,
+    "repeats_for_selected_three_models": 3,
+    "user_simulator": "DeepSeek-V4.1-Flash",
+    "harness": "author's stateful business environment and runner",
+    "metrics": ["goal G", "process P", "protection F", "strict G and P and F", "intermediate failure not(P and F)"],
+    "pass_power_3": "all three repeats of the task succeed; not pass@3",
+    "grading": "deterministic business state and execution-history checks",
+    "wall_clock_seconds_in_default_repository_template": 5400,
+    "tool_error_threshold_in_default_repository_template": 16,
+    "cumulative_generated_tokens_tool_calls_steps": "not capped; wall clock and errors still capped",
+    "context_management": "older eligible retrieval responses may be compacted on provider-reported overflow",
+    "thinking_parameters_per_model": "not fully disclosed in paper; template is not run-specific evidence",
+    "source": "https://arxiv.org/html/2610.20424v1"
+  },
+  "ReLE Chinese finance basic knowledge": {
+    "usage": "supplemental author leaderboard",
+    "readme_version": "v5.12.7, 2026-10-15",
+    "thinking_tools_harness_precision_revision": "not disclosed per row",
+    "Qwen3.8-27B": "absent from inspected table; no score inferred",
+    "source": "https://github.com/jeinlee1991/chinese-llm-benchmark/blob/main/leaderboard/金融基础知识.md"
+  }
+}

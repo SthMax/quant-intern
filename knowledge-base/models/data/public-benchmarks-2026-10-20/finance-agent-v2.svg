@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="862" viewBox="0 0 1600 862" role="img" aria-label="金融研究任务需要保留GLM与MiMo对照">
+<rect width="1600" height="100%" fill="#fff"/>
+<g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,Arial,sans-serif" fill="#163248">
+<text x="45" y="52" font-size="32" font-weight="600">金融研究任务需要保留GLM与MiMo对照</text>
+<text x="45" y="91" font-size="21" fill="#526777">Finance Agent v2 · 关键条件门槛＋加权部分得分 · 2026-10-18作者榜</text>
+<rect x="485" y="116" width="22" height="18" rx="2" fill="#0f5f78"/>
+<text x="517" y="132" font-size="20">主指标</text>
+<line x1="485.0" y1="170" x2="485.0" y2="702" stroke="#e3ebef"/>
+<text x="485.0" y="733" font-size="18" text-anchor="middle" fill="#526777">0</text>
+<line x1="685.0" y1="170" x2="685.0" y2="702" stroke="#e3ebef"/>
+<text x="685.0" y="733" font-size="18" text-anchor="middle" fill="#526777">20</text>
+<line x1="885.0" y1="170" x2="885.0" y2="702" stroke="#e3ebef"/>
+<text x="885.0" y="733" font-size="18" text-anchor="middle" fill="#526777">40</text>
+<line x1="1085.0" y1="170" x2="1085.0" y2="702" stroke="#e3ebef"/>
+<text x="1085.0" y="733" font-size="18" text-anchor="middle" fill="#526777">60</text>
+<line x1="1285.0" y1="170" x2="1285.0" y2="702" stroke="#e3ebef"/>
+<text x="1285.0" y="733" font-size="18" text-anchor="middle" fill="#526777">80</text>
+<line x1="1485.0" y1="170" x2="1485.0" y2="702" stroke="#e3ebef"/>
+<text x="1485.0" y="733" font-size="18" text-anchor="middle" fill="#526777">100</text>
+<text x="45" y="218" font-size="23" font-weight="500">Qwen 3.8 27B</text>
+<rect x="485" y="182" width="485.50" height="18" rx="3" fill="#0f5f78"/>
+<text x="978.50" y="198" font-size="18">48.55</text>
+<text x="45" y="283" font-size="23" font-weight="500">DeepSeek V4.1 Flash</text>
+<rect x="485" y="247" width="534.80" height="18" rx="3" fill="#0f5f78"/>
+<text x="1027.80" y="263" font-size="18">53.48</text>
+<text x="45" y="348" font-size="23" font-weight="500">DeepSeek V4.1 Flash 1017</text>
+<rect x="485" y="312" width="569.60" height="18" rx="3" fill="#0f5f78"/>
+<text x="1062.60" y="328" font-size="18">56.96</text>
+<text x="45" y="413" font-size="23" font-weight="500">GLM 5.3 Flash</text>
+<rect x="485" y="377" width="578.50" height="18" rx="3" fill="#0f5f78"/>
+<text x="1071.50" y="393" font-size="18">57.85</text>
+<text x="45" y="478" font-size="23" font-weight="500">GLM 5.3</text>
+<rect x="485" y="442" width="558.40" height="18" rx="3" fill="#0f5f78"/>
+<text x="1051.40" y="458" font-size="18">55.84</text>
+<text x="45" y="543" font-size="23" font-weight="500">MiMo V2.6 Flash</text>
+<rect x="485" y="507" width="562.80" height="18" rx="3" fill="#0f5f78"/>
+<text x="1055.80" y="523" font-size="18">56.28</text>
+<text x="45" y="608" font-size="23" font-weight="500">MiMo V2.6 Pro</text>
+<rect x="485" y="572" width="573.40" height="18" rx="3" fill="#0f5f78"/>
+<text x="1066.40" y="588" font-size="18">57.34</text>
+<text x="45" y="673" font-size="23" font-weight="500">Kimi K3</text>
+<rect x="485" y="637" width="531.10" height="18" rx="3" fill="#0f5f78"/>
+<text x="1024.10" y="653" font-size="18">53.11</text>
+<text x="985.0" y="765" font-size="20" text-anchor="middle">分数（0–100；越高越好）</text>
+<text x="45" y="804" font-size="18" fill="#526777">来源：Vals AI Finance Agent v2；同一默认harness、六种工具、每题2小时。</text>
+<text x="45" y="830" font-size="18" fill="#526777">1017版本单列；分数不是整题成功率，未披露逐模型完整推理参数和置信区间。</text>
+</g>
+</svg>

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-20",
+  "notes": "Chinese-teacher review applied; source-backed clarifications added in visual review",
+  "main_slides": 34,
+  "appendix_slides": 8,
+  "sources": [
+    {
+      "path": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+      "sha256": "661361bd76bd520ce34b952c7fdc45e0ad5dc2b845ae3edb46fbeda734f72b37"
+    },
+    {
+      "path": "knowledge-base/infrastructure/data/tco-2026-10-20/inputs.json",
+      "sha256": "ce2be52936bc498abdd14fd4907b6c38612edf607696ae8c89b1734caf5fd2a1"
+    },
+    {
+      "path": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/summary.json",
+      "sha256": "098cb4e28dcecee1e9f4cf9621d721e79e9372536446fd6119789870a6c44933"
+    },
+    {
+      "path": "knowledge-base/models/data/public-benchmarks-2026-10-20/finance-agent-v2.csv",
+      "sha256": "33067e46e4e897c68820d8d4216c1561f8aeb32f6b9351a964f3ad695ca97336"
+    },
+    {
+      "path": "knowledge-base/models/data/public-benchmarks-2026-10-20/extractbench.csv",
+      "sha256": "a46b61808f9a0dec9b30fcd22b608e32623efbfa4fadf76c34ab06bc355d9d7b"
+    },
+    {
+      "path": "knowledge-base/infrastructure/data/final-source-refresh-2026-10-20/model-artifact-comparison.json",
+      "sha256": "248b052fd073f7f86b7b2188a7526bdbce975c833da78f70eb678f750095ac7b"
+    }
+  ],
+  "editorial_replacements": 214,
+  "slides_sha256": "1e3e9dc99b86a078209af0f60dc32ac6a5f25f0940ea12a07fc27f8bd8b76ca6",
+  "speaker_notes_sha256": "4256e09c3e050b2f4e73890b3be101f0e3047e067c0531a621c4094bdfa6df6c"
+}

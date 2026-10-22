@@ -1,0 +1,13 @@
+id,title,publication_date,effective_date,amendment_date,status_on_2026_10_20,location,source_file,impact
+CSRC_IT,证券基金经营机构信息技术管理办法,2018-12-19,2019-06-01,2021-01-15,effective amended text,"12-16,25,43-45,63",regulation/csrc-it-management.md,内部审查、运行变更和限定外包角色
+CSRC_218,证券期货业网络和信息安全管理办法,2023-02-27,2023-05-01,,effective; repeals Order82,"22-23,29-34,71,75",regulation/csrc-cyber-218.md,供应商、投资者个人信息和重要系统适用范围
+PIPL,个人信息保护法,2021-08-20,2021-11-01,,effective text,"13,21,24,28,38-40,51,55-56",regulation/pipl.md,合法基础、委托、跨境和影响评估
+CSL,网络安全法2025修正,2025-10-28,2026-01-01,2025-10-28,effective amended text,"23,39",regulation/cybersecurity-2025.md,相关网络日志与关基数据条件
+NETWORK_DATA,网络数据安全管理条例,2024-09-24,2025-01-01,,effective text,"9,12,19",regulation/network-data-security.md,保护措施及委托处理记录
+CROSS_BORDER,促进和规范数据跨境流动规定,2024-03-22,2024-03-22,,effective text,"2-8,10-11",regulation/cross-border.md,特定出境机制豁免及仍有的处理义务
+GENAI,生成式人工智能服务管理暂行办法,2023-07-10,2023-08-15,,effective text,"2,17",regulation/genai-measures.md,纯内部未向公众提供的应用范围
+AMAC,基金经营机构大模型技术应用规范,2026-04-03,2026-04-03,,group standard; adoption assessed separately,"9.1,9.2,11.2; informative appendices A/B",regulation/amac-t0004-2026.md,自有场景评测、部署与数据权限
+ANTHROPIC_FUTURE,Supported Regions Policy,not stated,2026-11-12,,future effective; excluded from 10/20 operative claims,Opening date and scope,api/anthropic-regions-future.md,未来生效条款单列
+ANTHROPIC_SALES,Updating restrictions of sales to unsupported regions,2025-09-04,2025-09-04 announcement; no separate transition date stated,,published operative announcement used with commercial terms,Region and ownership paragraphs,api/anthropic-sales-2025.md,中国及受不支持地区控制企业销售限制
+DEEPSEEK_TERMS,DeepSeek开放平台服务协议,2026-04-22,2026-04-29,,effective service terms,"2.3,3.5,4.1",api/deepseek-open-platform-terms.md,企业主体、个人信息与商业秘密数据范围
+BIS,Revision to License Review Policy for Advanced Computing Commodities,2026-01-15,2026-01-15,,official rule; current eCFR section cross-check dated10/15,742.6(b)(10)(iii)(A)(1); supp2 part748(dd),hardware/bis-2026-00789.md,逐案框架不等于交易许可

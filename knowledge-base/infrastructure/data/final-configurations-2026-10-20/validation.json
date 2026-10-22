@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "as_of": "2026-10-20",
+  "checks": [
+    "Spark input plus output equals exact total context",
+    "Company exact total context includes output",
+    "1M capacity probe is 999936+64, not an 8K-output speed sample",
+    "Qwen27 full precision KV and complete recurrent/convolution state arithmetic",
+    "RAG long histories preserve 15 percent cache preparation",
+    "20 short RAG requests cache total",
+    "Company capacity rows cover four topologies, two resident counts, four windows",
+    "Both H2008 layouts fit twenty full 1M sessions under strict rescaling",
+    "Forty full 1M resident sessions require offload or new capacity",
+    "Host planning partitions fit nominal 1536GB without counting tool-node RAM",
+    "20 users at 10 or20 tokens/s require200 or400 output tokens/s",
+    "Tool CPU core seconds separate from environment lifetime",
+    "Full-window empirical estimates do not silently assert20+ target achieved",
+    "Native checkpoint/Engram decomposition",
+    "vLLM0.32 attention source matches previously audited Hopper layout",
+    "Shared Engram configuration present in tagged0.32",
+    "DeepSeek LMCache MTP validation caveat retained"
+  ],
+  "output_rows": {
+    "spark-windows.csv": 4,
+    "spark-measured.csv": 12,
+    "spark-sharing.csv": 16,
+    "rag-capacity.csv": 3,
+    "rag-performance.csv": 6,
+    "company-capacity.csv": 32,
+    "company-replay.csv": 5,
+    "company-targets.csv": 32,
+    "host-budget.csv": 3,
+    "restoration-budgets.csv": 16,
+    "tool-cpu.csv": 6
+  },
+  "new_gpu_execution": false,
+  "new_weights_downloaded": false,
+  "source_sha256": {
+    "infrastructure/data/week7-deployment-2026-10-12/results.json": "6e93e11c2c752de8b8a6b93c8a70eb65be2c3bc548fc31c0c4f4d921001f9057",
+    "infrastructure/data/week7-deployment-2026-10-12/spark-price.json": "161795fde822c6c76ee8482a6df58cb05fd194e144f62ed58667a7d6c8e02b78",
+    "infrastructure/data/dgx-spark-qwen27-external-2026-10-12/summary.json": "79a0fa84c6c794b314a5f52560a01038f939748bc27e72764ce067b0fac9e608",
+    "infrastructure/data/scenario-2-rag-2026-09-23/assumptions.json": "5ab3244992128f5cf99f58e4a0f13f1d2b1a2db83aecc75cb35414c701af63ed",
+    "infrastructure/data/scenario-2-rag-2026-09-23/calculate_capacity.py": "d50324dcf4aa69430431792487d83f66231a104d073397aa61c62df0100cfc57",
+    "infrastructure/data/hardware-prices-2026-10-12.json": "ee69b39d2d32566e3a46b34ab7b0dcab5ac71cca52a3c87cc03f72e841e1b2a9",
+    "sources/TECH-079/config.json": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "sources/TECH-079/model.safetensors.index.json": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "sources/TECH-084/benchmarks.json": "4c840fd2ed6593c0f3d97599131ecdd52e340bebd70ce431ee7d57a77e5393ac",
+    "sources/TECH-089/vllm-0.32-attention.py": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+    "sources/TECH-089/vllm-0.32-engram-config.py": "53bf5367af69149f7dc6dfe576921f22948cdb5cbd3e903c8bd7b310f80aa202",
+    "sources/TECH-089/lmcache-qwen-series.rst": "584905b395a9b590a96936986f39907a9fbd41460d6b9310ecb08fdcb59cade9",
+    "sources/TECH-089/lmcache-deepseek-v41.rst": "06f56e5f2094b45e1a992278ad73c022ffa37191e00709de22b2de458e8fc397"
+  }
+}

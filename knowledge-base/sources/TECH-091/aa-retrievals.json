@@ -1,0 +1,42 @@
+[
+  {
+    "requested_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-qwen3-8-27b",
+    "final_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-vs-qwen3-8-27b",
+    "path": "benchmarks/aa-deepseek-qwen/source.html",
+    "sha256": "6e34684263c6f4ee3e00476e66cf3627e63b9d655cf312ad4e8783d76a99e903",
+    "bytes": 1516826,
+    "retrieved_at": "2026-10-19T17:40:10.714039+00:00"
+  },
+  {
+    "requested_url": "https://artificialanalysis.ai/models/comparisons/glm-5-3-flash-vs-kimi-k3",
+    "final_url": "https://artificialanalysis.ai/models/comparisons/glm-5-3-flash-vs-kimi-k3",
+    "path": "benchmarks/aa-glm-kimi/source.html",
+    "sha256": "fbabef235bf581838e26a10f2c27558ed27f16658d3035a76a64df0165486a1e",
+    "bytes": 1511735,
+    "retrieved_at": "2026-10-19T17:40:11.664181+00:00"
+  },
+  {
+    "requested_url": "https://artificialanalysis.ai/models/comparisons/mimo-v2-6-flash-vs-qwen3-8-27b",
+    "final_url": "https://artificialanalysis.ai/models/comparisons/mimo-v2-6-flash-vs-qwen3-8-27b",
+    "path": "benchmarks/aa-mimo-qwen/source.html",
+    "sha256": "e47d8508b59ca3976eeb146bdc30a179141d13be06b75578675d0c682059aa7b",
+    "bytes": 1512997,
+    "retrieved_at": "2026-10-19T17:40:10.882280+00:00"
+  },
+  {
+    "requested_url": "https://artificialanalysis.ai/models/comparisons/qwen3-8-27b-vs-gemma-4-31b",
+    "final_url": "https://artificialanalysis.ai/models/comparisons/qwen3-8-27b-vs-gemma-4-31b",
+    "path": "benchmarks/aa-gemma-qwen/source.html",
+    "sha256": "182010c7fc08e0e6460ce590370bc952ab7a327896195a18b9e4cbc1593dddd7",
+    "bytes": 1500351,
+    "retrieved_at": "2026-10-19T17:40:09.339605+00:00"
+  },
+  {
+    "requested_url": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+    "final_url": "https://artificialanalysis.ai/methodology/intelligence-benchmarking",
+    "path": "benchmarks/aa-methodology/source.html",
+    "sha256": "8e8a36b8e46d688237746f2f394e8108db04e3ee5936545ad1e3ffbbb36aac8d",
+    "bytes": 968705,
+    "retrieved_at": "2026-10-19T17:40:08.921689+00:00"
+  }
+]

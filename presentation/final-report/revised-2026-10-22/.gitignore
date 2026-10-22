@@ -1,0 +1,5 @@
+build/
+node_modules/
+qa/render/
+qa/pdf-render/
+.codex-finalizer/

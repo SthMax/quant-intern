@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="636" viewBox="0 0 1600 636" role="img" aria-label="目标完成后，还要检查过程与授权">
+<rect width="1600" height="100%" fill="#fff"/>
+<g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,Arial,sans-serif" fill="#163248">
+<text x="45" y="52" font-size="32" font-weight="600">目标完成后，还要检查过程与授权</text>
+<text x="45" y="91" font-size="21" fill="#526777">BizBench v1 · 相同50项业务任务 × 每项3次 · 作者论文2026-10-14</text>
+<rect x="485" y="116" width="22" height="18" rx="2" fill="#0f5f78"/>
+<text x="517" y="132" font-size="20">目标完成G</text>
+<rect x="765" y="116" width="22" height="18" rx="2" fill="#39a5a3"/>
+<text x="797" y="132" font-size="20">G、P、F全部通过</text>
+<line x1="485.0" y1="170" x2="485.0" y2="476" stroke="#e3ebef"/>
+<text x="485.0" y="507" font-size="18" text-anchor="middle" fill="#526777">0</text>
+<line x1="685.0" y1="170" x2="685.0" y2="476" stroke="#e3ebef"/>
+<text x="685.0" y="507" font-size="18" text-anchor="middle" fill="#526777">20</text>
+<line x1="885.0" y1="170" x2="885.0" y2="476" stroke="#e3ebef"/>
+<text x="885.0" y="507" font-size="18" text-anchor="middle" fill="#526777">40</text>
+<line x1="1085.0" y1="170" x2="1085.0" y2="476" stroke="#e3ebef"/>
+<text x="1085.0" y="507" font-size="18" text-anchor="middle" fill="#526777">60</text>
+<line x1="1285.0" y1="170" x2="1285.0" y2="476" stroke="#e3ebef"/>
+<text x="1285.0" y="507" font-size="18" text-anchor="middle" fill="#526777">80</text>
+<line x1="1485.0" y1="170" x2="1485.0" y2="476" stroke="#e3ebef"/>
+<text x="1485.0" y="507" font-size="18" text-anchor="middle" fill="#526777">100</text>
+<text x="45" y="218" font-size="23" font-weight="500">Qwen3.8-27B</text>
+<rect x="485" y="182" width="420.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="913.00" y="198" font-size="18">42</text>
+<rect x="485" y="205" width="327.00" height="18" rx="3" fill="#39a5a3"/>
+<text x="820.00" y="221" font-size="18">32.7</text>
+<text x="45" y="316" font-size="23" font-weight="500">DeepSeek-V4.1-Flash</text>
+<rect x="485" y="280" width="467.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="960.00" y="296" font-size="18">46.7</text>
+<rect x="485" y="303" width="433.00" height="18" rx="3" fill="#39a5a3"/>
+<text x="926.00" y="319" font-size="18">43.3</text>
+<text x="45" y="414" font-size="23" font-weight="500">GLM-5.3-Flash</text>
+<rect x="485" y="378" width="480.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="973.00" y="394" font-size="18">48</text>
+<rect x="485" y="401" width="433.00" height="18" rx="3" fill="#39a5a3"/>
+<text x="926.00" y="417" font-size="18">43.3</text>
+<text x="985.0" y="539" font-size="20" text-anchor="middle">分数（0–100；越高越好）</text>
+<text x="45" y="578" font-size="18" fill="#526777">来源：BizBench表1；用户模拟器均为DeepSeek-V4.1-Flash。</text>
+<text x="45" y="604" font-size="18" fill="#526777">支付业务基准，用于说明评价方法；不是基金业务验收结果。</text>
+</g>
+</svg>

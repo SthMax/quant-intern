@@ -1,0 +1,27 @@
+[
+  {
+    "path": "benchmarks/extractbench/files/src/extract_bench/inference/pipelines/extract.py",
+    "sha256": "d0ac23c7b6c57c4848f7f1cf7bfd68119ae8a2ba078a185b8af65a8cf18c5ca8",
+    "url": "https://github.com/run-llama/ExtractBench/blob/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/src/extract_bench/inference/pipelines/extract.py"
+  },
+  {
+    "path": "benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/vllm_extract.py",
+    "sha256": "7a3859656b4a3f9bc62805d0c253fe997447aa9541de1576f696cda39cdbdf8b",
+    "url": "https://github.com/run-llama/ExtractBench/blob/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/src/extract_bench/inference/providers/extract/vllm_extract.py"
+  },
+  {
+    "path": "benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/deepseek_oneshot_extract.py",
+    "sha256": "b9cd4a2772d1a56de590ace30b3a3a7e5aed48441d4fdace56cd4bb0c8423494",
+    "url": "https://github.com/run-llama/ExtractBench/blob/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/src/extract_bench/inference/providers/extract/deepseek_oneshot_extract.py"
+  },
+  {
+    "path": "benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/glm_zai_extract.py",
+    "sha256": "ae583f3cca6725a6f3b781cdb0d07f28c1efea5656291aa605d85bca5c79acf0",
+    "url": "https://github.com/run-llama/ExtractBench/blob/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/src/extract_bench/inference/providers/extract/glm_zai_extract.py"
+  },
+  {
+    "path": "benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/kimi_extract.py",
+    "sha256": "bed22f052e6af850b13ee2b2cc9bf7de96779a0573d29ca07bbe23300fb187a8",
+    "url": "https://github.com/run-llama/ExtractBench/blob/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/src/extract_bench/inference/providers/extract/kimi_extract.py"
+  }
+]

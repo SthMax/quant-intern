@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="930" viewBox="0 0 1600 930" role="img" aria-label="短文提取较好，长列表完整性仍需专门处理">
+<rect width="1600" height="100%" fill="#fff"/>
+<g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,Arial,sans-serif" fill="#163248">
+<text x="45" y="52" font-size="32" font-weight="600">短文提取较好，长列表完整性仍需专门处理</text>
+<text x="45" y="91" font-size="21" fill="#526777">ExtractBench原版 · 相同370份文档及schema · 分长度的value F1</text>
+<rect x="485" y="116" width="22" height="18" rx="2" fill="#0f5f78"/>
+<text x="517" y="132" font-size="20">短文 ≤10页</text>
+<rect x="765" y="116" width="22" height="18" rx="2" fill="#39a5a3"/>
+<text x="797" y="132" font-size="20">中篇 11–50页</text>
+<rect x="1045" y="116" width="22" height="18" rx="2" fill="#dfa342"/>
+<text x="1077" y="132" font-size="20">长篇 &gt;50页</text>
+<line x1="485.0" y1="170" x2="485.0" y2="770" stroke="#e3ebef"/>
+<text x="485.0" y="801" font-size="18" text-anchor="middle" fill="#526777">0</text>
+<line x1="685.0" y1="170" x2="685.0" y2="770" stroke="#e3ebef"/>
+<text x="685.0" y="801" font-size="18" text-anchor="middle" fill="#526777">20</text>
+<line x1="885.0" y1="170" x2="885.0" y2="770" stroke="#e3ebef"/>
+<text x="885.0" y="801" font-size="18" text-anchor="middle" fill="#526777">40</text>
+<line x1="1085.0" y1="170" x2="1085.0" y2="770" stroke="#e3ebef"/>
+<text x="1085.0" y="801" font-size="18" text-anchor="middle" fill="#526777">60</text>
+<line x1="1285.0" y1="170" x2="1285.0" y2="770" stroke="#e3ebef"/>
+<text x="1285.0" y="801" font-size="18" text-anchor="middle" fill="#526777">80</text>
+<line x1="1485.0" y1="170" x2="1485.0" y2="770" stroke="#e3ebef"/>
+<text x="1485.0" y="801" font-size="18" text-anchor="middle" fill="#526777">100</text>
+<text x="45" y="218" font-size="23" font-weight="500">Qwen3.8-27B FP8</text>
+<rect x="485" y="182" width="946.80" height="18" rx="3" fill="#0f5f78"/>
+<text x="1439.80" y="198" font-size="18">94.68</text>
+<rect x="485" y="205" width="875.40" height="18" rx="3" fill="#39a5a3"/>
+<text x="1368.40" y="221" font-size="18">87.54</text>
+<rect x="485" y="228" width="384.50" height="18" rx="3" fill="#dfa342"/>
+<text x="877.50" y="244" font-size="18">38.45</text>
+<text x="45" y="316" font-size="23" font-weight="500">Qwen3.6-35B-A3B FP8</text>
+<rect x="485" y="280" width="928.60" height="18" rx="3" fill="#0f5f78"/>
+<text x="1421.60" y="296" font-size="18">92.86</text>
+<rect x="485" y="303" width="863.70" height="18" rx="3" fill="#39a5a3"/>
+<text x="1356.70" y="319" font-size="18">86.37</text>
+<rect x="485" y="326" width="369.00" height="18" rx="3" fill="#dfa342"/>
+<text x="862.00" y="342" font-size="18">36.9</text>
+<text x="45" y="414" font-size="23" font-weight="500">DeepSeek-V4.1-Flash 原版</text>
+<rect x="485" y="378" width="944.40" height="18" rx="3" fill="#0f5f78"/>
+<text x="1437.40" y="394" font-size="18">94.44</text>
+<rect x="485" y="401" width="814.90" height="18" rx="3" fill="#39a5a3"/>
+<text x="1307.90" y="417" font-size="18">81.49</text>
+<rect x="485" y="424" width="222.30" height="18" rx="3" fill="#dfa342"/>
+<text x="715.30" y="440" font-size="18">22.23</text>
+<text x="45" y="512" font-size="23" font-weight="500">GLM-5.3-Flash</text>
+<rect x="485" y="476" width="963.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="1456.00" y="492" font-size="18">96.3</text>
+<rect x="485" y="499" width="515.60" height="18" rx="3" fill="#39a5a3"/>
+<text x="1008.60" y="515" font-size="18">51.56</text>
+<rect x="485" y="522" width="278.30" height="18" rx="3" fill="#dfa342"/>
+<text x="771.30" y="538" font-size="18">27.83</text>
+<text x="45" y="610" font-size="23" font-weight="500">Kimi K3</text>
+<rect x="485" y="574" width="946.40" height="18" rx="3" fill="#0f5f78"/>
+<text x="1439.40" y="590" font-size="18">94.64</text>
+<rect x="485" y="597" width="696.40" height="18" rx="3" fill="#39a5a3"/>
+<text x="1189.40" y="613" font-size="18">69.64</text>
+<rect x="485" y="620" width="49.90" height="18" rx="3" fill="#dfa342"/>
+<text x="542.90" y="636" font-size="18">4.99</text>
+<text x="45" y="708" font-size="23" font-weight="500">Gemma 4 26B A4B</text>
+<rect x="485" y="672" width="777.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="1270.00" y="688" font-size="18">77.7</text>
+<rect x="485" y="695" width="596.10" height="18" rx="3" fill="#39a5a3"/>
+<text x="1089.10" y="711" font-size="18">59.61</text>
+<rect x="485" y="718" width="288.80" height="18" rx="3" fill="#dfa342"/>
+<text x="781.80" y="734" font-size="18">28.88</text>
+<text x="985.0" y="833" font-size="20" text-anchor="middle">分数（0–100；越高越好）</text>
+<text x="45" y="872" font-size="18" fill="#526777">来源：基准作者CSV，修订56b8fdd；资料截止2026-10-20。</text>
+<text x="45" y="898" font-size="18" fill="#526777">短／中／长文各252／98／20份；端点、thinking、输出上限不同，完整条件见配套表。</text>
+</g>
+</svg>

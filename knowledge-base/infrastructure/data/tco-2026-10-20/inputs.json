@@ -1,0 +1,237 @@
+{
+  "as_of": "2026-10-20",
+  "horizon_years": 3,
+  "currency": "CNY",
+  "fx_usd_cny": 7.0,
+  "fx_kind": "planning_assumption_not_observed_spot",
+  "api_tax_reserve_fraction": 0.06,
+  "api_tax_note": "预算统一另留6%，非已核定税率；厂商USD报价本身的税费状态按合同核对。0/6/13%另作敏感性。硬件沿含税准备台账，不再加税。",
+  "discount_rate": 0.0,
+  "residual_value_cny": 0,
+  "person_day_cny": 2500,
+  "working_days_per_year": 250,
+  "service_hours_per_year": 2000,
+  "planning_utilization_ceiling": 0.7,
+  "trajectory": {
+    "initial_input_tokens": 100000,
+    "new_user_tool_tokens_per_followup": 8000,
+    "output_tokens_per_round_including_thinking_and_tool_arguments": 2000,
+    "rounds": 8,
+    "extra_full_trajectory_equivalents_per_target_task": 0.1,
+    "definition": "一次完整预算任务产生可核对表格、分析说明或可复跑脚本；8轮含工具循环，每轮输出合计包含reasoning、工具参数及正文。额外0.10份完整轨迹折算失败重试与追加修订，非实测通过率。",
+    "quality_gate": "数字与CSV校验一致，主要结论有原文证据，代码/产物可复跑，人工按固定rubric接受；本地与API各自通过同一rubric才可比较合格任务成本。"
+  },
+  "cache": {
+    "deepseek_eligible_prefix_hit_probability": 0.95,
+    "claude_eligible_prefix_hit_probability": 0.95,
+    "local_eligible_prefix_hit_probability": 0.9,
+    "claude_write_ttl_minutes": 60,
+    "claude_token_multiplier_vs_reference": 1.0,
+    "note": "概率只作用于已存在且精确相同的历史前缀，不作用于首轮新输入；Claude上轮生成内容在下轮输入才写入cache，DeepSeek官方可在输出边界落盘。本地热续跑未测，另列完全冷算。分词比1.0是预算假设，0.8/1.3敏感性。"
+  },
+  "api": {
+    "deepseek": {
+      "model_id": "deepseek-flash",
+      "served_version": "DeepSeek-V4.1-Flash-1017",
+      "endpoint": "https://api.deepseek.com",
+      "geography": "官方直连API；公开价格未承诺特定推理地域",
+      "source": "TECH-090/deepseek-pricing.md",
+      "unit": "USD_per_million_tokens",
+      "offpeak": {
+        "input_miss": 0.15,
+        "input_hit": 0.003,
+        "output": 0.6
+      },
+      "peak_multiplier": 2.0,
+      "fraction_peak": 0.8,
+      "peak_schedule": "周一至周五且非中国法定假日，UTC 01:00–04:00及06:00–10:00，即Asia/Shanghai 09:00–12:00及14:00–18:00",
+      "price_change_per_year": 0.0,
+      "discount": 0.0,
+      "provider_tools": {
+        "search_successful_requests_per_target_task": 0,
+        "fetch_successful_requests_per_target_task": 0,
+        "usd_per_successful_search": 0.00075,
+        "usd_per_successful_fetch": 0.00075,
+        "scope": "仅DeepSeek Search/Fetch实际调用；本地Python/文件/CSV工具不触发供应商联网工具费。",
+        "cli_server_tool_paid_from_shanghai": "2026-11-01 00:00:00",
+        "temporary_waiver_policy": "若启用，则三年按已公布持续费率预算，短期免费不延用三年；基准调用次数为0。",
+        "source": "TECH-092/api/deepseek-pricing.md; TECH-092/api/deepseek-1017-news.md"
+      }
+    },
+    "claude": {
+      "model_id": "claude-sonnet-5-5",
+      "served_version": "Claude Sonnet 5.5, released 2026-09-28",
+      "endpoint": "https://api.anthropic.com",
+      "geography": "first-party Claude API, global default routing",
+      "source": "TECH-090/claude-pricing.md",
+      "unit": "USD_per_million_tokens",
+      "rates": {
+        "input_regular": 2.0,
+        "cache_write_5m": 2.5,
+        "cache_write_1h": 4.0,
+        "input_hit": 0.1,
+        "output": 10.0
+      },
+      "inference_geo_us_multiplier": 1.1,
+      "price_change_per_year": 0.0,
+      "discount": 0.0
+    }
+  },
+  "scale": {
+    "personal": {
+      "users": 1,
+      "resident_sessions": 1,
+      "target_context_capacity": 1000000,
+      "volume_scenarios": {
+        "low": {
+          "year1_target_tasks": 250,
+          "annual_growth": 0.0
+        },
+        "base": {
+          "year1_target_tasks": 750,
+          "annual_growth": 0.1
+        },
+        "high": {
+          "year1_target_tasks": 1500,
+          "annual_growth": 0.25
+        }
+      },
+      "local": {
+        "hardware_mid_cny": 60123.5,
+        "hardware_range_cny": [
+          58407,
+          61840
+        ],
+        "implementation_person_days": 6,
+        "annual_operations_person_days": 2,
+        "annual_software_support_cny": 0,
+        "facility_initial_cny": 0,
+        "annual_rack_excluding_power_cny": 0,
+        "wall_active_kw": 0.2,
+        "wall_idle_kw": 0.04,
+        "powered_hours_per_year": 2000,
+        "pue": 1.1,
+        "electricity_cny_per_kwh": 0.8,
+        "hardware_support_prepaid": true
+      },
+      "api": {
+        "implementation_person_days": 3,
+        "annual_operations_person_days": 1,
+        "annual_platform_cny": 0,
+        "annual_security_premium_cny": 0,
+        "annual_incremental_network_cny": 0
+      },
+      "common": {
+        "tool_cpu_capex_cny": 0,
+        "tool_cpu_average_kw": 0,
+        "tool_cpu_powered_hours": 2000,
+        "pue": 1.1,
+        "tariff": 0.8
+      }
+    },
+    "company": {
+      "users": 20,
+      "resident_sessions": 20,
+      "target_context_capacity": 1000000,
+      "volume_scenarios": {
+        "low": {
+          "year1_target_tasks": 10000,
+          "annual_growth": 0.0
+        },
+        "base": {
+          "year1_target_tasks": 25000,
+          "annual_growth": 0.25
+        },
+        "high": {
+          "year1_target_tasks": 50000,
+          "annual_growth": 0.5
+        }
+      },
+      "local": {
+        "hardware_mid_cny": 2973646.64,
+        "hardware_range_cny": [
+          2912121.64,
+          3035171.64
+        ],
+        "implementation_person_days": 45,
+        "expansion_implementation_person_days": 10,
+        "annual_operations_person_days": 60,
+        "annual_operations_person_days_per_additional_node": 10,
+        "annual_software_support_cny": 20000,
+        "facility_initial_cny": 30000,
+        "annual_rack_excluding_power_cny": 18000,
+        "wall_active_kw": 6.8,
+        "wall_idle_kw": 1.5,
+        "powered_hours_per_year": 8760,
+        "pue": 1.4,
+        "electricity_cny_per_kwh": 0.8,
+        "planning_prefill_uncached_tokens_s": 8000,
+        "planning_decode_output_tokens_s": 400,
+        "planning_rate_identity": "工程服务包络假设，非实测；decode为20路×20token/s目标；外部AgentX较短缓存负载供参考，未证明20路1M服务体验",
+        "hardware_support_prepaid": true
+      },
+      "api": {
+        "implementation_person_days": 30,
+        "annual_operations_person_days": 40,
+        "annual_platform_cny": 20000,
+        "annual_security_premium_cny": 0,
+        "annual_incremental_network_cny": 0
+      },
+      "common": {
+        "tool_cpu_capex_cny": 180000,
+        "tool_cpu_average_kw": 0.3,
+        "tool_cpu_powered_hours": 8760,
+        "pue": 1.4,
+        "tariff": 0.8
+      }
+    }
+  },
+  "a100_sensitivity": {
+    "new_hardware_mid_cny": 967150.15,
+    "new_hardware_range_cny": [
+      919850.15,
+      1014450.15
+    ],
+    "reuse_incremental_refit_cny": 100000,
+    "reuse_annual_support_cny": 30000,
+    "implementation_person_days": 65,
+    "annual_operations_person_days": 80,
+    "wall_active_kw": 5.0,
+    "wall_idle_kw": 1.2,
+    "capacity_status": "20人1M与真实任务吞吐未验证；仅给预算及反推必须达到的速率，不作为已达标廉价替代",
+    "budget_average_wall_kw": 2.0
+  },
+  "manual_time_sensitivity": {
+    "net_minutes_saved_per_target_task": [
+      5,
+      15,
+      30
+    ],
+    "illustrative_cny_per_hour": 150,
+    "cash_conversion_fraction": [
+      0.0,
+      0.25,
+      1.0
+    ],
+    "definition": "净节省应扣除提示准备、排队等待中无法并行的时间、人工复核与订正；货币值是释放工时价值，现金转换比例需减少外包/加班/招聘等事实支持。",
+    "hour_value_identity": "150元/小时为分析师业务工时价值假设；不按2500元/技术人日倒算。"
+  },
+  "person_day_definition": "技术实施、平台运维与评价资源成本：2500元/技术人日；不等同分析师业务工时价值。",
+  "local_model_identity": {
+    "personal": "Qwen3.8-27B-FP8；外部测量保持TECH-076历史制品/引擎身份，revision未披露",
+    "company_current_upgrade_candidate": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "company_candidate_revision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+    "license": "MIT",
+    "config_index_license_equal_to_current_original_snapshot": true,
+    "source": "infrastructure/data/final-source-refresh-2026-10-20/model-artifact-comparison.json",
+    "historical_measurement_identity": "TECH-084原DeepSeek-V4.1-Flash及其固定引擎；1017没有继承旧测量身份",
+    "resource_budget_effect": "配置、权重索引和许可相同，硬件预算沿用；权重值、质量、输出量及速度另测。"
+  },
+  "comparison_scope": {
+    "task_data": "公开财报、虚构CSV，或符合服务条款且按机构数据分类获准的材料；不把全部NAS资料作为可外发数据。",
+    "deepseek_terms": "2026-04-29生效开放平台协议4.1限制商业秘密等输入输出，3.5个人信息与委托处理义务在开发者；TECH-092/api/deepseek-open-platform-terms.md",
+    "claude_role": "适用主体、使用地域与数据条件成立时的全球API经济对照；并非中国大陆团队可直接采购方案。",
+    "claude_current_sales_notice": "2025-09-04官方限制销售公告，中国为不支持地域并限制受不支持地域控制的主体，包括总部位于不支持地域公司直接或间接持股超过50%的企业；TECH-092/api/anthropic-sales-2025.md",
+    "claude_future_policy": "2026-11-12生效的新地区政策不倒用于2026-10-20。"
+  }
+}

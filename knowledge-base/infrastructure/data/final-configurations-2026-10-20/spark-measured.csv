@@ -1,0 +1,13 @@
+input_tokens,output_tokens,total_context_tokens,active_requests,metric_scope,decode_total_tokens_s,decode_per_request_tokens_s,ttft_s,evidence,quality_tested
+1024,2048,3072,1,whole_request_decode_excluding_TTFT,20.53,20.53,0.6,external_measurement_summary,False
+50000,2048,52048,1,whole_request_decode_excluding_TTFT,21.01,21.01,63.1,external_measurement_summary,False
+100000,2048,102048,1,whole_request_decode_excluding_TTFT,20.11,20.11,144.8,external_measurement_summary,False
+300000,2048,302048,1,whole_request_decode_excluding_TTFT,17.23,17.23,658.9,external_measurement_summary,False
+500000,2048,502048,1,whole_request_decode_excluding_TTFT,14.82,14.82,1470.1,external_measurement_summary,False
+50000,4096,54096,3,common_decode_window,59.08,19.69,,external_measurement_summary,False
+50000,4096,54096,3,whole_request_decode_mean_excluding_TTFT,,16.85,,external_measurement_summary,False
+100000,4096,104096,3,common_decode_window,52.41,17.47,,external_measurement_summary,False
+100000,4096,104096,3,whole_request_decode_mean_excluding_TTFT,,12.45,,external_measurement_summary,False
+999936,64,1000000,1,64_token_capacity_probe,9.83,9.83,4815.8,external_capacity_probe_not_steady_speed,False
+131072,8192,139264,4,end_to_end_output_including_prefill,23.7,,533.4,external_measurement_summary,False
+131072,8192,139264,8,end_to_end_output_including_prefill,26.99,,952.6,external_measurement_summary,False

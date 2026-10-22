@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-22",
+  "checks": {
+    "content_count": true,
+    "source_hashes": true,
+    "reviewed_content": true,
+    "tco_values": true,
+    "financial_example": true,
+    "time_saving_example": true,
+    "spark_wait_minutes": true,
+    "pptx_16_9": true,
+    "pptx_pages": true,
+    "pptx_anonymous": true,
+    "speaker_notes": true,
+    "pdf_pages": true,
+    "pdf_16_9": true,
+    "pdf_complete_titles": true,
+    "pdf_anonymous": true,
+    "source_links": true,
+    "finalizer_hash": true
+  },
+  "passed": true,
+  "artifacts": [
+    {
+      "path": "output/final-report-2026-10-22.pptx",
+      "sha256": "664b25614e846e51162d4c3e8d70fc556f91bf4bde655a05ec676b303052979d",
+      "bytes": 217047
+    },
+    {
+      "path": "output/final-report-2026-10-22.pdf",
+      "sha256": "4991045d0f7502f91b46fd753e7e7019684b55195861dab25350fa2c4c8c4ecb",
+      "bytes": 1174577
+    },
+    {
+      "path": "speaker-notes.md",
+      "sha256": "29963fb0442070f8c431a319b4dc1a4a6753345ff5c475066b2502a92272372e",
+      "bytes": 23226
+    }
+  ],
+  "native_powerpoint_opened": false
+}

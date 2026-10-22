@@ -1,5 +1,7 @@
 # On-Premise Reference Architecture
 
+> **2026-10-20最新研究入口：**[统一配置与容量](final-configurations-2026-10-20.md) · [三年TCO](tco-analysis-2026-10-20.md) · [制品、许可、采购与服务条件核验](final-source-refresh-2026-10-20.md)。下文保留原日期研究记录。
+
 **Phase 2 — Weeks 3–5.** Required by [the final project plan](../../PROJECT_PLAN.md).
 Status (12 October 2026): logical deployment choices and priced hardware scenarios
 are documented. An [external DGX Spark measurement summary](dgx-spark-qwen27-external-benchmark-2026-10-12.md)

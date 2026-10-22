@@ -1,0 +1,6 @@
+build/
+node_modules/
+.codex-finalizer/
+qa/render/
+qa/pdf-render/
+qa/contact-*.png

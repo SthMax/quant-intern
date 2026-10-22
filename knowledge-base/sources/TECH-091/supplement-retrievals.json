@@ -1,0 +1,58 @@
+[
+  {
+    "requested_url": "https://raw.githubusercontent.com/jeinlee1991/chinese-llm-benchmark/main/README.md",
+    "final_url": "https://raw.githubusercontent.com/jeinlee1991/chinese-llm-benchmark/main/README.md",
+    "path": "benchmarks/rele/readme.md",
+    "sha256": "3c6cad81081fcf9e00e7eb05095ac6a6276a588c9000f86fed6237ca2c6a4a56",
+    "bytes": 91618,
+    "retrieved_at": "2026-10-19T17:39:00.055322+00:00"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/jeinlee1991/chinese-llm-benchmark/main/leaderboard/%E9%87%91%E8%9E%8D%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md",
+    "final_url": "https://raw.githubusercontent.com/jeinlee1991/chinese-llm-benchmark/main/leaderboard/%E9%87%91%E8%9E%8D%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md",
+    "path": "benchmarks/rele/finance.md",
+    "sha256": "5bf4192c3da7cd441d875eabbeaddf030bae0bc15c157e565d47958e05eb732c",
+    "bytes": 5444,
+    "retrieved_at": "2026-10-19T17:39:00.084412+00:00"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/ant-intl/BizAgentBench/51e737f22ec7a5b04dccf1976a614b5a2675b80d/configs/model.example.json",
+    "final_url": "https://raw.githubusercontent.com/ant-intl/BizAgentBench/51e737f22ec7a5b04dccf1976a614b5a2675b80d/configs/model.example.json",
+    "path": "benchmarks/bizbench/config-template.json",
+    "sha256": "90f2cf48becec3e56cc7596e01925d1399b5789695d353ce45a888516c752bae",
+    "bytes": 697,
+    "retrieved_at": "2026-10-19T17:38:59.970289+00:00"
+  },
+  {
+    "requested_url": "https://www.vals.ai/models/alibaba_qwen3.8-27b",
+    "final_url": "https://www.vals.ai/models/alibaba_qwen3.8-27b",
+    "path": "benchmarks/vals-qwen27/source.html",
+    "sha256": "416cca54a759f0e9229faf84d30a87788051b42522f4912bbee93e1c99ea1bcc",
+    "bytes": 324036,
+    "retrieved_at": "2026-10-19T17:38:59.696673+00:00"
+  },
+  {
+    "requested_url": "https://www.vals.ai/models/deepseek_deepseek-v4.1-flash",
+    "final_url": "https://www.vals.ai/models/deepseek_deepseek-v4.1-flash",
+    "path": "benchmarks/vals-deepseek/source.html",
+    "sha256": "75a1d0bbc0fead5baa703ab314dbc1af7378524ddce906131679425c05580ade",
+    "bytes": 340101,
+    "retrieved_at": "2026-10-19T17:38:59.697215+00:00"
+  },
+  {
+    "requested_url": "https://www.vals.ai/models/zai_glm-5.3-flash",
+    "final_url": "https://www.vals.ai/models/zai_glm-5.3-flash",
+    "path": "benchmarks/vals-glmflash/source.html",
+    "sha256": "a0d2158d158751dc1aaf23ce4a9d79a4cba86a2c1e6cbfda8b10e9f4bc1db920",
+    "bytes": 328373,
+    "retrieved_at": "2026-10-19T17:39:00.084696+00:00"
+  },
+  {
+    "requested_url": "https://www.vals.ai/models/xiaomi_mimo-v2.6-flash",
+    "final_url": "https://www.vals.ai/models/xiaomi_mimo-v2.6-flash",
+    "path": "benchmarks/vals-mimoflash/source.html",
+    "sha256": "c13acfe879ac0ee4a588b6f7161d9a89b441b7f5cf91815b299341060330ed80",
+    "bytes": 304767,
+    "retrieved_at": "2026-10-19T17:39:00.373929+00:00"
+  }
+]

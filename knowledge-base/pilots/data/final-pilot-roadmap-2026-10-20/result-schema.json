@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Future pilot run record; no completed run is supplied",
+  "type": "object",
+  "required": ["task_id", "run_id", "status", "model", "configuration", "raw_output_path", "quality", "human_minutes", "timing_seconds", "cost"],
+  "properties": {
+    "task_id": {"type": "string"},
+    "run_id": {"type": "string"},
+    "status": {"enum": ["completed", "failed", "timeout", "correct_abstention"]},
+    "model": {"type": "object", "required": ["name", "revision", "precision"], "properties": {"name": {"type": "string"}, "revision": {"type": ["string", "null"]}, "precision": {"type": "string"}}},
+    "configuration": {"type": "object", "required": ["harness", "engine", "thinking", "context_limit", "output_limit", "tools", "prompt_hash", "dataset_hash"]},
+    "raw_output_path": {"type": ["string", "null"]},
+    "quality": {"type": "object", "required": ["accepted", "critical_error", "field_or_claim_checks", "citation_checks", "permission_checks", "reviewer_role"]},
+    "human_minutes": {"type": "object", "required": ["baseline", "prompt_operation", "editing", "review", "rework"], "description": "Fields are disjoint active time; baseline includes the original whole workflow."},
+    "timing_seconds": {"type": "object", "required": ["end_to_end", "waiting", "ttft", "decode_tokens_per_second"], "description": "Unavailable fields are null; never infer GPU speed from author API timings."},
+    "cost": {"type": "object", "required": ["input_tokens", "output_tokens", "cached_tokens", "attempt_count", "service_allocation_cny", "human_allocation_cny"], "description": "Include all failed attempts and reviews."}
+  }
+}

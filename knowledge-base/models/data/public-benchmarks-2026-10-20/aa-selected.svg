@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="930" viewBox="0 0 1600 930" role="img" aria-label="按任务比较长资料推理、自动化与代码">
+<rect width="1600" height="100%" fill="#fff"/>
+<g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,Arial,sans-serif" fill="#163248">
+<text x="45" y="52" font-size="32" font-weight="600">按任务比较长资料推理、自动化与代码</text>
+<text x="45" y="91" font-size="21" fill="#526777">Artificial Analysis作者同站分项 · 2026-10-20快照 · 各指标独立</text>
+<rect x="485" y="116" width="22" height="18" rx="2" fill="#0f5f78"/>
+<text x="517" y="132" font-size="20">AA-LCR v1.1</text>
+<rect x="765" y="116" width="22" height="18" rx="2" fill="#39a5a3"/>
+<text x="797" y="132" font-size="20">AutomationBench-AA</text>
+<rect x="1045" y="116" width="22" height="18" rx="2" fill="#dfa342"/>
+<text x="1077" y="132" font-size="20">Terminal-Bench 4.0</text>
+<line x1="485.0" y1="170" x2="485.0" y2="770" stroke="#e3ebef"/>
+<text x="485.0" y="801" font-size="18" text-anchor="middle" fill="#526777">0</text>
+<line x1="685.0" y1="170" x2="685.0" y2="770" stroke="#e3ebef"/>
+<text x="685.0" y="801" font-size="18" text-anchor="middle" fill="#526777">20</text>
+<line x1="885.0" y1="170" x2="885.0" y2="770" stroke="#e3ebef"/>
+<text x="885.0" y="801" font-size="18" text-anchor="middle" fill="#526777">40</text>
+<line x1="1085.0" y1="170" x2="1085.0" y2="770" stroke="#e3ebef"/>
+<text x="1085.0" y="801" font-size="18" text-anchor="middle" fill="#526777">60</text>
+<line x1="1285.0" y1="170" x2="1285.0" y2="770" stroke="#e3ebef"/>
+<text x="1285.0" y="801" font-size="18" text-anchor="middle" fill="#526777">80</text>
+<line x1="1485.0" y1="170" x2="1485.0" y2="770" stroke="#e3ebef"/>
+<text x="1485.0" y="801" font-size="18" text-anchor="middle" fill="#526777">100</text>
+<text x="45" y="218" font-size="23" font-weight="500">Qwen3.8-27B xhigh</text>
+<rect x="485" y="182" width="820.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="1313.00" y="198" font-size="18">82</text>
+<rect x="485" y="205" width="480.00" height="18" rx="3" fill="#39a5a3"/>
+<text x="973.00" y="221" font-size="18">48</text>
+<rect x="485" y="228" width="60.00" height="18" rx="3" fill="#dfa342"/>
+<text x="553.00" y="244" font-size="18">6</text>
+<text x="45" y="316" font-size="23" font-weight="500">DeepSeek-V4.1-Flash max</text>
+<rect x="485" y="280" width="840.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="1333.00" y="296" font-size="18">84</text>
+<rect x="485" y="303" width="690.00" height="18" rx="3" fill="#39a5a3"/>
+<text x="1183.00" y="319" font-size="18">69</text>
+<rect x="485" y="326" width="270.00" height="18" rx="3" fill="#dfa342"/>
+<text x="763.00" y="342" font-size="18">27</text>
+<text x="45" y="414" font-size="23" font-weight="500">GLM-5.3-Flash</text>
+<rect x="485" y="378" width="800.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="1293.00" y="394" font-size="18">80</text>
+<rect x="485" y="401" width="600.00" height="18" rx="3" fill="#39a5a3"/>
+<text x="1093.00" y="417" font-size="18">60</text>
+<rect x="485" y="424" width="330.00" height="18" rx="3" fill="#dfa342"/>
+<text x="823.00" y="440" font-size="18">33</text>
+<text x="45" y="512" font-size="23" font-weight="500">MiMo-V2.6-Flash</text>
+<rect x="485" y="476" width="740.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="1233.00" y="492" font-size="18">74</text>
+<rect x="485" y="499" width="640.00" height="18" rx="3" fill="#39a5a3"/>
+<text x="1133.00" y="515" font-size="18">64</text>
+<rect x="485" y="522" width="230.00" height="18" rx="3" fill="#dfa342"/>
+<text x="723.00" y="538" font-size="18">23</text>
+<text x="45" y="610" font-size="23" font-weight="500">Kimi K3 max</text>
+<rect x="485" y="574" width="890.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="1383.00" y="590" font-size="18">89</text>
+<rect x="485" y="597" width="580.00" height="18" rx="3" fill="#39a5a3"/>
+<text x="1073.00" y="613" font-size="18">58</text>
+<rect x="485" y="620" width="130.00" height="18" rx="3" fill="#dfa342"/>
+<text x="623.00" y="636" font-size="18">13</text>
+<text x="45" y="708" font-size="23" font-weight="500">Gemma 4 31B reasoning</text>
+<rect x="485" y="672" width="700.00" height="18" rx="3" fill="#0f5f78"/>
+<text x="1193.00" y="688" font-size="18">70</text>
+<rect x="485" y="695" width="50.00" height="18" rx="3" fill="#39a5a3"/>
+<text x="543.00" y="711" font-size="18">5</text>
+<rect x="485" y="718" width="0.00" height="18" rx="3" fill="#dfa342"/>
+<text x="493.00" y="734" font-size="18">0</text>
+<text x="985.0" y="833" font-size="20" text-anchor="middle">分数（0–100；越高越好）</text>
+<text x="45" y="872" font-size="18" fill="#526777">来源：AA模型对照页与方法；AA-LCR约100K多文档问答，不是接近满1M窗口测试。</text>
+<text x="45" y="898" font-size="18" fill="#526777">模型沿用作者thinking标签；分项各有任务及harness，不合成总分。</text>
+</g>
+</svg>

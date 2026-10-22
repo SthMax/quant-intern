@@ -1,0 +1,3019 @@
+[
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.31-engram.md",
+    "declared_sha256": "b7aff00de9a474ee48e149b18357e34bb4aec4f76aa6ad51253046b5633c8961",
+    "actual_sha256": "b7aff00de9a474ee48e149b18357e34bb4aec4f76aa6ad51253046b5633c8961",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.32-engram.md",
+    "declared_sha256": "b059d626fde1f73a08239cf218674c680260dd82c3f4a4712f4bf462e87dd5c9",
+    "actual_sha256": "b059d626fde1f73a08239cf218674c680260dd82c3f4a4712f4bf462e87dd5c9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.32-engram-config.py",
+    "declared_sha256": "53bf5367af69149f7dc6dfe576921f22948cdb5cbd3e903c8bd7b310f80aa202",
+    "actual_sha256": "53bf5367af69149f7dc6dfe576921f22948cdb5cbd3e903c8bd7b310f80aa202",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.32-attention.py",
+    "declared_sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+    "actual_sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.31-attention.py",
+    "declared_sha256": "12c183b169b134fc909d598d6f99bd4f8da83269a4589a5bc3162211d9364c77",
+    "actual_sha256": "12c183b169b134fc909d598d6f99bd4f8da83269a4589a5bc3162211d9364c77",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.32-kv-offloading.md",
+    "declared_sha256": "26c7fc5da0b36f27da65e5cbad066df1b598fe5fe806da99e0b2aff62201382b",
+    "actual_sha256": "26c7fc5da0b36f27da65e5cbad066df1b598fe5fe806da99e0b2aff62201382b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.32-hybrid-cache.md",
+    "declared_sha256": "5a3138f8d3fddc44d69f7782510c0c97b394ee073bb743cae34bfbf281985b4a",
+    "actual_sha256": "5a3138f8d3fddc44d69f7782510c0c97b394ee073bb743cae34bfbf281985b4a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.30-release.html",
+    "declared_sha256": "e50efbdfd024692a351928a45a64333db4cf5b21afc277f625b50383511c6bf5",
+    "actual_sha256": "e50efbdfd024692a351928a45a64333db4cf5b21afc277f625b50383511c6bf5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.31-release.html",
+    "declared_sha256": "2b4509ca2a55bacb162ce5743e20f4b4868c21f8d61cbe4b0a4f97b014fa758b",
+    "actual_sha256": "2b4509ca2a55bacb162ce5743e20f4b4868c21f8d61cbe4b0a4f97b014fa758b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.32-release.html",
+    "declared_sha256": "fe2306af1838e46cc25bf3bd670bc4a80be4c646d744b14ad90917072f79ae0a",
+    "actual_sha256": "fe2306af1838e46cc25bf3bd670bc4a80be4c646d744b14ad90917072f79ae0a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/lmcache-qwen-series.rst",
+    "declared_sha256": "584905b395a9b590a96936986f39907a9fbd41460d6b9310ecb08fdcb59cade9",
+    "actual_sha256": "584905b395a9b590a96936986f39907a9fbd41460d6b9310ecb08fdcb59cade9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/lmcache-deepseek-v41.rst",
+    "declared_sha256": "06f56e5f2094b45e1a992278ad73c022ffa37191e00709de22b2de458e8fc397",
+    "actual_sha256": "06f56e5f2094b45e1a992278ad73c022ffa37191e00709de22b2de458e8fc397",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/lmcache-hybrid-models.rst",
+    "declared_sha256": "ec87f91a419a4d0590e064ed2e620dd4633e6e838852abbefeeefeca31fc924c",
+    "actual_sha256": "ec87f91a419a4d0590e064ed2e620dd4633e6e838852abbefeeefeca31fc924c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/lmcache-mp-quickstart.rst",
+    "declared_sha256": "1e78492bc014499390240216a966183d369009a902a1a35104fc3585ae6dee75",
+    "actual_sha256": "1e78492bc014499390240216a966183d369009a902a1a35104fc3585ae6dee75",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/lmcache-l2-storage.html",
+    "declared_sha256": "89fa4dc0b5bbbf8817e422c052ef00071299d512f7ae106b88c96ac5937f9182",
+    "actual_sha256": "89fa4dc0b5bbbf8817e422c052ef00071299d512f7ae106b88c96ac5937f9182",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.30-release-original.txt",
+    "declared_sha256": "ad46952efee1e24bd9e6456f6917c66bd26d9a56dc811e5c0f977e592408133b",
+    "actual_sha256": "ad46952efee1e24bd9e6456f6917c66bd26d9a56dc811e5c0f977e592408133b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.31-release-original.txt",
+    "declared_sha256": "3a8fa1724611bdf1267d489e642bc9194d5813dcde8bfd75d3f41bf5b5d14873",
+    "actual_sha256": "3a8fa1724611bdf1267d489e642bc9194d5813dcde8bfd75d3f41bf5b5d14873",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/vllm-0.32-release-original.txt",
+    "declared_sha256": "920715bfb86c635ac5d3539e09c7380e9777fa2cdd44cf8e6f41d73c86ae4a89",
+    "actual_sha256": "920715bfb86c635ac5d3539e09c7380e9777fa2cdd44cf8e6f41d73c86ae4a89",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/lmcache-l2-storage-original.txt",
+    "declared_sha256": "8c2a1c458b9bfa46e4e7f3cf6a94dc45d527943ff8493f1735da62725f98ded0",
+    "actual_sha256": "8c2a1c458b9bfa46e4e7f3cf6a94dc45d527943ff8493f1735da62725f98ded0",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/original.md",
+    "declared_sha256": "0197ec8a7d1405efc4d599924cfad8ae1776db512bf110ff2bd9a62c4dbc0e74",
+    "actual_sha256": "0197ec8a7d1405efc4d599924cfad8ae1776db512bf110ff2bd9a62c4dbc0e74",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-089/metadata.json",
+    "path": "knowledge-base/sources/TECH-089/evidence-note.md",
+    "declared_sha256": "07cb7ea20031d98f5cb4602152ac2c80bb6304d33ef2de0832d00ee7d2578d19",
+    "actual_sha256": "07cb7ea20031d98f5cb4602152ac2c80bb6304d33ef2de0832d00ee7d2578d19",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-090/metadata.json",
+    "path": "knowledge-base/sources/TECH-090/deepseek-pricing.md",
+    "declared_sha256": "cfa7904b796b53cf53c4e40bb84aaf92b4b693e4ad6b6dfaea68c570d41e69fe",
+    "actual_sha256": "cfa7904b796b53cf53c4e40bb84aaf92b4b693e4ad6b6dfaea68c570d41e69fe",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-090/metadata.json",
+    "path": "knowledge-base/sources/TECH-090/deepseek-cache.md",
+    "declared_sha256": "de06c705a5897c655b07a3452352118a311879ae785d73874fbf902d276e259d",
+    "actual_sha256": "de06c705a5897c655b07a3452352118a311879ae785d73874fbf902d276e259d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-090/metadata.json",
+    "path": "knowledge-base/sources/TECH-090/deepseek-first-call.md",
+    "declared_sha256": "a0dc779411f0ec79781f8d49d69109f399047cd324d2cd4fbd4a59b4ae9cafe0",
+    "actual_sha256": "a0dc779411f0ec79781f8d49d69109f399047cd324d2cd4fbd4a59b4ae9cafe0",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-090/metadata.json",
+    "path": "knowledge-base/sources/TECH-090/claude-pricing.md",
+    "declared_sha256": "02824a2dc94bdc7b80c61eda42b3631afc36a1d64f60993a60d922de8e412044",
+    "actual_sha256": "02824a2dc94bdc7b80c61eda42b3631afc36a1d64f60993a60d922de8e412044",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-090/metadata.json",
+    "path": "knowledge-base/sources/TECH-090/claude-cache.md",
+    "declared_sha256": "a2d1423e5871cace48d5a7b449fa9f31c2756fb76c85c8df3cd462b28eb2c7e3",
+    "actual_sha256": "a2d1423e5871cace48d5a7b449fa9f31c2756fb76c85c8df3cd462b28eb2c7e3",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-090/metadata.json",
+    "path": "knowledge-base/sources/TECH-090/claude-sonnet55.md",
+    "declared_sha256": "b4914f6dcd27181bb1d2cfc4163859045c1ac48c1296e3a0d27dd91d0635a0e9",
+    "actual_sha256": "b4914f6dcd27181bb1d2cfc4163859045c1ac48c1296e3a0d27dd91d0635a0e9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-090/metadata.json",
+    "path": "knowledge-base/sources/TECH-090/spark-hardware.md",
+    "declared_sha256": "3ee1fa13b2be7b71e0e3d317609fbb9dee6f7e4a6cf1b8af8e9cc952d3662ca9",
+    "actual_sha256": "3ee1fa13b2be7b71e0e3d317609fbb9dee6f7e4a6cf1b8af8e9cc952d3662ca9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-090/metadata.json",
+    "path": "knowledge-base/sources/TECH-090/anthropic-regions-future.md",
+    "declared_sha256": "388a50db88b9ed6f5ccc08b26ef13fe08b6c900ca555229a1a3e0bc7912e98c7",
+    "actual_sha256": "388a50db88b9ed6f5ccc08b26ef13fe08b6c900ca555229a1a3e0bc7912e98c7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-090/metadata.json",
+    "path": "knowledge-base/sources/TECH-090/deepseek-rate-limit.md",
+    "declared_sha256": "48fdaab80e476e58a97a279739ffc86d3a065edd22950d3ab0c4371ed172adb0",
+    "actual_sha256": "48fdaab80e476e58a97a279739ffc86d3a065edd22950d3ab0c4371ed172adb0",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/aa-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-deepseek-qwen/source.html",
+    "declared_sha256": "6e34684263c6f4ee3e00476e66cf3627e63b9d655cf312ad4e8783d76a99e903",
+    "actual_sha256": "6e34684263c6f4ee3e00476e66cf3627e63b9d655cf312ad4e8783d76a99e903",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/aa-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-glm-kimi/source.html",
+    "declared_sha256": "fbabef235bf581838e26a10f2c27558ed27f16658d3035a76a64df0165486a1e",
+    "actual_sha256": "fbabef235bf581838e26a10f2c27558ed27f16658d3035a76a64df0165486a1e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/aa-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-mimo-qwen/source.html",
+    "declared_sha256": "e47d8508b59ca3976eeb146bdc30a179141d13be06b75578675d0c682059aa7b",
+    "actual_sha256": "e47d8508b59ca3976eeb146bdc30a179141d13be06b75578675d0c682059aa7b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/aa-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-gemma-qwen/source.html",
+    "declared_sha256": "182010c7fc08e0e6460ce590370bc952ab7a327896195a18b9e4cbc1593dddd7",
+    "actual_sha256": "182010c7fc08e0e6460ce590370bc952ab7a327896195a18b9e4cbc1593dddd7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/aa-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-methodology/source.html",
+    "declared_sha256": "8e8a36b8e46d688237746f2f394e8108db04e3ee5936545ad1e3ffbbb36aac8d",
+    "actual_sha256": "8e8a36b8e46d688237746f2f394e8108db04e3ee5936545ad1e3ffbbb36aac8d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/additional-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/leaderboard.csv",
+    "declared_sha256": "a247645a0db9372a23ff7e73ab7cfe11c990971db8a7addae92e78e5eaf09c1f",
+    "actual_sha256": "a247645a0db9372a23ff7e73ab7cfe11c990971db8a7addae92e78e5eaf09c1f",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/additional-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/readme.md",
+    "declared_sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8",
+    "actual_sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/additional-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/pipelines.md",
+    "declared_sha256": "8bf8bd4c6bed9234f1ac17bb79589fdf6c78363f9d39d1972fc5e3cb89e7ea02",
+    "actual_sha256": "8bf8bd4c6bed9234f1ac17bb79589fdf6c78363f9d39d1972fc5e3cb89e7ea02",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/additional-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/assets.js",
+    "declared_sha256": "e42cdfb350663ed3b9b6b9f4148f39f905cdefa133b20e47e03bd6b2e5d25cbe",
+    "actual_sha256": "e42cdfb350663ed3b9b6b9f4148f39f905cdefa133b20e47e03bd6b2e5d25cbe",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/additional-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/bizbench/readme.md",
+    "declared_sha256": "bbe2bd22914f8014208968771f0ba1f7518fac9afdeac5a925b2e42de2ccc53d",
+    "actual_sha256": "bbe2bd22914f8014208968771f0ba1f7518fac9afdeac5a925b2e42de2ccc53d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/additional-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-fabv2/source.html",
+    "declared_sha256": "d57a8e930110bb0181f7c18dce40975f50631950ecddc89c548e4ce020ae2889",
+    "actual_sha256": "d57a8e930110bb0181f7c18dce40975f50631950ecddc89c548e4ce020ae2889",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/additional-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-corpfinv2/source.html",
+    "declared_sha256": "5537cdeca6ad35880255ef223023c845f1430479b0c3af8fb249b00dff80b78c",
+    "actual_sha256": "5537cdeca6ad35880255ef223023c845f1430479b0c3af8fb249b00dff80b78c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/additional-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-home/source.html",
+    "declared_sha256": "8cf800a8794254bc0530dc47d0c8815f423cbfab74a2fd57fe832637f0d1950c",
+    "actual_sha256": "8cf800a8794254bc0530dc47d0c8815f423cbfab74a2fd57fe832637f0d1950c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/qwen27/api.json",
+    "declared_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "actual_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/qwen27/original.md",
+    "declared_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "actual_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/qwen35/api.json",
+    "declared_sha256": "0e613c5c03c5494d064bdee4a45ce7dd349df90654d86a7c915ba78e37bee2c4",
+    "actual_sha256": "0e613c5c03c5494d064bdee4a45ce7dd349df90654d86a7c915ba78e37bee2c4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/qwen35/original.md",
+    "declared_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "actual_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/gemma31/api.json",
+    "declared_sha256": "975d2f6250d2d49f04046f3e817e9fb90b7c2758854dbe3e51bae6286ca540d6",
+    "actual_sha256": "975d2f6250d2d49f04046f3e817e9fb90b7c2758854dbe3e51bae6286ca540d6",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/gemma31/original.md",
+    "declared_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "actual_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/gemma26/api.json",
+    "declared_sha256": "ae910e2db474ef0adfd1574631f336e6ab2c0c33af86a3a3a579ca8ed4da1291",
+    "actual_sha256": "ae910e2db474ef0adfd1574631f336e6ab2c0c33af86a3a3a579ca8ed4da1291",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/gemma26/original.md",
+    "declared_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "actual_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/deepseek/api.json",
+    "declared_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "actual_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/deepseek/original.md",
+    "declared_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "actual_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/glmflash/api.json",
+    "declared_sha256": "6654d71d8f04ce4e9eac7133309310fa16836b8d2a4d84889024c47f0b96e1f4",
+    "actual_sha256": "6654d71d8f04ce4e9eac7133309310fa16836b8d2a4d84889024c47f0b96e1f4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/glmflash/original.md",
+    "declared_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "actual_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/glm/api.json",
+    "declared_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "actual_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/glm/original.md",
+    "declared_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "actual_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/kimi/api.json",
+    "declared_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "actual_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/kimi/original.md",
+    "declared_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "actual_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/mimoflash/api.json",
+    "declared_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "actual_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/mimoflash/original.md",
+    "declared_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "actual_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/mimopro/api.json",
+    "declared_sha256": "73220e687d67fc977fd4eac0f6f615b0fb409b9f93460b440150a4237c1e3a15",
+    "actual_sha256": "73220e687d67fc977fd4eac0f6f615b0fb409b9f93460b440150a4237c1e3a15",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/mimopro/original.md",
+    "declared_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "actual_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/bizbench-paper/source.html",
+    "declared_sha256": "7946de1c092bcb2504e8da61b69f26842ed31ab79c23141e4b0c40092594bd13",
+    "actual_sha256": "7946de1c092bcb2504e8da61b69f26842ed31ab79c23141e4b0c40092594bd13",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench-paper/source.html",
+    "declared_sha256": "5455b81a5aa81e2ecc6f509f471f7359e163b99b705557404dbbe9c12a11afa4",
+    "actual_sha256": "5455b81a5aa81e2ecc6f509f471f7359e163b99b705557404dbbe9c12a11afa4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-finance-v1/source.html",
+    "declared_sha256": "ec93e2d18c604b35b38481a2075cbf5b78e939f88e9508847f9b54186f206e9d",
+    "actual_sha256": "ec93e2d18c604b35b38481a2075cbf5b78e939f88e9508847f9b54186f206e9d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/deepswe/source.html",
+    "declared_sha256": "14436c31be1e50a0b62171e4aee4dd0ae0ce66b1e390af89c7e6e095ad59f1f1",
+    "actual_sha256": "14436c31be1e50a0b62171e4aee4dd0ae0ce66b1e390af89c7e6e095ad59f1f1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/source.html",
+    "declared_sha256": "0c743c78af0c09ae9db929a3a29465464e8f64b5ab616c5d4e12a9091a483f37",
+    "actual_sha256": "0c743c78af0c09ae9db929a3a29465464e8f64b5ab616c5d4e12a9091a483f37",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/supplement-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/rele/readme.md",
+    "declared_sha256": "3c6cad81081fcf9e00e7eb05095ac6a6276a588c9000f86fed6237ca2c6a4a56",
+    "actual_sha256": "3c6cad81081fcf9e00e7eb05095ac6a6276a588c9000f86fed6237ca2c6a4a56",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/supplement-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/rele/finance.md",
+    "declared_sha256": "5bf4192c3da7cd441d875eabbeaddf030bae0bc15c157e565d47958e05eb732c",
+    "actual_sha256": "5bf4192c3da7cd441d875eabbeaddf030bae0bc15c157e565d47958e05eb732c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/supplement-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/bizbench/config-template.json",
+    "declared_sha256": "90f2cf48becec3e56cc7596e01925d1399b5789695d353ce45a888516c752bae",
+    "actual_sha256": "90f2cf48becec3e56cc7596e01925d1399b5789695d353ce45a888516c752bae",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/supplement-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-qwen27/source.html",
+    "declared_sha256": "416cca54a759f0e9229faf84d30a87788051b42522f4912bbee93e1c99ea1bcc",
+    "actual_sha256": "416cca54a759f0e9229faf84d30a87788051b42522f4912bbee93e1c99ea1bcc",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/supplement-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-deepseek/source.html",
+    "declared_sha256": "75a1d0bbc0fead5baa703ab314dbc1af7378524ddce906131679425c05580ade",
+    "actual_sha256": "75a1d0bbc0fead5baa703ab314dbc1af7378524ddce906131679425c05580ade",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/supplement-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-glmflash/source.html",
+    "declared_sha256": "a0d2158d158751dc1aaf23ce4a9d79a4cba86a2c1e6cbfda8b10e9f4bc1db920",
+    "actual_sha256": "a0d2158d158751dc1aaf23ce4a9d79a4cba86a2c1e6cbfda8b10e9f4bc1db920",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/supplement-retrievals.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-mimoflash/source.html",
+    "declared_sha256": "c13acfe879ac0ee4a588b6f7161d9a89b441b7f5cf91815b299341060330ed80",
+    "actual_sha256": "c13acfe879ac0ee4a588b6f7161d9a89b441b7f5cf91815b299341060330ed80",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/code-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/pipelines/extract.py",
+    "declared_sha256": "d0ac23c7b6c57c4848f7f1cf7bfd68119ae8a2ba078a185b8af65a8cf18c5ca8",
+    "actual_sha256": "d0ac23c7b6c57c4848f7f1cf7bfd68119ae8a2ba078a185b8af65a8cf18c5ca8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/code-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/vllm_extract.py",
+    "declared_sha256": "7a3859656b4a3f9bc62805d0c253fe997447aa9541de1576f696cda39cdbdf8b",
+    "actual_sha256": "7a3859656b4a3f9bc62805d0c253fe997447aa9541de1576f696cda39cdbdf8b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/code-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/deepseek_oneshot_extract.py",
+    "declared_sha256": "b9cd4a2772d1a56de590ace30b3a3a7e5aed48441d4fdace56cd4bb0c8423494",
+    "actual_sha256": "b9cd4a2772d1a56de590ace30b3a3a7e5aed48441d4fdace56cd4bb0c8423494",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/code-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/glm_zai_extract.py",
+    "declared_sha256": "ae583f3cca6725a6f3b781cdb0d07f28c1efea5656291aa605d85bca5c79acf0",
+    "actual_sha256": "ae583f3cca6725a6f3b781cdb0d07f28c1efea5656291aa605d85bca5c79acf0",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/code-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/kimi_extract.py",
+    "declared_sha256": "bed22f052e6af850b13ee2b2cc9bf7de96779a0573d29ca07bbe23300fb187a8",
+    "actual_sha256": "bed22f052e6af850b13ee2b2cc9bf7de96779a0573d29ca07bbe23300fb187a8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/aa-retrievals.json",
+    "declared_sha256": "0cfe459ce5b5353441507f035d7fa1576baa515b8d92daa29c9aedcaf369119b",
+    "actual_sha256": "0cfe459ce5b5353441507f035d7fa1576baa515b8d92daa29c9aedcaf369119b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/additional-retrievals.json",
+    "declared_sha256": "e9b0728b1e52ff82594bb2a050e3a07bb4d7a3657f7f79d9d1b3dc6d6eb86295",
+    "actual_sha256": "e9b0728b1e52ff82594bb2a050e3a07bb4d7a3657f7f79d9d1b3dc6d6eb86295",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-deepseek-qwen/original.md",
+    "declared_sha256": "eb102e5c0f7f2c4985db0194c1a42824b1b239463df710d9614dc267ab302693",
+    "actual_sha256": "eb102e5c0f7f2c4985db0194c1a42824b1b239463df710d9614dc267ab302693",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-deepseek-qwen/source.html",
+    "declared_sha256": "6e34684263c6f4ee3e00476e66cf3627e63b9d655cf312ad4e8783d76a99e903",
+    "actual_sha256": "6e34684263c6f4ee3e00476e66cf3627e63b9d655cf312ad4e8783d76a99e903",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-gemma-qwen/source.html",
+    "declared_sha256": "182010c7fc08e0e6460ce590370bc952ab7a327896195a18b9e4cbc1593dddd7",
+    "actual_sha256": "182010c7fc08e0e6460ce590370bc952ab7a327896195a18b9e4cbc1593dddd7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-glm-kimi/source.html",
+    "declared_sha256": "fbabef235bf581838e26a10f2c27558ed27f16658d3035a76a64df0165486a1e",
+    "actual_sha256": "fbabef235bf581838e26a10f2c27558ed27f16658d3035a76a64df0165486a1e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-methodology/source.html",
+    "declared_sha256": "8e8a36b8e46d688237746f2f394e8108db04e3ee5936545ad1e3ffbbb36aac8d",
+    "actual_sha256": "8e8a36b8e46d688237746f2f394e8108db04e3ee5936545ad1e3ffbbb36aac8d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/aa-mimo-qwen/source.html",
+    "declared_sha256": "e47d8508b59ca3976eeb146bdc30a179141d13be06b75578675d0c682059aa7b",
+    "actual_sha256": "e47d8508b59ca3976eeb146bdc30a179141d13be06b75578675d0c682059aa7b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/bizbench/config-template.json",
+    "declared_sha256": "90f2cf48becec3e56cc7596e01925d1399b5789695d353ce45a888516c752bae",
+    "actual_sha256": "90f2cf48becec3e56cc7596e01925d1399b5789695d353ce45a888516c752bae",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/bizbench/readme.md",
+    "declared_sha256": "bbe2bd22914f8014208968771f0ba1f7518fac9afdeac5a925b2e42de2ccc53d",
+    "actual_sha256": "bbe2bd22914f8014208968771f0ba1f7518fac9afdeac5a925b2e42de2ccc53d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/bizbench-paper/original.md",
+    "declared_sha256": "e6c3efcd028817e2d67cdea22289b192d8933e3c446840e69712fbcccf13be9a",
+    "actual_sha256": "e6c3efcd028817e2d67cdea22289b192d8933e3c446840e69712fbcccf13be9a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/bizbench-paper/source.html",
+    "declared_sha256": "7946de1c092bcb2504e8da61b69f26842ed31ab79c23141e4b0c40092594bd13",
+    "actual_sha256": "7946de1c092bcb2504e8da61b69f26842ed31ab79c23141e4b0c40092594bd13",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/deepswe/source.html",
+    "declared_sha256": "14436c31be1e50a0b62171e4aee4dd0ae0ce66b1e390af89c7e6e095ad59f1f1",
+    "actual_sha256": "14436c31be1e50a0b62171e4aee4dd0ae0ce66b1e390af89c7e6e095ad59f1f1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/assets.js",
+    "declared_sha256": "e42cdfb350663ed3b9b6b9f4148f39f905cdefa133b20e47e03bd6b2e5d25cbe",
+    "actual_sha256": "e42cdfb350663ed3b9b6b9f4148f39f905cdefa133b20e47e03bd6b2e5d25cbe",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/pipelines/extract.py",
+    "declared_sha256": "d0ac23c7b6c57c4848f7f1cf7bfd68119ae8a2ba078a185b8af65a8cf18c5ca8",
+    "actual_sha256": "d0ac23c7b6c57c4848f7f1cf7bfd68119ae8a2ba078a185b8af65a8cf18c5ca8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/deepseek_oneshot_extract.py",
+    "declared_sha256": "b9cd4a2772d1a56de590ace30b3a3a7e5aed48441d4fdace56cd4bb0c8423494",
+    "actual_sha256": "b9cd4a2772d1a56de590ace30b3a3a7e5aed48441d4fdace56cd4bb0c8423494",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/glm_zai_extract.py",
+    "declared_sha256": "ae583f3cca6725a6f3b781cdb0d07f28c1efea5656291aa605d85bca5c79acf0",
+    "actual_sha256": "ae583f3cca6725a6f3b781cdb0d07f28c1efea5656291aa605d85bca5c79acf0",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/kimi_extract.py",
+    "declared_sha256": "bed22f052e6af850b13ee2b2cc9bf7de96779a0573d29ca07bbe23300fb187a8",
+    "actual_sha256": "bed22f052e6af850b13ee2b2cc9bf7de96779a0573d29ca07bbe23300fb187a8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/files/src/extract_bench/inference/providers/extract/vllm_extract.py",
+    "declared_sha256": "7a3859656b4a3f9bc62805d0c253fe997447aa9541de1576f696cda39cdbdf8b",
+    "actual_sha256": "7a3859656b4a3f9bc62805d0c253fe997447aa9541de1576f696cda39cdbdf8b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/leaderboard.csv",
+    "declared_sha256": "a247645a0db9372a23ff7e73ab7cfe11c990971db8a7addae92e78e5eaf09c1f",
+    "actual_sha256": "a247645a0db9372a23ff7e73ab7cfe11c990971db8a7addae92e78e5eaf09c1f",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/pipelines.md",
+    "declared_sha256": "8bf8bd4c6bed9234f1ac17bb79589fdf6c78363f9d39d1972fc5e3cb89e7ea02",
+    "actual_sha256": "8bf8bd4c6bed9234f1ac17bb79589fdf6c78363f9d39d1972fc5e3cb89e7ea02",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/readme.md",
+    "declared_sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8",
+    "actual_sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench/source.html",
+    "declared_sha256": "0c743c78af0c09ae9db929a3a29465464e8f64b5ab616c5d4e12a9091a483f37",
+    "actual_sha256": "0c743c78af0c09ae9db929a3a29465464e8f64b5ab616c5d4e12a9091a483f37",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/extractbench-paper/source.html",
+    "declared_sha256": "5455b81a5aa81e2ecc6f509f471f7359e163b99b705557404dbbe9c12a11afa4",
+    "actual_sha256": "5455b81a5aa81e2ecc6f509f471f7359e163b99b705557404dbbe9c12a11afa4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/rele/finance.md",
+    "declared_sha256": "5bf4192c3da7cd441d875eabbeaddf030bae0bc15c157e565d47958e05eb732c",
+    "actual_sha256": "5bf4192c3da7cd441d875eabbeaddf030bae0bc15c157e565d47958e05eb732c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/rele/readme.md",
+    "declared_sha256": "3c6cad81081fcf9e00e7eb05095ac6a6276a588c9000f86fed6237ca2c6a4a56",
+    "actual_sha256": "3c6cad81081fcf9e00e7eb05095ac6a6276a588c9000f86fed6237ca2c6a4a56",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-corpfinv2/original.md",
+    "declared_sha256": "bc6136420a00513e49b68e87178c2cae484efaddbd6597a51d82a1c82d62107b",
+    "actual_sha256": "bc6136420a00513e49b68e87178c2cae484efaddbd6597a51d82a1c82d62107b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-corpfinv2/source.html",
+    "declared_sha256": "5537cdeca6ad35880255ef223023c845f1430479b0c3af8fb249b00dff80b78c",
+    "actual_sha256": "5537cdeca6ad35880255ef223023c845f1430479b0c3af8fb249b00dff80b78c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-deepseek/source.html",
+    "declared_sha256": "75a1d0bbc0fead5baa703ab314dbc1af7378524ddce906131679425c05580ade",
+    "actual_sha256": "75a1d0bbc0fead5baa703ab314dbc1af7378524ddce906131679425c05580ade",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-fabv2/original.md",
+    "declared_sha256": "cf5fc37402aaa0b785dcef749baf8ec7c5183e5949a638f91dd3401554ce4ef2",
+    "actual_sha256": "cf5fc37402aaa0b785dcef749baf8ec7c5183e5949a638f91dd3401554ce4ef2",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-fabv2/source.html",
+    "declared_sha256": "d57a8e930110bb0181f7c18dce40975f50631950ecddc89c548e4ce020ae2889",
+    "actual_sha256": "d57a8e930110bb0181f7c18dce40975f50631950ecddc89c548e4ce020ae2889",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-finance-v1/source.html",
+    "declared_sha256": "ec93e2d18c604b35b38481a2075cbf5b78e939f88e9508847f9b54186f206e9d",
+    "actual_sha256": "ec93e2d18c604b35b38481a2075cbf5b78e939f88e9508847f9b54186f206e9d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-glmflash/source.html",
+    "declared_sha256": "a0d2158d158751dc1aaf23ce4a9d79a4cba86a2c1e6cbfda8b10e9f4bc1db920",
+    "actual_sha256": "a0d2158d158751dc1aaf23ce4a9d79a4cba86a2c1e6cbfda8b10e9f4bc1db920",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-home/source.html",
+    "declared_sha256": "8cf800a8794254bc0530dc47d0c8815f423cbfab74a2fd57fe832637f0d1950c",
+    "actual_sha256": "8cf800a8794254bc0530dc47d0c8815f423cbfab74a2fd57fe832637f0d1950c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-mimoflash/source.html",
+    "declared_sha256": "c13acfe879ac0ee4a588b6f7161d9a89b441b7f5cf91815b299341060330ed80",
+    "actual_sha256": "c13acfe879ac0ee4a588b6f7161d9a89b441b7f5cf91815b299341060330ed80",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/benchmarks/vals-qwen27/source.html",
+    "declared_sha256": "416cca54a759f0e9229faf84d30a87788051b42522f4912bbee93e1c99ea1bcc",
+    "actual_sha256": "416cca54a759f0e9229faf84d30a87788051b42522f4912bbee93e1c99ea1bcc",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/code-manifest.json",
+    "declared_sha256": "e6935c5c7e4ddebf6506c184b337480c55d5c9db79c8fb7b80d88f0dc1f93b67",
+    "actual_sha256": "e6935c5c7e4ddebf6506c184b337480c55d5c9db79c8fb7b80d88f0dc1f93b67",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/evidence-note.md",
+    "declared_sha256": "a040e3759988bcb1a85acccf43b9079966ccec47c7997c337a0217a8cbfdb39c",
+    "actual_sha256": "a040e3759988bcb1a85acccf43b9079966ccec47c7997c337a0217a8cbfdb39c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/metadata.json",
+    "declared_sha256": "5c21cef1fbf6941ac5b7c210c6adfd86ea5dd01911183831ca2c661f8331759d",
+    "actual_sha256": "5c21cef1fbf6941ac5b7c210c6adfd86ea5dd01911183831ca2c661f8331759d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/deepseek/api.json",
+    "declared_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "actual_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/deepseek/original.md",
+    "declared_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "actual_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/gemma26/api.json",
+    "declared_sha256": "ae910e2db474ef0adfd1574631f336e6ab2c0c33af86a3a3a579ca8ed4da1291",
+    "actual_sha256": "ae910e2db474ef0adfd1574631f336e6ab2c0c33af86a3a3a579ca8ed4da1291",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/gemma26/original.md",
+    "declared_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "actual_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/gemma31/api.json",
+    "declared_sha256": "975d2f6250d2d49f04046f3e817e9fb90b7c2758854dbe3e51bae6286ca540d6",
+    "actual_sha256": "975d2f6250d2d49f04046f3e817e9fb90b7c2758854dbe3e51bae6286ca540d6",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/gemma31/original.md",
+    "declared_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "actual_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/glm/api.json",
+    "declared_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "actual_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/glm/original.md",
+    "declared_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "actual_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/glmflash/api.json",
+    "declared_sha256": "6654d71d8f04ce4e9eac7133309310fa16836b8d2a4d84889024c47f0b96e1f4",
+    "actual_sha256": "6654d71d8f04ce4e9eac7133309310fa16836b8d2a4d84889024c47f0b96e1f4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/glmflash/original.md",
+    "declared_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "actual_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/kimi/api.json",
+    "declared_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "actual_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/kimi/original.md",
+    "declared_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "actual_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/mimoflash/api.json",
+    "declared_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "actual_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/mimoflash/original.md",
+    "declared_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "actual_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/mimopro/api.json",
+    "declared_sha256": "73220e687d67fc977fd4eac0f6f615b0fb409b9f93460b440150a4237c1e3a15",
+    "actual_sha256": "73220e687d67fc977fd4eac0f6f615b0fb409b9f93460b440150a4237c1e3a15",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/mimopro/original.md",
+    "declared_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "actual_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/qwen27/api.json",
+    "declared_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "actual_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/qwen27/original.md",
+    "declared_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "actual_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/qwen35/api.json",
+    "declared_sha256": "0e613c5c03c5494d064bdee4a45ce7dd349df90654d86a7c915ba78e37bee2c4",
+    "actual_sha256": "0e613c5c03c5494d064bdee4a45ce7dd349df90654d86a7c915ba78e37bee2c4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/modelcards/qwen35/original.md",
+    "declared_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "actual_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/retrieval-manifest.json",
+    "declared_sha256": "4fd5d52cdc3a8c97bfcdada9a4412f838178c8c0c53fcbce7045c657e18effa8",
+    "actual_sha256": "4fd5d52cdc3a8c97bfcdada9a4412f838178c8c0c53fcbce7045c657e18effa8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/supplement-retrievals.json",
+    "declared_sha256": "bb42d9291a0f04bc20581a6f82faf15ebcb99e255bb819759bbad2ddc67fc6c9",
+    "actual_sha256": "bb42d9291a0f04bc20581a6f82faf15ebcb99e255bb819759bbad2ddc67fc6c9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-091/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-091/original.md",
+    "declared_sha256": "03ec9414e96a35a740ba09bd88bd77786f71190c56b56ec4db68db05032c6229",
+    "actual_sha256": "03ec9414e96a35a740ba09bd88bd77786f71190c56b56ec4db68db05032c6229",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-1017-news.html",
+    "declared_sha256": "c557ba334297a0a802282431dd15c9ba6942846a71860051c1c7b9e53d5dc037",
+    "actual_sha256": "c557ba334297a0a802282431dd15c9ba6942846a71860051c1c7b9e53d5dc037",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-pricing.html",
+    "declared_sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66",
+    "actual_sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-open-platform-terms.html",
+    "declared_sha256": "2e4a09165b2d7b0994043e3caa5ecf4075eb67dc3a57c37d16c4d984f06c1cc1",
+    "actual_sha256": "2e4a09165b2d7b0994043e3caa5ecf4075eb67dc3a57c37d16c4d984f06c1cc1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-privacy.html",
+    "declared_sha256": "d9569d0c1b9e2d8e08b52db54bdc315f801d59501b8c054655c409239d58d2ab",
+    "actual_sha256": "d9569d0c1b9e2d8e08b52db54bdc315f801d59501b8c054655c409239d58d2ab",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-regions-future.html",
+    "declared_sha256": "bfd04f41788ca59742ff1bae48a2982630a691763c31e5bcd7d7a5d39dbb44ea",
+    "actual_sha256": "bfd04f41788ca59742ff1bae48a2982630a691763c31e5bcd7d7a5d39dbb44ea",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-sales-2025.html",
+    "declared_sha256": "cca3bcad457038ad58038e967fe658b5ed46ab274fc84a8489285054f632dcd9",
+    "actual_sha256": "cca3bcad457038ad58038e967fe658b5ed46ab274fc84a8489285054f632dcd9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-commercial.html",
+    "declared_sha256": "f62c62f62330ba90756b2089ed3d1333801e553b67a009face977090e798fe1b",
+    "actual_sha256": "f62c62f62330ba90756b2089ed3d1333801e553b67a009face977090e798fe1b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/spark-spec.html",
+    "declared_sha256": "02675731cdfcae028528d8fd9e6cf77fcde24c9524cb42eb1a22acb9ebc68d9b",
+    "actual_sha256": "02675731cdfcae028528d8fd9e6cf77fcde24c9524cb42eb1a22acb9ebc68d9b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/a100-serverstore.html",
+    "declared_sha256": "aaa8e113065cf576185f9f14b2cc1d2aa86d3ce92be05ca95fa034cae6f7f041",
+    "actual_sha256": "aaa8e113065cf576185f9f14b2cc1d2aa86d3ce92be05ca95fa034cae6f7f041",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h100-exxact.html",
+    "declared_sha256": "9a7d75085d3689e48a9d3981c85085e4faf8f81b0ff3ca41b4219bc6dac60f04",
+    "actual_sha256": "9a7d75085d3689e48a9d3981c85085e4faf8f81b0ff3ca41b4219bc6dac60f04",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h200-exxact.html",
+    "declared_sha256": "679c4e2cef7c2a0d7e237fef69335568ae98c672b48c5da273817e96799c8316",
+    "actual_sha256": "679c4e2cef7c2a0d7e237fef69335568ae98c672b48c5da273817e96799c8316",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h200-nvl-vipera.html",
+    "declared_sha256": "35a715dcbddd5aa7ee8225caf2287919f7a417e049fe1660db3b4f7f77b10534",
+    "actual_sha256": "35a715dcbddd5aa7ee8225caf2287919f7a417e049fe1660db3b4f7f77b10534",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/bis-2026-00789.pdf",
+    "declared_sha256": "7fb7dae40d9b277a61ac64df1e1ba09a7bdab98dc6c2ed720aacdfd87edf8125",
+    "actual_sha256": "7fb7dae40d9b277a61ac64df1e1ba09a7bdab98dc6c2ed720aacdfd87edf8125",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/nvidia-2027-q2-10q.pdf",
+    "declared_sha256": "6b5a8dc1ed21e8b2b960fd0de97103af6a2f32ccc8dd91b363f06ea192ecfebd",
+    "actual_sha256": "6b5a8dc1ed21e8b2b960fd0de97103af6a2f32ccc8dd91b363f06ea192ecfebd",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/retrieval-response.bis742.partial.html",
+    "declared_sha256": "f2a6aca0267b54a49a18eb14818cdb3947bc1082413573f01ec848b1aa10e818",
+    "actual_sha256": "f2a6aca0267b54a49a18eb14818cdb3947bc1082413573f01ec848b1aa10e818",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-it-management.html",
+    "declared_sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964",
+    "actual_sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-cyber-218.html",
+    "declared_sha256": "1b2dcdb981e9d98474f73403d9039ceb68009ba95d216ed83ad76801a41e7285",
+    "actual_sha256": "1b2dcdb981e9d98474f73403d9039ceb68009ba95d216ed83ad76801a41e7285",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-cyber-218.pdf",
+    "declared_sha256": "7bc31129844e629a405ad5b27f106de8577cb2af018047a25b1027dba812b347",
+    "actual_sha256": "7bc31129844e629a405ad5b27f106de8577cb2af018047a25b1027dba812b347",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/genai-measures.html",
+    "declared_sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b",
+    "actual_sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/pipl.html",
+    "declared_sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+    "actual_sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/network-data-security.html",
+    "declared_sha256": "cc042f70f1fde42ff59e68c63733569ca99246ec0447274ce5a2a511f37ac775",
+    "actual_sha256": "cc042f70f1fde42ff59e68c63733569ca99246ec0447274ce5a2a511f37ac775",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/cross-border.html",
+    "declared_sha256": "d03e303a9e6c32694a0b9d64ba6bdb5fb63b55fc91469ee195ad3ecfb8f59238",
+    "actual_sha256": "d03e303a9e6c32694a0b9d64ba6bdb5fb63b55fc91469ee195ad3ecfb8f59238",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma-apache2.html",
+    "declared_sha256": "da27adb2735f7ddab2f9d7652283577f08ce117274188626e85b5b1119fa3132",
+    "actual_sha256": "da27adb2735f7ddab2f9d7652283577f08ce117274188626e85b5b1119fa3132",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-deepseek.html",
+    "declared_sha256": "59763d4316654341a08f0a03e460c5dd8ecbc7d698cf784057f901459b086803",
+    "actual_sha256": "59763d4316654341a08f0a03e460c5dd8ecbc7d698cf784057f901459b086803",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-qwen.html",
+    "declared_sha256": "1a7bca90b0139ae7d087ca6caf1cfa3682c14dfe023ea15ff2580cd782666926",
+    "actual_sha256": "1a7bca90b0139ae7d087ca6caf1cfa3682c14dfe023ea15ff2580cd782666926",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/vllm-v032.json",
+    "declared_sha256": "6777e3c986e0485a7d8ce9827cbe186fa9adc13f35e3d93dfc18647cf3d2fc38",
+    "actual_sha256": "6777e3c986e0485a7d8ce9827cbe186fa9adc13f35e3d93dfc18647cf3d2fc38",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/vllm-v032-LICENSE",
+    "declared_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "actual_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-LICENSE",
+    "declared_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "actual_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/api.json",
+    "declared_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "actual_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/README.md",
+    "declared_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "actual_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/config.json",
+    "declared_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "actual_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/LICENSE",
+    "declared_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "actual_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/api.json",
+    "declared_sha256": "91cbf29462315a29705715f69315633fedc9be9fadfdcb7638f7e663b87bd0c7",
+    "actual_sha256": "91cbf29462315a29705715f69315633fedc9be9fadfdcb7638f7e663b87bd0c7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/README.md",
+    "declared_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "actual_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/config.json",
+    "declared_sha256": "93a4693fa9d8392fbfccd4b3c9873f4bfdcb14fdede978b123d07d19675efe99",
+    "actual_sha256": "93a4693fa9d8392fbfccd4b3c9873f4bfdcb14fdede978b123d07d19675efe99",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/LICENSE",
+    "declared_sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+    "actual_sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma31/api.json",
+    "declared_sha256": "7d2f091e81aaadc7008bedeeb6577da3219273ddfbddf6ad23444484c36eac24",
+    "actual_sha256": "7d2f091e81aaadc7008bedeeb6577da3219273ddfbddf6ad23444484c36eac24",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma31/README.md",
+    "declared_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "actual_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma31/config.json",
+    "declared_sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+    "actual_sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma26/api.json",
+    "declared_sha256": "39888f712e3698e7b767f91ffa619d6d376bd66ae640c9938b795597892ce520",
+    "actual_sha256": "39888f712e3698e7b767f91ffa619d6d376bd66ae640c9938b795597892ce520",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma26/README.md",
+    "declared_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "actual_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma26/config.json",
+    "declared_sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+    "actual_sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/api.json",
+    "declared_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "actual_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/README.md",
+    "declared_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "actual_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/config.json",
+    "declared_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "actual_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/LICENSE",
+    "declared_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "actual_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/model.safetensors.index.json",
+    "declared_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "actual_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/api.json",
+    "declared_sha256": "4dfddd20748ec0297de175e83bbc31fc1c40349e54f28d8b2ae8d44ceda76f6a",
+    "actual_sha256": "4dfddd20748ec0297de175e83bbc31fc1c40349e54f28d8b2ae8d44ceda76f6a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/README.md",
+    "declared_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "actual_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/config.json",
+    "declared_sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+    "actual_sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/LICENSE",
+    "declared_sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+    "actual_sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/api.json",
+    "declared_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "actual_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/README.md",
+    "declared_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "actual_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/config.json",
+    "declared_sha256": "3ac72612095574542f7fff847ada8e59d9199dd8af44bdf625d7e02615572e69",
+    "actual_sha256": "3ac72612095574542f7fff847ada8e59d9199dd8af44bdf625d7e02615572e69",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/LICENSE",
+    "declared_sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c",
+    "actual_sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/api.json",
+    "declared_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "actual_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/README.md",
+    "declared_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "actual_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/config.json",
+    "declared_sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213",
+    "actual_sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/LICENSE",
+    "declared_sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887",
+    "actual_sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimoflash/api.json",
+    "declared_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "actual_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimoflash/README.md",
+    "declared_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "actual_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimoflash/config.json",
+    "declared_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+    "actual_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimopro/api.json",
+    "declared_sha256": "7d1b95d77411709355d98d33c8c27c987c214840bd997089b602cb160a7c857d",
+    "actual_sha256": "7d1b95d77411709355d98d33c8c27c987c214840bd997089b602cb160a7c857d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimopro/README.md",
+    "declared_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "actual_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimopro/config.json",
+    "declared_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+    "actual_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/api.json",
+    "declared_sha256": "ac7bcefdc81dc803fe48a71e306fa24b105503b2d0d75a0f6e2890d9b9e1a550",
+    "actual_sha256": "ac7bcefdc81dc803fe48a71e306fa24b105503b2d0d75a0f6e2890d9b9e1a550",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/README.md",
+    "declared_sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a",
+    "actual_sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/config.json",
+    "declared_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "actual_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/LICENSE",
+    "declared_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "actual_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/model.safetensors.index.json",
+    "declared_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "actual_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/api.json",
+    "declared_sha256": "ddfa9b6c07366bf5e987ff473a166d9a590ad51cccc2a881e56fa5cc275b0352",
+    "actual_sha256": "ddfa9b6c07366bf5e987ff473a166d9a590ad51cccc2a881e56fa5cc275b0352",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/README.md",
+    "declared_sha256": "a247d876f5398eed9ae898f32a984083552de57237b5e20714657e1675e26d2e",
+    "actual_sha256": "a247d876f5398eed9ae898f32a984083552de57237b5e20714657e1675e26d2e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/config.json",
+    "declared_sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+    "actual_sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/LICENSE",
+    "declared_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "actual_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/model.safetensors.index.json",
+    "declared_sha256": "f0838c766951bdfe76d6afbdb2771a8f67aaa2231dedb3d33cebd817729843a2",
+    "actual_sha256": "f0838c766951bdfe76d6afbdb2771a8f67aaa2231dedb3d33cebd817729843a2",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-1017-news.html",
+    "declared_sha256": "c557ba334297a0a802282431dd15c9ba6942846a71860051c1c7b9e53d5dc037",
+    "actual_sha256": "c557ba334297a0a802282431dd15c9ba6942846a71860051c1c7b9e53d5dc037",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-pricing.html",
+    "declared_sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66",
+    "actual_sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-open-platform-terms.html",
+    "declared_sha256": "2e4a09165b2d7b0994043e3caa5ecf4075eb67dc3a57c37d16c4d984f06c1cc1",
+    "actual_sha256": "2e4a09165b2d7b0994043e3caa5ecf4075eb67dc3a57c37d16c4d984f06c1cc1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-privacy.html",
+    "declared_sha256": "d9569d0c1b9e2d8e08b52db54bdc315f801d59501b8c054655c409239d58d2ab",
+    "actual_sha256": "d9569d0c1b9e2d8e08b52db54bdc315f801d59501b8c054655c409239d58d2ab",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-regions-future.html",
+    "declared_sha256": "bfd04f41788ca59742ff1bae48a2982630a691763c31e5bcd7d7a5d39dbb44ea",
+    "actual_sha256": "bfd04f41788ca59742ff1bae48a2982630a691763c31e5bcd7d7a5d39dbb44ea",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-sales-2025.html",
+    "declared_sha256": "cca3bcad457038ad58038e967fe658b5ed46ab274fc84a8489285054f632dcd9",
+    "actual_sha256": "cca3bcad457038ad58038e967fe658b5ed46ab274fc84a8489285054f632dcd9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-commercial.html",
+    "declared_sha256": "f62c62f62330ba90756b2089ed3d1333801e553b67a009face977090e798fe1b",
+    "actual_sha256": "f62c62f62330ba90756b2089ed3d1333801e553b67a009face977090e798fe1b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/spark-spec.html",
+    "declared_sha256": "02675731cdfcae028528d8fd9e6cf77fcde24c9524cb42eb1a22acb9ebc68d9b",
+    "actual_sha256": "02675731cdfcae028528d8fd9e6cf77fcde24c9524cb42eb1a22acb9ebc68d9b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/a100-serverstore.html",
+    "declared_sha256": "aaa8e113065cf576185f9f14b2cc1d2aa86d3ce92be05ca95fa034cae6f7f041",
+    "actual_sha256": "aaa8e113065cf576185f9f14b2cc1d2aa86d3ce92be05ca95fa034cae6f7f041",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h100-exxact.html",
+    "declared_sha256": "9a7d75085d3689e48a9d3981c85085e4faf8f81b0ff3ca41b4219bc6dac60f04",
+    "actual_sha256": "9a7d75085d3689e48a9d3981c85085e4faf8f81b0ff3ca41b4219bc6dac60f04",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h200-exxact.html",
+    "declared_sha256": "679c4e2cef7c2a0d7e237fef69335568ae98c672b48c5da273817e96799c8316",
+    "actual_sha256": "679c4e2cef7c2a0d7e237fef69335568ae98c672b48c5da273817e96799c8316",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h200-nvl-vipera.html",
+    "declared_sha256": "35a715dcbddd5aa7ee8225caf2287919f7a417e049fe1660db3b4f7f77b10534",
+    "actual_sha256": "35a715dcbddd5aa7ee8225caf2287919f7a417e049fe1660db3b4f7f77b10534",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/bis-2026-00789.pdf",
+    "declared_sha256": "7fb7dae40d9b277a61ac64df1e1ba09a7bdab98dc6c2ed720aacdfd87edf8125",
+    "actual_sha256": "7fb7dae40d9b277a61ac64df1e1ba09a7bdab98dc6c2ed720aacdfd87edf8125",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/nvidia-2027-q2-10q.pdf",
+    "declared_sha256": "6b5a8dc1ed21e8b2b960fd0de97103af6a2f32ccc8dd91b363f06ea192ecfebd",
+    "actual_sha256": "6b5a8dc1ed21e8b2b960fd0de97103af6a2f32ccc8dd91b363f06ea192ecfebd",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/retrieval-response.bis742.partial.html",
+    "declared_sha256": "f2a6aca0267b54a49a18eb14818cdb3947bc1082413573f01ec848b1aa10e818",
+    "actual_sha256": "f2a6aca0267b54a49a18eb14818cdb3947bc1082413573f01ec848b1aa10e818",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-it-management.html",
+    "declared_sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964",
+    "actual_sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-cyber-218.html",
+    "declared_sha256": "1b2dcdb981e9d98474f73403d9039ceb68009ba95d216ed83ad76801a41e7285",
+    "actual_sha256": "1b2dcdb981e9d98474f73403d9039ceb68009ba95d216ed83ad76801a41e7285",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-cyber-218.pdf",
+    "declared_sha256": "7bc31129844e629a405ad5b27f106de8577cb2af018047a25b1027dba812b347",
+    "actual_sha256": "7bc31129844e629a405ad5b27f106de8577cb2af018047a25b1027dba812b347",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/genai-measures.html",
+    "declared_sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b",
+    "actual_sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/pipl.html",
+    "declared_sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+    "actual_sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/network-data-security.html",
+    "declared_sha256": "cc042f70f1fde42ff59e68c63733569ca99246ec0447274ce5a2a511f37ac775",
+    "actual_sha256": "cc042f70f1fde42ff59e68c63733569ca99246ec0447274ce5a2a511f37ac775",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/cross-border.html",
+    "declared_sha256": "d03e303a9e6c32694a0b9d64ba6bdb5fb63b55fc91469ee195ad3ecfb8f59238",
+    "actual_sha256": "d03e303a9e6c32694a0b9d64ba6bdb5fb63b55fc91469ee195ad3ecfb8f59238",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma-apache2.html",
+    "declared_sha256": "da27adb2735f7ddab2f9d7652283577f08ce117274188626e85b5b1119fa3132",
+    "actual_sha256": "da27adb2735f7ddab2f9d7652283577f08ce117274188626e85b5b1119fa3132",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-deepseek.html",
+    "declared_sha256": "59763d4316654341a08f0a03e460c5dd8ecbc7d698cf784057f901459b086803",
+    "actual_sha256": "59763d4316654341a08f0a03e460c5dd8ecbc7d698cf784057f901459b086803",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-qwen.html",
+    "declared_sha256": "1a7bca90b0139ae7d087ca6caf1cfa3682c14dfe023ea15ff2580cd782666926",
+    "actual_sha256": "1a7bca90b0139ae7d087ca6caf1cfa3682c14dfe023ea15ff2580cd782666926",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/engines/vllm-v032.json",
+    "declared_sha256": "6777e3c986e0485a7d8ce9827cbe186fa9adc13f35e3d93dfc18647cf3d2fc38",
+    "actual_sha256": "6777e3c986e0485a7d8ce9827cbe186fa9adc13f35e3d93dfc18647cf3d2fc38",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/engines/vllm-v032-LICENSE",
+    "declared_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "actual_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-LICENSE",
+    "declared_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "actual_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/api.json",
+    "declared_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "actual_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/README.md",
+    "declared_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "actual_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/config.json",
+    "declared_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "actual_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/LICENSE",
+    "declared_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "actual_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/api.json",
+    "declared_sha256": "91cbf29462315a29705715f69315633fedc9be9fadfdcb7638f7e663b87bd0c7",
+    "actual_sha256": "91cbf29462315a29705715f69315633fedc9be9fadfdcb7638f7e663b87bd0c7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/README.md",
+    "declared_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "actual_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/config.json",
+    "declared_sha256": "93a4693fa9d8392fbfccd4b3c9873f4bfdcb14fdede978b123d07d19675efe99",
+    "actual_sha256": "93a4693fa9d8392fbfccd4b3c9873f4bfdcb14fdede978b123d07d19675efe99",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/LICENSE",
+    "declared_sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+    "actual_sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma31/api.json",
+    "declared_sha256": "7d2f091e81aaadc7008bedeeb6577da3219273ddfbddf6ad23444484c36eac24",
+    "actual_sha256": "7d2f091e81aaadc7008bedeeb6577da3219273ddfbddf6ad23444484c36eac24",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma31/README.md",
+    "declared_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "actual_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma31/config.json",
+    "declared_sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+    "actual_sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma26/api.json",
+    "declared_sha256": "39888f712e3698e7b767f91ffa619d6d376bd66ae640c9938b795597892ce520",
+    "actual_sha256": "39888f712e3698e7b767f91ffa619d6d376bd66ae640c9938b795597892ce520",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma26/README.md",
+    "declared_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "actual_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma26/config.json",
+    "declared_sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+    "actual_sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/api.json",
+    "declared_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "actual_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/README.md",
+    "declared_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "actual_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/config.json",
+    "declared_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "actual_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/LICENSE",
+    "declared_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "actual_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/model.safetensors.index.json",
+    "declared_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "actual_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/api.json",
+    "declared_sha256": "4dfddd20748ec0297de175e83bbc31fc1c40349e54f28d8b2ae8d44ceda76f6a",
+    "actual_sha256": "4dfddd20748ec0297de175e83bbc31fc1c40349e54f28d8b2ae8d44ceda76f6a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/README.md",
+    "declared_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "actual_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/config.json",
+    "declared_sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+    "actual_sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/LICENSE",
+    "declared_sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+    "actual_sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/api.json",
+    "declared_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "actual_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/README.md",
+    "declared_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "actual_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/config.json",
+    "declared_sha256": "3ac72612095574542f7fff847ada8e59d9199dd8af44bdf625d7e02615572e69",
+    "actual_sha256": "3ac72612095574542f7fff847ada8e59d9199dd8af44bdf625d7e02615572e69",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/LICENSE",
+    "declared_sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c",
+    "actual_sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/api.json",
+    "declared_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "actual_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/README.md",
+    "declared_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "actual_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/config.json",
+    "declared_sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213",
+    "actual_sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/LICENSE",
+    "declared_sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887",
+    "actual_sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimoflash/api.json",
+    "declared_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "actual_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimoflash/README.md",
+    "declared_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "actual_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimoflash/config.json",
+    "declared_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+    "actual_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimopro/api.json",
+    "declared_sha256": "7d1b95d77411709355d98d33c8c27c987c214840bd997089b602cb160a7c857d",
+    "actual_sha256": "7d1b95d77411709355d98d33c8c27c987c214840bd997089b602cb160a7c857d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimopro/README.md",
+    "declared_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "actual_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimopro/config.json",
+    "declared_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+    "actual_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/api.json",
+    "declared_sha256": "ac7bcefdc81dc803fe48a71e306fa24b105503b2d0d75a0f6e2890d9b9e1a550",
+    "actual_sha256": "ac7bcefdc81dc803fe48a71e306fa24b105503b2d0d75a0f6e2890d9b9e1a550",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/README.md",
+    "declared_sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a",
+    "actual_sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/config.json",
+    "declared_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "actual_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/LICENSE",
+    "declared_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "actual_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/model.safetensors.index.json",
+    "declared_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "actual_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/api.json",
+    "declared_sha256": "ddfa9b6c07366bf5e987ff473a166d9a590ad51cccc2a881e56fa5cc275b0352",
+    "actual_sha256": "ddfa9b6c07366bf5e987ff473a166d9a590ad51cccc2a881e56fa5cc275b0352",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/README.md",
+    "declared_sha256": "a247d876f5398eed9ae898f32a984083552de57237b5e20714657e1675e26d2e",
+    "actual_sha256": "a247d876f5398eed9ae898f32a984083552de57237b5e20714657e1675e26d2e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/config.json",
+    "declared_sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+    "actual_sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/LICENSE",
+    "declared_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "actual_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/model.safetensors.index.json",
+    "declared_sha256": "f0838c766951bdfe76d6afbdb2771a8f67aaa2231dedb3d33cebd817729843a2",
+    "actual_sha256": "f0838c766951bdfe76d6afbdb2771a8f67aaa2231dedb3d33cebd817729843a2",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/ecfr-742-6.html",
+    "declared_sha256": "6a878ce2afccb5922cfe1a3610c64e306d656b5c52fbe48486d6d2586bc90049",
+    "actual_sha256": "6a878ce2afccb5922cfe1a3610c64e306d656b5c52fbe48486d6d2586bc90049",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-pricing.html",
+    "declared_sha256": "f0ced98aedec2e66d7600e4d2d97df1658fed7f704a3bd81698eaa4c24310445",
+    "actual_sha256": "f0ced98aedec2e66d7600e4d2d97df1658fed7f704a3bd81698eaa4c24310445",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-LICENSE",
+    "declared_sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7",
+    "actual_sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-ee-LICENSE",
+    "declared_sha256": "38099c15fbd2f7f63245cb24a147f8f4b51e84b17a79560b9f74e7bdd4211edd",
+    "actual_sha256": "38099c15fbd2f7f63245cb24a147f8f4b51e84b17a79560b9f74e7bdd4211edd",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/software/open-webui-LICENSE",
+    "declared_sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+    "actual_sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/cybersecurity-2025.html",
+    "declared_sha256": "996925d52a92735a0f9ef4506b7254086ae9ef591a9ea36a6e091788d04fcdc9",
+    "actual_sha256": "996925d52a92735a0f9ef4506b7254086ae9ef591a9ea36a6e091788d04fcdc9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/amac-announcement.html",
+    "declared_sha256": "2db1c3037a84e634997f9c38b70f24f6446f4d2e06b909f265249b6fe3bd2937",
+    "actual_sha256": "2db1c3037a84e634997f9c38b70f24f6446f4d2e06b909f265249b6fe3bd2937",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/metadata.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/amac-t0004-2026.pdf",
+    "declared_sha256": "aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a",
+    "actual_sha256": "aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-extra.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/ecfr-742-6.html",
+    "declared_sha256": "6a878ce2afccb5922cfe1a3610c64e306d656b5c52fbe48486d6d2586bc90049",
+    "actual_sha256": "6a878ce2afccb5922cfe1a3610c64e306d656b5c52fbe48486d6d2586bc90049",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-extra.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-pricing.html",
+    "declared_sha256": "f0ced98aedec2e66d7600e4d2d97df1658fed7f704a3bd81698eaa4c24310445",
+    "actual_sha256": "f0ced98aedec2e66d7600e4d2d97df1658fed7f704a3bd81698eaa4c24310445",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-extra.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-LICENSE",
+    "declared_sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7",
+    "actual_sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-extra.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-ee-LICENSE",
+    "declared_sha256": "38099c15fbd2f7f63245cb24a147f8f4b51e84b17a79560b9f74e7bdd4211edd",
+    "actual_sha256": "38099c15fbd2f7f63245cb24a147f8f4b51e84b17a79560b9f74e7bdd4211edd",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-extra.json",
+    "path": "knowledge-base/sources/TECH-092/software/open-webui-LICENSE",
+    "declared_sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+    "actual_sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-extra.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/cybersecurity-2025.html",
+    "declared_sha256": "996925d52a92735a0f9ef4506b7254086ae9ef591a9ea36a6e091788d04fcdc9",
+    "actual_sha256": "996925d52a92735a0f9ef4506b7254086ae9ef591a9ea36a6e091788d04fcdc9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-extra.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/amac-announcement.html",
+    "declared_sha256": "2db1c3037a84e634997f9c38b70f24f6446f4d2e06b909f265249b6fe3bd2937",
+    "actual_sha256": "2db1c3037a84e634997f9c38b70f24f6446f4d2e06b909f265249b6fe3bd2937",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/retrieval-extra.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/amac-t0004-2026.pdf",
+    "declared_sha256": "aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a",
+    "actual_sha256": "aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-commercial-fulltext.txt",
+    "declared_sha256": "b5062958a31623e04791618d50bb4ea12c813ef213a992bde190d66bf637d6b6",
+    "actual_sha256": "b5062958a31623e04791618d50bb4ea12c813ef213a992bde190d66bf637d6b6",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-commercial.html",
+    "declared_sha256": "f62c62f62330ba90756b2089ed3d1333801e553b67a009face977090e798fe1b",
+    "actual_sha256": "f62c62f62330ba90756b2089ed3d1333801e553b67a009face977090e798fe1b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-commercial.md",
+    "declared_sha256": "bf9ed96ac5abef5736c311c2f4736434236f6f9b78dfdba85e760ce9c65a242d",
+    "actual_sha256": "bf9ed96ac5abef5736c311c2f4736434236f6f9b78dfdba85e760ce9c65a242d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-regions-future-fulltext.txt",
+    "declared_sha256": "153f16c82e26e9b7085f49d094ed220e5aa8f967e9596880572bc2a3cd5c6ca5",
+    "actual_sha256": "153f16c82e26e9b7085f49d094ed220e5aa8f967e9596880572bc2a3cd5c6ca5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-regions-future.html",
+    "declared_sha256": "bfd04f41788ca59742ff1bae48a2982630a691763c31e5bcd7d7a5d39dbb44ea",
+    "actual_sha256": "bfd04f41788ca59742ff1bae48a2982630a691763c31e5bcd7d7a5d39dbb44ea",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-regions-future.md",
+    "declared_sha256": "8744569fdf94f7efbca654e08ee639b72a7c48ceb0c7f6daf753b4a8b78965b4",
+    "actual_sha256": "8744569fdf94f7efbca654e08ee639b72a7c48ceb0c7f6daf753b4a8b78965b4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-sales-2025.html",
+    "declared_sha256": "cca3bcad457038ad58038e967fe658b5ed46ab274fc84a8489285054f632dcd9",
+    "actual_sha256": "cca3bcad457038ad58038e967fe658b5ed46ab274fc84a8489285054f632dcd9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/anthropic-sales-2025.md",
+    "declared_sha256": "0c44d77c9a5d4e95765639248a1f871128353fe2ed75d08b51a513b532619b0e",
+    "actual_sha256": "0c44d77c9a5d4e95765639248a1f871128353fe2ed75d08b51a513b532619b0e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-1017-news.html",
+    "declared_sha256": "c557ba334297a0a802282431dd15c9ba6942846a71860051c1c7b9e53d5dc037",
+    "actual_sha256": "c557ba334297a0a802282431dd15c9ba6942846a71860051c1c7b9e53d5dc037",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-1017-news.md",
+    "declared_sha256": "67f8d68cc5fbdf62cb46a43eb8d3922283550eb91a67ec69e9fd7ec5e879ae86",
+    "actual_sha256": "67f8d68cc5fbdf62cb46a43eb8d3922283550eb91a67ec69e9fd7ec5e879ae86",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-open-platform-terms.html",
+    "declared_sha256": "2e4a09165b2d7b0994043e3caa5ecf4075eb67dc3a57c37d16c4d984f06c1cc1",
+    "actual_sha256": "2e4a09165b2d7b0994043e3caa5ecf4075eb67dc3a57c37d16c4d984f06c1cc1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-open-platform-terms.md",
+    "declared_sha256": "7a421ba4ccb00cd446e04ccf252b5143dffbeabbe85f92254c1b6fc4a00a9d6b",
+    "actual_sha256": "7a421ba4ccb00cd446e04ccf252b5143dffbeabbe85f92254c1b6fc4a00a9d6b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-pricing.html",
+    "declared_sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66",
+    "actual_sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-pricing.md",
+    "declared_sha256": "2d7a166f3cea0cea5933060a060c4edef14c732252a51add34ca69d6af6ac455",
+    "actual_sha256": "2d7a166f3cea0cea5933060a060c4edef14c732252a51add34ca69d6af6ac455",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-privacy.html",
+    "declared_sha256": "d9569d0c1b9e2d8e08b52db54bdc315f801d59501b8c054655c409239d58d2ab",
+    "actual_sha256": "d9569d0c1b9e2d8e08b52db54bdc315f801d59501b8c054655c409239d58d2ab",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/api/deepseek-privacy.md",
+    "declared_sha256": "4f693456fc7555a100d003c2d2608d66ab32d64f62de942f6fcb14cb1ae48548",
+    "actual_sha256": "4f693456fc7555a100d003c2d2608d66ab32d64f62de942f6fcb14cb1ae48548",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-LICENSE",
+    "declared_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "actual_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-deepseek.html",
+    "declared_sha256": "59763d4316654341a08f0a03e460c5dd8ecbc7d698cf784057f901459b086803",
+    "actual_sha256": "59763d4316654341a08f0a03e460c5dd8ecbc7d698cf784057f901459b086803",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-deepseek.md",
+    "declared_sha256": "3ee93b0416c803158908ccdbcff985e0e5ef761d2cbcbe06bdbc57750bf20db8",
+    "actual_sha256": "3ee93b0416c803158908ccdbcff985e0e5ef761d2cbcbe06bdbc57750bf20db8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-qwen.html",
+    "declared_sha256": "1a7bca90b0139ae7d087ca6caf1cfa3682c14dfe023ea15ff2580cd782666926",
+    "actual_sha256": "1a7bca90b0139ae7d087ca6caf1cfa3682c14dfe023ea15ff2580cd782666926",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/lmcache-qwen.md",
+    "declared_sha256": "8e12950e1018179c594d42b8963a64e82ea774e03b5d5ef247f1187db6b4e44d",
+    "actual_sha256": "8e12950e1018179c594d42b8963a64e82ea774e03b5d5ef247f1187db6b4e44d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/vllm-v032-LICENSE",
+    "declared_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "actual_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/engines/vllm-v032.json",
+    "declared_sha256": "6777e3c986e0485a7d8ce9827cbe186fa9adc13f35e3d93dfc18647cf3d2fc38",
+    "actual_sha256": "6777e3c986e0485a7d8ce9827cbe186fa9adc13f35e3d93dfc18647cf3d2fc38",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/evidence-note.md",
+    "declared_sha256": "4d8a23b3bb5851e0158e451c287b63d6e68bfa81de1ebb0d8cf5374a53a47848",
+    "actual_sha256": "4d8a23b3bb5851e0158e451c287b63d6e68bfa81de1ebb0d8cf5374a53a47848",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/a100-serverstore-fulltext.txt",
+    "declared_sha256": "ef55a355a1f2a94e88b28502a1873fdbb2d7d0e69d007a87664e00902c767be5",
+    "actual_sha256": "ef55a355a1f2a94e88b28502a1873fdbb2d7d0e69d007a87664e00902c767be5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/a100-serverstore.html",
+    "declared_sha256": "aaa8e113065cf576185f9f14b2cc1d2aa86d3ce92be05ca95fa034cae6f7f041",
+    "actual_sha256": "aaa8e113065cf576185f9f14b2cc1d2aa86d3ce92be05ca95fa034cae6f7f041",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/bis-2026-00789.md",
+    "declared_sha256": "48b41faf654dbe785d48bbf2355a5d40b661e9749e72580032e6a0fd0019c8b2",
+    "actual_sha256": "48b41faf654dbe785d48bbf2355a5d40b661e9749e72580032e6a0fd0019c8b2",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/bis-2026-00789.pdf",
+    "declared_sha256": "7fb7dae40d9b277a61ac64df1e1ba09a7bdab98dc6c2ed720aacdfd87edf8125",
+    "actual_sha256": "7fb7dae40d9b277a61ac64df1e1ba09a7bdab98dc6c2ed720aacdfd87edf8125",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/ecfr-742-6-fulltext.txt",
+    "declared_sha256": "364ba56c86250128696ae9a9db70eb26547b6c72fe27724f8456669c0835e721",
+    "actual_sha256": "364ba56c86250128696ae9a9db70eb26547b6c72fe27724f8456669c0835e721",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/ecfr-742-6.html",
+    "declared_sha256": "6a878ce2afccb5922cfe1a3610c64e306d656b5c52fbe48486d6d2586bc90049",
+    "actual_sha256": "6a878ce2afccb5922cfe1a3610c64e306d656b5c52fbe48486d6d2586bc90049",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/ecfr-742-6.md",
+    "declared_sha256": "44f436d1cd42e8a24c6f417cda67ddbba7cbebf2e07433d584b3950ce3b1f8f0",
+    "actual_sha256": "44f436d1cd42e8a24c6f417cda67ddbba7cbebf2e07433d584b3950ce3b1f8f0",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h100-exxact.html",
+    "declared_sha256": "9a7d75085d3689e48a9d3981c85085e4faf8f81b0ff3ca41b4219bc6dac60f04",
+    "actual_sha256": "9a7d75085d3689e48a9d3981c85085e4faf8f81b0ff3ca41b4219bc6dac60f04",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h100-exxact.md",
+    "declared_sha256": "2d3f528b1a8eb7cfd0153965f6860df4f6e1cbb48d3a21c367c67dc608be60d7",
+    "actual_sha256": "2d3f528b1a8eb7cfd0153965f6860df4f6e1cbb48d3a21c367c67dc608be60d7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h200-exxact.html",
+    "declared_sha256": "679c4e2cef7c2a0d7e237fef69335568ae98c672b48c5da273817e96799c8316",
+    "actual_sha256": "679c4e2cef7c2a0d7e237fef69335568ae98c672b48c5da273817e96799c8316",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h200-exxact.md",
+    "declared_sha256": "d6cfd16d4bb3522283c2ba369c00c170752cff0aed1f152494b921bbd7c300d9",
+    "actual_sha256": "d6cfd16d4bb3522283c2ba369c00c170752cff0aed1f152494b921bbd7c300d9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h200-nvl-vipera-fulltext.txt",
+    "declared_sha256": "e5d63036f53451b5b50dd9d8db20323be74bece761aa9a59a60b241b9264a58b",
+    "actual_sha256": "e5d63036f53451b5b50dd9d8db20323be74bece761aa9a59a60b241b9264a58b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h200-nvl-vipera.html",
+    "declared_sha256": "35a715dcbddd5aa7ee8225caf2287919f7a417e049fe1660db3b4f7f77b10534",
+    "actual_sha256": "35a715dcbddd5aa7ee8225caf2287919f7a417e049fe1660db3b4f7f77b10534",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/h200-nvl-vipera.md",
+    "declared_sha256": "2d61235ff8a380506cf974979cad452ec8a6240309f406f69acece26e221fbba",
+    "actual_sha256": "2d61235ff8a380506cf974979cad452ec8a6240309f406f69acece26e221fbba",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/nvidia-2027-q2-10q.md",
+    "declared_sha256": "652979e24a1e1468d3a1e181062e1b152319ccb2ea0adaf0cb60076f55671ba4",
+    "actual_sha256": "652979e24a1e1468d3a1e181062e1b152319ccb2ea0adaf0cb60076f55671ba4",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/nvidia-2027-q2-10q.pdf",
+    "declared_sha256": "6b5a8dc1ed21e8b2b960fd0de97103af6a2f32ccc8dd91b363f06ea192ecfebd",
+    "actual_sha256": "6b5a8dc1ed21e8b2b960fd0de97103af6a2f32ccc8dd91b363f06ea192ecfebd",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/retrieval-response.bis742.partial.html",
+    "declared_sha256": "f2a6aca0267b54a49a18eb14818cdb3947bc1082413573f01ec848b1aa10e818",
+    "actual_sha256": "f2a6aca0267b54a49a18eb14818cdb3947bc1082413573f01ec848b1aa10e818",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/spark-spec.html",
+    "declared_sha256": "02675731cdfcae028528d8fd9e6cf77fcde24c9524cb42eb1a22acb9ebc68d9b",
+    "actual_sha256": "02675731cdfcae028528d8fd9e6cf77fcde24c9524cb42eb1a22acb9ebc68d9b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/spark-spec.md",
+    "declared_sha256": "60a38d5f322b22766c219026ef92f056d9f817d721831174685e8f5420b469fe",
+    "actual_sha256": "60a38d5f322b22766c219026ef92f056d9f817d721831174685e8f5420b469fe",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/spark-store-extraction.json",
+    "declared_sha256": "2f5b04ae6a3ffff8c97758572266f09d563da09b68fad41712eeaa3db5f721ed",
+    "actual_sha256": "2f5b04ae6a3ffff8c97758572266f09d563da09b68fad41712eeaa3db5f721ed",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/hardware/spark-store.md",
+    "declared_sha256": "caebb0d12ce61022426fd24a73572f5f5a23f4cd6b411402c97d541fbf5c64fb",
+    "actual_sha256": "caebb0d12ce61022426fd24a73572f5f5a23f4cd6b411402c97d541fbf5c64fb",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/model-revisions.json",
+    "declared_sha256": "b527ebf57779614752c38d26f2b7dc76ab424a95a5ae7097609e2963a5b4b905",
+    "actual_sha256": "b527ebf57779614752c38d26f2b7dc76ab424a95a5ae7097609e2963a5b4b905",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/LICENSE",
+    "declared_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "actual_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/README.md",
+    "declared_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "actual_sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/api.json",
+    "declared_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "actual_sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/config.json",
+    "declared_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "actual_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek/model.safetensors.index.json",
+    "declared_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "actual_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/LICENSE",
+    "declared_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "actual_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/README.md",
+    "declared_sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a",
+    "actual_sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/api.json",
+    "declared_sha256": "ac7bcefdc81dc803fe48a71e306fa24b105503b2d0d75a0f6e2890d9b9e1a550",
+    "actual_sha256": "ac7bcefdc81dc803fe48a71e306fa24b105503b2d0d75a0f6e2890d9b9e1a550",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/config.json",
+    "declared_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "actual_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/deepseek1017/model.safetensors.index.json",
+    "declared_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "actual_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma-apache2.html",
+    "declared_sha256": "da27adb2735f7ddab2f9d7652283577f08ce117274188626e85b5b1119fa3132",
+    "actual_sha256": "da27adb2735f7ddab2f9d7652283577f08ce117274188626e85b5b1119fa3132",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma-apache2.md",
+    "declared_sha256": "93d0e33eeccbb069d93603ffa13d32ef0747f04f350056252da7a20f88ec3af9",
+    "actual_sha256": "93d0e33eeccbb069d93603ffa13d32ef0747f04f350056252da7a20f88ec3af9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma26/README.md",
+    "declared_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "actual_sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma26/api.json",
+    "declared_sha256": "39888f712e3698e7b767f91ffa619d6d376bd66ae640c9938b795597892ce520",
+    "actual_sha256": "39888f712e3698e7b767f91ffa619d6d376bd66ae640c9938b795597892ce520",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma26/config.json",
+    "declared_sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+    "actual_sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma31/README.md",
+    "declared_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "actual_sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma31/api.json",
+    "declared_sha256": "7d2f091e81aaadc7008bedeeb6577da3219273ddfbddf6ad23444484c36eac24",
+    "actual_sha256": "7d2f091e81aaadc7008bedeeb6577da3219273ddfbddf6ad23444484c36eac24",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/gemma31/config.json",
+    "declared_sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+    "actual_sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/LICENSE",
+    "declared_sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c",
+    "actual_sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/README.md",
+    "declared_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "actual_sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/api.json",
+    "declared_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "actual_sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glm/config.json",
+    "declared_sha256": "3ac72612095574542f7fff847ada8e59d9199dd8af44bdf625d7e02615572e69",
+    "actual_sha256": "3ac72612095574542f7fff847ada8e59d9199dd8af44bdf625d7e02615572e69",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/LICENSE",
+    "declared_sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+    "actual_sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/README.md",
+    "declared_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "actual_sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/api.json",
+    "declared_sha256": "4dfddd20748ec0297de175e83bbc31fc1c40349e54f28d8b2ae8d44ceda76f6a",
+    "actual_sha256": "4dfddd20748ec0297de175e83bbc31fc1c40349e54f28d8b2ae8d44ceda76f6a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/glmflash/config.json",
+    "declared_sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+    "actual_sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/LICENSE",
+    "declared_sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887",
+    "actual_sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/README.md",
+    "declared_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "actual_sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/api.json",
+    "declared_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "actual_sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/kimi/config.json",
+    "declared_sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213",
+    "actual_sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimoflash/README.md",
+    "declared_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "actual_sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimoflash/api.json",
+    "declared_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "actual_sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimoflash/config.json",
+    "declared_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+    "actual_sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimopro/README.md",
+    "declared_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "actual_sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimopro/api.json",
+    "declared_sha256": "7d1b95d77411709355d98d33c8c27c987c214840bd997089b602cb160a7c857d",
+    "actual_sha256": "7d1b95d77411709355d98d33c8c27c987c214840bd997089b602cb160a7c857d",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/mimopro/config.json",
+    "declared_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+    "actual_sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/LICENSE",
+    "declared_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "actual_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/README.md",
+    "declared_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "actual_sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/api.json",
+    "declared_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "actual_sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27/config.json",
+    "declared_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "actual_sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/LICENSE",
+    "declared_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "actual_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/README.md",
+    "declared_sha256": "a247d876f5398eed9ae898f32a984083552de57237b5e20714657e1675e26d2e",
+    "actual_sha256": "a247d876f5398eed9ae898f32a984083552de57237b5e20714657e1675e26d2e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/api.json",
+    "declared_sha256": "ddfa9b6c07366bf5e987ff473a166d9a590ad51cccc2a881e56fa5cc275b0352",
+    "actual_sha256": "ddfa9b6c07366bf5e987ff473a166d9a590ad51cccc2a881e56fa5cc275b0352",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/config.json",
+    "declared_sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+    "actual_sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen27fp8/model.safetensors.index.json",
+    "declared_sha256": "f0838c766951bdfe76d6afbdb2771a8f67aaa2231dedb3d33cebd817729843a2",
+    "actual_sha256": "f0838c766951bdfe76d6afbdb2771a8f67aaa2231dedb3d33cebd817729843a2",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/LICENSE",
+    "declared_sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+    "actual_sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/README.md",
+    "declared_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "actual_sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/api.json",
+    "declared_sha256": "91cbf29462315a29705715f69315633fedc9be9fadfdcb7638f7e663b87bd0c7",
+    "actual_sha256": "91cbf29462315a29705715f69315633fedc9be9fadfdcb7638f7e663b87bd0c7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/models/qwen35/config.json",
+    "declared_sha256": "93a4693fa9d8392fbfccd4b3c9873f4bfdcb14fdede978b123d07d19675efe99",
+    "actual_sha256": "93a4693fa9d8392fbfccd4b3c9873f4bfdcb14fdede978b123d07d19675efe99",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/original.md",
+    "declared_sha256": "1a77e5b33e954967265bab47c893ad1ae11371da86ea7a716f6b98e55794c9e9",
+    "actual_sha256": "1a77e5b33e954967265bab47c893ad1ae11371da86ea7a716f6b98e55794c9e9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/amac-announcement.html",
+    "declared_sha256": "2db1c3037a84e634997f9c38b70f24f6446f4d2e06b909f265249b6fe3bd2937",
+    "actual_sha256": "2db1c3037a84e634997f9c38b70f24f6446f4d2e06b909f265249b6fe3bd2937",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/amac-announcement.md",
+    "declared_sha256": "b096b165ef3e184e7cb27743d86bcdc1cdba7645b291c094f6ac409c5ed54d4e",
+    "actual_sha256": "b096b165ef3e184e7cb27743d86bcdc1cdba7645b291c094f6ac409c5ed54d4e",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/amac-t0004-2026.md",
+    "declared_sha256": "af1f72d4136e8727750abdf4f1d48c783542af647e9feb94a27bcb5c92f6f545",
+    "actual_sha256": "af1f72d4136e8727750abdf4f1d48c783542af647e9feb94a27bcb5c92f6f545",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/amac-t0004-2026.pdf",
+    "declared_sha256": "aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a",
+    "actual_sha256": "aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/cross-border.html",
+    "declared_sha256": "d03e303a9e6c32694a0b9d64ba6bdb5fb63b55fc91469ee195ad3ecfb8f59238",
+    "actual_sha256": "d03e303a9e6c32694a0b9d64ba6bdb5fb63b55fc91469ee195ad3ecfb8f59238",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/cross-border.md",
+    "declared_sha256": "934c121b89324b04e47316bdd699fe0fd8c7b289d1aa61f3df4184de28995fa0",
+    "actual_sha256": "934c121b89324b04e47316bdd699fe0fd8c7b289d1aa61f3df4184de28995fa0",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-cyber-218.html",
+    "declared_sha256": "1b2dcdb981e9d98474f73403d9039ceb68009ba95d216ed83ad76801a41e7285",
+    "actual_sha256": "1b2dcdb981e9d98474f73403d9039ceb68009ba95d216ed83ad76801a41e7285",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-cyber-218.md",
+    "declared_sha256": "d8445e62ef205db9ac475d94f604448886bde9524658bf5aca8ac3cfbf0aadd5",
+    "actual_sha256": "d8445e62ef205db9ac475d94f604448886bde9524658bf5aca8ac3cfbf0aadd5",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-cyber-218.pdf",
+    "declared_sha256": "7bc31129844e629a405ad5b27f106de8577cb2af018047a25b1027dba812b347",
+    "actual_sha256": "7bc31129844e629a405ad5b27f106de8577cb2af018047a25b1027dba812b347",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-it-management.html",
+    "declared_sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964",
+    "actual_sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/csrc-it-management.md",
+    "declared_sha256": "d3e114abaabb966983e2a0ca400b3a5af972727c10e11209f7f5213a5ff8327b",
+    "actual_sha256": "d3e114abaabb966983e2a0ca400b3a5af972727c10e11209f7f5213a5ff8327b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/cybersecurity-2025.html",
+    "declared_sha256": "996925d52a92735a0f9ef4506b7254086ae9ef591a9ea36a6e091788d04fcdc9",
+    "actual_sha256": "996925d52a92735a0f9ef4506b7254086ae9ef591a9ea36a6e091788d04fcdc9",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/cybersecurity-2025.md",
+    "declared_sha256": "566db1d567c86d8976ea07dabf457d000a78fa2a265d0cc19fec58770aae635b",
+    "actual_sha256": "566db1d567c86d8976ea07dabf457d000a78fa2a265d0cc19fec58770aae635b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/genai-measures.html",
+    "declared_sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b",
+    "actual_sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/genai-measures.md",
+    "declared_sha256": "5e806bb8601d06d4562e1a88fe43890f6f04db44ff57cb8f97ea39378e0b622c",
+    "actual_sha256": "5e806bb8601d06d4562e1a88fe43890f6f04db44ff57cb8f97ea39378e0b622c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/network-data-security.html",
+    "declared_sha256": "cc042f70f1fde42ff59e68c63733569ca99246ec0447274ce5a2a511f37ac775",
+    "actual_sha256": "cc042f70f1fde42ff59e68c63733569ca99246ec0447274ce5a2a511f37ac775",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/network-data-security.md",
+    "declared_sha256": "3d733132d74dc4fc3a3bfe532f49cc71f72db2d824a330eb5edbf03f2835c8e1",
+    "actual_sha256": "3d733132d74dc4fc3a3bfe532f49cc71f72db2d824a330eb5edbf03f2835c8e1",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/pipl.html",
+    "declared_sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+    "actual_sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/regulation/pipl.md",
+    "declared_sha256": "62e03e32d29b80bab4d2e296eeeba89e16b46956a4ae24330355c503fecb957c",
+    "actual_sha256": "62e03e32d29b80bab4d2e296eeeba89e16b46956a4ae24330355c503fecb957c",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/retrieval-batch-01.json",
+    "declared_sha256": "8e066c2122097e1b2750efbd8858699b8fe8963dafb03162d0f09a9149039824",
+    "actual_sha256": "8e066c2122097e1b2750efbd8858699b8fe8963dafb03162d0f09a9149039824",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/retrieval-extra.json",
+    "declared_sha256": "0ad0edbaf0d0b0f9fe3ac2d828f9a2c1f237b36b7a339760b7f4dc5275145be6",
+    "actual_sha256": "0ad0edbaf0d0b0f9fe3ac2d828f9a2c1f237b36b7a339760b7f4dc5275145be6",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/retrieval-manifest.json",
+    "declared_sha256": "c4c24e7aa1995cc30bf770bdb2bda2ab7787bec04e0b41c95daf79487adf2b44",
+    "actual_sha256": "c4c24e7aa1995cc30bf770bdb2bda2ab7787bec04e0b41c95daf79487adf2b44",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-LICENSE",
+    "declared_sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7",
+    "actual_sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-ee-LICENSE",
+    "declared_sha256": "38099c15fbd2f7f63245cb24a147f8f4b51e84b17a79560b9f74e7bdd4211edd",
+    "actual_sha256": "38099c15fbd2f7f63245cb24a147f8f4b51e84b17a79560b9f74e7bdd4211edd",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-pricing.html",
+    "declared_sha256": "f0ced98aedec2e66d7600e4d2d97df1658fed7f704a3bd81698eaa4c24310445",
+    "actual_sha256": "f0ced98aedec2e66d7600e4d2d97df1658fed7f704a3bd81698eaa4c24310445",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/software/onyx-pricing.md",
+    "declared_sha256": "6a071c29f07d634ef0cef17aca86e8f21087f02036d165935f0ed86f00b3f0a8",
+    "actual_sha256": "6a071c29f07d634ef0cef17aca86e8f21087f02036d165935f0ed86f00b3f0a8",
+    "status": "passed"
+  },
+  {
+    "manifest": "knowledge-base/sources/TECH-092/file-manifest.json",
+    "path": "knowledge-base/sources/TECH-092/software/open-webui-LICENSE",
+    "declared_sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+    "actual_sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+    "status": "passed"
+  }
+]

@@ -1,0 +1,606 @@
+{
+  "date": "2026-10-20",
+  "passed": true,
+  "checks": [
+    {
+      "name": "42 slides, 34 main and 8 appendices",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source hash: knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source hash: knowledge-base/infrastructure/data/tco-2026-10-20/inputs.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source hash: knowledge-base/infrastructure/data/final-configurations-2026-10-20/summary.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source hash: knowledge-base/models/data/public-benchmarks-2026-10-20/finance-agent-v2.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source hash: knowledge-base/models/data/public-benchmarks-2026-10-20/extractbench.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source hash: knowledge-base/infrastructure/data/final-source-refresh-2026-10-20/model-artifact-comparison.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "reviewed slide-content hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "matching speaker-note hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "personal TCO bars agree to displayed 0.01万元",
+      "pass": true,
+      "detail": [
+        9.04656436522913,
+        1.65523679407698,
+        3.745959679425
+      ]
+    },
+    {
+      "name": "company TCO bars agree to displayed 0.01万元",
+      "pass": true,
+      "detail": [
+        392.54099380902784,
+        68.3431316396625,
+        148.613836578125
+      ]
+    },
+    {
+      "name": "company low TCO table",
+      "pass": true,
+      "detail": [
+        "391.70",
+        "64.26",
+        "89.52"
+      ]
+    },
+    {
+      "name": "company base TCO table",
+      "pass": true,
+      "detail": [
+        "392.54",
+        "68.34",
+        "148.61"
+      ]
+    },
+    {
+      "name": "company high TCO table",
+      "pass": true,
+      "detail": [
+        "712.78",
+        "77.23",
+        "277.25"
+      ]
+    },
+    {
+      "name": "8-round input ledger",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new external input ledger",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "output ledger",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Spark three 512K sessions fit after reserve",
+      "pass": true,
+      "detail": {
+        "pool": 1626216,
+        "remaining_after_one_1M": 626216
+      }
+    },
+    {
+      "name": "native checkpoint decomposition",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "42 native PPTX slides and notes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "anonymous PPTX content and properties",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 08",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 09",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 22",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 29",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 31",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 32",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 33",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 34",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 35",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 36",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 37",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 38",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 39",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 41",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "speaker note 42",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "42 PDF pages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 01 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 02 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 03 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 04 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 05 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 06 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 07 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 08 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 09 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 10 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 11 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 12 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 13 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 14 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 15 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 16 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 17 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 18 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 19 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 20 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 21 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 22 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 23 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 24 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 25 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 26 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 27 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 28 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 29 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 30 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 31 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 32 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 33 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 34 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 35 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 36 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 37 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 38 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 39 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 40 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 41 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF page 42 has complete Chinese title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source page has all eight linked destinations",
+      "pass": true,
+      "detail": {
+        "links": 37
+      }
+    },
+    {
+      "name": "anonymous PDF content and metadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF metadata identifies the report",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PPTX matches finalization receipt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "native tables/charts and import passed",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "outputs": [
+    {
+      "path": "output/final-report-2026-10-20.pptx",
+      "sha256": "fcc452cca0ea2d95b998f01bdb52308e4b33d63eb0c1f233ee1cfa85ca890693",
+      "bytes": 229328
+    },
+    {
+      "path": "output/final-report-2026-10-20.pdf",
+      "sha256": "0f15dcda2257b528835ba1369767fc49dd5b79fa06b8a2068595b67072e1757d",
+      "bytes": 1220368
+    },
+    {
+      "path": "speaker-notes.md",
+      "sha256": "4256e09c3e050b2f4e73890b3be101f0e3047e067c0531a621c4094bdfa6df6c",
+      "bytes": 25464
+    }
+  ],
+  "visual_review": "42 slide previews reviewed; final 11 changed pages reviewed by the Chinese-teacher agent. PDF renders reviewed separately in editorial/chinese-teacher-final-review.md.",
+  "layout_heuristic_warning": "P36 estimated native table bottom exceeds the callout boundary by 0.0582 inches; the rendered table and last row are visually complete. This is a heuristic warning, not a reported structural finding.",
+  "native_powerpoint_opened": false
+}

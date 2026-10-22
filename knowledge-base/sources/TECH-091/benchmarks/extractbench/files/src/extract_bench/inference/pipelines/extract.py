@@ -1,0 +1,923 @@
+"""Extract pipelines - structured data extraction from documents.
+
+The registered set covers LlamaExtract tiers, one-shot VLM/LLM APIs, two-stage
+(parse -> text extract) baselines, coding agents, commercial extraction APIs,
+and open-weight pipelines.
+"""
+
+from typing import Any
+
+from extract_bench.schemas.pipeline import PipelineSpec
+from extract_bench.schemas.product import ProductType
+
+GRANULAR_BBOX_OUTPUT_OPTIONS = {
+    "granular_bboxes": ["word"],
+}
+
+
+def _granular_parse_config(tier: str) -> dict[str, Any]:
+    """Parse config emitting word-level boxes at the given tier."""
+    return {
+        "tier": tier,
+        "version": "latest",
+        "disable_cache": True,
+        "output_options": GRANULAR_BBOX_OUTPUT_OPTIONS,
+    }
+
+
+def _pipeline_spec(
+    *,
+    pipeline_name: str,
+    provider_name: str,
+    config: dict[str, Any],
+    per_file_timeout: float | None = None,
+) -> PipelineSpec:
+    return PipelineSpec(
+        pipeline_name=pipeline_name,
+        provider_name=provider_name,
+        product_type=ProductType.EXTRACT,
+        config=config,
+        per_file_timeout=per_file_timeout,
+    )
+
+
+def register_extract_pipelines(register_fn) -> None:  # type: ignore[no-untyped-def]
+    """Register the public extract pipeline roster."""
+
+    # =========================================================================
+    # LlamaExtract (hosted V2 extract API, /api/v2/extract)
+    # =========================================================================
+
+    for _tier in ("cost_effective", "agentic", "agentic_plus"):
+        register_fn(
+            _pipeline_spec(
+                pipeline_name=f"llamaextract_{_tier}",
+                provider_name="llamaextract_v2",
+                config={
+                    "tier": _tier,
+                    "parse_tier": _tier,
+                    "timeout": 3000,
+                    "cite_sources": True,
+                    "parse_config": _granular_parse_config(_tier),
+                },
+                # The provider polls the hosted job for up to `timeout` seconds; give
+                # the runner-level watchdog headroom past that so long documents are
+                # not killed (and re-submitted) at the 600s run default.
+                per_file_timeout=3600.0,
+            )
+        )
+
+    for _tier in ("cost_effective", "agentic"):
+        register_fn(
+            _pipeline_spec(
+                pipeline_name=f"llamaextract_{_tier}_standard_bbox",
+                provider_name="llamaextract_v2",
+                config={
+                    "tier": _tier,
+                    "cite_sources": True,
+                },
+            )
+        )
+
+    # =========================================================================
+    # One-shot VLM/LLM APIs (schema-guided structured output over the file)
+    # =========================================================================
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="openai_gpt_6_astra_reasoning_low_extract_oneshot_structured_output_file",
+            provider_name="openai_extract",
+            config={
+                "model": "gpt-6-astra",
+                "additional_properties_false": True,
+                "reasoning_effort": "low",
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="openai_gpt_5_4_extract_oneshot_structured_output_file",
+            provider_name="openai_extract",
+            config={
+                "model": "gpt-5.4",
+                "additional_properties_false": True,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="openai_gpt_5_4_nano_extract_oneshot_structured_output_file",
+            provider_name="openai_extract",
+            config={
+                "model": "gpt-5.4-nano",
+                "additional_properties_false": True,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="gemini_3_5_flash_extract_oneshot_structured_output_file",
+            provider_name="gemini_extract",
+            config={
+                "model": "gemini-3.5-flash",
+                "additional_properties_false": True,
+                "thinking_level": "low",
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="gemini_3_6_flash_extract_oneshot_structured_output_file",
+            provider_name="gemini_extract",
+            config={
+                "model": "gemini-3.6-flash",
+                "additional_properties_false": True,
+                "thinking_level": "medium",
+                "max_tokens": 65536,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="gemini_3_7_flash_extract_oneshot_structured_output_file",
+            provider_name="gemini_extract",
+            config={
+                "model": "gemini-3.7-flash",
+                "additional_properties_false": True,
+                "thinking_level": "medium",
+                "max_tokens": 65536,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="gemini_3_8_flash_extract_oneshot_structured_output_file",
+            provider_name="gemini_extract",
+            config={
+                "model": "gemini-3.8-flash",
+                "additional_properties_false": True,
+                "thinking_level": "low",
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="anthropic_haiku_4_5_extract_oneshot_structured_output_file",
+            provider_name="anthropic_extract",
+            config={
+                "model": "claude-haiku-4-5-20251001",
+                "additional_properties_false": True,
+                "all_properties_required": True,
+                "max_tokens": 32768,
+            },
+        )
+    )
+
+    # GLM-5.3-flash (z.ai): the raw document goes straight to the VLM in a
+    # file_url block over the OpenAI-compatible chat API; structured output via
+    # response_format=json_object with the schema in the prompt.
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="glm_5_3_flash_extract_oneshot_structured_output_file",
+            provider_name="glm_zai_extract",
+            config={
+                "model": "glm-5.3-flash",
+                "additional_properties_false": True,
+            },
+        )
+    )
+
+    # DeepSeek-V4.1-Flash: rasterize the document once, then send every page
+    # image in one OpenAI-compatible Chat Completions request (its image input
+    # takes JPEG/PNG/GIF/WebP only -- there is no PDF content block). Structured
+    # output uses response_format=json_object with the schema in the prompt;
+    # DeepSeek has no strict json_schema response format. Thinking is on by
+    # default and is disabled here, so the model answers with the JSON directly
+    # instead of spending the max_tokens budget on a chain of thought first.
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="deepseek_v4_1_flash_extract_oneshot_structured_output_file",
+            provider_name="deepseek_oneshot_extract",
+            config={
+                "model": "deepseek-flash",
+                "additional_properties_false": True,
+                "thinking": "disabled",
+                "dpi": 150,
+                "max_tokens": 65536,
+            },
+        )
+    )
+
+    # GLM-5.3-Flash served by DeepInfra: rasterize the document once, then send
+    # every page image in one OpenAI-compatible Chat Completions request.
+    # Structured output uses response_format=json_object with the schema in the
+    # prompt. A separate pipeline from the z.ai row above so the two vendors'
+    # numbers stay distinguishable (``DEEPINFRA_API_KEY``).
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="glm_5_3_flash_deepinfra_extract_oneshot_structured_output_file",
+            provider_name="glm_deepinfra_extract",
+            config={
+                "model": "zai-org/GLM-5.3-Flash",
+                "additional_properties_false": True,
+                "dpi": 150,
+                "max_tokens": 131072,
+            },
+        )
+    )
+
+    # =========================================================================
+    # Two-stage baselines (LlamaParse agentic markdown -> text extract)
+    # =========================================================================
+    # Same models and structured-output settings as the *_oneshot_*_file
+    # pipelines above, but the model receives per-page parsed markdown as text
+    # instead of the uploaded/inlined file. cost_usd totals parse + extract,
+    # with parse_cost_usd / extract_cost_usd breakdowns.
+
+    for _prefix, _provider_name, _model_config in (
+        ("openai_gpt_5_4", "openai_extract", {"model": "gpt-5.4"}),
+        ("openai_gpt_5_4_nano", "openai_extract", {"model": "gpt-5.4-nano"}),
+        ("gemini_3_5_flash", "gemini_extract", {"model": "gemini-3.5-flash", "thinking_level": "low"}),
+        (
+            "gemini_3_6_flash",
+            "gemini_extract",
+            {"model": "gemini-3.6-flash", "thinking_level": "medium", "max_tokens": 65536},
+        ),
+        (
+            "gemini_3_7_flash",
+            "gemini_extract",
+            {"model": "gemini-3.7-flash", "thinking_level": "medium", "max_tokens": 65536},
+        ),
+        (
+            "anthropic_haiku_4_5",
+            "anthropic_extract",
+            {"model": "claude-haiku-4-5-20251001", "all_properties_required": True},
+        ),
+    ):
+        register_fn(
+            _pipeline_spec(
+                pipeline_name=f"{_prefix}_extract_twostage_parse_agentic_structured_output_text",
+                provider_name=_provider_name,
+                config={
+                    **_model_config,
+                    "additional_properties_false": True,
+                    "input_mode": "parsed_text",
+                    "parse_source": {
+                        "type": "llamaparse",
+                        "tier": "agentic",
+                        "version": "latest",
+                    },
+                },
+            )
+        )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="deepseek_v4_pro_extract_twostage_parse_agentic_structured_output_text",
+            provider_name="deepseek_extract",
+            config={
+                "model": "accounts/fireworks/models/deepseek-v4-pro",
+                "base_url": "https://api.fireworks.ai/inference/v1",
+                "input_mode": "parsed_text",
+                "thinking_type": "disabled",
+                "max_tokens": 131072,
+                "max_cost_usd": 5.00,
+            },
+        )
+    )
+
+    # =========================================================================
+    # Coding agents driving extraction (agentic CLI loops)
+    # =========================================================================
+
+    # These run a model-driven CLI agent on your machine against benchmark
+    # documents. Run them in a container or VM.
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="claude_code_extract_opus_4_8",
+            provider_name="claude_code_extract",
+            config={"model": "claude-opus-4-8", "bare": True},
+        )
+    )
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="claude_code_extract_opus_4_8_evidence",
+            provider_name="claude_code_extract",
+            config={"model": "claude-opus-4-8", "evidence_mode": True},
+        )
+    )
+    # Opus 5.5 needs Claude Code CLI 2.1.280 or newer; older releases reject
+    # the model id with a 400 before any document is read.
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="claude_code_extract_opus_5_5",
+            provider_name="claude_code_extract",
+            config={"model": "claude-opus-5-5", "bare": True},
+        )
+    )
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="claude_code_extract_opus_5_5_evidence",
+            provider_name="claude_code_extract",
+            config={"model": "claude-opus-5-5", "evidence_mode": True},
+        )
+    )
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="claude_code_extract_sonnet_5_5_evidence",
+            provider_name="claude_code_extract",
+            config={"model": "claude-sonnet-5-5", "evidence_mode": True},
+        )
+    )
+
+    for _model_slug, _model, _reasoning_effort in (
+        ("gpt_5_4", "gpt-5.4", "low"),
+        ("gpt_5_5", "gpt-5.5", "low"),
+        ("gpt_5_5", "gpt-5.5", "high"),
+    ):
+        register_fn(
+            _pipeline_spec(
+                pipeline_name=f"codex_code_extract_{_model_slug}_{_reasoning_effort}",
+                provider_name="codex_code_extract",
+                config={
+                    "model": _model,
+                    "reasoning_effort": _reasoning_effort,
+                    "sandbox": "workspace-write",
+                    "max_cost_usd": 5.00,
+                },
+            )
+        )
+
+    for _pipeline_name, _model in (
+        ("codex_code_extract_gpt_5_5_low_evidence", "gpt-5.5"),
+        ("codex_code_extract_gpt_5_6_sol_low_evidence", "gpt-5.6-sol"),
+        ("codex_code_extract_gpt_5_6_terra_low_evidence", "gpt-5.6-terra"),
+    ):
+        register_fn(
+            _pipeline_spec(
+                pipeline_name=_pipeline_name,
+                provider_name="codex_code_extract",
+                config={
+                    "model": _model,
+                    "reasoning_effort": "low",
+                    "sandbox": "danger-full-access",
+                    "max_cost_usd": 5.00,
+                    "evidence_mode": True,
+                },
+            )
+        )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="codex_code_extract_gpt_5_6_luna_medium_evidence",
+            provider_name="codex_code_extract",
+            config={
+                "model": "gpt-5.6-luna",
+                "reasoning_effort": "medium",
+                "sandbox": "danger-full-access",
+                "max_cost_usd": None,
+                "evidence_mode": True,
+            },
+        )
+    )
+
+    # GPT-6 evidence sweep, same unrestricted config as the Luna pipeline above.
+    for _gpt6_slug, _gpt6_model, _gpt6_efforts in (
+        ("gpt_6_luna", "gpt-6-luna", ("medium", "high", "xhigh")),
+        ("gpt_6_sol", "gpt-6-sol", ("low", "medium", "high")),
+    ):
+        for _reasoning_effort in _gpt6_efforts:
+            register_fn(
+                _pipeline_spec(
+                    pipeline_name=f"codex_code_extract_{_gpt6_slug}_{_reasoning_effort}_evidence",
+                    provider_name="codex_code_extract",
+                    config={
+                        "model": _gpt6_model,
+                        "reasoning_effort": _reasoning_effort,
+                        "sandbox": "danger-full-access",
+                        "max_cost_usd": None,
+                        "evidence_mode": True,
+                    },
+                )
+            )
+
+    # =========================================================================
+    # Commercial extraction APIs
+    # =========================================================================
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="reducto_extract",
+            provider_name="reducto_extract",
+            config={
+                "citations": True,
+                "array_extract": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="reducto_extract_v4",
+            provider_name="reducto_extract",
+            config={
+                "citations": True,
+                "array_extract": False,
+                "extract_model": "v4",
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="reducto_deep_extract",
+            provider_name="reducto_extract",
+            config={
+                "citations": True,
+                "array_extract": False,
+                "deep_extract": True,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="extend_extract",
+            provider_name="extend",
+            config={
+                "baseProcessor": "extraction_performance",
+                "baseVersion": "4.1.1",
+                "advancedOptions": {
+                    "citationsEnabled": True,
+                    "advancedFigureParsingEnabled": True,
+                },
+            },
+        )
+    )
+
+    # Runs via Extend's async API (create + poll) rather than sync=True. The
+    # large_array_max_context multi-pass is exactly the workload that outlives
+    # the synchronous 5-minute cap; the sync path's client-timeout -> retry loop
+    # would start a fresh billed run per attempt, so long documents timed out
+    # and were recorded as failures. Polling a single created run to completion
+    # removes both the wall-clock cap and the re-billing.
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="extend_extract_max",
+            provider_name="extend",
+            config={
+                "baseProcessor": "extraction_performance",
+                "async_run": True,
+                "advancedOptions": {
+                    "citationsEnabled": True,
+                    "advancedFigureParsingEnabled": True,
+                    "arrayStrategy": {"type": "large_array_max_context"},
+                },
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="landingai_extract",
+            provider_name="landingai_extract",
+            config={},
+        )
+    )
+
+    for _extraction_mode in ("fast", "balanced"):
+        register_fn(
+            _pipeline_spec(
+                pipeline_name=f"datalab_parse_accurate_extract_{_extraction_mode}",
+                provider_name="datalab_extract",
+                config={
+                    "parse_mode": "accurate",
+                    "extraction_mode": _extraction_mode,
+                    "output_format": "json",
+                },
+            )
+        )
+
+    pulse_schema_common = {
+        "model": "pulse-ultra-2",
+        "extensions": {"altOutputs": {"wlbb": True}},
+        "schema_prompt": (
+            "Extract the document into the provided JSON schema. Use only information present in the document."
+        ),
+        "async_run": True,
+    }
+    for _mode, _effort in (("non_effort", False), ("effort", True)):
+        register_fn(
+            _pipeline_spec(
+                pipeline_name=f"pulse_schema_{_mode}",
+                provider_name="pulse_extract",
+                config={**pulse_schema_common, "effort": _effort},
+            )
+        )
+
+    # =========================================================================
+    # Open-weight pipelines (self-hosted)
+    # =========================================================================
+    # These have no vendor API. Each reads the URL of a deployment you run
+    # yourself from the env var named below (or a `server_url` config override);
+    # there are no default endpoints. See .env.example.
+
+    # lift SDK /extract deployment (LIFT_ENDPOINT_URL).
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="lift_extract",
+            provider_name="lift_extract",
+            config={},
+        )
+    )
+
+    # One-shot structured output through a self-hosted vLLM vision model, the
+    # same contract as the *_oneshot_structured_output_file cloud pipelines.
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="qwen3_6_35b_a3b_fp8_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "qwen3.6-35b-a3b-fp8",
+                "endpoint_env_var": "QWEN35_SERVER_URL",
+                "additional_properties_false": True,
+                # Shared open-weight one-shot config: 32k budget, json_object.
+                "max_tokens": 32768,
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="gemma4_26b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "gemma-4-26b-a4b",
+                "endpoint_env_var": "GEMMA4_SERVER_URL",
+                "additional_properties_false": True,
+                # 100 instead of the provider's 150 default: a letter page is
+                # 850x1100 rather than 1275x1650, so 2.25x fewer pixels to
+                # rasterize, base64, and ship. Long scanned documents were
+                # exhausting a memory-limited runner and taking long enough that
+                # the endpoint expired the request.
+                "dpi": 100,
+                # Shared open-weight 32k output budget (was 65536).
+                "max_tokens": 32768,
+                # Long documents need more than the provider's 15-minute
+                # default, and SDK retries are disabled to avoid duplicate work.
+                "timeout_s": 3600,
+                # json_object (not full-schema guided decoding): the extract schemas
+                # are large enough that xgrammar's per-step mask compute starves the
+                # GPU (~1.5 tok/s at concurrency). json_object keeps syntactic-JSON
+                # enforcement + schema-in-prompt without the heavy grammar.
+                "structured_output": False,
+            },
+        )
+    )
+
+    # Additional open-weight VLMs, same one-shot vLLM contract as qwen/gemma
+    # above (rasterize pages -> schema in prompt -> json_object). Each reads its
+    # own deployment URL from the env var named below.
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="nuextract_2_8b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "nuextract-2-8b",
+                # numind/NuExtract-2.0-8B (Qwen2.5-VL extraction tune). 128k ctx.
+                "endpoint_env_var": "NUEXTRACT2_SERVER_URL",
+                "additional_properties_false": True,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                # json_object (not full-schema guided decoding): compiling a
+                # full-schema grammar for the large extract schemas starves the
+                # GPU. Same reasoning as the gemma4 pipeline above.
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="internvl3_5_8b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "internvl3-5-8b",
+                # OpenGVLab/InternVL3_5-8B (InternVLChatModel).
+                "endpoint_env_var": "INTERNVL35_8B_SERVER_URL",
+                "additional_properties_false": True,
+                "dpi": 100,
+                "max_tokens": 32768,
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="internvl3_5_14b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "internvl3-5-14b",
+                # OpenGVLab/InternVL3_5-14B (InternVLChatModel).
+                "endpoint_env_var": "INTERNVL35_14B_SERVER_URL",
+                "additional_properties_false": True,
+                "dpi": 100,
+                "max_tokens": 32768,
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="minicpm_v_4_5_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "minicpm-v-4-5",
+                # openbmb/MiniCPM-V-4_5 (MiniCPMV).
+                "endpoint_env_var": "MINICPM_V_SERVER_URL",
+                "additional_properties_false": True,
+                "dpi": 100,
+                "max_tokens": 32768,
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="qwen3_5_35b_a3b_fp8_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "qwen3.5-35b-a3b-fp8",
+                # Qwen/Qwen3.5-35B-A3B (served as the FP8 checkpoint,
+                # Qwen/Qwen3.5-35B-A3B-FP8). YaRN-extended ~1M context.
+                "endpoint_env_var": "QWEN3_5_35B_SERVER_URL",
+                "additional_properties_false": True,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                # json_object (not full-schema guided decoding): compiling a
+                # full-schema grammar for the large extract schemas starves the
+                # GPU. Same reasoning as the gemma4 pipeline above.
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="qwen3_5_9b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "qwen3.5-9b",
+                # Qwen/Qwen3.5-9B (dense).
+                "endpoint_env_var": "QWEN3_5_9B_SERVER_URL",
+                "additional_properties_false": True,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="gemma4_e4b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "gemma-4-e4b",
+                # google/gemma-4-E4B-it.
+                "endpoint_env_var": "GEMMA4_E4B_SERVER_URL",
+                "additional_properties_false": True,
+                "dpi": 100,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="gemma4_e2b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "gemma-4-e2b",
+                # google/gemma-4-E2B-it.
+                "endpoint_env_var": "GEMMA4_E2B_SERVER_URL",
+                "additional_properties_false": True,
+                "dpi": 100,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="kimi_vl_a3b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "kimi-vl-a3b-instruct",
+                # moonshotai/Kimi-VL-A3B-Instruct. 131k native context.
+                "endpoint_env_var": "KIMI_VL_SERVER_URL",
+                "additional_properties_false": True,
+                "dpi": 100,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    # GLM-4.6V-Flash is a GLM-V thinking model; the server keeps the final
+    # answer as message.content (reasoning is separated out).
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="glm_4_6v_flash_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "glm-4.6v-flash",
+                # zai-org/GLM-4.6V-Flash. 131k native context.
+                "endpoint_env_var": "GLM_4_6V_SERVER_URL",
+                "additional_properties_false": True,
+                "dpi": 100,
+                # Thinking model: 32k answer + 32k reasoning allowance, one shot.
+                "max_tokens": 65536,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="qwen3_8_27b_fp8_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "qwen3.8-27b-fp8",
+                # Qwen/Qwen3.8-27B (served as the FP8 checkpoint,
+                # Qwen/Qwen3.8-27B-FP8).
+                "endpoint_env_var": "QWEN3_8_27B_SERVER_URL",
+                "additional_properties_false": True,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="qwen3_8_flash_next_fp8_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "qwen3.8-flash-next-fp8",
+                # Qwen3.8-Flash-Next (served as the FP8 checkpoint).
+                "endpoint_env_var": "QWEN3_8_FLASH_NEXT_SERVER_URL",
+                "additional_properties_false": True,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on self-hosted GPUs.
+                "timeout_s": 3600,
+                # json_object (not xgrammar): compiling a grammar for the large
+                # extract schemas hangs the endpoint (the server drops the request).
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="qwen3_5_2b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "qwen3.5-2b",
+                # Qwen/Qwen3.5-2B (dense).
+                "endpoint_env_var": "QWEN3_5_2B_SERVER_URL",
+                "additional_properties_false": True,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="qwen3_5_0_8b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "qwen3.5-0.8b",
+                # Qwen/Qwen3.5-0.8B (dense).
+                "endpoint_env_var": "QWEN3_5_0_8B_SERVER_URL",
+                "additional_properties_false": True,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="gemma4_12b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "gemma-4-12b",
+                # google/gemma-4-12B-it.
+                "endpoint_env_var": "GEMMA4_12B_SERVER_URL",
+                "additional_properties_false": True,
+                "dpi": 100,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="qwen3_5_4b_vllm_extract_oneshot_structured_output_file",
+            provider_name="vllm_extract",
+            config={
+                "model": "qwen3.5-4b",
+                # Qwen/Qwen3.5-4B (dense).
+                "endpoint_env_var": "QWEN3_5_4B_SERVER_URL",
+                "additional_properties_false": True,
+                # Large multi-page docs produce large JSON.
+                "max_tokens": 32768,
+                # Long documents decode for a while on small self-hosted GPUs.
+                "timeout_s": 3600,
+                "structured_output": False,
+            },
+        )
+    )
+
+    # Kimi K3 one-shot vision extract via Fireworks. Unlike the self-hosted vLLM
+    # one-shots above, Kimi is a hosted cloud VLM on Fireworks' OpenAI-compatible
+    # API (kimi_extract provider). Pages are rasterized and sent as images in one
+    # call; output is json_object because Kimi does not honor json_schema guided
+    # decoding on Fireworks, and Fireworks rejects PDF file inputs. max_tokens is
+    # Kimi's max output so a long-list doc is never truncated even with the
+    # model's default chain-of-thought; pricing is flat across the 1M context.
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="kimi_k3_extract_oneshot_structured_output_file",
+            provider_name="kimi_extract",
+            config={
+                "model": "accounts/fireworks/models/kimi-k3",
+                "additional_properties_false": True,
+                "max_tokens": 131072,
+            },
+        )
+    )
+
+    # NuExtract3 extracts natively from a template rather than a JSON Schema;
+    # the provider converts the schema before the call (NUEXTRACT3_SERVER_URL).
+    register_fn(
+        _pipeline_spec(
+            pipeline_name="nuextract3_extract",
+            provider_name="nuextract3_extract",
+            config={
+                "endpoint_env_var": "NUEXTRACT3_SERVER_URL",
+                # Shared open-weight 32k output budget (provider default is 100k).
+                "max_tokens": 32768,
+            },
+        )
+    )

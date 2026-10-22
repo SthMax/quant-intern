@@ -1,0 +1,1104 @@
+{
+  "source_id": "TECH-092",
+  "title": "最终汇报：模型制品、许可、引擎、采购、API与监管时效核验",
+  "collection_role": "main",
+  "evidence_state": "verified-primary",
+  "text_kind": "authored_source_index_with_raw_originals_and_mechanical_extractions",
+  "accessed_local": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "reviewer": "W4 research agent; official-source inspection, fixed revisions, byte comparisons",
+  "human_check_status": "pending",
+  "verification_scope": "Narrow factual claims and dates in evidence-note.md, not institution approval, delivered procurement quote, transaction licence, or new model/GPU benchmark.",
+  "original_index": "original.md",
+  "evidence_note": "evidence-note.md",
+  "retrieval_manifests": [
+    "retrieval-manifest.json",
+    "retrieval-extra.json"
+  ],
+  "file_manifest": "file-manifest.json",
+  "model_revisions": "model-revisions.json",
+  "date_policy": "Future 2026-11-12 Anthropic regional policy excluded from operative 2026-10-20 claims; DeepSeek selected-tool billing begins 2026-11-01 Beijing00:00.",
+  "partial_response_policy": "BIS742 capped partial is retained only as retrieval response; full eCFR742.6 and official FR PDF govern cited policy.",
+  "source_files": [
+    {
+      "path": "api/deepseek-1017-news.html",
+      "requested_url": "https://api-docs.deepseek.com/news/news261017/",
+      "retrieved_at": "2026-10-19T17:56:40.746343+00:00",
+      "final_url": "https://api-docs.deepseek.com/news/news261017/",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 23915,
+      "sha256": "c557ba334297a0a802282431dd15c9ba6942846a71860051c1c7b9e53d5dc037",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "api/deepseek-1017-news.md"
+      }
+    },
+    {
+      "path": "api/deepseek-pricing.html",
+      "requested_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "retrieved_at": "2026-10-19T17:56:40.746614+00:00",
+      "final_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 26043,
+      "sha256": "b856a6e93fa4793ecc8f3fd03a01bb7d8f7572f78a4739da8ce6dbdb09328d66",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "api/deepseek-pricing.md"
+      }
+    },
+    {
+      "path": "api/deepseek-open-platform-terms.html",
+      "requested_url": "https://cdn.deepseek.com/policies/zh-CN/deepseek-open-platform-terms-of-service.html",
+      "retrieved_at": "2026-10-19T17:56:40.746916+00:00",
+      "final_url": "https://cdn.deepseek.com/policies/zh-CN/deepseek-open-platform-terms-of-service.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 34273,
+      "sha256": "2e4a09165b2d7b0994043e3caa5ecf4075eb67dc3a57c37d16c4d984f06c1cc1",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "api/deepseek-open-platform-terms.md"
+      }
+    },
+    {
+      "path": "api/deepseek-privacy.html",
+      "requested_url": "https://cdn.deepseek.com/policies/zh-CN/deepseek-privacy-policy.html",
+      "retrieved_at": "2026-10-19T17:56:40.746897+00:00",
+      "final_url": "https://cdn.deepseek.com/policies/zh-CN/deepseek-privacy-policy.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 50009,
+      "sha256": "d9569d0c1b9e2d8e08b52db54bdc315f801d59501b8c054655c409239d58d2ab",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "api/deepseek-privacy.md"
+      }
+    },
+    {
+      "path": "api/anthropic-regions-future.html",
+      "requested_url": "https://www.anthropic.com/legal/supported-regions",
+      "retrieved_at": "2026-10-19T17:56:40.746765+00:00",
+      "final_url": "https://www.anthropic.com/legal/supported-regions",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 132551,
+      "sha256": "bfd04f41788ca59742ff1bae48a2982630a691763c31e5bcd7d7a5d39dbb44ea",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "api/anthropic-regions-future.md"
+      }
+    },
+    {
+      "path": "api/anthropic-sales-2025.html",
+      "requested_url": "https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions",
+      "retrieved_at": "2026-10-19T17:56:40.746830+00:00",
+      "final_url": "https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 106137,
+      "sha256": "cca3bcad457038ad58038e967fe658b5ed46ab274fc84a8489285054f632dcd9",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "api/anthropic-sales-2025.md"
+      }
+    },
+    {
+      "path": "api/anthropic-commercial.html",
+      "requested_url": "https://www.anthropic.com/legal/commercial-terms",
+      "retrieved_at": "2026-10-19T17:56:41.241483+00:00",
+      "final_url": "https://www.anthropic.com/legal/commercial-terms",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 170994,
+      "sha256": "f62c62f62330ba90756b2089ed3d1333801e553b67a009face977090e798fe1b",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "api/anthropic-commercial.md"
+      }
+    },
+    {
+      "path": "hardware/spark-store.html",
+      "requested_url": "https://marketplace.nvidia.com/en-us/enterprise/personal-ai-supercomputers/dgx-spark/",
+      "retrieved_at": "2026-10-19T17:56:41.253916+00:00",
+      "error": "The read operation timed out",
+      "evidence_role": "retrieval_failure"
+    },
+    {
+      "path": "hardware/spark-spec.html",
+      "requested_url": "https://docs.nvidia.com/dgx/dgx-spark/hardware.html",
+      "retrieved_at": "2026-10-19T17:56:41.266892+00:00",
+      "final_url": "https://docs.nvidia.com/dgx/dgx-spark/hardware.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 29371,
+      "sha256": "02675731cdfcae028528d8fd9e6cf77fcde24c9524cb42eb1a22acb9ebc68d9b",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "hardware/spark-spec.md"
+      }
+    },
+    {
+      "path": "hardware/a100-serverstore.html",
+      "requested_url": "https://www.theserverstore.com/nvidia-hgx-8x-a100-80gb-sxm4-nvlink-gpu-server-zt-systems",
+      "retrieved_at": "2026-10-19T17:56:41.504622+00:00",
+      "final_url": "https://www.theserverstore.com/nvidia-hgx-8x-a100-80gb-sxm4-nvlink-gpu-server-zt-systems",
+      "status": 200,
+      "content_type": "text/html; Charset=UTF-8",
+      "bytes": 140711,
+      "sha256": "aaa8e113065cf576185f9f14b2cc1d2aa86d3ce92be05ca95fa034cae6f7f041",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 1,
+        "path": null
+      }
+    },
+    {
+      "path": "hardware/h100-exxact.html",
+      "requested_url": "https://configurator.exxactcorp.com/configure/TS4-193475697",
+      "retrieved_at": "2026-10-19T17:56:41.824357+00:00",
+      "final_url": "https://configurator.exxactcorp.com/configure/TS4-193475697",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 385455,
+      "sha256": "9a7d75085d3689e48a9d3981c85085e4faf8f81b0ff3ca41b4219bc6dac60f04",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "hardware/h100-exxact.md"
+      }
+    },
+    {
+      "path": "hardware/h200-exxact.html",
+      "requested_url": "https://configurator.exxactcorp.com/configure/TS4-118380266",
+      "retrieved_at": "2026-10-19T17:56:41.825473+00:00",
+      "final_url": "https://configurator.exxactcorp.com/configure/TS4-118380266",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 394604,
+      "sha256": "679c4e2cef7c2a0d7e237fef69335568ae98c672b48c5da273817e96799c8316",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "hardware/h200-exxact.md"
+      }
+    },
+    {
+      "path": "hardware/h200-nvl-vipera.html",
+      "requested_url": "https://viperatech.com/product/nvidia-h200-nvl-graphic-card-141-gb-passive-pcie-900-21010-0040-000",
+      "retrieved_at": "2026-10-19T17:56:41.901868+00:00",
+      "final_url": "https://viperatech.com/product/nvidia-h200-nvl-graphic-card-141-gb-passive-pcie-900-21010-0040-000",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 164700,
+      "sha256": "35a715dcbddd5aa7ee8225caf2287919f7a417e049fe1660db3b4f7f77b10534",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "hardware/h200-nvl-vipera.md"
+      }
+    },
+    {
+      "path": "hardware/bis-2026-00789.pdf",
+      "requested_url": "https://www.govinfo.gov/content/pkg/FR-2026-01-15/pdf/2026-00789.pdf",
+      "retrieved_at": "2026-10-19T17:56:42.165863+00:00",
+      "final_url": "https://www.govinfo.gov/content/pkg/FR-2026-01-15/pdf/2026-00789.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 252319,
+      "sha256": "7fb7dae40d9b277a61ac64df1e1ba09a7bdab98dc6c2ed720aacdfd87edf8125",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "hardware/nvidia-2027-q2-10q.pdf",
+      "requested_url": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+      "retrieved_at": "2026-10-19T17:56:43.287697+00:00",
+      "final_url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 671023,
+      "sha256": "6b5a8dc1ed21e8b2b960fd0de97103af6a2f32ccc8dd91b363f06ea192ecfebd",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "hardware/retrieval-response.bis742.partial.html",
+      "requested_url": "https://media.bis.gov/regulations/ear/part-742",
+      "retrieved_at": "2026-10-19T17:56:43.440011+00:00",
+      "final_url": "https://media.bis.gov/regulations/ear/part-742",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 6000000,
+      "sha256": "f2a6aca0267b54a49a18eb14818cdb3947bc1082413573f01ec848b1aa10e818",
+      "evidence_role": "retrieval_response_partial_not_original",
+      "extraction": null,
+      "error": "Collector byte cap reached; not used as current legal text. Complete section 742.6 obtained separately."
+    },
+    {
+      "path": "regulation/csrc-it-management.html",
+      "requested_url": "https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml",
+      "retrieved_at": "2026-10-19T17:56:43.753363+00:00",
+      "final_url": "https://www.csrc.gov.cn/csrc/c106256/c1653896/content.shtml",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 81704,
+      "sha256": "13f0e54685f843c2da2d6244046bf81a0997e653f4996431011c8a84d8b47964",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "regulation/csrc-it-management.md"
+      }
+    },
+    {
+      "path": "regulation/csrc-cyber-218.html",
+      "requested_url": "https://www.csrc.gov.cn/csrc/c101953/c7202800/content.shtml",
+      "retrieved_at": "2026-10-19T17:56:43.915803+00:00",
+      "final_url": "https://www.csrc.gov.cn/csrc/c101953/c7202800/content.shtml",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 13832,
+      "sha256": "1b2dcdb981e9d98474f73403d9039ceb68009ba95d216ed83ad76801a41e7285",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "regulation/csrc-cyber-218.md"
+      }
+    },
+    {
+      "path": "regulation/csrc-cyber-218.pdf",
+      "requested_url": "https://www.csrc.gov.cn/csrc/c101953/c7202800/7202800/files/%E9%99%84%E4%BB%B61%EF%BC%9A%E8%AF%81%E5%88%B8%E6%9C%9F%E8%B4%A7%E4%B8%9A%E7%BD%91%E7%BB%9C%E5%92%8C%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.pdf",
+      "retrieved_at": "2026-10-19T17:56:44.059010+00:00",
+      "final_url": "https://www.csrc.gov.cn/csrc/c101953/c7202800/7202800/files/%E9%99%84%E4%BB%B61%EF%BC%9A%E8%AF%81%E5%88%B8%E6%9C%9F%E8%B4%A7%E4%B8%9A%E7%BD%91%E7%BB%9C%E5%92%8C%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 292146,
+      "sha256": "7bc31129844e629a405ad5b27f106de8577cb2af018047a25b1027dba812b347",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "regulation/genai-measures.html",
+      "requested_url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "retrieved_at": "2026-10-19T17:56:44.326906+00:00",
+      "final_url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 29431,
+      "sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "regulation/genai-measures.md"
+      }
+    },
+    {
+      "path": "regulation/pipl.html",
+      "requested_url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+      "retrieved_at": "2026-10-19T17:56:44.384006+00:00",
+      "final_url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 60221,
+      "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "regulation/pipl.md"
+      }
+    },
+    {
+      "path": "regulation/network-data-security.html",
+      "requested_url": "https://www.cac.gov.cn/2024-09/30/c_1729384452307680.htm",
+      "retrieved_at": "2026-10-19T17:56:44.401268+00:00",
+      "final_url": "https://www.cac.gov.cn/2024-09/30/c_1729384452307680.htm",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 59055,
+      "sha256": "cc042f70f1fde42ff59e68c63733569ca99246ec0447274ce5a2a511f37ac775",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "regulation/network-data-security.md"
+      }
+    },
+    {
+      "path": "regulation/cross-border.html",
+      "requested_url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm",
+      "retrieved_at": "2026-10-19T17:56:44.780020+00:00",
+      "final_url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 20978,
+      "sha256": "d03e303a9e6c32694a0b9d64ba6bdb5fb63b55fc91469ee195ad3ecfb8f59238",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "regulation/cross-border.md"
+      }
+    },
+    {
+      "path": "models/gemma-apache2.html",
+      "requested_url": "https://ai.google.dev/gemma/apache_2",
+      "retrieved_at": "2026-10-19T17:56:44.802425+00:00",
+      "final_url": "https://ai.google.dev/gemma/apache_2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 259656,
+      "sha256": "da27adb2735f7ddab2f9d7652283577f08ce117274188626e85b5b1119fa3132",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "models/gemma-apache2.md"
+      }
+    },
+    {
+      "path": "engines/lmcache-deepseek.html",
+      "requested_url": "https://docs.lmcache.ai/recipes/deepseek_v41_flash.html",
+      "retrieved_at": "2026-10-19T17:56:44.812323+00:00",
+      "final_url": "https://docs.lmcache.ai/recipes/deepseek_v41_flash.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 54419,
+      "sha256": "59763d4316654341a08f0a03e460c5dd8ecbc7d698cf784057f901459b086803",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "engines/lmcache-deepseek.md"
+      }
+    },
+    {
+      "path": "engines/lmcache-qwen.html",
+      "requested_url": "https://docs.lmcache.ai/recipes/qwen3_5.html",
+      "retrieved_at": "2026-10-19T17:56:44.948512+00:00",
+      "final_url": "https://docs.lmcache.ai/recipes/qwen3_5.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 56488,
+      "sha256": "1a7bca90b0139ae7d087ca6caf1cfa3682c14dfe023ea15ff2580cd782666926",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "engines/lmcache-qwen.md"
+      }
+    },
+    {
+      "path": "engines/vllm-v032.json",
+      "requested_url": "https://api.github.com/repos/vllm-project/vllm/releases/tags/v0.32.0",
+      "retrieved_at": "2026-10-19T17:56:45.334316+00:00",
+      "final_url": "https://api.github.com/repos/vllm-project/vllm/releases/tags/v0.32.0",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 55606,
+      "sha256": "6777e3c986e0485a7d8ce9827cbe186fa9adc13f35e3d93dfc18647cf3d2fc38",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "engines/vllm-v032-LICENSE",
+      "requested_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/LICENSE",
+      "retrieved_at": "2026-10-19T17:56:45.813930+00:00",
+      "final_url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.32.0/LICENSE",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "engines/lmcache-LICENSE",
+      "requested_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/LICENSE",
+      "retrieved_at": "2026-10-19T17:56:45.845420+00:00",
+      "final_url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/LICENSE",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen27/api.json",
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B",
+      "retrieved_at": "2026-10-19T17:57:16.394944+00:00",
+      "final_url": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 24124,
+      "sha256": "1bf82c14152f5a371d2d895dcf2af7b6c3a4ef53ac104cb12233844e39021276",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen27/README.md",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md",
+      "retrieved_at": "2026-10-19T17:57:17.673952+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md?%2FQwen%2FQwen3.8-27B%2Fresolve%2F1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0%2FREADME.md=&etag=%22bc8aa0e396cd029c21cd773cca21830d0ded28ec%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 65012,
+      "sha256": "57e4bdb258ee1a7d2635c5174ebd4e56abe392505cdb5f8bbb356b0dc4293641",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen27/config.json",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json",
+      "retrieved_at": "2026-10-19T17:57:18.789881+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json?%2FQwen%2FQwen3.8-27B%2Fresolve%2F1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0%2Fconfig.json=&etag=%22706cebd746c4b6f2b1d1f892630867acfdfd3df8%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 4312,
+      "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen27/LICENSE",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE",
+      "retrieved_at": "2026-10-19T17:57:21.552354+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE?%2FQwen%2FQwen3.8-27B%2Fresolve%2F1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0%2FLICENSE=&etag=%22f938136e3adacfd92be087f6e113b5d6d97f678f%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen35/api.json",
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3.6-35B-A3B",
+      "retrieved_at": "2026-10-19T17:57:22.782141+00:00",
+      "final_url": "https://huggingface.co/api/models/Qwen/Qwen3.6-35B-A3B",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 21849,
+      "sha256": "91cbf29462315a29705715f69315633fedc9be9fadfdcb7638f7e663b87bd0c7",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen35/README.md",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md",
+      "retrieved_at": "2026-10-19T17:57:23.289299+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.6-35B-A3B/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md?%2FQwen%2FQwen3.6-35B-A3B%2Fresolve%2F995ad96eacd98c81ed38be0c5b274b04031597b0%2FREADME.md=&etag=%2220a5d849ac33ffa1dae83ea093710328fa1880f4%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 64550,
+      "sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen35/config.json",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/config.json",
+      "retrieved_at": "2026-10-19T17:57:24.596149+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.6-35B-A3B/995ad96eacd98c81ed38be0c5b274b04031597b0/config.json?%2FQwen%2FQwen3.6-35B-A3B%2Fresolve%2F995ad96eacd98c81ed38be0c5b274b04031597b0%2Fconfig.json=&etag=%229c2aacf8e27267fadb4f6bf8209e7f3c26f5dd66%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 3686,
+      "sha256": "93a4693fa9d8392fbfccd4b3c9873f4bfdcb14fdede978b123d07d19675efe99",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen35/LICENSE",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/resolve/995ad96eacd98c81ed38be0c5b274b04031597b0/LICENSE",
+      "retrieved_at": "2026-10-19T17:57:25.069239+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.6-35B-A3B/995ad96eacd98c81ed38be0c5b274b04031597b0/LICENSE?%2FQwen%2FQwen3.6-35B-A3B%2Fresolve%2F995ad96eacd98c81ed38be0c5b274b04031597b0%2FLICENSE=&etag=%221d5180a42f1c3383ba7c7bd0a50f0837ef0168df%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 11343,
+      "sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/gemma31/api.json",
+      "requested_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+      "retrieved_at": "2026-10-19T17:57:25.462910+00:00",
+      "final_url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 24252,
+      "sha256": "7d2f091e81aaadc7008bedeeb6577da3219273ddfbddf6ad23444484c36eac24",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/gemma31/README.md",
+      "requested_url": "https://huggingface.co/google/gemma-4-31B-it/resolve/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+      "retrieved_at": "2026-10-19T17:57:25.863524+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/google/gemma-4-31B-it/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md?%2Fgoogle%2Fgemma-4-31B-it%2Fresolve%2F842da3794eaa0b77d5f08bae87a17459d91ff475%2FREADME.md=&etag=%22abf7c941ad9bb8d4fe2e350b6e6bf0e3ba05a28d%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 27963,
+      "sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/gemma31/config.json",
+      "requested_url": "https://huggingface.co/google/gemma-4-31B-it/resolve/842da3794eaa0b77d5f08bae87a17459d91ff475/config.json",
+      "retrieved_at": "2026-10-19T17:57:26.504383+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/google/gemma-4-31B-it/842da3794eaa0b77d5f08bae87a17459d91ff475/config.json?%2Fgoogle%2Fgemma-4-31B-it%2Fresolve%2F842da3794eaa0b77d5f08bae87a17459d91ff475%2Fconfig.json=&etag=%225f291aa9973fbb38982f9bade924989edc7b895d%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 4621,
+      "sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/gemma26/api.json",
+      "requested_url": "https://huggingface.co/api/models/google/gemma-4-26B-A4B-it",
+      "retrieved_at": "2026-10-19T17:57:27.016568+00:00",
+      "final_url": "https://huggingface.co/api/models/google/gemma-4-26B-A4B-it",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 24313,
+      "sha256": "39888f712e3698e7b767f91ffa619d6d376bd66ae640c9938b795597892ce520",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/gemma26/README.md",
+      "requested_url": "https://huggingface.co/google/gemma-4-26B-A4B-it/resolve/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md",
+      "retrieved_at": "2026-10-19T17:57:27.430423+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/google/gemma-4-26B-A4B-it/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md?%2Fgoogle%2Fgemma-4-26B-A4B-it%2Fresolve%2F4d7ae4984b7db7de8f8457170b3f1a419ee76d52%2FREADME.md=&etag=%22742346e1fe57997c831b9065f4c54a9416021526%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 27979,
+      "sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/gemma26/config.json",
+      "requested_url": "https://huggingface.co/google/gemma-4-26B-A4B-it/resolve/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json",
+      "retrieved_at": "2026-10-19T17:57:28.601621+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/google/gemma-4-26B-A4B-it/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json?%2Fgoogle%2Fgemma-4-26B-A4B-it%2Fresolve%2F4d7ae4984b7db7de8f8457170b3f1a419ee76d52%2Fconfig.json=&etag=%22f42adcca257bb0865c506947671e7d0af52ac9c4%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 3815,
+      "sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/deepseek/api.json",
+      "requested_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+      "retrieved_at": "2026-10-19T17:57:29.128674+00:00",
+      "final_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 24015,
+      "sha256": "9eef7e11a0644c5ddff425d4d2ee1d88612203c497fd81a4df25e87ccf72ebd9",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/deepseek/README.md",
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/314113f8a7dadb388215396ba5fbee2c610a04d6/README.md",
+      "retrieved_at": "2026-10-19T17:57:29.755231+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/314113f8a7dadb388215396ba5fbee2c610a04d6/README.md?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F314113f8a7dadb388215396ba5fbee2c610a04d6%2FREADME.md=&etag=%22211b83857abd5e8420df3a4f10db1096294227e6%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 13110,
+      "sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/deepseek/config.json",
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/314113f8a7dadb388215396ba5fbee2c610a04d6/config.json",
+      "retrieved_at": "2026-10-19T17:57:31.140081+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/314113f8a7dadb388215396ba5fbee2c610a04d6/config.json?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F314113f8a7dadb388215396ba5fbee2c610a04d6%2Fconfig.json=&etag=%2209917a9139b22d5bf8be52132787f435147b1020%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 3311,
+      "sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/deepseek/LICENSE",
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/314113f8a7dadb388215396ba5fbee2c610a04d6/LICENSE",
+      "retrieved_at": "2026-10-19T17:57:31.704388+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/314113f8a7dadb388215396ba5fbee2c610a04d6/LICENSE?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F314113f8a7dadb388215396ba5fbee2c610a04d6%2FLICENSE=&etag=%22d62e3bef9f054f21b7fc616365850fbf879a99ff%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 1084,
+      "sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/deepseek/model.safetensors.index.json",
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/314113f8a7dadb388215396ba5fbee2c610a04d6/model.safetensors.index.json",
+      "retrieved_at": "2026-10-19T17:57:32.314304+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash/314113f8a7dadb388215396ba5fbee2c610a04d6/model.safetensors.index.json?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash%2Fresolve%2F314113f8a7dadb388215396ba5fbee2c610a04d6%2Fmodel.safetensors.index.json=&etag=%2254c85064dd92c8550471302e9ae59bedbbf96ca4%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 7470294,
+      "sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+      "evidence_role": "original_public_bytes",
+      "retrieval_note": "Initial length-capped download replaced by complete public curl download; JSON parsed successfully.",
+      "completed_download_verified_at": "2026-10-19T18:05:10.794380+00:00"
+    },
+    {
+      "path": "models/glmflash/api.json",
+      "requested_url": "https://huggingface.co/api/models/zai-org/GLM-5.3-Flash",
+      "retrieved_at": "2026-10-19T17:57:34.471383+00:00",
+      "final_url": "https://huggingface.co/api/models/zai-org/GLM-5.3-Flash",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 70526,
+      "sha256": "4dfddd20748ec0297de175e83bbc31fc1c40349e54f28d8b2ae8d44ceda76f6a",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/glmflash/README.md",
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/README.md",
+      "retrieved_at": "2026-10-19T17:57:35.235314+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/zai-org/GLM-5.3-Flash/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/README.md?%2Fzai-org%2FGLM-5.3-Flash%2Fresolve%2F46a050bec13002ad29ee795c16e61cf4fa3c4a9c%2FREADME.md=&etag=%2246bc9e21fef7b4371a73cf663dbd1e54505c1205%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 8027,
+      "sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/glmflash/config.json",
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/config.json",
+      "retrieved_at": "2026-10-19T17:57:36.040397+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/zai-org/GLM-5.3-Flash/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/config.json?%2Fzai-org%2FGLM-5.3-Flash%2Fresolve%2F46a050bec13002ad29ee795c16e61cf4fa3c4a9c%2Fconfig.json=&etag=%22f93128cf7f31ca2b22e367cd63676c320c4164a7%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 69416,
+      "sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/glmflash/LICENSE",
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/LICENSE",
+      "retrieved_at": "2026-10-19T17:57:37.691622+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/zai-org/GLM-5.3-Flash/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/LICENSE?%2Fzai-org%2FGLM-5.3-Flash%2Fresolve%2F46a050bec13002ad29ee795c16e61cf4fa3c4a9c%2FLICENSE=&etag=%22986b06fb2916b3518b82c7dcc0870723b91f2f92%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 1070,
+      "sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/glm/api.json",
+      "requested_url": "https://huggingface.co/api/models/zai-org/GLM-5.3",
+      "retrieved_at": "2026-10-19T17:57:38.315744+00:00",
+      "final_url": "https://huggingface.co/api/models/zai-org/GLM-5.3",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 42580,
+      "sha256": "65bc97a401f96d364b2f106b01a3196054796cc72d2980b2fad09c6b06c010a5",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/glm/README.md",
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3/resolve/ba32f8c19c8738e2c57c71798c601d477a7bf844/README.md",
+      "retrieved_at": "2026-10-19T17:57:39.461787+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/zai-org/GLM-5.3/ba32f8c19c8738e2c57c71798c601d477a7bf844/README.md?%2Fzai-org%2FGLM-5.3%2Fresolve%2Fba32f8c19c8738e2c57c71798c601d477a7bf844%2FREADME.md=&etag=%22e965a0a6ea0da381140a9ce4cc2c571058a31d05%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 14209,
+      "sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/glm/config.json",
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3/resolve/ba32f8c19c8738e2c57c71798c601d477a7bf844/config.json",
+      "retrieved_at": "2026-10-19T17:57:40.243680+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/zai-org/GLM-5.3/ba32f8c19c8738e2c57c71798c601d477a7bf844/config.json?%2Fzai-org%2FGLM-5.3%2Fresolve%2Fba32f8c19c8738e2c57c71798c601d477a7bf844%2Fconfig.json=&etag=%22f4dd8fe8be2a6fee923d5ecc8de0a14892631b61%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 29464,
+      "sha256": "3ac72612095574542f7fff847ada8e59d9199dd8af44bdf625d7e02615572e69",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/glm/LICENSE",
+      "requested_url": "https://huggingface.co/zai-org/GLM-5.3/resolve/ba32f8c19c8738e2c57c71798c601d477a7bf844/LICENSE",
+      "retrieved_at": "2026-10-19T17:57:40.963868+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/zai-org/GLM-5.3/ba32f8c19c8738e2c57c71798c601d477a7bf844/LICENSE?%2Fzai-org%2FGLM-5.3%2Fresolve%2Fba32f8c19c8738e2c57c71798c601d477a7bf844%2FLICENSE=&etag=%22f860919cd5a5377c0bc9d590ea9d1b8743475ca5%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 4263,
+      "sha256": "96e1622099fc9d6b70c9760f007d99e66d7497eec636b63c60fe208401e9170c",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/kimi/api.json",
+      "requested_url": "https://huggingface.co/api/models/moonshotai/Kimi-K3",
+      "retrieved_at": "2026-10-19T17:57:41.556646+00:00",
+      "final_url": "https://huggingface.co/api/models/moonshotai/Kimi-K3",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 10110,
+      "sha256": "560956f4c676571330348c1d9e6db8a8a7c926ca87aacbc0f480a4d5c17d383b",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/kimi/README.md",
+      "requested_url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/README.md",
+      "retrieved_at": "2026-10-19T17:57:41.938395+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/moonshotai/Kimi-K3/f831ab66814297da540d832a5235f8e904f29d06/README.md?%2Fmoonshotai%2FKimi-K3%2Fresolve%2Ff831ab66814297da540d832a5235f8e904f29d06%2FREADME.md=&etag=%2210466db3bd36b1eb9b14a099d9d8d77130247712%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 45261,
+      "sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/kimi/config.json",
+      "requested_url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/config.json",
+      "retrieved_at": "2026-10-19T17:57:43.270007+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/moonshotai/Kimi-K3/f831ab66814297da540d832a5235f8e904f29d06/config.json?%2Fmoonshotai%2FKimi-K3%2Fresolve%2Ff831ab66814297da540d832a5235f8e904f29d06%2Fconfig.json=&etag=%22d7f26ead420b1d967f2759679dbebc65edfcff93%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 7006,
+      "sha256": "9710e121a58d03ac92c8d6da287a19541994319afbbe6d6202af001ffd379213",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/kimi/LICENSE",
+      "requested_url": "https://huggingface.co/moonshotai/Kimi-K3/resolve/f831ab66814297da540d832a5235f8e904f29d06/LICENSE",
+      "retrieved_at": "2026-10-19T17:57:44.720743+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/moonshotai/Kimi-K3/f831ab66814297da540d832a5235f8e904f29d06/LICENSE?%2Fmoonshotai%2FKimi-K3%2Fresolve%2Ff831ab66814297da540d832a5235f8e904f29d06%2FLICENSE=&etag=%2297c0111bba229b0981b1d74e34bacef723ca8f7b%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 3065,
+      "sha256": "20c797ce19af0c17de52c6afb144644768a591c521655f5ebf5712c9850f2887",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/mimoflash/api.json",
+      "requested_url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+      "retrieved_at": "2026-10-19T17:57:45.416767+00:00",
+      "final_url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 14241,
+      "sha256": "8c833ad35990779376a6a92f7a966000c1338e9ab2ee167bd61dde5ab98d20b5",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/mimoflash/README.md",
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/resolve/dcd3fd83fb181622fbc606fbb1709901982a62c2/README.md",
+      "retrieved_at": "2026-10-19T17:57:46.009627+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Flash-RL/dcd3fd83fb181622fbc606fbb1709901982a62c2/README.md?%2FXiaomiMiMo%2FMiMo-V2.6-Flash-RL%2Fresolve%2Fdcd3fd83fb181622fbc606fbb1709901982a62c2%2FREADME.md=&etag=%22a780c5f93d7d7d78e503e809f335efa39484db9a%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 9612,
+      "sha256": "132596ea76492320f5283756015e3f696f289b87fcf38e4b71602a8c901b0557",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/mimoflash/config.json",
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/resolve/dcd3fd83fb181622fbc606fbb1709901982a62c2/config.json",
+      "retrieved_at": "2026-10-19T17:57:46.631720+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Flash-RL/dcd3fd83fb181622fbc606fbb1709901982a62c2/config.json?%2FXiaomiMiMo%2FMiMo-V2.6-Flash-RL%2Fresolve%2Fdcd3fd83fb181622fbc606fbb1709901982a62c2%2Fconfig.json=&etag=%229e0d9673d479e810bb2cd0ff8e581e9f16f702b4%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 8068,
+      "sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/mimoflash/LICENSE",
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/resolve/dcd3fd83fb181622fbc606fbb1709901982a62c2/LICENSE",
+      "retrieved_at": "2026-10-19T17:57:47.688501+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "evidence_role": "retrieval_failure"
+    },
+    {
+      "path": "models/mimopro/api.json",
+      "requested_url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "retrieved_at": "2026-10-19T17:57:48.127873+00:00",
+      "final_url": "https://huggingface.co/api/models/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 17584,
+      "sha256": "7d1b95d77411709355d98d33c8c27c987c214840bd997089b602cb160a7c857d",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/mimopro/README.md",
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/b61f21852680ee02a29e946e18cf8697f4844061/README.md",
+      "retrieved_at": "2026-10-19T17:57:48.619158+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/b61f21852680ee02a29e946e18cf8697f4844061/README.md?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2Fb61f21852680ee02a29e946e18cf8697f4844061%2FREADME.md=&etag=%22bf9881e0e678d1b33d086dd4c6fa5959dc2d3daa%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 9770,
+      "sha256": "bf373f444efcd309534804edd1fadadd1eb0ad64f7b0474c96fdac946614c13e",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/mimopro/config.json",
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/b61f21852680ee02a29e946e18cf8697f4844061/config.json",
+      "retrieved_at": "2026-10-19T17:57:49.510651+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/XiaomiMiMo/MiMo-V2.6-Pro-RL/b61f21852680ee02a29e946e18cf8697f4844061/config.json?%2FXiaomiMiMo%2FMiMo-V2.6-Pro-RL%2Fresolve%2Fb61f21852680ee02a29e946e18cf8697f4844061%2Fconfig.json=&etag=%2274943bea08368aca2990c1e1e1c243c8c885df73%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 9263,
+      "sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/mimopro/LICENSE",
+      "requested_url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/b61f21852680ee02a29e946e18cf8697f4844061/LICENSE",
+      "retrieved_at": "2026-10-19T17:57:50.369382+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "evidence_role": "retrieval_failure"
+    },
+    {
+      "path": "models/deepseek1017/api.json",
+      "requested_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "retrieved_at": "2026-10-19T17:57:51.338988+00:00",
+      "final_url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 5789,
+      "sha256": "ac7bcefdc81dc803fe48a71e306fa24b105503b2d0d75a0f6e2890d9b9e1a550",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/deepseek1017/README.md",
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/README.md",
+      "retrieved_at": "2026-10-19T17:57:51.979335+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash-1017/1bae0e1088993b9b82de08f59de5be5a34e42170/README.md?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash-1017%2Fresolve%2F1bae0e1088993b9b82de08f59de5be5a34e42170%2FREADME.md=&etag=%223b2d135a2f20a462d773716575d793dcb0c71e84%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 5231,
+      "sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/deepseek1017/config.json",
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/config.json",
+      "retrieved_at": "2026-10-19T17:57:52.899802+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash-1017/1bae0e1088993b9b82de08f59de5be5a34e42170/config.json?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash-1017%2Fresolve%2F1bae0e1088993b9b82de08f59de5be5a34e42170%2Fconfig.json=&etag=%2209917a9139b22d5bf8be52132787f435147b1020%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 3311,
+      "sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/deepseek1017/LICENSE",
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/LICENSE",
+      "retrieved_at": "2026-10-19T17:57:53.703825+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash-1017/1bae0e1088993b9b82de08f59de5be5a34e42170/LICENSE?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash-1017%2Fresolve%2F1bae0e1088993b9b82de08f59de5be5a34e42170%2FLICENSE=&etag=%22d62e3bef9f054f21b7fc616365850fbf879a99ff%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 1084,
+      "sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/deepseek1017/model.safetensors.index.json",
+      "requested_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/model.safetensors.index.json",
+      "retrieved_at": "2026-10-19T17:57:54.278983+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/deepseek-ai/DeepSeek-V4.1-Flash-1017/1bae0e1088993b9b82de08f59de5be5a34e42170/model.safetensors.index.json?%2Fdeepseek-ai%2FDeepSeek-V4.1-Flash-1017%2Fresolve%2F1bae0e1088993b9b82de08f59de5be5a34e42170%2Fmodel.safetensors.index.json=&etag=%2254c85064dd92c8550471302e9ae59bedbbf96ca4%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 7470294,
+      "sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+      "evidence_role": "original_public_bytes",
+      "retrieval_note": "Initial length-capped download replaced by complete public curl download; JSON parsed successfully.",
+      "completed_download_verified_at": "2026-10-19T18:05:10.794469+00:00"
+    },
+    {
+      "path": "models/qwen27fp8/api.json",
+      "requested_url": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B-FP8",
+      "retrieved_at": "2026-10-19T17:58:01.520247+00:00",
+      "final_url": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B-FP8",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 64729,
+      "sha256": "ddfa9b6c07366bf5e987ff473a166d9a590ad51cccc2a881e56fa5cc275b0352",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen27fp8/README.md",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/resolve/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/README.md",
+      "retrieved_at": "2026-10-19T17:58:01.966647+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B-FP8/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/README.md?%2FQwen%2FQwen3.8-27B-FP8%2Fresolve%2F017b9c7af6b5689d5dd426a76e0bc077eb5ca20a%2FREADME.md=&etag=%221e511f54d9bff1cbd905b8f4fcf7c15e0566bcec%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 65249,
+      "sha256": "a247d876f5398eed9ae898f32a984083552de57237b5e20714657e1675e26d2e",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen27fp8/config.json",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/resolve/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/config.json",
+      "retrieved_at": "2026-10-19T17:58:02.816439+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B-FP8/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/config.json?%2FQwen%2FQwen3.8-27B-FP8%2Fresolve%2F017b9c7af6b5689d5dd426a76e0bc077eb5ca20a%2Fconfig.json=&etag=%22e66d0dcb2d8066e724407f0ded85b6c3c5cb213a%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 51350,
+      "sha256": "74227dd615bf1ea975aa676bdf355a0379858c12f394b5365cd9dfa5fc2c70bc",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen27fp8/LICENSE",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/resolve/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/LICENSE",
+      "retrieved_at": "2026-10-19T17:58:03.347085+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B-FP8/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/LICENSE?%2FQwen%2FQwen3.8-27B-FP8%2Fresolve%2F017b9c7af6b5689d5dd426a76e0bc077eb5ca20a%2FLICENSE=&etag=%22f938136e3adacfd92be087f6e113b5d6d97f678f%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "models/qwen27fp8/model.safetensors.index.json",
+      "requested_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/resolve/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/model.safetensors.index.json",
+      "retrieved_at": "2026-10-19T17:58:03.866135+00:00",
+      "final_url": "https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.8-27B-FP8/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/model.safetensors.index.json?%2FQwen%2FQwen3.8-27B-FP8%2Fresolve%2F017b9c7af6b5689d5dd426a76e0bc077eb5ca20a%2Fmodel.safetensors.index.json=&etag=%220ecc7a25b5d40e6f0587a80c5300a92ad3e5cf22%22",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 137335,
+      "sha256": "f0838c766951bdfe76d6afbdb2771a8f67aaa2231dedb3d33cebd817729843a2",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "hardware/ecfr-742-6.html",
+      "requested_url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+      "retrieved_at": "2026-10-19T17:58:08.735803+00:00",
+      "final_url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 142360,
+      "sha256": "6a878ce2afccb5922cfe1a3610c64e306d656b5c52fbe48486d6d2586bc90049",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "hardware/ecfr-742-6.md"
+      }
+    },
+    {
+      "path": "software/onyx-pricing.html",
+      "requested_url": "https://onyx.app/pricing",
+      "retrieved_at": "2026-10-19T17:58:08.736191+00:00",
+      "final_url": "https://onyx.app/pricing",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 285579,
+      "sha256": "f0ced98aedec2e66d7600e4d2d97df1658fed7f704a3bd81698eaa4c24310445",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "software/onyx-pricing.md"
+      }
+    },
+    {
+      "path": "software/onyx-LICENSE",
+      "requested_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/LICENSE",
+      "retrieved_at": "2026-10-19T17:58:08.736247+00:00",
+      "final_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/LICENSE",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 1675,
+      "sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "software/onyx-ee-LICENSE",
+      "requested_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/backend/ee/LICENSE",
+      "retrieved_at": "2026-10-19T17:58:08.736343+00:00",
+      "final_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/backend/ee/LICENSE",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 2173,
+      "sha256": "38099c15fbd2f7f63245cb24a147f8f4b51e84b17a79560b9f74e7bdd4211edd",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "software/open-webui-LICENSE",
+      "requested_url": "https://raw.githubusercontent.com/open-webui/open-webui/main/LICENSE",
+      "retrieved_at": "2026-10-19T17:58:08.736317+00:00",
+      "final_url": "https://raw.githubusercontent.com/open-webui/open-webui/main/LICENSE",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 2819,
+      "sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+      "evidence_role": "original_public_bytes"
+    },
+    {
+      "path": "regulation/cybersecurity-2025.html",
+      "requested_url": "https://www.cac.gov.cn/2025-12/29/c_1768735112911946.htm",
+      "retrieved_at": "2026-10-19T17:58:09.173337+00:00",
+      "final_url": "https://www.cac.gov.cn/2025-12/29/c_1768735112911946.htm",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 62480,
+      "sha256": "996925d52a92735a0f9ef4506b7254086ae9ef591a9ea36a6e091788d04fcdc9",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "regulation/cybersecurity-2025.md"
+      }
+    },
+    {
+      "path": "regulation/amac-announcement.html",
+      "requested_url": "https://www.amac.org.cn/xwfb/xhyw/202604/t20260403_27458.html",
+      "retrieved_at": "2026-10-19T17:58:09.309301+00:00",
+      "final_url": "https://www.amac.org.cn/xwfb/xhyw/202604/t20260403_27458.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 319214,
+      "sha256": "2db1c3037a84e634997f9c38b70f24f6446f4d2e06b909f265249b6fe3bd2937",
+      "evidence_role": "original_public_bytes",
+      "extraction": {
+        "method": "Defuddle CLI local HTML --md",
+        "exit_code": 0,
+        "path": "regulation/amac-announcement.md"
+      }
+    },
+    {
+      "path": "regulation/amac-t0004-2026.pdf",
+      "requested_url": "https://www.amac.org.cn/xwfb/xhyw/202604/P020260429638714694502.pdf",
+      "retrieved_at": "2026-10-19T17:58:09.590236+00:00",
+      "final_url": "https://www.amac.org.cn/xwfb/xhyw/202604/P020260429638714694502.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 1762265,
+      "sha256": "aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a",
+      "evidence_role": "original_public_bytes"
+    }
+  ],
+  "fallbacks": [
+    {
+      "url": "https://marketplace.nvidia.com/en-us/enterprise/personal-ai-supercomputers/dgx-spark/",
+      "method": "Exa official-url original-language extraction cross-checked by opened web.run page",
+      "files": [
+        "hardware/spark-store.md",
+        "hardware/spark-store-extraction.json"
+      ],
+      "raw_html_obtained": false
+    }
+  ],
+  "used_in": [
+    "../../infrastructure/final-source-refresh-2026-10-20.md",
+    "../../infrastructure/data/final-source-refresh-2026-10-20/README.md"
+  ]
+}

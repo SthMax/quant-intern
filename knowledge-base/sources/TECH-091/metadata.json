@@ -1,0 +1,28 @@
+{
+  "source_id": "TECH-091",
+  "title": "最终汇报公开模型评测来源包",
+  "scope": "Model cards and benchmark author records; source-specific comparability conditions",
+  "publication_dates": {
+    "Finance Agent v2 page": "2026-10-18",
+    "BizBench v1": "2026-10-14",
+    "ReLE snapshot": "2026-10-15",
+    "model cards": "see API lastModified; release dates not inferred"
+  },
+  "access_date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "evidence_state": "verified-primary for specific inspected passages",
+  "checked_by": "agent",
+  "human_check": "not performed",
+  "archived_originals": "See retrieval manifests and file-manifest.json",
+  "limitations": [
+    "No model calls or GPU runs.",
+    "Current card SHA does not establish benchmark-run SHA.",
+    "Missing per-model thinking or revision fields are not assumed.",
+    "Some dynamic tables are absent from Defuddle extraction; original HTML and author CSV govern.",
+    "GitHub API tree requests failed with 403; Git source and inspected configuration files were obtained separately."
+  ],
+  "collection_role": "main",
+  "text_kind": "authored_source_index_with_original_language_modelcards_benchmark_records_and_code",
+  "original_index": "original.md",
+  "evidence_note": "evidence-note.md"
+}

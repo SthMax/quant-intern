@@ -1,7 +1,7 @@
 # Pilot Candidate Assessment and Proposal Roadmap
 
 **Phase 3 — Weeks 6–8.** Derived from [the final project plan](../../PROJECT_PLAN.md).
-Status: assessment template; no pilots have been scored or recommended.
+Status (20 October 2026): the [final pilot roadmap](final-pilot-roadmap-2026-10-20.md) now scores five candidates and recommends four proposals, using the user's confirmed public-benchmark approach. Priority: announcement/entity-event extraction, research code and tests, financial-report comparison and summaries, then NAS-authorized QA. Materials prescreening is reserved for a later stage. Scores and cost/time scenarios are analytical assumptions; no internal ROI or business acceptance result has been measured. The original method below is retained for reuse.
 
 Identify **3–5 pilot candidates** with clear ROI metrics, prioritized by
 implementation complexity and regulatory risk. Develop **2–5 concrete proposals**

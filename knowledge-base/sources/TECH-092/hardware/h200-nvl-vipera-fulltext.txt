@@ -1,0 +1,211 @@
+NVIDIA H200 NVL 141GB PCIe AI GPU Accelerator | ViperaTech
+Price for 6000 Blackwell series cards have stabilized after 3 consecutive 30% baseline hikes by Nvidia in 2026 and are expected to maintain through the rest of 2026. Supply remains strained. Please note that compliance is mandatory on all AI enterprise compute GPUs and Servers and end-user forms must be filled out before we can share any quotes. Please note Credit Card payments will only work if USD or AED currency is selected on top right corner of the website. HGX B200/B300 lead times are now between 8-14 weeks for Golden Sku, with custom BOMs exceed 20 weeks. For DRAM and SSD bulk orders, please inquire in the chat.Important Notice: We have detected scammers impersonating Viperatech; please verify all payment requests and contact us through our official channels.
+Tracking
+Enter Tracking Number
+Tracking No. *
+Track Now
+Close
+Login
+Login
+Register
+0
+USD, $
+Search Viperatech
+Discover
+Discover
+About Us
+Become A Partner
+Partners
+Careers
+Blogs
+Financing
+Dubai Showroom Tour
+Discover
+About Us
+Become A Partner
+Partners
+Careers
+Blogs
+Financing
+Dubai Showroom Tour
+Support
+Support
+Downloads
+Submit Ticket
+CYCLESAFE™ Warranty
+Compliance Forms
+Support
+Downloads
+Submit Ticket
+CYCLESAFE™ Warranty
+Compliance Forms
+USD, $
+Login
+Register
+Offers
+Feedback
+Offers
+Feedback
+AI Hardware, Enterprise GPUs
+Out of stock
+NVIDIA H200 NVL 141GB AI GPU PCIe Accelerator – 900-21010-0040-000
+0.0 out of 5 (0)
+Share
+NVIDIA H200 NVL 141GB PCIe AI GPU Accelerator
+The NVIDIA H200 NVL 141GB PCIe AI GPU Accelerator is an enterprise-grade GPU solution designed for AI inference, large language models (LLMs), generative AI, deep learning, and high-performance computing (HPC) workloads.
+Featuring 141GB HBM3e memory, high-speed NVLink connectivity, and advanced NVIDIA Tensor Core acceleration, the H200 NVL delivers the performance and scalability required for modern AI infrastructure.
+ViperaTech provides NVIDIA AI hardware solutions with global delivery and expert support for businesses, research institutions, and data centers.
+Architecture: Hopper
+GPU Memory: 141GB HBM3e
+Memory Bandwidth: 4.8TB/s
+FP8 Tensor Core Performance: Up to 3,958 TFLOPS
+Form Factor: PCIe
+Interconnect: NVIDIA NVLink (up to 900GB/s) & PCIe Gen5
+Multi-Instance GPU (MIG): Up to 7 instances
+Max Power Consumption: Up to 600W (configurable)
+Compatible with NVIDIA-Certified Systems and NVIDIA MGX™ H200 NVL platforms
+NVIDIA AI Enterprise: Available as an add-on
+Warranty: 3-Year Manufacturer Warranty
+Ships in 2 weeks from payment. All sales final. No returns or cancellations.
+For bulk inquiries, consult a live chat agent or call our toll-free number.
+Get this product for
+$33,500.00
+Will be delivered to your location via DHL or UPS. Ask an agent if import tariffs apply.
+Inquiry to Buy
+Verify with live chat agent in advance for availability as stock is volatile and can change drastically every 48-72 hours.  No returns or cancellations. For bulk inquiries, consult a live chat agent or call our toll-free number.
+About It
+Why Choose NVIDIA H200 NVL 141GB from ViperaTech?
+Advanced AI Performance – Designed for AI inference, LLM workloads, generative AI, and high-performance computing applications.
+High-Memory AI Acceleration – 141GB HBM3e memory enables efficient processing of large AI models and complex workloads.
+Enterprise-Ready Solution – Supports NVIDIA NVLink, MIG technology, and scalable AI server deployments.
+Global AI Hardware Support – ViperaTech provides enterprise GPU solutions with expert assistance and worldwide delivery including customers in the Dubai (UAE), Saudi Arabia, Qatar, Kuwait, USA, and Canada.
+FAQs
+1. What is the NVIDIA H200 NVL 141GB used for?
+The NVIDIA H200 NVL 141GB is built for AI inference, large language models (LLMs), deep learning, generative AI, and high-performance computing (HPC). Its large HBM3e memory makes it ideal for running complex AI workloads in enterprise environments.
+2. What is the difference between the NVIDIA H200 NVL and the H100?
+The H200 NVL offers more HBM3e memory and higher memory bandwidth than the H100, making it better suited for larger AI models and memory-intensive workloads while using the same Hopper architecture.
+3. Does ViperaTech ship the NVIDIA H200 NVL internationally?
+Yes. ViperaTech supplies the NVIDIA H200 NVL to customers worldwide, including the UAE, Saudi Arabia, Qatar, Kuwait, the USA, and Canada, with enterprise support and global shipping available.
+Get this product for
+$33,500.00
+Will be delivered to your location via DHL or UPS. Ask an agent if import tariffs apply.
+Inquiry to Buy
+Verify with live chat agent in advance for availability as stock is volatile and can change drastically every 48-72 hours.  No returns or cancellations. For bulk inquiries, consult a live chat agent or call our toll-free number.
+⭐ Trusted by Customers
+What Our Customers Say
+Verified reviews from real customers on Trustpilot
+Write a review
+DescriptionSpecificationsDownloadReviews ( 0 )
+DescriptionSpecificationsDownloadReviews (0)
+Description
+NVIDIA H200 Tensor Core GPU - PCIe Powerhouse
+Breakthrough Performance for AI and Data Center Applications
+The NVIDIA H200 Tensor Core GPU in its PCIe form factor offers groundbreaking performance for AI workloads, featuring 141GB of memory and a staggering 4.8TB/s bandwidth. This configuration is optimized for large-scale deployments, supporting up to 8 GPUs per server and utilizing NVLink bridges for high-speed data transfer at 900GB/s. With advanced tensor cores delivering nearly 4,000 TFLOPS in FP8 and INT8 operations, the H200 PCIe is designed for demanding data center environments, scalable AI, and multi-tenant workloads through MIG partitioning for maximum efficiency.
+AI Acceleration for Mainstream Enterprise Servers With H200 NVL
+NVIDIA H200 NVL is ideal for lower-power, air-cooled enterprise rack designs that require flexible configurations, delivering acceleration for every AI and HPC workload regardless of size. With up to four GPUs connected by NVIDIA NVLink™ and a 1.5X memory increase, large language model (LLM) inference can be accelerated up to 1.7X and HPC applications achieve up to 1.3X more performance over the H100 NVL.
+Specifications
+Manufacturer : Enterprise GPUs
+SpecificationH200 NVL (PCIe)
+FP6434 TFLOPS
+FP64 Tensor Core67 TFLOPS
+FP3267 TFLOPS
+TF32 Tensor Core²989 TFLOPS
+BFLOAT16 Tensor Core²1,979 TFLOPS
+FP16 Tensor Core²1,979 TFLOPS
+FP8 Tensor Core²3,958 TFLOPS
+INT8 Tensor Core²3,958 TFLOPS
+GPU Memory141GB
+GPU Memory Bandwidth4.8TB/s
+Decoders7 NVDEC, 7 JPEG
+Confidential ComputingSupported
+Max Thermal Design Power (TDP)Up to 600W (configurable)
+Multi-Instance GPUsUp to 7 MIGs @16.5GB each
+Form FactorPCIe
+Interconnect2- or 4-way NVIDIA NVLink bridge: 900GB/s, PCIe Gen5: 128GB/s
+Server OptionsNVIDIA MGX™ H200 NVL partner and NVIDIA-Certified Systems with up to 8 GPUs
+NVIDIA AI EnterpriseAdd-on
+Download
+No file available
+Reviews 0
+Review this product
+Your Rating
+Select Rating
+Your Review
+Upload Pictures
+Choose File
+No file chosen
+Your Name
+Your Email
+Save my name, email in this browser for later
+Submit
+No reviews available.
+Related Products
+NVIDIA H100 NVL HBM3 94GB 350W
+$32,200.00
+Inquiry to Buys
+Add to Cart
+NVIDIA L40 Enterprise 48GB
+$7,350.00
+Inquiry to Buys
+Add to Cart
+NVIDIA L40S Enterprise 48GB
+$9,700.00
+Inquiry to Buys
+Add to Cart
+NVIDIA H800 Enterprise 80GB
+Inquiry to Buys
+NVIDIA RTX™ A6000 Enterprise 48GB 300W 94MH/s
+$5,100.00
+Inquiry to Buys
+Add to Cart
+NVIDIA RTX PRO 6000 Blackwell Series
+SKU: RTX PRO 6000 Blackwell
+★★★★★
+5.000000 out of 5 (1)
+Inquiry to Buys
+Chat on whatsapp
+Chat with an agent
+Quick links
+OUR LOCATIONS
+AUTHORIZED RESELLERS OF
+CERTIFIED PARTNERS OF
+Sign up to our newsletter and unlock $200 promo code
+Accepted Payments
+Copyright © 2026 Vipera LLC. All Rights Reserved.
+✕
+Viperatech Feedback
+Page Ratings
+Content
+--
+-
++-
++
+++
+Design
+--
+-
++-
++
+++
+Ease of Use
+--
+-
++-
++
+++
+Overall
+--
+-
++-
++
+++
+Page Comments
+Please choose one...
+Please provide your email or phone number for a response from Viperatech.
+What was the purpose of your visit today?
+Please choose one...
+Were You Able to complete the purpose of your visit?
+Please choose one...
+How often do you visit viperatech.com?
+Please choose one...
+SEND FEEDBACK

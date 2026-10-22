@@ -1,0 +1,31 @@
+{
+  "technical_implementation_cny_per_person_day": 2500,
+  "analyst_capacity_value_cny_per_hour": 150,
+  "setup_cost_ranges_cny": [
+    [
+      20000,
+      30000
+    ],
+    [
+      15000,
+      25000
+    ],
+    [
+      30000,
+      50000
+    ],
+    [
+      62500,
+      112500
+    ],
+    [
+      37500,
+      62500
+    ]
+  ],
+  "all_five_scenario_cash_savings_at_zero_conversion": 0,
+  "cross_role_hours_not_net_subtracted": true,
+  "csv_matches_json": true,
+  "updated_links_missing": [],
+  "models_called": 0
+}

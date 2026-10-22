@@ -1,0 +1,110 @@
+[
+  {
+    "path": "hardware/ecfr-742-6.html",
+    "requested_url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+    "retrieved_at": "2026-10-19T17:58:08.735803+00:00",
+    "final_url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 142360,
+    "sha256": "6a878ce2afccb5922cfe1a3610c64e306d656b5c52fbe48486d6d2586bc90049",
+    "evidence_role": "original_public_bytes",
+    "extraction": {
+      "method": "Defuddle CLI local HTML --md",
+      "exit_code": 0,
+      "path": "hardware/ecfr-742-6.md"
+    }
+  },
+  {
+    "path": "software/onyx-pricing.html",
+    "requested_url": "https://onyx.app/pricing",
+    "retrieved_at": "2026-10-19T17:58:08.736191+00:00",
+    "final_url": "https://onyx.app/pricing",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 285579,
+    "sha256": "f0ced98aedec2e66d7600e4d2d97df1658fed7f704a3bd81698eaa4c24310445",
+    "evidence_role": "original_public_bytes",
+    "extraction": {
+      "method": "Defuddle CLI local HTML --md",
+      "exit_code": 0,
+      "path": "software/onyx-pricing.md"
+    }
+  },
+  {
+    "path": "software/onyx-LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/LICENSE",
+    "retrieved_at": "2026-10-19T17:58:08.736247+00:00",
+    "final_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/LICENSE",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "bytes": 1675,
+    "sha256": "d4847240794058c7ac3cfdf8e5d528fe8b0edf15b32a96612ecb9b3e182092b7",
+    "evidence_role": "original_public_bytes"
+  },
+  {
+    "path": "software/onyx-ee-LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/backend/ee/LICENSE",
+    "retrieved_at": "2026-10-19T17:58:08.736343+00:00",
+    "final_url": "https://raw.githubusercontent.com/onyx-dot-app/onyx/main/backend/ee/LICENSE",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "bytes": 2173,
+    "sha256": "38099c15fbd2f7f63245cb24a147f8f4b51e84b17a79560b9f74e7bdd4211edd",
+    "evidence_role": "original_public_bytes"
+  },
+  {
+    "path": "software/open-webui-LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/open-webui/open-webui/main/LICENSE",
+    "retrieved_at": "2026-10-19T17:58:08.736317+00:00",
+    "final_url": "https://raw.githubusercontent.com/open-webui/open-webui/main/LICENSE",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "bytes": 2819,
+    "sha256": "5f1bd74c48bf13ab0f82e177ad9e637313b92533d20ead2593d49347a47fc232",
+    "evidence_role": "original_public_bytes"
+  },
+  {
+    "path": "regulation/cybersecurity-2025.html",
+    "requested_url": "https://www.cac.gov.cn/2025-12/29/c_1768735112911946.htm",
+    "retrieved_at": "2026-10-19T17:58:09.173337+00:00",
+    "final_url": "https://www.cac.gov.cn/2025-12/29/c_1768735112911946.htm",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 62480,
+    "sha256": "996925d52a92735a0f9ef4506b7254086ae9ef591a9ea36a6e091788d04fcdc9",
+    "evidence_role": "original_public_bytes",
+    "extraction": {
+      "method": "Defuddle CLI local HTML --md",
+      "exit_code": 0,
+      "path": "regulation/cybersecurity-2025.md"
+    }
+  },
+  {
+    "path": "regulation/amac-announcement.html",
+    "requested_url": "https://www.amac.org.cn/xwfb/xhyw/202604/t20260403_27458.html",
+    "retrieved_at": "2026-10-19T17:58:09.309301+00:00",
+    "final_url": "https://www.amac.org.cn/xwfb/xhyw/202604/t20260403_27458.html",
+    "status": 200,
+    "content_type": "text/html",
+    "bytes": 319214,
+    "sha256": "2db1c3037a84e634997f9c38b70f24f6446f4d2e06b909f265249b6fe3bd2937",
+    "evidence_role": "original_public_bytes",
+    "extraction": {
+      "method": "Defuddle CLI local HTML --md",
+      "exit_code": 0,
+      "path": "regulation/amac-announcement.md"
+    }
+  },
+  {
+    "path": "regulation/amac-t0004-2026.pdf",
+    "requested_url": "https://www.amac.org.cn/xwfb/xhyw/202604/P020260429638714694502.pdf",
+    "retrieved_at": "2026-10-19T17:58:09.590236+00:00",
+    "final_url": "https://www.amac.org.cn/xwfb/xhyw/202604/P020260429638714694502.pdf",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 1762265,
+    "sha256": "aa27e6a1c6774585b914a1d7ee1d9e85b7bedea970a4f4de7ec494b670bc241a",
+    "evidence_role": "original_public_bytes"
+  }
+]

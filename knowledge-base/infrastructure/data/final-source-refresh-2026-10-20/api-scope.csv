@@ -1,0 +1,3 @@
+service,model,rate_usd_per_Mtoken,scope,current_basis,ppt_label,future_change
+DeepSeek,deepseek-flash -> DeepSeek-V4.1-Flash-1017,offpeak cached0.003/input0.15/output0.60;peak2x,Ordinary public platform terms4.1 exclude state/trade secrets and security/publicinterest harmful data,2026-04-29 effective open-platform terms;2026-02-10 privacy,符合条款及机构分类的公开/获准材料,Search/Fetch selected CLI server tools paid from2026-11-01 Beijing00:00
+Anthropic,claude-sonnet-5-5 global first party,input2/output10/cachewrite5min2.5/1h4/read0.1,Mainland unsupported; unsupported-region control restrictions per2025 official announcement,Commercial terms effective2025-06-17;regional announcement2025-09-04,全球API经济对照；主体、地域与数据条件须成立,Supported Regions Policy effective2026-11-12 kept separate

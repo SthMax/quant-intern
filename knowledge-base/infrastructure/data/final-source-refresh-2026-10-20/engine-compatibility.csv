@@ -1,0 +1,6 @@
+engine,model_or_layout,verified_scope,remaining_combination,source_file,presentation_effect,owner
+vLLM0.32,DeepSeekV4.1 architecture,Formal release2026-10-18,Selected build and model revision,engines/vllm-v032.json,Replace stale no-tagged-release claim,W1
+LMCacheMP,DeepSeekV4.1 original 8GPU text,Recipe validated,MTP/DSpark;1017 exact revision;image KV,engines/lmcache-deepseek.md,Retain combination validation; MTP not yet validated,W1
+LMCacheMP,Qwen3.8-27B singleGPU,Recipe validated,FP8 weights+FP8KV+MTP3+GB10+SSD exact combination,engines/lmcache-qwen.md,Use actual block-size log; align/prefix/grouped states,W1
+vLLM0.32,Hopper sparse MLA,1827B/token/rank static format per W1,New runtime startup pool,../TECH-089/vllm-0.32-attention.py,Do not replace by890 due to generic NVFP4 capability,W1
+vLLM0.32,TP4xDP2 same process deployment,202.758GB one host Engram table per W1,CPU offload; IPC; shm; startup confirmation,../TECH-089/vllm-0.32-engram-config.py,Two independent serve instances still405.516GB,W1/W2

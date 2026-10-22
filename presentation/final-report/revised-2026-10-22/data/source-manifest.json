@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-22",
+  "evidence_as_of": "2026-10-20",
+  "sources": [
+    {
+      "path": "knowledge-base/infrastructure/data/tco-2026-10-20/results.json",
+      "sha256": "661361bd76bd520ce34b952c7fdc45e0ad5dc2b845ae3edb46fbeda734f72b37"
+    },
+    {
+      "path": "knowledge-base/infrastructure/data/final-configurations-2026-10-20/summary.json",
+      "sha256": "098cb4e28dcecee1e9f4cf9621d721e79e9372536446fd6119789870a6c44933"
+    },
+    {
+      "path": "knowledge-base/pilots/data/final-pilot-roadmap-2026-10-20/seed-cases.jsonl",
+      "sha256": "ac1625950d876359f280febc3ff2aacad1ac9686942880e67f2a41ecf730a067"
+    },
+    {
+      "path": "knowledge-base/models/data/public-benchmarks-2026-10-20/finance-agent-v2.csv",
+      "sha256": "33067e46e4e897c68820d8d4216c1561f8aeb32f6b9351a964f3ad695ca97336"
+    }
+  ],
+  "slides_sha256": "a9285c9bc6e0f9a412b3f844755ed254905605a6e60b4102374eb7baa52f72b7",
+  "speaker_notes_sha256": "29963fb0442070f8c431a319b4dc1a4a6753345ff5c475066b2502a92272372e",
+  "chinese_replacements": 32
+}

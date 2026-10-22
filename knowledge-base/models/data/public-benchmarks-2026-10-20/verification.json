@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-20",
+  "authored_local_links_missing": [],
+  "extractbench_score_values_checked": 24,
+  "finance_score_values_checked": 8,
+  "bizbench_raw_table_rows_checked": [
+    "Qwen3.8-27B",
+    "DeepSeek-V4.1-Flash",
+    "GLM-5.3-Flash"
+  ],
+  "json_files_parse": true,
+  "svg_files_parse": true,
+  "figures_visually_checked": 4,
+  "source_file_hashes_verified": 61,
+  "models_called": 0,
+  "no_internal_roi_or_acceptance_results": true
+}

@@ -1,0 +1,25 @@
+{
+  "validated_at_utc": "2026-10-19T18:05:10.914318+00:00",
+  "checked_local": "2026-10-20",
+  "passed": true,
+  "checks": {
+    "source_hashes": 123,
+    "retrievals": 86,
+    "csv_rows": {
+      "engine-compatibility.csv": 5,
+      "api-scope.csv": 2,
+      "model-license-matrix.csv": 12,
+      "check-table.csv": 16,
+      "regulatory-dates.csv": 12,
+      "price-refresh.csv": 5
+    },
+    "relative_links": 89,
+    "deepseek_static_metadata_equal": true,
+    "license_byte_comparisons": 8,
+    "amac_pdf_equals_baseline": true,
+    "deepseek_full_indexes_parsed": 2,
+    "official_future_effective_policy_separated": true,
+    "prices_reobserved_unchanged": true
+  },
+  "failures": []
+}

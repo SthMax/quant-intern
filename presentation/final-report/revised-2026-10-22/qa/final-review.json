@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-22",
+  "main_pages": 32,
+  "reference_pages": 6,
+  "canvas": [
+    1600,
+    900
+  ],
+  "professional_review": "../editorial/professional-presenter-review-2026-10-22.md",
+  "chinese_review": "qa/chinese-review.md",
+  "review_scope": [
+    "Professional presenter reviewed all 38 slide PNGs, revised 9 content/layout pages and closed the last P23 fix.",
+    "Chinese teacher reviewed all 38 slide PNGs and the complete speaker notes; final P04/P14/P23 fixes reviewed.",
+    "Primary agent inspected all 38 PDF pages and re-inspected pages changed by copy and layout revisions."
+  ],
+  "pdf_visual_result": "No clipping or missing Chinese text found in final review.",
+  "file_checks_passed": true,
+  "native_powerpoint_opened": false,
+  "files": [
+    {
+      "path": "output/final-report-2026-10-22.pptx",
+      "sha256": "664b25614e846e51162d4c3e8d70fc556f91bf4bde655a05ec676b303052979d",
+      "bytes": 217047
+    },
+    {
+      "path": "output/final-report-2026-10-22.pdf",
+      "sha256": "4991045d0f7502f91b46fd753e7e7019684b55195861dab25350fa2c4c8c4ecb",
+      "bytes": 1174577
+    },
+    {
+      "path": "speaker-notes.md",
+      "sha256": "29963fb0442070f8c431a319b4dc1a4a6753345ff5c475066b2502a92272372e",
+      "bytes": 23226
+    }
+  ]
+}

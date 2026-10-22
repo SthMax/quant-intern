@@ -1,0 +1,41 @@
+{
+  "checked_local": "2026-10-20",
+  "original_repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "original_revision": "314113f8a7dadb388215396ba5fbee2c610a04d6",
+  "new_repo": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "new_revision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+  "files": {
+    "LICENSE": {
+      "original_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+      "new_sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+      "bytes_equal": true,
+      "original_bytes": 1084,
+      "new_bytes": 1084
+    },
+    "config.json": {
+      "original_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+      "new_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+      "bytes_equal": true,
+      "original_bytes": 3311,
+      "new_bytes": 3311
+    },
+    "model.safetensors.index.json": {
+      "original_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+      "new_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+      "bytes_equal": true,
+      "original_bytes": 7470294,
+      "new_bytes": 7470294
+    }
+  },
+  "weights_downloaded": false,
+  "weight_value_equality_claimed": false,
+  "measurement_revision_policy": "Current repo snapshots do not fill in an undisclosed historical benchmark revision.",
+  "original_index": {
+    "total_size_bytes": 510286023000,
+    "tensor_keys": 96085
+  },
+  "new_index": {
+    "total_size_bytes": 510286023000,
+    "tensor_keys": 96085
+  }
+}

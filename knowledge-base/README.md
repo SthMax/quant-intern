@@ -1,5 +1,7 @@
 # Knowledge Base
 
+> **2026-10-20最终研究整合：**新增TECH-089–092，已核索引共**216个来源ID：197主阅读、15辅助、4来源链**。入口：[三场景配置与容量](infrastructure/final-configurations-2026-10-20.md)、[三年TCO](infrastructure/tco-analysis-2026-10-20.md)、[公开评测](models/public-benchmark-review-2026-10-20.md)、[试点路线](pilots/final-pilot-roadmap-2026-10-20.md)、[制品／许可／采购／服务条件核验](infrastructure/final-source-refresh-2026-10-20.md)。原文、元数据与研究解释分别保存，既有测量保留原制品、精度、负载和版本身份。
+
 > **2026-10-14 A100比较修订：**[专项文档](infrastructure/deepseek-a100-project-review-2026-10-12.md)改用官方510.286GB原生制品作显存基线，并区分模型自带能力、通用引擎能力与项目实现。[汇报讲稿](../presentation/week7-deployment-2026-10-15/speaker-notes.md)加入闪光点、评价和公司A100采用modified vLLM的说明。新增TECH-088，当前212项：193主阅读、15辅助、4来源链。
 
 > **2026-10-13讲稿修订：**[四部分汇报notes](../presentation/week7-deployment-2026-10-15/speaker-notes.md)已完成，用户审查后再制作Beamer。[A100专项](infrastructure/deepseek-a100-project-review-2026-10-12.md)按架构、提速、显存三部分重写；其他方案与读书笔记同步整理语言。新增机制算例与同版本MoE分组源码，来源ID总数保持211；[编辑审查](audits/2026-10-13-editorial-review/README.md)记录30个逐段问题和复读意见。修改前检查点为`133c798`。

@@ -1,0 +1,120 @@
+{
+  "as_of": "2026-10-20",
+  "page_map": {
+    "P02": {
+      "title": "三种部署方式",
+      "data": [
+        "summary.json"
+      ]
+    },
+    "P06": {
+      "title": "负载与上下文",
+      "data": [
+        "summary.json",
+        "company-targets.csv"
+      ]
+    },
+    "P10": {
+      "title": "Spark模型与运行条件",
+      "data": [
+        "summary.json"
+      ]
+    },
+    "P11": {
+      "title": "单人生成与首次等待",
+      "data": [
+        "spark-measured.csv",
+        "spark-windows.csv"
+      ],
+      "legend": "solid=external measured; dashed=empirical calculation;1M 64-token point separate"
+    },
+    "P12": {
+      "title": "追加输入与前缀复用",
+      "data": [
+        "spark-windows.csv"
+      ],
+      "legend": "append1024/8192 calculations exclude restore queue first decode"
+    },
+    "P13": {
+      "title": "统一内存和SSD",
+      "data": [
+        "spark-sharing.csv",
+        "restoration-budgets.csv"
+      ]
+    },
+    "P14": {
+      "title": "三人共享",
+      "data": [
+        "spark-measured.csv",
+        "spark-sharing.csv"
+      ],
+      "legend": "resident capacity vs common decode vs whole-request rate"
+    },
+    "P15": {
+      "title": "Spark费用",
+      "data": [
+        "summary.json"
+      ]
+    },
+    "P18": {
+      "title": "知识库相同硬件与两种实施",
+      "data": [
+        "rag-capacity.csv",
+        "rag-performance.csv",
+        "summary.json"
+      ]
+    },
+    "P20": {
+      "title": "模型权重、Engram与KV",
+      "data": [
+        "summary.json",
+        "host-budget.csv"
+      ]
+    },
+    "P21": {
+      "title": "20人四档容量",
+      "data": [
+        "company-capacity.csv"
+      ],
+      "legend": "post-graph strict pool estimate +10% token reserve; old fixed image"
+    },
+    "P22": {
+      "title": "等待工具与缓存恢复",
+      "data": [
+        "company-capacity.csv",
+        "restoration-budgets.csv",
+        "host-budget.csv"
+      ]
+    },
+    "P23": {
+      "title": "已有回放与20路目标",
+      "data": [
+        "company-replay.csv",
+        "company-targets.csv"
+      ],
+      "legend": "140-157K high-hit synthetic DSpark replay vs separately defined 1M targets"
+    },
+    "P24": {
+      "title": "GPU与CPU工具池",
+      "data": [
+        "tool-cpu.csv",
+        "summary.json"
+      ],
+      "legend": "Little law teaching example; actual average CPU distinct from allocated cores"
+    },
+    "P26": {
+      "title": "公司整机预算",
+      "data": [
+        "summary.json"
+      ]
+    },
+    "P27-P29": {
+      "title": "成本模型输入",
+      "data": [
+        "summary.json",
+        "company-targets.csv",
+        "rag-performance.csv"
+      ]
+    }
+  }
+}

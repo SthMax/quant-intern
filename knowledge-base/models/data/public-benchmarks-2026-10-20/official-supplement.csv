@@ -1,0 +1,12 @@
+model,benchmark,score,metric,settings,source,evidence
+Qwen3.8-27B,LiveCodeBench v6,90.3,published score,card default xhigh; per-benchmark full settings not specified,https://huggingface.co/Qwen/Qwen3.8-27B,vendor reported; not internal evaluation
+Gemma4-31B-it,LiveCodeBench v6,80,published score,instruction tuned; full per-benchmark settings not specified,https://huggingface.co/google/gemma-4-31B-it,vendor reported; not internal evaluation
+Gemma4-26B-A4B-it,LiveCodeBench v6,77.1,published score,instruction tuned; full per-benchmark settings not specified,https://huggingface.co/google/gemma-4-26B-A4B-it,vendor reported; not internal evaluation
+Gemma4-31B-it,AIME 2026,89.2,published score,no tools,https://huggingface.co/google/gemma-4-31B-it,vendor reported; not internal evaluation
+Gemma4-26B-A4B-it,AIME 2026,88.3,published score,no tools,https://huggingface.co/google/gemma-4-26B-A4B-it,vendor reported; not internal evaluation
+DeepSeek-V4.1-Flash,MathArena Apex,65.6,Pass@1,effort=100; temp=1; top_p=.95; tool setting not separately specified,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,vendor reported; not internal evaluation
+Gemma4-31B-it,MRCR v2,66.4,average score,8 needle; 128K,https://huggingface.co/google/gemma-4-31B-it,vendor reported; not internal evaluation
+Gemma4-26B-A4B-it,MRCR v2,44.1,average score,8 needle; 128K,https://huggingface.co/google/gemma-4-26B-A4B-it,vendor reported; not internal evaluation
+Qwen3.8-27B,DeepSWE v1.1,42.2,reported resolved,Claude Code; temp=1; top_p=.95; context=256K,https://huggingface.co/Qwen/Qwen3.8-27B,vendor reported; not internal evaluation
+DeepSeek-V4.1-Flash,DeepSWE v1.1,69.8,Resolved,Claude Code; effort=100; context=1M; N=8; max_steps=500,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,vendor reported; not internal evaluation
+DeepSeek-V4.1-Flash,DeepSWE v1.1,74.2,Resolved,mini-SWE; effort=100; context=1M; N=8; max_steps=500,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,vendor reported; not internal evaluation

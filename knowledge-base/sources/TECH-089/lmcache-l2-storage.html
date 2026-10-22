@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+
+<html :class="{'dark': darkMode === 'dark' || (darkMode === 'system' &amp;&amp; window.matchMedia('(prefers-color-scheme: dark)').matches)}" class="scroll-smooth" data-content_root="../" lang="en" x-data="{ darkMode: localStorage.getItem('darkMode') || localStorage.setItem('darkMode', 'system'), activeSection: '' }" x-init="$watch('darkMode', val =&gt; localStorage.setItem('darkMode', val))">
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="white" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="black" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>L2 Storage (Persistent Cache) | LMCache</title>
+<meta content="L2 Storage (Persistent Cache) | LMCache" property="og:title"/>
+<meta content="L2 Storage (Persistent Cache) | LMCache" name="twitter:title"/>
+<link href="../_static/pygments.css?v=935426dd" rel="stylesheet" type="text/css"/>
+<link href="../_static/theme.css?v=42baaae4" rel="stylesheet" type="text/css"/>
+<link href="../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
+<link href="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" rel="stylesheet" type="text/css"/>
+<link href="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" rel="stylesheet" type="text/css"/>
+<link href="../_static/custom.css?v=68dbd201" rel="stylesheet" type="text/css"/>
+<link href="../_static/scroll.css?v=1a89b264" rel="stylesheet" type="text/css"/>
+<link href="../_static/awesome-sphinx-design.css?v=15e0fffa" rel="stylesheet" type="text/css"/>
+<link href="../_static/lmcache-logo.png" rel="icon"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="serde.html" rel="next" title="L2 Serde (Serialization / Deserialization)"/>
+<link href="hybrid_models.html" rel="prev" title="Hybrid-Attention Models"/>
+<script>
+    <!-- Prevent Flash of wrong theme -->
+      const userPreference = localStorage.getItem('darkMode');
+      let mode;
+      if (userPreference === 'dark' || window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        mode = 'dark';
+        document.documentElement.classList.add('dark');
+      } else {
+        mode = 'light';
+      }
+      if (!userPreference) {localStorage.setItem('darkMode', mode)}
+    </script>
+</head>
+<body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false, showScrollTop: false }">
+<div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="" x-show="showSidebar"></div><div class="relative flex flex-col min-h-screen" id="page"><a class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100" href="#content">
+      Skip to content
+    </a><header class="sticky top-0 z-40 w-full border-b shadow-sm border-border supports-backdrop-blur:bg-background/60 bg-background/95 backdrop-blur"><div class="container flex items-center h-14">
+<div class="hidden mr-4 md:flex">
+<a class="flex items-center mr-6" href="../index.html"><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">LMCache</span>
+</a></div><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
+<svg aria-hidden="true" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
+</svg>
+<span class="sr-only">Toggle navigation menu</span>
+</button>
+<div class="flex items-center justify-between flex-1 space-x-2 sm:space-x-4 md:justify-end">
+<div class="flex-1 w-full md:w-auto md:flex-none"><form @keydown.k.window.meta="$refs.search.focus()" action="../search.html" class="relative flex items-center group" id="searchbox" method="get">
+<input aria-label="Search the docs" class="inline-flex items-center font-medium transition-colors bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background border border-input hover:bg-accent focus:bg-accent hover:text-accent-foreground focus:text-accent-foreground hover:placeholder-accent-foreground py-2 px-4 relative h-9 w-full justify-start rounded-[0.5rem] text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64" id="search-input" name="q" placeholder="Search ..." type="search" x-ref="search"/>
+<kbd class="pointer-events-none absolute right-1.5 top-2 hidden h-5 select-none text-muted-foreground items-center gap-1 rounded border border-border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex group-hover:bg-accent group-hover:text-accent-foreground">
+<span class="text-xs">⌘</span>
+    K
+  </kbd>
+</form>
+</div>
+<nav class="flex items-center space-x-1">
+<a href="https://github.com/LMCache/LMCache/" rel="noopener nofollow" title="Visit GitHub">
+<div class="inline-flex items-center justify-center px-0 text-sm font-medium transition-colors rounded-md disabled:opacity-50 disabled:pointer-events-none hover:bg-accent hover:text-accent-foreground h-9 w-9">
+<svg fill="currentColor" height="26px" style="margin-top:-2px;display:inline" viewbox="0 0 45 44" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M22.477.927C10.485.927.76 10.65.76 22.647c0 9.596 6.223                 17.736 14.853 20.608 1.087.2 1.483-.47 1.483-1.047 0-.516-.019-1.881-.03-3.693-6.04 1.312-7.315-2.912-7.315-2.912-.988-2.51-2.412-3.178-2.412                 -3.178-1.972-1.346.149-1.32.149-1.32 2.18.154 3.327 2.24 3.327 2.24 1.937 3.318 5.084 2.36 6.321 1.803.197-1.403.759-2.36 1.379-2.903-4.823-.548-9.894-2.412-9.894-10.734 0-2.37.847-4.31 2.236-5.828-.224-.55-.969-2.759.214-5.748 0 0 1.822-.584 5.972 2.226 1.732-.482 3.59-.722 5.437-.732 1.845.01 3.703.25 5.437.732 4.147-2.81 5.967-2.226 5.967-2.226 1.185 2.99.44 5.198.217 5.748 1.392 1.517 2.232                  3.457 2.232 5.828 0 8.344-5.078 10.18-9.916 10.717.779.67 1.474 1.996 1.474                 4.021 0 2.904-.027 5.247-.027 5.96 0 .58.392 1.256 1.493 1.044C37.981 40.375 44.2 32.24                  44.2 22.647c0-11.996-9.726-21.72-21.722-21.72" fill="currentColor" fill-rule="evenodd"></path></svg>
+</div>
+</a>
+<button @click="darkMode = darkMode === 'light' ? 'dark' : 'light'" aria-label="Color theme switcher" class="relative inline-flex items-center justify-center px-0 text-sm font-medium transition-colors rounded-md hover:bg-accent hover:text-accent-foreground h-9 w-9" type="button">
+<svg class="absolute transition-all scale-100 rotate-0 dark:-rotate-90 dark:scale-0" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 685q45.456 0 77.228-31.772Q589 621.456 589 576q0-45.456-31.772-77.228Q525.456 467 480 467q-45.456 0-77.228 31.772Q371 530.544 371 576q0 45.456 31.772 77.228Q434.544 685 480 685Zm0 91q-83 0-141.5-58.5T280 576q0-83 58.5-141.5T480 376q83 0 141.5 58.5T680 576q0 83-58.5 141.5T480 776ZM80 621.5q-19.152 0-32.326-13.174T34.5 576q0-19.152 13.174-32.326T80 530.5h80q19.152 0 32.326 13.174T205.5 576q0 19.152-13.174 32.326T160 621.5H80Zm720 0q-19.152 0-32.326-13.174T754.5 576q0-19.152 13.174-32.326T800 530.5h80q19.152 0 32.326 13.174T925.5 576q0 19.152-13.174 32.326T880 621.5h-80Zm-320-320q-19.152 0-32.326-13.174T434.5 256v-80q0-19.152 13.174-32.326T480 130.5q19.152 0 32.326 13.174T525.5 176v80q0 19.152-13.174 32.326T480 301.5Zm0 720q-19.152 0-32.326-13.17Q434.5 995.152 434.5 976v-80q0-19.152 13.174-32.326T480 850.5q19.152 0 32.326 13.174T525.5 896v80q0 19.152-13.174 32.33-13.174 13.17-32.326 13.17ZM222.174 382.065l-43-42Q165.5 327.391 166 308.239t13.174-33.065q13.435-13.674 32.587-13.674t32.065 13.674l42.239 43q12.674 13.435 12.555 31.706-.12 18.272-12.555 31.946-12.674 13.674-31.445 13.413-18.772-.261-32.446-13.174Zm494 494.761-42.239-43q-12.674-13.435-12.674-32.087t12.674-31.565Q686.609 756.5 705.38 757q18.772.5 32.446 13.174l43 41.761Q794.5 824.609 794 843.761t-13.174 33.065Q767.391 890.5 748.239 890.5t-32.065-13.674Zm-42-494.761Q660.5 369.391 661 350.62q.5-18.772 13.174-32.446l41.761-43Q728.609 261.5 747.761 262t33.065 13.174q13.674 13.435 13.674 32.587t-13.674 32.065l-43 42.239q-13.435 12.674-31.706 12.555-18.272-.12-31.946-12.555Zm-495 494.761Q165.5 863.391 165.5 844.239t13.674-32.065l43-42.239q13.435-12.674 32.087-12.674t31.565 12.674Q299.5 782.609 299 801.38q-.5 18.772-13.174 32.446l-41.761 43Q231.391 890.5 212.239 890t-33.065-13.174ZM480 576Z"></path>
+</svg>
+<svg class="absolute transition-all scale-0 rotate-90 dark:rotate-0 dark:scale-100" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 936q-151 0-255.5-104.5T120 576q0-138 90-239.5T440 218q25-3 39 18t-1 44q-17 26-25.5 55t-8.5 61q0 90 63 153t153 63q31 0 61.5-9t54.5-25q21-14 43-1.5t19 39.5q-14 138-117.5 229T480 936Zm0-80q88 0 158-48.5T740 681q-20 5-40 8t-40 3q-123 0-209.5-86.5T364 396q0-20 3-40t8-40q-78 32-126.5 102T200 576q0 116 82 198t198 82Zm-10-270Z"></path>
+</svg>
+</button>
+</nav>
+</div>
+</div>
+</header>
+<div class="flex-1"><div class="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10"><aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" class="fixed inset-y-0 left-0 md:top-14 z-50 md:z-30 bg-background md:bg-transparent transition-all duration-100 -translate-x-full md:translate-x-0 ml-0 p-6 md:p-0 md:-ml-2 md:h-[calc(100vh-3.5rem)] w-5/6 md:w-full shrink-0 overflow-y-auto border-r border-border md:sticky" id="left-sidebar">
+<a class="!justify-start text-sm md:!hidden bg-background" href="../index.html"><span class="font-bold text-clip whitespace-nowrap">LMCache</span>
+</a>
+<div class="relative overflow-hidden md:overflow-auto my-4 md:my-0 h-[calc(100vh-8rem)] md:h-auto">
+<div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
+<p class="caption" role="heading"><span class="caption-text">Welcome to LMCache</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Welcome to LMCache!</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/quickstart.html">Quickstart</a></li>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../getting_started/quickstart/index.html">More Examples<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/quickstart/offload_kv_cache.html">Example: Offload KV cache to CPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/quickstart/share_kv_cache.html">Example: Share KV cache across multiple LLMs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/quickstart/disaggregated_prefill.html">Example: Disaggregated prefill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/quickstart/multimodality.html">Example: Multimodal KV Cache Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/quickstart/standalone_starter.html">Standalone Starter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/benchmarking.html">Benchmarking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/kv_cache_calculator.html">KV Cache Size Calculator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/troubleshoot.html">TroubleShoot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/quickstart/standalone_starter.html">Standalone Starter</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recipes</span></p>
+<ul>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../recipes/index.html">Recipes<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../recipes/deepseek_v4_flash.html">DeepSeek-V4-Flash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/minimax_m2.html">MiniMaxM2ForCausalLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/gemma4.html">Gemma 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/gemma3.html">Gemma3ForConditionalGeneration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/devstral.html">MistralForCausalLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/gpt_oss.html">GptOssForCausalLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/qwen3.html">Qwen3MoeForCausalLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/qwen3_5.html">Qwen3_5ForConditionalGeneration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/llama.html">LlamaForCausalLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/phi3.html">Phi3ForCausalLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../recipes/mixtral.html">MixtralForCausalLM</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">KV Cache offloading and sharing</span></p>
+<ul>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../kv_cache/storage_backends/index.html">Using Different Storage Backends<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/cpu_ram.html">CPU RAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/custom_backend.html">Custom Storage Backends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/dax.html">Device-DAX (/dev/dax)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/eic.html">EIC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/fs.html">Filesystem Backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/gds.html">GDS Backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/hfbucket.html">Hugging Face Buckets Backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/infinistore.html">InfiniStore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/local_storage.html">Local storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/maru.html">Maru</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/mock.html">Mock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/mooncake.html">Mooncake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/nixl.html">Nixl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/redis.html">Redis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/bigtable.html">Google Cloud Bigtable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/resp.html">RESP (Native Redis/Valkey)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/s3.html">S3 Backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/sagemaker_hyperpod.html">SageMaker Hyperpod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/valkey.html">Valkey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/weka.html">Weka</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache/storage_backends/3fs.html">3FS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kv_cache/async_loading.html">Async Loading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kv_cache/caching_policies.html">Using Different Caching Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kv_cache/p2p_sharing.html">P2P KV Cache Sharing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Non-KV caching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../non_kv_cache/encoder_cache.html">Encoder caching</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Multiprocess Mode</span></p>
+<ul class="current">
+<li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="index.html">Multiprocess Mode<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul class="current" x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html">Configuration Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hybrid_models.html">Hybrid-Attention Models</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">L2 Storage (Persistent Cache)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="serde.html">L2 Serde (Serialization / Deserialization)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment.html">Deployment Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operator.html">Kubernetes Operator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coordinator.html">Multi-Server Coordination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http_api.html">HTTP API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="observability.html">Observability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tracing_and_debugging.html">Tracing and Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture.html">Architecture &amp; Developer Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="frontend_dashboard.html">Frontend Dashboard</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Disaggregated prefill</span></p>
+<ul>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../disaggregated_prefill/nixl/index.html">Using NIXL<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../disaggregated_prefill/nixl/1p1d.html">1p1d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../disaggregated_prefill/nixl/xpyd.html">XpYd</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../disaggregated_prefill/shared_storage.html">Using shared storage</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">KV Cache management</span></p>
+<ul>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../kv_cache_management/index.html">LMCache Controller<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache_management/clear.html">Clear the KV cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache_management/compress.html">Compress and Decompress the KV cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache_management/health.html">Check controller health</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache_management/lookup.html">Lookup the KV cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache_management/move.html">Move the KV cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache_management/pin.html">Pin the KV cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache_management/check_finish.html">Check finish of a control event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache_management/query_worker_info.html">Query Worker Info</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">KV Cache Optimizations</span></p>
+<ul>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../kv_cache_optimizations/compression/index.html">Compression<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../kv_cache_optimizations/compression/cachegen.html">CacheGen</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../kv_cache_optimizations/blending.html">Blending</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kv_cache_optimizations/layerwise.html">Layerwise KV Transfer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Use LMCache in production</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../production/docker_deployment.html">Docker deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../production/kubernetes_deployment.html">Kubernetes Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../production/kv_cache_events.html">KV Cache Events</a></li>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../production/observability/index.html">Observability<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../production/observability/vllm_endpoint.html">Metrics by vLLM API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../production/observability/internal_api_server.html">Internal API Server Metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../production/observability/metrics.html">Metrics Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../production/observability/chunk_statistics.html">Chunk Statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../production/observability/health_monitor.html">Health Monitor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../production/observability/periodic_thread_api.html">Periodic Thread Monitoring API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../production/observability/frontend.html">LMCache Frontend</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../production/performance_tuning.html">Performance Tuning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">CLI</span></p>
+<ul>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../cli/index.html">CLI Reference<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../cli/server.html">lmcache server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli/coordinator.html">lmcache coordinator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli/describe.html">lmcache describe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli/ping.html">lmcache ping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli/query.html">lmcache query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli/bench.html">lmcache bench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli/kvcache.html">lmcache kvcache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli/quota.html">lmcache quota</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli/trace.html">lmcache trace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cli/tool.html">lmcache tool</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Internal API Server</span></p>
+<ul>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../internal_api_server/internal_api_server.html">Internal API Server<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../internal_api_server/common_apis.html">Common APIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../internal_api_server/vllm_apis.html">vLLM / Inference APIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../internal_api_server/controller_apis.html">Controller APIs</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Controller WebUI</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../controller/index.html">Controller WebUI</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide/contributing.html">Contributing Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide/docker_file.html">Dockerfile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide/architecture.html">Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide/integration.html">Integration</a></li>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../developer_guide/extending_lmcache/index.html">Extending LMCache<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../developer_guide/extending_lmcache/native_connectors.html">Adding Native Connectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer_guide/extending_lmcache/runtime_plugins.html">Runtime Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer_guide/extending_lmcache/storage_plugins.html">Storage Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer_guide/extending_lmcache/remote_storage_plugins.html">Remote Storage Plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developer_guide/cli.html">Extending the CLI</a></li>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../developer_guide/usage/index.html">Usage Data Module<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../developer_guide/usage/basic_check.html">Basic Check Tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer_guide/usage/usage_stats_collection.html">Usage Stats Collection</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api_reference/configurations.html">Configuring LMCache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_reference/storage_backends.html">Adding new storage backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_reference/dynamic_connector.html">vLLM Dynamic Connector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_reference/multimodality.html">KV Caching for Multimodal Models with vLLM</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/meetings.html">Community meetings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community/blogs.html">Blogs</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<button @click="showSidebar = false" class="absolute md:hidden right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100" type="button">
+<svg class="h-4 w-4" fill="currentColor" height="24" stroke="none" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 632 284 828q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536 576l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480 632Z"></path>
+</svg>
+</button>
+</aside>
+<main class="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
+<div class="w-full min-w-0 mx-auto">
+<nav aria-label="breadcrumbs" class="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
+<a class="overflow-hidden text-ellipsis whitespace-nowrap hover:text-foreground" href="../index.html">
+<span class="hidden md:inline">LMCache</span>
+<svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
+</svg>
+</a>
+<div class="mr-1">/</div><a class="hover:text-foreground overflow-hidden text-ellipsis whitespace-nowrap" href="index.html">Multiprocess Mode</a>
+<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">L2 Storage (Persistent Cache)</span>
+</nav>
+<div id="content" role="main">
+<section id="l2-storage-persistent-cache">
+<h1>L2 Storage (Persistent Cache)<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#l2-storage-persistent-cache"><span>#</span></a></h1>
+<p>LMCache multiprocess mode supports a two-tier storage architecture:</p>
+<ul class="simple">
+<li><p><strong>L1 (fast tier)</strong> – CPU memory by default, or an NVMe slab via GPUDirect
+Storage (cuFile) when <code class="docutils literal notranslate"><span class="pre">--gds-l1-path</span></code> is set, managed by the L1 Manager.
+All KV cache chunks live here during active use. (Byte-array L2 adapters are
+unsupported under the GDS L1 tier, which exposes no L1 memory buffer.)</p></li>
+<li><p><strong>L2 (persistent)</strong> – Durable storage backends (NIXL-based or plain
+file-system/raw-block).  The StoreController asynchronously pushes data from L1
+to L2, and the PrefetchController loads data from L2 back into L1 on
+cache misses.</p></li>
+</ul>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#data-flow" id="id2">Data Flow</a></p></li>
+<li><p><a class="reference internal" href="#adapter-types" id="id3">Adapter Types</a></p>
+<ul>
+<li><p><a class="reference internal" href="#nixl-store-nixl-based-persistent-storage" id="id4"><code class="docutils literal notranslate"><span class="pre">nixl_store</span></code> – NIXL-based persistent storage</a></p></li>
+<li><p><a class="reference internal" href="#nixl-store-dynamic-nixl-based-dynamic-storage-with-persist-recover" id="id5"><code class="docutils literal notranslate"><span class="pre">nixl_store_dynamic</span></code> – NIXL-based dynamic storage with persist/recover</a></p></li>
+<li><p><a class="reference internal" href="#fs-file-system-backed-storage" id="id6"><code class="docutils literal notranslate"><span class="pre">fs</span></code> – File-system backed storage</a></p></li>
+<li><p><a class="reference internal" href="#dax-device-dax-fixed-slot-storage" id="id7"><code class="docutils literal notranslate"><span class="pre">dax</span></code> – Device-DAX fixed-slot storage</a></p></li>
+<li><p><a class="reference internal" href="#fs-native-native-c-file-system-connector" id="id8"><code class="docutils literal notranslate"><span class="pre">fs_native</span></code> – Native C++ file-system connector</a></p></li>
+<li><p><a class="reference internal" href="#raw-block-raw-block-device-backed-persistent-storage" id="id9"><code class="docutils literal notranslate"><span class="pre">raw_block</span></code> – Raw block device backed persistent storage</a></p></li>
+<li><p><a class="reference internal" href="#mooncake-store-mooncake-store-native-connector" id="id10"><code class="docutils literal notranslate"><span class="pre">mooncake_store</span></code> – Mooncake Store native connector</a></p></li>
+<li><p><a class="reference internal" href="#aerospike-aerospike-native-connector" id="id11"><code class="docutils literal notranslate"><span class="pre">aerospike</span></code> – Aerospike native connector</a></p></li>
+<li><p><a class="reference internal" href="#s3-s3-compatible-object-store" id="id12"><code class="docutils literal notranslate"><span class="pre">s3</span></code> – S3-compatible object store</a></p></li>
+<li><p><a class="reference internal" href="#hfbucket-hugging-face-buckets" id="id13"><code class="docutils literal notranslate"><span class="pre">hfbucket</span></code> – Hugging Face Buckets</a></p></li>
+<li><p><a class="reference internal" href="#mock-mock-adapter-for-testing" id="id14"><code class="docutils literal notranslate"><span class="pre">mock</span></code> – Mock adapter for testing</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#multiple-adapters-cascade" id="id15">Multiple Adapters (Cascade)</a></p></li>
+<li><p><a class="reference internal" href="#store-and-prefetch-policies" id="id16">Store and Prefetch Policies</a></p>
+<ul>
+<li><p><a class="reference internal" href="#prefetch-concurrency" id="id17">Prefetch Concurrency</a></p></li>
+<li><p><a class="reference internal" href="#buffer-only-mode" id="id18">Buffer-Only Mode</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#serde-compression-quantization" id="id19">Serde (compression / quantization)</a></p></li>
+<li><p><a class="reference internal" href="#eviction" id="id20">Eviction</a></p>
+<ul>
+<li><p><a class="reference internal" href="#l1-eviction" id="id21">L1 Eviction</a></p></li>
+<li><p><a class="reference internal" href="#l2-eviction" id="id22">L2 Eviction</a></p></li>
+<li><p><a class="reference internal" href="#combined-l1-l2-eviction-example" id="id23">Combined L1 + L2 Eviction Example</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#verifying-l2-storage" id="id24">Verifying L2 Storage</a></p></li>
+</ul>
+</nav>
+<section id="data-flow">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Data Flow</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#data-flow" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#data-flow'"><span>#</span></a></h2>
+<p><strong>Write path (L1 -&gt; L2):</strong></p>
+<ol class="arabic simple">
+<li><p>vLLM stores KV cache chunks into L1 via the <code class="docutils literal notranslate"><span class="pre">STORE</span></code> RPC.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">StoreController</span></code> detects new objects (via eventfd) and
+asynchronously submits store tasks to each configured L2 adapter.</p></li>
+<li><p>The L2 adapter writes the data to its backend (e.g., local SSD via GDS).</p></li>
+</ol>
+<p><strong>Read path (L2 -&gt; L1):</strong></p>
+<ol class="arabic simple">
+<li><p>A <code class="docutils literal notranslate"><span class="pre">LOOKUP</span></code> RPC checks L1 for prefix hits.</p></li>
+<li><p>For keys not found in L1, the <code class="docutils literal notranslate"><span class="pre">PrefetchController</span></code> submits lookup
+requests to L2 adapters.</p></li>
+<li><p>If found in L2, the data is loaded back into L1 and read-locked for the
+pending <code class="docutils literal notranslate"><span class="pre">RETRIEVE</span></code> RPC.</p></li>
+</ol>
+</section>
+<section id="adapter-types">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Adapter Types</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#adapter-types" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#adapter-types'"><span>#</span></a></h2>
+<section id="nixl-store-nixl-based-persistent-storage">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">nixl_store</span></code> – NIXL-based persistent storage</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#nixl-store-nixl-based-persistent-storage" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#nixl-store-nixl-based-persistent-storage'"><span>#</span></a></h3>
+<p>The primary production adapter.  Uses NIXL (NVIDIA Interconnect Library) for
+high-performance storage I/O.</p>
+<p><strong>Required fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">backend</span></code>: Storage backend – one of <code class="docutils literal notranslate"><span class="pre">POSIX</span></code>, <code class="docutils literal notranslate"><span class="pre">GDS</span></code>, <code class="docutils literal notranslate"><span class="pre">GDS_MT</span></code>,
+<code class="docutils literal notranslate"><span class="pre">HF3FS</span></code>, <code class="docutils literal notranslate"><span class="pre">OBJ</span></code>, <code class="docutils literal notranslate"><span class="pre">AZURE_BLOB</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pool_size</span></code>: Number of storage descriptors to pre-allocate (must be &gt; 0).</p></li>
+</ul>
+<p><strong>Backend-specific parameters (``backend_params``):</strong></p>
+<p>File-based backends (<code class="docutils literal notranslate"><span class="pre">GDS</span></code>, <code class="docutils literal notranslate"><span class="pre">GDS_MT</span></code>, <code class="docutils literal notranslate"><span class="pre">POSIX</span></code>, <code class="docutils literal notranslate"><span class="pre">HF3FS</span></code>) require:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">file_path</span></code>: Directory path for storing L2 data.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_direct_io</span></code>: <code class="docutils literal notranslate"><span class="pre">"true"</span></code> or <code class="docutils literal notranslate"><span class="pre">"false"</span></code> – whether to use direct I/O.</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">OBJ</span></code> and <code class="docutils literal notranslate"><span class="pre">AZURE_BLOB</span></code> backends (object stores) do not require <code class="docutils literal notranslate"><span class="pre">file_path</span></code>.</p>
+<p><strong>Backend descriptions:</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15.0%"/>
+<col style="width: 85.0%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Backend</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POSIX</span></code></p></td>
+<td><p>Standard POSIX file I/O.  Works on any file system.  No direct I/O.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">GDS</span></code></p></td>
+<td><p>NVIDIA GPU Direct Storage.  Enables direct GPU-to-storage transfers
+bypassing the CPU.  Requires NVMe SSDs with GDS support.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">GDS_MT</span></code></p></td>
+<td><p>Multi-threaded variant of GDS for higher throughput.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">HF3FS</span></code></p></td>
+<td><p>Shared file system backend (e.g., for distributed/networked storage).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">OBJ</span></code></p></td>
+<td><p>Object store backend.  No local file path required.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">AZURE_BLOB</span></code></p></td>
+<td><p>Object store backend for Azure Blob Storage.  No local file path required.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Configuration examples:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># POSIX backend</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store", "backend": "POSIX", "backend_params": {"file_path": "/data/lmcache/l2", "use_direct_io": "false"}, "pool_size": 64}'</span>
+</span><span id="line-3">
+</span><span id="line-4"><span class="c1"># GDS backend</span>
+</span><span id="line-5">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store", "backend": "GDS", "backend_params": {"file_path": "/data/nvme/lmcache", "use_direct_io": "true"}, "pool_size": 128}'</span>
+</span><span id="line-6">
+</span><span id="line-7"><span class="c1"># GDS_MT backend</span>
+</span><span id="line-8">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store", "backend": "GDS_MT", "backend_params": {"file_path": "/data/nvme/lmcache", "use_direct_io": "true"}, "pool_size": 128}'</span>
+</span><span id="line-9">
+</span><span id="line-10"><span class="c1"># HF3FS backend</span>
+</span><span id="line-11">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store", "backend": "HF3FS", "backend_params": {"file_path": "/mnt/hf3fs/lmcache", "use_direct_io": "false"}, "pool_size": 64}'</span>
+</span><span id="line-12">
+</span><span id="line-13"><span class="c1"># OBJ backend</span>
+</span><span id="line-14">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store", "backend": "OBJ", "backend_params": {}, "pool_size": 32}'</span>
+</span><span id="line-15">
+</span><span id="line-16"><span class="c1"># AZURE_BLOB backend</span>
+</span><span id="line-17">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store", "backend": "AZURE_BLOB", "backend_params": {"account_url": "https://&lt;account_name&gt;.blob.core.windows.net", "container_name": "&lt;container_name&gt;"}, "pool_size": 32}'</span>
+</span></code></pre></div>
+</div>
+</section>
+<section id="nixl-store-dynamic-nixl-based-dynamic-storage-with-persist-recover">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">nixl_store_dynamic</span></code> – NIXL-based dynamic storage with persist/recover</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#nixl-store-dynamic-nixl-based-dynamic-storage-with-persist-recover" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#nixl-store-dynamic-nixl-based-dynamic-storage-with-persist-recover'"><span>#</span></a></h3>
+<p>A dynamic variant of the NIXL adapter that opens and registers files
+per-operation instead of pre-allocating them at init. This enables:</p>
+<ul class="simple">
+<li><p><strong>Persist/recover</strong> – cached KV metadata survives restarts.</p></li>
+<li><p><strong>No fd limits</strong> – files are opened and closed per transfer, so the
+cache can grow beyond OS open-file-descriptor limits.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only file-based backends are supported (<code class="docutils literal notranslate"><span class="pre">POSIX</span></code>, <code class="docutils literal notranslate"><span class="pre">GDS</span></code>, <code class="docutils literal notranslate"><span class="pre">GDS_MT</span></code>,
+<code class="docutils literal notranslate"><span class="pre">HF3FS</span></code>). The <code class="docutils literal notranslate"><span class="pre">OBJ</span></code> and <code class="docutils literal notranslate"><span class="pre">AZURE_BLOB</span></code> backends are not supported yet.</p>
+</div>
+<p><strong>Required fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">backend</span></code>: Storage backend – one of <code class="docutils literal notranslate"><span class="pre">POSIX</span></code>, <code class="docutils literal notranslate"><span class="pre">GDS</span></code>, <code class="docutils literal notranslate"><span class="pre">GDS_MT</span></code>,
+<code class="docutils literal notranslate"><span class="pre">HF3FS</span></code>.</p></li>
+</ul>
+<p><strong>Backend-specific parameters (``backend_params``):</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">file_path</span></code>: Directory path for storing L2 data files.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_direct_io</span></code>: <code class="docutils literal notranslate"><span class="pre">"true"</span></code> or <code class="docutils literal notranslate"><span class="pre">"false"</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_capacity_gb</span></code>: Maximum storage capacity in GB. The adapter
+rejects stores when this limit is reached. Required for the eviction
+controller to compute usage.</p></li>
+</ul>
+<p><strong>Optional fields (for persist):</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">persist_enabled</span></code> (bool, default <code class="docutils literal notranslate"><span class="pre">true</span></code>): If <code class="docutils literal notranslate"><span class="pre">true</span></code>, data files
+are kept on disk at shutdown. If <code class="docutils literal notranslate"><span class="pre">false</span></code>, all data files are deleted
+on shutdown.</p></li>
+</ul>
+<p>Lookup always checks secondary storage (disk) on miss and lazily
+populates the in-memory index when a file is found.</p>
+<p><strong>Configuration examples:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Basic dynamic POSIX backend (persist enabled by default)</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store_dynamic", "backend": "POSIX", "backend_params": {"file_path": "/data/lmcache/l2", "use_direct_io": "false", "max_capacity_gb": "10"}}'</span>
+</span><span id="line-3">
+</span><span id="line-4"><span class="c1"># Explicitly disable persist</span>
+</span><span id="line-5">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store_dynamic", "backend": "POSIX", "backend_params": {"file_path": "/data/lmcache/l2", "use_direct_io": "false", "max_capacity_gb": "10"}, "persist_enabled": false}'</span>
+</span><span id="line-6">
+</span><span id="line-7"><span class="c1"># With eviction</span>
+</span><span id="line-8">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store_dynamic", "backend": "GDS", "backend_params": {"file_path": "/data/nvme/l2", "use_direct_io": "true", "max_capacity_gb": "50"}, "eviction": {"eviction_policy": "LRU", "trigger_watermark": 0.9, "eviction_ratio": 0.1}}'</span>
+</span></code></pre></div>
+</div>
+<p><strong>Persist / secondary lookup behaviour:</strong></p>
+<ul class="simple">
+<li><p>On <strong>shutdown</strong>, the adapter keeps data files on disk by default
+(<code class="docutils literal notranslate"><span class="pre">persist_enabled</span></code> defaults to <code class="docutils literal notranslate"><span class="pre">true</span></code>). If explicitly set to
+<code class="docutils literal notranslate"><span class="pre">false</span></code>, all data files are deleted to avoid orphaned storage.</p></li>
+<li><p>On <strong>startup</strong>, the in-memory index is empty. Every lookup miss falls
+through to a secondary lookup on disk: if the deterministic file
+exists, it is treated as a hit and the in-memory index is populated
+lazily from the file size.</p></li>
+</ul>
+</section>
+<section id="fs-file-system-backed-storage">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">fs</span></code> – File-system backed storage</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#fs-file-system-backed-storage" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#fs-file-system-backed-storage'"><span>#</span></a></h3>
+<p>A pure file-system L2 adapter using async I/O (<code class="docutils literal notranslate"><span class="pre">aiofiles</span></code>).  Each KV cache
+object is stored as a raw <code class="docutils literal notranslate"><span class="pre">.data</span></code> file whose name encodes the full
+<code class="docutils literal notranslate"><span class="pre">ObjectKey</span></code>.  Does <strong>not</strong> require NIXL – works on any POSIX file system.</p>
+<p><strong>Required fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">base_path</span></code>: Directory for storing KV cache files.</p></li>
+</ul>
+<p><strong>Optional fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">relative_tmp_dir</span></code>: Relative sub-directory for temporary files during
+writes (atomic rename on completion).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">read_ahead_size</span></code>: Trigger file-system read-ahead by reading this many
+bytes first (positive integer, optional).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_odirect</span></code>: <code class="docutils literal notranslate"><span class="pre">true</span></code> or <code class="docutils literal notranslate"><span class="pre">false</span></code> (default <code class="docutils literal notranslate"><span class="pre">false</span></code>) – bypass the
+page cache via <code class="docutils literal notranslate"><span class="pre">O_DIRECT</span></code>.</p></li>
+</ul>
+<p><strong>Configuration examples:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Basic FS adapter</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "fs", "base_path": "/data/lmcache/l2"}'</span>
+</span><span id="line-3">
+</span><span id="line-4"><span class="c1"># With temp directory</span>
+</span><span id="line-5">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "fs", "base_path": "/data/lmcache/l2", "relative_tmp_dir": ".tmp"}'</span>
+</span><span id="line-6">
+</span><span id="line-7"><span class="c1"># With O_DIRECT for bypassing page cache</span>
+</span><span id="line-8">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "fs", "base_path": "/data/lmcache/l2", "use_odirect": true}'</span>
+</span></code></pre></div>
+</div>
+</section>
+<section id="dax-device-dax-fixed-slot-storage">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">dax</span></code> – Device-DAX fixed-slot storage</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#dax-device-dax-fixed-slot-storage" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#dax-device-dax-fixed-slot-storage'"><span>#</span></a></h3>
+<p>An L2 adapter that maps Device-DAX paths, such as <code class="docutils literal notranslate"><span class="pre">/dev/daxX.X</span></code> and
+<code class="docutils literal notranslate"><span class="pre">/dev/daxY.Y</span></code>, and stores KV cache objects in fixed-size slots. This adapter
+is intended for byte-addressable memory devices such as persistent memory or
+CXL memory.</p>
+<p>The MP <code class="docutils literal notranslate"><span class="pre">dax</span></code> adapter is volatile in this release.  It keeps the key index in
+server memory and rebuilds an empty index on restart.  Old bytes may remain on
+the DAX device, but they are unreachable after the LMCache server restarts.</p>
+<p><strong>Required fields for the legacy single-device form:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">device_path</span></code>: Path to the mmap-able DAX device or test file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_dax_size_gb</span></code>: Number of GiB to map from <code class="docutils literal notranslate"><span class="pre">device_path</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">slot_bytes</span></code>: Fixed slot size in bytes. This must be large enough for one
+full LMCache chunk because MP memory descriptors do not expose the
+non-MP full-chunk size.</p></li>
+</ul>
+<p><strong>Required fields for the multi-device form:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">devices</span></code>: List of objects with <code class="docutils literal notranslate"><span class="pre">device_path</span></code> and <code class="docutils literal notranslate"><span class="pre">max_dax_size_gb</span></code>.
+The list may be empty only when <code class="docutils literal notranslate"><span class="pre">hotplug_enabled</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">slot_bytes</span></code>: Fixed slot size in bytes shared by every DAX device in the
+adapter facade.</p></li>
+</ul>
+<p><strong>Optional fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hotplug_enabled</span></code> (bool, default <code class="docutils literal notranslate"><span class="pre">false</span></code>): Enables runtime
+<code class="docutils literal notranslate"><span class="pre">/reconfigure/dax/status</span></code>, <code class="docutils literal notranslate"><span class="pre">/reconfigure/dax/add</span></code>,
+<code class="docutils literal notranslate"><span class="pre">/reconfigure/dax/remove</span></code>, and <code class="docutils literal notranslate"><span class="pre">/reconfigure/dax/resize</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_store_workers</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">1</span></code>): Store worker threads.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_lookup_workers</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">1</span></code>): Lookup worker threads.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_load_workers</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">min(4,</span> <span class="pre">os.cpu_count())</span></code>): Load worker
+threads.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">persist_enabled</span></code> (bool): Accepted by common L2 config parsing but has no
+effect for <code class="docutils literal notranslate"><span class="pre">dax</span></code> because restart recovery is not implemented.</p></li>
+</ul>
+<p><strong>Configuration example:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Backward-compatible single-device form.</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{</span>
+</span><span id="line-3"><span class="s1">  "type": "dax",</span>
+</span><span id="line-4"><span class="s1">  "device_path": "/dev/dax1.0",</span>
+</span><span id="line-5"><span class="s1">  "max_dax_size_gb": 100,</span>
+</span><span id="line-6"><span class="s1">  "slot_bytes": 268435456,</span>
+</span><span id="line-7"><span class="s1">  "num_store_workers": 1,</span>
+</span><span id="line-8"><span class="s1">  "num_lookup_workers": 1,</span>
+</span><span id="line-9"><span class="s1">  "num_load_workers": 4,</span>
+</span><span id="line-10"><span class="s1">  "eviction": {</span>
+</span><span id="line-11"><span class="s1">    "eviction_policy": "LRU",</span>
+</span><span id="line-12"><span class="s1">    "trigger_watermark": 0.9,</span>
+</span><span id="line-13"><span class="s1">    "eviction_ratio": 0.1</span>
+</span><span id="line-14"><span class="s1">  }</span>
+</span><span id="line-15"><span class="s1">}'</span>
+</span></code></pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Multi-device hotplug-ready form.</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{</span>
+</span><span id="line-3"><span class="s1">  "type": "dax",</span>
+</span><span id="line-4"><span class="s1">  "devices": [</span>
+</span><span id="line-5"><span class="s1">    {"device_path": "/dev/daxX.X", "max_dax_size_gb": 100},</span>
+</span><span id="line-6"><span class="s1">    {"device_path": "/dev/daxY.Y", "max_dax_size_gb": 100}</span>
+</span><span id="line-7"><span class="s1">  ],</span>
+</span><span id="line-8"><span class="s1">  "slot_bytes": 268435456,</span>
+</span><span id="line-9"><span class="s1">  "hotplug_enabled": true,</span>
+</span><span id="line-10"><span class="s1">  "num_store_workers": 1,</span>
+</span><span id="line-11"><span class="s1">  "num_lookup_workers": 1,</span>
+</span><span id="line-12"><span class="s1">  "num_load_workers": 4</span>
+</span><span id="line-13"><span class="s1">}'</span>
+</span></code></pre></div>
+</div>
+<p>Runtime management uses JSON bodies because DAX paths contain slashes. See the
+<a class="reference internal" href="../kv_cache/storage_backends/dax.html"><span class="doc">Device-DAX backend guide</span></a> for complete
+examples.
+These routes use StorageManager’s generic L2 adapter reconfiguration API; the
+HTTP path selects the backend and operation, the DAX adapter interprets the
+operation payload, and the same interface can be reused by future adapters such
+as P2P.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">curl<span class="w"> </span>http://127.0.0.1:9000/reconfigure/dax/status
+</span><span id="line-2">curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://127.0.0.1:9000/reconfigure/dax/add<span class="w"> </span><span class="se">\</span>
+</span><span id="line-3"><span class="w">  </span>-H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
+</span><span id="line-4"><span class="w">  </span>-d<span class="w"> </span><span class="s1">'{"device_path": "/dev/daxX.X", "size": "100GiB"}'</span>
+</span></code></pre></div>
+</div>
+<p><strong>Current limits:</strong></p>
+<ul class="simple">
+<li><p>Runtime hotplug changes only LMCache mappings and metadata. It does not
+create, destroy, or reconfigure kernel CXL or DAX devices.</p></li>
+<li><p>Per-TP partitions and on-device restart metadata are not implemented.</p></li>
+<li><p>Only single-buffer objects are supported. Multi-tensor objects are rejected.</p></li>
+<li><p>Capacity is slot-based, not payload-byte-based. L2 eviction and usage
+metrics count occupied slots.</p></li>
+<li><p>Lookups acquire DAX-side external locks. <code class="docutils literal notranslate"><span class="pre">submit_unlock</span></code> releases those
+locks after load/retrieve completes, making entries evictable again.</p></li>
+<li><p>Remove <code class="docutils literal notranslate"><span class="pre">mode="evict"</span></code> is destructive for the DAX tier. Remove
+<code class="docutils literal notranslate"><span class="pre">mode="migrate"</span></code> requires enough capacity on another active DAX device.</p></li>
+</ul>
+</section>
+<section id="fs-native-native-c-file-system-connector">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">fs_native</span></code> – Native C++ file-system connector</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#fs-native-native-c-file-system-connector" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#fs-native-native-c-file-system-connector'"><span>#</span></a></h3>
+<p>A file-system L2 adapter backed by the native C++ <code class="docutils literal notranslate"><span class="pre">LMCacheFSClient</span></code>
+wrapped with <code class="docutils literal notranslate"><span class="pre">NativeConnectorL2Adapter</span></code>.  I/O is dispatched through a
+C++ worker-thread pool with eventfd-driven completions, giving a true
+I/O queue depth on a single Python thread.</p>
+<p><strong>Required fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">base_path</span></code>: Directory for storing KV cache files.</p></li>
+</ul>
+<p><strong>Optional fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">num_workers</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">4</span></code>, &gt; 0): Number of C++ worker threads
+inside the connector.  This is the real I/O queue depth – raise to
+push throughput on filesystems whose aggregate BW exceeds per-stream
+BW.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">relative_tmp_dir</span></code> (str, default <code class="docutils literal notranslate"><span class="pre">""</span></code>): Relative sub-directory for
+temporary files during writes (atomic rename on completion).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_odirect</span></code> (bool, default <code class="docutils literal notranslate"><span class="pre">false</span></code>): Bypass the page cache via
+<code class="docutils literal notranslate"><span class="pre">O_DIRECT</span></code>.  Required to measure real disk bandwidth.  See alignment
+caveat below.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">read_ahead_size</span></code> (int, optional): Trigger filesystem readahead by
+issuing a warm-up read of this many bytes at open time.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_capacity_gb</span></code> (float, default <code class="docutils literal notranslate"><span class="pre">0</span></code>): Maximum L2 capacity in GB
+for client-side usage tracking.  Default <code class="docutils literal notranslate"><span class="pre">0</span></code> disables tracking.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><code class="docutils literal notranslate"><span class="pre">O_DIRECT</span></code> has two independent alignment requirements:</p>
+<ol class="arabic simple">
+<li><p><strong>Length alignment.</strong>  The transfer length must be a multiple of
+the filesystem’s block size.  The connector queries the disk block
+size at construction time and, on each operation, checks
+<code class="docutils literal notranslate"><span class="pre">len</span> <span class="pre">%</span> <span class="pre">disk_block_size</span></code>.  If the length is <strong>not</strong> a multiple,
+the connector silently falls back to a buffered open (no
+<code class="docutils literal notranslate"><span class="pre">O_DIRECT</span></code>) for that operation – correctness is preserved but
+you do not get true direct I/O.  To ensure <code class="docutils literal notranslate"><span class="pre">O_DIRECT</span></code> is
+actually used, choose <code class="docutils literal notranslate"><span class="pre">--chunk-size</span></code> so that the resulting
+per-chunk byte size is a multiple of the FS block size.  GPFS and
+similar parallel filesystems often use large blocks (e.g. several
+MiB).</p></li>
+<li><p><strong>Memory-buffer alignment.</strong>  The I/O buffer pointer itself must
+also be aligned (typically to 4096 bytes on local disks, or to the
+FS block size on parallel filesystems).  This is controlled by
+<code class="docutils literal notranslate"><span class="pre">--l1-align-bytes</span></code> (default <code class="docutils literal notranslate"><span class="pre">4096</span></code>) – raise it to match the
+FS block size when running on a filesystem with larger blocks.  If
+the buffer is misaligned, the underlying <code class="docutils literal notranslate"><span class="pre">read</span></code>/<code class="docutils literal notranslate"><span class="pre">write</span></code> syscall
+returns <code class="docutils literal notranslate"><span class="pre">EINVAL</span></code> (this is <strong>not</strong> caught by the length-fallback
+path above and will surface as a runtime error).</p></li>
+</ol>
+<p>If unsure, start with <code class="docutils literal notranslate"><span class="pre">use_odirect:</span> <span class="pre">false</span></code> and confirm correctness
+before enabling <code class="docutils literal notranslate"><span class="pre">O_DIRECT</span></code>.</p>
+</div>
+<p><strong>Configuration examples:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Basic native FS adapter</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "fs_native", "base_path": "/data/lmcache/l2"}'</span>
+</span><span id="line-3">
+</span><span id="line-4"><span class="c1"># Many worker threads for a parallel filesystem (e.g. GPFS, Lustre)</span>
+</span><span id="line-5">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "fs_native", "base_path": "/data/lmcache/l2", "num_workers": 32}'</span>
+</span><span id="line-6">
+</span><span id="line-7"><span class="c1"># O_DIRECT for real-disk benchmarking</span>
+</span><span id="line-8">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "fs_native", "base_path": "/data/lmcache/l2", "num_workers": 32, "use_odirect": true}'</span>
+</span></code></pre></div>
+</div>
+<p><strong>Buffer-only mode example.</strong>  L1 acts as a pure write buffer that
+absorbs the peak burst of in-flight chunks while the C++ worker pool
+drains them to disk; nothing is retained in L1 once a store completes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">lmcache<span class="w"> </span>server<span class="w"> </span><span class="se">\</span>
+</span><span id="line-2"><span class="w">    </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">5555</span><span class="w"> </span><span class="se">\</span>
+</span><span id="line-3"><span class="w">    </span>--max-workers<span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="se">\</span>
+</span><span id="line-4"><span class="w">    </span>--l1-size-gb<span class="w"> </span><span class="m">32</span><span class="w"> </span>--l1-use-lazy<span class="w"> </span><span class="se">\</span>
+</span><span id="line-5"><span class="w">    </span>--eviction-policy<span class="w"> </span>noop<span class="w"> </span><span class="se">\</span>
+</span><span id="line-6"><span class="w">    </span>--l2-store-policy<span class="w"> </span>skip_l1<span class="w"> </span><span class="se">\</span>
+</span><span id="line-7"><span class="w">    </span>--l2-adapter<span class="w"> </span><span class="s1">'{"type": "fs_native", "base_path": "/data/lmcache/l2", "num_workers": 32, "use_odirect": true}'</span>
+</span></code></pre></div>
+</div>
+</section>
+<section id="raw-block-raw-block-device-backed-persistent-storage">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">raw_block</span></code> – Raw block device backed persistent storage</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#raw-block-raw-block-device-backed-persistent-storage" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#raw-block-raw-block-device-backed-persistent-storage'"><span>#</span></a></h3>
+<p>A built-in L2 adapter that stores KV objects in fixed-size slots on a raw block
+device or pre-sized file using the Rust raw-device I/O bindings. It reuses the
+existing raw-block metadata checkpoint model and writes directly into the
+caller-provided load buffers during prefetch.</p>
+<p><strong>Required fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">device_path</span></code>: Raw device path or pre-sized file path.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">slot_bytes</span></code>: Fixed slot size in bytes. Must be aligned to <code class="docutils literal notranslate"><span class="pre">block_align</span></code>.</p></li>
+</ul>
+<p><strong>Optional fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">capacity_bytes</span></code>: Optional cap on the usable device bytes. Default <code class="docutils literal notranslate"><span class="pre">0</span></code>
+means use the full device/file size.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_odirect</span></code>: <code class="docutils literal notranslate"><span class="pre">true</span></code> or <code class="docutils literal notranslate"><span class="pre">false</span></code> (default <code class="docutils literal notranslate"><span class="pre">true</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">block_align</span></code>: Device alignment in bytes (default <code class="docutils literal notranslate"><span class="pre">4096</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">header_bytes</span></code>: Per-slot header reservation (default <code class="docutils literal notranslate"><span class="pre">4096</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">meta_total_bytes</span></code>: Reserved metadata checkpoint region (default <code class="docutils literal notranslate"><span class="pre">256MiB</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">meta_magic</span></code> / <code class="docutils literal notranslate"><span class="pre">meta_version</span></code>: Metadata checkpoint identity/version knobs.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">meta_checkpoint_interval_sec</span></code> / <code class="docutils literal notranslate"><span class="pre">meta_idle_quiet_ms</span></code> /
+<code class="docutils literal notranslate"><span class="pre">meta_enable_periodic</span></code> / <code class="docutils literal notranslate"><span class="pre">meta_verify_on_load</span></code>: Checkpoint and recovery
+controls carried over from the legacy raw-block backend.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">load_checkpoint_on_init</span></code>: Load an existing on-device metadata checkpoint
+during startup (default <code class="docutils literal notranslate"><span class="pre">true</span></code>). Set to <code class="docutils literal notranslate"><span class="pre">false</span></code> to start with an empty
+in-memory index instead.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">enable_zero_copy</span></code>: Try aligned direct-buffer I/O when possible.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">io_engine</span></code>: Rust raw-block I/O engine. Valid values are <code class="docutils literal notranslate"><span class="pre">"posix"</span></code>
+(default synchronous <code class="docutils literal notranslate"><span class="pre">pread</span></code>/<code class="docutils literal notranslate"><span class="pre">pwrite</span></code> path), <code class="docutils literal notranslate"><span class="pre">"io_uring"</span></code> (direct Rust
+io_uring syscall path).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_uring_cmd</span></code>: Enable NVMe passthrough via io_uring command interface
+for direct device access. Requires <code class="docutils literal notranslate"><span class="pre">io_engine="io_uring"</span></code> and NVMe
+character device node (e.g., <code class="docutils literal notranslate"><span class="pre">/dev/ng0n1</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">iouring_queue_depth</span></code>: Queue depth for <code class="docutils literal notranslate"><span class="pre">io_engine="io_uring"</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_data_transfer_size</span></code>: Maximum data transfer size for
+<code class="docutils literal notranslate"><span class="pre">use_uring_cmd=true</span></code>. Large transfers are split into smaller chunks
+that fit within device limits.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_store_workers</span></code> / <code class="docutils literal notranslate"><span class="pre">num_lookup_workers</span></code> / <code class="docutils literal notranslate"><span class="pre">num_load_workers</span></code>:
+Worker-thread counts for each operation type.</p></li>
+</ul>
+<p><strong>Notes:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">raw_block</span></code> is a server-owned MP adapter. It does <strong>not</strong> support
+per-TP device-path mappings in MP mode.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">raw_block</span></code> remains <code class="docutils literal notranslate"><span class="pre">"type":</span> <span class="pre">"raw_block"</span></code> for all supported engines.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">raw_block</span></code> owns on-device slot allocation, checkpointing, and recovery
+through <code class="docutils literal notranslate"><span class="pre">RawBlockCore</span></code>. Slot reclamation is driven by the shared/global
+L2 eviction controller or explicit <code class="docutils literal notranslate"><span class="pre">delete()</span></code> calls.</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">use_odirect</span></code> is enabled, the server’s <code class="docutils literal notranslate"><span class="pre">--l1-align-bytes</span></code> should be
+at least <code class="docutils literal notranslate"><span class="pre">block_align</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">persist_enabled</span></code> must remain <code class="docutils literal notranslate"><span class="pre">true</span></code> for this adapter.</p></li>
+<li><p>For <code class="docutils literal notranslate"><span class="pre">use_uring_cmd=true</span></code>, <code class="docutils literal notranslate"><span class="pre">device_path</span></code> must use the NVMe character
+device node (e.g., <code class="docutils literal notranslate"><span class="pre">/dev/ng0n1</span></code>) instead of the block device node
+(<code class="docutils literal notranslate"><span class="pre">/dev/nvme0n1</span></code>). The character device provides direct NVMe
+command passthrough.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">use_uring_cmd</span></code> requires <code class="docutils literal notranslate"><span class="pre">io_engine="io_uring"</span></code> to be set.</p></li>
+<li><p>When <code class="docutils literal notranslate"><span class="pre">use_uring_cmd=true</span></code>, <code class="docutils literal notranslate"><span class="pre">use_odirect</span></code> is ignored for NVMe namespace
+character devices.</p></li>
+</ul>
+<p><strong>Configuration examples:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Basic raw_block with posix I/O</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "raw_block", "device_path": "/dev/nvme0n1", "slot_bytes": 1048576, "block_align": 4096, "header_bytes": 4096, "meta_total_bytes": 268435456, "use_odirect": true, "num_store_workers": 2, "num_lookup_workers": 1, "num_load_workers": 4}'</span>
+</span><span id="line-3">
+</span><span id="line-4"><span class="c1"># With io_uring</span>
+</span><span id="line-5">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "raw_block", "device_path": "/dev/nvme0n1", "slot_bytes": 1048576, "io_engine": "io_uring", "iouring_queue_depth": 256, "use_odirect": true}'</span>
+</span><span id="line-6">
+</span><span id="line-7"><span class="c1"># With io_uring_cmd (NVMe passthrough)</span>
+</span><span id="line-8">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "raw_block", "device_path": "/dev/ng0n1", "slot_bytes": 1048576, "io_engine": "io_uring", "use_uring_cmd": true, "iouring_queue_depth": 256, "max_data_transfer_size": 131072, "use_odirect": false}'</span>
+</span><span id="line-9">
+</span><span id="line-10"><span class="c1"># With eviction</span>
+</span><span id="line-11">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "raw_block", "device_path": "/dev/nvme0n1", "slot_bytes": 1048576, "load_checkpoint_on_init": false, "eviction": {"eviction_policy": "LRU", "trigger_watermark": 0.9, "eviction_ratio": 0.1}}'</span>
+</span></code></pre></div>
+</div>
+</section>
+<section id="mooncake-store-mooncake-store-native-connector">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">mooncake_store</span></code> – Mooncake Store native connector</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#mooncake-store-mooncake-store-native-connector" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#mooncake-store-mooncake-store-native-connector'"><span>#</span></a></h3>
+<p>An L2 adapter backed by the native C++ Mooncake Store connector.  Uses
+<a class="reference external" href="https://github.com/kvcache-ai/Mooncake">Mooncake</a> for high-performance
+distributed KV cache storage with RDMA support.</p>
+<p>When Mooncake is configured with <code class="docutils literal notranslate"><span class="pre">"protocol":</span> <span class="pre">"rdma"</span></code>, LMCache must also
+have a valid contiguous L1 memory region available.  The distributed storage
+manager passes this L1 memory descriptor to the adapter factory automatically
+in MP mode.  If the descriptor is missing or invalid, adapter creation fails
+with <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> instead of silently falling back to a non-RDMA path.</p>
+<p><strong>Prerequisites – Building with Mooncake support:</strong></p>
+<p>The Mooncake extension is <strong>not</strong> built by default.  You must explicitly
+enable it:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="nv">BUILD_MOONCAKE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="w"> </span>--verbose
+</span></code></pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">BUILD_MOONCAKE</span></code> environment variable controls compilation:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">BUILD_MOONCAKE=1</span></code>: Enable the Mooncake C++ extension.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BUILD_MOONCAKE=0</span></code>: Force disable (highest priority), even if
+<code class="docutils literal notranslate"><span class="pre">MOONCAKE_INCLUDE_DIR</span></code> is set.</p></li>
+<li><p><strong>Not set</strong>: Falls back to checking <code class="docutils literal notranslate"><span class="pre">MOONCAKE_INCLUDE_DIR</span></code> for
+backward compatibility.  If <code class="docutils literal notranslate"><span class="pre">MOONCAKE_INCLUDE_DIR</span></code> is also unset,
+the extension is skipped.</p></li>
+</ul>
+<p>If the Mooncake headers are not installed in the system include path
+(e.g., <code class="docutils literal notranslate"><span class="pre">/usr/local/include</span></code>), you must point to them explicitly:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="nv">BUILD_MOONCAKE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+</span><span id="line-2"><span class="nv">MOONCAKE_INCLUDE_DIR</span><span class="o">=</span>/path/to/mooncake/include<span class="w"> </span><span class="se">\</span>
+</span><span id="line-3"><span class="nv">MOONCAKE_LIB_DIR</span><span class="o">=</span>/path/to/mooncake/lib<span class="w"> </span><span class="se">\</span>
+</span><span id="line-4">pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="w"> </span>--verbose
+</span></code></pre></div>
+</div>
+<p><strong>LMCache-specific fields:</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_workers</span></code>: Number of C++ worker threads for the shared pool
+(default <code class="docutils literal notranslate"><span class="pre">4</span></code>, must be &gt; 0).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">per_op_workers</span></code> (<code class="docutils literal notranslate"><span class="pre">dict[str,</span> <span class="pre">int]</span></code>, optional): A dict mapping lane keys
+to dedicated worker thread counts.  Supported keys:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">"lookup"</span></code> — threads for <code class="docutils literal notranslate"><span class="pre">EXISTS</span></code> operations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">"retrieve"</span></code> — threads for <code class="docutils literal notranslate"><span class="pre">GET</span></code> / load operations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">"store"</span></code> — threads for <code class="docutils literal notranslate"><span class="pre">SET</span></code> / put operations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">"delete"</span></code> — threads for <code class="docutils literal notranslate"><span class="pre">DELETE</span></code> operations.</p></li>
+</ul>
+<p>Operations whose lane key is <strong>not</strong> present in the dict use the
+shared <code class="docutils literal notranslate"><span class="pre">num_workers</span></code> pool.  There is no requirement to set all
+keys — you can configure only the lanes that need dedicated pools.</p>
+</li>
+</ul>
+<p><strong>Mooncake fields:</strong></p>
+<p>All other keys in the JSON config (except <code class="docutils literal notranslate"><span class="pre">type</span></code>, <code class="docutils literal notranslate"><span class="pre">num_workers</span></code>,
+<code class="docutils literal notranslate"><span class="pre">per_op_workers</span></code>, and <code class="docutils literal notranslate"><span class="pre">eviction</span></code>) are forwarded <strong>as-is</strong> to Mooncake’s
+<code class="docutils literal notranslate"><span class="pre">setup_internal(ConfigDict)</span></code>.  Refer to the
+<a class="reference external" href="https://github.com/kvcache-ai/Mooncake">Mooncake documentation</a>
+for available setup keys (e.g., <code class="docutils literal notranslate"><span class="pre">local_hostname</span></code>,
+<code class="docutils literal notranslate"><span class="pre">metadata_server</span></code>, <code class="docutils literal notranslate"><span class="pre">master_server_addr</span></code>, <code class="docutils literal notranslate"><span class="pre">protocol</span></code>,
+<code class="docutils literal notranslate"><span class="pre">rdma_devices</span></code>, <code class="docutils literal notranslate"><span class="pre">global_segment_size</span></code>).</p>
+<p><strong>Configuration example:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Shared pool (default)</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{</span>
+</span><span id="line-3"><span class="s1">  "type": "mooncake_store",</span>
+</span><span id="line-4"><span class="s1">  "num_workers": 4,</span>
+</span><span id="line-5"><span class="s1">  "local_hostname": "node01",</span>
+</span><span id="line-6"><span class="s1">  "metadata_server": "http://localhost:8080/metadata",</span>
+</span><span id="line-7"><span class="s1">  "master_server_addr": "localhost:50051",</span>
+</span><span id="line-8"><span class="s1">  "protocol": "tcp",</span>
+</span><span id="line-9"><span class="s1">  "local_buffer_size": "3221225472",</span>
+</span><span id="line-10"><span class="s1">  "global_segment_size": "3221225472"</span>
+</span><span id="line-11"><span class="s1">}'</span>
+</span><span id="line-12">
+</span><span id="line-13"><span class="c1"># Per-operation pools (GET-heavy workload)</span>
+</span><span id="line-14">--l2-adapter<span class="w"> </span><span class="s1">'{</span>
+</span><span id="line-15"><span class="s1">  "type": "mooncake_store",</span>
+</span><span id="line-16"><span class="s1">  "per_op_workers": {</span>
+</span><span id="line-17"><span class="s1">    "lookup": 2,</span>
+</span><span id="line-18"><span class="s1">    "retrieve": 16,</span>
+</span><span id="line-19"><span class="s1">    "store": 4</span>
+</span><span id="line-20"><span class="s1">  },</span>
+</span><span id="line-21"><span class="s1">  "local_hostname": "node01",</span>
+</span><span id="line-22"><span class="s1">  "metadata_server": "http://localhost:8080/metadata",</span>
+</span><span id="line-23"><span class="s1">  "master_server_addr": "localhost:50051",</span>
+</span><span id="line-24"><span class="s1">  "protocol": "tcp"</span>
+</span><span id="line-25"><span class="s1">}'</span>
+</span></code></pre></div>
+</div>
+<p>For full Mooncake setup instructions (master service, metadata server,
+etc.), see <a class="reference external" href="https://github.com/kvcache-ai/Mooncake">Mooncake</a> .</p>
+<p><strong>RDMA notes:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">protocol:</span> <span class="pre">"rdma"</span></code> requires a valid LMCache L1 memory descriptor.</p></li>
+<li><p>When using <code class="docutils literal notranslate"><span class="pre">protocol:</span> <span class="pre">"rdma"</span></code>, it is recommended to disable lazy L1
+allocation with <code class="docutils literal notranslate"><span class="pre">--no-l1-use-lazy</span></code> so the L1 buffer is fully allocated
+before Mooncake registers it.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">protocol:</span> <span class="pre">"tcp"</span></code> does not require L1 preregistration.</p></li>
+<li><p>If Mooncake RDMA initialization fails at adapter creation time, verify that
+LMCache L1 memory is enabled and that the descriptor has a non-zero pointer
+and size.</p></li>
+</ul>
+</section>
+<section id="aerospike-aerospike-native-connector">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">aerospike</span></code> – Aerospike native connector</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#aerospike-aerospike-native-connector" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#aerospike-aerospike-native-connector'"><span>#</span></a></h3>
+<p>An L2 adapter backed by the native C++ Aerospike connector (the same
+<code class="docutils literal notranslate"><span class="pre">ConnectorBase</span></code> worker-pool harness used by <code class="docutils literal notranslate"><span class="pre">fs_native</span></code>), wrapped with
+<code class="docutils literal notranslate"><span class="pre">NativeConnectorL2Adapter</span></code>.  KV objects are stored under a meta record plus
+optional payload segments so values larger than the server record cap are
+transparently sharded.</p>
+<p><strong>Prerequisites – Building with Aerospike support:</strong></p>
+<p>The Aerospike extension is <strong>not</strong> built by default.  Install the Aerospike C
+client, then build with <code class="docutils literal notranslate"><span class="pre">BUILD_AEROSPIKE=1</span></code> (or set <code class="docutils literal notranslate"><span class="pre">AEROSPIKE_INCLUDE_DIR</span></code>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="nv">BUILD_AEROSPIKE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</span></code></pre></div>
+</div>
+<p>See <a class="reference internal" href="../developer_guide/extending_lmcache/native_connectors.html"><span class="doc">Adding Native Connectors</span></a> (section
+“Built-in Aerospike backend”) for installing the C client into <code class="docutils literal notranslate"><span class="pre">.deps/</span></code> and
+the <code class="docutils literal notranslate"><span class="pre">aerospike-client-c.env</span></code> example.</p>
+<p><strong>Required fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hosts</span></code>: Seed hosts as <code class="docutils literal notranslate"><span class="pre">host:port[,host:port...]</span></code>.</p></li>
+</ul>
+<p><strong>Optional fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">namespace</span></code> (str, default <code class="docutils literal notranslate"><span class="pre">"lmcache"</span></code>): Aerospike namespace.  Must exist
+on the server and have <code class="docutils literal notranslate"><span class="pre">nsup-period</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> if you rely on TTL expiry.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set_name</span></code> / <code class="docutils literal notranslate"><span class="pre">set</span></code> (str, default <code class="docutils literal notranslate"><span class="pre">"kv_chunks"</span></code>): Aerospike set name.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_workers</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">8</span></code>, &gt; 0): C++ worker threads for I/O.  This
+is the real I/O queue depth – raise it to push throughput.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">read_timeout_ms</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">1000</span></code>): Client read timeout.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">write_timeout_ms</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">2000</span></code>): Client write timeout.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">default_ttl_seconds</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">86400</span></code>): Record TTL.  <code class="docutils literal notranslate"><span class="pre">0</span></code> uses the
+namespace default TTL.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">target_segment_bytes</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">0</span></code>): Target shard size.  <code class="docutils literal notranslate"><span class="pre">0</span></code> uses
+the discovered server record cap.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_record_bytes</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">0</span></code>): Override the server record cap.
+<code class="docutils literal notranslate"><span class="pre">0</span></code> discovers it at construction time.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">username</span></code> / <code class="docutils literal notranslate"><span class="pre">password</span></code> (str, default <code class="docutils literal notranslate"><span class="pre">""</span></code>): Optional Enterprise
+Edition authentication.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_capacity_gb</span></code> (float, default <code class="docutils literal notranslate"><span class="pre">0</span></code>): Maximum L2 capacity in GB for
+client-side usage tracking / eviction.  <code class="docutils literal notranslate"><span class="pre">0</span></code> disables tracking.</p></li>
+</ul>
+<p><strong>Environment variable fallbacks.</strong>  When the corresponding config value is
+empty, these environment variables are used: <code class="docutils literal notranslate"><span class="pre">LMCACHE_AEROSPIKE_HOSTS</span></code>,
+<code class="docutils literal notranslate"><span class="pre">LMCACHE_AEROSPIKE_NAMESPACE</span></code>, <code class="docutils literal notranslate"><span class="pre">LMCACHE_AEROSPIKE_SET</span></code>,
+<code class="docutils literal notranslate"><span class="pre">LMCACHE_AEROSPIKE_USERNAME</span></code>, <code class="docutils literal notranslate"><span class="pre">LMCACHE_AEROSPIKE_PASSWORD</span></code>.</p>
+<p><strong>Configuration examples:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Basic single-node Community Edition</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "aerospike", "hosts": "127.0.0.1:3000", "namespace": "lmcache", "set_name": "kv_chunks", "num_workers": 8}'</span>
+</span><span id="line-3">
+</span><span id="line-4"><span class="c1"># Multi-node seed list with capacity tracking for eviction</span>
+</span><span id="line-5">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "aerospike", "hosts": "10.0.0.1:3000,10.0.0.2:3000", "namespace": "lmcache", "num_workers": 16, "max_capacity_gb": 512}'</span>
+</span><span id="line-6">
+</span><span id="line-7"><span class="c1"># Enterprise Edition with authentication</span>
+</span><span id="line-8">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "aerospike", "hosts": "as.internal:3000", "namespace": "lmcache", "username": "lmcache", "password": "secret"}'</span>
+</span></code></pre></div>
+</div>
+</section>
+<section id="s3-s3-compatible-object-store">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">s3</span></code> – S3-compatible object store</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#s3-s3-compatible-object-store" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#s3-s3-compatible-object-store'"><span>#</span></a></h3>
+<p>An L2 adapter that stores KV cache objects as S3 objects using the AWS
+Common Runtime (CRT).  Works with AWS S3, S3 Express One Zone, and any
+S3-compatible endpoint (MinIO, Ceph RGW, etc.).</p>
+<p><strong>Required fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">s3_endpoint</span></code>: Bucket URL – either <code class="docutils literal notranslate"><span class="pre">"s3://&lt;bucket&gt;"</span></code> or the bare host form
+(used for non-AWS endpoints).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">s3_region</span></code>: AWS region string (e.g. <code class="docutils literal notranslate"><span class="pre">"us-west-2"</span></code>).</p></li>
+</ul>
+<p><strong>Optional fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">s3_num_io_threads</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">64</span></code>): Number of CRT I/O threads.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">s3_prefer_http2</span></code> (bool, default <code class="docutils literal notranslate"><span class="pre">true</span></code>): Negotiate HTTP/2 via ALPN.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">s3_enable_s3express</span></code> (bool, default <code class="docutils literal notranslate"><span class="pre">false</span></code>): Enable S3 Express signing
+for S3 Express One Zone buckets.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">disable_tls</span></code> (bool, default <code class="docutils literal notranslate"><span class="pre">false</span></code>): Bypass TLS when pointing at a
+plain-HTTP endpoint (e.g. a local MinIO).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">aws_access_key_id</span></code> / <code class="docutils literal notranslate"><span class="pre">aws_secret_access_key</span></code> (string): Static
+credentials; omit both to use the AWS default credential provider chain
+(environment, EC2 instance profile, etc.).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_capacity_gb</span></code> (float, default <code class="docutils literal notranslate"><span class="pre">0.0</span></code>): Aggregate capacity used by
+<code class="docutils literal notranslate"><span class="pre">get_usage()</span></code>.  A value of <code class="docutils literal notranslate"><span class="pre">0</span></code> disables aggregate eviction
+(<code class="docutils literal notranslate"><span class="pre">usage_fraction</span> <span class="pre">==</span> <span class="pre">-1.0</span></code>).</p></li>
+</ul>
+<p><strong>Configuration examples:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># AWS S3 with default credentials</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "s3", "s3_endpoint": "s3://my-bucket", "s3_region": "us-west-2"}'</span>
+</span><span id="line-3">
+</span><span id="line-4"><span class="c1"># Static credentials, HTTP/2 disabled</span>
+</span><span id="line-5">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "s3", "s3_endpoint": "s3://my-bucket", "s3_region": "us-west-2", "s3_prefer_http2": false, "aws_access_key_id": "AKIA...", "aws_secret_access_key": "..."}'</span>
+</span><span id="line-6">
+</span><span id="line-7"><span class="c1"># Local MinIO over plain HTTP</span>
+</span><span id="line-8">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "s3", "s3_endpoint": "minio.local:9000", "s3_region": "us-east-1", "disable_tls": true, "aws_access_key_id": "minio", "aws_secret_access_key": "minio123"}'</span>
+</span></code></pre></div>
+</div>
+</section>
+<section id="hfbucket-hugging-face-buckets">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">hfbucket</span></code> – Hugging Face Buckets</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#hfbucket-hugging-face-buckets" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#hfbucket-hugging-face-buckets'"><span>#</span></a></h3>
+<p>An L2 adapter that stores KV cache objects in a <a class="reference external" href="https://huggingface.co/docs/hub/storage-backends">Hugging Face Bucket</a> using the
+<code class="docutils literal notranslate"><span class="pre">huggingface_hub</span></code> bucket APIs.  Blocking Hub calls run on a bounded thread
+pool driven by an asyncio loop on a daemon thread, so the L2 controller thread
+is never blocked on network I/O.</p>
+<p>Object names are derived from the MP <code class="docutils literal notranslate"><span class="pre">ObjectKey</span></code> as
+<code class="docutils literal notranslate"><span class="pre">&lt;model&gt;@&lt;kv_rank_hex&gt;@&lt;chunk_hash_hex&gt;[@&lt;cache_salt&gt;]</span></code> and then encoded with
+the standard HFBucket object-name encoding plus the optional bucket prefix.
+Because Hugging Face batch writes are not transactional, a store task that
+partially fails reconciles backend metadata so that any objects that actually
+landed are still counted for usage accounting and later deletion.</p>
+<p>This is a persistent remote backend best suited to warm and cold KV cache
+tiers; prefer a lower-latency local adapter for the hottest cache tier.</p>
+<p><strong>Required fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">bucket_handle</span></code>: Bucket location in the form
+<code class="docutils literal notranslate"><span class="pre">hf://buckets/&lt;namespace&gt;/&lt;bucket&gt;[/&lt;prefix&gt;]</span></code>.</p></li>
+</ul>
+<p><strong>Optional fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">token_env</span></code> (string, default <code class="docutils literal notranslate"><span class="pre">"HF_TOKEN"</span></code>): Environment variable used to
+resolve the Hugging Face access token.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">token</span></code> (string): Direct token fallback used when <code class="docutils literal notranslate"><span class="pre">token_env</span></code> is unset.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">create_bucket_if_missing</span></code> (bool, default <code class="docutils literal notranslate"><span class="pre">false</span></code>): Create the bucket
+lazily on the first store instead of requiring it to exist.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">download_tmp_dir</span></code> (string): Root directory for temporary load downloads.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata_cache_ttl_secs</span></code> (float, default <code class="docutils literal notranslate"><span class="pre">30.0</span></code>): TTL for the
+path-size metadata cache that backs lookups and usage accounting.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num_workers</span></code> (int, default <code class="docutils literal notranslate"><span class="pre">4</span></code>): Number of worker threads for blocking
+Hugging Face Hub API calls.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_capacity_gb</span></code> (float, default <code class="docutils literal notranslate"><span class="pre">0.0</span></code>): Aggregate capacity used by
+<code class="docutils literal notranslate"><span class="pre">get_usage()</span></code>.  A value of <code class="docutils literal notranslate"><span class="pre">0</span></code> disables aggregate eviction.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">eviction</span></code> (dict): Optional eviction policy, see <code class="docutils literal notranslate"><span class="pre">L2AdapterConfigBase</span></code>.</p></li>
+</ul>
+<p><strong>Configuration examples:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Minimal: use an existing bucket with a token from $HF_TOKEN</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "hfbucket", "bucket_handle": "hf://buckets/my-org/lmcache-kv/prod"}'</span>
+</span><span id="line-3">
+</span><span id="line-4"><span class="c1"># Create the bucket on first store and bound the worker pool</span>
+</span><span id="line-5">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "hfbucket", "bucket_handle": "hf://buckets/my-org/lmcache-kv/prod", "create_bucket_if_missing": true, "num_workers": 8}'</span>
+</span><span id="line-6">
+</span><span id="line-7"><span class="c1"># Enable aggregate eviction with a capacity cap</span>
+</span><span id="line-8">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "hfbucket", "bucket_handle": "hf://buckets/my-org/lmcache-kv/prod", "max_capacity_gb": 50, "eviction": {"eviction_policy": "LRU", "trigger_watermark": 0.9, "eviction_ratio": 0.1}}'</span>
+</span></code></pre></div>
+</div>
+</section>
+<section id="mock-mock-adapter-for-testing">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink"><code class="docutils literal notranslate"><span class="pre">mock</span></code> – Mock adapter for testing</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#mock-mock-adapter-for-testing" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#mock-mock-adapter-for-testing'"><span>#</span></a></h3>
+<p>Simulates L2 storage with configurable size and bandwidth.  Useful for testing
+the L2 pipeline without real storage hardware.</p>
+<p><strong>Fields:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">max_size_gb</span></code>: Maximum size in GB (&gt; 0).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mock_bandwidth_gb</span></code>: Simulated bandwidth in GB/sec (&gt; 0).</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "mock", "max_size_gb": 256, "mock_bandwidth_gb": 10}'</span>
+</span></code></pre></div>
+</div>
+</section>
+</section>
+<section id="multiple-adapters-cascade">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Multiple Adapters (Cascade)</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#multiple-adapters-cascade" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#multiple-adapters-cascade'"><span>#</span></a></h2>
+<p>You can configure multiple L2 adapters by repeating the <code class="docutils literal notranslate"><span class="pre">--l2-adapter</span></code>
+argument.  Adapters are used in the order they are specified.  The
+<code class="docutils literal notranslate"><span class="pre">StoreController</span></code> pushes data to all configured adapters, and the
+<code class="docutils literal notranslate"><span class="pre">PrefetchController</span></code> queries adapters in order during lookups.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># SSD (fast, smaller) + NVMe GDS (larger capacity)</span>
+</span><span id="line-2">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store", "backend": "POSIX", "backend_params": {"file_path": "/data/ssd/l2", "use_direct_io": "false"}, "pool_size": 64}'</span><span class="w"> </span><span class="se">\</span>
+</span><span id="line-3">--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store", "backend": "GDS", "backend_params": {"file_path": "/data/nvme/l2", "use_direct_io": "true"}, "pool_size": 128}'</span>
+</span></code></pre></div>
+</div>
+</section>
+<section id="store-and-prefetch-policies">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">Store and Prefetch Policies</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#store-and-prefetch-policies" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#store-and-prefetch-policies'"><span>#</span></a></h2>
+<p>The <strong>store policy</strong> controls how keys flow from L1 to L2: which adapters
+receive each key and whether keys are deleted from L1 after a successful
+L2 store.  The <strong>prefetch policy</strong> controls how keys flow from L2 back to
+L1: when multiple adapters have the same key, the policy decides which
+adapter loads it.</p>
+<p>Select policies via CLI:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">--l2-store-policy<span class="w"> </span>default<span class="w"> </span><span class="se">\</span>
+</span><span id="line-2">--l2-prefetch-policy<span class="w"> </span>default
+</span></code></pre></div>
+</div>
+<p><strong>Built-in policies:</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15.0%"/>
+<col style="width: 15.0%"/>
+<col style="width: 70.0%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Behaviour</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--l2-store-policy</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">default</span></code></p></td>
+<td><p>Store all keys to all adapters.  Never delete from L1.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--l2-store-policy</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">skip_l1</span></code></p></td>
+<td><p>Buffer-only mode.  Store all keys to all adapters, then
+<strong>delete them from L1</strong> immediately.  Pair with
+<code class="docutils literal notranslate"><span class="pre">--eviction-policy</span> <span class="pre">noop</span></code> to avoid useless LRU overhead.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--l2-prefetch-policy</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">default</span></code></p></td>
+<td><p>For each key, pick the first (lowest-indexed) adapter that has it.
+Prefetched keys are <strong>temporary</strong> (deleted after the reader finishes).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--l2-prefetch-policy</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">retain</span></code></p></td>
+<td><p>Same load plan as <code class="docutils literal notranslate"><span class="pre">default</span></code>, but prefetched keys are <strong>retained</strong>
+permanently in L1.  Useful when prefetched data is likely reused
+by subsequent requests (e.g. shared system-prompt chunks).</p></td>
+</tr>
+</tbody>
+</table>
+<section id="prefetch-concurrency">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Prefetch Concurrency</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#prefetch-concurrency" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#prefetch-concurrency'"><span>#</span></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">--l2-prefetch-max-in-flight</span></code> flag limits the number of concurrent
+prefetch requests that the <code class="docutils literal notranslate"><span class="pre">PrefetchController</span></code> can have in flight at
+any time.  A higher value increases L2-to-L1 throughput but also
+increases L1 memory pressure from in-flight data.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%"/>
+<col style="width: 15.0%"/>
+<col style="width: 55.0%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--l2-prefetch-max-in-flight</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8</span></code></p></td>
+<td><p>Maximum number of concurrent prefetch requests.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="buffer-only-mode">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Buffer-Only Mode</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#buffer-only-mode" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#buffer-only-mode'"><span>#</span></a></h3>
+<p>When L1 is used purely as a write buffer (all data lives in L2), use
+<code class="docutils literal notranslate"><span class="pre">--l2-store-policy</span> <span class="pre">skip_l1</span></code> together with <code class="docutils literal notranslate"><span class="pre">--eviction-policy</span> <span class="pre">noop</span></code>.
+This combination deletes keys from L1 as soon as they are stored to L2
+and disables the LRU eviction tracker entirely, reducing memory and CPU
+overhead.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">--eviction-policy<span class="w"> </span>noop<span class="w"> </span><span class="se">\</span>
+</span><span id="line-2">--l2-store-policy<span class="w"> </span>skip_l1<span class="w"> </span><span class="se">\</span>
+</span><span id="line-3">--l2-prefetch-policy<span class="w"> </span>default
+</span></code></pre></div>
+</div>
+<p>Policies are extensible – new policies can be added by creating a file
+in <code class="docutils literal notranslate"><span class="pre">storage_controllers/</span></code> and calling <code class="docutils literal notranslate"><span class="pre">register_store_policy()</span></code> or
+<code class="docutils literal notranslate"><span class="pre">register_prefetch_policy()</span></code> at import time.  See the design doc
+<code class="docutils literal notranslate"><span class="pre">l2_adapters/design_docs/overall.md</span></code> for details.</p>
+</section>
+</section>
+<section id="serde-compression-quantization">
+<h2><a class="toc-backref" href="#id19" role="doc-backlink">Serde (compression / quantization)</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#serde-compression-quantization" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#serde-compression-quantization'"><span>#</span></a></h2>
+<p>Each adapter can optionally run a <strong>serde</strong> (serializer / deserializer)
+that transforms data on the way in and out of L2 — e.g. fp8 quantization
+for disk backends, or encryption for remote adapters. See <a class="reference internal" href="serde.html"><span class="doc">L2 Serde (Serialization / Deserialization)</span></a>
+for details and configuration.</p>
+</section>
+<section id="eviction">
+<h2><a class="toc-backref" href="#id20" role="doc-backlink">Eviction</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#eviction" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#eviction'"><span>#</span></a></h2>
+<p>LMCache supports eviction at both storage tiers so that each tier
+can operate within a fixed capacity budget.</p>
+<section id="l1-eviction">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">L1 Eviction</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#l1-eviction" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#l1-eviction'"><span>#</span></a></h3>
+<p>L1 eviction runs a single background thread that monitors overall L1
+memory usage. When usage exceeds <code class="docutils literal notranslate"><span class="pre">trigger_watermark</span></code>, the eviction
+policy evicts a fraction of the least-recently-used keys.</p>
+<p><strong>CLI flags:</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%"/>
+<col style="width: 15.0%"/>
+<col style="width: 55.0%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--eviction-policy</span></code></p></td>
+<td><p><em>(required)</em></p></td>
+<td><p>Policy name: <code class="docutils literal notranslate"><span class="pre">LRU</span></code> or <code class="docutils literal notranslate"><span class="pre">noop</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--eviction-trigger-watermark</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.8</span></code></p></td>
+<td><p>L1 usage fraction [0, 1] above which eviction is triggered.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--eviction-ratio</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.2</span></code></p></td>
+<td><p>Fraction of currently allocated L1 memory to evict per cycle.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">--eviction-policy<span class="w"> </span>LRU<span class="w"> </span><span class="se">\</span>
+</span><span id="line-2">--eviction-trigger-watermark<span class="w"> </span><span class="m">0</span>.8<span class="w"> </span><span class="se">\</span>
+</span><span id="line-3">--eviction-ratio<span class="w"> </span><span class="m">0</span>.2
+</span></code></pre></div>
+</div>
+</section>
+<section id="l2-eviction">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">L2 Eviction</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#l2-eviction" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#l2-eviction'"><span>#</span></a></h3>
+<p>L2 eviction is <strong>per-adapter</strong> and <strong>opt-in</strong>. Each adapter can
+independently declare an eviction policy by adding an <code class="docutils literal notranslate"><span class="pre">"eviction"</span></code>
+sub-object to its <code class="docutils literal notranslate"><span class="pre">--l2-adapter</span></code> JSON spec. Adapters without an
+<code class="docutils literal notranslate"><span class="pre">"eviction"</span></code> key have no eviction controller.</p>
+<p>When L2 eviction is enabled for an adapter, a dedicated background
+thread monitors that adapter’s <code class="docutils literal notranslate"><span class="pre">get_usage()</span></code> value. Once usage
+exceeds <code class="docutils literal notranslate"><span class="pre">trigger_watermark</span></code>, the policy evicts keys until usage
+drops by <code class="docutils literal notranslate"><span class="pre">eviction_ratio</span></code>.</p>
+<p><strong>``”eviction”`` sub-object fields:</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%"/>
+<col style="width: 15.0%"/>
+<col style="width: 60.0%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">eviction_policy</span></code></p></td>
+<td><p><em>(required)</em></p></td>
+<td><p>Policy name: <code class="docutils literal notranslate"><span class="pre">"LRU"</span></code> or <code class="docutils literal notranslate"><span class="pre">"noop"</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">trigger_watermark</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.8</span></code></p></td>
+<td><p>Adapter usage fraction [0, 1] above which eviction is triggered.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">eviction_ratio</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0.2</span></code></p></td>
+<td><p>Fraction of used capacity to evict per cycle.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example — nixl_store with LRU eviction:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">--l2-adapter<span class="w"> </span><span class="s1">'{</span>
+</span><span id="line-2"><span class="s1">  "type": "nixl_store",</span>
+</span><span id="line-3"><span class="s1">  "backend": "POSIX",</span>
+</span><span id="line-4"><span class="s1">  "backend_params": {"file_path": "/data/lmcache/l2", "use_direct_io": "false"},</span>
+</span><span id="line-5"><span class="s1">  "pool_size": 128,</span>
+</span><span id="line-6"><span class="s1">  "eviction": {</span>
+</span><span id="line-7"><span class="s1">    "eviction_policy": "LRU",</span>
+</span><span id="line-8"><span class="s1">    "trigger_watermark": 0.8,</span>
+</span><span id="line-9"><span class="s1">    "eviction_ratio": 0.2</span>
+</span><span id="line-10"><span class="s1">  }</span>
+</span><span id="line-11"><span class="s1">}'</span>
+</span></code></pre></div>
+</div>
+<p><strong>Adapter support:</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%"/>
+<col style="width: 70.0%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Adapter</p></th>
+<th class="head"><p>L2 Eviction Support</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">nixl_store</span></code></p></td>
+<td><p>Full support. <code class="docutils literal notranslate"><span class="pre">delete</span></code> frees pool slots; pinned keys (in-flight
+loads) are skipped and retried on the next cycle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">nixl_store_dynamic</span></code></p></td>
+<td><p>Full support. <code class="docutils literal notranslate"><span class="pre">delete</span></code> removes data files from disk; pinned
+keys are skipped. <code class="docutils literal notranslate"><span class="pre">get_usage</span></code> is byte-based
+(<code class="docutils literal notranslate"><span class="pre">_total_bytes</span> <span class="pre">/</span> <span class="pre">max_capacity_bytes</span></code>).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">mock</span></code></p></td>
+<td><p>Full support. Useful for testing eviction behaviour without
+real storage hardware.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">raw_block</span></code></p></td>
+<td><p>Full shared/global eviction support. <code class="docutils literal notranslate"><span class="pre">delete</span></code> recycles raw-block
+slots; locked entries are skipped and retried on the next cycle.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">s3</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">delete</span></code> removes objects from the bucket and frees aggregate
+byte accounting. <code class="docutils literal notranslate"><span class="pre">get_usage</span></code> reports <code class="docutils literal notranslate"><span class="pre">usage_fraction</span> <span class="pre">==</span> <span class="pre">-1.0</span></code>
+when <code class="docutils literal notranslate"><span class="pre">max_capacity_gb</span></code> is <code class="docutils literal notranslate"><span class="pre">0</span></code> (disabled); set a non-zero
+<code class="docutils literal notranslate"><span class="pre">max_capacity_gb</span></code> to enable the watermark-triggered eviction
+controller.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hfbucket</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">delete</span></code> removes objects from the bucket and frees aggregate
+byte accounting. <code class="docutils literal notranslate"><span class="pre">get_usage</span></code> reports <code class="docutils literal notranslate"><span class="pre">usage_fraction</span> <span class="pre">==</span> <span class="pre">-1.0</span></code>
+when <code class="docutils literal notranslate"><span class="pre">max_capacity_gb</span></code> is <code class="docutils literal notranslate"><span class="pre">0</span></code> (disabled); set a non-zero
+<code class="docutils literal notranslate"><span class="pre">max_capacity_gb</span></code> to enable the watermark-triggered eviction
+controller. Locked keys (in-flight loads) are skipped.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">dax</span></code></p></td>
+<td><p>Full support. <code class="docutils literal notranslate"><span class="pre">delete</span></code> removes unlocked keys from the in-memory
+index immediately and recycles fixed slots once active read borrows
+drain. Usage is slot-based.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">mooncake_store</span></code></p></td>
+<td><p>No eviction support (native connector adapter).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fs</span></code></p></td>
+<td><p>No eviction support (<code class="docutils literal notranslate"><span class="pre">delete</span></code> and <code class="docutils literal notranslate"><span class="pre">get_usage</span></code> are no-ops).</p></td>
+</tr>
+<tr class="row-odd"><td><p>native connectors</p></td>
+<td><p>No eviction support.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each L2 adapter instance gets its own independent eviction
+controller and policy.  Two adapters of the same type can have
+different watermarks or policies.</p>
+</div>
+</section>
+<section id="combined-l1-l2-eviction-example">
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">Combined L1 + L2 Eviction Example</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#combined-l1-l2-eviction-example" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#combined-l1-l2-eviction-example'"><span>#</span></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">--l1-size-gb<span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="se">\</span>
+</span><span id="line-2">--eviction-policy<span class="w"> </span>LRU<span class="w"> </span><span class="se">\</span>
+</span><span id="line-3">--eviction-trigger-watermark<span class="w"> </span><span class="m">0</span>.8<span class="w"> </span><span class="se">\</span>
+</span><span id="line-4">--eviction-ratio<span class="w"> </span><span class="m">0</span>.2<span class="w"> </span><span class="se">\</span>
+</span><span id="line-5">--l2-adapter<span class="w"> </span><span class="s1">'{</span>
+</span><span id="line-6"><span class="s1">  "type": "nixl_store",</span>
+</span><span id="line-7"><span class="s1">  "backend": "GDS",</span>
+</span><span id="line-8"><span class="s1">  "backend_params": {"file_path": "/data/nvme/l2", "use_direct_io": "true"},</span>
+</span><span id="line-9"><span class="s1">  "pool_size": 256,</span>
+</span><span id="line-10"><span class="s1">  "eviction": {</span>
+</span><span id="line-11"><span class="s1">    "eviction_policy": "LRU",</span>
+</span><span id="line-12"><span class="s1">    "trigger_watermark": 0.9,</span>
+</span><span id="line-13"><span class="s1">    "eviction_ratio": 0.1</span>
+</span><span id="line-14"><span class="s1">  }</span>
+</span><span id="line-15"><span class="s1">}'</span>
+</span></code></pre></div>
+</div>
+<p>In this setup:</p>
+<ul class="simple">
+<li><p>L1 evicts from memory when it is 80 % full, reclaiming 20 % of
+allocated memory per cycle.</p></li>
+<li><p>L2 (NIXL/GDS) evicts from the storage pool when 90 % of pool slots
+are occupied, reclaiming 10 % per cycle.</p></li>
+<li><p>Both tiers use independent LRU policies, so each evicts its own
+least-recently-used keys.</p></li>
+</ul>
+</section>
+</section>
+<section id="verifying-l2-storage">
+<h2><a class="toc-backref" href="#id24" role="doc-backlink">Verifying L2 Storage</a><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#verifying-l2-storage" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#verifying-l2-storage'"><span>#</span></a></h2>
+<p>Set <code class="docutils literal notranslate"><span class="pre">LMCACHE_LOG_LEVEL=DEBUG</span></code> to see L2 activity in the server logs:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="nv">LMCACHE_LOG_LEVEL</span><span class="o">=</span>DEBUG<span class="w"> </span>lmcache<span class="w"> </span>server<span class="w"> </span><span class="se">\</span>
+</span><span id="line-2"><span class="w">    </span>--l1-size-gb<span class="w"> </span><span class="m">100</span><span class="w"> </span>--eviction-policy<span class="w"> </span>LRU<span class="w"> </span><span class="se">\</span>
+</span><span id="line-3"><span class="w">    </span>--l2-adapter<span class="w"> </span><span class="s1">'{"type": "nixl_store", "backend": "POSIX", "backend_params": {"file_path": "/data/lmcache/l2", "use_direct_io": "false"}, "pool_size": 64}'</span>
+</span></code></pre></div>
+</div>
+<p>Expected log messages when L2 is active:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">LMCache DEBUG: Submitted store task ...
+</span><span id="line-2">LMCache DEBUG: L2 store task N completed ...
+</span><span id="line-3">LMCache DEBUG: Prefetch request submitted: X total keys, Y L1 prefix hits, Z remaining for L2
+</span></code></pre></div>
+</div>
+</section>
+</section>
+</div><div class="flex justify-between items-center pt-6 mt-12 border-t border-border gap-4">
+<div class="mr-auto">
+<a class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors border border-input hover:bg-accent hover:text-accent-foreground py-2 px-4" href="hybrid_models.html">
+<svg class="mr-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="15 18 9 12 15 6"></polyline>
+</svg>
+        Hybrid-Attention Models
+      </a>
+</div>
+<div class="ml-auto">
+<a class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors border border-input hover:bg-accent hover:text-accent-foreground py-2 px-4" href="serde.html">
+        L2 Serde (Serialization / Deserialization)
+        <svg class="ml-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="9 18 15 12 9 6"></polyline>
+</svg>
+</a>
+</div>
+</div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
+<div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
+<ul>
+<li><a :data-current="activeSection === '#data-flow'" class="reference internal" href="#data-flow">Data Flow</a></li>
+<li><a :data-current="activeSection === '#adapter-types'" class="reference internal" href="#adapter-types">Adapter Types</a><ul>
+<li><a :data-current="activeSection === '#nixl-store-nixl-based-persistent-storage'" class="reference internal" href="#nixl-store-nixl-based-persistent-storage"><code class="docutils literal notranslate"><span class="pre">nixl_store</span></code> – NIXL-based persistent storage</a></li>
+<li><a :data-current="activeSection === '#nixl-store-dynamic-nixl-based-dynamic-storage-with-persist-recover'" class="reference internal" href="#nixl-store-dynamic-nixl-based-dynamic-storage-with-persist-recover"><code class="docutils literal notranslate"><span class="pre">nixl_store_dynamic</span></code> – NIXL-based dynamic storage with persist/recover</a></li>
+<li><a :data-current="activeSection === '#fs-file-system-backed-storage'" class="reference internal" href="#fs-file-system-backed-storage"><code class="docutils literal notranslate"><span class="pre">fs</span></code> – File-system backed storage</a></li>
+<li><a :data-current="activeSection === '#dax-device-dax-fixed-slot-storage'" class="reference internal" href="#dax-device-dax-fixed-slot-storage"><code class="docutils literal notranslate"><span class="pre">dax</span></code> – Device-DAX fixed-slot storage</a></li>
+<li><a :data-current="activeSection === '#fs-native-native-c-file-system-connector'" class="reference internal" href="#fs-native-native-c-file-system-connector"><code class="docutils literal notranslate"><span class="pre">fs_native</span></code> – Native C++ file-system connector</a></li>
+<li><a :data-current="activeSection === '#raw-block-raw-block-device-backed-persistent-storage'" class="reference internal" href="#raw-block-raw-block-device-backed-persistent-storage"><code class="docutils literal notranslate"><span class="pre">raw_block</span></code> – Raw block device backed persistent storage</a></li>
+<li><a :data-current="activeSection === '#mooncake-store-mooncake-store-native-connector'" class="reference internal" href="#mooncake-store-mooncake-store-native-connector"><code class="docutils literal notranslate"><span class="pre">mooncake_store</span></code> – Mooncake Store native connector</a></li>
+<li><a :data-current="activeSection === '#aerospike-aerospike-native-connector'" class="reference internal" href="#aerospike-aerospike-native-connector"><code class="docutils literal notranslate"><span class="pre">aerospike</span></code> – Aerospike native connector</a></li>
+<li><a :data-current="activeSection === '#s3-s3-compatible-object-store'" class="reference internal" href="#s3-s3-compatible-object-store"><code class="docutils literal notranslate"><span class="pre">s3</span></code> – S3-compatible object store</a></li>
+<li><a :data-current="activeSection === '#hfbucket-hugging-face-buckets'" class="reference internal" href="#hfbucket-hugging-face-buckets"><code class="docutils literal notranslate"><span class="pre">hfbucket</span></code> – Hugging Face Buckets</a></li>
+<li><a :data-current="activeSection === '#mock-mock-adapter-for-testing'" class="reference internal" href="#mock-mock-adapter-for-testing"><code class="docutils literal notranslate"><span class="pre">mock</span></code> – Mock adapter for testing</a></li>
+</ul>
+</li>
+<li><a :data-current="activeSection === '#multiple-adapters-cascade'" class="reference internal" href="#multiple-adapters-cascade">Multiple Adapters (Cascade)</a></li>
+<li><a :data-current="activeSection === '#store-and-prefetch-policies'" class="reference internal" href="#store-and-prefetch-policies">Store and Prefetch Policies</a><ul>
+<li><a :data-current="activeSection === '#prefetch-concurrency'" class="reference internal" href="#prefetch-concurrency">Prefetch Concurrency</a></li>
+<li><a :data-current="activeSection === '#buffer-only-mode'" class="reference internal" href="#buffer-only-mode">Buffer-Only Mode</a></li>
+</ul>
+</li>
+<li><a :data-current="activeSection === '#serde-compression-quantization'" class="reference internal" href="#serde-compression-quantization">Serde (compression / quantization)</a></li>
+<li><a :data-current="activeSection === '#eviction'" class="reference internal" href="#eviction">Eviction</a><ul>
+<li><a :data-current="activeSection === '#l1-eviction'" class="reference internal" href="#l1-eviction">L1 Eviction</a></li>
+<li><a :data-current="activeSection === '#l2-eviction'" class="reference internal" href="#l2-eviction">L2 Eviction</a></li>
+<li><a :data-current="activeSection === '#combined-l1-l2-eviction-example'" class="reference internal" href="#combined-l1-l2-eviction-example">Combined L1 + L2 Eviction Example</a></li>
+</ul>
+</li>
+<li><a :data-current="activeSection === '#verifying-l2-storage'" class="reference internal" href="#verifying-l2-storage">Verifying L2 Storage</a></li>
+</ul>
+</div>
+</aside>
+</main>
+</div>
+</div><footer class="py-6 border-t border-border md:py-0">
+<div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+<div class="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
+<p class="text-sm leading-loose text-center text-muted-foreground md:text-left">© 2024, The LMCache Team Built with <a class="font-medium underline underline-offset-4" href="https://www.sphinx-doc.org" rel="noreferrer">Sphinx 8.2.3</a></p>
+</div>
+</div>
+</footer>
+</div>
+<script src="../_static/documentation_options.js?v=5929fcd5"></script>
+<script src="../_static/doctools.js?v=9bcbadda"></script>
+<script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+<script defer="defer" src="../_static/theme.js?v=073f68d9"></script>
+<script src="../_static/design-tabs.js?v=f930bc37"></script>
+<script src="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=f0ca4bb6"></script>
+<script src="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+<script src="../_static/custom.js?v=f72fe7e0"></script>
+</body>
+</html>

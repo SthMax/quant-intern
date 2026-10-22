@@ -1,0 +1,168 @@
+{
+  "as_of": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "anonymous": true,
+  "evidence_policy": "Measured, empirical calculation, conditional analysis and service target are distinct.",
+  "context_convention": {
+    "windows": [
+      131072,
+      262144,
+      524288,
+      1000000
+    ],
+    "output_reserve": 8192,
+    "K_label": "131K=131072;262K=262144;512K=524288",
+    "M_label": "1M=1000000"
+  },
+  "versions": {
+    "latest_vllm_release": "0.32.0",
+    "latest_release_date": "2026-10-18",
+    "DeepSeek_tagged_support_since": "0.30.0",
+    "same_node_DP_shared_Engram_since": "0.31.0",
+    "archive": "TECH-089",
+    "vllm_0_32_output_change": "max_tokens_is_cap_not_reservation_gateway_must_reserve_8192",
+    "old_DeepSeek_benchmark_image": "vllm/vllm-openai:nightly-cd10ed6f9f6b37a8ace9cf380007e66fe12ec0c3",
+    "LMCache_dev_revision": "64b05b8af88d5fc13b375cdc06b5425cd56dea47"
+  },
+  "scenario1": {
+    "hardware": "DGX Spark GB10 128GB unified memory 4TB NVMe",
+    "model": "Qwen/Qwen3.8-27B-FP8",
+    "measured_branch": "FP8 weights + FP8 full-attention KV + MTP3, prefix caching disabled",
+    "full_precision_branch": "FP8 weights + BF16/FP16 KV, no inherited MTP speed",
+    "observed_pool_tokens": 1806907,
+    "pool_reserve_fraction": 0.1,
+    "hardware_cny_2026_10_12": [
+      58407.0,
+      61839.5
+    ],
+    "personal_implementation_cny": [
+      10000,
+      20000
+    ],
+    "shared_implementation_cny": [
+      20000,
+      37500
+    ],
+    "single_user_target_tokens_s": 20,
+    "single_512K_estimate_tokens_s": 14.666050150511142,
+    "context_quality_evaluated": false
+  },
+  "scenario2": {
+    "hardware": "4x RTX PRO 6000D Server 84GB; 3x TP1 generation + 1x embedding/reranker; 1TB host RAM; 2x16-32-core 128GB support nodes",
+    "model": "Qwen3.8-27B-FP8",
+    "kv_dtype": "BF16/FP16",
+    "MTP": false,
+    "hardware_wan_cny": [
+      74,
+      141
+    ],
+    "hardware_price_basis": "2026-10-12 carry-forward of 2026-09-21/23 D estimates; not refreshed market price",
+    "Onyx_initial_excluding_license_wan_cny": [
+      84.5,
+      158
+    ],
+    "Milvus_custom_initial_wan_cny": [
+      91.5,
+      168.5
+    ],
+    "Onyx_annual_license": "L_quote_required",
+    "cache_pool_gb_per_generation_gpu": 38.60000000000001,
+    "long_context_memory_only_admission": {
+      "131072": 9,
+      "262144": 3
+    },
+    "storage": "GPU node 2x1.92TB system + 2x3.84TB enterprise NVMe; each support node 2x3.84TB mirrored; NAS reused",
+    "network": "dual-port25GbE GPU node plus10/25GbE support nodes; dedicated BMC"
+  },
+  "scenario3": {
+    "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "hardware": "8x H200 141GB SXM NVSwitch; 2x EPYC9454; 1536GB host RAM",
+    "topologies": [
+      "TP8",
+      "two independent TP4 services",
+      "TP4 x DP2 in one shared-Engram service"
+    ],
+    "main_active_users": 20,
+    "target_context_each": 1000000,
+    "target_context_is_capacity_candidate": true,
+    "hardware_wan_cny": [
+      291,
+      304
+    ],
+    "incremental_two_tool_cpu_nodes_wan_cny": [
+      12,
+      26
+    ],
+    "native_checkpoint_bytes": 510286023000,
+    "engram_table_bytes": 202758032400,
+    "non_Engram_checkpoint_bytes": 307527990600,
+    "Hopper_global_kv_bytes_per_token_rank": 1827,
+    "Hopper_1M_global_kv_gb_per_rank": 1.827,
+    "full_1M_decode_evidence": "service target backcalculation; no matched measurement",
+    "A100_engine": "pinned modified vLLM SM80 adaptation; independent qualification",
+    "host_cache_candidate_quota_gib": 640,
+    "tool_servers_do_not_replicate_GPU_server_CPU_RAM": true
+  },
+  "hardware_2026_10_12": [
+    {
+      "id": "A1008-SXM-refurb",
+      "gpu": "8x A10080 SXM4 / HGX-NVLink",
+      "cpu": "2x EPYC7V12",
+      "host_ram_gb": 1024,
+      "total_cny": [
+        919850.15,
+        1014450.15
+      ],
+      "rounded_outward_wan_cny": [
+        91,
+        102
+      ],
+      "price_class": "D_analytical_cash_budget"
+    },
+    {
+      "id": "H1008-SXM",
+      "gpu": "8x H10080 SXM5 / NVSwitch",
+      "cpu": "2x EPYC9454",
+      "host_ram_gb": 1536,
+      "total_cny": [
+        2855295.64,
+        2978345.64
+      ],
+      "rounded_outward_wan_cny": [
+        285,
+        298
+      ],
+      "price_class": "D_analytical_cash_budget"
+    },
+    {
+      "id": "H2008-SXM",
+      "gpu": "8x H200141 SXM / NVSwitch",
+      "cpu": "2x EPYC9454",
+      "host_ram_gb": 1536,
+      "total_cny": [
+        2912121.64,
+        3035171.64
+      ],
+      "rounded_outward_wan_cny": [
+        291,
+        304
+      ],
+      "price_class": "D_analytical_cash_budget"
+    },
+    {
+      "id": "H2004-NVL",
+      "gpu": "4x H200141 NVL / four-way bridge group",
+      "cpu": "2x Xeon6710E-class",
+      "host_ram_gb": 1024,
+      "total_cny": [
+        1615630.0,
+        2827660.0
+      ],
+      "rounded_outward_wan_cny": [
+        161,
+        283
+      ],
+      "price_class": "D_analytical_cash_budget"
+    }
+  ]
+}

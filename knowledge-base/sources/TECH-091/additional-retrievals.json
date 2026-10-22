@@ -1,0 +1,66 @@
+[
+  {
+    "requested_url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/leaderboard.csv",
+    "final_url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/leaderboard.csv",
+    "path": "benchmarks/extractbench/leaderboard.csv",
+    "sha256": "a247645a0db9372a23ff7e73ab7cfe11c990971db8a7addae92e78e5eaf09c1f",
+    "bytes": 8542,
+    "retrieved_at": "2026-10-19T17:36:51.844381+00:00"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/README.md",
+    "final_url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/README.md",
+    "path": "benchmarks/extractbench/readme.md",
+    "sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8",
+    "bytes": 29871,
+    "retrieved_at": "2026-10-19T17:36:52.132120+00:00"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/docs/pipelines.md",
+    "final_url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/docs/pipelines.md",
+    "path": "benchmarks/extractbench/pipelines.md",
+    "sha256": "8bf8bd4c6bed9234f1ac17bb79589fdf6c78363f9d39d1972fc5e3cb89e7ea02",
+    "bytes": 23068,
+    "retrieved_at": "2026-10-19T17:36:51.770046+00:00"
+  },
+  {
+    "requested_url": "https://extractbench.ai/assets/index-BZ5jS9cV.js",
+    "final_url": "https://www.extractbench.ai/assets/index-BZ5jS9cV.js",
+    "path": "benchmarks/extractbench/assets.js",
+    "sha256": "e42cdfb350663ed3b9b6b9f4148f39f905cdefa133b20e47e03bd6b2e5d25cbe",
+    "bytes": 829437,
+    "retrieved_at": "2026-10-19T17:36:51.951035+00:00"
+  },
+  {
+    "requested_url": "https://raw.githubusercontent.com/ant-intl/BizAgentBench/main/README.md",
+    "final_url": "https://raw.githubusercontent.com/ant-intl/BizAgentBench/main/README.md",
+    "path": "benchmarks/bizbench/readme.md",
+    "sha256": "bbe2bd22914f8014208968771f0ba1f7518fac9afdeac5a925b2e42de2ccc53d",
+    "bytes": 9570,
+    "retrieved_at": "2026-10-19T17:36:51.739231+00:00"
+  },
+  {
+    "requested_url": "https://www.vals.ai/benchmarks/fabv2",
+    "final_url": "https://www.vals.ai/benchmarks/fabv2",
+    "path": "benchmarks/vals-fabv2/source.html",
+    "sha256": "d57a8e930110bb0181f7c18dce40975f50631950ecddc89c548e4ce020ae2889",
+    "bytes": 1750648,
+    "retrieved_at": "2026-10-19T17:36:52.520896+00:00"
+  },
+  {
+    "requested_url": "https://www.vals.ai/benchmarks/corp_fin_v2",
+    "final_url": "https://www.vals.ai/benchmarks/corp_fin_v2",
+    "path": "benchmarks/vals-corpfinv2/source.html",
+    "sha256": "5537cdeca6ad35880255ef223023c845f1430479b0c3af8fb249b00dff80b78c",
+    "bytes": 436244,
+    "retrieved_at": "2026-10-19T17:36:52.940715+00:00"
+  },
+  {
+    "requested_url": "https://www.vals.ai/home",
+    "final_url": "https://www.vals.ai/home",
+    "path": "benchmarks/vals-home/source.html",
+    "sha256": "8cf800a8794254bc0530dc47d0c8815f423cbfab74a2fd57fe832637f0d1950c",
+    "bytes": 746424,
+    "retrieved_at": "2026-10-19T17:36:52.307304+00:00"
+  }
+]

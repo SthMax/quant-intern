@@ -1,0 +1,7 @@
+arrival_tasks_per_second,rounds,model_wall_s_per_round,tool_wall_s_per_round,tool_core_seconds_per_round,resident_env_gib,average_live_tasks,average_model_phase_tasks,average_tool_phase_tasks,average_busy_cpu_cores,average_environment_gib,evidence
+0.05,3,60,10,4,2,10.5,9.000000000000002,1.5000000000000002,0.6000000000000001,21.0,Little_law_teaching_scenario_no_queue_retry_or_headroom
+0.05,3,120,10,4,2,19.5,18.000000000000004,1.5000000000000002,0.6000000000000001,39.0,Little_law_teaching_scenario_no_queue_retry_or_headroom
+0.1,3,60,10,4,2,21.0,18.000000000000004,3.0000000000000004,1.2000000000000002,42.0,Little_law_teaching_scenario_no_queue_retry_or_headroom
+0.1,3,120,10,4,2,39.0,36.00000000000001,3.0000000000000004,1.2000000000000002,78.0,Little_law_teaching_scenario_no_queue_retry_or_headroom
+0.2,3,60,10,4,2,42.0,36.00000000000001,6.000000000000001,2.4000000000000004,84.0,Little_law_teaching_scenario_no_queue_retry_or_headroom
+0.2,3,120,10,4,2,78.0,72.00000000000001,6.000000000000001,2.4000000000000004,156.0,Little_law_teaching_scenario_no_queue_retry_or_headroom

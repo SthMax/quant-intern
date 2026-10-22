@@ -1,0 +1,148 @@
+{
+  "status": "passed",
+  "method": "Independent Decimal closed-form token series and fixed/variable cost reversal; no import of calculate.py",
+  "per_target_task_tokens_including_extra_trajectories": {
+    "input": "1188000.0",
+    "new_external": "171600.0",
+    "output": "17600.0",
+    "deepseek_hit": "965580.000",
+    "claude_hit": "950950.000",
+    "local_hit": "914760.00",
+    "deepseek_miss": "222420.000",
+    "claude_write": "237050.000",
+    "local_prefill": "273240.00"
+  },
+  "independent_decimal_per_target_task_cny": {
+    "deepseek": "0.6253244474400",
+    "claude": "9.047168900"
+  },
+  "case_audit": [
+    {
+      "scale": "personal",
+      "volume": "low",
+      "tasks": "750.00",
+      "nodes_by_year": [
+        1,
+        1,
+        1
+      ],
+      "input_tokens_including_extra_trajectories": "891000000.000",
+      "output_tokens_including_extra_trajectories": "13200000.000",
+      "local_full_TCO_cny": 90374.26001579798,
+      "deepseek_full_TCO_cny": 15468.993335579999,
+      "claude_global_counterfactual_TCO_cny": 21785.376675
+    },
+    {
+      "scale": "personal",
+      "volume": "base",
+      "tasks": "2482.50",
+      "nodes_by_year": [
+        1,
+        1,
+        1
+      ],
+      "input_tokens_including_extra_trajectories": "2949210000.000",
+      "output_tokens_including_extra_trajectories": "43692000.000",
+      "local_full_TCO_cny": 90465.6436522913,
+      "deepseek_full_TCO_cny": 16552.3679407698,
+      "claude_global_counterfactual_TCO_cny": 37459.59679425
+    },
+    {
+      "scale": "personal",
+      "volume": "high",
+      "tasks": "5718.7500",
+      "nodes_by_year": [
+        1,
+        1,
+        1
+      ],
+      "input_tokens_including_extra_trajectories": "6793875000.00000",
+      "output_tokens_including_extra_trajectories": "100650000.00000",
+      "local_full_TCO_cny": 90636.34512045958,
+      "deepseek_full_TCO_cny": 18576.0741837975,
+      "claude_global_counterfactual_TCO_cny": 66738.497146875
+    },
+    {
+      "scale": "company",
+      "volume": "low",
+      "tasks": "30000.00",
+      "nodes_by_year": [
+        1,
+        1,
+        1
+      ],
+      "input_tokens_including_extra_trajectories": "35640000000.000",
+      "output_tokens_including_extra_trajectories": "528000000.000",
+      "local_full_TCO_cny": 3916993.1873333333,
+      "deepseek_full_TCO_cny": 642589.8134232,
+      "claude_global_counterfactual_TCO_cny": 895245.147
+    },
+    {
+      "scale": "company",
+      "volume": "base",
+      "tasks": "95312.5000",
+      "nodes_by_year": [
+        1,
+        1,
+        1
+      ],
+      "input_tokens_including_extra_trajectories": "113231250000.00000",
+      "output_tokens_including_extra_trajectories": "1677500000.00000",
+      "local_full_TCO_cny": 3925409.9380902783,
+      "deepseek_full_TCO_cny": 683431.316396625,
+      "claude_global_counterfactual_TCO_cny": 1486138.36578125
+    },
+    {
+      "scale": "company",
+      "volume": "high",
+      "tasks": "237500.00",
+      "nodes_by_year": [
+        1,
+        2,
+        2
+      ],
+      "input_tokens_including_extra_trajectories": "282150000000.000",
+      "output_tokens_including_extra_trajectories": "4180000000.000",
+      "local_full_TCO_cny": 7127813.726388889,
+      "deepseek_full_TCO_cny": 772344.636267,
+      "claude_global_counterfactual_TCO_cny": 2772532.69375
+    }
+  ],
+  "break_even_audit": [
+    {
+      "scale": "personal",
+      "provider": "deepseek",
+      "closed_form_three_year_tasks": "131571.1250088363477704138284",
+      "fits_assumed_one_node_envelope": false
+    },
+    {
+      "scale": "personal",
+      "provider": "claude",
+      "closed_form_three_year_tasks": "8375.713105532820028177299715",
+      "fits_assumed_one_node_envelope": true
+    },
+    {
+      "scale": "company",
+      "provider": "deepseek",
+      "closed_form_three_year_tasks": "6625562.209101695276058582075",
+      "fits_assumed_one_node_envelope": false
+    },
+    {
+      "scale": "company",
+      "provider": "claude",
+      "closed_form_three_year_tasks": "368825.5658699597280871413312",
+      "fits_assumed_one_node_envelope": false
+    }
+  ],
+  "checks": [
+    "低中高三年增长与输入、缓存写读、输出独立反算",
+    "54行年度分项与每任务成本复核",
+    "301行曲线按整数节点扩容逐项复核",
+    "四个固定+变动成本临界值独立反推并验证容量",
+    "供应商Search/Fetch基准调用为0，本地工具无供应商附加费",
+    "A100与长context未测合格任务成本保持null",
+    "来源SHA-256与正文文件链接有效"
+  ],
+  "company_planning_rate_identity": "400 decode + 8000 uncached prefill tokens/s is an assumed envelope for 100K–170K trajectory, not 1M measured throughput",
+  "new_external_calls": false
+}

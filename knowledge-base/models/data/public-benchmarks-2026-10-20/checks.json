@@ -1,0 +1,43 @@
+{
+  "extractbench_macro": [
+    {
+      "model": "Qwen3.8-27B-FP8",
+      "published_overall": 89.75,
+      "recomputed_from_rounded_splits": 89.7494,
+      "difference": -0.0006
+    },
+    {
+      "model": "Qwen3.6-35B-A3B-FP8",
+      "published_overall": 88.11,
+      "recomputed_from_rounded_splits": 88.1162,
+      "difference": 0.0062
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash (not 1017)",
+      "published_overall": 87.11,
+      "recomputed_from_rounded_splits": 87.1068,
+      "difference": -0.0032
+    },
+    {
+      "model": "GLM-5.3-Flash",
+      "published_overall": 80.75,
+      "recomputed_from_rounded_splits": 80.7489,
+      "difference": -0.0011
+    },
+    {
+      "model": "Kimi-K3",
+      "published_overall": 83.17,
+      "recomputed_from_rounded_splits": 83.1724,
+      "difference": 0.0024
+    },
+    {
+      "model": "Gemma-4-26B-A4B",
+      "published_overall": 70.27,
+      "recomputed_from_rounded_splits": 70.2697,
+      "difference": -0.0003
+    }
+  ],
+  "short_weight": 0.6810810810810811,
+  "long_weight": 0.05405405405405406,
+  "models_called": 0
+}
