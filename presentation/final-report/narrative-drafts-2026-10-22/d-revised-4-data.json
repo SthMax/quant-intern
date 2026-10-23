@@ -1,0 +1,112 @@
+{
+  "accessed_date": "2026-10-23",
+  "kimi_source_url": "https://platform.kimi.com/docs/pricing/chat",
+  "kimi_html_sha256": "85bc6d4c807e92130b9718b84723d6cf6c38ff30b6953cea92a59eb80023ed98",
+  "kimi_public_table_definition": "columns:[{title:`模型`,width:`12%`},{title:`计费单位`,width:`10%`},{title:`缓存写入（TTL 5min）`,width:`13%`},{title:`缓存写入（TTL 1h）`,width:`13%`},{title:`输入价格（缓存命中）`,width:`13%`},{title:`输入价格（缓存未命中）`,width:`13%`},{title:`输出价格`,width:`10%`},{title:`上下文窗口`,width:`16%`}],rows:[[`kimi-k3`,`1M tokens`,`¥20.00`,`¥40.00`,`¥2.00`,`¥20.00`,`¥100.00`,`1,048,576 tokens`]]})})",
+  "kimi_currency": "CNY",
+  "kimi_unit_tokens": 1000000,
+  "kimi_model_id": "kimi-k3",
+  "kimi_context_window_tokens": 1048576,
+  "kimi_prices_per_million": {
+    "uncached_input": 20,
+    "cached_input": 2,
+    "cache_write_5m": 20,
+    "cache_write_1h": 40,
+    "output": 100
+  },
+  "task": {
+    "rounds": 8,
+    "initial_input": 100000,
+    "new_external_input_per_later_round": 8000,
+    "output_each_round": 2000,
+    "total_submitted_input": 1080000,
+    "total_output": 16000,
+    "api_total_input_cache_read_fraction": 0.8,
+    "api_cache_read_tokens": 864000.0,
+    "api_nonhit_or_write_tokens": 216000.0,
+    "extra_trajectory_factor": 1.1
+  },
+  "fees_per_planned_task_cny": {
+    "deepseek": 0.6180451200000001,
+    "glm53": 4.2944,
+    "kimi_k3_1h": 13.164800000000001,
+    "kimi_k3_5m": 8.4128
+  },
+  "local_planning": {
+    "fresh_input_tokens_per_planned_task": 273240,
+    "output_tokens_per_planned_task": 17600,
+    "fresh_input_rate": 8000,
+    "system_output_rate": 400,
+    "work_hours_year": 2000,
+    "allocated_fraction": 0.7,
+    "gpu_active_kw": 6.8,
+    "gpu_idle_kw": 1.5,
+    "powered_hours_year": 8760,
+    "pue": 1.4,
+    "electricity_cny_kwh": 0.8,
+    "fixed_three_year_excluding_hardware_and_power_cny": 706500
+  },
+  "api_fixed_three_year_cny": 435000,
+  "usd_cny": 7,
+  "deepseek_peak_fraction": 0.8,
+  "additional_api_tax_allowance": 0,
+  "scenarios": [
+    {
+      "people": 20,
+      "tasks_day": 100,
+      "tasks_year": 25000,
+      "tasks_three_year": 75000,
+      "busy_hours_year": 542.7430555555555,
+      "busy_hours_day": 2.1709722222222223,
+      "electricity_three_year_cny": 53815.568333333336,
+      "local_total_cny": {
+        "5000000": 5760315.568333333,
+        "5500000": 6260315.568333333,
+        "6000000": 6760315.568333333
+      },
+      "api_total_cny": {
+        "deepseek": 481353.384,
+        "glm53": 757080.0,
+        "kimi_k3_1h": 1422360.0000000002,
+        "kimi_k3_5m": 1065960.0
+      }
+    },
+    {
+      "people": 50,
+      "tasks_day": 250,
+      "tasks_year": 62500,
+      "tasks_three_year": 187500,
+      "busy_hours_year": 1356.857638888889,
+      "busy_hours_day": 5.4274305555555555,
+      "electricity_three_year_cny": 68313.32083333333,
+      "local_total_cny": {
+        "5000000": 5774813.320833334,
+        "5500000": 6274813.320833334,
+        "6000000": 6774813.320833334
+      },
+      "api_total_cny": {
+        "deepseek": 550883.46,
+        "glm53": 1240200.0,
+        "kimi_k3_1h": 2903400.0000000005,
+        "kimi_k3_5m": 2012400.0
+      }
+    }
+  ],
+  "glm_future_cache_storage_fee": "add S when tariff is published; current official price is temporarily free",
+  "personal_fixed_usage": {
+    "tasks_day": 3,
+    "tasks_year": 750,
+    "tasks_three_year": 2250,
+    "hardware_cny": 60123.5,
+    "implementation_cny": 15000,
+    "operations_three_year_cny": 15000,
+    "power_three_year_cny": 329.8800473939343,
+    "total_three_year_cny": 90453.38004739393
+  },
+  "kimi_50_people_1h_components_cny": {
+    "cache_write": 1782000.0000000002,
+    "cache_read": 356400.0,
+    "output": 330000.00000000006,
+    "implementation_operations_platform": 435000
+  }
+}

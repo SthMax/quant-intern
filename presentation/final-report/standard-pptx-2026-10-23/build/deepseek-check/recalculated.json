@@ -1,0 +1,63 @@
+{
+  "checked_date": "2026-10-23",
+  "model": "DeepSeek-V4.1-Flash-1017",
+  "alias": "deepseek-flash",
+  "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "cache_url": "https://api-docs.deepseek.com/guides/kv_cache/",
+  "benchmark_url": "https://artificialanalysis.ai/models/comparisons/deepseek-v4-1-flash-1017-vs-deepseek-v4-1-flash",
+  "input_tokens_by_round": [
+    100000,
+    110000,
+    120000,
+    130000,
+    140000,
+    150000,
+    160000,
+    170000
+  ],
+  "input_total": 1080000,
+  "output_total_including_reasoning_tools_text": 16000,
+  "uncached_input": 216000,
+  "cached_input": 864000,
+  "price_usd_million_peak": {
+    "input": 0.3,
+    "cache": 0.006,
+    "output": 1.2
+  },
+  "weighted_factor": 0.9,
+  "task_fee_cny": 0.61804512,
+  "scenarios": [
+    {
+      "people": 20,
+      "tasks_day": 100,
+      "tasks_year": 25000,
+      "tasks_three_year": 75000,
+      "api_calls_three_year_before_retry": 600000,
+      "budgeted_api_call_equivalent": 660000.0,
+      "call_cost_cny": 46353.384,
+      "fixed_cny": 435000,
+      "total_cny": 481353.384,
+      "total_10k_cny": 48.1353384
+    },
+    {
+      "people": 50,
+      "tasks_day": 250,
+      "tasks_year": 62500,
+      "tasks_three_year": 187500,
+      "api_calls_three_year_before_retry": 1500000,
+      "budgeted_api_call_equivalent": 1650000.0,
+      "call_cost_cny": 115883.46,
+      "fixed_cny": 435000,
+      "total_cny": 550883.46,
+      "total_10k_cny": 55.088346
+    }
+  ],
+  "local_fresh_input_per_planned_task": 273240.0,
+  "local_busy_hours_day_50_people": 5.4274305555555555,
+  "aa_gdpval_v21": {
+    "DeepSeek V4.1 Flash (Max)": 1600,
+    "DeepSeek V4.1 Flash 1017 (Max)": 1746
+  },
+  "sample_data_match": true,
+  "source_formula_match": true
+}

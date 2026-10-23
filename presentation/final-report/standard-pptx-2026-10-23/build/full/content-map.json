@@ -1,0 +1,302 @@
+{
+  "count": 49,
+  "bodyCount": 41,
+  "timeBudgetMinutes": 40,
+  "source": "/Users/sthmax/dev/git/ms-intern/presentation/final-report/narrative-drafts-2026-10-22/extended-draft-d-revised-4.md",
+  "slides": [
+    {
+      "slide": 1,
+      "sourcePage": 1,
+      "title": "公司本地部署 LLM\n模型、运行环境与成本",
+      "layout": "cover"
+    },
+    {
+      "slide": 2,
+      "sourcePage": 2,
+      "title": "汇报内容",
+      "layout": "body"
+    },
+    {
+      "slide": 3,
+      "sourcePage": 3,
+      "title": "第一章\n金融工作与本地部署需求",
+      "layout": "section"
+    },
+    {
+      "slide": 4,
+      "sourcePage": 4,
+      "title": "LLM 在资料处理中的作用",
+      "layout": "body"
+    },
+    {
+      "slide": 5,
+      "sourcePage": 5,
+      "title": "金融工作的公开应用案例",
+      "layout": "prose"
+    },
+    {
+      "slide": 6,
+      "sourcePage": 6,
+      "title": "公司应用的使用条件",
+      "layout": "body"
+    },
+    {
+      "slide": 7,
+      "sourcePage": 7,
+      "title": "本地部署的运行环境控制",
+      "layout": "prose"
+    },
+    {
+      "slide": 8,
+      "sourcePage": 8,
+      "title": "第二章\n分析任务对模型的要求",
+      "layout": "section"
+    },
+    {
+      "slide": 9,
+      "sourcePage": 9,
+      "title": "财报分析的任务与交付要求",
+      "layout": "body"
+    },
+    {
+      "slide": 10,
+      "sourcePage": 10,
+      "title": "上下文与推理",
+      "layout": "body"
+    },
+    {
+      "slide": 11,
+      "sourcePage": 11,
+      "title": "固定资源下的上下文、模型能力与速度",
+      "layout": "body"
+    },
+    {
+      "slide": 12,
+      "sourcePage": 12,
+      "title": "上下文窗口与任务信息",
+      "layout": "body"
+    },
+    {
+      "slide": 13,
+      "sourcePage": 13,
+      "title": "模型能力与分析任务的深度",
+      "layout": "body"
+    },
+    {
+      "slide": 14,
+      "sourcePage": 14,
+      "title": "首次输出、生成速度与完整任务时间",
+      "layout": "body"
+    },
+    {
+      "slide": 15,
+      "sourcePage": 15,
+      "title": "使用场景与选型顺序",
+      "layout": "body"
+    },
+    {
+      "slide": 16,
+      "sourcePage": 16,
+      "title": "第三章\n模型选型与部署条件",
+      "layout": "section"
+    },
+    {
+      "slide": 17,
+      "sourcePage": 17,
+      "title": "个人设备的整机方案",
+      "layout": "body"
+    },
+    {
+      "slide": 18,
+      "sourcePage": 18,
+      "title": "DGX Spark 的选择依据",
+      "layout": "prose"
+    },
+    {
+      "slide": 19,
+      "sourcePage": 19,
+      "title": "个人模型优先满足任务能力",
+      "layout": "body"
+    },
+    {
+      "slide": 20,
+      "sourcePage": 20,
+      "title": "Qwen3.8-27B 的生成速度取舍",
+      "layout": "body"
+    },
+    {
+      "slide": 21,
+      "sourcePage": 21,
+      "title": "服务器模型与单机八卡条件",
+      "layout": "body"
+    },
+    {
+      "slide": 22,
+      "sourcePage": 22,
+      "title": "初始服务器主力选择 DeepSeek-V4.1-Flash",
+      "layout": "prose"
+    },
+    {
+      "slide": 23,
+      "sourcePage": 23,
+      "title": "主力模型更新为 DeepSeek-V4.1-Flash-1017",
+      "layout": "body"
+    },
+    {
+      "slide": 24,
+      "sourcePage": 24,
+      "title": "个人端与服务器端的最终选择",
+      "layout": "body"
+    },
+    {
+      "slide": 25,
+      "sourcePage": 25,
+      "title": "第四章\n运行环境与使用体验",
+      "layout": "section"
+    },
+    {
+      "slide": 26,
+      "sourcePage": 26,
+      "title": "模型、推理框架与设备的分工",
+      "layout": "body"
+    },
+    {
+      "slide": 27,
+      "sourcePage": 27,
+      "title": "服务启动时的模型与工作空间",
+      "layout": "body"
+    },
+    {
+      "slide": 28,
+      "sourcePage": 28,
+      "title": "输入处理与首次输出等待",
+      "layout": "body"
+    },
+    {
+      "slide": 29,
+      "sourcePage": 29,
+      "title": "持续生成与输出时间",
+      "layout": "body"
+    },
+    {
+      "slide": 30,
+      "sourcePage": 30,
+      "title": "多轮任务中的历史复用",
+      "layout": "body"
+    },
+    {
+      "slide": 31,
+      "sourcePage": 31,
+      "title": "工具等待期间的状态保存",
+      "layout": "body"
+    },
+    {
+      "slide": 32,
+      "sourcePage": 32,
+      "title": "共享服务中的请求调度",
+      "layout": "body"
+    },
+    {
+      "slide": 33,
+      "sourcePage": 33,
+      "title": "DGX Spark 上 Qwen3.8-27B 的长输入表现",
+      "layout": "two"
+    },
+    {
+      "slide": 34,
+      "sourcePage": 34,
+      "title": "DGX Spark 的三路并发实例",
+      "layout": "body"
+    },
+    {
+      "slide": 35,
+      "sourcePage": 35,
+      "title": "单台八 H200 服务器的运行配置",
+      "layout": "body"
+    },
+    {
+      "slide": 36,
+      "sourcePage": 36,
+      "title": "1017 的模型与历史状态安排",
+      "layout": "body"
+    },
+    {
+      "slide": 37,
+      "sourcePage": 37,
+      "title": "vLLM 对共享请求的组织",
+      "layout": "body"
+    },
+    {
+      "slide": 38,
+      "sourcePage": 38,
+      "title": "第五章\n资源需求与成本",
+      "layout": "section"
+    },
+    {
+      "slide": 39,
+      "sourcePage": 39,
+      "title": "20 人与 50 人情景的业务任务量",
+      "layout": "body"
+    },
+    {
+      "slide": 40,
+      "sourcePage": 40,
+      "title": "每日 250 项任务的单机安排",
+      "layout": "body"
+    },
+    {
+      "slide": 41,
+      "sourcePage": 41,
+      "title": "八卡 H200 的国内采购预算",
+      "layout": "body"
+    },
+    {
+      "slide": 42,
+      "sourcePage": 42,
+      "title": "本地部署的三年投入",
+      "layout": "body"
+    },
+    {
+      "slide": 43,
+      "sourcePage": 43,
+      "title": "API 的任务负载与计费口径",
+      "layout": "body"
+    },
+    {
+      "slide": 44,
+      "sourcePage": 44,
+      "title": "固定使用规模下的本地与 API 三年预算",
+      "layout": "body"
+    },
+    {
+      "slide": 45,
+      "sourcePage": 45,
+      "title": "第六章\n日常应用与验证",
+      "layout": "section"
+    },
+    {
+      "slide": 46,
+      "sourcePage": 46,
+      "title": "本地服务的使用路径",
+      "layout": "body"
+    },
+    {
+      "slide": 47,
+      "sourcePage": 47,
+      "title": "公司资料与工具的接入",
+      "layout": "body"
+    },
+    {
+      "slide": 48,
+      "sourcePage": 48,
+      "title": "部署方案的任务验证",
+      "layout": "body"
+    },
+    {
+      "slide": 49,
+      "sourcePage": 49,
+      "title": "公司本地部署的选择与后续验证",
+      "layout": "prose"
+    }
+  ]
+}
