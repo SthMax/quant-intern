@@ -1,0 +1,105 @@
+{
+  "slideCount": 9,
+  "objectMatching": "Stable shape names prefixed with !! for persistent business objects. Navigation is one native shape with internal text.",
+  "slides": [
+    {
+      "page": 1,
+      "buttons": {
+        "nav.front": 2,
+        "nav.middle": 4,
+        "nav.back": 7,
+        "nav.home": 1,
+        "nav.prev": 1,
+        "nav.next": 2
+      }
+    },
+    {
+      "page": 2,
+      "buttons": {
+        "nav.front": 2,
+        "nav.middle": 4,
+        "nav.back": 7,
+        "nav.home": 1,
+        "nav.prev": 1,
+        "nav.next": 3
+      }
+    },
+    {
+      "page": 3,
+      "buttons": {
+        "nav.front": 2,
+        "nav.middle": 4,
+        "nav.back": 7,
+        "nav.home": 1,
+        "nav.prev": 2,
+        "nav.next": 4
+      }
+    },
+    {
+      "page": 4,
+      "buttons": {
+        "nav.front": 2,
+        "nav.middle": 4,
+        "nav.back": 7,
+        "nav.home": 1,
+        "nav.prev": 3,
+        "nav.next": 5
+      }
+    },
+    {
+      "page": 5,
+      "buttons": {
+        "nav.front": 2,
+        "nav.middle": 4,
+        "nav.back": 7,
+        "nav.home": 1,
+        "nav.prev": 4,
+        "nav.next": 6
+      }
+    },
+    {
+      "page": 6,
+      "buttons": {
+        "nav.front": 2,
+        "nav.middle": 4,
+        "nav.back": 7,
+        "nav.home": 1,
+        "nav.prev": 5,
+        "nav.next": 7
+      }
+    },
+    {
+      "page": 7,
+      "buttons": {
+        "nav.front": 2,
+        "nav.middle": 4,
+        "nav.back": 7,
+        "nav.home": 1,
+        "nav.prev": 6,
+        "nav.next": 8
+      }
+    },
+    {
+      "page": 8,
+      "buttons": {
+        "nav.front": 2,
+        "nav.middle": 4,
+        "nav.back": 7,
+        "nav.home": 1,
+        "nav.prev": 7,
+        "nav.next": 9
+      }
+    },
+    {
+      "page": 9,
+      "buttons": {
+        "nav.front": 2,
+        "nav.middle": 4,
+        "nav.back": 7,
+        "nav.home": 1,
+        "nav.prev": 8,
+        "nav.next": 1
+      }
+    }
+  ]
+}

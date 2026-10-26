@@ -1,5 +1,6 @@
 build/
-node_modules/
+node_modules
+.chart-data-*/
 .codex-finalizer/
 qa/render/
 qa/pdf-render/

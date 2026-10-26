@@ -1,0 +1,110 @@
+<div id="company-map-walkthrough">
+  <style>
+    #company-map-walkthrough { color:var(--foreground); }
+    #company-map-walkthrough .map-head { display:flex; flex-wrap:wrap; align-items:center; gap:12px; padding-right:90px; margin-bottom:18px; }
+    #company-map-walkthrough .map-head h3 { margin:0; }
+    #company-map-walkthrough .office-map { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+    #company-map-walkthrough .office { min-width:0; }
+    #company-map-walkthrough .office h3 { margin:0 0 12px; font-weight:500; }
+    #company-map-walkthrough .office-list { display:grid; gap:9px; }
+    #company-map-walkthrough .focus-mark { height:3px; margin-bottom:12px; background:var(--border); transition:background .3s; }
+    #company-map-walkthrough .office.focused .focus-mark { background:var(--viz-series-1); }
+    #company-map-walkthrough .detail { padding:18px 0 12px; }
+    #company-map-walkthrough .detail h3 { margin:0 0 18px; }
+    #company-map-walkthrough .path { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr); align-items:center; gap:10px; }
+    #company-map-walkthrough .path-node { min-width:0; padding:18px 10px; text-align:center; background:var(--muted); color:var(--foreground); overflow-wrap:anywhere; transition:background .35s,transform .35s; }
+    #company-map-walkthrough .path-node.llm { background:color-mix(in srgb,var(--viz-series-1) 15%,var(--background)); transform:translateY(-4px); }
+    #company-map-walkthrough .step-tag { color:var(--muted-foreground); }
+    #company-map-walkthrough .steps { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:18px; }
+    #company-map-walkthrough .steps .step-tag { margin-right:auto; }
+    #company-map-walkthrough .doc-preview { margin-top:18px; padding:12px 0; border-top:1px solid var(--border); }
+    #company-map-walkthrough .doc-row { display:grid; grid-template-columns:90px minmax(0,1fr); gap:12px; margin-top:8px; }
+    #company-map-walkthrough .doc-row span:first-child { color:var(--muted-foreground); }
+    @media(max-width:440px) {
+      #company-map-walkthrough .office-map { gap:8px; }
+      #company-map-walkthrough .path { grid-template-columns:minmax(0,1fr); gap:6px; }
+      #company-map-walkthrough .path-arrow { text-align:center; transform:rotate(90deg); }
+      #company-map-walkthrough .doc-row { grid-template-columns:70px minmax(0,1fr); gap:8px; }
+    }
+    @media(prefers-reduced-motion:reduce) {
+      #company-map-walkthrough .focus-mark,#company-map-walkthrough .path-node { transition:none; }
+    }
+  </style>
+  <div class="map-head"><h3>公司工作地图</h3><span class="text-small step-tag" id="map-current" aria-live="polite"></span></div>
+  <div class="office-map" aria-label="前台中台后台工作架构">
+    <section class="office" data-office="front"><h3>前台</h3><div class="focus-mark"></div><div class="office-list">
+      <button class="btn btn-block" type="button" data-task="research" aria-pressed="false">研究分析</button>
+      <button class="btn btn-block" type="button" data-task="trade" aria-pressed="false">交易支持</button>
+      <button class="btn btn-block" type="button" data-task="client" aria-pressed="false">客户材料</button>
+    </div></section>
+    <section class="office" data-office="middle"><h3>中台</h3><div class="focus-mark"></div><div class="office-list">
+      <button class="btn btn-block" type="button" data-task="review" aria-pressed="false">材料审核</button>
+      <button class="btn btn-block" type="button" data-task="risk" aria-pressed="false">风险分析</button>
+    </div></section>
+    <section class="office" data-office="back"><h3>后台</h3><div class="focus-mark"></div><div class="office-list">
+      <button class="btn btn-block" type="button" data-task="files" aria-pressed="false">运营文件</button>
+      <button class="btn btn-block" type="button" data-task="dev" aria-pressed="false">工具开发</button>
+    </div></section>
+  </div>
+  <hr>
+  <section class="detail" aria-live="polite" aria-label="当前讲述内容">
+    <h3 id="map-detail-title"></h3>
+    <div class="path" role="img" id="map-path">
+      <div class="path-node" id="map-input"></div><span class="path-arrow" aria-hidden="true">→</span>
+      <div class="path-node" id="map-process"></div><span class="path-arrow" aria-hidden="true">→</span>
+      <div class="path-node" id="map-output"></div>
+    </div>
+    <div class="doc-preview" id="map-document" hidden>
+      <div id="map-document-title"></div>
+      <div class="doc-row"><span id="map-doc-label"></span><span id="map-doc-text"></span></div>
+    </div>
+  </section>
+  <div class="steps"><span class="text-small step-tag" id="map-step"></span><button type="button" class="btn" id="map-prev">上一步</button><button type="button" class="btn btn-primary" id="map-next">下一步</button></div>
+  <script>
+    (()=>{
+      const root=document.getElementById('company-map-walkthrough');
+      const el=id=>root.querySelector('#'+id);
+      const states=[
+        {name:'全景',title:'一份客户材料的工作过程',office:[],tasks:[],input:'前台形成材料',process:'中台审核修改',output:'后台更新文件'},
+        {name:'前台 · 客户材料',title:'准备季度客户沟通稿',office:['front'],tasks:['client'],input:'经理观点、产品资料',process:'检索、整理、撰写',output:'客户沟通稿'},
+        {name:'前台 · LLM 参与',title:'LLM 整理资料并生成沟通稿',office:['front'],tasks:['client'],input:'经理观点、产品资料',process:'LLM 检索与撰写',output:'客户沟通稿',llm:true,doc:['客户沟通稿示例','本期观点','销量增长带动收入，后续关注原材料成本变化。']},
+        {name:'中台 · 材料审核',title:'同一份材料进入审核',office:['middle'],tasks:['review'],input:'客户沟通稿',process:'LLM 定位问题',output:'批注与修订稿',llm:true,doc:['同一份沟通稿','修改意见','将引用资料从二季度 V1 更新为三季度 V2。']},
+        {name:'后台 · 运营文件',title:'比对修订版本并更新文件',office:['back'],tasks:['files'],input:'原稿与修订稿',process:'LLM 比对版本',output:'更新稿与变更清单',llm:true,doc:['同一份沟通稿','变更记录','产品名称、资料期次、风险提示已更新。']},
+        {name:'回到全景',title:'客户材料贯穿前中后台',office:['front','middle','back'],tasks:['client','review','files'],input:'生成客户材料',process:'审核并修改',output:'比对和更新文件'}
+      ];
+      const extras={
+        research:{name:'前台 · 研究分析',title:'从多源资料形成公司分析',office:['front'],tasks:['research'],input:'财报、研报、纪要',process:'LLM 分析与计算',output:'公司分析报告',llm:true},
+        trade:{name:'前台 · 交易支持',title:'从交易意图准备交易要素',office:['front'],tasks:['trade'],input:'筛选条件、询价记录',process:'LLM 查询与提取',output:'候选券与交易要素',llm:true},
+        risk:{name:'中台 · 风险分析',title:'将风险提示转为影响分析',office:['middle'],tasks:['risk'],input:'托管邮件、持仓数据',process:'LLM 关联与解释',output:'影响分析与跟进事项',llm:true},
+        dev:{name:'后台 · 工具开发',title:'从业务需求交付可用工具',office:['back'],tasks:['dev'],input:'需求说明、文件样例',process:'LLM 编程与测试',output:'业务工具与操作说明',llm:true}
+      };
+      let step=0,extra=null;
+      const draw=()=>{
+        const s=extra?extras[extra]:states[step];
+        el('map-current').textContent=s.name;
+        el('map-detail-title').textContent=s.title;
+        el('map-input').textContent=s.input;el('map-process').textContent=s.process;el('map-output').textContent=s.output;
+        el('map-process').classList.toggle('llm',!!s.llm);
+        el('map-path').setAttribute('aria-label',[s.input,s.process,s.output].join('，'));
+        root.querySelectorAll('[data-office]').forEach(x=>x.classList.toggle('focused',s.office.includes(x.dataset.office)));
+        root.querySelectorAll('[data-task]').forEach(x=>x.setAttribute('aria-pressed',String(s.tasks.includes(x.dataset.task))));
+        el('map-document').hidden=!s.doc;
+        if(s.doc){el('map-document-title').textContent=s.doc[0];el('map-doc-label').textContent=s.doc[1];el('map-doc-text').textContent=s.doc[2];}
+        el('map-step').textContent=extra?'查看工作环节':`${step+1} / ${states.length}`;
+        el('map-prev').disabled=!extra&&step===0;
+        el('map-next').textContent=extra?'返回总览':step===states.length-1?'重新演示':'下一步';
+      };
+      const save=()=>{
+        if(window.openai&&window.openai.setWidgetState)window.openai.setWidgetState({modelContent:{演示位置:extra?extras[extra].name:states[step].name},privateContent:{step,extra}}).catch(()=>{});
+      };
+      const restore=s=>{if(!s)return;const p=s.privateContent||{};step=Number.isInteger(p.step)&&p.step>=0&&p.step<states.length?p.step:0;extra=extras[p.extra]?p.extra:null;draw();};
+      el('map-prev').addEventListener('click',()=>{if(extra){extra=null;step=0;}else step=Math.max(0,step-1);draw();save();});
+      el('map-next').addEventListener('click',()=>{if(extra){extra=null;step=0;}else step=(step+1)%states.length;draw();save();});
+      const taskSteps={client:2,review:3,files:4};
+      root.querySelectorAll('[data-task]').forEach(x=>x.addEventListener('click',()=>{const t=x.dataset.task;if(t in taskSteps){extra=null;step=taskSteps[t];}else{extra=t;}draw();save();}));
+      draw();
+      if(window.openai)restore(window.openai.widgetState);
+      window.addEventListener('openai:set_globals',e=>restore(e.detail&&e.detail.globals&&e.detail.globals.widgetState));
+    })();
+  </script>
+</div>

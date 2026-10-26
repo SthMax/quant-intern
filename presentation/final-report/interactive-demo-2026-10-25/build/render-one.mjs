@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {FileBlob,PresentationFile} from '@oai/artifact-tool';
+const [input,folder,pageString]=process.argv.slice(2),page=Number(pageString);
+if(!input||!folder||!Number.isInteger(page))throw new Error('Usage: render-one.mjs input.pptx output-folder page');
+const P=await PresentationFile.importPptx(await FileBlob.load(path.resolve(input)));
+const s=P.slides.items[page-1];if(!s)throw new Error('Missing slide '+page);
+const b=await P.export({slide:s,format:'png',scale:1});
+await fs.mkdir(folder,{recursive:true});
+await fs.writeFile(path.join(folder,`state-${String(page).padStart(2,'0')}.png`),new Uint8Array(await b.arrayBuffer()));
+console.log(`Isolated render ${page}/${P.slides.items.length}`);

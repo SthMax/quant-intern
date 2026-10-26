@@ -1,0 +1,599 @@
+{
+  "slideCount": 33,
+  "slides": [
+    {
+      "page": 1,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 1,
+        "nav.next": 2,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 2,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 1,
+        "nav.next": 3,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 3,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 2,
+        "nav.next": 4,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 4,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 3,
+        "nav.next": 5,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 5,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 4,
+        "nav.next": 6,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 6,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 5,
+        "nav.next": 7,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 7,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 6,
+        "nav.next": 8,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 8,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 7,
+        "nav.next": 9,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 9,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 8,
+        "nav.next": 10,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 10,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 9,
+        "nav.next": 11,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 11,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 10,
+        "nav.next": 12,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 12,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 11,
+        "nav.next": 13,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 13,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 12,
+        "nav.next": 14,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 14,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 13,
+        "nav.next": 15,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 15,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 14,
+        "nav.next": 16,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 16,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 15,
+        "nav.next": 17,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 17,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 16,
+        "nav.next": 18,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 18,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 17,
+        "nav.next": 19,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 19,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 18,
+        "nav.next": 20,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 20,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 19,
+        "nav.next": 21,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 21,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 20,
+        "nav.next": 22,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 22,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 21,
+        "nav.next": 23,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 23,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 22,
+        "nav.next": 24,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 24,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 23,
+        "nav.next": 25,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 25,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 24,
+        "nav.next": 26,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 26,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 25,
+        "nav.next": 27,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 27,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 26,
+        "nav.next": 28,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 28,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 27,
+        "nav.next": 29,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 29,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 28,
+        "nav.next": 30,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 30,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 29,
+        "nav.next": 31,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 31,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 30,
+        "nav.next": 32,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 32,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 31,
+        "nav.next": 33,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    },
+    {
+      "page": 33,
+      "buttons": {
+        "nav.home": 3,
+        "nav.front": 4,
+        "nav.middle": 16,
+        "nav.back": 22,
+        "nav.prev": 32,
+        "nav.next": 3,
+        "task.research": 4,
+        "task.trade": 9,
+        "task.client": 12,
+        "task.review": 16,
+        "task.risk": 19,
+        "task.files": 22,
+        "task.dev": 25
+      }
+    }
+  ]
+}

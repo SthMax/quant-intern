@@ -1,0 +1,108 @@
+{
+  "slide": 5,
+  "purpose": "产品名称、资料期次、风险提示批注按顺序出现",
+  "groups": [
+    {
+      "order": 1,
+      "event": "on_click",
+      "objects": [
+        {
+          "name": "!!clientDoc.highlight.product",
+          "id": 31
+        },
+        {
+          "name": "!!comment.product",
+          "id": 43
+        },
+        {
+          "name": "!!comment.product.title",
+          "id": 44
+        },
+        {
+          "name": "!!comment.product.body",
+          "id": 45
+        },
+        {
+          "name": "!!comment.product.lead1",
+          "id": 46
+        },
+        {
+          "name": "!!comment.product.lead2",
+          "id": 47
+        },
+        {
+          "name": "!!comment.product.lead3",
+          "id": 48
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "event": "on_click",
+      "objects": [
+        {
+          "name": "!!clientDoc.highlight.period",
+          "id": 34
+        },
+        {
+          "name": "!!comment.period",
+          "id": 49
+        },
+        {
+          "name": "!!comment.period.title",
+          "id": 50
+        },
+        {
+          "name": "!!comment.period.body",
+          "id": 51
+        },
+        {
+          "name": "!!comment.period.lead1",
+          "id": 52
+        },
+        {
+          "name": "!!comment.period.lead2",
+          "id": 53
+        },
+        {
+          "name": "!!comment.period.lead3",
+          "id": 54
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "event": "on_click",
+      "objects": [
+        {
+          "name": "!!clientDoc.highlight.risk",
+          "id": 40
+        },
+        {
+          "name": "!!comment.risk",
+          "id": 55
+        },
+        {
+          "name": "!!comment.risk.title",
+          "id": 56
+        },
+        {
+          "name": "!!comment.risk.body",
+          "id": 57
+        },
+        {
+          "name": "!!comment.risk.lead1",
+          "id": 58
+        },
+        {
+          "name": "!!comment.risk.lead2",
+          "id": 59
+        },
+        {
+          "name": "!!comment.risk.lead3",
+          "id": 60
+        }
+      ]
+    }
+  ]
+}
