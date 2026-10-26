@@ -1,0 +1,1399 @@
+{
+  "source": "../navigation-color-review-2026-10-26/output/asset-management-llm-slide11-corrected.pptx",
+  "source_sha256": "9f5fdb8dadf1bc7dd883908c99e5d02c1e3735c3e2c76b000936b72c1a380ad2",
+  "colors": {
+    "issuer": "317F7B",
+    "issuerTint": "EFF6F4",
+    "client": "7363A6",
+    "clientTint": "F3F0F8",
+    "neutral": "F3F7FA",
+    "ink": "20262C",
+    "muted": "707C88",
+    "yellow": "FFF0BE",
+    "blue": "005A9C"
+  },
+  "navigation_progress_modified": false,
+  "slides": [
+    {
+      "page": 1,
+      "header": [],
+      "neutral_roots": [],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "通用说明保持中性，不新增主线归属；原导航、阶段文字、页码与布局不变。"
+    },
+    {
+      "page": 2,
+      "header": [],
+      "neutral_roots": [
+        "scope.work0",
+        "scope.work1",
+        "scope.work2",
+        "scope.work3"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "通用说明保持中性，不新增主线归属；原导航、阶段文字、页码与布局不变。"
+    },
+    {
+      "page": 3,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": ""
+        },
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": ""
+        }
+      ],
+      "neutral_roots": [],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": ""
+    },
+    {
+      "page": 4,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": ""
+        }
+      ],
+      "neutral_roots": [
+        "research.question",
+        "research.manual.0",
+        "research.manual.1",
+        "research.manual.2",
+        "research.manual.3"
+      ],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!research.evidence.1.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.1.rule",
+          "line": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.2.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.2.rule",
+          "line": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.3.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.3.rule",
+          "line": "317F7B"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.issuer.source.1",
+          "x": 414,
+          "y": 333,
+          "w": 6,
+          "h": 133,
+          "color": "317F7B",
+          "appear_with": "!!research.evidence.1.rule"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.source.2",
+          "x": 798,
+          "y": 333,
+          "w": 6,
+          "h": 133,
+          "color": "317F7B",
+          "appear_with": "!!research.evidence.2.rule"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.source.3",
+          "x": 1182,
+          "y": 333,
+          "w": 6,
+          "h": 133,
+          "color": "317F7B",
+          "appear_with": "!!research.evidence.3.rule"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 5,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": "方法参考"
+        }
+      ],
+      "neutral_roots": [
+        "driver.tools"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "天弘公司名称及通用驱动树保留品牌蓝；页眉甲公司标记注明方法参考，工具为中性。"
+    },
+    {
+      "page": 6,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": "方法参考"
+        }
+      ],
+      "neutral_roots": [
+        "views.method"
+      ],
+      "text_neutral": [
+        "views.consensus.title",
+        "views.difference.title"
+      ],
+      "styles": [
+        {
+          "name": "!!views.reportA.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!views.reportA.rule",
+          "line": "317F7B"
+        },
+        {
+          "name": "!!views.reportB.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!views.reportB.rule",
+          "line": "317F7B"
+        },
+        {
+          "name": "!!views.result",
+          "line": "317F7B"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.issuer.views.reportA",
+          "x": 414,
+          "y": 330,
+          "w": 6,
+          "h": 197,
+          "color": "317F7B",
+          "appear_with": "!!views.reportA.rule"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.views.reportB",
+          "x": 798,
+          "y": 330,
+          "w": 6,
+          "h": 197,
+          "color": "317F7B",
+          "appear_with": "!!views.reportB.rule"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.analysis",
+          "x": 420,
+          "y": 592,
+          "w": 6,
+          "h": 126,
+          "color": "317F7B",
+          "appear_with": "!!views.result"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 7,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": "方法参考"
+        }
+      ],
+      "neutral_roots": [
+        "elements.left",
+        "elements.right",
+        "element.0.source",
+        "element.1.source",
+        "element.2.source"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.issuer.source.row.0",
+          "x": 414,
+          "y": 375,
+          "w": 6,
+          "h": 72,
+          "color": "317F7B",
+          "appear_with": "!!element.0.source"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.analysis.row.0",
+          "x": 778,
+          "y": 375,
+          "w": 6,
+          "h": 82,
+          "color": "317F7B",
+          "appear_with": "!!element.0.label"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.source.row.1",
+          "x": 414,
+          "y": 478,
+          "w": 6,
+          "h": 72,
+          "color": "317F7B",
+          "appear_with": "!!element.1.source"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.analysis.row.1",
+          "x": 778,
+          "y": 478,
+          "w": 6,
+          "h": 82,
+          "color": "317F7B",
+          "appear_with": "!!element.1.label"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.source.row.2",
+          "x": 414,
+          "y": 581,
+          "w": 6,
+          "h": 72,
+          "color": "317F7B",
+          "appear_with": "!!element.2.source"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.analysis.row.2",
+          "x": 778,
+          "y": 581,
+          "w": 6,
+          "h": 82,
+          "color": "317F7B",
+          "appear_with": "!!element.2.label"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 8,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": ""
+        }
+      ],
+      "neutral_roots": [
+        "research.question",
+        "research.llm",
+        "research.tool"
+      ],
+      "text_neutral": [
+        "research.result.title"
+      ],
+      "styles": [
+        {
+          "name": "!!research.evidence.1.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.1.rule",
+          "line": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.2.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.2.rule",
+          "line": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.3.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!research.evidence.3.rule",
+          "line": "317F7B"
+        },
+        {
+          "name": "!!research.result",
+          "line": "317F7B"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.issuer.source.group",
+          "x": 414,
+          "y": 310,
+          "w": 6,
+          "h": 294,
+          "color": "317F7B",
+          "appear_with": "!!research.evidence.1.rule"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.analysis",
+          "x": 420,
+          "y": 633,
+          "w": 6,
+          "h": 93,
+          "color": "317F7B",
+          "appear_with": "!!research.result"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 9,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": ""
+        }
+      ],
+      "neutral_roots": [
+        "trade.intent",
+        "trade.query",
+        "trade.inquire",
+        "trade.compare",
+        "trade.system",
+        "trade.counterparty"
+      ],
+      "text_neutral": [
+        "trade.data.label"
+      ],
+      "styles": [],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.issuer.inquiry.subject",
+          "x": 436,
+          "y": 374,
+          "w": 4,
+          "h": 29,
+          "color": "317F7B",
+          "appear_with": "!!trade.intent.body"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 10,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": "方法参考"
+        }
+      ],
+      "neutral_roots": [
+        "trade.case1.0",
+        "trade.case1.1",
+        "trade.case1.2",
+        "trade.case1.3",
+        "trade.case2.0",
+        "trade.case2.1",
+        "trade.case2.2",
+        "trade.case2.3"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "南方与兴证全球名称仍为蓝底白字；主线标签仅表示当前甲公司叙事的方法参考。"
+    },
+    {
+      "page": 11,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": ""
+        }
+      ],
+      "neutral_roots": [
+        "trade.intent",
+        "trade.llm.query",
+        "trade.system",
+        "trade.llm.quote"
+      ],
+      "text_neutral": [
+        "trade.result.title"
+      ],
+      "styles": [],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.issuer.quote.table",
+          "x": 420,
+          "y": 598,
+          "w": 6,
+          "h": 126,
+          "color": "317F7B",
+          "appear_with": "!!trade.result.title"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.holdings.data",
+          "x": 820,
+          "y": 389,
+          "w": 4,
+          "h": 96,
+          "color": "317F7B",
+          "appear_with": "!!trade.system.body"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.quote.record",
+          "x": 1204,
+          "y": 420,
+          "w": 4,
+          "h": 60,
+          "color": "317F7B",
+          "appear_with": "!!trade.llm.quote.body"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 12,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "材料准备"
+        }
+      ],
+      "neutral_roots": [
+        "client.material0",
+        "client.material1",
+        "client.material2",
+        "client.manual.0",
+        "client.manual.1",
+        "client.manual.2"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.prior.material",
+          "x": 1188,
+          "y": 474,
+          "w": 6,
+          "h": 68,
+          "color": "7363A6",
+          "appear_with": "!!client.material2"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 13,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "观点准备"
+        }
+      ],
+      "neutral_roots": [
+        "client.views.llm"
+      ],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!client.views.result",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!client.views.result.title",
+          "text": "7363A6"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.view.summary",
+          "x": 420,
+          "y": 584,
+          "w": 6,
+          "h": 126,
+          "color": "7363A6",
+          "appear_with": "!!client.views.result"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 14,
+      "header": [
+        {
+          "kind": "neutral",
+          "name": "机构标书",
+          "qualifier": "独立案例"
+        }
+      ],
+      "neutral_roots": [
+        "tender.question",
+        "tender.llm",
+        "tender.answer"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "机构标书是独立案例，使用中性页眉，不归为同一份客户沟通稿。"
+    },
+    {
+      "page": 15,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "V1编写"
+        }
+      ],
+      "neutral_roots": [
+        "client.input.customer",
+        "client.input.manager",
+        "client.input.product",
+        "client.llm"
+      ],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!clientDoc",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.title",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.version",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.rule",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.label.product",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.period",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.view",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.risk",
+          "text": "20262C"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.document",
+          "x": 1002,
+          "y": 245,
+          "w": 6,
+          "h": 510,
+          "color": "7363A6",
+          "appear_with": "!!clientDoc"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 16,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "V1审核"
+        }
+      ],
+      "neutral_roots": [],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!clientDoc",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.title",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.version",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.rule",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.label.product",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.period",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.view",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.risk",
+          "text": "20262C"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.document",
+          "x": 420,
+          "y": 289,
+          "w": 6,
+          "h": 435,
+          "color": "7363A6",
+          "appear_with": "!!clientDoc"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 17,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "V1审核"
+        }
+      ],
+      "neutral_roots": [
+        "comment.meta",
+        "comment.view",
+        "comment.risk"
+      ],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!clientDoc",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.title",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.version",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.rule",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.label.product",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.period",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.view",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.risk",
+          "text": "20262C"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.document",
+          "x": 420,
+          "y": 289,
+          "w": 6,
+          "h": 435,
+          "color": "7363A6",
+          "appear_with": "!!clientDoc"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 18,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "V2修订"
+        }
+      ],
+      "neutral_roots": [
+        "review.inputs",
+        "review.tool",
+        "review.llm"
+      ],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!clientDoc",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.title",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.version",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.rule",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!clientDoc.label.product",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.period",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.view",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.label.risk",
+          "text": "20262C"
+        },
+        {
+          "name": "!!clientDoc.highlight.product",
+          "fill": "FFF0BE"
+        },
+        {
+          "name": "!!clientDoc.highlight.period",
+          "fill": "FFF0BE"
+        },
+        {
+          "name": "!!clientDoc.highlight.view",
+          "fill": "FFF0BE"
+        },
+        {
+          "name": "!!clientDoc.highlight.risk",
+          "fill": "FFF0BE"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.document",
+          "x": 1002,
+          "y": 245,
+          "w": 6,
+          "h": 510,
+          "color": "7363A6",
+          "appear_with": "!!clientDoc"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.client.input.record",
+          "x": 436,
+          "y": 307,
+          "w": 4,
+          "h": 32,
+          "color": "7363A6",
+          "appear_with": "!!review.inputs.body"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 19,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": ""
+        }
+      ],
+      "neutral_roots": [
+        "risk.question.0",
+        "risk.question.1",
+        "risk.question.2"
+      ],
+      "text_neutral": [
+        "risk.mail.label"
+      ],
+      "styles": [
+        {
+          "name": "!!risk.mail.rule",
+          "line": "317F7B"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.issuer.event.mail",
+          "x": 414,
+          "y": 255,
+          "w": 6,
+          "h": 144,
+          "color": "317F7B",
+          "appear_with": "!!risk.mail.rule"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 20,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": "方法参考"
+        }
+      ],
+      "neutral_roots": [
+        "risk.mail.extract",
+        "risk.rules.tool",
+        "risk.event.llm"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "汇添富、天弘案例名称保持品牌蓝，邮件/条款工具和LLM块均中性；甲公司只作方法参考标记。"
+    },
+    {
+      "page": 21,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": ""
+        }
+      ],
+      "neutral_roots": [
+        "risk.evidence.system",
+        "risk.llm"
+      ],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!risk.result",
+          "fill": "FFFFFF",
+          "line": "317F7B"
+        },
+        {
+          "name": "!!risk.result.role",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!risk.evidence.mail.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!risk.evidence.mail.rule",
+          "line": "317F7B"
+        },
+        {
+          "name": "!!risk.evidence.rule.label",
+          "text": "317F7B"
+        },
+        {
+          "name": "!!risk.evidence.rule.rule",
+          "line": "317F7B"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.issuer.event.mail",
+          "x": 414,
+          "y": 252,
+          "w": 6,
+          "h": 122,
+          "color": "317F7B",
+          "appear_with": "!!risk.evidence.mail.rule"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.event.rule",
+          "x": 414,
+          "y": 585,
+          "w": 6,
+          "h": 123,
+          "color": "317F7B",
+          "appear_with": "!!risk.evidence.rule.rule"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.holdings.data",
+          "x": 436,
+          "y": 475,
+          "w": 4,
+          "h": 62,
+          "color": "317F7B",
+          "appear_with": "!!risk.evidence.system.body"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.issuer.impact.report",
+          "x": 1188,
+          "y": 299,
+          "w": 6,
+          "h": 371,
+          "color": "317F7B",
+          "appear_with": "!!risk.result"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 22,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "文件示例"
+        }
+      ],
+      "neutral_roots": [
+        "ops.row0.0",
+        "ops.row0.1",
+        "ops.row0.2",
+        "ops.row1.0",
+        "ops.row1.1",
+        "ops.row1.2",
+        "ops.row2.0",
+        "ops.row2.1",
+        "ops.row2.2"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.file.versions",
+          "x": 420,
+          "y": 482,
+          "w": 6,
+          "h": 87,
+          "color": "7363A6",
+          "appear_with": "!!ops.row1.0"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.client.file.differences",
+          "x": 1176,
+          "y": 482,
+          "w": 6,
+          "h": 87,
+          "color": "7363A6",
+          "appear_with": "!!ops.row1.2"
+        }
+      ],
+      "note": "客户稿版本输入和差异清单单独标紫；通用传真与其他文件保持中性，不把整页染紫，也不虚构甲公司单据。"
+    },
+    {
+      "page": 23,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "版本比对"
+        }
+      ],
+      "neutral_roots": [
+        "ops.form",
+        "ops.compare.read"
+      ],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!ops.compare.old.label",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!ops.compare.new.label",
+          "text": "7363A6"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.version.v1",
+          "x": 810,
+          "y": 470,
+          "w": 6,
+          "h": 111,
+          "color": "7363A6",
+          "appear_with": "!!ops.compare.old.label"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.client.version.v2",
+          "x": 810,
+          "y": 599,
+          "w": 6,
+          "h": 122,
+          "color": "7363A6",
+          "appear_with": "!!ops.compare.new.label"
+        }
+      ],
+      "note": "工银瑞信和华安名称保持品牌蓝，通用传真区域中性；V1/V2文字材料同紫，新增文字仍淡黄。"
+    },
+    {
+      "page": 24,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "变更说明"
+        }
+      ],
+      "neutral_roots": [
+        "ops.inputs",
+        "ops.tool",
+        "ops.llm"
+      ],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!changeLog",
+          "line": "7363A6"
+        },
+        {
+          "name": "!!changeLog.title",
+          "text": "7363A6"
+        },
+        {
+          "name": "!!changeLog.rule",
+          "line": "7363A6"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.input.record",
+          "x": 436,
+          "y": 307,
+          "w": 4,
+          "h": 32,
+          "color": "7363A6",
+          "appear_with": "!!ops.inputs.body"
+        },
+        {
+          "type": "bar",
+          "name": "!!story.client.change.explanation",
+          "x": 1002,
+          "y": 245,
+          "w": 6,
+          "h": 510,
+          "color": "7363A6",
+          "appear_with": "!!changeLog"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "page": 25,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "开发样例"
+        }
+      ],
+      "neutral_roots": [
+        "dev.request",
+        "dev.requirements",
+        "dev.code",
+        "dev.debug"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.development.sample",
+          "x": 414,
+          "y": 302,
+          "w": 6,
+          "h": 33,
+          "color": "7363A6",
+          "appear_with": "!!dev.request"
+        },
+        {
+          "type": "text",
+          "name": "!!story.client.development.sample.name",
+          "x": 426,
+          "y": 300,
+          "w": 650,
+          "h": 34,
+          "text": "客户沟通稿 V1 / V2",
+          "size": 22,
+          "color": "7363A6",
+          "appear_with": "!!dev.request"
+        }
+      ],
+      "note": "紫色只给两版客户稿这一开发样例；开发人员、代码、测试、反馈和修订块保持中性。"
+    },
+    {
+      "page": 26,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "方法参考"
+        }
+      ],
+      "neutral_roots": [
+        "dev.requirements",
+        "dev.code",
+        "dev.test",
+        "dev.case.result"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.development.sample",
+          "x": 414,
+          "y": 327,
+          "w": 6,
+          "h": 33,
+          "color": "7363A6",
+          "appear_with": "!!dev.requirements"
+        },
+        {
+          "type": "text",
+          "name": "!!story.client.development.sample.name",
+          "x": 426,
+          "y": 325,
+          "w": 338,
+          "h": 34,
+          "text": "客户沟通稿 V1 / V2",
+          "size": 22,
+          "color": "7363A6",
+          "appear_with": "!!dev.requirements"
+        }
+      ],
+      "note": "紫色只给两版客户稿这一开发样例；开发人员、代码、测试、反馈和修订块保持中性。"
+    },
+    {
+      "page": 27,
+      "header": [
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": "开发样例"
+        }
+      ],
+      "neutral_roots": [
+        "dev.request",
+        "dev.samples",
+        "dev.generate",
+        "dev.test",
+        "dev.deliver",
+        "dev.revise",
+        "dev.feedback"
+      ],
+      "text_neutral": [
+        "dev.testFeedback.label"
+      ],
+      "styles": [
+        {
+          "name": "!!dev.samples.body",
+          "paragraph": 0,
+          "text": "7363A6"
+        }
+      ],
+      "overlays": [
+        {
+          "type": "bar",
+          "name": "!!story.client.development.sample",
+          "x": 436,
+          "y": 399,
+          "w": 4,
+          "h": 31,
+          "color": "7363A6",
+          "appear_with": "!!dev.samples.body"
+        }
+      ],
+      "note": "紫色只给两版客户稿这一开发样例；开发人员、代码、测试、反馈和修订块保持中性。"
+    },
+    {
+      "page": 28,
+      "header": [],
+      "neutral_roots": [
+        "other.0.flow.0",
+        "other.0.flow.1",
+        "other.0.flow.2",
+        "other.1.flow.0",
+        "other.1.flow.1",
+        "other.1.flow.2",
+        "other.2.flow.0",
+        "other.2.flow.1",
+        "other.2.flow.2"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "通用说明保持中性，不新增主线归属；原导航、阶段文字、页码与布局不变。"
+    },
+    {
+      "page": 29,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": ""
+        },
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": ""
+        }
+      ],
+      "neutral_roots": [],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": ""
+    },
+    {
+      "page": 30,
+      "header": [
+        {
+          "kind": "issuer",
+          "name": "甲公司",
+          "qualifier": ""
+        },
+        {
+          "kind": "client",
+          "name": "客户沟通稿",
+          "qualifier": ""
+        }
+      ],
+      "neutral_roots": [],
+      "text_neutral": [],
+      "styles": [
+        {
+          "name": "!!cross.0.0",
+          "fill": "EFF6F4",
+          "text": "20262C"
+        },
+        {
+          "name": "!!cross.1.0",
+          "fill": "F3F0F8",
+          "text": "20262C"
+        },
+        {
+          "name": "!!cross.0.1",
+          "fill": "EFF6F4",
+          "text": "20262C"
+        },
+        {
+          "name": "!!cross.1.1",
+          "fill": "F3F0F8",
+          "text": "20262C"
+        },
+        {
+          "name": "!!cross.0.2",
+          "fill": "EFF6F4",
+          "text": "20262C"
+        },
+        {
+          "name": "!!cross.1.2",
+          "fill": "F3F0F8",
+          "text": "20262C"
+        }
+      ],
+      "overlays": [],
+      "note": "两条主线并列：上行甲公司极浅青绿、下行客户稿极浅紫；对象名及对应连接线沿用各自主线色。"
+    },
+    {
+      "page": 31,
+      "header": [],
+      "neutral_roots": [
+        "arch.entry",
+        "arch.workflow",
+        "arch.model",
+        "arch.tools"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "通用说明保持中性，不新增主线归属；原导航、阶段文字、页码与布局不变。"
+    },
+    {
+      "page": 32,
+      "header": [],
+      "neutral_roots": [],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "通用说明保持中性，不新增主线归属；原导航、阶段文字、页码与布局不变。"
+    },
+    {
+      "page": 33,
+      "header": [],
+      "neutral_roots": [
+        "evaluation.flow.0",
+        "evaluation.flow.1",
+        "evaluation.flow.2",
+        "evaluation.flow.3"
+      ],
+      "text_neutral": [],
+      "styles": [],
+      "overlays": [],
+      "note": "通用说明保持中性，不新增主线归属；原导航、阶段文字、页码与布局不变。"
+    }
+  ]
+}
