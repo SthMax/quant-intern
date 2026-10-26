@@ -1,0 +1,5316 @@
+{
+  "slide_count": 33,
+  "font": "Arial",
+  "slides": [
+    {
+      "page": 1,
+      "title": "LLMs in Asset Management",
+      "shapes": [
+        {
+          "name": "!!cover.kicker",
+          "source": "同行实践与公司方案",
+          "english": "Peer practices and proposed applications"
+        },
+        {
+          "name": "!!cover.title",
+          "source": "资管公司工作流程中的\nLLM 应用",
+          "english": "LLMs in\nAsset Management"
+        },
+        {
+          "name": "!!cover.date",
+          "source": "2026年10月",
+          "english": "October 2026"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "进入演示",
+          "english": "Start"
+        }
+      ],
+      "table": null,
+      "notes": "This presentation examines how LLMs can support the day-to-day work of an asset manager. It starts with peer practices, then develops proposed applications for the firm. The discussion follows front-, middle- and back-office work, using Company A and a quarterly client update as recurring examples. Cover image: an AI-generated research workspace.",
+      "original_notes": "本报告围绕公司同事每天完成的工作展开，先看同行怎样使用大模型，再提出适合公司启动的应用方案。正文依次讨论前台、中台和后台，最后将七项建议汇成两条跨部门流程。\n封面图片：本报告使用内置image_gen生成的办公场景概念图。"
+    },
+    {
+      "page": 2,
+      "title": "Research scope and application goals",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "研究重点与应用目标",
+          "english": "Research scope and application goals"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "研究范围",
+          "english": "Research scope"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "2 / 33",
+          "english": "2 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!scope.head0",
+          "source": "日常输入",
+          "english": "Daily inputs"
+        },
+        {
+          "name": "!!scope.head1",
+          "source": "LLM参与工作",
+          "english": "Work supported by LLMs"
+        },
+        {
+          "name": "!!scope.head2",
+          "source": "工作成果",
+          "english": "Work products"
+        },
+        {
+          "name": "!!scope.input0",
+          "source": "文档",
+          "english": "Documents"
+        },
+        {
+          "name": "!!scope.work0",
+          "source": "检索与整理",
+          "english": "Retrieve and organize"
+        },
+        {
+          "name": "!!scope.output0",
+          "source": "公司分析",
+          "english": "Company analysis"
+        },
+        {
+          "name": "!!scope.input1",
+          "source": "数据",
+          "english": "Data"
+        },
+        {
+          "name": "!!scope.work1",
+          "source": "计算与解释",
+          "english": "Calculate and explain"
+        },
+        {
+          "name": "!!scope.output1",
+          "source": "交易要素",
+          "english": "Trade details"
+        },
+        {
+          "name": "!!scope.input2",
+          "source": "消息",
+          "english": "Messages"
+        },
+        {
+          "name": "!!scope.work2",
+          "source": "查询与操作",
+          "english": "Query and act"
+        },
+        {
+          "name": "!!scope.output2",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!scope.input3",
+          "source": "业务需求",
+          "english": "Business requests"
+        },
+        {
+          "name": "!!scope.work3",
+          "source": "编写与协作",
+          "english": "Draft and collaborate"
+        },
+        {
+          "name": "!!scope.output3",
+          "source": "业务工具",
+          "english": "Business tools"
+        },
+        {
+          "name": "!!scope.result",
+          "source": "沿业务流程建设应用，让同事在日常任务中使用 LLM",
+          "english": "Build applications around the work people need to complete"
+        }
+      ],
+      "table": null,
+      "notes": "The inputs are documents, data, messages and business requests. LLMs interpret questions, read and compare material, organize explanations, and draft text or code. Connected tools perform queries, calculations and other operations. Employees check the results and use them to complete research, trading preparation, client communications, review and development tasks.",
+      "original_notes": "报告讨论同事每天处理的文档、数据、消息和业务要求。LLM负责理解问题、阅读材料、比较和组织解释、生成文字或程序，数据查询、计算和执行操作由相应工具完成。同事核对结果并继续完成研究、交易准备、材料审核与开发工作。下面沿前台、中台和后台七项任务展开。"
+    },
+    {
+      "page": 3,
+      "title": "Seven workflows across the firm",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "前台中台后台的七个工作问题",
+          "english": "Seven workflows across the firm"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "工作地图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "1  研究分析",
+          "english": "1  Research"
+        },
+        {
+          "name": "!!task.research.outcome",
+          "source": "资料形成分析",
+          "english": "Turn documents into analysis"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "2  交易支持",
+          "english": "2  Trading support"
+        },
+        {
+          "name": "!!task.trade.outcome",
+          "source": "需求进入交易",
+          "english": "Prepare trading inquiries"
+        },
+        {
+          "name": "!!task.client",
+          "source": "3  客户材料",
+          "english": "3  Client materials"
+        },
+        {
+          "name": "!!task.client.outcome",
+          "source": "观点形成材料",
+          "english": "Adapt views for clients"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "4  材料审核",
+          "english": "4  Content review"
+        },
+        {
+          "name": "!!task.review.outcome",
+          "source": "意见定位原文",
+          "english": "Review wording against sources"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "5  风险分析",
+          "english": "5  Risk analysis"
+        },
+        {
+          "name": "!!task.risk.outcome",
+          "source": "事件连接持仓",
+          "english": "Link events to exposure"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "6  运营文件",
+          "english": "6  Document processing"
+        },
+        {
+          "name": "!!task.files.outcome",
+          "source": "文件形成记录",
+          "english": "Turn files into usable records"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "7  工具开发",
+          "english": "7  Tool development"
+        },
+        {
+          "name": "!!task.dev.outcome",
+          "source": "需求形成工具",
+          "english": "Turn requests into tools"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "3 / 33",
+          "english": "3 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!map.route.title",
+          "source": "两条贯穿任务",
+          "english": "Two running examples"
+        },
+        {
+          "name": "!!map.route1.text",
+          "source": "甲公司：研究、交易、风险与运营",
+          "english": "Company A: research, trading, risk and operations"
+        },
+        {
+          "name": "!!map.route2.text",
+          "source": "客户沟通稿：生成、审核、版本更新",
+          "english": "Client update: drafting, review and version control"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        }
+      ],
+      "table": null,
+      "notes": "The map covers seven workflows. Each topic begins with the work employees do and the repetitive preparation it involves, then looks at peer practices and a proposed approach for the firm. Company A links research, bond inquiries and risk monitoring. The quarterly client update links drafting, review and document maintenance. The task names provide direct navigation to each topic.",
+      "original_notes": "这张总图标出七项工作，点击任务名称可以到对应部分。每个主题先介绍同事正在完成的工作和重复操作，再看同行把哪一项任务交给模型，最后展示公司可以怎样使用。甲公司的研究、询价和风险跟踪，以及同一份客户沟通稿，分别连接各部门的资料使用。"
+    },
+    {
+      "page": 4,
+      "title": "Preparing a company research assessment",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "公司研究中的资料整理与判断",
+          "english": "Preparing a company research assessment"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  研究分析  工作任务",
+          "english": "Front office  /  Research  /  Workflow"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "4 / 33",
+          "english": "4 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!research.question",
+          "source": "研究员要回答：收入为何增长，增长能否持续？",
+          "english": "Analyst: Why did revenue grow, and can the growth continue?"
+        },
+        {
+          "name": "!!research.evidence.1.label",
+          "source": "[1] 财报（上季 / 本季）",
+          "english": "[1] Prior / current quarter"
+        },
+        {
+          "name": "!!research.evidence.1.text",
+          "source": "收入（百万元）：100 / 110\n销量（万件）：100 / 110",
+          "english": "Revenue (RMB m): 100 / 110\nVolume (m units): 1.0 / 1.1"
+        },
+        {
+          "name": "!!research.evidence.2.label",
+          "source": "[2] 会议纪要",
+          "english": "[2] Meeting notes"
+        },
+        {
+          "name": "!!research.evidence.2.text",
+          "source": "渠道补库带动发货，\n补库持续性仍需跟踪。",
+          "english": "Restocking lifted shipments.\nMonitor its persistence."
+        },
+        {
+          "name": "!!research.evidence.3.label",
+          "source": "[3] 两份研报",
+          "english": "[3] Two research reports"
+        },
+        {
+          "name": "!!research.evidence.3.text",
+          "source": "A判断需求恢复可持续，\nB关注补库持续性。",
+          "english": "A: demand recovery can last.\nB: will restocking last?"
+        },
+        {
+          "name": "!!research.manual.title",
+          "source": "研究员的准备工作",
+          "english": "The analyst’s preparation work"
+        },
+        {
+          "name": "!!research.manual.0",
+          "source": "找出相关材料",
+          "english": "Find relevant sources"
+        },
+        {
+          "name": "!!research.manual.1",
+          "source": "抄录并计算变化",
+          "english": "Extract data and\ncalculate changes"
+        },
+        {
+          "name": "!!research.manual.2",
+          "source": "重读和比较观点",
+          "english": "Reread and\ncompare views"
+        },
+        {
+          "name": "!!research.manual.3",
+          "source": "写出分析依据",
+          "english": "Document the\nreasoning"
+        },
+        {
+          "name": "!!research.repetition",
+          "source": "反复检索、抄录和核对之后，才能集中判断经营变化",
+          "english": "Repeated searching, extraction and checking take time away from analysis"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        }
+      ],
+      "table": null,
+      "notes": "The analyst needs to explain why Company A’s revenue grew and whether that growth can continue. The preparation involves locating comparable revenue and volume data, reading the explanation in meeting notes and comparing two research reports. In this illustrative scenario, prior-quarter and current-quarter revenue are RMB 100m and RMB 110m, while sales volume is 1.0m and 1.1m units. Repeated searches, extraction, calculations and rereading are the work required before the analyst can assess the business. The next three slides show peer approaches to earnings analysis, research synthesis and template preparation.",
+      "original_notes": "研究员要解释甲公司本季度收入为何增长，以及增长能否持续。先在财报找到上季与本季收入、销量，再读会议中关于渠道补库的说明，最后比较两份研报的不同判断。页面数值和材料为同一演示案例：收入单位为百万元，销量单位为万件。反复找资料、抄数据、计算、重读和整理观点，构成分析之前的准备工作。随后三页分别介绍同行怎样让LLM参与财务分析、观点比较和研究表填写。"
+    },
+    {
+      "page": 5,
+      "title": "Tianhong: analyzing earnings drivers",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "天弘基金的财报分析流程",
+          "english": "Tianhong: analyzing earnings drivers"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  研究分析  同行做法",
+          "english": "Front office  /  Research  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "5 / 33",
+          "english": "5 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：天弘基金，基金业协会案例材料",
+          "english": "Sources: Tianhong / AMAC"
+        },
+        {
+          "name": "!!driver.llm.title",
+          "source": "LLM拆解研究问题，计算工具完成取数与计算",
+          "english": "The LLM breaks down the question. Tools retrieve data and calculate."
+        },
+        {
+          "name": "!!driver.root",
+          "source": "净利润\n变化",
+          "english": "Change in\nnet profit"
+        },
+        {
+          "name": "!!driver.revenue.node",
+          "source": "收入",
+          "english": "Revenue"
+        },
+        {
+          "name": "!!driver.revenue.factor",
+          "source": "销量、单价",
+          "english": "Volume and selling price"
+        },
+        {
+          "name": "!!driver.cost.node",
+          "source": "成本",
+          "english": "Cost of sales"
+        },
+        {
+          "name": "!!driver.cost.factor",
+          "source": "原材料、生产成本",
+          "english": "Materials and production costs"
+        },
+        {
+          "name": "!!driver.expense.node",
+          "source": "费用",
+          "english": "Expenses"
+        },
+        {
+          "name": "!!driver.expense.factor",
+          "source": "渠道、销售费用",
+          "english": "Distribution and selling expenses"
+        },
+        {
+          "name": "!!driver.tools",
+          "source": "数据接口\n计算工具",
+          "english": "Data\nfeeds\nand\ncalculation\ntools"
+        },
+        {
+          "name": "!!driver.result",
+          "source": "LLM联系经营资料解释变化，研究员据此判断增长质量",
+          "english": "The LLM links operating evidence to the numbers. Analysts assess the quality of growth."
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        },
+        {
+          "name": "!!story.header.issuer.qualifier",
+          "source": "方法参考",
+          "english": "Reference"
+        }
+      ],
+      "table": null,
+      "notes": "Tianhong’s FinAgent breaks a net-profit question into revenue, cost of sales and expenses, then explores drivers such as volume, selling price, raw materials and distribution. The LLM organizes the questions and calls data and calculation tools. Those tools return the figures and calculations. The model connects them to operating and industry information, while the analyst assesses the quality and persistence of growth. Tianhong reported that the associated manual data preparation and calculations fell from days to minutes.\n\nSources:\nFUND-300, pp. 5–6\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "original_notes": "天弘FinAgent让LLM把净利润变化拆成收入、成本和费用，再提出销量、单价、原材料和渠道等更具体的分析问题。LLM组织这些问题并调用数据和计算工具，工具返回财务数据及变化计算。模型再结合行业和经营资料整理解释，研究员继续判断增长质量与持续性。天弘案例披露相关手工数据整理与计算由数日缩短至分钟级。\n来源：\nFUND-300，PDF第5–6页，财报归因与工具调用\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+    },
+    {
+      "page": 6,
+      "title": "Fullgoal: comparing research views",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "富国基金的研报观点汇总",
+          "english": "Fullgoal: comparing research views"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  研究分析  同行做法",
+          "english": "Front office  /  Research  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "6 / 33",
+          "english": "6 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：富国基金，基金业协会案例材料",
+          "english": "Sources: Fullgoal / AMAC"
+        },
+        {
+          "name": "!!views.llm.title",
+          "source": "LLM按同一研究问题，逐篇阅读并对照观点",
+          "english": "The LLM reads each report against the same research question"
+        },
+        {
+          "name": "!!views.reportA.label",
+          "source": "研报 A",
+          "english": "Report A"
+        },
+        {
+          "name": "!!views.reportA.text",
+          "source": "销量增长带动收入。\n需求恢复支持持续增长。",
+          "english": "Higher volumes lifted revenue.\nDemand recovery can sustain growth."
+        },
+        {
+          "name": "!!views.reportB.label",
+          "source": "研报 B",
+          "english": "Report B"
+        },
+        {
+          "name": "!!views.reportB.text",
+          "source": "渠道补库带动发货。\n补库持续性仍待观察。",
+          "english": "Channel restocking lifted shipments.\nIts persistence remains uncertain."
+        },
+        {
+          "name": "!!views.method.role",
+          "source": "富国的LLM处理",
+          "english": "Fullgoal’s LLM workflow"
+        },
+        {
+          "name": "!!views.method.body",
+          "source": "筛选相关研报\n按研究方向整理小结\n汇总并检查表述",
+          "english": "Screen relevant reports\nSummarize by topic\nCombine and check the wording"
+        },
+        {
+          "name": "!!views.consensus.title",
+          "source": "LLM汇总共识",
+          "english": "Identify common ground"
+        },
+        {
+          "name": "!!views.consensus.body",
+          "source": "销量增长支持本期收入",
+          "english": "Higher volumes supported revenue"
+        },
+        {
+          "name": "!!views.difference.title",
+          "source": "LLM保留分歧",
+          "english": "Preserve the disagreement"
+        },
+        {
+          "name": "!!views.difference.body",
+          "source": "持续需求恢复，还是阶段性补库？",
+          "english": "Demand recovery or restocking?"
+        },
+        {
+          "name": "!!views.user",
+          "source": "研究员从分歧继续查证，分析中保留对应研报出处",
+          "english": "Analysts investigate the disagreement, with links back to the underlying reports"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        },
+        {
+          "name": "!!story.header.issuer.qualifier",
+          "source": "方法参考",
+          "english": "Reference"
+        }
+      ],
+      "table": null,
+      "notes": "Fullgoal first uses the model to assess each report’s relevance to the investment target. It then summarizes the reports against the analyst’s research interests, synthesizes the summaries, adjusts the wording and checks the result. In the Company A example, Report A links higher volumes to a lasting demand recovery. Report B emphasizes channel restocking and questions whether it will persist. The LLM makes the common ground and competing explanations easy to compare. The analyst can investigate the disagreement with the original reports at hand.\n\nSources:\nFUND-007, pp. 8–9\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337808067241.pdf",
+      "original_notes": "富国先由模型判断研报与投资标的的相关性，再按研究方向逐篇整理小结，汇总后调整语气并检查。演示材料中，研报A把销量改善与持续需求恢复联系起来，研报B把它与渠道补库联系起来并关注持续性。LLM将共同判断和不同解释放在一起，研究员据此继续查证，而不用先重读多份研报、手工摘录成表。\n来源：\nFUND-007，PDF第8–9页，市场观点生成\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337808067241.pdf"
+    },
+    {
+      "page": 7,
+      "title": "Zhong Ou: populating research templates",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "中欧基金的研究要素整理",
+          "english": "Zhong Ou: populating research templates"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  研究分析  同行做法",
+          "english": "Front office  /  Research  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "7 / 33",
+          "english": "7 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：南方+，中欧基金投研助手报道；窦玉明论坛发言报道，数据截至2026年5月",
+          "english": "Sources: Zhong Ou / Nanfang Plus and forum coverage"
+        },
+        {
+          "name": "!!elements.head",
+          "source": "LLM把资料中的判断填入研究分析表",
+          "english": "The LLM turns source material into a populated research template"
+        },
+        {
+          "name": "!!elements.left",
+          "source": "资料接口提供材料",
+          "english": "Source materials"
+        },
+        {
+          "name": "!!elements.right",
+          "source": "LLM填写研究要素表示例",
+          "english": "Illustrative research template"
+        },
+        {
+          "name": "!!element.0.source",
+          "source": "财报与计算结果",
+          "english": "Financials and calculations"
+        },
+        {
+          "name": "!!element.0.label",
+          "source": "经营变化",
+          "english": "Operating change"
+        },
+        {
+          "name": "!!element.0.value",
+          "source": "销量增长10%",
+          "english": "Sales volume up 10%"
+        },
+        {
+          "name": "!!element.1.source",
+          "source": "会议纪要",
+          "english": "Meeting notes"
+        },
+        {
+          "name": "!!element.1.label",
+          "source": "驱动因素",
+          "english": "Business driver"
+        },
+        {
+          "name": "!!element.1.value",
+          "source": "渠道补库带动发货",
+          "english": "Restocking lifted shipments"
+        },
+        {
+          "name": "!!element.2.source",
+          "source": "两份研报",
+          "english": "Research reports"
+        },
+        {
+          "name": "!!element.2.label",
+          "source": "关注事项",
+          "english": "Open question"
+        },
+        {
+          "name": "!!element.2.value",
+          "source": "补库持续性仍有分歧",
+          "english": "Will the restocking cycle persist?"
+        },
+        {
+          "name": "!!elements.stat",
+          "source": "中欧披露：整体编制效率提升约50%（截至2026年5月）",
+          "english": "Reported ~50% improvement in research preparation efficiency (May 2026)"
+        },
+        {
+          "name": "!!elements.user",
+          "source": "研究员核对填报内容与出处，补充自己的判断",
+          "english": "Analysts check the entries and sources, then add their own assessment"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        },
+        {
+          "name": "!!story.header.issuer.qualifier",
+          "source": "方法参考",
+          "english": "Reference"
+        }
+      ],
+      "table": null,
+      "notes": "Zhong Ou’s assistant connects internal research information and external sources, separates collection, analysis and synthesis, and populates a research template. The example maps financials and calculations to operating changes, meeting notes to business drivers, and research reports to open questions. These example fields illustrate the method. Analysts check the entries and sources and add their own assessment. Zhong Ou reported an approximately 50% improvement in overall preparation efficiency, with data as of May 2026.\n\nSources:\nFUND-354, Application design and implementation\nhttps://static.nfnews.com/content/202511/27/c11946239.html\nFUND-356, Research template; data as of May 2026\nhttps://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA",
+      "original_notes": "中欧助手连接内部研究系统和外部资料，把采集、分析与汇总分开处理，由模型识别资料中的研究要素并填写分析表。页面展示模型把财报与计算结果、会议解释、研报分歧放到经营变化、驱动因素和关注事项三个示例栏目，研究员核对内容和出处、补充自己的判断。这三个栏目是演示设计。公司披露截至2026年5月，整体编制效率提升约50%。\n来源：\nFUND-354，应用与实现段落\nhttps://static.nfnews.com/content/202511/27/c11946239.html\nFUND-356，五要素模型段落，数据截至2026年5月\nhttps://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA"
+    },
+    {
+      "page": 8,
+      "title": "Proposed research workflow",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "公司投研分析方案",
+          "english": "Proposed research workflow"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  研究分析  公司方案",
+          "english": "Front office  /  Research  /  Proposed approach"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "8 / 33",
+          "english": "8 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：天弘基金，基金业协会案例材料；富国基金，基金业协会案例材料；南方+，中欧基金投研助手报道；兴证全球基金，基金业协会案例材料",
+          "english": "Sources: Tianhong; Fullgoal; Zhong Ou; Aegon-Industrial"
+        },
+        {
+          "name": "!!research.question",
+          "source": "研究员：本季度收入为何增长，增长能否持续？",
+          "english": "Analyst: Why did revenue grow this quarter, and can it continue?"
+        },
+        {
+          "name": "!!research.evidence.1.label",
+          "source": "[1] 财报（上季 / 本季）",
+          "english": "[1] Prior / current quarter"
+        },
+        {
+          "name": "!!research.evidence.1.text",
+          "source": "收入（百万元）：100 / 110\n销量（万件）：100 / 110",
+          "english": "Revenue (RMB m): 100 / 110\nVolume (m units): 1.0 / 1.1"
+        },
+        {
+          "name": "!!research.evidence.2.label",
+          "source": "[2] 会议纪要",
+          "english": "[2] Meeting notes"
+        },
+        {
+          "name": "!!research.evidence.2.text",
+          "source": "渠道补库带动发货",
+          "english": "Restocking lifted shipments"
+        },
+        {
+          "name": "!!research.evidence.3.label",
+          "source": "[3] 两份研报",
+          "english": "[3] Research reports"
+        },
+        {
+          "name": "!!research.evidence.3.text",
+          "source": "A：需求恢复可持续\nB：补库持续性待观察",
+          "english": "A: lasting demand recovery\nB: restocking duration unclear"
+        },
+        {
+          "name": "!!research.llm.role",
+          "source": "LLM读材料、组织分析",
+          "english": "LLM analyzes the sources"
+        },
+        {
+          "name": "!!research.llm.body",
+          "source": "选取收入与销量比较\n联系会议中的经营解释\n对照研报的不同判断",
+          "english": "Compare revenue and volume\nLink the operating explanation\nCompare the research views"
+        },
+        {
+          "name": "!!research.tool.role",
+          "source": "计算工具：收入与销量增幅",
+          "english": "Calculation tools return"
+        },
+        {
+          "name": "!!research.tool.body",
+          "source": "收入增长10%\n销量增长10%\n平均单价不变",
+          "english": "Revenue: +10%\nVolume: +10%\nAverage selling price: unchanged"
+        },
+        {
+          "name": "!!research.result.title",
+          "source": "LLM形成分析",
+          "english": "LLM analysis"
+        },
+        {
+          "name": "!!research.result.text",
+          "source": "收入增长来自销量提升[1]，渠道补库带动发货[2]。\n研报对持续性看法不同[3]，继续跟踪需求与成本。",
+          "english": "Volume drove revenue growth [1], supported by channel restocking [2].\nViews differ on persistence [3]. Track demand and input costs."
+        },
+        {
+          "name": "!!research.user",
+          "source": "研究员核对出处，追问补库持续性，形成研究判断",
+          "english": "The analyst checks the sources, tests the restocking thesis and forms a view"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        }
+      ],
+      "table": null,
+      "notes": "The proposed workflow brings together Tianhong’s earnings-driver analysis, Fullgoal’s comparison of research views and Zhong Ou’s research-template preparation. The analyst provides a question and the relevant financials, meeting notes and research reports. Prior-quarter and current-quarter revenue are RMB 100m and RMB 110m; volume is 1.0m and 1.1m units. The LLM requests the revenue and volume growth calculations. The tools return 10% growth in each and an unchanged average selling price. The LLM then links channel restocking in the meeting notes to the reported numbers and preserves the disagreement over persistence. The analyst checks the references, tests the restocking thesis and forms a view. The figures and source excerpts are illustrative.\n\nSources:\nFUND-300, pp. 5–6\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nFUND-007, pp. 8–9\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337808067241.pdf\nFUND-354, Application design and implementation\nhttps://static.nfnews.com/content/202511/27/c11946239.html\nFUND-011, pp. 5–7\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf",
+      "original_notes": "公司方案把天弘的财务归因、富国的研报比较和中欧的研究表整理放到同一次公司研究任务里。研究员提出收入增长原因与持续性问题，并提供财报、会议纪要和研报。演示财报的上季和本季收入分别为100、110百万元，销量分别为100、110万件。LLM确定比较收入和销量，调用计算工具计算两项变化率；工具返回均增长10%，平均单价不变。LLM再读取会议中的渠道补库解释，对照两份研报的持续性判断，形成带资料编号的公司分析。研究员核对出处，追问补库能持续多久，形成研究判断。图中财务数据和资料文字均为本报告设计的业务演示。\n来源：\nFUND-300，PDF第5–6页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nFUND-007，PDF第8–9页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337808067241.pdf\nFUND-354，应用与实现\nhttps://static.nfnews.com/content/202511/27/c11946239.html\nFUND-011，PDF第5–7页，基本面解析\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf"
+    },
+    {
+      "page": 9,
+      "title": "Preparing a bond quote request",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "债券询价准备的工作过程",
+          "english": "Preparing a bond quote request"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  交易支持  工作任务",
+          "english": "Front office  /  Trading support  /  Workflow"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "9 / 33",
+          "english": "9 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!trade.task",
+          "source": "任务：准备甲公司两年内到期债券的买入询价资料",
+          "english": "Task: request offers for Company A bonds maturing within two years"
+        },
+        {
+          "name": "!!trade.intent.role",
+          "source": "1  投资经理",
+          "english": "1  Portfolio manager"
+        },
+        {
+          "name": "!!trade.intent.body",
+          "source": "拟买入甲公司债券\n两年内到期\n列出现有持仓\n汇总卖方报价",
+          "english": "Company A bonds\nDue within 2 years\nCheck current holdings\nCollect offer quotes"
+        },
+        {
+          "name": "!!trade.query.role",
+          "source": "2  交易员查数据",
+          "english": "2  Trader: query"
+        },
+        {
+          "name": "!!trade.query.body",
+          "source": "查候选券与持仓\n记录数据时间",
+          "english": "Find bonds and holdings\nRecord the data timestamp"
+        },
+        {
+          "name": "!!trade.inquire.role",
+          "source": "3  交易员询价",
+          "english": "3  Trader: quotes"
+        },
+        {
+          "name": "!!trade.inquire.body",
+          "source": "报出候选券名\n说明买入需求\n询问价格与可出量\n接收对手报价",
+          "english": "Name the bonds\nState buying interest\nAsk for price and size\nReceive quotes"
+        },
+        {
+          "name": "!!trade.compare.role",
+          "source": "4  交易员汇总",
+          "english": "4  Trader summary"
+        },
+        {
+          "name": "!!trade.compare.body",
+          "source": "整理候选券与报价\n供经理讨论\n后续交易安排",
+          "english": "Summarize bonds and quotes\nDiscuss next steps\nwith the portfolio manager"
+        },
+        {
+          "name": "!!trade.sequence0.label",
+          "source": "经理需求",
+          "english": "Request"
+        },
+        {
+          "name": "!!trade.sequence1.label",
+          "source": "候选券",
+          "english": "Bonds"
+        },
+        {
+          "name": "!!trade.sequence2.label",
+          "source": "报价资料",
+          "english": "Quotes"
+        },
+        {
+          "name": "!!trade.system.role",
+          "source": "行情与持仓系统",
+          "english": "Market / holdings"
+        },
+        {
+          "name": "!!trade.system.body",
+          "source": "返回查询数据",
+          "english": "Query results"
+        },
+        {
+          "name": "!!trade.data.label",
+          "source": "查询结果",
+          "english": "Query results"
+        },
+        {
+          "name": "!!trade.counterparty.role",
+          "source": "交易对手",
+          "english": "Counterparty"
+        },
+        {
+          "name": "!!trade.counterparty.body",
+          "source": "返回债券报价",
+          "english": "Returns quotes"
+        },
+        {
+          "name": "!!trade.ask.label",
+          "source": "询价",
+          "english": "RFQ"
+        },
+        {
+          "name": "!!trade.quote.label",
+          "source": "报价",
+          "english": "Quote"
+        },
+        {
+          "name": "!!trade.repetition",
+          "source": "重复操作：填查询条件、切换系统、从聊天中抄录报价",
+          "english": "Repeated work: entering filters, switching systems and copying quote messages"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        }
+      ],
+      "table": null,
+      "notes": "The task is to prepare candidate bonds, current holdings and offer quotes for a potential purchase of Company A bonds maturing within two years. The portfolio manager sets the request. The trader queries market and holdings systems and records the data timestamp, then contacts counterparties with the bond names and buying interest, asks for price and available size, and receives quotes. The trader brings the information together for discussion with the portfolio manager. Systems supply data and counterparties supply quotes. Repeated filters, system switching and copying messages are the preparation steps the proposed application can improve.",
+      "original_notes": "这项演示任务是为经理准备甲公司两年内到期债券的候选、持仓与报价资料。经理先说明买入意向和查询要求；交易员在行情与持仓系统中查询候选券和已有持仓，并记录查询时间；随后向交易对手说明券名和买入意向，询问价格与可出数量，接收对手报价；最后把候选、持仓和报价整理在一起，供经理讨论后续交易安排。系统提供查询数据，交易对手提供报价。反复填写条件、切换系统和从聊天中抄录报价，是这项准备工作中可以改善的操作。下一页分别介绍南方的自然语言查询和兴证全球的成交语料录入。"
+    },
+    {
+      "page": 10,
+      "title": "Trading applications at Southern and Aegon-Industrial",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "南方与兴证全球的交易应用",
+          "english": "Trading applications at Southern and Aegon-Industrial"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  交易支持  同行做法",
+          "english": "Front office  /  Trading support  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "10 / 33",
+          "english": "10 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：南方基金，基金业协会案例材料；兴证全球基金，基金业协会案例材料",
+          "english": "Sources: Southern Asset Management; Aegon-Industrial / AMAC"
+        },
+        {
+          "name": "!!trade.southern",
+          "source": "南方基金  小喃同学",
+          "english": "Southern Asset Management: Xiaonan trading assistant"
+        },
+        {
+          "name": "!!trade.case1.0.role",
+          "source": "自然语言请求",
+          "english": "User request"
+        },
+        {
+          "name": "!!trade.case1.0.body",
+          "source": "用户说明筛券、\n查询或操作要求",
+          "english": "Specify a screen,\nquery or action"
+        },
+        {
+          "name": "!!trade.case1.1.role",
+          "source": "LLM解析与调度",
+          "english": "LLM interprets"
+        },
+        {
+          "name": "!!trade.case1.1.body",
+          "source": "理解要求和参数，\n调用相应工具",
+          "english": "Read the request\nCall the right tools"
+        },
+        {
+          "name": "!!trade.case1.2.role",
+          "source": "数据库与业务接口",
+          "english": "Systems execute"
+        },
+        {
+          "name": "!!trade.case1.2.body",
+          "source": "实际查询或操作，\n返回处理结果",
+          "english": "Run the task\nReturn the result"
+        },
+        {
+          "name": "!!trade.case1.3.role",
+          "source": "用户使用结果",
+          "english": "User follows up"
+        },
+        {
+          "name": "!!trade.case1.3.body",
+          "source": "查看候选与数据，\n确认后继续操作",
+          "english": "Review the data\nConfirm next steps"
+        },
+        {
+          "name": "!!trade.case1.scope",
+          "source": "小喃支持查询、筛券、交易指令与消息推送",
+          "english": "Xiaonan supports queries, bond screening, order instructions and notifications"
+        },
+        {
+          "name": "!!trade.xq",
+          "source": "兴证全球基金  千询的成交语料录入",
+          "english": "Aegon-Industrial: capturing trade details from Qtrade records"
+        },
+        {
+          "name": "!!trade.case2.0.role",
+          "source": "Qtrade成交语料",
+          "english": "Qtrade records"
+        },
+        {
+          "name": "!!trade.case2.0.body",
+          "source": "聊天中的券名、\n方向、价格与数量",
+          "english": "Bond, side,\nprice and size"
+        },
+        {
+          "name": "!!trade.case2.1.role",
+          "source": "AI提取交易信息",
+          "english": "AI extracts details"
+        },
+        {
+          "name": "!!trade.case2.1.body",
+          "source": "把聊天内容转成\n系统所需信息",
+          "english": "Extract the details\nfor the system"
+        },
+        {
+          "name": "!!trade.case2.2.role",
+          "source": "匹配询价并推送",
+          "english": "Match and route"
+        },
+        {
+          "name": "!!trade.case2.2.body",
+          "source": "匹配经理询价\n推送交易系统",
+          "english": "Match the request\nRoute to trading"
+        },
+        {
+          "name": "!!trade.case2.3.role",
+          "source": "经理下达指令",
+          "english": "Portfolio manager"
+        },
+        {
+          "name": "!!trade.case2.3.body",
+          "source": "经理在交易系统\n完成指令下达",
+          "english": "Submits the\ninstruction"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        },
+        {
+          "name": "!!story.header.issuer.qualifier",
+          "source": "方法参考",
+          "english": "Reference"
+        }
+      ],
+      "table": null,
+      "notes": "Southern’s Xiaonan assistant interprets a natural-language request, identifies parameters, breaks the work into tasks and calls database or business-system interfaces. Its applications include bond screening, market queries, trading instructions and notifications. Users review the results and confirm relevant actions. Aegon-Industrial’s Qianxun platform also captures trade information from Qtrade records, extracting bond, direction, price and size. It matches that information with the portfolio manager’s quote request and routes it to the trading system, where the portfolio manager submits the instruction. These are two distinct peer applications: connecting language to system queries and reducing repeated entry of trade information.\n\nSources:\nFUND-200, pp. 4–8\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nFUND-011, pp. 3–6\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf",
+      "original_notes": "南方小喃同学由LLM理解自然语言要求，解析参数并拆分任务，再调用数据库查询和业务接口，返回查询或操作结果。其能力覆盖筛券、行情查询、交易指令和消息推送，投资指令通过对应角色及用户确认完成。兴证全球千询的另一项工作是读取Qtrade成交语料，将聊天中的券名、方向、价格和数量解析成系统所需信息，与经理询价意向匹配后推送交易系统，再由经理在交易系统下达指令。两家案例分别说明语言要求怎样连接查询，以及聊天信息怎样减少重复录入。\n来源：\nFUND-200，PDF第4–8页，任务调用与权限\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nFUND-011，PDF第3–6页，询价到成交\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf"
+    },
+    {
+      "page": 11,
+      "title": "Proposed bond quote workflow",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "公司债券询价准备方案",
+          "english": "Proposed bond quote workflow"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  交易支持  公司方案",
+          "english": "Front office  /  Trading support  /  Proposed approach"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "11 / 33",
+          "english": "11 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：南方基金，基金业协会案例材料；兴证全球基金，基金业协会案例材料",
+          "english": "Sources: Southern Asset Management; Aegon-Industrial / AMAC"
+        },
+        {
+          "name": "!!trade.intent",
+          "source": "经理：拟买入甲公司两年内到期债券，查持仓并汇总卖方报价",
+          "english": "Portfolio manager: check holdings and collect offers for Company A bonds maturing within two years"
+        },
+        {
+          "name": "!!trade.llm.query.role",
+          "source": "LLM理解查询要求",
+          "english": "LLM parses the request"
+        },
+        {
+          "name": "!!trade.llm.query.body",
+          "source": "主体：甲公司\n意向：买入\n期限：两年内到期\n查询：候选券与持仓",
+          "english": "Issuer: Company A\nSide: buy\nMaturity: within two years\nQuery: bonds and holdings"
+        },
+        {
+          "name": "!!trade.system.role",
+          "source": "业务系统执行查询",
+          "english": "Systems run the query"
+        },
+        {
+          "name": "!!trade.system.body",
+          "source": "返回甲公司债 A\n期限1.2年\n持仓面额2000万元",
+          "english": "Bond A (Company A)\nMaturity: 1.2 years\nHeld face value: RMB 20m"
+        },
+        {
+          "name": "!!trade.llm.quote.role",
+          "source": "LLM解析询价记录",
+          "english": "LLM parses quote records"
+        },
+        {
+          "name": "!!trade.llm.quote.body",
+          "source": "交易员提供收到的报价：\n“甲A卖方净价100.20，\n面额2000万元可出”\n提取券名、净价与面额",
+          "english": "The trader provides this quote:\n“Bond A: clean price 100.20,\nRMB 20m face value available.”\nExtract bond, price, face value"
+        },
+        {
+          "name": "!!trade.result.title",
+          "source": "LLM归并查询结果和报价",
+          "english": "LLM combines query results and quotes"
+        },
+        {
+          "name": "!!trade.user",
+          "source": "交易员核对记录出处与报价时间，经理据此讨论后续安排",
+          "english": "The trader checks the source and quote time. The portfolio manager discusses next steps."
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        }
+      ],
+      "table": [
+        [
+          "Bond / maturity",
+          "Held face value\n(RMB m)",
+          "Clean price\nper RMB 100 face value",
+          "Available face value\n(RMB m)"
+        ],
+        [
+          "Bond A / 1.2 years",
+          "20",
+          "100.20",
+          "20"
+        ]
+      ],
+      "notes": "The portfolio manager wants to buy Company A bonds maturing within two years, check current holdings and collect offer quotes. The LLM extracts the issuer, maturity condition and requested data, then calls the business query. Systems return the candidates, maturities and holdings. The trader first requests quotes from counterparties, then provides the received quote messages or quote request records. The LLM parses those supplied records, extracts the bond, clean price and available face value, and combines them with the system results. In the example, the Company A bond has 1.2 years to maturity, held face value is RMB 20m, the offer clean price is RMB 100.20 per RMB 100 face value, and RMB 20m face value is available. The trader checks the record’s source, time and amounts. The portfolio manager uses the summary to discuss next steps. The approach draws on Southern’s natural-language queries and Aegon-Industrial’s parsing of trading records.\n\nSources:\nFUND-200, pp. 4–8\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nFUND-011, pp. 3–6\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf",
+      "original_notes": "沿用经理拟买入甲公司两年内到期债券、查询持仓并汇总卖方报价的要求。LLM提取主体、到期期限和所需数据，调用业务查询。系统执行查询并返回候选券、期限和已有持仓。交易员先向交易对手询价，随后提供收到的报价消息或询价沟通记录。LLM解析交易员提供的记录，提取券名、卖方净价和可出面额，再与系统返回的候选券及持仓按券名整理在一起。演示中甲公司债A剩余1.2年，持仓面额2000万元，卖方净价为每百元面值100.20元，可出面额2000万元。全部数值为演示。交易员核对记录出处、报价时间与金额，经理根据同一份资料讨论后续安排。方案参考南方自然语言查询及兴证全球交易语料解析的做法。\n来源：\nFUND-200，PDF第4–8页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nFUND-011，PDF第3–6页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf"
+    },
+    {
+      "page": 12,
+      "title": "Preparing a quarterly client update",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "客户沟通材料的准备过程",
+          "english": "Preparing a quarterly client update"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  客户材料  工作任务",
+          "english": "Front office  /  Client materials  /  Workflow"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "12 / 33",
+          "english": "12 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!client.task",
+          "source": "客户经理准备一份季度沟通稿",
+          "english": "A client relationship manager prepares a quarterly update"
+        },
+        {
+          "name": "!!client.question.label",
+          "source": "客户的问题",
+          "english": "The client’s questions"
+        },
+        {
+          "name": "!!client.question.text",
+          "source": "本期公司经营发生了什么变化？\n后续需要关注什么？",
+          "english": "What changed in the company’s business this quarter?\nWhat should we watch next?"
+        },
+        {
+          "name": "!!client.material0",
+          "source": "经理观点",
+          "english": "Portfolio manager views"
+        },
+        {
+          "name": "!!client.material1",
+          "source": "产品文件",
+          "english": "Product documents"
+        },
+        {
+          "name": "!!client.material2",
+          "source": "以往沟通材料",
+          "english": "Previous client materials"
+        },
+        {
+          "name": "!!client.manual.title",
+          "source": "客户经理反复完成",
+          "english": "Work repeated for each update"
+        },
+        {
+          "name": "!!client.manual.0",
+          "source": "找对应观点",
+          "english": "Find the relevant views"
+        },
+        {
+          "name": "!!client.manual.1",
+          "source": "核对产品与期次",
+          "english": "Check the fund\nand source period"
+        },
+        {
+          "name": "!!client.manual.2",
+          "source": "按客户问题改写",
+          "english": "Adapt the content\nto the client’s questions"
+        },
+        {
+          "name": "!!client.repetition",
+          "source": "同一观点在沟通稿、问答和标书中需要多次整理",
+          "english": "The same source material is repeatedly adapted for updates, Q&A and RFP responses"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "材料准备",
+          "english": "Preparation"
+        }
+      ],
+      "table": null,
+      "notes": "A client relationship manager first establishes what the client wants to understand. Preparing a quarterly update then means finding the relevant portfolio manager views, checking product documents and the reporting period, and adapting the wording for the client’s questions. The same material is repeatedly reused in updates, product Q&A and institutional RFP responses. The next slides show Tianhong’s view summaries, ICBCUBS’s RFP support and a proposed quarterly-update workflow.",
+      "original_notes": "客户经理准备季度沟通稿时，要先弄清客户关注什么，再查经理观点、产品文件和以往材料。每次还需要核对产品及期次，并按客户问题重新组织文字。相同资料经常被用于沟通稿、问答和标书，反复查找和改写占用准备时间。后面分别介绍天弘观点整理、工银瑞信标书生成，以及公司的季度沟通稿应用。"
+    },
+    {
+      "page": 13,
+      "title": "Tianhong: portfolio manager views and market commentary",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "天弘基金的经理观点与市场材料",
+          "english": "Tianhong: portfolio manager views and market commentary"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  客户材料  同行做法",
+          "english": "Front office  /  Client materials  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "13 / 33",
+          "english": "13 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：天弘基金，基金业协会案例材料",
+          "english": "Sources: Tianhong / AMAC"
+        },
+        {
+          "name": "!!client.views.head",
+          "source": "天弘让LLM汇集同一经理或产品的近期观点",
+          "english": "Tianhong uses LLMs to bring together recent manager and product views"
+        },
+        {
+          "name": "!!client.views.source.label",
+          "source": "路演纪要、评论与定期报告",
+          "english": "Presentations, commentary and reports"
+        },
+        {
+          "name": "!!client.views.source.text",
+          "source": "“甲公司收入增长来自销量提升，\n后续关注原材料成本。”",
+          "english": "“Company A’s revenue grew with volumes.\nWe are watching raw-material costs.”"
+        },
+        {
+          "name": "!!client.views.llm.role",
+          "source": "LLM按客户问题整理",
+          "english": "LLM organizes the response"
+        },
+        {
+          "name": "!!client.views.llm.body",
+          "source": "寻找相关观点\n合并重复内容\n写成便于沟通的解释",
+          "english": "Find the relevant views\nCombine overlapping content\nWrite a clear client explanation"
+        },
+        {
+          "name": "!!client.views.result.title",
+          "source": "销售可直接使用的观点摘要",
+          "english": "Summary for client teams"
+        },
+        {
+          "name": "!!client.views.result.text",
+          "source": "本期收入改善主要来自销量提升，后续继续跟踪原材料成本。",
+          "english": "Revenue improved as volumes rose. Continue monitoring raw-material costs."
+        },
+        {
+          "name": "!!client.views.user",
+          "source": "天弘还将市场资料整理成行业周评、每日早评和收评",
+          "english": "Tianhong also produces weekly sector views and daily market commentary"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "观点准备",
+          "english": "Views"
+        }
+      ],
+      "table": null,
+      "notes": "Tianhong brings together recent manager presentations, market comments and periodic reports for a named portfolio manager or product. The LLM finds the relevant views, removes duplication and writes a concise explanation for client-facing teams. The example turns a view on Company A’s volume growth and raw-material costs into a client summary. Employees check and use that summary in their communication. Tianhong also turns market information into weekly sector views and daily commentary.\n\nSources:\nFUND-300, pp. 7–9\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "original_notes": "天弘根据经理姓名或产品名称汇集近期路演纪要、市场评论和定期报告，由LLM整理观点摘要，供销售使用。页面用收入与成本这一段观点演示：模型找到相关内容、合并重复表述，再按客户关注问题组织成可直接阅读的摘要，销售同事继续核对和使用。天弘还利用市场资料生成行业周评、每日早评和收评。\n来源：\nFUND-300，PDF第7–9页，经理观点、周评、早评与收评\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+    },
+    {
+      "page": 14,
+      "title": "ICBCUBS: institutional RFP responses",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "工银瑞信的机构标书助手",
+          "english": "ICBCUBS: institutional RFP responses"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  客户材料  同行做法",
+          "english": "Front office  /  Client materials  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "14 / 33",
+          "english": "14 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：工银瑞信基金，基金业协会案例材料",
+          "english": "Sources: ICBCUBS / AMAC"
+        },
+        {
+          "name": "!!tender.question",
+          "source": "机构客户问：公司的投研流程怎样组织？",
+          "english": "Institutional client: how is your investment research process organized?"
+        },
+        {
+          "name": "!!tender.source.label",
+          "source": "公司知识资料",
+          "english": "Internal reference material"
+        },
+        {
+          "name": "!!tender.source.text",
+          "source": "研究流程说明\n研究员形成公司分析，\n投资经理讨论投资判断。",
+          "english": "Research process description:\nAnalysts prepare company research.\nPortfolio managers discuss the view."
+        },
+        {
+          "name": "!!tender.llm.role",
+          "source": "LLM识别问题并组织回答",
+          "english": "LLM finds and drafts"
+        },
+        {
+          "name": "!!tender.llm.body",
+          "source": "找到“投研流程”资料\n提取研究与决策的分工\n按标书章节写成回答",
+          "english": "Find the research process\nIdentify who does what\nDraft the RFP response"
+        },
+        {
+          "name": "!!tender.answer.role",
+          "source": "标书中的回答",
+          "english": "Draft RFP response"
+        },
+        {
+          "name": "!!tender.answer.body",
+          "source": "研究员整理公司分析，\n投资经理讨论投资判断。\n出处：投研流程说明",
+          "english": "Analysts prepare research.\nPortfolio managers discuss\nthe investment view.\nSource: research process"
+        },
+        {
+          "name": "!!tender.user",
+          "source": "业务同事核对回答与资料，补充本次客户要求后使用",
+          "english": "The business team checks the answer and source, then addresses the client’s specific requirements"
+        },
+        {
+          "name": "!!tender.case",
+          "source": "工银瑞信FundGPT串联知识维护、问答识别、审核与标书生成",
+          "english": "ICBCUBS FundGPT connects knowledge maintenance, question analysis, review and RFP drafting"
+        },
+        {
+          "name": "!!story.header.neutral.name",
+          "source": "机构标书",
+          "english": "RFP response"
+        },
+        {
+          "name": "!!story.header.neutral.qualifier",
+          "source": "独立案例",
+          "english": "Separate case"
+        }
+      ],
+      "table": null,
+      "notes": "ICBCUBS FundGPT links knowledge maintenance, question analysis and review with RFP response generation. The example client asks how the research process is organized. The model finds the internal process description, identifies the responsibilities of analysts and portfolio managers, and drafts the relevant answer with a source reference. The business team checks the answer against the source and addresses the client’s specific requirements. The question and answer on the slide are illustrative.\n\nSources:\nFUND-312, pp. 7, 9\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf",
+      "original_notes": "工银瑞信FundGPT把业务知识维护、问题识别与审核、标书生成接在一起。演示中机构客户询问投研流程，模型从公司知识材料中找到研究员和投资经理的分工，组织成对应章节的回答，并保留来源。业务同事核对回答与原文，再补充本次客户要求。问题、原文和回答文字为本报告设计的材料示例。\n来源：\nFUND-312，PDF第7、9页，FundGPT与标书制作\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf"
+    },
+    {
+      "page": 15,
+      "title": "Proposed client update workflow",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "公司客户材料方案",
+          "english": "Proposed client update workflow"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "前台  客户材料  公司方案",
+          "english": "Front office  /  Client materials  /  Proposed approach"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "15 / 33",
+          "english": "15 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：天弘基金，基金业协会案例材料；工银瑞信基金，基金业协会案例材料；财经网，招商基金数字金融报道",
+          "english": "Sources: Tianhong; ICBCUBS; China Merchants Fund"
+        },
+        {
+          "name": "!!client.input.customer",
+          "source": "客户问题\n本期关注什么？",
+          "english": "Client question\nWhat matters this quarter?"
+        },
+        {
+          "name": "!!client.input.manager",
+          "source": "现有观点\n销量与原料成本",
+          "english": "Existing view\nVolume and input costs"
+        },
+        {
+          "name": "!!client.input.product",
+          "source": "现有产品资料\n二季度 V1",
+          "english": "Product information\nQ2, V1"
+        },
+        {
+          "name": "!!client.llm.role",
+          "source": "LLM撰写材料",
+          "english": "LLM drafts"
+        },
+        {
+          "name": "!!client.llm.body",
+          "source": "提取相关观点\n按季度沟通\n组织文字",
+          "english": "Extract relevant views\nOrganize the update\nfor quarterly discussion"
+        },
+        {
+          "name": "!!clientDoc.title",
+          "source": "基金季度客户沟通稿",
+          "english": "Quarterly client update"
+        },
+        {
+          "name": "!!clientDoc.version",
+          "source": "V1",
+          "english": "V1"
+        },
+        {
+          "name": "!!clientDoc.label.product",
+          "source": "产品名称",
+          "english": "Fund name"
+        },
+        {
+          "name": "!!clientDoc.value.product",
+          "source": "产品A精选",
+          "english": "Product A Select"
+        },
+        {
+          "name": "!!clientDoc.label.period",
+          "source": "资料期次",
+          "english": "Source version"
+        },
+        {
+          "name": "!!clientDoc.value.period",
+          "source": "2026年二季度产品资料V1",
+          "english": "Q2 2026 product information, V1"
+        },
+        {
+          "name": "!!clientDoc.label.view",
+          "source": "本期观点",
+          "english": "Current view"
+        },
+        {
+          "name": "!!clientDoc.value.view",
+          "source": "甲公司收入增长来自销量提升，后续关注原材料成本",
+          "english": "Volume growth drove Company A's revenue.\nMonitor raw-material costs."
+        },
+        {
+          "name": "!!clientDoc.label.risk",
+          "source": "风险提示",
+          "english": "Risk disclosure"
+        },
+        {
+          "name": "!!clientDoc.value.risk",
+          "source": "投资有风险",
+          "english": "Investing involves risk."
+        },
+        {
+          "name": "!!client.user",
+          "source": "客户经理核对观点，再将同一份沟通稿提交审核",
+          "english": "The client team checks the view and submits the same update for review"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "V1编写",
+          "english": "Draft V1"
+        }
+      ],
+      "table": null,
+      "notes": "The client team supplies a question, existing portfolio manager views and product information. The LLM selects the relevant content and organizes a quarterly client update. In the example, the existing view says volume growth drove Company A’s revenue and that raw-material costs should be monitored. The product material supplied is the Q2 version, so the resulting document is V1. The client team checks the view and submits the same update for review. The following section compares it with the fuller current presentation and Q3 product documents.\n\nSources:\nFUND-300, pp. 7–9\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nFUND-312, pp. 7, 9\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf\nFUND-351, Digital finance applications\nhttps://fund.10jqka.com.cn/20251111/c672391490.shtml",
+      "original_notes": "客户经理提交客户问题、现有经理观点和产品资料，LLM读出与本期关注问题相关的内容，组织成季度沟通稿。演示中的现有观点是收入增长来自销量提升、后续关注原材料成本，当前产品资料为二季度版本；模型据此形成V1。同事核对观点后，将同一份稿件交给审核人员。下一部分会用更完整的本期路演和三季度产品资料，继续检查稿件并更新内容。\n来源：\nFUND-300，PDF第7–9页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nFUND-312，PDF第7、9页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf\nFUND-351，营销应用段落\nhttps://fund.10jqka.com.cn/20251111/c672391490.shtml"
+    },
+    {
+      "page": 16,
+      "title": "Reviewing client communications",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "客户材料的审核与修改过程",
+          "english": "Reviewing client communications"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "中台  材料审核  工作任务",
+          "english": "Middle office  /  Content review  /  Workflow"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "16 / 33",
+          "english": "16 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!clientDoc.title",
+          "source": "基金季度客户沟通稿",
+          "english": "Quarterly client update"
+        },
+        {
+          "name": "!!clientDoc.version",
+          "source": "V1",
+          "english": "V1"
+        },
+        {
+          "name": "!!clientDoc.label.product",
+          "source": "产品名称",
+          "english": "Fund name"
+        },
+        {
+          "name": "!!clientDoc.value.product",
+          "source": "产品A精选",
+          "english": "Product A Select"
+        },
+        {
+          "name": "!!clientDoc.label.period",
+          "source": "资料期次",
+          "english": "Source version"
+        },
+        {
+          "name": "!!clientDoc.value.period",
+          "source": "2026年二季度产品资料V1",
+          "english": "Q2 2026 product information, V1"
+        },
+        {
+          "name": "!!clientDoc.label.view",
+          "source": "本期观点",
+          "english": "Current view"
+        },
+        {
+          "name": "!!clientDoc.value.view",
+          "source": "甲公司收入增长来自销量提升，后续关注原材料成本",
+          "english": "Volume growth drove Company A's revenue.\nMonitor raw-material costs."
+        },
+        {
+          "name": "!!clientDoc.label.risk",
+          "source": "风险提示",
+          "english": "Risk disclosure"
+        },
+        {
+          "name": "!!clientDoc.value.risk",
+          "source": "投资有风险",
+          "english": "Investing involves risk."
+        },
+        {
+          "name": "!!review.reference.label",
+          "source": "审核同事查阅的本期路演",
+          "english": "Current manager presentation"
+        },
+        {
+          "name": "!!review.reference.text",
+          "source": "“渠道补库带动销量，\n补库持续性仍需跟踪。”",
+          "english": "“Channel restocking lifted volumes.\nIts persistence needs monitoring.”"
+        },
+        {
+          "name": "!!review.questions.title",
+          "source": "审核时需要判断",
+          "english": "What the reviewer checks"
+        },
+        {
+          "name": "!!review.questions",
+          "source": "稿件是否讲清增长原因？\n是否保留后续观察事项？",
+          "english": "Does the draft explain the driver?\nDoes it retain the watch points?"
+        },
+        {
+          "name": "!!review.manual",
+          "source": "逐段对照原文，还要核对产品名称、资料期次与风险提示",
+          "english": "Compare the source wording, fund name, reporting period and risk disclosure"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "V1审核",
+          "english": "Review V1"
+        }
+      ],
+      "table": null,
+      "notes": "The reviewer compares V1 with the current portfolio manager presentation. V1 links revenue growth to volumes; the fuller source explains that channel restocking supported volumes and that its persistence needs monitoring. The reviewer must assess whether the update explains the driver and preserves the watch points, alongside checks on the fund name, source period and risk disclosure. Finding the relevant passages, comparing their meaning and explaining proposed edits are tasks an LLM can support.",
+      "original_notes": "审核同事拿到V1后，需要把稿件中的观点与本期完整路演对照。稿件写收入增长来自销量提升，完整路演进一步解释渠道补库带动发货，持续性仍需跟踪。审核人员要判断稿件是否讲清增长原因、是否保留后续观察事项，同时核对产品名称、资料期次和风险提示。逐段找原文、比较意思并写出修改理由，是模型可以协助的工作。"
+    },
+    {
+      "page": 17,
+      "title": "Penghua and Yingmi: content review",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "鹏华与盈米的内容审核应用",
+          "english": "Penghua and Yingmi: content review"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "中台  材料审核  同行做法",
+          "english": "Middle office  /  Content review  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "17 / 33",
+          "english": "17 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：鹏华基金，基金业协会案例材料；盈米基金销售，内容合规审查发布",
+          "english": "Sources: Penghua / AMAC; Yingmi"
+        },
+        {
+          "name": "!!clientDoc.title",
+          "source": "基金季度客户沟通稿",
+          "english": "Quarterly client update"
+        },
+        {
+          "name": "!!clientDoc.version",
+          "source": "V1",
+          "english": "V1"
+        },
+        {
+          "name": "!!clientDoc.label.product",
+          "source": "产品名称",
+          "english": "Fund name"
+        },
+        {
+          "name": "!!clientDoc.value.product",
+          "source": "产品A精选",
+          "english": "Product A Select"
+        },
+        {
+          "name": "!!clientDoc.label.period",
+          "source": "资料期次",
+          "english": "Source version"
+        },
+        {
+          "name": "!!clientDoc.value.period",
+          "source": "2026年二季度产品资料V1",
+          "english": "Q2 2026 product information, V1"
+        },
+        {
+          "name": "!!clientDoc.label.view",
+          "source": "本期观点",
+          "english": "Current view"
+        },
+        {
+          "name": "!!clientDoc.value.view",
+          "source": "甲公司收入增长来自销量提升，后续关注原材料成本",
+          "english": "Volume growth drove Company A's revenue.\nMonitor raw-material costs."
+        },
+        {
+          "name": "!!clientDoc.label.risk",
+          "source": "风险提示",
+          "english": "Risk disclosure"
+        },
+        {
+          "name": "!!clientDoc.value.risk",
+          "source": "投资有风险",
+          "english": "Investing involves risk."
+        },
+        {
+          "name": "!!comment.meta.role",
+          "source": "LLM对照本期资料",
+          "english": "LLM checks current sources"
+        },
+        {
+          "name": "!!comment.meta.body",
+          "source": "名称与期次沿用旧版\n建议按本期资料更新",
+          "english": "Name and period are outdated.\nUse current documents."
+        },
+        {
+          "name": "!!comment.view.role",
+          "source": "LLM比较观点含义",
+          "english": "LLM compares meaning"
+        },
+        {
+          "name": "!!comment.view.body",
+          "source": "原文：补库推动、持续性待观察\n建议补充原因与观察事项",
+          "english": "Source: restocking drove growth.\nAdd the restocking driver and\nuncertainty over its duration."
+        },
+        {
+          "name": "!!comment.risk.role",
+          "source": "LLM补全风险表述",
+          "english": "LLM clarifies risk wording"
+        },
+        {
+          "name": "!!comment.risk.body",
+          "source": "资料：净值波动、本金亏损\n建议写明两项风险",
+          "english": "Source: NAV volatility and capital risk.\nState both risks explicitly."
+        },
+        {
+          "name": "!!review.case",
+          "source": "鹏华按规则给修改建议；盈米把预审、修改与复查接到写作过程",
+          "english": "Penghua suggests rule-based edits. Yingmi supports pre-review, revision and rechecking."
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "V1审核",
+          "english": "Review V1"
+        }
+      ],
+      "table": null,
+      "notes": "Penghua’s marketing-material review system applies 71 rules across seven categories and produces suggested edits. The rules cover risk disclosures, fund information, performance claims and prohibited marketing statements. Penghua reported a 91% acceptance rate for suggested edits. Yingmi, a fund distributor, accepts text or files, identifies issues and reasons, suggests changes and supports rechecking after revision. The illustrative client update shows the model checking outdated product details, recognizing the missing restocking explanation and persistence watch point, and making the risk wording more specific.\n\nSources:\nFUND-308, pp. 6\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf\nYingmi official release and API client\nhttps://www.yingmi-inc.com/archives/799",
+      "original_notes": "鹏华的营销材料审核系统让大模型按7类71项规则定位问题并给出修改建议，覆盖风险提示、基金信息、业绩宣传和禁止性宣传。公司披露修改建议采纳率91%。盈米服务接收文本或文件，返回风险位置、原因和建议，作者修改后可以再次检查。页面用同一份客户沟通稿演示这类协作：模型对照本期资料发现名称与期次沿用旧版，读懂路演中渠道补库和持续性观察的含义，建议补充经营原因及跟踪事项，再依据产品材料补充净值波动和本金亏损的风险说明。具体批注文字为演示。\n来源：\nFUND-308，PDF第6页，营销物料审核\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf\n盈米官方发布与客户端，官方发布及客户端处理流程\nhttps://www.yingmi-inc.com/archives/799"
+    },
+    {
+      "page": 18,
+      "title": "Proposed drafting and review workflow",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "公司材料编写与审核协作方案",
+          "english": "Proposed drafting and review workflow"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "中台  材料审核  公司方案",
+          "english": "Middle office  /  Content review  /  Proposed approach"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "18 / 33",
+          "english": "18 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：鹏华基金，基金业协会案例材料；盈米基金销售，内容合规审查发布",
+          "english": "Sources: Penghua / AMAC; Yingmi"
+        },
+        {
+          "name": "!!review.inputs.role",
+          "source": "同事提供稿件和本期资料",
+          "english": "Author supplies current sources"
+        },
+        {
+          "name": "!!review.inputs.body",
+          "source": "V1沟通稿、产品资料V2\n完整路演：补库推动，持续性待观察",
+          "english": "V1 update and V2 product documents\nPresentation: restocking drove growth.\nHow long it will last remains uncertain."
+        },
+        {
+          "name": "!!review.tool.role",
+          "source": "文件工具定位差异",
+          "english": "File tools locate changes"
+        },
+        {
+          "name": "!!review.tool.body",
+          "source": "匹配产品名称、资料期次及原文位置",
+          "english": "Match fund name, source period and passages"
+        },
+        {
+          "name": "!!review.llm.role",
+          "source": "LLM解释并修改表述",
+          "english": "LLM explains and revises"
+        },
+        {
+          "name": "!!review.llm.body",
+          "source": "补充“渠道补库”这一经营原因\n加入“补库持续性”的跟踪事项\n按产品资料补充具体风险",
+          "english": "Add channel restocking as the driver\nRetain the question of persistence\nUse the product’s specific risk wording"
+        },
+        {
+          "name": "!!clientDoc.title",
+          "source": "基金季度客户沟通稿",
+          "english": "Quarterly client update"
+        },
+        {
+          "name": "!!clientDoc.version",
+          "source": "V2",
+          "english": "V2"
+        },
+        {
+          "name": "!!clientDoc.label.product",
+          "source": "产品名称",
+          "english": "Fund name"
+        },
+        {
+          "name": "!!clientDoc.value.product",
+          "source": "产品A精选混合型基金",
+          "english": "Product A Select Mixed-Asset Fund"
+        },
+        {
+          "name": "!!clientDoc.label.period",
+          "source": "资料期次",
+          "english": "Source version"
+        },
+        {
+          "name": "!!clientDoc.value.period",
+          "source": "2026年三季度产品资料V2",
+          "english": "Q3 2026 product information, V2"
+        },
+        {
+          "name": "!!clientDoc.label.view",
+          "source": "本期观点",
+          "english": "Current view"
+        },
+        {
+          "name": "!!clientDoc.value.view",
+          "source": "甲公司销量提升与渠道补库有关，后续关注补库持续性及原材料成本",
+          "english": "Company A’s volume growth reflects channel restocking.\nMonitor whether restocking continues and track raw-material costs."
+        },
+        {
+          "name": "!!clientDoc.label.risk",
+          "source": "风险提示",
+          "english": "Risk disclosure"
+        },
+        {
+          "name": "!!clientDoc.value.risk",
+          "source": "基金净值随市场波动，投资本金可能亏损",
+          "english": "The fund's NAV fluctuates with markets.\nCapital is at risk."
+        },
+        {
+          "name": "!!review.user",
+          "source": "作者确认改写，审核人查看原文、修改理由与修订稿",
+          "english": "The author approves the edits. The reviewer checks the sources, rationale and revised update."
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "V2修订",
+          "english": "Revised V2"
+        }
+      ],
+      "table": null,
+      "notes": "The proposed approach brings V1, current product information and the full portfolio manager presentation into the same review task. File tools match names, reporting periods and source passages. The LLM reads the wording in context, explains the missing business driver and watch point, and suggests a concrete revision. V2 adds channel restocking and its persistence, updates the formal fund name and source version, and uses the product’s specific risk wording. The author approves the edits. The reviewer checks the source, rationale and revised document.\n\nSources:\nFUND-308, pp. 6\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf\nYingmi official release and API client\nhttps://www.yingmi-inc.com/archives/799",
+      "original_notes": "公司方案让作者把V1、本期产品资料和完整路演放在同一项审核任务中。文件工具匹配产品名称、期次和原文位置，LLM阅读并比较两段观点，解释缺少的经营原因与观察事项，再建议具体改写。V2增加渠道补库的解释和补库持续性跟踪，更新正式名称、资料期次及风险说明。作者确认改写，审核人查看原文、修改理由和修订稿，完成审核。\n来源：\nFUND-308，PDF第6页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf\n盈米官方发布与客户端，官方发布及客户端流程\nhttps://www.yingmi-inc.com/archives/799"
+    },
+    {
+      "page": 19,
+      "title": "Investigating a risk alert",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "风险提示的接收与分析过程",
+          "english": "Investigating a risk alert"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "中台  风险分析  工作任务",
+          "english": "Middle office  /  Risk analysis  /  Workflow"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "19 / 33",
+          "english": "19 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!risk.mail.label",
+          "source": "风险同事收到邮件",
+          "english": "A risk analyst receives an alert"
+        },
+        {
+          "name": "!!risk.mail.text",
+          "source": "甲公司被列入评级观察，\n原因是经营现金流承压。",
+          "english": "Company A is on ratings watch.\nOperating cash flow is under pressure."
+        },
+        {
+          "name": "!!risk.manual.title",
+          "source": "风险同事接着查三件事",
+          "english": "The risk team needs to establish"
+        },
+        {
+          "name": "!!risk.question.0.role",
+          "source": "哪些产品相关？",
+          "english": "Which funds are exposed?"
+        },
+        {
+          "name": "!!risk.question.0.body",
+          "source": "查持仓系统，\n核对产品和数量",
+          "english": "Query holdings\nCheck funds and amounts"
+        },
+        {
+          "name": "!!risk.question.1.role",
+          "source": "按什么要求跟踪？",
+          "english": "Which rules apply?"
+        },
+        {
+          "name": "!!risk.question.1.body",
+          "source": "查合同、内控制度，\n找对应条款",
+          "english": "Read contracts and controls\nFind the relevant clauses"
+        },
+        {
+          "name": "!!risk.question.2.role",
+          "source": "影响怎样解释？",
+          "english": "What is the impact?"
+        },
+        {
+          "name": "!!risk.question.2.body",
+          "source": "重读公司研究，\n整理事件说明",
+          "english": "Review issuer research\nPrepare an event assessment"
+        },
+        {
+          "name": "!!risk.repetition",
+          "source": "逐封读邮件，再跨系统和文件查找同一发行人的信息",
+          "english": "Read each alert, then search several systems and documents for the same issuer"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        }
+      ],
+      "table": null,
+      "notes": "The risk analyst receives an alert: Company A is on ratings watch. Operating cash flow is under pressure. The next questions are which funds hold the issuer’s bonds, which monitoring requirements apply, and what existing research needs updating. Answering them means querying holdings, locating contract or internal-policy clauses and reviewing issuer research. The alert and scenario are illustrative. Peer practices on the next slide show how models can help with alert extraction, rule explanations and event assessments.",
+      "original_notes": "风险人员收到甲公司评级观察邮件，邮件提到经营现金流承压。接下来要确认哪些产品持有甲公司债券、按哪些合同或内部要求跟踪、已有研究需要补充什么。为此需要在持仓系统查询、在多个文件找条款，并重读公司研究后整理事件说明。邮件和情节为演示，下一页看同行怎样让LLM帮助阅读邮件、解释规则和组织事件分析。"
+    },
+    {
+      "page": 20,
+      "title": "China Universal and Tianhong: risk support",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "汇添富与天弘的风险支持应用",
+          "english": "China Universal and Tianhong: risk support"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "中台  风险分析  同行做法",
+          "english": "Middle office  /  Risk analysis  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "20 / 33",
+          "english": "20 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：汇添富基金，基金业协会案例材料；天弘基金，基金业协会案例材料",
+          "english": "Sources: China Universal; Tianhong / AMAC"
+        },
+        {
+          "name": "!!risk.htf",
+          "source": "汇添富基金",
+          "english": "China Universal"
+        },
+        {
+          "name": "!!risk.th",
+          "source": "天弘基金",
+          "english": "Tianhong"
+        },
+        {
+          "name": "!!risk.mail.extract.role",
+          "source": "LLM读托管行风控邮件",
+          "english": "LLM reads custodian risk alerts"
+        },
+        {
+          "name": "!!risk.mail.extract.body",
+          "source": "提取涉及的风险内容，\n送到风险人员工作台",
+          "english": "Extract the relevant risk information\nRoute it to the risk team’s workspace"
+        },
+        {
+          "name": "!!risk.rules.tool.role",
+          "source": "系统保存规则与原文的对应",
+          "english": "System links rules to sources"
+        },
+        {
+          "name": "!!risk.rules.tool.body",
+          "source": "风控规则关联法规、\n内控制度和合同条款",
+          "english": "Map risk rules to regulations,\ninternal controls and contract terms"
+        },
+        {
+          "name": "!!risk.rules.explain",
+          "source": "LLM据原文解释触发规则的依据",
+          "english": "The LLM explains the rule using its source text"
+        },
+        {
+          "name": "!!risk.event.input.label",
+          "source": "事件材料",
+          "english": "Event information"
+        },
+        {
+          "name": "!!risk.event.input.text",
+          "source": "事件详情、历史相似事件、\n产业链关联和市场情绪",
+          "english": "Event details, historical parallels,\nindustry links and market sentiment"
+        },
+        {
+          "name": "!!risk.event.llm.role",
+          "source": "LLM组织事件解释",
+          "english": "LLM develops an explanation"
+        },
+        {
+          "name": "!!risk.event.llm.body",
+          "source": "比较历史事件与当前情况，\n梳理影响方向和相关事项",
+          "english": "Compare the event with past cases\nOutline implications and follow-up"
+        },
+        {
+          "name": "!!risk.event.user",
+          "source": "投资与风险同事据此讨论事件影响",
+          "english": "Investment and risk teams discuss the implications"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        },
+        {
+          "name": "!!story.header.issuer.qualifier",
+          "source": "方法参考",
+          "english": "Reference"
+        }
+      ],
+      "table": null,
+      "notes": "China Universal’s platform uses an LLM to extract risk information from custodian alerts and route it to the risk team’s workspace. It also links system rules to regulations, internal controls and contract wording so that a model can explain the basis for a rule trigger. Tianhong’s event assistant brings together event details, historical parallels, industry relationships and market sentiment to develop an impact explanation. Investment and risk teams use the material to discuss the event and determine their response.\n\nSources:\nFUND-220, pp. 5\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf\nFUND-300, pp. 10\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "original_notes": "汇添富智汇平台让大模型提取托管行风控邮件中的风险内容，进入风险人员工作台。系统还把风控规则绑定到法规、内控制度和合同原文，大模型根据原文回答触发规则的依据。天弘热门事件助手结合事件详情、历史类似事件、产业链关联和市场情绪，组织事件影响解读。两项应用分别改善信息读取和解释准备，投资与风险同事据此讨论和处理。\n来源：\nFUND-220，PDF第5页及第10页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf\nFUND-300，PDF第10页，热门事件助手\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+    },
+    {
+      "page": 21,
+      "title": "Proposed risk assessment and follow-up",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "公司风险分析与跟进方案",
+          "english": "Proposed risk assessment and follow-up"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "中台  风险分析  公司方案",
+          "english": "Middle office  /  Risk analysis  /  Proposed approach"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "21 / 33",
+          "english": "21 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：汇添富基金，基金业协会案例材料；天弘基金，基金业协会案例材料",
+          "english": "Sources: China Universal; Tianhong / AMAC"
+        },
+        {
+          "name": "!!risk.evidence.mail.label",
+          "source": "邮件原文",
+          "english": "Original alert"
+        },
+        {
+          "name": "!!risk.evidence.mail.text",
+          "source": "甲公司评级观察，\n经营现金流承压。",
+          "english": "Company A: ratings watch.\nOperating cash flow\nis under pressure."
+        },
+        {
+          "name": "!!risk.evidence.system.role",
+          "source": "持仓查询返回",
+          "english": "Holdings query returns"
+        },
+        {
+          "name": "!!risk.evidence.system.body",
+          "source": "产品A持有甲公司债券\n持仓面额2000万元",
+          "english": "Product A holds\nCompany A bonds\nFace value: RMB 20m"
+        },
+        {
+          "name": "!!risk.evidence.rule.label",
+          "source": "跟踪要求",
+          "english": "Monitoring requirement"
+        },
+        {
+          "name": "!!risk.evidence.rule.text",
+          "source": "信用事件发生后，\n更新发行人研究。",
+          "english": "Refresh issuer research\nwhen a credit event occurs."
+        },
+        {
+          "name": "!!risk.llm.role",
+          "source": "LLM连接事件与资料",
+          "english": "LLM links the evidence"
+        },
+        {
+          "name": "!!risk.llm.body",
+          "source": "识别邮件中的发行人\n把持仓对应到产品A\n对照条款和既有研究\n组织影响说明",
+          "english": "Identify the issuer\nMap fund exposures\nReview clauses\nand issuer research\nDraft the assessment"
+        },
+        {
+          "name": "!!risk.result.role",
+          "source": "影响说明与后续事项",
+          "english": "Assessment and follow-up"
+        },
+        {
+          "name": "!!risk.result.body",
+          "source": "现金流承压涉及偿债能力\n需要更新信用判断。\n相关产品：产品A\n补充研究：现金流变化",
+          "english": "Cash-flow pressure affects debt-servicing capacity.\nReassess the credit view.\n\nAffected fund: Product A\nResearch follow-up: cash-flow trends"
+        },
+        {
+          "name": "!!risk.user",
+          "source": "风险同事复核持仓与条款，研究员补充分析，投资经理讨论应对",
+          "english": "Risk checks exposure and rules. Analysts update research. Portfolio managers discuss the response."
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        }
+      ],
+      "table": null,
+      "notes": "The risk team provides the alert. A holdings query returns that Product A holds Company A bonds with RMB 20m face value. The applicable example monitoring requirement calls for an issuer-research update following a credit event. The LLM identifies the issuer, maps the exposure to Product A and brings the requirement and existing research into an assessment. Cash-flow pressure is relevant to debt-servicing capacity, so the credit view needs refreshing and cash-flow trends require further research. Risk staff check holdings and clauses, analysts update their assessment, and portfolio managers discuss the response. The event, requirement, fund and amounts are illustrative.\n\nSources:\nFUND-220, pp. 5, 10\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf\nFUND-300, pp. 10\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "original_notes": "风险同事提供邮件，业务查询返回产品A持有甲公司债券、面额2000万元，相关跟踪要求写明信用事件发生后更新发行人研究。LLM识别邮件中的发行人，把事件与产品持仓对应，再结合跟踪条款和已有研究说明：经营现金流承压涉及偿债能力，需要补充现金流变化分析并更新信用判断。风险同事复核持仓和条款，研究员补充分析，投资经理讨论后续应对。事件、条款文字、产品和金额均为工作演示。\n来源：\nFUND-220，PDF第5、10页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf\nFUND-300，PDF第10页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+    },
+    {
+      "page": 22,
+      "title": "Processing operational documents",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "运营单据与文件的处理过程",
+          "english": "Processing operational documents"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "后台  运营文件  工作任务",
+          "english": "Back office  /  Document processing  /  Workflow"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "22 / 33",
+          "english": "22 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!ops.head0",
+          "source": "接收的材料",
+          "english": "Documents received"
+        },
+        {
+          "name": "!!ops.head1",
+          "source": "运营同事完成",
+          "english": "Operations work"
+        },
+        {
+          "name": "!!ops.head2",
+          "source": "保存的结果",
+          "english": "Results retained"
+        },
+        {
+          "name": "!!ops.row0.0",
+          "source": "传真与扫描件",
+          "english": "Faxes and scans"
+        },
+        {
+          "name": "!!ops.row0.1",
+          "source": "抄录字段后逐项核对",
+          "english": "Enter and check fields"
+        },
+        {
+          "name": "!!ops.row0.2",
+          "source": "业务记录",
+          "english": "Business records"
+        },
+        {
+          "name": "!!ops.row1.0",
+          "source": "客户材料 V1 / V2",
+          "english": "Client update V1 / V2"
+        },
+        {
+          "name": "!!ops.row1.1",
+          "source": "逐段找改动、解释含义",
+          "english": "Find and interpret changes"
+        },
+        {
+          "name": "!!ops.row1.2",
+          "source": "差异清单",
+          "english": "Change list"
+        },
+        {
+          "name": "!!ops.row2.0",
+          "source": "同类电子文件",
+          "english": "Related electronic files"
+        },
+        {
+          "name": "!!ops.row2.1",
+          "source": "逐份修改同一内容",
+          "english": "Repeat the edit in each file"
+        },
+        {
+          "name": "!!ops.row2.2",
+          "source": "更新文件",
+          "english": "Updated files"
+        },
+        {
+          "name": "!!ops.repetition",
+          "source": "费时之处：从文件搬运信息，阅读上下文解释修改含义",
+          "english": "Time goes into rekeying information and reading the context behind each change"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "文件示例",
+          "english": "File example"
+        }
+      ],
+      "table": null,
+      "notes": "Operations teams transcribe and check fields from faxes and scans, compare client-update versions paragraph by paragraph, and repeat common edits across related files. These tasks require both moving information between formats and reading enough context to understand each change. The peer examples cover automated data entry and document comparison. The proposed application then shows how a model can explain what a change means for the client material.",
+      "original_notes": "运营同事接收传真和扫描件后需要抄录字段、逐项核对；接收两版客户材料时，要逐段找修改并解释意思；收到统一修订要求时，要逐份更新同类文件。反复从文件搬运信息和阅读上下文，构成这些工作的主要重复操作。后面用华安和工银瑞信案例介绍单据识别与文档比对，再展示公司如何解释客户稿的版本变化。"
+    },
+    {
+      "page": 23,
+      "title": "HuaAn and ICBCUBS: document processing",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "华安与工银瑞信的文档处理应用",
+          "english": "HuaAn and ICBCUBS: document processing"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "后台  运营文件  同行做法",
+          "english": "Back office  /  Document processing  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "23 / 33",
+          "english": "23 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：华安基金，2025 CCF企业数字化案例集；工银瑞信基金，基金业协会案例材料",
+          "english": "Sources: HuaAn / CCF; ICBCUBS / AMAC"
+        },
+        {
+          "name": "!!ops.huaan",
+          "source": "华安  单据智能录入",
+          "english": "HuaAn: automated data entry"
+        },
+        {
+          "name": "!!ops.form.role",
+          "source": "识别传真与单据",
+          "english": "Read faxes and forms"
+        },
+        {
+          "name": "!!ops.form.body",
+          "source": "读取单据内容\n提取业务字段\n用于柜面录入",
+          "english": "Recognize document content\nExtract business fields\nSupport counter-service entry"
+        },
+        {
+          "name": "!!ops.stat",
+          "source": "华安披露：超过80%\n柜面传真采用智能录入",
+          "english": "HuaAn reports that over 80%\nof counter-service faxes use\nautomated data entry"
+        },
+        {
+          "name": "!!ops.icbc",
+          "source": "工银瑞信  多格式文档比对",
+          "english": "ICBCUBS: document comparison"
+        },
+        {
+          "name": "!!ops.formats",
+          "source": "PDF、Word、扫描件",
+          "english": "PDF, Word and scanned documents"
+        },
+        {
+          "name": "!!ops.compare.read",
+          "source": "模型识别文档内容，比较两个版本",
+          "english": "The model reads the content and compares versions"
+        },
+        {
+          "name": "!!ops.compare.old.label",
+          "source": "V1观点",
+          "english": "V1 view"
+        },
+        {
+          "name": "!!ops.compare.old.text",
+          "source": "甲公司收入增长来自销量提升，\n后续关注原材料成本。",
+          "english": "Volume growth drove Company A's revenue.\nMonitor raw-material costs."
+        },
+        {
+          "name": "!!ops.compare.new.label",
+          "source": "V2观点：新增文字已标出",
+          "english": "V2 view: new wording highlighted"
+        },
+        {
+          "name": "!!ops.compare.new.line1",
+          "source": "甲公司销量提升与渠道补库有关，",
+          "english": "Company A’s volume growth reflects channel restocking."
+        },
+        {
+          "name": "!!ops.compare.new.line2",
+          "source": "后续关注补库持续性及原材料成本。",
+          "english": "Monitor whether restocking continues and track raw-material costs."
+        },
+        {
+          "name": "!!ops.compare.functions",
+          "source": "差异呈现、错别字识别、结果导出",
+          "english": "Visual differences, typo detection and export"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "版本比对",
+          "english": "Version check"
+        }
+      ],
+      "table": null,
+      "notes": "HuaAn’s platform recognizes information in counter-service faxes and forms and uses it for business entry. HuaAn reported that more than 80% of these faxes used automated data entry. ICBCUBS FundGPT supports content recognition and comparison across PDF, Word and scanned documents, with visual differences, typo detection and export. The client-update example highlights the added wording on channel restocking and its persistence. The next slide builds on the identified text changes by explaining their business meaning.\n\nSources:\nFUND-150, pp. 26–28\nhttps://edc-book.ccf.org.cn/%E3%80%8A2025CCF%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E5%8F%91%E5%B1%95%E6%8E%A8%E8%8D%90%E6%A1%88%E4%BE%8B%E9%9B%86%E3%80%8B.pdf\nFUND-312, pp. 7\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf",
+      "original_notes": "华安灵思平台识别柜面传真与单据内容，将信息用于业务录入，公司披露超过80%的柜面传真采用智能录入。工银瑞信FundGPT支持PDF、Word和扫描件的内容识别、文档比对、错别字检查与结果导出。右侧用同一份客户稿V1和V2演示文档比对：模型识别文档内容，呈现新增文字的位置，页面标出“渠道补库”和“补库持续性”。同事直接查看差异。下一页公司方案再让LLM结合上下文解释这些修改的业务含义。\n来源：\nFUND-150，PDF第26–28页\nhttps://edc-book.ccf.org.cn/%E3%80%8A2025CCF%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E5%8F%91%E5%B1%95%E6%8E%A8%E8%8D%90%E6%A1%88%E4%BE%8B%E9%9B%86%E3%80%8B.pdf\nFUND-312，PDF第7页，文档比对\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf"
+    },
+    {
+      "page": 24,
+      "title": "Proposed document change analysis",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "公司运营文档处理方案",
+          "english": "Proposed document change analysis"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "后台  运营文件  公司方案",
+          "english": "Back office  /  Document processing  /  Proposed approach"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "24 / 33",
+          "english": "24 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：华安基金，2025 CCF企业数字化案例集；工银瑞信基金，基金业协会案例材料；博时基金BSBox上线报道",
+          "english": "Sources: HuaAn; ICBCUBS; Bosera"
+        },
+        {
+          "name": "!!ops.inputs.role",
+          "source": "运营同事提供两版客户稿",
+          "english": "Operations supplies both versions"
+        },
+        {
+          "name": "!!ops.inputs.body",
+          "source": "基金季度客户沟通稿 V1 / V2",
+          "english": "Quarterly client update V1 / V2"
+        },
+        {
+          "name": "!!ops.tool.role",
+          "source": "文件工具对齐段落",
+          "english": "File tools align passages"
+        },
+        {
+          "name": "!!ops.tool.body",
+          "source": "定位名称、期次和观点的文字改动",
+          "english": "Locate name, period and wording changes"
+        },
+        {
+          "name": "!!ops.llm.role",
+          "source": "LLM解释变化的业务含义",
+          "english": "LLM explains what changed"
+        },
+        {
+          "name": "!!ops.llm.body",
+          "source": "对照前后文，区分新增与保留内容\n说明观点怎样变化\n列出需要同步修改的材料",
+          "english": "Separate new and retained information\nExplain the change in meaning\nIdentify related materials to update"
+        },
+        {
+          "name": "!!changeLog.title",
+          "source": "客户沟通稿变更说明",
+          "english": "Client update change log"
+        },
+        {
+          "name": "!!changeLog.object",
+          "source": "基金季度客户沟通稿 V1 / V2",
+          "english": "Quarterly client update V1 / V2"
+        },
+        {
+          "name": "!!changeLog.driver.label",
+          "source": "新增经营原因",
+          "english": "Added business driver"
+        },
+        {
+          "name": "!!changeLog.driver.body",
+          "source": "销量提升与渠道补库有关",
+          "english": "Channel restocking supported volume growth"
+        },
+        {
+          "name": "!!changeLog.watch.label",
+          "source": "观察事项的变化",
+          "english": "Updated monitoring priorities"
+        },
+        {
+          "name": "!!changeLog.watch.body",
+          "source": "增加补库持续性，保留原材料成本跟踪",
+          "english": "Track how long restocking lasts.\nKeep monitoring raw-material costs."
+        },
+        {
+          "name": "!!changeLog.sync.label",
+          "source": "需要同步更新",
+          "english": "Related content to update"
+        },
+        {
+          "name": "!!changeLog.sync.body",
+          "source": "其他沟通稿与产品问答中的相关观点",
+          "english": "The same view in other client updates\nand product Q&A"
+        },
+        {
+          "name": "!!ops.user",
+          "source": "运营同事核对变更说明，随V2保存，并更新相关材料",
+          "english": "Operations checks the change log, retains it with V2 and updates related materials"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "变更说明",
+          "english": "Change log"
+        }
+      ],
+      "table": null,
+      "notes": "Operations supplies V1 and V2 of the same quarterly client update. File tools align the passages and locate wording changes. The LLM reads them in context, distinguishes additions from retained information and explains the implications: channel restocking has been added as a driver, and its persistence has been added to the watch points while raw-material cost monitoring remains. The change log also identifies related client updates and product Q&A that need the same revision. Operations checks the explanation, retains it with V2 and updates the related material. Bosera’s bulk document-revision work provides a reference for extending the approach.\n\nSources:\nFUND-150, pp. 26–28\nhttps://edc-book.ccf.org.cn/%E3%80%8A2025CCF%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E5%8F%91%E5%B1%95%E6%8E%A8%E8%8D%90%E6%A1%88%E4%BE%8B%E9%9B%86%E3%80%8B.pdf\nFUND-312, pp. 7\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf\nFUND-215, Bulk document revision\nhttps://finance.sina.com.cn/money/fund/jjh/2026-04-30/doc-inhwfyep1330822.shtml",
+      "original_notes": "运营同事提交客户稿V1和V2。文件工具先对齐段落并定位文字改动，LLM读取上下文后解释业务含义：观点增加渠道补库这一经营原因，也增加补库持续性这一观察事项，因此相关材料更新时需要同时保留这两处内容。模型形成客户沟通稿变更说明，列出新增经营原因、观察事项的变化以及需要同步更新的材料。运营同事核对说明，随V2保存，再按统一要求更新其他材料。博时BSBox的批量文件修订工作可作为后续扩展的参考。\n来源：\nFUND-150，PDF第26–28页\nhttps://edc-book.ccf.org.cn/%E3%80%8A2025CCF%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E5%8F%91%E5%B1%95%E6%8E%A8%E8%8D%90%E6%A1%88%E4%BE%8B%E9%9B%86%E3%80%8B.pdf\nFUND-312，PDF第7页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf\nFUND-215，批量文件修订示例\nhttps://finance.sina.com.cn/money/fund/jjh/2026-04-30/doc-inhwfyep1330822.shtml"
+    },
+    {
+      "page": 25,
+      "title": "Turning a business request into a working tool",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "业务需求到工具交付的工作过程",
+          "english": "Turning a business request into a working tool"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "后台  工具开发  工作任务",
+          "english": "Back office  /  Tool development  /  Workflow"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "25 / 33",
+          "english": "25 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!dev.request",
+          "source": "业务同事：两版报告改了哪里？页眉日期变化不算正文差异",
+          "english": "Business request: what changed between the reports? Ignore changes to repeated page headers."
+        },
+        {
+          "name": "!!dev.requirements.role",
+          "source": "开发同事整理要求",
+          "english": "Developer: requirements"
+        },
+        {
+          "name": "!!dev.requirements.body",
+          "source": "标出新增、删除、改写\n忽略重复页眉",
+          "english": "Flag additions, deletions and edits\nIgnore repeated page headers"
+        },
+        {
+          "name": "!!dev.code.role",
+          "source": "开发同事编写程序",
+          "english": "Developer writes code"
+        },
+        {
+          "name": "!!dev.code.body",
+          "source": "读取文件，匹配正文段落\n计算文字差异，输出位置",
+          "english": "Read files and match paragraphs\nCalculate differences and locations"
+        },
+        {
+          "name": "!!dev.debug.role",
+          "source": "开发同事反复测试",
+          "english": "Developer: testing"
+        },
+        {
+          "name": "!!dev.debug.body",
+          "source": "换行和跨页会打乱匹配\n页眉变化可能被误报",
+          "english": "Line and page breaks disrupt matching\nHeader changes can cause false alerts"
+        },
+        {
+          "name": "!!dev.workload",
+          "source": "从一句业务要求到可用工具，要写程序、准备样例并反复定位问题",
+          "english": "A working tool requires code, test cases and repeated investigation of errors"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "开发样例",
+          "english": "Dev example"
+        },
+        {
+          "name": "!!story.client.development.sample.name",
+          "source": "客户沟通稿 V1 / V2",
+          "english": "Client update V1 / V2"
+        }
+      ],
+      "table": null,
+      "notes": "The business team wants to know what changed between two reports, excluding changes to repeated page headers. Developers turn the request into testable requirements, write code to read the files, match paragraphs and report changes, then investigate issues caused by line breaks, page breaks and repeated headers. The work moves repeatedly between the requirement, code and actual execution results. The next slides show how an LLM can support that development process.",
+      "original_notes": "业务同事需要比较两版报告，要求忽略页眉日期变化、标出正文新增删除和改写。开发同事首先把这句话转成可测试的要求，然后编写文件读取、段落匹配、差异定位和结果输出程序，再处理换行、跨页和重复页眉造成的误报。开发工作会反复往返于需求、代码与运行结果，下面看LLM怎样帮助同事完成这些具体操作。"
+    },
+    {
+      "page": 26,
+      "title": "E Fund and Invesco Great Wall: development support",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "易方达与景顺长城的开发辅助",
+          "english": "E Fund and Invesco Great Wall: development support"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "后台  工具开发  同行做法",
+          "english": "Back office  /  Tool development  /  Peer practices"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "26 / 33",
+          "english": "26 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：易方达基金，基金业协会案例材料；易方达基金CIO论坛发言；财联社，景顺长城量化团队报道",
+          "english": "Sources: E Fund; Invesco Great Wall"
+        },
+        {
+          "name": "!!dev.case1",
+          "source": "易方达：大模型进入开发与测试环节",
+          "english": "E Fund uses LLMs in development and testing"
+        },
+        {
+          "name": "!!dev.case2",
+          "source": "景顺长城：量化团队使用本地模型辅助编程",
+          "english": "Invesco Great Wall’s quant team uses local models for coding support"
+        },
+        {
+          "name": "!!dev.requirements.role",
+          "source": "开发同事提出要求",
+          "english": "Developer defines the task"
+        },
+        {
+          "name": "!!dev.requirements.body",
+          "source": "给业务样例和预期结果\n说明程序需要完成的动作",
+          "english": "Supply examples and expected results\nSpecify the required behavior"
+        },
+        {
+          "name": "!!dev.code.role",
+          "source": "LLM辅助生成代码与测试",
+          "english": "LLM drafts code and tests"
+        },
+        {
+          "name": "!!dev.code.body",
+          "source": "编写文件处理程序\n列出测试场景与预期结果",
+          "english": "Write code to process files\nList test cases and expected results"
+        },
+        {
+          "name": "!!dev.test.role",
+          "source": "开发同事运行与反馈",
+          "english": "Developer tests the result"
+        },
+        {
+          "name": "!!dev.test.body",
+          "source": "运行程序，核对真实结果\n把错误信息交给LLM修改",
+          "english": "Run the code and check the output\nGive errors back to the LLM"
+        },
+        {
+          "name": "!!dev.case.result",
+          "source": "开发同事使用模型生成的程序和测试，持续修改到可以使用",
+          "english": "Developers use generated code and tests, then iterate until the tool works"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "方法参考",
+          "english": "Reference"
+        },
+        {
+          "name": "!!story.client.development.sample.name",
+          "source": "客户沟通稿 V1 / V2",
+          "english": "Client update V1 / V2"
+        }
+      ],
+      "table": null,
+      "notes": "E Fund has introduced LLMs into development and testing within its integrated development platform. Invesco Great Wall’s quantitative team uses local models for coding support. The report-comparison example illustrates the collaboration: the developer supplies examples and expected results, the LLM drafts processing code and test cases, and the developer runs the code, checks the result and provides errors for revision. Generated code and tests are working material for the developer to use and improve.\n\nSources:\nFUND-101, pp. 4\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf\nFUND-103, Intelligent service platform\nhttps://gifts.szu.edu.cn/info/1023/1364.htm\nFUND-254, Quantitative team coding support\nhttps://www.cls.cn/detail/2237261",
+      "original_notes": "易方达的一站式研发管理平台在开发与测试环节引入大模型，景顺长城量化团队使用本地模型辅助编程。页面以报告比对需求说明这种协作：开发同事提供样例和预期结果，LLM辅助编写处理程序、准备测试场景，开发同事实际运行并检查，再把错误信息和要求交给模型修改。这里呈现程序与测试怎样供开发人员使用。\n来源：\nFUND-101，PDF第4页，开发与测试\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf\nFUND-103，智能服务基座段落\nhttps://gifts.szu.edu.cn/info/1023/1364.htm\nFUND-254，量化团队辅助编程段落\nhttps://www.cls.cn/detail/2237261"
+    },
+    {
+      "page": 27,
+      "title": "Proposed software development workflow",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "公司业务工具开发方案",
+          "english": "Proposed software development workflow"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "后台  工具开发  公司方案",
+          "english": "Back office  /  Tool development  /  Proposed approach"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "27 / 33",
+          "english": "27 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：易方达基金，基金业协会案例材料；财联社，景顺长城量化团队报道",
+          "english": "Sources: E Fund; Invesco Great Wall"
+        },
+        {
+          "name": "!!dev.request",
+          "source": "业务要求：比较两版报告，忽略重复页眉，标出正文改写",
+          "english": "Requirement: compare two reports, ignore repeated headers and flag changes to the body text"
+        },
+        {
+          "name": "!!dev.samples.role",
+          "source": "1  开发同事提供样例",
+          "english": "1  Developer: examples"
+        },
+        {
+          "name": "!!dev.samples.body",
+          "source": "两版客户沟通稿\n标出预期差异位置",
+          "english": "Client update V1 and V2\nExpected differences marked"
+        },
+        {
+          "name": "!!dev.generate.role",
+          "source": "2  LLM整理要求并写代码",
+          "english": "2  LLM: code and tests"
+        },
+        {
+          "name": "!!dev.generate.body",
+          "source": "按段落比较正文\n生成程序和测试样例",
+          "english": "Match body-text paragraphs\nGenerate code and tests"
+        },
+        {
+          "name": "!!dev.test.role",
+          "source": "3  测试工具执行程序",
+          "english": "3  Test runner executes"
+        },
+        {
+          "name": "!!dev.test.body",
+          "source": "正文改写已识别\n页眉变化被误报",
+          "english": "Body changes found\nHeader changes falsely flagged"
+        },
+        {
+          "name": "!!dev.deliver.role",
+          "source": "6  开发同事复测并提供",
+          "english": "6  Developer retests"
+        },
+        {
+          "name": "!!dev.deliver.body",
+          "source": "检查代码、运行测试\n提供工具与操作说明",
+          "english": "Review code and rerun tests\nProvide the tool and guide"
+        },
+        {
+          "name": "!!dev.revise.role",
+          "source": "5  LLM按反馈修改",
+          "english": "5  LLM revises the code"
+        },
+        {
+          "name": "!!dev.revise.body",
+          "source": "修改页眉过滤代码\n补充页眉变化测试",
+          "english": "Fix the repeated-header filter\nAdd a header-change test"
+        },
+        {
+          "name": "!!dev.feedback.role",
+          "source": "4  开发同事说明问题",
+          "english": "4  Developer: feedback"
+        },
+        {
+          "name": "!!dev.feedback.body",
+          "source": "页眉差异无需报告\n正文差异必须保留",
+          "english": "Ignore repeated headers\nKeep body-text changes"
+        },
+        {
+          "name": "!!dev.testFeedback.label",
+          "source": "运行结果",
+          "english": "Test results"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        },
+        {
+          "name": "!!story.header.client.qualifier",
+          "source": "开发样例",
+          "english": "Dev example"
+        }
+      ],
+      "table": null,
+      "notes": "The requirement is to compare reports, ignore repeated page headers and identify changes in the body text. The developer supplies two client-update versions and expected differences. The LLM drafts the code and tests. Execution finds the body-text changes but incorrectly flags header changes. The developer explains that headers should be ignored while genuine content changes must remain. The LLM revises the header filter and adds a regression test. The developer reviews the code, reruns the tests and supplies the tool with a user guide. The test result is illustrative and shows how specific execution feedback helps the model support development.\n\nSources:\nFUND-101, pp. 4\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf\nFUND-254, Quantitative team coding support\nhttps://www.cls.cn/detail/2237261",
+      "original_notes": "业务需求是比较两版报告、忽略重复页眉并标出正文改写。开发同事提供文件和预期差异，LLM整理要求、编写程序和测试样例。开发同事运行程序，测试结果显示正文改写已经识别，但页眉变化被误报。开发同事说明页眉差异无需报告、正文差异必须保留，LLM据此修改页眉过滤逻辑并补充测试。开发同事检查代码、运行回归测试，再提供工具和说明。页面的测试结果是演示情节，用来说明模型如何根据具体反馈参与开发。\n来源：\nFUND-101，PDF第4页\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf\nFUND-254，辅助编程段落\nhttps://www.cls.cn/detail/2237261"
+    },
+    {
+      "page": 28,
+      "title": "Other back-office applications",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "后台的其他应用方向",
+          "english": "Other back-office applications"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "后台  其他工作",
+          "english": "Back office  /  Other applications"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "28 / 33",
+          "english": "28 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：财经网，招商基金数字金融报道；中国证券报，平安基金AI青蚨报道；永赢基金，基金业协会案例材料；汇添富公开专利CN121958380A",
+          "english": "Sources: China Merchants Fund; Ping An Fund; Maxwealth Fund; China Universal patent CN121958380A"
+        },
+        {
+          "name": "!!other.0.title",
+          "source": "内部办事",
+          "english": "Internal services"
+        },
+        {
+          "name": "!!other.0.company",
+          "source": "招商、平安",
+          "english": "China Merchants Fund, Ping An Fund"
+        },
+        {
+          "name": "!!other.0.flow.0",
+          "source": "政策与流程问题",
+          "english": "Policy and process questions"
+        },
+        {
+          "name": "!!other.0.flow.1",
+          "source": "LLM查资料并解释",
+          "english": "LLM retrieves and explains"
+        },
+        {
+          "name": "!!other.0.flow.2",
+          "source": "办理指引",
+          "english": "Guidance for employees"
+        },
+        {
+          "name": "!!other.1.title",
+          "source": "邮件安全",
+          "english": "Email security"
+        },
+        {
+          "name": "!!other.1.company",
+          "source": "永赢",
+          "english": "Maxwealth Fund"
+        },
+        {
+          "name": "!!other.1.flow.0",
+          "source": "邮件、附件与链接",
+          "english": "Email, attachments and links"
+        },
+        {
+          "name": "!!other.1.flow.1",
+          "source": "LLM判断意图\n调用检测工具",
+          "english": "LLM assesses intent\nand calls detection tools"
+        },
+        {
+          "name": "!!other.1.flow.2",
+          "source": "安全处置",
+          "english": "Security response"
+        },
+        {
+          "name": "!!other.2.title",
+          "source": "经营分析",
+          "english": "Business analytics"
+        },
+        {
+          "name": "!!other.2.company",
+          "source": "汇添富公开专利提出",
+          "english": "Method proposed in a China Universal patent"
+        },
+        {
+          "name": "!!other.2.flow.0",
+          "source": "产品、期间与指标",
+          "english": "Fund, period and metric"
+        },
+        {
+          "name": "!!other.2.flow.1",
+          "source": "LLM识别问题\n算法计算归因",
+          "english": "LLM interprets the question\nAlgorithms calculate drivers"
+        },
+        {
+          "name": "!!other.2.flow.2",
+          "source": "LLM整理分析报告",
+          "english": "LLM writes the analysis"
+        }
+      ],
+      "table": null,
+      "notes": "China Merchants Fund and Ping An Fund use internal knowledge to answer policy, process and operational questions. LLMs retrieve and explain the relevant material. Maxwealth uses models to assess email context and intent and call detection tools for security response. A published China Universal patent proposes using an LLM to identify the fund, period and metric in a business question, with systems retrieving data and algorithms calculating drivers; the model then writes the analysis. In each case, the model interprets content while tools perform specific operations.\n\nSources:\nFUND-351, Digital finance applications\nhttps://fund.10jqka.com.cn/20251111/c672391490.shtml\nFUND-160, Internal knowledge services\nhttps://www.cs.com.cn/ssgs/gsxl/202602/t20260206_6537131.html\nFUND-352, pp. 1–2\nhttps://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf\nFUND-227 / CN121958380A, Example 1, steps S1–S4 and report generation\nhttps://patents.google.com/patent/CN121958380A/zh",
+      "original_notes": "招商和平安将内部知识资料用于问题回答，LLM检索并解释政策、流程和操作说明。永赢使用模型理解邮件上下文与意图，并调度检测工具支持安全人员处置。汇添富公开专利提出，模型识别产品、期间和指标，系统取数并调用归因算法，模型把计算结果组织为经营分析报告。三个方向继续体现模型理解内容、工具执行计算或检测、同事使用结果的分工。\n来源：\nFUND-351，运营应用段落\nhttps://fund.10jqka.com.cn/20251111/c672391490.shtml\nFUND-160，HR小灵通及内部事务\nhttps://www.cs.com.cn/ssgs/gsxl/202602/t20260206_6537131.html\nFUND-352，PDF第1–2页\nhttps://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf\nFUND-227 / CN121958380A，实施例一S1–S4及报告生成\nhttps://patents.google.com/patent/CN121958380A/zh"
+    },
+    {
+      "page": 29,
+      "title": "Seven proposed applications",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "七项公司应用建议",
+          "english": "Seven proposed applications"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "公司方案",
+          "english": "Proposed applications"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "1  研究分析",
+          "english": "1  Research"
+        },
+        {
+          "name": "!!task.research.outcome",
+          "source": "研究员：分析与资料出处",
+          "english": "Analysts: analysis with sources"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "2  交易支持",
+          "english": "2  Trading support"
+        },
+        {
+          "name": "!!task.trade.outcome",
+          "source": "交易员：查询与报价清单",
+          "english": "Traders: queries and quotes"
+        },
+        {
+          "name": "!!task.client",
+          "source": "3  客户材料",
+          "english": "3  Client materials"
+        },
+        {
+          "name": "!!task.client.outcome",
+          "source": "客户经理：沟通稿与问答",
+          "english": "Client teams: updates and Q&A"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "4  材料审核",
+          "english": "4  Content review"
+        },
+        {
+          "name": "!!task.review.outcome",
+          "source": "审核同事：修改依据与建议",
+          "english": "Reviewers: rationale and edits"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "5  风险分析",
+          "english": "5  Risk analysis"
+        },
+        {
+          "name": "!!task.risk.outcome",
+          "source": "风险同事：影响说明与事项",
+          "english": "Risk: assessments and actions"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "6  运营文件",
+          "english": "6  Document processing"
+        },
+        {
+          "name": "!!task.files.outcome",
+          "source": "运营同事：记录与变更说明",
+          "english": "Operations: records and change logs"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "7  工具开发",
+          "english": "7  Tool development"
+        },
+        {
+          "name": "!!task.dev.outcome",
+          "source": "开发同事：程序与测试样例",
+          "english": "Developers: code and test cases"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "29 / 33",
+          "english": "29 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：天弘基金，基金业协会案例材料；南方基金，基金业协会案例材料；鹏华基金，基金业协会案例材料；汇添富基金，基金业协会案例材料；工银瑞信基金，基金业协会案例材料；易方达基金，基金业协会案例材料",
+          "english": "Sources: Tianhong; Southern; Penghua; China Universal; ICBCUBS; E Fund"
+        },
+        {
+          "name": "!!recommend.head",
+          "source": "七项建议对应七类工作产物",
+          "english": "Seven applications, with a clear result for each user"
+        },
+        {
+          "name": "!!recommend.body",
+          "source": "LLM协助阅读、比较和编写，同事核对结果并完成判断",
+          "english": "LLMs assist with reading, comparison and drafting. People check the results and exercise judgment."
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        }
+      ],
+      "table": null,
+      "notes": "The seven proposals give each user a concrete result: sourced company analysis, a query and quote summary, a client update, review comments with reasons, a risk assessment and follow-up, a document change log, or code and tests. Research and client communications provide an initial focus. Queries and document workflows can then connect the applications to additional teams and tasks.\n\nSources:\nFUND-300, Source text\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nFUND-200, Source text\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nFUND-308, Source text\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf\nFUND-220, Source text\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf\nFUND-312, Source text\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf\nFUND-101, Source text\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf",
+      "original_notes": "七项建议分别帮助研究员整理带出处的分析、交易员整理查询与报价、客户经理编写材料、审核同事比较原文并提出修改、风险人员组织影响说明、运营同事解释版本差异、开发同事编写和测试工具。建议先从研究与客户材料开始，让同事直接使用这些结果，再连接查询和文件流程，扩展到更多部门。\n来源：\nFUND-300，投研与客户材料\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nFUND-200，交易支持\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nFUND-308，材料审核\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf\nFUND-220，风险支持\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf\nFUND-312，文档处理\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf\nFUND-101，开发与测试\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf"
+    },
+    {
+      "page": 30,
+      "title": "Two information flows across the firm",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "两条跨部门资料协作",
+          "english": "Two information flows across the firm"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "公司方案",
+          "english": "Cross-team collaboration"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!example",
+          "source": "示例",
+          "english": "Example"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "30 / 33",
+          "english": "30 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!cross.head0",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!cross.head1",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!cross.head2",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!cross.issuer",
+          "source": "甲公司",
+          "english": "Company A"
+        },
+        {
+          "name": "!!cross.0.0",
+          "source": "公司分析\n询价资料",
+          "english": "Company research\nQuote request materials"
+        },
+        {
+          "name": "!!cross.0.1",
+          "source": "事件解释\n持仓跟踪",
+          "english": "Event assessment\nExposure monitoring"
+        },
+        {
+          "name": "!!cross.0.2",
+          "source": "相关文件\n版本维护",
+          "english": "Related documents\nVersion control"
+        },
+        {
+          "name": "!!cross.1.0",
+          "source": "沟通稿 V1",
+          "english": "Client update V1"
+        },
+        {
+          "name": "!!cross.1.1",
+          "source": "审核与修订稿 V2",
+          "english": "Review and revise to V2"
+        },
+        {
+          "name": "!!cross.1.2",
+          "source": "版本比对\n更新文件",
+          "english": "Compare versions\nUpdate related materials"
+        },
+        {
+          "name": "!!cross.client",
+          "source": "基金季度客户沟通稿",
+          "english": "Quarterly client update"
+        },
+        {
+          "name": "!!story.header.issuer.name",
+          "source": "甲公司",
+          "english": "Company A"
+        },
+        {
+          "name": "!!story.header.client.name",
+          "source": "客户沟通稿",
+          "english": "Client update"
+        }
+      ],
+      "table": null,
+      "notes": "The first information flow follows Company A. The front office prepares research and quote request material, the middle office monitors events and related exposures, and the back office maintains the associated documents. The second follows the quarterly client update: the front office drafts V1 from existing views, the middle office checks fuller current material and revises it to V2, and the back office explains the differences and updates related documents. The links show information reuse and collaboration across teams.",
+      "original_notes": "第一条围绕甲公司复用研究资料：前台形成公司分析和询价资料，中台持续跟踪事件与相关持仓，后台维护相关文件与版本。第二条围绕同一客户沟通稿协作：前台根据已有观点组织V1，中台对照本期完整资料补充含义形成V2，后台解释版本差异并更新相关材料。这里连接的是资料使用和协作关系，各部门按自己的业务工作时间开展任务。"
+    },
+    {
+      "page": 31,
+      "title": "Shared information, models and tools",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "应用共用的资料与服务",
+          "english": "Shared information, models and tools"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "公司方案",
+          "english": "Shared capabilities"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "31 / 33",
+          "english": "31 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!source",
+          "source": "来源：天弘基金，基金业协会案例材料；南方基金，基金业协会案例材料；工银瑞信基金，基金业协会案例材料",
+          "english": "Sources: Tianhong; Southern; ICBCUBS / AMAC"
+        },
+        {
+          "name": "!!arch.entry",
+          "source": "同事提出业务问题并提供材料",
+          "english": "Employees provide a business question and the relevant material"
+        },
+        {
+          "name": "!!arch.workflow",
+          "source": "研究、询价、客户材料、审核、风险、文件处理、开发",
+          "english": "Research, inquiries, client materials, review, risk, documents and development"
+        },
+        {
+          "name": "!!arch.model.role",
+          "source": "LLM处理语言与内容",
+          "english": "LLMs work with language and content"
+        },
+        {
+          "name": "!!arch.model.body",
+          "source": "理解问题、阅读材料\n比较解释、生成文字与代码",
+          "english": "Interpret questions and read sources\nCompare and explain content\nDraft text and code"
+        },
+        {
+          "name": "!!arch.tools.role",
+          "source": "工具执行具体操作",
+          "english": "Tools execute specific operations"
+        },
+        {
+          "name": "!!arch.tools.body",
+          "source": "查询、计算、文件处理\n程序运行与测试",
+          "english": "Query, calculate and process files\nRun code and tests"
+        },
+        {
+          "name": "!!arch.data",
+          "source": "共用资料：文档、知识库、业务数据，保留权限、出处与版本",
+          "english": "Shared documents, knowledge bases and business data\nwith access controls, source references and version history"
+        },
+        {
+          "name": "!!arch.models",
+          "source": "模型服务候选：Qwen、DeepSeek等，按具体任务验证",
+          "english": "Model candidates include Qwen and DeepSeek, evaluated against specific tasks"
+        }
+      ],
+      "table": null,
+      "notes": "Employees provide a business question and relevant material. Applications combine LLMs with the tools required for the task. The LLM interprets questions, reads sources, compares explanations and generates text or code. Tools perform queries, calculations and file operations, and execute programs and tests. Shared documents, knowledge bases and business data retain their access rights, references and versions. Qwen and DeepSeek are possible model services to evaluate against the firm’s actual tasks.\n\nSources:\nFUND-300, pp. 5\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nFUND-200, pp. 4–7\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nFUND-312, pp. 7\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf",
+      "original_notes": "同事提出业务问题并提供材料，应用把任务交给模型和相应工具配合处理。LLM负责理解问题、阅读材料、比较解释、生成文字和代码；工具负责数据查询、数值计算、文件处理以及程序运行和测试。共用文档、知识库和业务数据保留权限、出处与版本。Qwen和DeepSeek可作为模型服务候选，按具体业务任务验证后选择。\n来源：\nFUND-300，PDF第5页，模型与工具层\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nFUND-200，PDF第4–7页，工具调用与业务接口\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nFUND-312，PDF第7页，FundGPT服务\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf"
+    },
+    {
+      "page": 32,
+      "title": "Suggested implementation sequence",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "建议实施顺序",
+          "english": "Suggested implementation sequence"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "公司方案",
+          "english": "Implementation"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "32 / 33",
+          "english": "32 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "下一步",
+          "english": "Next"
+        },
+        {
+          "name": "!!phase.0.number",
+          "source": "1",
+          "english": "1"
+        },
+        {
+          "name": "!!phase.0.title",
+          "source": "研究与客户材料",
+          "english": "Research and client materials"
+        },
+        {
+          "name": "!!phase.0.roles",
+          "source": "投研、销售、合规、IT",
+          "english": "Research, sales,\ncompliance and IT"
+        },
+        {
+          "name": "!!phase.0.outputs",
+          "source": "任务样例、资料目录、应用初版",
+          "english": "Task examples, source catalog and initial applications"
+        },
+        {
+          "name": "!!phase.1.number",
+          "source": "2",
+          "english": "2"
+        },
+        {
+          "name": "!!phase.1.title",
+          "source": "交易与运营连接",
+          "english": "Connect trading and operations"
+        },
+        {
+          "name": "!!phase.1.roles",
+          "source": "交易、运营、IT",
+          "english": "Trading, operations, IT"
+        },
+        {
+          "name": "!!phase.1.outputs",
+          "source": "字段规范、查询接口、文件流程",
+          "english": "Field definitions, query interfaces and file workflows"
+        },
+        {
+          "name": "!!phase.2.number",
+          "source": "3",
+          "english": "3"
+        },
+        {
+          "name": "!!phase.2.title",
+          "source": "工具与内部服务",
+          "english": "Tools and internal services"
+        },
+        {
+          "name": "!!phase.2.roles",
+          "source": "业务部门、IT",
+          "english": "Business teams, IT"
+        },
+        {
+          "name": "!!phase.2.outputs",
+          "source": "业务工具、操作说明、维护机制",
+          "english": "Business tools, user guides and maintenance ownership"
+        }
+      ],
+      "table": null,
+      "notes": "Research, sales, compliance and IT can first assemble task examples and source material for research and client-communication applications. Trading, operations and IT can then connect queries and document processing so that the information prepared by the model can be used in subsequent work. Development support and internal services can follow, with clear ownership for maintenance and source updates. Each phase builds on how employees actually use the preceding applications.",
+      "original_notes": "先由投研、销售、合规和IT准备真实任务样例与资料，建立研究和客户材料应用。再由交易、运营和IT接入查询与文件流程，使模型整理的信息能够继续使用。之后扩展开发辅助和内部服务，明确工具维护与资料更新职责。每个阶段依据同事使用结果推进，并保持人、模型和工具的工作分工。"
+    },
+    {
+      "page": 33,
+      "title": "Measuring use and improving workflows",
+      "shapes": [
+        {
+          "name": "!!heading",
+          "source": "应用效果与推进重点",
+          "english": "Measuring use and improving workflows"
+        },
+        {
+          "name": "!!subtitle",
+          "source": "公司方案",
+          "english": "Evaluation"
+        },
+        {
+          "name": "!!nav.front",
+          "source": "前台",
+          "english": "Front office"
+        },
+        {
+          "name": "!!task.research",
+          "source": "研究分析",
+          "english": "Research"
+        },
+        {
+          "name": "!!task.trade",
+          "source": "交易支持",
+          "english": "Trading support"
+        },
+        {
+          "name": "!!task.client",
+          "source": "客户材料",
+          "english": "Client materials"
+        },
+        {
+          "name": "!!nav.middle",
+          "source": "中台",
+          "english": "Middle office"
+        },
+        {
+          "name": "!!task.review",
+          "source": "材料审核",
+          "english": "Content review"
+        },
+        {
+          "name": "!!task.risk",
+          "source": "风险分析",
+          "english": "Risk analysis"
+        },
+        {
+          "name": "!!nav.back",
+          "source": "后台",
+          "english": "Back office"
+        },
+        {
+          "name": "!!task.files",
+          "source": "运营文件",
+          "english": "Document processing"
+        },
+        {
+          "name": "!!task.dev",
+          "source": "工具开发",
+          "english": "Tool development"
+        },
+        {
+          "name": "!!nav.home",
+          "source": "公司总图",
+          "english": "Firm overview"
+        },
+        {
+          "name": "!!page",
+          "source": "33 / 33",
+          "english": "33 / 33"
+        },
+        {
+          "name": "!!nav.prev",
+          "source": "上一步",
+          "english": "Back"
+        },
+        {
+          "name": "!!nav.next",
+          "source": "回总图",
+          "english": "Overview"
+        },
+        {
+          "name": "!!evaluation.main",
+          "source": "从研究分析与客户材料两条流程启动",
+          "english": "Start with research and client communications"
+        },
+        {
+          "name": "!!evaluation.flow.0",
+          "source": "原工作任务",
+          "english": "Baseline task"
+        },
+        {
+          "name": "!!evaluation.flow.1",
+          "source": "使用应用",
+          "english": "Use the application"
+        },
+        {
+          "name": "!!evaluation.flow.2",
+          "source": "记录结果",
+          "english": "Record results"
+        },
+        {
+          "name": "!!evaluation.flow.3",
+          "source": "调整流程",
+          "english": "Refine the workflow"
+        },
+        {
+          "name": "!!evaluation.0.title",
+          "source": "任务完成时间",
+          "english": "Task completion time"
+        },
+        {
+          "name": "!!evaluation.0.body",
+          "source": "准备、查找与交付用时",
+          "english": "Time spent preparing, searching and delivering"
+        },
+        {
+          "name": "!!evaluation.1.title",
+          "source": "交付采用情况",
+          "english": "Output adoption"
+        },
+        {
+          "name": "!!evaluation.1.body",
+          "source": "材料与分析实际使用情况",
+          "english": "Whether teams use the analysis and materials"
+        },
+        {
+          "name": "!!evaluation.2.title",
+          "source": "返工次数",
+          "english": "Rework"
+        },
+        {
+          "name": "!!evaluation.2.body",
+          "source": "修改轮次与重复核对",
+          "english": "Revision rounds and repeated checks"
+        },
+        {
+          "name": "!!evaluation.3.title",
+          "source": "使用频次",
+          "english": "Usage frequency"
+        },
+        {
+          "name": "!!evaluation.3.body",
+          "source": "同事是否持续使用",
+          "english": "Whether employees continue to use the application"
+        }
+      ],
+      "table": null,
+      "notes": "Start with research and client communications. Compare similar tasks before and after application use, tracking completion time, output adoption, rework and repeat usage. Use the findings to identify whether the issue is missing information, an unsuitable model explanation or an awkward query or file-handling step. Continued use and reduced preparation work provide a practical basis for deciding what to improve and extend.",
+      "original_notes": "从研究分析与客户材料两条流程启动，记录同一类任务使用应用前后的完成时间、结果采用情况、返工次数和持续使用频次。结合具体问题判断是资料缺失、模型解释不合适，还是查询与文件操作不顺畅，再调整相应环节。同事是否持续使用，以及结果是否减少重复准备，是后续推进的重要依据。"
+    }
+  ]
+}
