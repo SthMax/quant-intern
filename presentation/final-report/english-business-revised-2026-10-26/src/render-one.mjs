@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const {FileBlob,PresentationFile}=await import('/Users/sthmax/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs');
+const B=path.join(path.dirname(path.dirname(fileURLToPath(import.meta.url))),'build');
+const page=Number(process.argv[2]),input=process.argv[3]||path.join(B,'base.pptx'),dir=process.argv[4]||path.join(B,'qa/render');
+const p=await PresentationFile.importPptx(await FileBlob.load(input));
+const b=await p.export({slide:p.slides.items[page-1],format:'png',scale:1});
+await fs.mkdir(dir,{recursive:true});
+await fs.writeFile(path.join(dir,`state-${String(page).padStart(2,'0')}.png`),new Uint8Array(await b.arrayBuffer()));
+console.log('Rendered '+page);

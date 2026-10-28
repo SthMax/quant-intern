@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {FileBlob,PresentationFile} from '/Users/sthmax/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const input=process.argv[2]||path.join(root,'build/candidate.pptx');
+const presentation=await PresentationFile.importPptx(await FileBlob.load(input));
+const result=await presentation.inspect({select:'$.slides[*]',include:['id','index','layout','title','elements.id','elements.kind','elements.text','elements.position']});
+await fs.writeFile(path.join(root,'build/qa/artifact-inspection.ndjson'),result.ndjson);
+await fs.writeFile(path.join(root,'build/qa/artifact-structure.json'),JSON.stringify({masters:presentation.masters.items.map(m=>({id:m.id,name:m.name})),layouts:presentation.layouts.items.map(l=>({id:l.id,name:l.name,placeholders:l.placeholders.summary()})),slideCount:presentation.slides.items.length},null,2));
+console.log(`Artifact Tool imported ${presentation.slides.items.length} native slides for inspection.`);

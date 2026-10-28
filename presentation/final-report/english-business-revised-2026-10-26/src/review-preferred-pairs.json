@@ -1,0 +1,676 @@
+{
+  "1": [
+    [
+      "Peer practices and proposed applications",
+      "Industry examples and proposed applications."
+    ]
+  ],
+  "2": [
+    [
+      "Query and act",
+      "Query systems and run tasks."
+    ],
+    [
+      "Trade details",
+      "Quote requests and comparisons."
+    ],
+    [
+      "Draft and collaborate",
+      "Draft documents and code."
+    ],
+    [
+      "Build applications around the work people need to complete",
+      "Proposed applications address specific employee tasks."
+    ],
+    [
+      "Work products",
+      "Outputs."
+    ]
+  ],
+  "3": [
+    [
+      "Prepare trading inquiries",
+      "Prepare quote requests."
+    ],
+    [
+      "Turn documents into analysis",
+      "Analyze company information."
+    ],
+    [
+      "Adapt views for clients",
+      "Draft client communications."
+    ],
+    [
+      "Turn files into usable records",
+      "Extract and maintain document records."
+    ],
+    [
+      "Turn requests into tools",
+      "Develop internal business tools."
+    ],
+    [
+      "Client update: drafting, review and version control",
+      "Quarterly client update: drafting, review and change tracking."
+    ]
+  ],
+  "4": [
+    [
+      "Analyst: Why did revenue grow, and can the growth continue?",
+      "What drove revenue growth, and is it sustainable?"
+    ],
+    [
+      "A: demand recovery can last. B: will restocking last?",
+      "Report A: demand recovery can sustain growth. Report B: continued restocking is uncertain."
+    ],
+    [
+      "Restocking lifted shipments. Monitor its persistence.",
+      "Restocking lifted shipments. Assess whether it will continue."
+    ],
+    [
+      "Volume (m units): 1.0 / 1.1",
+      "Sales volume (m units): 1.0 / 1.1."
+    ],
+    [
+      "Reread and compare views",
+      "Compare research views."
+    ]
+  ],
+  "5": [
+    [
+      "The LLM breaks down the question. Tools retrieve data and calculate.",
+      "The LLM structures the earnings analysis. Tools retrieve data and perform calculations."
+    ],
+    [
+      "The LLM links operating evidence to the numbers. Analysts assess the quality of growth.",
+      "The LLM links operating drivers to earnings changes. Analysts assess the quality of growth."
+    ],
+    [
+      "Volume and selling price",
+      "Sales volume and selling price."
+    ]
+  ],
+  "6": [
+    [
+      "Demand recovery or restocking?",
+      "Is volume growth sustainable?"
+    ],
+    [
+      "The LLM reads each report against the same research question",
+      "The LLM compares reports on a common research question."
+    ],
+    [
+      "Screen relevant reports / Summarize by topic / Combine and check the wording",
+      "Select relevant reports / Summarize by topic / Consolidate and review summaries."
+    ],
+    [
+      "Preserve the disagreement",
+      "Shared finding"
+    ],
+    [
+      "Channel restocking lifted shipments. Its persistence remains uncertain.",
+      "Channel restocking lifted shipments. Continued restocking remains uncertain."
+    ]
+  ],
+  "7": [
+    [
+      "The LLM turns source material into a populated research template",
+      "The LLM populates research templates from source material."
+    ],
+    [
+      "Operating change",
+      "Operating performance."
+    ],
+    [
+      "Will the restocking cycle persist?",
+      "Will restocking continue?"
+    ],
+    [
+      "Reported ~50% improvement in research preparation efficiency (May 2026)",
+      "Zhong Ou reported approximately 50% higher research preparation efficiency as of May 2026."
+    ]
+  ],
+  "8": [
+    [
+      "Analyst: Why did revenue grow this quarter, and can it continue?",
+      "What drove revenue growth this quarter, and is it sustainable?"
+    ],
+    [
+      "Link the operating explanation",
+      "Link operating drivers to results."
+    ],
+    [
+      "Volume: +10%",
+      "Sales volume (m units): 1.0 / 1.1"
+    ],
+    [
+      "Volume drove revenue growth [1], supported by channel restocking [2]. Views differ on persistence [3]. Track demand and input costs.",
+      "Higher sales volume drove revenue growth [1], with channel restocking supporting shipments [2]. Research views differ on whether growth is sustainable [3]. Monitor demand and input costs."
+    ],
+    [
+      "LLM analysis",
+      "Draft research summary."
+    ]
+  ],
+  "9": [
+    [
+      "Due within 2 years",
+      "Maturing within two years."
+    ],
+    [
+      "Name the bonds",
+      "Specify the bonds."
+    ],
+    [
+      "Ask for price and size",
+      "Request offer prices and available size."
+    ],
+    [
+      "Market / holdings",
+      "Market and holdings systems."
+    ],
+    [
+      "RFQ",
+      "Quote request."
+    ]
+  ],
+  "10": [
+    [
+      "Specify a screen, query or action",
+      "Specify bond criteria, a query or an instruction."
+    ],
+    [
+      "Read the request / Call the right tools",
+      "Interpret the request / Select the required tools."
+    ],
+    [
+      "User follows up",
+      "User reviews results."
+    ],
+    [
+      "Match the request / Route to trading",
+      "Match the portfolio manager’s quote request / Send details to the trading system."
+    ],
+    [
+      "Extract the details for the system",
+      "Extract bond, side, price and size."
+    ]
+  ],
+  "11": [
+    [
+      "LLM parses the request",
+      "LLM identifies query criteria."
+    ],
+    [
+      "LLM parses quote records",
+      "LLM extracts supplied quote details."
+    ],
+    [
+      "Maturity: 1.2 years",
+      "Time to maturity: 1.2 years."
+    ],
+    [
+      "Held face value: RMB 20m",
+      "Current holding: RMB 20m face value."
+    ],
+    [
+      "Held face value (RMB m)",
+      "Current holding (RMB m face value)."
+    ],
+    [
+      "Available face value (RMB m)",
+      "Available size (RMB m face value)."
+    ],
+    [
+      "LLM combines query results and quotes",
+      "LLM prepares a bond and quote summary."
+    ],
+    [
+      "The trader checks the source and quote time. The portfolio manager discusses next steps.",
+      "The trader verifies quote sources, timestamps and amounts. The portfolio manager reviews the summary with the trader."
+    ]
+  ],
+  "12": [
+    [
+      "What changed in the company’s business this quarter?",
+      "What changed in Company A’s business this quarter?"
+    ],
+    [
+      "Portfolio manager views",
+      "Portfolio managers’ investment views."
+    ],
+    [
+      "Check the fund and source period",
+      "Confirm the fund and reporting period."
+    ],
+    [
+      "Product documents",
+      "Product documentation."
+    ],
+    [
+      "Previous client materials",
+      "Previous client communications."
+    ],
+    [
+      "The same source material is repeatedly adapted for updates, Q&A and RFP responses",
+      "The same source material supports client updates, product Q&A and RFP responses."
+    ]
+  ],
+  "13": [
+    [
+      "Tianhong uses LLMs to bring together recent manager and product views",
+      "Tianhong uses LLMs to consolidate recent investment views by portfolio manager or product."
+    ],
+    [
+      "LLM organizes the response",
+      "LLM prepares a summary."
+    ],
+    [
+      "Combine overlapping content",
+      "Remove duplication."
+    ],
+    [
+      "Revenue improved as volumes rose. Continue monitoring raw-material costs.",
+      "Higher sales volume supported revenue growth. Raw-material costs remain a focus."
+    ],
+    [
+      "Summary for client teams",
+      "Summary for client-facing teams."
+    ]
+  ],
+  "14": [
+    [
+      "LLM finds and drafts",
+      "LLM retrieves sources and drafts responses."
+    ],
+    [
+      "Find the research process / Identify who does what / Draft the RFP response",
+      "Retrieve the process description / Identify responsibilities / Draft the response."
+    ],
+    [
+      "Analysts prepare research. Portfolio managers discuss the investment view. Source: research process",
+      "Analysts conduct company research. Portfolio managers discuss the resulting investment views. Source: internal research process description."
+    ],
+    [
+      "ICBCUBS FundGPT connects knowledge maintenance, question analysis, review and RFP drafting",
+      "ICBCUBS FundGPT supports knowledge-base maintenance, question analysis, review and RFP drafting."
+    ]
+  ],
+  "15": [
+    [
+      "Existing view / Volume and input costs",
+      "Existing investment view / Sales volume and input costs."
+    ],
+    [
+      "Product information / Q2, V1",
+      "Product information / Q2 2026, V1."
+    ],
+    [
+      "Select the views / Draft the update for client use",
+      "Select relevant source content / Draft the client update."
+    ],
+    [
+      "Current view",
+      "Investment view."
+    ],
+    [
+      "The client team checks the view and submits the same update for review",
+      "The client team checks the investment view and submits V1 for review."
+    ]
+  ],
+  "16": [
+    [
+      "Current manager presentation",
+      "Current portfolio manager presentation."
+    ],
+    [
+      "Does the draft explain the driver? Does it retain the watch points?",
+      "Does the draft explain the growth driver? Does it preserve the source’s uncertainty?"
+    ],
+    [
+      "What the reviewer checks",
+      "Review criteria."
+    ],
+    [
+      "Compare the source wording, fund name, reporting period and risk disclosure",
+      "Check the investment view, fund details and risk disclosure against current sources."
+    ]
+  ],
+  "17": [
+    [
+      "Name and period are outdated. Use current documents.",
+      "Use the full fund name and current reporting period."
+    ],
+    [
+      "Restocking drove growth. Add the driver and uncertainty over its duration.",
+      "Identify channel restocking as the volume driver and retain uncertainty over its continuation."
+    ],
+    [
+      "Specify NAV volatility and the risk of capital loss.",
+      "State that the fund’s NAV can fluctuate and investors may lose capital."
+    ],
+    [
+      "Penghua suggests rule-based edits. Yingmi supports pre-review, revision and rechecking.",
+      "Penghua suggests edits based on review rules. Yingmi supports initial checks, revision and repeat review."
+    ]
+  ],
+  "18": [
+    [
+      "File tools locate changes / Match fund name, source period and passages",
+      "Document tools locate relevant information / Match fund names, reporting periods and source passages."
+    ],
+    [
+      "LLM explains and revises",
+      "LLM explains issues and proposes revisions."
+    ],
+    [
+      "Retain the question of persistence",
+      "Retain uncertainty over continued restocking."
+    ],
+    [
+      "Company A’s volume growth reflects channel restocking. Monitor whether restocking continues and track raw-material costs.",
+      "Channel restocking supported Company A’s sales volume growth. We are monitoring whether restocking continues, alongside raw-material costs."
+    ],
+    [
+      "The fund's NAV fluctuates with markets. Capital is at risk.",
+      "The fund’s NAV fluctuates with market conditions. Capital is at risk."
+    ]
+  ],
+  "19": [
+    [
+      "Company A is on ratings watch.",
+      "Company A’s credit rating is on watch."
+    ],
+    [
+      "Query holdings / Check funds and amounts",
+      "Query holdings / Identify exposed funds and holding amounts."
+    ],
+    [
+      "Read contracts and controls / Find the relevant clauses",
+      "Review contracts and internal policies / Identify applicable clauses."
+    ],
+    [
+      "Read each alert, then search several systems and documents for the same issuer",
+      "Each alert requires searches across systems and documents for the same issuer."
+    ]
+  ],
+  "20": [
+    [
+      "LLM develops an explanation",
+      "LLM drafts an event assessment."
+    ],
+    [
+      "Outline implications and follow-up",
+      "Outline potential impacts and follow-up actions."
+    ],
+    [
+      "System links rules to sources",
+      "System links monitoring rules to source documents."
+    ],
+    [
+      "The LLM explains the rule using its source text",
+      "The LLM explains the basis for a rule trigger using the source text."
+    ],
+    [
+      "Event details, historical parallels, industry links and market sentiment",
+      "Event details, comparable past events, industry relationships and market sentiment."
+    ]
+  ],
+  "21": [
+    [
+      "Cash-flow pressure affects debt-servicing capacity. Reassess the credit view.",
+      "Cash-flow pressure affects the issuer’s capacity to service debt. Review the credit assessment."
+    ],
+    [
+      "Holdings query returns",
+      "Current holdings."
+    ],
+    [
+      "Refresh issuer research when a credit event occurs.",
+      "Update issuer research following a credit event."
+    ],
+    [
+      "Risk checks exposure and rules. Analysts update research. Portfolio managers discuss the response.",
+      "The risk team verifies exposures and applicable requirements. Analysts update the credit assessment. Portfolio managers discuss the response."
+    ],
+    [
+      "Research follow-up: cash-flow trends",
+      "Research follow-up: assess cash-flow trends."
+    ]
+  ],
+  "22": [
+    [
+      "Documents received / Operations work / Results retained",
+      "Input documents / Processing tasks / Outputs."
+    ],
+    [
+      "Enter and check fields",
+      "Enter and validate data."
+    ],
+    [
+      "Change list",
+      "Change summary."
+    ],
+    [
+      "Related electronic files / Repeat the edit in each file / Updated files",
+      "Related documents / Apply the same revision / Updated documents."
+    ],
+    [
+      "Time goes into rekeying information and reading the context behind each change",
+      "Staff spend time rekeying data and interpreting document changes."
+    ]
+  ],
+  "23": [
+    [
+      "Support counter-service entry",
+      "Populate client-service records from faxes and forms."
+    ],
+    [
+      "Recognize document content / Extract business fields",
+      "Read document content / Extract required data."
+    ],
+    [
+      "HuaAn reports that over 80% of counter-service faxes use automated data entry",
+      "HuaAn reports automated data entry for more than 80% of faxes handled by its direct-sales counter."
+    ],
+    [
+      "Visual differences, typo detection and export",
+      "Highlight changes, identify typos and export results."
+    ],
+    [
+      "V2 view: new wording highlighted",
+      "V1 investment view"
+    ]
+  ],
+  "24": [
+    [
+      "Client update change log",
+      "Client update: change summary."
+    ],
+    [
+      "File tools align passages / Locate name, period and wording changes",
+      "Document tools match passages / Identify changes to the fund name, reporting period and wording."
+    ],
+    [
+      "Updated monitoring priorities / Track how long restocking lasts. Keep monitoring raw-material costs.",
+      "Monitoring changes / Added: whether restocking continues. Retained: raw-material cost monitoring."
+    ],
+    [
+      "Added business driver / Channel restocking supported volume growth",
+      "Added growth driver / Channel restocking supported sales volume growth."
+    ],
+    [
+      "Related content to update / The same view in other client updates and product Q&A",
+      "Related materials / Other client updates and product Q&A using this investment view."
+    ]
+  ],
+  "25": [
+    [
+      "Business request: what changed between the reports? Ignore changes to repeated page headers.",
+      "Business request: identify changes between the two report versions, excluding repeated page headers."
+    ],
+    [
+      "Calculate differences and locations",
+      "Identify changes and their locations."
+    ],
+    [
+      "Header changes can cause false alerts",
+      "Header changes can trigger false positives."
+    ],
+    [
+      "A working tool requires code, test cases and repeated investigation of errors",
+      "Development requires implementation, testing and repeated debugging."
+    ]
+  ],
+  "26": [
+    [
+      "Invesco Great Wall’s quant team uses local models for coding support",
+      "Invesco Great Wall’s quantitative team uses locally deployed models for coding support."
+    ],
+    [
+      "Give errors back to the LLM",
+      "Provide error details to the LLM."
+    ],
+    [
+      "Developers use generated code and tests, then iterate until the tool works",
+      "Developers test and refine generated code against the stated requirements."
+    ],
+    [
+      "Developer tests the result",
+      "Developer tests the code."
+    ]
+  ],
+  "27": [
+    [
+      "Body changes found / Header changes falsely flagged",
+      "Body-text changes detected / Header changes incorrectly flagged."
+    ],
+    [
+      "Ignore repeated headers / Keep body-text changes",
+      "Exclude repeated page headers / Retain genuine body-text changes."
+    ],
+    [
+      "Add a header-change test",
+      "Add a regression test for header changes."
+    ],
+    [
+      "Provide the tool and guide",
+      "Deliver the tool and user guide."
+    ]
+  ],
+  "28": [
+    [
+      "Internal services",
+      "Employee information support."
+    ],
+    [
+      "LLM retrieves and explains",
+      "LLM retrieves and explains relevant guidance."
+    ],
+    [
+      "LLM assesses intent and calls detection tools",
+      "LLM assesses email context and intent, then invokes detection tools."
+    ],
+    [
+      "Algorithms calculate drivers",
+      "Algorithms quantify contributions to the selected metric."
+    ],
+    [
+      "LLM writes the analysis",
+      "LLM drafts the analytical summary."
+    ]
+  ],
+  "29": [
+    [
+      "Analysts: analysis with sources",
+      "Analysts: research summaries with source references."
+    ],
+    [
+      "Traders: queries and quotes",
+      "Traders: bond and quote summaries."
+    ],
+    [
+      "Reviewers: rationale and edits",
+      "Reviewers: explained findings and proposed edits."
+    ],
+    [
+      "Risk: assessments and actions",
+      "Risk teams: assessments and follow-up tasks."
+    ],
+    [
+      "Operations: records and change logs",
+      "Operations: records and change summaries."
+    ]
+  ],
+  "30": [
+    [
+      "Company research / Quote request materials",
+      "Company research / Bond and quote summaries."
+    ],
+    [
+      "Related documents / Version control",
+      "Maintain related documents / Track revisions."
+    ],
+    [
+      "Client update V1",
+      "Draft client update V1."
+    ],
+    [
+      "Review and revise to V2",
+      "Review and revise V1 to V2."
+    ]
+  ],
+  "31": [
+    [
+      "Research, inquiries, client materials, review, risk, documents and development",
+      "Research, trading support, client communications, content review, risk analysis, document processing and development."
+    ],
+    [
+      "LLMs work with language and content",
+      "LLMs interpret, compare and draft content."
+    ],
+    [
+      "Query, calculate and process files",
+      "Query systems, perform calculations and process files."
+    ],
+    [
+      "Model candidates include Qwen and DeepSeek, evaluated against specific tasks",
+      "Qwen and DeepSeek are candidates for evaluation on the firm’s tasks."
+    ]
+  ],
+  "32": [
+    [
+      "Task examples, source catalog and initial applications",
+      "Sample tasks, source inventory and initial applications."
+    ],
+    [
+      "Field definitions, query interfaces and file workflows",
+      "Data definitions, system query interfaces and document workflows."
+    ],
+    [
+      "Business tools, user guides and maintenance ownership",
+      "Business tools, user guides and named maintenance owners."
+    ]
+  ],
+  "33": [
+    [
+      "Baseline task",
+      "Establish a baseline."
+    ],
+    [
+      "Start with research and client communications",
+      "Initial focus: research and client communications."
+    ],
+    [
+      "Output adoption",
+      "Use of outputs."
+    ],
+    [
+      "Usage frequency / Whether employees continue to use the application",
+      "Repeat usage / Whether employees continue to use the application."
+    ],
+    [
+      "Task completion time / Time spent preparing, searching and delivering",
+      "Task completion time / Time from starting the task to completing the output."
+    ]
+  ]
+}

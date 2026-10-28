@@ -1,0 +1,8245 @@
+[
+  {
+    "slide": 1,
+    "title": [
+      {
+        "id": "6",
+        "name": "!!cover.title",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "5",
+        "name": "!!cover.kicker",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "10",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "2",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "3",
+        "name": "",
+        "kind": "pic"
+      },
+      {
+        "id": "7",
+        "name": "!!cover.line",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!cover.date",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!nav.next",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "4",
+        "name": "!!cover.white",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "title": [
+      {
+        "id": "30",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!scope.head0",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!scope.head1",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!scope.head2",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!scope.input0",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!scope.work0",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!scope.output0",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!scope.input1",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!scope.work1",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!scope.output1",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!scope.input2",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!scope.work2",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!scope.output2",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!scope.input3",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!scope.work3",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!scope.output3",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!scope.a.line",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!scope.a.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!scope.b.line",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!scope.b.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!scope.result",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 3,
+    "title": [
+      {
+        "id": "35",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.research.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!task.trade.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.client.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.review.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!task.risk.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!task.files.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!task.dev.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!map.route.title",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!map.route1",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!map.route1.text",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!map.route2",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!map.route2.text",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "title": [
+      {
+        "id": "47",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!research.question",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!research.evidence.1.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!research.evidence.1.label",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!research.evidence.1.text",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!research.evidence.2.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!research.evidence.2.label",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!research.evidence.2.text",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!research.evidence.3.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!research.evidence.3.label",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!research.evidence.3.text",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!research.manual.title",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!research.manual.0",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!research.manual.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!research.manual.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!research.manual.1",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!research.manual.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!research.manual.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!research.manual.2",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!research.manual.link2.line",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!research.manual.link2.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!research.manual.3",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!research.repetition",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!story.issuer.source.1",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!story.issuer.source.2",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!story.issuer.source.3",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "title": [
+      {
+        "id": "52",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!driver.llm.title",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!driver.root",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!driver.revenue.node",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!driver.revenue.factor",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!driver.revenue.branch.1",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!driver.revenue.branch.2",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!driver.revenue.branch.3.line",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!driver.revenue.branch.3.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!driver.revenue.link.line",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!driver.revenue.link.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!driver.cost.node",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!driver.cost.factor",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!driver.cost.branch.1",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!driver.cost.branch.2",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!driver.cost.branch.3.line",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!driver.cost.branch.3.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!driver.cost.link.line",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!driver.cost.link.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!driver.expense.node",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!driver.expense.factor",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!driver.expense.branch.1",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!driver.expense.branch.2",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!driver.expense.branch.3.line",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!driver.expense.branch.3.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!driver.expense.link.line",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!driver.expense.link.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!driver.tools",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!driver.result",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!story.header.issuer.qualifier",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "title": [
+      {
+        "id": "41",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!views.llm.title",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!views.reportA.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!views.reportA.label",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!views.reportA.text",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!views.reportB.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!views.reportB.label",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!views.reportB.text",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!views.method",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!views.method.role",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!views.method.body",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!views.result",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!views.consensus.title",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!views.consensus.body",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!views.difference.title",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!views.difference.body",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!views.user",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!story.header.issuer.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!story.issuer.views.reportA",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!story.issuer.views.reportB",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!story.issuer.analysis",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 7,
+    "title": [
+      {
+        "id": "48",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!elements.head",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!elements.left",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!elements.right",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!element.0.source",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!element.0.arrow.line",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!element.0.arrow.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!element.0.label",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!element.0.value",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!element.0.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!element.1.source",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!element.1.arrow.line",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!element.1.arrow.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!element.1.label",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!element.1.value",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!element.1.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!element.2.source",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!element.2.arrow.line",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!element.2.arrow.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!element.2.label",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!element.2.value",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!element.2.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!elements.stat",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!elements.user",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!story.header.issuer.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!story.issuer.source.row.0",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!story.issuer.analysis.row.0",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!story.issuer.source.row.1",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!story.issuer.analysis.row.1",
+        "kind": "sp"
+      },
+      {
+        "id": "56",
+        "name": "!!story.issuer.source.row.2",
+        "kind": "sp"
+      },
+      {
+        "id": "57",
+        "name": "!!story.issuer.analysis.row.2",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 8,
+    "title": [
+      {
+        "id": "57",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!research.question",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!research.evidence.1.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!research.evidence.1.label",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!research.evidence.1.text",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!research.evidence.2.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!research.evidence.2.label",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!research.evidence.2.text",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!research.evidence.3.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!research.evidence.3.label",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!research.evidence.3.text",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!research.llm",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!research.llm.role",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!research.llm.body",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!research.tool",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!research.tool.role",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!research.tool.body",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!research.material.bus",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!research.material.in0",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!research.material.in1",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!research.material.in2",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!research.evidence.in.line",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!research.evidence.in.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!research.call.line",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!research.call.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!research.return.line",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!research.return.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!research.toResult.line",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!research.toResult.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!research.result",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!research.result.title",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!research.result.text",
+        "kind": "sp"
+      },
+      {
+        "id": "56",
+        "name": "!!research.user",
+        "kind": "sp"
+      },
+      {
+        "id": "58",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "59",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "60",
+        "name": "!!story.issuer.source.group",
+        "kind": "sp"
+      },
+      {
+        "id": "61",
+        "name": "!!story.issuer.analysis",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 9,
+    "title": [
+      {
+        "id": "63",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!trade.task",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!trade.intent",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!trade.intent.role",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!trade.intent.body",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!trade.query",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!trade.query.role",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!trade.query.body",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!trade.inquire",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!trade.inquire.role",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!trade.inquire.body",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!trade.compare",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!trade.compare.role",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!trade.compare.body",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!trade.sequence0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!trade.sequence0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!trade.sequence0.label",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!trade.sequence1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!trade.sequence1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!trade.sequence1.label",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!trade.sequence2.line",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!trade.sequence2.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!trade.sequence2.label",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!trade.system",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!trade.system.role",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!trade.system.body",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!trade.data.line",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!trade.data.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!trade.data.label",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!trade.counterparty",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!trade.counterparty.role",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!trade.counterparty.body",
+        "kind": "sp"
+      },
+      {
+        "id": "56",
+        "name": "!!trade.ask.line",
+        "kind": "sp"
+      },
+      {
+        "id": "57",
+        "name": "!!trade.ask.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "58",
+        "name": "!!trade.quote.return.line",
+        "kind": "sp"
+      },
+      {
+        "id": "59",
+        "name": "!!trade.quote.return.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "60",
+        "name": "!!trade.ask.label",
+        "kind": "sp"
+      },
+      {
+        "id": "61",
+        "name": "!!trade.quote.label",
+        "kind": "sp"
+      },
+      {
+        "id": "62",
+        "name": "!!trade.repetition",
+        "kind": "sp"
+      },
+      {
+        "id": "64",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "65",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "66",
+        "name": "!!story.issuer.inquiry.subject",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 10,
+    "title": [
+      {
+        "id": "63",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!trade.southern",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!trade.case1.0",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!trade.case1.0.role",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!trade.case1.0.body",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!trade.case1.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!trade.case1.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!trade.case1.1",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!trade.case1.1.role",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!trade.case1.1.body",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!trade.case1.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!trade.case1.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!trade.case1.2",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!trade.case1.2.role",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!trade.case1.2.body",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!trade.case1.link2.line",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!trade.case1.link2.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!trade.case1.3",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!trade.case1.3.role",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!trade.case1.3.body",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!trade.case1.scope",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!trade.xq",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!trade.case2.0",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!trade.case2.0.role",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!trade.case2.0.body",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!trade.case2.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!trade.case2.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!trade.case2.1",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!trade.case2.1.role",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!trade.case2.1.body",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!trade.case2.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!trade.case2.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!trade.case2.2",
+        "kind": "sp"
+      },
+      {
+        "id": "56",
+        "name": "!!trade.case2.2.role",
+        "kind": "sp"
+      },
+      {
+        "id": "57",
+        "name": "!!trade.case2.2.body",
+        "kind": "sp"
+      },
+      {
+        "id": "58",
+        "name": "!!trade.case2.link2.line",
+        "kind": "sp"
+      },
+      {
+        "id": "59",
+        "name": "!!trade.case2.link2.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "60",
+        "name": "!!trade.case2.3",
+        "kind": "sp"
+      },
+      {
+        "id": "61",
+        "name": "!!trade.case2.3.role",
+        "kind": "sp"
+      },
+      {
+        "id": "62",
+        "name": "!!trade.case2.3.body",
+        "kind": "sp"
+      },
+      {
+        "id": "64",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "65",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "66",
+        "name": "!!story.header.issuer.qualifier",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 11,
+    "title": [
+      {
+        "id": "44",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!trade.intent",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!trade.llm.query",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!trade.llm.query.role",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!trade.llm.query.body",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!trade.system",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!trade.system.role",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!trade.system.body",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!trade.llm.quote",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!trade.llm.quote.role",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!trade.llm.quote.body",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!trade.query.call.line",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!trade.query.call.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!trade.quote.merge.line",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!trade.quote.merge.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!trade.chat.merge.line",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!trade.chat.merge.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!trade.result.title",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "",
+        "kind": "graphicFrame"
+      },
+      {
+        "id": "43",
+        "name": "!!trade.user",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!story.issuer.quote.table",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!story.issuer.holdings.data",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!story.issuer.quote.record",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 12,
+    "title": [
+      {
+        "id": "40",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!client.task",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!client.question.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!client.question.label",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!client.question.text",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!client.material0",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!client.material1",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!client.material2",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!client.manual.title",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!client.manual.0",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!client.manual.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!client.manual.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!client.manual.1",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!client.manual.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!client.manual.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!client.manual.2",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!client.repetition",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!story.client.prior.material",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 13,
+    "title": [
+      {
+        "id": "38",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!client.views.head",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!client.views.source.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!client.views.source.label",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!client.views.source.text",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!client.views.llm",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!client.views.llm.role",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!client.views.llm.body",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!client.views.input.line",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!client.views.input.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!client.views.result",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!client.views.result.title",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!client.views.result.text",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!client.views.user",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!story.client.view.summary",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 14,
+    "title": [
+      {
+        "id": "41",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!tender.question",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!tender.source.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!tender.source.label",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!tender.source.text",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!tender.llm",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!tender.llm.role",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!tender.llm.body",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!tender.answer",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!tender.answer.role",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!tender.answer.body",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!tender.input.line",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!tender.input.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!tender.output.line",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!tender.output.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!tender.user",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!tender.case",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!story.header.neutral.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!story.header.neutral.name",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!story.header.neutral.qualifier",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 15,
+    "title": [
+      {
+        "id": "62",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!client.input.customer",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!client.input.manager",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!client.input.product",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!client.input.link0.1",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!client.input.link0.2",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!client.input.link0.3.line",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!client.input.link0.3.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!client.input.link1.1",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!client.input.link1.2",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!client.input.link1.3.line",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!client.input.link1.3.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!client.input.link2.1",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!client.input.link2.2",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!client.input.link2.3.line",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!client.input.link2.3.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!client.llm",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!client.llm.role",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!client.llm.body",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!client.generate.line",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!client.generate.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!clientDoc",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!clientDoc.title",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!clientDoc.version",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!clientDoc.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!clientDoc.highlight.product",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!clientDoc.label.product",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!clientDoc.value.product",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!clientDoc.highlight.period",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!clientDoc.label.period",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!clientDoc.value.period",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!clientDoc.highlight.view",
+        "kind": "sp"
+      },
+      {
+        "id": "56",
+        "name": "!!clientDoc.label.view",
+        "kind": "sp"
+      },
+      {
+        "id": "57",
+        "name": "!!clientDoc.value.view",
+        "kind": "sp"
+      },
+      {
+        "id": "58",
+        "name": "!!clientDoc.highlight.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "59",
+        "name": "!!clientDoc.label.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "60",
+        "name": "!!clientDoc.value.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "61",
+        "name": "!!client.user",
+        "kind": "sp"
+      },
+      {
+        "id": "63",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "64",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "65",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "66",
+        "name": "!!story.client.document",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 16,
+    "title": [
+      {
+        "id": "47",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!clientDoc",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!clientDoc.title",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!clientDoc.version",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!clientDoc.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!clientDoc.highlight.product",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!clientDoc.label.product",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!clientDoc.value.product",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!clientDoc.highlight.period",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!clientDoc.label.period",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!clientDoc.value.period",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!clientDoc.highlight.view",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!clientDoc.label.view",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!clientDoc.value.view",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!clientDoc.highlight.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!clientDoc.label.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!clientDoc.value.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!review.reference.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!review.reference.label",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!review.reference.text",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!review.questions.title",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!review.questions",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!review.manual",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!story.client.document",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 17,
+    "title": [
+      {
+        "id": "63",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!clientDoc",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!clientDoc.title",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!clientDoc.version",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!clientDoc.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!clientDoc.highlight.product",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!clientDoc.label.product",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!clientDoc.value.product",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!clientDoc.highlight.period",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!clientDoc.label.period",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!clientDoc.value.period",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!clientDoc.highlight.view",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!clientDoc.label.view",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!clientDoc.value.view",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!clientDoc.highlight.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!clientDoc.label.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!clientDoc.value.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!comment.meta",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!comment.meta.role",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!comment.meta.body",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!comment.meta.lead.1",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!comment.meta.lead.2",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!comment.meta.lead.3.line",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!comment.meta.lead.3.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!comment.view",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!comment.view.role",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!comment.view.body",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!comment.view.lead.1",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!comment.view.lead.2",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!comment.view.lead.3.line",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!comment.view.lead.3.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!comment.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "56",
+        "name": "!!comment.risk.role",
+        "kind": "sp"
+      },
+      {
+        "id": "57",
+        "name": "!!comment.risk.body",
+        "kind": "sp"
+      },
+      {
+        "id": "58",
+        "name": "!!comment.risk.lead.1",
+        "kind": "sp"
+      },
+      {
+        "id": "59",
+        "name": "!!comment.risk.lead.2",
+        "kind": "sp"
+      },
+      {
+        "id": "60",
+        "name": "!!comment.risk.lead.3.line",
+        "kind": "sp"
+      },
+      {
+        "id": "61",
+        "name": "!!comment.risk.lead.3.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "62",
+        "name": "!!review.case",
+        "kind": "sp"
+      },
+      {
+        "id": "64",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "65",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "66",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "67",
+        "name": "!!story.client.document",
+        "kind": "sp"
+      },
+      {
+        "id": "9000",
+        "name": "!!business.review.umbrella",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 18,
+    "title": [
+      {
+        "id": "53",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!review.inputs",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!review.inputs.role",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!review.inputs.body",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!review.tool",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!review.tool.role",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!review.tool.body",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!review.llm",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!review.llm.role",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!review.llm.body",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!clientDoc",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!clientDoc.title",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!clientDoc.version",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!clientDoc.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!clientDoc.highlight.product",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!clientDoc.label.product",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!clientDoc.value.product",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!clientDoc.highlight.period",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!clientDoc.label.period",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!clientDoc.value.period",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!clientDoc.highlight.view",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!clientDoc.label.view",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!clientDoc.value.view",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!clientDoc.highlight.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!clientDoc.label.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!clientDoc.value.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!review.toRevision.line",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!review.toRevision.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!review.user",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "56",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "57",
+        "name": "!!story.client.document",
+        "kind": "sp"
+      },
+      {
+        "id": "58",
+        "name": "!!story.client.input.record",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 19,
+    "title": [
+      {
+        "id": "39",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!risk.mail.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!risk.mail.label",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!risk.mail.text",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!risk.manual.title",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!risk.question.0",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!risk.question.0.role",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!risk.question.0.body",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!risk.question.1",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!risk.question.1.role",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!risk.question.1.body",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!risk.question.2",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!risk.question.2.role",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!risk.question.2.body",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!risk.repetition",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!story.issuer.event.mail",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 20,
+    "title": [
+      {
+        "id": "40",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!risk.htf",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!risk.th",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!risk.mail.extract",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!risk.mail.extract.role",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!risk.mail.extract.body",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!risk.rules.tool",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!risk.rules.tool.role",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!risk.rules.tool.body",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!risk.rules.explain",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!risk.event.input.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!risk.event.input.label",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!risk.event.input.text",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!risk.event.llm",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!risk.event.llm.role",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!risk.event.llm.body",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!risk.event.user",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!story.header.issuer.qualifier",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 21,
+    "title": [
+      {
+        "id": "49",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!risk.evidence.mail.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!risk.evidence.mail.label",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!risk.evidence.mail.text",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!risk.evidence.system",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!risk.evidence.system.role",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!risk.evidence.system.body",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!risk.evidence.rule.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!risk.evidence.rule.label",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!risk.evidence.rule.text",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!risk.llm",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!risk.llm.role",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!risk.llm.body",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!risk.result",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!risk.result.role",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!risk.result.body",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!risk.material.bus",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!risk.material.in0",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!risk.material.in1",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!risk.material.in2",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!risk.toLLM.line",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!risk.toLLM.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!risk.toResult.line",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!risk.toResult.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!risk.user",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!story.issuer.event.mail",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!story.issuer.event.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!story.issuer.holdings.data",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!story.issuer.impact.report",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 22,
+    "title": [
+      {
+        "id": "50",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!ops.head0",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!ops.head1",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!ops.head2",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!ops.row0.0",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!ops.row0.1",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!ops.row0.2",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!ops.a0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!ops.a0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!ops.b0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!ops.b0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!ops.row1.0",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!ops.row1.1",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!ops.row1.2",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!ops.a1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!ops.a1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!ops.b1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!ops.b1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!ops.row2.0",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!ops.row2.1",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!ops.row2.2",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!ops.a2.line",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!ops.a2.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!ops.b2.line",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!ops.b2.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!ops.repetition",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!story.client.file.versions",
+        "kind": "sp"
+      },
+      {
+        "id": "55",
+        "name": "!!story.client.file.differences",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 23,
+    "title": [
+      {
+        "id": "41",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!ops.huaan",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!ops.form",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!ops.form.role",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!ops.form.body",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!ops.stat",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!ops.icbc",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!ops.formats",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!ops.compare.read",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!ops.compare.old.label",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!ops.compare.old.text",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!ops.compare.new.label",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!ops.compare.mark.driver",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!ops.compare.mark.watch",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!ops.compare.new.line1",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!ops.compare.new.line2",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!ops.compare.functions",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!story.client.version.v1",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!story.client.version.v2",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 24,
+    "title": [
+      {
+        "id": "47",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!ops.inputs",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!ops.inputs.role",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!ops.inputs.body",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!ops.tool",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!ops.tool.role",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!ops.tool.body",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!ops.llm",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!ops.llm.role",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!ops.llm.body",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!changeLog",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!changeLog.title",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!changeLog.object",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!changeLog.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!changeLog.driver.label",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!changeLog.driver.body",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!changeLog.watch.label",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!changeLog.watch.body",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!changeLog.sync.label",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!changeLog.sync.body",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!ops.explain.toLog.line",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!ops.explain.toLog.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!ops.user",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!story.client.input.record",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!story.client.change.explanation",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 25,
+    "title": [
+      {
+        "id": "40",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!dev.request",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!dev.requirements",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!dev.requirements.role",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!dev.requirements.body",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!dev.code",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!dev.code.role",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!dev.code.body",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!dev.debug",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!dev.debug.role",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!dev.debug.body",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!dev.req.code.line",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!dev.req.code.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!dev.code.debug.line",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!dev.code.debug.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!dev.workload",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!story.client.development.sample",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!story.client.development.sample.name",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 26,
+    "title": [
+      {
+        "id": "41",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!dev.case1",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!dev.case2",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!dev.requirements",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!dev.requirements.role",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!dev.requirements.body",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!dev.code",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!dev.code.role",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!dev.code.body",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!dev.test",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!dev.test.role",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!dev.test.body",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!dev.case.in.line",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!dev.case.in.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!dev.case.out.line",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!dev.case.out.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!dev.case.result",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!story.client.development.sample",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!story.client.development.sample.name",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 27,
+    "title": [
+      {
+        "id": "55",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!dev.request",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!dev.samples",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!dev.samples.role",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!dev.samples.body",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!dev.generate",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!dev.generate.role",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!dev.generate.body",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!dev.test",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!dev.test.role",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!dev.test.body",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!dev.deliver",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!dev.deliver.role",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!dev.deliver.body",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!dev.revise",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!dev.revise.role",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!dev.revise.body",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!dev.feedback",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!dev.feedback.role",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!dev.feedback.body",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!dev.toLLM.line",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!dev.toLLM.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!dev.toTest.line",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!dev.toTest.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!dev.testFeedback.line",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!dev.testFeedback.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!dev.testFeedback.label",
+        "kind": "sp"
+      },
+      {
+        "id": "51",
+        "name": "!!dev.toRevise.line",
+        "kind": "sp"
+      },
+      {
+        "id": "52",
+        "name": "!!dev.toRevise.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "53",
+        "name": "!!dev.toDelivery.line",
+        "kind": "sp"
+      },
+      {
+        "id": "54",
+        "name": "!!dev.toDelivery.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "56",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "57",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      },
+      {
+        "id": "58",
+        "name": "!!story.header.client.qualifier",
+        "kind": "sp"
+      },
+      {
+        "id": "59",
+        "name": "!!story.client.development.sample",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 28,
+    "title": [
+      {
+        "id": "51",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!other.0.title",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!other.0.company",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!other.0.flow.0",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!other.0.flow.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!other.0.flow.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!other.0.flow.1",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!other.0.flow.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!other.0.flow.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!other.0.flow.2",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!other.1.title",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!other.1.company",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!other.1.flow.0",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!other.1.flow.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!other.1.flow.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!other.1.flow.1",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!other.1.flow.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!other.1.flow.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!other.1.flow.2",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!other.2.title",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!other.2.company",
+        "kind": "sp"
+      },
+      {
+        "id": "44",
+        "name": "!!other.2.flow.0",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!other.2.flow.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!other.2.flow.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!other.2.flow.1",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!other.2.flow.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "49",
+        "name": "!!other.2.flow.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "50",
+        "name": "!!other.2.flow.2",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 29,
+    "title": [
+      {
+        "id": "32",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.research.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!task.trade.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.client.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.review.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!task.risk.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!task.files.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!task.dev.outcome",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!recommend.head",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!recommend.body",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 30,
+    "title": [
+      {
+        "id": "44",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!example",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!cross.head0",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!cross.head1",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!cross.head2",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!cross.issuer",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!cross.0.0",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!cross.0.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!cross.0.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!cross.0.1",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!cross.0.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!cross.0.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!cross.0.2",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!cross.1.0",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!cross.1.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!cross.1.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!cross.1.1",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!cross.1.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!cross.1.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!cross.1.2",
+        "kind": "sp"
+      },
+      {
+        "id": "43",
+        "name": "!!cross.client",
+        "kind": "sp"
+      },
+      {
+        "id": "45",
+        "name": "!!story.header.issuer.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "46",
+        "name": "!!story.header.issuer.name",
+        "kind": "sp"
+      },
+      {
+        "id": "47",
+        "name": "!!story.header.client.bar",
+        "kind": "sp"
+      },
+      {
+        "id": "48",
+        "name": "!!story.header.client.name",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 31,
+    "title": [
+      {
+        "id": "42",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!arch.entry",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!arch.a.line",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!arch.a.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!arch.workflow",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!arch.b.stem",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!arch.b.bus",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!arch.b.model.line",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!arch.b.model.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!arch.b.tools.line",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!arch.b.tools.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!arch.model",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!arch.model.role",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!arch.model.body",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!arch.tools",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!arch.tools.role",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!arch.tools.body",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!arch.data",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!arch.models",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 32,
+    "title": [
+      {
+        "id": "39",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!phase.0.number",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!phase.0.title",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!phase.0.roles",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!phase.0.outputs",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!phase.0.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!phase.1.number",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!phase.1.title",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!phase.1.roles",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!phase.1.outputs",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!phase.1.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!phase.2.number",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!phase.2.title",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!phase.2.roles",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!phase.2.outputs",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!phase.2.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "9001",
+        "name": "!!business.phase.teams",
+        "kind": "sp"
+      },
+      {
+        "id": "9002",
+        "name": "!!business.phase.outputs",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  },
+  {
+    "slide": 33,
+    "title": [
+      {
+        "id": "43",
+        "name": "!!heading",
+        "kind": "sp"
+      }
+    ],
+    "subtitle": [
+      {
+        "id": "2",
+        "name": "!!subtitle",
+        "kind": "sp"
+      }
+    ],
+    "body": [
+      {
+        "id": "4",
+        "name": "!!map.front",
+        "kind": "sp"
+      },
+      {
+        "id": "5",
+        "name": "!!nav.front",
+        "kind": "sp"
+      },
+      {
+        "id": "6",
+        "name": "!!task.research",
+        "kind": "sp"
+      },
+      {
+        "id": "7",
+        "name": "!!task.trade",
+        "kind": "sp"
+      },
+      {
+        "id": "8",
+        "name": "!!task.client",
+        "kind": "sp"
+      },
+      {
+        "id": "9",
+        "name": "!!map.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "10",
+        "name": "!!nav.middle",
+        "kind": "sp"
+      },
+      {
+        "id": "11",
+        "name": "!!task.review",
+        "kind": "sp"
+      },
+      {
+        "id": "12",
+        "name": "!!task.risk",
+        "kind": "sp"
+      },
+      {
+        "id": "13",
+        "name": "!!map.back",
+        "kind": "sp"
+      },
+      {
+        "id": "14",
+        "name": "!!nav.back",
+        "kind": "sp"
+      },
+      {
+        "id": "15",
+        "name": "!!task.files",
+        "kind": "sp"
+      },
+      {
+        "id": "16",
+        "name": "!!task.dev",
+        "kind": "sp"
+      },
+      {
+        "id": "17",
+        "name": "!!map.separator",
+        "kind": "sp"
+      },
+      {
+        "id": "18",
+        "name": "!!nav.home",
+        "kind": "sp"
+      },
+      {
+        "id": "19",
+        "name": "!!page",
+        "kind": "sp"
+      },
+      {
+        "id": "20",
+        "name": "!!nav.prev",
+        "kind": "sp"
+      },
+      {
+        "id": "21",
+        "name": "!!nav.next",
+        "kind": "sp"
+      },
+      {
+        "id": "22",
+        "name": "!!footer.rule",
+        "kind": "sp"
+      },
+      {
+        "id": "23",
+        "name": "!!source",
+        "kind": "sp"
+      },
+      {
+        "id": "24",
+        "name": "!!evaluation.main",
+        "kind": "sp"
+      },
+      {
+        "id": "25",
+        "name": "!!evaluation.flow.0",
+        "kind": "sp"
+      },
+      {
+        "id": "26",
+        "name": "!!evaluation.flow.link0.line",
+        "kind": "sp"
+      },
+      {
+        "id": "27",
+        "name": "!!evaluation.flow.link0.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "28",
+        "name": "!!evaluation.flow.1",
+        "kind": "sp"
+      },
+      {
+        "id": "29",
+        "name": "!!evaluation.flow.link1.line",
+        "kind": "sp"
+      },
+      {
+        "id": "30",
+        "name": "!!evaluation.flow.link1.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "31",
+        "name": "!!evaluation.flow.2",
+        "kind": "sp"
+      },
+      {
+        "id": "32",
+        "name": "!!evaluation.flow.link2.line",
+        "kind": "sp"
+      },
+      {
+        "id": "33",
+        "name": "!!evaluation.flow.link2.tip",
+        "kind": "sp"
+      },
+      {
+        "id": "34",
+        "name": "!!evaluation.flow.3",
+        "kind": "sp"
+      },
+      {
+        "id": "35",
+        "name": "!!evaluation.0.title",
+        "kind": "sp"
+      },
+      {
+        "id": "36",
+        "name": "!!evaluation.0.body",
+        "kind": "sp"
+      },
+      {
+        "id": "37",
+        "name": "!!evaluation.1.title",
+        "kind": "sp"
+      },
+      {
+        "id": "38",
+        "name": "!!evaluation.1.body",
+        "kind": "sp"
+      },
+      {
+        "id": "39",
+        "name": "!!evaluation.2.title",
+        "kind": "sp"
+      },
+      {
+        "id": "40",
+        "name": "!!evaluation.2.body",
+        "kind": "sp"
+      },
+      {
+        "id": "41",
+        "name": "!!evaluation.3.title",
+        "kind": "sp"
+      },
+      {
+        "id": "42",
+        "name": "!!evaluation.3.body",
+        "kind": "sp"
+      }
+    ],
+    "exclude_from_body_transfer": [
+      {
+        "id": "3",
+        "name": "!!heading.rule",
+        "kind": "sp"
+      }
+    ]
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "slide": 1,
+    "composition": "Minimal cover with full original landscape artwork",
+    "reference_lesson": "Morgan Stanley strategic-update cover: use whitespace and a simple cover hierarchy.",
+    "focal_point": "Minimal cover with full original landscape artwork",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 2,
+    "composition": "Input / LLM work / output overview with a dominant center column",
+    "reference_lesson": "Morgan Stanley09: shared header baseline and aligned evidence columns.",
+    "focal_point": "Input / LLM work / output overview with a dominant center column",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 3,
+    "composition": "Seven-task editorial map in three open office columns",
+    "reference_lesson": "Morgan Stanley07: equal office columns and clear separation of hierarchy.",
+    "focal_point": "Seven-task editorial map in three open office columns",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 4,
+    "composition": "Three research evidence columns above the analyst preparation sequence",
+    "reference_lesson": "Morgan Stanley09: aligned evidence, with preparation work separated below.",
+    "focal_point": "Three research evidence columns above the analyst preparation sequence",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 5,
+    "composition": "Earnings-driver tree with a separate execution-tools lane",
+    "reference_lesson": "Morgan Stanley06: one dominant outcome with a structured driver tree.",
+    "focal_point": "Earnings-driver tree with a separate execution-tools lane",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 6,
+    "composition": "Paired research hypotheses with a separated synthesis",
+    "reference_lesson": "Morgan Stanley09: common research question, paired hypotheses and separate synthesis.",
+    "focal_point": "Paired research hypotheses with a separated synthesis",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 7,
+    "composition": "Source-to-template mapping with one attributed performance callout",
+    "reference_lesson": "Morgan Stanley09: row alignment connects evidence to output fields.",
+    "focal_point": "Source-to-template mapping with one attributed performance callout",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 8,
+    "composition": "Evidence / LLM analysis / calculation, with full-width output",
+    "reference_lesson": "BlackRock22: show the actual output next to the method; give the summary its own visual weight.",
+    "focal_point": "Research summary produced from evidence and calculations",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 9,
+    "composition": "Four open trading stages with a separate systems/counterparty support lane",
+    "reference_lesson": "BlackRock36: readable sequence with consistent stage positions.",
+    "focal_point": "Four open trading stages with a separate systems/counterparty support lane",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 10,
+    "composition": "Two separate peer workflows with aligned four-stage lanes",
+    "reference_lesson": "Morgan Stanley09: aligned lanes distinguish two peer examples.",
+    "focal_point": "Two separate peer workflows with aligned four-stage lanes",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 11,
+    "composition": "Query criteria and supplied quote into a native result table",
+    "reference_lesson": "BlackRock22: output table is concrete evidence, with method above.",
+    "focal_point": "Editable bond and quote result table",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 12,
+    "composition": "Client questions and source material above a three-step preparation sequence",
+    "reference_lesson": "Morgan Stanley07: generous columns separate questions from inputs.",
+    "focal_point": "Client questions and source material above a three-step preparation sequence",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 13,
+    "composition": "Source quotation and LLM method with an emphasized client-facing summary",
+    "reference_lesson": "BlackRock22: tangible client-facing output beside the producing method.",
+    "focal_point": "Source quotation and LLM method with an emphasized client-facing summary",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 14,
+    "composition": "Reference material to LLM method to a traceable RFP response",
+    "reference_lesson": "BlackRock22: a traceable output document anchors the workflow.",
+    "focal_point": "Reference material to LLM method to a traceable RFP response",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 15,
+    "composition": "Client inputs and explicit LLM drafting beside the complete V1 document",
+    "reference_lesson": "BlackRock22: document is the focal point; method remains explicit.",
+    "focal_point": "Client inputs and explicit LLM drafting beside the complete V1 document",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 16,
+    "composition": "V1 document contrasted with current-source uncertainty and review criteria",
+    "reference_lesson": "Morgan Stanley09: comparison evidence stays aligned and separate.",
+    "focal_point": "V1 document contrasted with current-source uncertainty and review criteria",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 17,
+    "composition": "Reviewed client document with three aligned LLM comments",
+    "reference_lesson": "BlackRock22: actual document and explanatory comments share a coherent reading order.",
+    "focal_point": "Review comments tied to the client document",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 18,
+    "composition": "Three-stage review method beside the complete revised client document",
+    "reference_lesson": "BlackRock22: real output receives more area than the method.",
+    "focal_point": "Complete revised V2 client update",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 19,
+    "composition": "Issuer risk alert above three evidence questions",
+    "reference_lesson": "Morgan Stanley06: alert has primary visual weight; questions form subordinate columns.",
+    "focal_point": "Issuer risk alert above three evidence questions",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 20,
+    "composition": "Two peer approaches aligned by risk activity",
+    "reference_lesson": "Morgan Stanley09: two aligned peer evidence columns.",
+    "focal_point": "Two peer approaches aligned by risk activity",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 21,
+    "composition": "Issuer evidence into an explicit LLM assessment and follow-up document",
+    "reference_lesson": "BlackRock22: evidence and explicit LLM tasks lead to a concrete output.",
+    "focal_point": "Issuer evidence into an explicit LLM assessment and follow-up document",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 22,
+    "composition": "Open three-column operations matrix with one highlighted recurring example",
+    "reference_lesson": "Morgan Stanley09: aligned rows and restrained rules replace repeated panels.",
+    "focal_point": "Document-to-task-to-output relationships",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 23,
+    "composition": "Automated-entry evidence alongside a large V1/V2 document comparison",
+    "reference_lesson": "BlackRock22: a large output comparison makes the evidence tangible.",
+    "focal_point": "Automated-entry evidence alongside a large V1/V2 document comparison",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 24,
+    "composition": "Version-analysis method beside a tangible change-summary document",
+    "reference_lesson": "BlackRock22: change-summary artifact is central to the method.",
+    "focal_point": "Version-analysis method beside a tangible change-summary document",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 25,
+    "composition": "Three open development stages with explicit requirements, code and testing",
+    "reference_lesson": "BlackRock36: parallel stage alignment and clear sequence.",
+    "focal_point": "Three open development stages with explicit requirements, code and testing",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 26,
+    "composition": "Three open development stages with explicit requirements, code and testing",
+    "reference_lesson": "BlackRock36: stage labels and actions have distinct visual levels.",
+    "focal_point": "Three open development stages with explicit requirements, code and testing",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 27,
+    "composition": "Six-stage code-and-test feedback loop in a restrained serpentine flow",
+    "reference_lesson": "BlackRock36: sequence and feedback direction remain easy to follow.",
+    "focal_point": "Six-stage code-and-test feedback loop in a restrained serpentine flow",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 28,
+    "composition": "Three compact application lanes separated by subject headings",
+    "reference_lesson": "Morgan Stanley09: repeated subject lanes with consistent evidence columns.",
+    "focal_point": "Three compact application lanes separated by subject headings",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 29,
+    "composition": "Seven-task editorial map in three open office columns",
+    "reference_lesson": "Morgan Stanley07: three-column office hierarchy.",
+    "focal_point": "Seven-task editorial map in three open office columns",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 30,
+    "composition": "Two colored information lanes across the three offices",
+    "reference_lesson": "Morgan Stanley07: shared office grid, with two information lanes.",
+    "focal_point": "Two colored information lanes across the three offices",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 31,
+    "composition": "Shared-capability hierarchy with distinct LLM and execution responsibilities",
+    "reference_lesson": "Morgan Stanley07: a clear hierarchy separates common platform from component roles.",
+    "focal_point": "Shared-capability hierarchy with distinct LLM and execution responsibilities",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 32,
+    "composition": "Three-stage implementation timeline with aligned teams and deliverables",
+    "reference_lesson": "BlackRock36: generous timeline, large stage numbers and aligned detail rows.",
+    "focal_point": "Three implementation stages",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  },
+  {
+    "slide": 33,
+    "composition": "Evaluation cycle above four concrete outcome measures",
+    "reference_lesson": "BlackRock36: sequence is separated from the outcome-measure section.",
+    "focal_point": "Evaluation cycle above four concrete outcome measures",
+    "editability": "Native text/shapes/connectors; native table on11; original image on1",
+    "typography": "Arial; point sizes are design choices, not corporate requirements"
+  }
+]

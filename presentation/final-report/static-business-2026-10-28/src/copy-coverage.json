@@ -1,0 +1,4884 @@
+[
+  {
+    "slide": 1,
+    "reused": [
+      {
+        "key": "!!cover.date",
+        "text": "October 2026",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cover.kicker",
+        "text": "Industry examples and proposed applications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cover.title",
+        "text": "LLMs in Asset Management",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.next",
+        "text": "Start"
+      }
+    ],
+    "replaced_legacy_locator": [],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 2,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Scope of proposed LLM applications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.head0",
+        "text": "Inputs",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.head1",
+        "text": "Work supported by LLMs",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.head2",
+        "text": "Outputs",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.input0",
+        "text": "Documents",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.input1",
+        "text": "Data",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.input2",
+        "text": "Messages",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.input3",
+        "text": "Business requests",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.output0",
+        "text": "Company analysis",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.output1",
+        "text": "Quote requests\nand comparisons",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.output2",
+        "text": "Client materials",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.output3",
+        "text": "Business tools",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.result",
+        "text": "Proposed applications address specific employee tasks",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.work0",
+        "text": "Retrieve and organize",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.work1",
+        "text": "Calculate and explain",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.work2",
+        "text": "Query systems and run tasks",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!scope.work3",
+        "text": "Draft documents and code",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Application overview",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "2 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      }
+    ],
+    "replaced_legacy_locator": [],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 3,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Seven application areas across the firm",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!map.route.title",
+        "text": "Two running examples",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!map.route1.text",
+        "text": "Company A: research, trading, risk and operations",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!map.route2.text",
+        "text": "Quarterly client update: drafting, review and change tracking",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!nav.front",
+        "text": "Front office",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Application overview",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.client",
+        "text": "3  Client materials",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.client.outcome",
+        "text": "Draft client communications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.dev",
+        "text": "7  Tool development",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.dev.outcome",
+        "text": "Develop internal\nbusiness tools",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.files",
+        "text": "6  Document processing",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.files.outcome",
+        "text": "Extract and maintain\ndocument records",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.research",
+        "text": "1  Research",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.research.outcome",
+        "text": "Analyze company information",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.review",
+        "text": "4  Content review",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.review.outcome",
+        "text": "Check claims against\nsource material",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.risk",
+        "text": "5  Risk analysis",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.risk.outcome",
+        "text": "Link events to exposure",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.trade",
+        "text": "2  Trading support",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.trade.outcome",
+        "text": "Prepare quote requests",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "3 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      }
+    ],
+    "replaced_legacy_locator": [],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 4,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Company research: assessing revenue growth",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.1.label",
+        "text": "[1] Prior / current quarter",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.1.text",
+        "text": "Revenue (RMB m): 100 / 110\nSales volume (m units):\n1.0 / 1.1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.2.label",
+        "text": "[2] Meeting notes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.2.text",
+        "text": "Restocking lifted shipments. Assess whether it will continue.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.3.label",
+        "text": "[3] Two research reports",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.3.text",
+        "text": "Report A: demand recovery can sustain growth.\nReport B: continued restocking is uncertain.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.manual.0",
+        "text": "Find relevant sources",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.manual.1",
+        "text": "Extract data and\ncalculate changes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.manual.2",
+        "text": "Compare\nresearch views",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.manual.3",
+        "text": "Document the\nreasoning",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.manual.title",
+        "text": "The analyst’s preparation work",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.question",
+        "text": "What drove revenue growth, and is it sustainable?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.repetition",
+        "text": "Repeated searching, extraction and checking take time away from analysis",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Investment research  /  Current workflow",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "4 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 5,
+    "reused": [
+      {
+        "key": "!!driver.cost.factor",
+        "text": "Materials and production costs",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!driver.cost.node",
+        "text": "Cost of sales",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!driver.expense.factor",
+        "text": "Distribution and selling expenses",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!driver.expense.node",
+        "text": "Expenses",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!driver.llm.title",
+        "text": "The LLM structures the earnings analysis. Tools retrieve data and perform calculations",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!driver.result",
+        "text": "The LLM links operating drivers to earnings changes.\nAnalysts assess the quality of growth.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!driver.revenue.factor",
+        "text": "Sales volume and selling price",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!driver.revenue.node",
+        "text": "Revenue",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!driver.root",
+        "text": "Change in\nnet profit",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!driver.tools",
+        "text": "Data\nfeeds\nand\ncalculation\ntools",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Tianhong: analyzing earnings drivers",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Tianhong / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Investment research  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "5 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      },
+      {
+        "key": "!!story.header.issuer.qualifier",
+        "text": "Reference"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 6,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Fullgoal: comparing research views",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Fullgoal / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Investment research  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.consensus.body",
+        "text": "Higher volumes supported revenue",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.consensus.title",
+        "text": "Shared finding",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.difference.body",
+        "text": "Is volume growth sustainable?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.difference.title",
+        "text": "Unresolved question",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.llm.title",
+        "text": "The LLM compares reports on a common research question",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.method.body",
+        "text": "Select relevant reports\nSummarize by topic\nConsolidate and review summaries",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.method.role",
+        "text": "Fullgoal’s LLM workflow",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.reportA.label",
+        "text": "Report A",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.reportA.text",
+        "text": "Higher volumes lifted revenue.\nDemand recovery can sustain growth.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.reportB.label",
+        "text": "Report B",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.reportB.text",
+        "text": "Channel restocking lifted shipments. Continued restocking remains uncertain.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!views.user",
+        "text": "Analysts investigate the disagreement, with links back to the underlying reports",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "6 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      },
+      {
+        "key": "!!story.header.issuer.qualifier",
+        "text": "Reference"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 7,
+    "reused": [
+      {
+        "key": "!!element.0.label",
+        "text": "Operating performance",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!element.0.source",
+        "text": "Financials and calculations",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!element.0.value",
+        "text": "Sales volume up 10%",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!element.1.label",
+        "text": "Business driver",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!element.1.source",
+        "text": "Meeting notes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!element.1.value",
+        "text": "Restocking lifted shipments",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!element.2.label",
+        "text": "Open question",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!element.2.source",
+        "text": "Research reports",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!element.2.value",
+        "text": "Will restocking continue?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!elements.head",
+        "text": "The LLM populates research templates from source material.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!elements.left",
+        "text": "Source materials",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!elements.right",
+        "text": "Illustrative research template",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!elements.stat",
+        "text": "Research preparation efficiency: approximately 50% higher\nReported by Zhong Ou, as of May 2026",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!elements.user",
+        "text": "Analysts check the entries and sources, then add their own assessment",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Zhong Ou: populating research templates",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Zhong Ou / Nanfang Plus and forum coverage",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Investment research  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "7 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      },
+      {
+        "key": "!!story.header.issuer.qualifier",
+        "text": "Reference"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 8,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Proposed application: company research",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.1.label",
+        "text": "[1] Prior / current quarter",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.1.text",
+        "text": "Revenue (RMB m): 100 / 110\nSales volume (m units):\n1.0 / 1.1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.2.label",
+        "text": "[2] Meeting notes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.2.text",
+        "text": "Restocking lifted shipments",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.3.label",
+        "text": "[3] Research reports",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.evidence.3.text",
+        "text": "A: demand recovery can sustain growth\nB: continued restocking is uncertain",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.llm.body",
+        "text": "Compare revenue and volume\nLink operating drivers to results\nCompare the research views",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.llm.role",
+        "text": "LLM analyzes the sources",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.question",
+        "text": "What drove revenue growth this quarter, and is it sustainable?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.result.text",
+        "text": "Sales volume drove revenue growth [1]. Restocking supported shipments [2], but research views differ on the sustainability of growth [3]. Monitor demand and input costs.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.result.title",
+        "text": "Draft research summary",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.tool.body",
+        "text": "Revenue: +10%\nSales volume: +10%\nAverage selling price: unchanged",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.tool.role",
+        "text": "Calculation tools return",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!research.user",
+        "text": "The analyst checks the sources, tests the restocking thesis and forms a view",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Tianhong; Fullgoal; Zhong Ou; Aegon-Industrial",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Investment research  /  Proposed application",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "8 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 9,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Preparing a bond quote request",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Trading support  /  Current workflow",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.compare.body",
+        "text": "Trader\nSummarize bonds and quotes\nDiscuss next steps with\nthe portfolio manager",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.compare.role",
+        "text": "4  Summarize quotes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.counterparty.body",
+        "text": "Returns quotes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.counterparty.role",
+        "text": "Counterparty",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.inquire.body",
+        "text": "Trader\nSpecify bonds and buying interest\nRequest offer prices and available size\nReceive quotes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.inquire.role",
+        "text": "3  Request quotes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.intent.body",
+        "text": "Portfolio manager\nCompany A bonds\nMaturing within two years\nCheck holdings\nCollect offer quotes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.intent.role",
+        "text": "1  Define the request",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.query.body",
+        "text": "Trader\nFind bonds and holdings\nRecord the data timestamp",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.query.role",
+        "text": "2  Screen bonds\nand check holdings",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.repetition",
+        "text": "Repeated work: entering filters, switching systems and copying quote messages",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.system.body",
+        "text": "Query results",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.system.role",
+        "text": "Market and\nholdings systems",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.task",
+        "text": "Task: request offers for Company A bonds maturing within two years",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "9 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [
+      {
+        "key": "!!trade.sequence0.label",
+        "text": "Request",
+        "reason": "Action remains explicit in workflow text; duplicate connector caption removed."
+      },
+      {
+        "key": "!!trade.sequence1.label",
+        "text": "Bonds",
+        "reason": "Action remains explicit in workflow text; duplicate connector caption removed."
+      },
+      {
+        "key": "!!trade.sequence2.label",
+        "text": "Quotes",
+        "reason": "Action remains explicit in workflow text; duplicate connector caption removed."
+      },
+      {
+        "key": "!!trade.data.label",
+        "text": "Query results",
+        "reason": "Action remains explicit in workflow text; duplicate connector caption removed."
+      },
+      {
+        "key": "!!trade.ask.label",
+        "text": "Quote request",
+        "reason": "Action remains explicit in workflow text; duplicate connector caption removed."
+      },
+      {
+        "key": "!!trade.quote.label",
+        "text": "Quote",
+        "reason": "Action remains explicit in workflow text; duplicate connector caption removed."
+      }
+    ],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 10,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Trading support at Southern and Aegon-Industrial",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Southern Asset Management; Aegon-Industrial / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Trading support  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case1.0.body",
+        "text": "Specify bond criteria, a query or an instruction.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case1.0.role",
+        "text": "User request",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case1.1.body",
+        "text": "Interpret the request\nSelect required tools",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case1.1.role",
+        "text": "LLM interprets",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case1.2.body",
+        "text": "Run the task\nReturn the result",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case1.2.role",
+        "text": "Systems execute",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case1.3.body",
+        "text": "Review the data\nConfirm next steps",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case1.3.role",
+        "text": "User reviews results",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case1.scope",
+        "text": "Xiaonan supports queries, bond screening, trading instructions and notifications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case2.0.body",
+        "text": "Bond, side,\nprice and size",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case2.0.role",
+        "text": "Qtrade records",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case2.1.body",
+        "text": "Extract bond, side,\nprice and size",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case2.1.role",
+        "text": "AI extracts details",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case2.2.body",
+        "text": "Match the quote request\nSend details to the\ntrading system",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case2.2.role",
+        "text": "Match and route",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case2.3.body",
+        "text": "Submits the\ninstruction",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.case2.3.role",
+        "text": "Portfolio manager",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.southern",
+        "text": "Southern Asset Management: Xiaonan trading assistant",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.xq",
+        "text": "Aegon-Industrial: capturing trade details from Qtrade records",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "10 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      },
+      {
+        "key": "!!story.header.issuer.qualifier",
+        "text": "Reference"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 11,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Proposed application: bond quote preparation",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Southern Asset Management; Aegon-Industrial / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Trading support  /  Proposed application",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.intent",
+        "text": "Portfolio manager: check holdings and collect offers for Company A bonds maturing within two years",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.llm.query.body",
+        "text": "Issuer: Company A\nSide: buy\nMaturity: within two years\nQuery: bonds and holdings",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.llm.query.role",
+        "text": "LLM identifies\nquery criteria",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.llm.quote.body",
+        "text": "The trader provides this quote:\nBond A: clean price 100.20\nRMB 20m face value available\nExtract bond, price, face value",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.llm.quote.role",
+        "text": "LLM extracts supplied\nquote details",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.result.title",
+        "text": "LLM prepares a bond and quote summary",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.system.body",
+        "text": "Bond A (Company A)\nTime to maturity: 1.2 years\nCurrent holding:\nRMB 20m face value",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.system.role",
+        "text": "Systems run the query",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!trade.user",
+        "text": "The trader verifies quote sources, timestamps and amounts.\nThe portfolio manager reviews the summary with the trader.",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "11 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 12,
+    "reused": [
+      {
+        "key": "!!client.manual.0",
+        "text": "Find the relevant views",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.manual.1",
+        "text": "Confirm the fund\nand reporting period",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.manual.2",
+        "text": "Adapt the content\nto the client’s questions",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.manual.title",
+        "text": "Work repeated for each update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.material0",
+        "text": "Portfolio managers’\ninvestment views",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.material1",
+        "text": "Product documentation",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.material2",
+        "text": "Previous client communications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.question.label",
+        "text": "The client’s questions",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.question.text",
+        "text": "What changed in Company A’s business this quarter?\nWhat should we watch next?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.repetition",
+        "text": "The same source material supports client updates, product Q&A and RFP responses.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.task",
+        "text": "A client relationship manager prepares a quarterly update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Preparing a quarterly client update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Client communications  /  Current workflow",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "12 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Preparation"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 13,
+    "reused": [
+      {
+        "key": "!!client.views.head",
+        "text": "Tianhong uses LLMs to consolidate recent investment views by portfolio manager or product.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.views.llm.body",
+        "text": "Find the relevant views\nRemove duplication\nWrite a clear client explanation",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.views.llm.role",
+        "text": "LLM prepares a summary",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.views.result.text",
+        "text": "Higher sales volume supported revenue growth.\nRaw-material costs remain a focus.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.views.result.title",
+        "text": "Summary for client-facing teams",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.views.source.label",
+        "text": "Presentations, commentary and reports",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.views.source.text",
+        "text": "“Company A’s revenue rose as sales volumes increased.\nWe are watching raw-material costs.”",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.views.user",
+        "text": "Tianhong also produces weekly sector views and daily market commentary",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Tianhong: investment views and market commentary",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Tianhong / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Client communications  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "13 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Views"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 14,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "ICBCUBS: drafting institutional RFP responses",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: ICBCUBS / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Client communications  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!tender.answer.body",
+        "text": "Analysts conduct company research.\nPortfolio managers discuss the resulting investment views.\nSource: internal research process description.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!tender.answer.role",
+        "text": "Draft RFP response",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!tender.case",
+        "text": "ICBCUBS FundGPT supports knowledge-base maintenance, question analysis, review and RFP drafting.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!tender.llm.body",
+        "text": "Retrieve the process description\nIdentify responsibilities\nDraft the response",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!tender.llm.role",
+        "text": "LLM retrieves sources and drafts responses",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!tender.question",
+        "text": "Institutional client: how is your investment research process organized?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!tender.source.label",
+        "text": "Internal reference material",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!tender.source.text",
+        "text": "Research process description:\nAnalysts prepare company research.\nPortfolio managers discuss the view.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!tender.user",
+        "text": "The business team checks the answer and source, then addresses the client’s specific requirements",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "14 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.neutral.name",
+        "text": "RFP response"
+      },
+      {
+        "key": "!!story.header.neutral.qualifier",
+        "text": "Separate case"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 15,
+    "reused": [
+      {
+        "key": "!!client.input.customer",
+        "text": "Client question\nWhat matters this quarter?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.input.manager",
+        "text": "Existing investment view\nSales volume and input costs",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.input.product",
+        "text": "Product information\nQ2 2026, V1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.llm.body",
+        "text": "Select relevant source content\nDraft the client update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.llm.role",
+        "text": "LLM drafts",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!client.user",
+        "text": "The client team checks the investment view and submits V1 for review.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.period",
+        "text": "Source version",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.product",
+        "text": "Fund name",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.risk",
+        "text": "Risk disclosure",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.view",
+        "text": "Investment view",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.title",
+        "text": "Quarterly client update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.period",
+        "text": "Q2 2026 product information, V1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.product",
+        "text": "Product A Select",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.risk",
+        "text": "Investing involves risk.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.view",
+        "text": "Higher sales volumes drove Company A’s revenue growth.\nWe are monitoring raw-material costs.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.version",
+        "text": "V1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Proposed application: drafting client updates",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Tianhong; ICBCUBS; China Merchants Fund",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Front office  /  Client communications  /  Proposed application",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "15 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Draft V1"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 16,
+    "reused": [
+      {
+        "key": "!!clientDoc.label.period",
+        "text": "Source\nversion",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.product",
+        "text": "Fund name",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.risk",
+        "text": "Risk\ndisclosure",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.view",
+        "text": "Investment view",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.title",
+        "text": "Quarterly client update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.period",
+        "text": "Q2 2026 product information, V1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.product",
+        "text": "Product A Select",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.risk",
+        "text": "Investing involves risk.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.view",
+        "text": "Higher sales volumes drove Company A’s revenue growth.\nWe are monitoring raw-material costs.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.version",
+        "text": "V1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Reviewing client communications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.manual",
+        "text": "Check the investment view, fund details and risk disclosure against current sources.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.questions",
+        "text": "Does the draft explain the growth driver?\nDoes it preserve the source’s uncertainty?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.questions.title",
+        "text": "Review criteria",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.reference.label",
+        "text": "Current portfolio manager presentation",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.reference.text",
+        "text": "“Channel restocking lifted sales volumes.\nWe are monitoring whether it will continue.”",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Middle office  /  Client-material review  /  Current workflow",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "16 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Review V1"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 17,
+    "reused": [
+      {
+        "key": "!!business.review.umbrella",
+        "text": "LLM-assisted review",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.period",
+        "text": "Source\nversion",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.product",
+        "text": "Fund name",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.risk",
+        "text": "Risk\ndisclosure",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.view",
+        "text": "Investment view",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.title",
+        "text": "Quarterly client update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.period",
+        "text": "Q2 2026 product information, V1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.product",
+        "text": "Product A Select",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.risk",
+        "text": "Investing involves risk.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.view",
+        "text": "Higher sales volumes drove Company A’s revenue growth.\nWe are monitoring raw-material costs.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.version",
+        "text": "V1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!comment.meta.body",
+        "text": "Use the full fund name and current reporting period.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!comment.meta.role",
+        "text": "Fund details",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!comment.risk.body",
+        "text": "State that the fund’s NAV can fluctuate and investors may lose capital.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!comment.risk.role",
+        "text": "Risk disclosure",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!comment.view.body",
+        "text": "Identify channel restocking as the sales volume driver. Retain uncertainty over its continuation.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!comment.view.role",
+        "text": "Investment rationale",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Penghua and Yingmi: reviewing client materials",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.case",
+        "text": "Penghua suggests edits based on review rules.\nYingmi supports initial checks, revision and repeat review.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Penghua / AMAC; Yingmi",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Middle office  /  Client-material review  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "17 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Review V1"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 18,
+    "reused": [
+      {
+        "key": "!!clientDoc.label.period",
+        "text": "Source version",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.product",
+        "text": "Fund name",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.risk",
+        "text": "Risk disclosure",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.label.view",
+        "text": "Investment view",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.title",
+        "text": "Quarterly client update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.period",
+        "text": "Q3 2026 product information, V2",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.product",
+        "text": "Product A Select Mixed-Asset Fund",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.risk",
+        "text": "The fund’s NAV fluctuates with market conditions.\nCapital is at risk.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.value.view",
+        "text": "Channel restocking supported Company A’s sales volume growth.\nWe are monitoring whether restocking continues, alongside raw-material costs.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!clientDoc.version",
+        "text": "V2",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Proposed application: reviewing client updates",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.inputs.body",
+        "text": "Client update V1 and current product sources\nPresentation: restocking supported sales volume growth.\nContinued restocking remains uncertain.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.inputs.role",
+        "text": "Author supplies current sources",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.llm.body",
+        "text": "Add the sales volume driver: channel restocking\nRetain uncertainty over continued restocking\nUse the product’s specific risk wording",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.llm.role",
+        "text": "LLM explains issues\nand proposes revisions",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.tool.body",
+        "text": "Match fund names, reporting periods\nand source passages",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.tool.role",
+        "text": "Document tools locate\nrelevant information",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!review.user",
+        "text": "The author approves the edits. The reviewer checks the sources, rationale and revised update.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Penghua / AMAC; Yingmi",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Middle office  /  Client-material review  /  Proposed application",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "18 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Revised V2"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 19,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Investigating a risk alert",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.mail.label",
+        "text": "A risk analyst receives an alert",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.mail.text",
+        "text": "Company A’s credit rating is on watch.\nOperating cash flow is under pressure.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.manual.title",
+        "text": "The risk team needs to establish",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.question.0.body",
+        "text": "Query holdings\nIdentify exposed funds\nand holding amounts",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.question.0.role",
+        "text": "Which funds are exposed?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.question.1.body",
+        "text": "Review contracts and internal policies\nIdentify applicable clauses",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.question.1.role",
+        "text": "Which rules apply?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.question.2.body",
+        "text": "Review issuer research\nPrepare an event assessment",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.question.2.role",
+        "text": "What is the impact?",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.repetition",
+        "text": "Each alert requires searches across systems and documents for the same issuer.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Middle office  /  Risk analysis  /  Current workflow",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "19 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 20,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Risk analysis at China Universal and Tianhong",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.event.input.label",
+        "text": "Event information",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.event.input.text",
+        "text": "Event details, comparable past events,\nindustry relationships and market sentiment",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.event.llm.body",
+        "text": "Compare the event with past cases\nOutline potential impacts and follow-up actions",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.event.llm.role",
+        "text": "LLM drafts an event assessment",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.event.user",
+        "text": "Investment and risk teams discuss the implications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.htf",
+        "text": "China Universal",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.mail.extract.body",
+        "text": "Extract the relevant risk information\nRoute it to the risk team’s workspace",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.mail.extract.role",
+        "text": "LLM reads custodian risk alerts",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.rules.explain",
+        "text": "The LLM explains the basis for a rule trigger using the source text.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.rules.tool.body",
+        "text": "Map risk rules to regulations,\ninternal controls and contract terms",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.rules.tool.role",
+        "text": "System links monitoring rules\nto source documents",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.th",
+        "text": "Tianhong",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: China Universal; Tianhong / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Middle office  /  Risk analysis  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "20 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      },
+      {
+        "key": "!!story.header.issuer.qualifier",
+        "text": "Reference"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 21,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Proposed application: credit-risk assessment",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.evidence.mail.label",
+        "text": "Original alert",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.evidence.mail.text",
+        "text": "Company A: credit rating on watch.\nOperating cash flow is under pressure.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.evidence.rule.label",
+        "text": "Monitoring requirement",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.evidence.rule.text",
+        "text": "Update issuer research following a credit event.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.evidence.system.body",
+        "text": "Product A holds\nCompany A bonds\nFace value: RMB 20m",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.evidence.system.role",
+        "text": "Current holdings",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.llm.body",
+        "text": "Identify the issuer\nMap fund exposures\nReview clauses\nand issuer research\nDraft the assessment",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.llm.role",
+        "text": "LLM links the evidence",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.result.body",
+        "text": "Cash-flow pressure affects the issuer’s capacity to service debt.\nReview the credit assessment.\nAffected fund: Product A\nResearch follow-up: assess cash-flow trends",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.result.role",
+        "text": "Assessment and follow-up",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!risk.user",
+        "text": "Risk staff verify exposures and requirements. Analysts update the credit assessment.\nPortfolio managers discuss the response.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: China Universal; Tianhong / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Middle office  /  Risk analysis  /  Proposed application",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "21 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 22,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Processing operational documents",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.head0",
+        "text": "Input documents",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.head1",
+        "text": "Processing tasks",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.head2",
+        "text": "Outputs",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.repetition",
+        "text": "Staff spend time rekeying data and interpreting document changes.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.row0.0",
+        "text": "Faxes and scans",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.row0.1",
+        "text": "Enter and validate data",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.row0.2",
+        "text": "Business records",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.row1.0",
+        "text": "Client update V1 / V2",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.row1.1",
+        "text": "Find and interpret changes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.row1.2",
+        "text": "Change summary",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.row2.0",
+        "text": "Related documents",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.row2.1",
+        "text": "Apply the same revision",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.row2.2",
+        "text": "Updated documents",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Back office  /  Document processing  /  Current workflow",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "22 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "File example"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 23,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "HuaAn and ICBCUBS: document processing",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.compare.functions",
+        "text": "Highlight changes, identify typos and export results",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.compare.new.label",
+        "text": "V2 investment view: additions highlighted",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.compare.new.line1",
+        "text": "Channel restocking supported Company A’s\nsales volume growth.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.compare.new.line2",
+        "text": "We are monitoring whether restocking continues,\nalongside raw-material costs.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.compare.old.label",
+        "text": "V1 investment view",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.compare.old.text",
+        "text": "Higher sales volumes drove Company A’s revenue growth.\nWe are monitoring raw-material costs.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.compare.read",
+        "text": "The model reads the content and compares versions",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.form.body",
+        "text": "Read document content\nExtract required data\nPopulate client-service records\nfrom faxes and forms",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.form.role",
+        "text": "Read faxes and forms",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.formats",
+        "text": "PDF, Word and scanned documents",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.huaan",
+        "text": "HuaAn: automated data entry",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.icbc",
+        "text": "ICBCUBS: document comparison",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.stat",
+        "text": "HuaAn reports automated data entry for more than 80% of faxes handled by its direct-sales counter.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: HuaAn / CCF; ICBCUBS / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Back office  /  Document processing  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "23 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Version comparison"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 24,
+    "reused": [
+      {
+        "key": "!!changeLog.driver.body",
+        "text": "Channel restocking supported sales volume growth",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!changeLog.driver.label",
+        "text": "Added growth driver",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!changeLog.object",
+        "text": "Quarterly client update V1 / V2",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!changeLog.sync.body",
+        "text": "Other client updates and product Q&A\nusing this investment view",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!changeLog.sync.label",
+        "text": "Related materials",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!changeLog.title",
+        "text": "Client update: change summary",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!changeLog.watch.body",
+        "text": "Added: whether restocking continues.\nRetained: raw-material cost monitoring.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!changeLog.watch.label",
+        "text": "Monitoring changes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Proposed application: document change analysis",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.inputs.body",
+        "text": "Quarterly client update V1 / V2",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.inputs.role",
+        "text": "Operations supplies both versions",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.llm.body",
+        "text": "Separate new and retained information\nExplain the change in meaning\nIdentify related materials to update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.llm.role",
+        "text": "LLM explains what changed",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.tool.body",
+        "text": "Identify changes to the fund name,\nreporting period and wording",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.tool.role",
+        "text": "Document tools match passages",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!ops.user",
+        "text": "Operations checks the change summary, files it with V2 and updates related materials.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: HuaAn; ICBCUBS; Bosera",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Back office  /  Document processing  /  Proposed application",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "24 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Change summary"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 25,
+    "reused": [
+      {
+        "key": "!!dev.code.body",
+        "text": "Read files and match paragraphs\nIdentify changes and their locations",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.code.role",
+        "text": "Write code",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.debug.body",
+        "text": "Line and page breaks disrupt matching\nHeader changes can trigger false positives",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.debug.role",
+        "text": "Test the tool",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.request",
+        "text": "Developer workflow\nBusiness request: identify changes between the two report versions, excluding repeated page headers.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.requirements.body",
+        "text": "Flag additions, deletions and edits\nIgnore repeated page headers",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.requirements.role",
+        "text": "Define requirements",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.workload",
+        "text": "Development requires implementation, testing and repeated debugging.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Developing a document comparison tool",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!story.client.development.sample.name",
+        "text": "Client update V1 / V2",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Back office  /  Internal tool development  /  Current workflow",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "25 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Tool example"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 26,
+    "reused": [
+      {
+        "key": "!!dev.case.result",
+        "text": "Developers test and refine generated code against the stated requirements.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.case1",
+        "text": "E Fund uses LLMs in development and testing",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.case2",
+        "text": "Invesco Great Wall’s quantitative team uses locally deployed models for coding support.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.code.body",
+        "text": "Write code to process files\nList test cases and expected results",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.code.role",
+        "text": "LLM drafts code and tests",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.requirements.body",
+        "text": "Supply examples and expected results\nSpecify the required behavior",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.requirements.role",
+        "text": "Developer defines the task",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.test.body",
+        "text": "Run the code and check the output\nProvide error details to the LLM",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.test.role",
+        "text": "Developer tests the code",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "E Fund and Invesco Great Wall: development support",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: E Fund; Invesco Great Wall",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!story.client.development.sample.name",
+        "text": "Client update V1 / V2",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Back office  /  Internal tool development  /  Industry examples",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "26 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Reference"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 27,
+    "reused": [
+      {
+        "key": "!!dev.deliver.body",
+        "text": "Review code and rerun tests\nDeliver the tool and user guide",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.deliver.role",
+        "text": "6  Developer retests",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.feedback.body",
+        "text": "Exclude repeated page headers\nRetain genuine body-text changes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.feedback.role",
+        "text": "4  Developer\nexplains failures",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.generate.body",
+        "text": "Match body-text paragraphs\nGenerate code and tests",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.generate.role",
+        "text": "2  LLM drafts code\nand tests",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.request",
+        "text": "Requirement: compare two reports, ignore repeated headers and flag changes to the body text",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.revise.body",
+        "text": "Fix the repeated-header filter\nAdd a regression test for header changes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.revise.role",
+        "text": "5  LLM revises code",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.samples.body",
+        "text": "Client update V1 and V2\nExpected differences marked",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.samples.role",
+        "text": "1  Developer defines\nexamples",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.test.body",
+        "text": "Body-text changes detected\nHeader changes incorrectly flagged",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.test.role",
+        "text": "3  Test runner\nruns tests",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!dev.testFeedback.label",
+        "text": "Test results",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Proposed application: software development support",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: E Fund; Invesco Great Wall",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Back office  /  Internal tool development  /  Proposed application",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "27 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      },
+      {
+        "key": "!!story.header.client.qualifier",
+        "text": "Tool example"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 28,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Other back-office applications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.0.company",
+        "text": "China Merchants Fund, Ping An Fund",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.0.flow.0",
+        "text": "Policy and process questions",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.0.flow.1",
+        "text": "LLM retrieves and explains relevant guidance",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.0.flow.2",
+        "text": "Guidance for employees",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.0.title",
+        "text": "Employee information support",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.1.company",
+        "text": "Maxwealth Fund",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.1.flow.0",
+        "text": "Email, attachments and links",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.1.flow.1",
+        "text": "LLM assesses email context and intent,\nthen invokes detection tools",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.1.flow.2",
+        "text": "Security response",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.1.title",
+        "text": "Email security",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.2.company",
+        "text": "Method proposed in a China Universal patent",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.2.flow.0",
+        "text": "Fund, period and metric",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.2.flow.1",
+        "text": "LLM interprets the question\nAlgorithms quantify contributions\nto the selected metric",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.2.flow.2",
+        "text": "LLM drafts the analytical summary",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!other.2.title",
+        "text": "Business analytics",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: China Merchants Fund; Ping An Fund; Maxwealth Fund; China Universal patent CN121958380A",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Back office  /  Other applications",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "28 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 29,
+    "reused": [
+      {
+        "key": "!!heading",
+        "text": "Seven proposed applications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!nav.front",
+        "text": "Front office",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!recommend.body",
+        "text": "LLMs assist with reading, comparison and drafting. People check the results and exercise judgment.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Tianhong; Southern; Penghua; China Universal; ICBCUBS; E Fund",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Proposed applications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.client",
+        "text": "3  Client materials",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.client.outcome",
+        "text": "Client teams: updates and Q&A",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.dev",
+        "text": "7  Tool development",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.dev.outcome",
+        "text": "Developers: code and test cases",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.files",
+        "text": "6  Document processing",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.files.outcome",
+        "text": "Operations: records and\nchange summaries",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.research",
+        "text": "1  Research",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.research.outcome",
+        "text": "Analysts: research summaries with source references",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.review",
+        "text": "4  Content review",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.review.outcome",
+        "text": "Reviewers: explained findings and proposed edits",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.risk",
+        "text": "5  Risk analysis",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.risk.outcome",
+        "text": "Risk teams: assessments and follow-up tasks",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.trade",
+        "text": "2  Trading support",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!task.trade.outcome",
+        "text": "Traders: bond and quote summaries",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "29 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      }
+    ],
+    "replaced_legacy_locator": [],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 30,
+    "reused": [
+      {
+        "key": "!!cross.0.0",
+        "text": "Company research\nBond and quote summaries",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.0.1",
+        "text": "Event assessment\nExposure monitoring",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.0.2",
+        "text": "Maintain related documents\nTrack revisions",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.1.0",
+        "text": "Draft client update V1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.1.1",
+        "text": "Review and revise V1 to V2",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.1.2",
+        "text": "Compare versions\nUpdate related materials",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.client",
+        "text": "Quarterly client update",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.head0",
+        "text": "Front office",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.head1",
+        "text": "Middle office",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.head2",
+        "text": "Back office",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!cross.issuer",
+        "text": "Company A",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Two information flows across the firm",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Cross-team collaboration",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!example",
+        "text": "Example"
+      },
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "30 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      },
+      {
+        "key": "!!story.header.issuer.name",
+        "text": "Company A"
+      },
+      {
+        "key": "!!story.header.client.name",
+        "text": "Client update"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 31,
+    "reused": [
+      {
+        "key": "!!arch.data",
+        "text": "Shared documents, knowledge bases and business data\nwith access controls, source references and version history",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!arch.entry",
+        "text": "Employees provide a business question and the relevant material",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!arch.model.body",
+        "text": "Interpret questions and read sources\nCompare and explain content\nDraft text and code",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!arch.model.role",
+        "text": "LLMs interpret, compare and draft content",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!arch.models",
+        "text": "Qwen and DeepSeek are candidates for evaluation on the firm’s tasks.",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!arch.tools.body",
+        "text": "Query systems, perform calculations and process files\nRun code and tests",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!arch.tools.role",
+        "text": "Tools execute specific operations",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!arch.workflow",
+        "text": "Applications across the seven business areas",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Shared information, models and tools",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!source",
+        "text": "Sources: Tianhong; Southern; ICBCUBS / AMAC",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Shared capabilities",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "31 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 32,
+    "reused": [
+      {
+        "key": "!!business.phase.outputs",
+        "text": "Deliverables",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!business.phase.teams",
+        "text": "Participating teams",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Proposed implementation sequence",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.0.number",
+        "text": "1",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.0.outputs",
+        "text": "Sample tasks, source inventory and initial applications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.0.roles",
+        "text": "Research, sales,\ncompliance and IT",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.0.title",
+        "text": "Research and client communications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.1.number",
+        "text": "2",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.1.outputs",
+        "text": "Data definitions, system query interfaces and document workflows",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.1.roles",
+        "text": "Trading, operations, IT",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.1.title",
+        "text": "Trading and operations integration",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.2.number",
+        "text": "3",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.2.outputs",
+        "text": "Business tools, user guides and named maintenance owners",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.2.roles",
+        "text": "Business teams, IT",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!phase.2.title",
+        "text": "Development support and internal services",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Implementation",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "32 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Next"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  },
+  {
+    "slide": 33,
+    "reused": [
+      {
+        "key": "!!evaluation.0.body",
+        "text": "Time from starting the task\nto completing the output",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.0.title",
+        "text": "Task completion time",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.1.body",
+        "text": "Whether teams use the analysis and materials",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.1.title",
+        "text": "Use of outputs",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.2.body",
+        "text": "Revision rounds and repeated checks",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.2.title",
+        "text": "Rework",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.3.body",
+        "text": "Whether employees continue to use the application",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.3.title",
+        "text": "Repeat usage",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.flow.0",
+        "text": "Establish a baseline",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.flow.1",
+        "text": "Use the application",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.flow.2",
+        "text": "Record results",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.flow.3",
+        "text": "Refine the workflow",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!evaluation.main",
+        "text": "Initial focus: research and client communications",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!heading",
+        "text": "Evaluating application use and task outcomes",
+        "method": "Verbatim words; line breaks may change."
+      },
+      {
+        "key": "!!subtitle",
+        "text": "Evaluation",
+        "method": "Verbatim words; line breaks may change."
+      }
+    ],
+    "removed_interface": [
+      {
+        "key": "!!nav.home",
+        "text": "Overview"
+      },
+      {
+        "key": "!!page",
+        "text": "33 / 33"
+      },
+      {
+        "key": "!!nav.prev",
+        "text": "Back"
+      },
+      {
+        "key": "!!nav.next",
+        "text": "Overview"
+      }
+    ],
+    "replaced_legacy_locator": [
+      {
+        "key": "!!nav.front",
+        "text": "Front office"
+      },
+      {
+        "key": "!!task.research",
+        "text": "Research"
+      },
+      {
+        "key": "!!task.trade",
+        "text": "Trading support"
+      },
+      {
+        "key": "!!task.client",
+        "text": "Client materials"
+      },
+      {
+        "key": "!!nav.middle",
+        "text": "Middle office"
+      },
+      {
+        "key": "!!task.review",
+        "text": "Content review"
+      },
+      {
+        "key": "!!task.risk",
+        "text": "Risk analysis"
+      },
+      {
+        "key": "!!nav.back",
+        "text": "Back office"
+      },
+      {
+        "key": "!!task.files",
+        "text": "Document processing"
+      },
+      {
+        "key": "!!task.dev",
+        "text": "Tool development"
+      }
+    ],
+    "removed_redundant_connector_captions": [],
+    "rewritten_or_omitted_business_text": []
+  }
+]
