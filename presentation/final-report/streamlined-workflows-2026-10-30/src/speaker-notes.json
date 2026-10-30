@@ -1,0 +1,431 @@
+[
+  {
+    "slide": 1,
+    "original_pages": [
+      1
+    ],
+    "narration": "This report considers how LLMs could support colleagues in a mainland asset manager. It follows front-office, middle-office and back-office work. Industry examples establish reported uses, and the company proposals connect those uses to specific employee tasks. Company A and a quarterly client update provide recurring examples. The six application areas cover research, trading support, client communications, risk analysis, record entry and tool development.",
+    "supporting_wording": [
+      "Cover image: AI-generated illustration of an investment-research workspace."
+    ],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nThis report considers how LLMs could support colleagues in a mainland asset manager. It follows front-office, middle-office and back-office work. Industry examples establish reported uses, and the company proposals connect those uses to specific employee tasks. Company A and a quarterly client update provide recurring examples. The six application areas cover research, trading support, client communications, risk analysis, record entry and tool development.\n\nSources and supporting material\nCover image: AI-generated illustration of an investment-research workspace.\n"
+  },
+  {
+    "slide": 2,
+    "original_pages": [
+      2,
+      31
+    ],
+    "narration": "Documents, data, messages and business requests supply information for employee tasks. The LLM reads, compares, explains and drafts. Tools retrieve information, query systems, calculate results and execute operations. Approved documents, knowledge bases and business data provide shared sources, with references and version history available for checking. The application returns company analysis, quote summaries, client materials or working tools. Colleagues check the source basis and use the output in their work.",
+    "supporting_wording": [
+      "Shared sources: approved documents, knowledge bases and business data. Preserve source references and version history for checking."
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nDocuments, data, messages and business requests supply information for employee tasks. The LLM reads, compares, explains and drafts. Tools retrieve information, query systems, calculate results and execute operations. Approved documents, knowledge bases and business data provide shared sources, with references and version history available for checking. The application returns company analysis, quote summaries, client materials or working tools. Colleagues check the source basis and use the output in their work.\n\nSources and supporting material\nShared sources: approved documents, knowledge bases and business data. Preserve source references and version history for checking.\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf"
+  },
+  {
+    "slide": 3,
+    "original_pages": [
+      3
+    ],
+    "narration": "The six application areas follow the firm's work from front office to middle office and back office. Front-office areas are company research, trading support and client communications. Client communications includes drafting, source review, revision and approval, with middle-office reviewers participating in that workflow. Risk analysis connects credit events to exposures and follow-up. Back-office areas are record entry and tool development. Company A connects research, trading and risk information. The quarterly client update connects drafting and review, and supplies examples for the comparison-tool requirement.",
+    "supporting_wording": [],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nThe six application areas follow the firm's work from front office to middle office and back office. Front-office areas are company research, trading support and client communications. Client communications includes drafting, source review, revision and approval, with middle-office reviewers participating in that workflow. Risk analysis connects credit events to exposures and follow-up. Back-office areas are record entry and tool development. Company A connects research, trading and risk information. The quarterly client update connects drafting and review, and supplies examples for the comparison-tool requirement."
+  },
+  {
+    "slide": 4,
+    "original_pages": [
+      4
+    ],
+    "narration": "The analyst asks what drove Company A's revenue growth and whether that growth is sustainable. The financial table compares the prior and current quarter: revenue rises from RMB100 million to RMB110 million, while sales volume rises from 1.0 million to 1.1 million units. Meeting notes identify restocking as a shipment driver. One research report considers demand recovery sufficient to sustain growth, while the other considers continued restocking uncertain. The analyst must find relevant sources, extract data and calculate changes, compare these views and record the reasoning. Repeated searching, extraction and checking take time away from assessing the business. This page describes the existing human workflow, before introducing an LLM proposal.",
+    "supporting_wording": [
+      "Revenue (RMB m): 100 / 110\nSales volume (m units):\n1.0 / 1.1",
+      "Restocking lifted shipments. Assess whether it will continue.",
+      "Report A: demand recovery can sustain growth.\nReport B: continued restocking is uncertain."
+    ],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nThe analyst asks what drove Company A's revenue growth and whether that growth is sustainable. The financial table compares the prior and current quarter: revenue rises from RMB100 million to RMB110 million, while sales volume rises from 1.0 million to 1.1 million units. Meeting notes identify restocking as a shipment driver. One research report considers demand recovery sufficient to sustain growth, while the other considers continued restocking uncertain. The analyst must find relevant sources, extract data and calculate changes, compare these views and record the reasoning. Repeated searching, extraction and checking take time away from assessing the business. This page describes the existing human workflow, before introducing an LLM proposal.\n\nSources and supporting material\nRevenue (RMB m): 100 / 110\nSales volume (m units):\n1.0 / 1.1\n\nRestocking lifted shipments. Assess whether it will continue.\n\nReport A: demand recovery can sustain growth.\nReport B: continued restocking is uncertain.\n"
+  },
+  {
+    "slide": 5,
+    "original_pages": [
+      5
+    ],
+    "narration": "Tianhong's reported approach separates structuring the analysis from obtaining data and making the investment judgment. The LLM organizes a change in net profit into revenue, cost of sales and expenses, then links those categories to operating drivers. Revenue depends on sales volume and selling price; materials and production costs affect cost of sales; distribution and selling costs affect expenses. Data feeds and calculation tools supply the evidence and numerical work. The decomposition connects each earnings category to its operating evidence. Analysts use the driver analysis to assess the quality and sustainability of earnings growth.",
+    "supporting_wording": [],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nTianhong's reported approach separates structuring the analysis from obtaining data and making the investment judgment. The LLM organizes a change in net profit into revenue, cost of sales and expenses, then links those categories to operating drivers. Revenue depends on sales volume and selling price; materials and production costs affect cost of sales; distribution and selling costs affect expenses. Data feeds and calculation tools supply the evidence and numerical work. The decomposition connects each earnings category to its operating evidence. Analysts use the driver analysis to assess the quality and sustainability of earnings growth.\n\nSources and supporting material\n\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+  },
+  {
+    "slide": 6,
+    "original_pages": [
+      6
+    ],
+    "narration": "Fullgoal uses LLMs to compare reports addressing a common research question. The workflow selects relevant reports, summarizes them by topic, then consolidates and reviews the summaries. In this illustration, the reports agree that higher volumes supported revenue. Their disagreement concerns sustainability: one points to demand recovery, while the other sees uncertainty over continued restocking. The useful output is therefore both an agreed finding and an unresolved question, with links back to source material. Analysts investigate the disagreement in the original reports and form their research view.",
+    "supporting_wording": [
+      "Higher volumes lifted revenue.\nDemand recovery can sustain growth.",
+      "Channel restocking lifted shipments. Continued restocking remains uncertain."
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337808067241.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nFullgoal uses LLMs to compare reports addressing a common research question. The workflow selects relevant reports, summarizes them by topic, then consolidates and reviews the summaries. In this illustration, the reports agree that higher volumes supported revenue. Their disagreement concerns sustainability: one points to demand recovery, while the other sees uncertainty over continued restocking. The useful output is therefore both an agreed finding and an unresolved question, with links back to source material. Analysts investigate the disagreement in the original reports and form their research view.\n\nSources and supporting material\nHigher volumes lifted revenue.\nDemand recovery can sustain growth.\n\nChannel restocking lifted shipments. Continued restocking remains uncertain.\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337808067241.pdf"
+  },
+  {
+    "slide": 7,
+    "original_pages": [
+      8
+    ],
+    "narration": "Company A's revenue and sales volume both rose by ten percent from the prior quarter. The calculation tool establishes that average selling price was unchanged. The LLM compares that result with meeting notes and research reports. Restocking explains higher shipments, but the two reports disagree about whether growth will continue. The draft therefore distinguishes the observed volume increase from the uncertainty over continued restocking. Its source markers refer to the financials, meeting notes and research reports. The analyst checks those sources, tests the restocking thesis and forms the investment view, including follow-up on demand and input costs.",
+    "supporting_wording": [
+      "Revenue (RMB m): 100 / 110\nSales volume (m units):\n1.0 / 1.1",
+      "Restocking lifted shipments",
+      "A: demand recovery can sustain growth\nB: continued restocking is uncertain",
+      "Sales volume drove revenue growth [1]. Restocking supported shipments [2], but research views differ on the sustainability of growth [3]. Monitor demand and input costs."
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337808067241.pdf",
+      "https://static.nfnews.com/content/202511/27/c11946239.html",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nCompany A's revenue and sales volume both rose by ten percent from the prior quarter. The calculation tool establishes that average selling price was unchanged. The LLM compares that result with meeting notes and research reports. Restocking explains higher shipments, but the two reports disagree about whether growth will continue. The draft therefore distinguishes the observed volume increase from the uncertainty over continued restocking. Its source markers refer to the financials, meeting notes and research reports. The analyst checks those sources, tests the restocking thesis and forms the investment view, including follow-up on demand and input costs.\n\nSources and supporting material\nRevenue (RMB m): 100 / 110\nSales volume (m units):\n1.0 / 1.1\n\nRestocking lifted shipments\n\nA: demand recovery can sustain growth\nB: continued restocking is uncertain\n\nSales volume drove revenue growth [1]. Restocking supported shipments [2], but research views differ on the sustainability of growth [3]. Monitor demand and input costs.\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337808067241.pdf\nhttps://static.nfnews.com/content/202511/27/c11946239.html\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf"
+  },
+  {
+    "slide": 8,
+    "original_pages": [
+      9
+    ],
+    "narration": "The portfolio manager asks the trader to identify Company A bonds maturing within two years, check the portfolio's holdings and collect offer quotes. The trader queries market and holdings systems, records the data timestamp and then specifies the bonds and buying interest to counterparties. Counterparties return offer prices and available size. The trader summarizes the bonds and received quotes and discusses the next step with the portfolio manager. The trader and existing systems perform these steps in the current workflow. Repeated entry of filters, switching between systems and copying quote messages are the work to be addressed by the later proposal.",
+    "supporting_wording": [],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nThe portfolio manager asks the trader to identify Company A bonds maturing within two years, check the portfolio's holdings and collect offer quotes. The trader queries market and holdings systems, records the data timestamp and then specifies the bonds and buying interest to counterparties. Counterparties return offer prices and available size. The trader summarizes the bonds and received quotes and discusses the next step with the portfolio manager. The trader and existing systems perform these steps in the current workflow. Repeated entry of filters, switching between systems and copying quote messages are the work to be addressed by the later proposal."
+  },
+  {
+    "slide": 9,
+    "original_pages": [
+      10
+    ],
+    "narration": "Southern Asset Management's Xiaonan trading assistant supports queries, bond screening, trading instructions and notifications. The user supplies a request; the LLM interprets it and selects tools; systems perform the task and return a result; the user reviews the data and confirms the next step. Aegon-Industrial's reported use is different: AI extracts bond, side, price and size from Qtrade records, matches the relevant quote request and routes details to the trading system. The portfolio manager then submits the instruction. Systems execute requests, AI interprets language or extracts fields, and colleagues review results and submit instructions.",
+    "supporting_wording": [
+      "Xiaonan supports queries, bond screening, trading instructions and notifications"
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nSouthern Asset Management's Xiaonan trading assistant supports queries, bond screening, trading instructions and notifications. The user supplies a request; the LLM interprets it and selects tools; systems perform the task and return a result; the user reviews the data and confirms the next step. Aegon-Industrial's reported use is different: AI extracts bond, side, price and size from Qtrade records, matches the relevant quote request and routes details to the trading system. The portfolio manager then submits the instruction. Systems execute requests, AI interprets language or extracts fields, and colleagues review results and submit instructions.\n\nSources and supporting material\nXiaonan supports queries, bond screening, trading instructions and notifications\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf"
+  },
+  {
+    "slide": 10,
+    "original_pages": [
+      11
+    ],
+    "narration": "The portfolio manager asks for Company A bonds on the buy side, maturing within two years, with current holdings checked and offer quotes collected. The LLM identifies query criteria and systems return Bond A, which matures in 1.2 years, together with the current RMB 20 million face-value holding. The second input is separate: the trader supplies the received quote. The LLM extracts Bond A, a clean price of 100.20 per RMB 100 face value, and RMB 20 million face value available. It combines those fields in the summary table, retaining different columns for current holdings and available size. The trader verifies quote sources, timestamps and amounts; the portfolio manager reviews the summary with the trader. The trader supplies the received quote records and the LLM extracts their details.",
+    "supporting_wording": [
+      "Portfolio manager: check holdings and collect offers for Company A bonds maturing within two years",
+      "Bond A (Company A)\nTime to maturity: 1.2 years\nCurrent holding:\nRMB 20m face value",
+      "The trader provides this quote:\nBond A: clean price 100.20\nRMB 20m face value available\nExtract bond, price, face value"
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nThe portfolio manager asks for Company A bonds on the buy side, maturing within two years, with current holdings checked and offer quotes collected. The LLM identifies query criteria and systems return Bond A, which matures in 1.2 years, together with the current RMB 20 million face-value holding. The second input is separate: the trader supplies the received quote. The LLM extracts Bond A, a clean price of 100.20 per RMB 100 face value, and RMB 20 million face value available. It combines those fields in the summary table, retaining different columns for current holdings and available size. The trader verifies quote sources, timestamps and amounts; the portfolio manager reviews the summary with the trader. The trader supplies the received quote records and the LLM extracts their details.\n\nSources and supporting material\nPortfolio manager: check holdings and collect offers for Company A bonds maturing within two years\n\nBond A (Company A)\nTime to maturity: 1.2 years\nCurrent holding:\nRMB 20m face value\n\nThe trader provides this quote:\nBond A: clean price 100.20\nRMB 20m face value available\nExtract bond, price, face value\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337841539992.pdf"
+  },
+  {
+    "slide": 11,
+    "original_pages": [
+      12,
+      16
+    ],
+    "narration": "The client team begins with a client question, investment views, product information and previous material. The front-office author selects relevant information and drafts the explanation. A middle-office reviewer checks the draft against current sources, including fund details, reporting periods and risk wording. The reviewer explains any issues so the author can revise the material. Review and approval lead to an approved client communication. Repeated source searches, manual checks and revision handoffs make this preparation work a candidate for support.",
+    "supporting_wording": [
+      "Preparation uses portfolio-manager views, product information and previous client communications. Middle-office review checks the current fund details, period, investment view and risk disclosure."
+    ],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nThe client team begins with a client question, investment views, product information and previous material. The front-office author selects relevant information and drafts the explanation. A middle-office reviewer checks the draft against current sources, including fund details, reporting periods and risk wording. The reviewer explains any issues so the author can revise the material. Review and approval lead to an approved client communication. Repeated source searches, manual checks and revision handoffs make this preparation work a candidate for support.\n\nSources and supporting material\nPreparation uses portfolio-manager views, product information and previous client communications. Middle-office review checks the current fund details, period, investment view and risk disclosure.\n"
+  },
+  {
+    "slide": 12,
+    "original_pages": [
+      14,
+      17
+    ],
+    "narration": "ICBCUBS FundGPT supports institutional RFP drafting through internal knowledge and source retrieval. In the RFP illustration, a question about investment research leads to relevant responsibilities and a source-backed response. The business team checks the answer and source. Penghua's marketing-material review applies review requirements and produces explained suggested edits, including fund information and risk wording. Authors revise material and reviewers check it. Penghua reported a ninety-one-percent acceptance rate for suggested edits. Yingmi separately supports initial checks, revision and repeat review; that reported scope provides another example of review follow-through.",
+    "supporting_wording": [
+      "ICBCUBS FundGPT supports knowledge-base maintenance, question analysis, review and RFP drafting.",
+      "Penghua applies 71 review rules across seven categories. Its reported 91% figure concerns acceptance of suggested edits.",
+      "Yingmi accepts text or files, identifies issues and reasons, suggests changes and supports repeat review after revision."
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf",
+      "https://www.yingmi-inc.com/archives/799"
+    ],
+    "full_notes": "Suggested spoken explanation\nICBCUBS FundGPT supports institutional RFP drafting through internal knowledge and source retrieval. In the RFP illustration, a question about investment research leads to relevant responsibilities and a source-backed response. The business team checks the answer and source. Penghua's marketing-material review applies review requirements and produces explained suggested edits, including fund information and risk wording. Authors revise material and reviewers check it. Penghua reported a ninety-one-percent acceptance rate for suggested edits. Yingmi separately supports initial checks, revision and repeat review; that reported scope provides another example of review follow-through.\n\nSources and supporting material\nICBCUBS FundGPT supports knowledge-base maintenance, question analysis, review and RFP drafting.\n\nPenghua applies 71 review rules across seven categories. Its reported 91% figure concerns acceptance of suggested edits.\n\nYingmi accepts text or files, identifies issues and reasons, suggests changes and supports repeat review after revision.\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf\nhttps://www.yingmi-inc.com/archives/799"
+  },
+  {
+    "slide": 13,
+    "original_pages": [
+      15,
+      16,
+      18,
+      24
+    ],
+    "narration": "The author supplies the client question, investment view and relevant product material. The LLM drafts V1. Its investment view states that higher sales volume drove Company A's revenue and retains raw-material-cost monitoring. Current review sources add channel restocking and uncertainty over whether it continues. Document tools match the draft with relevant source passages. The LLM explains the mismatches and proposes revisions. V2 adds the restocking driver and continuation question while retaining cost monitoring. The author approves the edits, and the middle-office reviewer checks the sources and revised material before approval. The full fund name, Q3 product source and specific risk disclosure are also part of V2.",
+    "supporting_wording": [
+      "Quarterly client update V1\nFund name: Product A Select\nSource version: Q2 2026 product information, V1\nInvestment view: Higher sales volumes drove Company A’s revenue growth. We are monitoring raw-material costs.\nRisk disclosure: Investing involves risk.",
+      "Quarterly client update V2\nFund name: Product A Select Mixed-Asset Fund\nSource version: Q3 2026 product information, V2\nInvestment view: Channel restocking supported Company A’s sales volume growth. We are monitoring whether restocking continues, alongside raw-material costs.\nRisk disclosure: The fund’s NAV fluctuates with market conditions. Capital is at risk.",
+      "Channel restocking supported sales volume growth",
+      "Added: whether restocking continues.\nRetained: raw-material cost monitoring.",
+      "Other client updates and product Q&A\nusing this investment view",
+      "Current portfolio-manager source: channel restocking lifted sales volume; continuation remains uncertain. Raw-material-cost monitoring is retained.",
+      "These V1/V2 materials illustrate the company proposal."
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf",
+      "https://fund.10jqka.com.cn/20251111/c672391490.shtml",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf",
+      "https://www.yingmi-inc.com/archives/799",
+      "https://edc-book.ccf.org.cn/%E3%80%8A2025CCF%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E5%8F%91%E5%B1%95%E6%8E%A8%E8%8D%90%E6%A1%88%E4%BE%8B%E9%9B%86%E3%80%8B.pdf",
+      "https://finance.sina.com.cn/money/fund/jjh/2026-04-30/doc-inhwfyep1330822.shtml"
+    ],
+    "full_notes": "Suggested spoken explanation\nThe author supplies the client question, investment view and relevant product material. The LLM drafts V1. Its investment view states that higher sales volume drove Company A's revenue and retains raw-material-cost monitoring. Current review sources add channel restocking and uncertainty over whether it continues. Document tools match the draft with relevant source passages. The LLM explains the mismatches and proposes revisions. V2 adds the restocking driver and continuation question while retaining cost monitoring. The author approves the edits, and the middle-office reviewer checks the sources and revised material before approval. The full fund name, Q3 product source and specific risk disclosure are also part of V2.\n\nSources and supporting material\nQuarterly client update V1\nFund name: Product A Select\nSource version: Q2 2026 product information, V1\nInvestment view: Higher sales volumes drove Company A’s revenue growth. We are monitoring raw-material costs.\nRisk disclosure: Investing involves risk.\n\nQuarterly client update V2\nFund name: Product A Select Mixed-Asset Fund\nSource version: Q3 2026 product information, V2\nInvestment view: Channel restocking supported Company A’s sales volume growth. We are monitoring whether restocking continues, alongside raw-material costs.\nRisk disclosure: The fund’s NAV fluctuates with market conditions. Capital is at risk.\n\nChannel restocking supported sales volume growth\n\nAdded: whether restocking continues.\nRetained: raw-material cost monitoring.\n\nOther client updates and product Q&A\nusing this investment view\n\nCurrent portfolio-manager source: channel restocking lifted sales volume; continuation remains uncertain. Raw-material-cost monitoring is retained.\n\nThese V1/V2 materials illustrate the company proposal.\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf\nhttps://fund.10jqka.com.cn/20251111/c672391490.shtml\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf\nhttps://www.yingmi-inc.com/archives/799\nhttps://edc-book.ccf.org.cn/%E3%80%8A2025CCF%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E5%8F%91%E5%B1%95%E6%8E%A8%E8%8D%90%E6%A1%88%E4%BE%8B%E9%9B%86%E3%80%8B.pdf\nhttps://finance.sina.com.cn/money/fund/jjh/2026-04-30/doc-inhwfyep1330822.shtml"
+  },
+  {
+    "slide": 14,
+    "original_pages": [
+      19
+    ],
+    "narration": "A risk analyst receives a Company A alert: the credit rating is on watch and operating cash flow is under pressure. The analyst gathers three types of evidence in parallel. Holdings identify the exposed funds and holding amounts. Contracts and internal policies identify applicable rules and clauses. Issuer research supports assessment of the event's impact. These searches repeatedly use the same issuer across systems and documents. The analyst brings the evidence together in an event assessment for risk work and discussion.",
+    "supporting_wording": [
+      "Company A’s credit rating is on watch.\nOperating cash flow is under pressure."
+    ],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nA risk analyst receives a Company A alert: the credit rating is on watch and operating cash flow is under pressure. The analyst gathers three types of evidence in parallel. Holdings identify the exposed funds and holding amounts. Contracts and internal policies identify applicable rules and clauses. Issuer research supports assessment of the event's impact. These searches repeatedly use the same issuer across systems and documents. The analyst brings the evidence together in an event assessment for risk work and discussion.\n\nSources and supporting material\nCompany A’s credit rating is on watch.\nOperating cash flow is under pressure.\n"
+  },
+  {
+    "slide": 15,
+    "original_pages": [
+      20
+    ],
+    "narration": "China Universal uses LLMs to read custodian risk alerts, extract relevant risk information and route it to the risk team's workspace. A related function links monitoring rules with regulations, internal controls and contract terms. The LLM explains the source-text basis for a rule trigger. Tianhong uses event details, comparable past events, industry relationships and market sentiment to support an LLM-drafted event assessment. The assessment compares the event with past cases and outlines potential impacts and follow-up actions. Investment and risk teams discuss the implications. The source-grounded rule explanation and the event-comparison assessment are distinct reported functions.",
+    "supporting_wording": [
+      "Event details, comparable past events,\nindustry relationships and market sentiment"
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nChina Universal uses LLMs to read custodian risk alerts, extract relevant risk information and route it to the risk team's workspace. A related function links monitoring rules with regulations, internal controls and contract terms. The LLM explains the source-text basis for a rule trigger. Tianhong uses event details, comparable past events, industry relationships and market sentiment to support an LLM-drafted event assessment. The assessment compares the event with past cases and outlines potential impacts and follow-up actions. Investment and risk teams discuss the implications. The source-grounded rule explanation and the event-comparison assessment are distinct reported functions.\n\nSources and supporting material\nEvent details, comparable past events,\nindustry relationships and market sentiment\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+  },
+  {
+    "slide": 16,
+    "original_pages": [
+      21
+    ],
+    "narration": "The proposal begins with supplied evidence: the Company A alert, a current holding record showing that Product A holds RMB 20 million face value of Company A bonds, and a requirement to update issuer research after a credit event. The LLM identifies the issuer, links fund exposure, reviews applicable clauses and issuer research, and drafts an assessment. Cash-flow pressure affects the issuer's capacity to service debt. The output identifies Product A and a research follow-up to assess cash-flow trends. Risk staff verify exposures and requirements, analysts update the credit assessment, and portfolio managers discuss the response.",
+    "supporting_wording": [
+      "Company A: credit rating on watch.\nOperating cash flow is under pressure.",
+      "Product A holds\nCompany A bonds\nFace value: RMB 20m",
+      "Update issuer research following a credit event.",
+      "Cash-flow pressure affects the issuer’s capacity to service debt.\nReview the credit assessment.\nAffected fund: Product A\nResearch follow-up: assess cash-flow trends"
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nThe proposal begins with supplied evidence: the Company A alert, a current holding record showing that Product A holds RMB 20 million face value of Company A bonds, and a requirement to update issuer research after a credit event. The LLM identifies the issuer, links fund exposure, reviews applicable clauses and issuer research, and drafts an assessment. Cash-flow pressure affects the issuer's capacity to service debt. The output identifies Product A and a research follow-up to assess cash-flow trends. Risk staff verify exposures and requirements, analysts update the credit assessment, and portfolio managers discuss the response.\n\nSources and supporting material\nCompany A: credit rating on watch.\nOperating cash flow is under pressure.\n\nProduct A holds\nCompany A bonds\nFace value: RMB 20m\n\nUpdate issuer research following a credit event.\n\nCash-flow pressure affects the issuer’s capacity to service debt.\nReview the credit assessment.\nAffected fund: Product A\nResearch follow-up: assess cash-flow trends\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+  },
+  {
+    "slide": 17,
+    "original_pages": [
+      22
+    ],
+    "narration": "Operations receives a fax or form, reads its content and enters the required fields. Staff check the entered information against the original document, correct errors or omissions and create the business record with its source reference. Reading the same material, rekeying fields and repeating source checks consume staff time. The purpose of this workflow is an accurate record that colleagues can use in subsequent operations.",
+    "supporting_wording": [
+      "Current capture workflow: read incoming faxes/forms, enter fields, validate against the source and create the business record."
+    ],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nOperations receives a fax or form, reads its content and enters the required fields. Staff check the entered information against the original document, correct errors or omissions and create the business record with its source reference. Reading the same material, rekeying fields and repeating source checks consume staff time. The purpose of this workflow is an accurate record that colleagues can use in subsequent operations.\n\nSources and supporting material\nCurrent capture workflow: read incoming faxes/forms, enter fields, validate against the source and create the business record.\n"
+  },
+  {
+    "slide": 18,
+    "original_pages": [
+      23
+    ],
+    "narration": "HuaAn reports automated entry for more than eighty percent of faxes handled by its direct-sales counter. Its model reads document content, extracts required fields and populates client-service records. Our proposed application starts with incoming documents and uses an LLM to extract required fields. Operations checks those fields against the source, corrects them and enters the validated business record. The proposed workflow keeps source references with the record and places staff validation before record entry.",
+    "supporting_wording": [
+      "HuaAn reports automated data entry for more than 80% of faxes handled by its direct-sales counter.",
+      "In the company proposal, operations validates extracted fields against incoming documents before record entry.",
+      "ICBCUBS FundGPT also supports comparison of two existing PDF, Word or scanned versions, difference highlighting, typo checking and export."
+    ],
+    "source_urls": [
+      "https://edc-book.ccf.org.cn/%E3%80%8A2025CCF%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E5%8F%91%E5%B1%95%E6%8E%A8%E8%8D%90%E6%A1%88%E4%BE%8B%E9%9B%86%E3%80%8B.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nHuaAn reports automated entry for more than eighty percent of faxes handled by its direct-sales counter. Its model reads document content, extracts required fields and populates client-service records. Our proposed application starts with incoming documents and uses an LLM to extract required fields. Operations checks those fields against the source, corrects them and enters the validated business record. The proposed workflow keeps source references with the record and places staff validation before record entry.\n\nSources and supporting material\nHuaAn reports automated data entry for more than 80% of faxes handled by its direct-sales counter.\n\nIn the company proposal, operations validates extracted fields against incoming documents before record entry.\n\nICBCUBS FundGPT also supports comparison of two existing PDF, Word or scanned versions, difference highlighting, typo checking and export.\nhttps://edc-book.ccf.org.cn/%E3%80%8A2025CCF%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E5%8F%91%E5%B1%95%E6%8E%A8%E8%8D%90%E6%A1%88%E4%BE%8B%E9%9B%86%E3%80%8B.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf"
+  },
+  {
+    "slide": 19,
+    "original_pages": [
+      25
+    ],
+    "narration": "The requested business tool compares two versions while ignoring repeated page headers. The developer translates that rule into requirements, including additions, deletions and edits to genuine body text. Code must read files, match paragraphs and locate the changes. Line and page breaks can disrupt matching, and a changed header can be flagged incorrectly. Testing exposes those false positives, which return to coding and debugging. A working comparison tool and its results follow repeated implementation, testing and correction. Separating repeated headers from genuine body changes is part of the developer’s testing criteria.",
+    "supporting_wording": [
+      "Developer workflow\nBusiness request: identify changes between the two report versions, excluding repeated page headers."
+    ],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nThe requested business tool compares two versions while ignoring repeated page headers. The developer translates that rule into requirements, including additions, deletions and edits to genuine body text. Code must read files, match paragraphs and locate the changes. Line and page breaks can disrupt matching, and a changed header can be flagged incorrectly. Testing exposes those false positives, which return to coding and debugging. A working comparison tool and its results follow repeated implementation, testing and correction. Separating repeated headers from genuine body changes is part of the developer’s testing criteria.\n\nSources and supporting material\nDeveloper workflow\nBusiness request: identify changes between the two report versions, excluding repeated page headers.\n"
+  },
+  {
+    "slide": 20,
+    "original_pages": [
+      26
+    ],
+    "narration": "E Fund uses LLMs in development and testing. A developer supplies examples, expected results and the required behavior. The LLM can draft processing code and tests, while the developer runs the code, checks results and supplies error details for refinement. Invesco Great Wall's quantitative team uses locally deployed models for coding support. The team's coding task and the model's assistance are followed by developer checking. The reported scopes differ, and both uses depend on colleagues specifying work and reviewing the output.",
+    "supporting_wording": [
+      "Invesco Great Wall’s quantitative team uses locally deployed models for coding support."
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf",
+      "https://gifts.szu.edu.cn/info/1023/1364.htm",
+      "https://www.cls.cn/detail/2237261"
+    ],
+    "full_notes": "Suggested spoken explanation\nE Fund uses LLMs in development and testing. A developer supplies examples, expected results and the required behavior. The LLM can draft processing code and tests, while the developer runs the code, checks results and supplies error details for refinement. Invesco Great Wall's quantitative team uses locally deployed models for coding support. The team's coding task and the model's assistance are followed by developer checking. The reported scopes differ, and both uses depend on colleagues specifying work and reviewing the output.\n\nSources and supporting material\nInvesco Great Wall’s quantitative team uses locally deployed models for coding support.\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf\nhttps://gifts.szu.edu.cn/info/1023/1364.htm\nhttps://www.cls.cn/detail/2237261"
+  },
+  {
+    "slide": 21,
+    "original_pages": [
+      27
+    ],
+    "narration": "The developer defines examples and expected differences using the quarterly-update V1 and V2. The requirement is to compare body text and ignore repeated headers. The LLM drafts paragraph-matching code and tests, and a test runner executes them. In the illustrated failure, body changes are detected but header changes are also flagged. The developer explains the distinction: exclude repeated page headers while retaining genuine body-text changes. The LLM revises the header filter and adds a regression test. The developer reviews and reruns the code, then delivers the tool and user guide after the checks.",
+    "supporting_wording": [
+      "Requirement: compare two reports, ignore repeated headers and flag changes to the body text"
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf",
+      "https://www.cls.cn/detail/2237261"
+    ],
+    "full_notes": "Suggested spoken explanation\nThe developer defines examples and expected differences using the quarterly-update V1 and V2. The requirement is to compare body text and ignore repeated headers. The LLM drafts paragraph-matching code and tests, and a test runner executes them. In the illustrated failure, body changes are detected but header changes are also flagged. The developer explains the distinction: exclude repeated page headers while retaining genuine body-text changes. The LLM revises the header filter and adds a regression test. The developer reviews and reruns the code, then delivers the tool and user guide after the checks.\n\nSources and supporting material\nRequirement: compare two reports, ignore repeated headers and flag changes to the body text\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf\nhttps://www.cls.cn/detail/2237261"
+  },
+  {
+    "slide": 22,
+    "original_pages": [
+      29
+    ],
+    "narration": "The six proposals give colleagues concrete outputs. Analysts receive research summaries with sources. Traders receive holdings and received-quote summaries. Client teams receive drafted and reviewed materials, with middle-office review contributing to approval. Risk teams receive exposure assessments and follow-up items. Operations receives extracted fields for validation and record entry. Developers receive code and tests for an internal comparison tool. Colleagues verify those outputs and exercise professional judgment in their use.",
+    "supporting_wording": [],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nThe six proposals give colleagues concrete outputs. Analysts receive research summaries with sources. Traders receive holdings and received-quote summaries. Client teams receive drafted and reviewed materials, with middle-office review contributing to approval. Risk teams receive exposure assessments and follow-up items. Operations receives extracted fields for validation and record entry. Developers receive code and tests for an internal comparison tool. Colleagues verify those outputs and exercise professional judgment in their use.\n\nSources and supporting material\n\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337850951100.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337837900594.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337815959196.pdf"
+  },
+  {
+    "slide": 23,
+    "original_pages": [
+      30
+    ],
+    "narration": "Company A provides a common issuer identity across research, trading support, risk and issuer-related records. Colleagues share company analysis, bond and quote summaries, event assessments and exposure information. Approved information supports maintained records in operations. The quarterly client update connects the client team's V1 with the author and reviewer's approved V2. Approved material then supports filing and related-material updates. Shared source references and version history support these handoffs across the front, middle and back offices.",
+    "supporting_wording": [],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nCompany A provides a common issuer identity across research, trading support, risk and issuer-related records. Colleagues share company analysis, bond and quote summaries, event assessments and exposure information. Approved information supports maintained records in operations. The quarterly client update connects the client team's V1 with the author and reviewer's approved V2. Approved material then supports filing and related-material updates. Shared source references and version history support these handoffs across the front, middle and back offices."
+  },
+  {
+    "slide": 24,
+    "original_pages": [
+      31,
+      32
+    ],
+    "narration": "Implementation proceeds through three business-led phases. The first focuses on research and client communications, with research, sales, compliance and IT contributing sample tasks, a source inventory and initial applications. The second integrates trading and operations, with trading, operations and IT defining data, system-query interfaces and document workflows. The third expands development support and internal services, with business teams and IT delivering tools, user guides and named maintenance ownership. Each phase has an identifiable business scope and a usable deliverable. The work can be planned and assessed against those business deliverables.",
+    "supporting_wording": [
+      "Research and client communications\nParticipating teams: Research, sales, compliance and IT\nDeliverables: Sample tasks, source inventory and initial applications",
+      "Trading and operations integration\nParticipating teams: Trading, operations, IT\nDeliverables: Data definitions, system query interfaces and document workflows",
+      "Development support and internal services\nParticipating teams: Business teams, IT\nDeliverables: Business tools, user guides and named maintenance owners",
+      "Implementation support: use approved documents, knowledge bases and business data. Define access controls, source references, version ownership and maintenance responsibility. LLMs interpret and draft; tools query systems, calculate, process files and run code/tests. Qwen and DeepSeek are candidates for evaluation on the company tasks."
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf",
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nImplementation proceeds through three business-led phases. The first focuses on research and client communications, with research, sales, compliance and IT contributing sample tasks, a source inventory and initial applications. The second integrates trading and operations, with trading, operations and IT defining data, system-query interfaces and document workflows. The third expands development support and internal services, with business teams and IT delivering tools, user guides and named maintenance ownership. Each phase has an identifiable business scope and a usable deliverable. The work can be planned and assessed against those business deliverables.\n\nSources and supporting material\nResearch and client communications\nParticipating teams: Research, sales, compliance and IT\nDeliverables: Sample tasks, source inventory and initial applications\n\nTrading and operations integration\nParticipating teams: Trading, operations, IT\nDeliverables: Data definitions, system query interfaces and document workflows\n\nDevelopment support and internal services\nParticipating teams: Business teams, IT\nDeliverables: Business tools, user guides and named maintenance owners\n\nImplementation support: use approved documents, knowledge bases and business data. Define access controls, source references, version ownership and maintenance responsibility. LLMs interpret and draft; tools query systems, calculate, process files and run code/tests. Qwen and DeepSeek are candidates for evaluation on the company tasks.\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337849876845.pdf\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337848496316.pdf"
+  },
+  {
+    "slide": 25,
+    "original_pages": [
+      33
+    ],
+    "narration": "Evaluation begins with a baseline for research and client-communications tasks. Colleagues use the application and record the outcome. Completion time runs from starting the task to completing its output. Output use records whether teams actually use the analysis and materials. Rework records revision rounds and repeated checks. Repeat usage records whether employees continue to use the application. The team compares those results with the baseline, reviews where the workflow needs improvement and refines it before subsequent use. The baseline comparison establishes the effect on actual employee work.",
+    "supporting_wording": [
+      "Task completion time: Time from starting the task to completing the output",
+      "Use of outputs: Whether teams use the analysis and materials",
+      "Rework: Revision rounds and repeated checks",
+      "Repeat usage: Whether employees continue to use the application"
+    ],
+    "source_urls": [],
+    "full_notes": "Suggested spoken explanation\nEvaluation begins with a baseline for research and client-communications tasks. Colleagues use the application and record the outcome. Completion time runs from starting the task to completing its output. Output use records whether teams actually use the analysis and materials. Rework records revision rounds and repeated checks. Repeat usage records whether employees continue to use the application. The team compares those results with the baseline, reviews where the workflow needs improvement and refines it before subsequent use. The baseline comparison establishes the effect on actual employee work.\n\nSources and supporting material\nTask completion time: Time from starting the task to completing the output\n\nUse of outputs: Whether teams use the analysis and materials\n\nRework: Revision rounds and repeated checks\n\nRepeat usage: Whether employees continue to use the application\n"
+  },
+  {
+    "slide": 26,
+    "original_pages": [
+      7
+    ],
+    "narration": "Zhong Ou reports using LLMs to populate research templates from source material. Financials and calculations support the operating-performance entry, meeting notes support the business-driver entry, and research reports identify an open question. The illustrative template records a ten-percent increase in sales volume, restocking as the shipment driver, and the question of whether restocking will continue. The analyst checks the entries against their sources and adds an independent assessment. The reported approximately fifty-percent improvement concerns research-preparation efficiency, as reported by Zhong Ou as of May 2026.",
+    "supporting_wording": [
+      "Research preparation efficiency: approximately 50% higher\nReported by Zhong Ou, as of May 2026"
+    ],
+    "source_urls": [
+      "https://static.nfnews.com/content/202511/27/c11946239.html",
+      "https://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA"
+    ],
+    "full_notes": "Suggested spoken explanation\nZhong Ou reports using LLMs to populate research templates from source material. Financials and calculations support the operating-performance entry, meeting notes support the business-driver entry, and research reports identify an open question. The illustrative template records a ten-percent increase in sales volume, restocking as the shipment driver, and the question of whether restocking will continue. The analyst checks the entries against their sources and adds an independent assessment. The reported approximately fifty-percent improvement concerns research-preparation efficiency, as reported by Zhong Ou as of May 2026.\n\nSources and supporting material\nResearch preparation efficiency: approximately 50% higher\nReported by Zhong Ou, as of May 2026\nhttps://static.nfnews.com/content/202511/27/c11946239.html\nhttps://mp.weixin.qq.com/s/rgMRw8HbZUhiu9PkUBM7vA"
+  },
+  {
+    "slide": 27,
+    "original_pages": [
+      13
+    ],
+    "narration": "Tianhong uses LLMs to consolidate recent investment views by portfolio manager or product. Presentations, commentary and reports may contain overlapping explanations. The LLM finds the relevant views, removes duplication and prepares a clear summary for client-facing colleagues. In the recurring Company A example, higher sales volume supported revenue growth and raw-material costs remain a focus. The client-facing team uses the summary with its source basis available for checking. Tianhong also applies the approach to weekly sector views and daily market commentary.",
+    "supporting_wording": [
+      "“Company A’s revenue rose as sales volumes increased.\nWe are watching raw-material costs.”",
+      "Higher sales volume supported revenue growth.\nRaw-material costs remain a focus."
+    ],
+    "source_urls": [
+      "https://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+    ],
+    "full_notes": "Suggested spoken explanation\nTianhong uses LLMs to consolidate recent investment views by portfolio manager or product. Presentations, commentary and reports may contain overlapping explanations. The LLM finds the relevant views, removes duplication and prepares a clear summary for client-facing colleagues. In the recurring Company A example, higher sales volume supported revenue growth and raw-material costs remain a focus. The client-facing team uses the summary with its source basis available for checking. Tianhong also applies the approach to weekly sector views and daily market commentary.\n\nSources and supporting material\n“Company A’s revenue rose as sales volumes increased.\nWe are watching raw-material costs.”\n\nHigher sales volume supported revenue growth.\nRaw-material costs remain a focus.\nhttps://www.amac.org.cn/xwfb/hydt/202601/P020260202337562370809.pdf"
+  },
+  {
+    "slide": 28,
+    "original_pages": [
+      28
+    ],
+    "narration": "Additional back-office uses combine language work with sources and execution tools. China Merchants Fund and Ping An Fund use LLMs to retrieve and explain guidance for employee policy and process questions. Maxwealth Fund's email-security use considers email content, attachments and links; the LLM assesses context and intent and invokes detection tools. In a China Universal patent proposal, the LLM interprets a business-analytics request, algorithms quantify contributions to the selected metric and the LLM drafts the analytical summary. The requested fund, period and metric remain the starting point, and quantitative computation belongs to the algorithms.",
+    "supporting_wording": [
+      "Method proposed in a China Universal patent"
+    ],
+    "source_urls": [
+      "https://fund.10jqka.com.cn/20251111/c672391490.shtml",
+      "https://www.cs.com.cn/ssgs/gsxl/202602/t20260206_6537131.html",
+      "https://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf",
+      "https://patents.google.com/patent/CN121958380A/zh"
+    ],
+    "full_notes": "Suggested spoken explanation\nAdditional back-office uses combine language work with sources and execution tools. China Merchants Fund and Ping An Fund use LLMs to retrieve and explain guidance for employee policy and process questions. Maxwealth Fund's email-security use considers email content, attachments and links; the LLM assesses context and intent and invokes detection tools. In a China Universal patent proposal, the LLM interprets a business-analytics request, algorithms quantify contributions to the selected metric and the LLM drafts the analytical summary. The requested fund, period and metric remain the starting point, and quantitative computation belongs to the algorithms.\n\nSources and supporting material\nMethod proposed in a China Universal patent\nhttps://fund.10jqka.com.cn/20251111/c672391490.shtml\nhttps://www.cs.com.cn/ssgs/gsxl/202602/t20260206_6537131.html\nhttps://www.amac.org.cn/xwfb/hydt/202607/P020260701319545695145.pdf\nhttps://patents.google.com/patent/CN121958380A/zh"
+  }
+]

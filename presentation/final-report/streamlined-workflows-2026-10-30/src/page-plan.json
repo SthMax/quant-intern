@@ -1,0 +1,373 @@
+[
+  {
+    "slide": 1,
+    "original_pages": [
+      1
+    ],
+    "base_original_page": 1,
+    "main_or_appendix": "main",
+    "title": "LLMs in Asset Management",
+    "subtitle": "Industry Examples and Proposed Applications",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 2,
+    "original_pages": [
+      2,
+      31
+    ],
+    "base_original_page": 2,
+    "main_or_appendix": "main",
+    "title": "Scope of Proposed LLM Applications",
+    "subtitle": "Employee Tasks and Business Outputs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 3,
+    "original_pages": [
+      3
+    ],
+    "base_original_page": 3,
+    "main_or_appendix": "main",
+    "title": "Six Application Areas Across the Firm",
+    "subtitle": "Front, Middle and Back Offices",
+    "family": "Six application areas in three offices",
+    "new_composition": true,
+    "custom_spans": []
+  },
+  {
+    "slide": 4,
+    "original_pages": [
+      4
+    ],
+    "base_original_page": 4,
+    "main_or_appendix": "main",
+    "title": "Company Research: Assessing Growth Drivers",
+    "subtitle": "Research Workflow",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 5,
+    "original_pages": [
+      5
+    ],
+    "base_original_page": 5,
+    "main_or_appendix": "main",
+    "title": "Company Research: Assessing Growth Drivers",
+    "subtitle": "Tianhong Fund: Analyzing Earnings Drivers with LLMs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 6,
+    "original_pages": [
+      6
+    ],
+    "base_original_page": 6,
+    "main_or_appendix": "main",
+    "title": "Company Research: Assessing Growth Drivers",
+    "subtitle": "Fullgoal Fund: Comparing Research Views with LLMs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 7,
+    "original_pages": [
+      8
+    ],
+    "base_original_page": 8,
+    "main_or_appendix": "main",
+    "title": "Company Research: Assessing Growth Drivers",
+    "subtitle": "Proposed Application: Drafting Research Summaries with LLMs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 8,
+    "original_pages": [
+      9
+    ],
+    "base_original_page": 9,
+    "main_or_appendix": "main",
+    "title": "Trading Support: Preparing Bond Quote Summaries",
+    "subtitle": "Bond Quote Preparation Workflow",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 9,
+    "original_pages": [
+      10
+    ],
+    "base_original_page": 10,
+    "main_or_appendix": "main",
+    "title": "Trading Support: Preparing Bond Quote Summaries",
+    "subtitle": "Southern and Aegon-Industrial: Trading Queries and Quote Extraction",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 10,
+    "original_pages": [
+      11
+    ],
+    "base_original_page": 11,
+    "main_or_appendix": "main",
+    "title": "Trading Support: Preparing Bond Quote Summaries",
+    "subtitle": "Proposed Application: Summarizing Holdings and Quotes with LLMs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 11,
+    "original_pages": [
+      12,
+      16
+    ],
+    "base_original_page": 12,
+    "main_or_appendix": "main",
+    "title": "Client Communications: Drafting and Review",
+    "subtitle": "Client Material Preparation and Review Workflow",
+    "family": "Client sources, author drafting, middle-office review, revision and approval",
+    "new_composition": true,
+    "custom_spans": []
+  },
+  {
+    "slide": 12,
+    "original_pages": [
+      14,
+      17
+    ],
+    "base_original_page": 14,
+    "main_or_appendix": "main",
+    "title": "Client Communications: Drafting and Review",
+    "subtitle": "ICBCUBS and Penghua: Drafting and Reviewing Client Materials with LLMs",
+    "family": "Separate attributed ICBCUBS drafting and Penghua review mechanisms",
+    "new_composition": true,
+    "custom_spans": []
+  },
+  {
+    "slide": 13,
+    "original_pages": [
+      15,
+      16,
+      18,
+      24
+    ],
+    "base_original_page": 18,
+    "main_or_appendix": "main",
+    "title": "Client Communications: Drafting and Review",
+    "subtitle": "Proposed Application: Drafting and Reviewing Client Updates with LLMs",
+    "family": "Sources to drafting and V1, current-source matching, explained revision to V2 and human approval",
+    "new_composition": true,
+    "custom_spans": []
+  },
+  {
+    "slide": 14,
+    "original_pages": [
+      19
+    ],
+    "base_original_page": 19,
+    "main_or_appendix": "main",
+    "title": "Risk Analysis: Assessing Credit Events",
+    "subtitle": "Credit Risk Assessment Workflow",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 15,
+    "original_pages": [
+      20
+    ],
+    "base_original_page": 20,
+    "main_or_appendix": "main",
+    "title": "Risk Analysis: Assessing Credit Events",
+    "subtitle": "China Universal and Tianhong: Risk Monitoring and Event Assessment with LLMs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 16,
+    "original_pages": [
+      21
+    ],
+    "base_original_page": 21,
+    "main_or_appendix": "main",
+    "title": "Risk Analysis: Assessing Credit Events",
+    "subtitle": "Proposed Application: Drafting Credit Assessments with LLMs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 17,
+    "original_pages": [
+      22
+    ],
+    "base_original_page": 22,
+    "main_or_appendix": "main",
+    "title": "Operations: Record Entry and Validation",
+    "subtitle": "Document Entry and Validation Workflow",
+    "family": "Received document, manual capture, source validation and business record",
+    "new_composition": true,
+    "custom_spans": []
+  },
+  {
+    "slide": 18,
+    "original_pages": [
+      23
+    ],
+    "base_original_page": 23,
+    "main_or_appendix": "main",
+    "title": "Operations: Record Entry and Validation",
+    "subtitle": "Automated Record Entry: Industry Evidence and Our Proposal",
+    "family": "Attributed HuaAn extraction evidence and separate company extraction-validation-record proposal",
+    "new_composition": true,
+    "custom_spans": []
+  },
+  {
+    "slide": 19,
+    "original_pages": [
+      25
+    ],
+    "base_original_page": 25,
+    "main_or_appendix": "main",
+    "title": "Tool Development: Automating Document Comparison",
+    "subtitle": "Development and Testing Workflow",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 20,
+    "original_pages": [
+      26
+    ],
+    "base_original_page": 26,
+    "main_or_appendix": "main",
+    "title": "Tool Development: Automating Document Comparison",
+    "subtitle": "E Fund and Invesco Great Wall: Supporting Software Development",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 21,
+    "original_pages": [
+      27
+    ],
+    "base_original_page": 27,
+    "main_or_appendix": "main",
+    "title": "Tool Development: Automating Document Comparison",
+    "subtitle": "Proposed Application: Developing a Comparison Tool with LLMs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 22,
+    "original_pages": [
+      29
+    ],
+    "base_original_page": 29,
+    "main_or_appendix": "main",
+    "title": "Six Proposed Applications",
+    "subtitle": "Employee Roles and Business Outputs",
+    "family": "Six application areas in three offices",
+    "new_composition": true,
+    "custom_spans": []
+  },
+  {
+    "slide": 23,
+    "original_pages": [
+      30
+    ],
+    "base_original_page": 30,
+    "main_or_appendix": "main",
+    "title": "Information Flows Across the Firm",
+    "subtitle": "Company A Information and the Quarterly Client Update",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 24,
+    "original_pages": [
+      31,
+      32
+    ],
+    "base_original_page": 32,
+    "main_or_appendix": "main",
+    "title": "Proposed Implementation Sequence",
+    "subtitle": "Priority Workflows, Teams and Deliverables",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 25,
+    "original_pages": [
+      33
+    ],
+    "base_original_page": 33,
+    "main_or_appendix": "main",
+    "title": "Evaluating Application Use and Task Outcomes",
+    "subtitle": "Baseline Comparison and Workflow Refinement",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 26,
+    "original_pages": [
+      7
+    ],
+    "base_original_page": 7,
+    "main_or_appendix": "appendix",
+    "title": "Appendix: Research Template Preparation",
+    "subtitle": "Zhong Ou Fund: Populating Research Templates with LLMs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 27,
+    "original_pages": [
+      13
+    ],
+    "base_original_page": 13,
+    "main_or_appendix": "appendix",
+    "title": "Appendix: Investment View Summaries",
+    "subtitle": "Tianhong Fund: Summarizing Investment Views with LLMs",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  },
+  {
+    "slide": 28,
+    "original_pages": [
+      28
+    ],
+    "base_original_page": 28,
+    "main_or_appendix": "appendix",
+    "title": "Appendix: Additional Back-Office Applications",
+    "subtitle": "Employee Guidance, Email Security and Business Analytics",
+    "family": "Retained native source mechanism",
+    "new_composition": false,
+    "custom_spans": []
+  }
+]

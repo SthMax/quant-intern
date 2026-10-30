@@ -1,0 +1,4652 @@
+[
+  {
+    "slide": 1,
+    "original_pages": [
+      1
+    ],
+    "sources": [
+      {
+        "original_page": 1,
+        "source_keys": [
+          {
+            "source_key": "!!cover.kicker",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!cover.title",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!cover.date",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "original_pages": [
+      2,
+      31
+    ],
+    "sources": [
+      {
+        "original_page": 2,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!scope.head0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!scope.head1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!scope.head2",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!scope.input0",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!scope.work0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!scope.output0",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!scope.input1",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!scope.work1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!scope.output1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!scope.input2",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!scope.work2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!scope.output2",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!scope.input3",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!scope.work3",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!scope.output3",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!scope.result",
+            "disposition": "condensed/merged; complete approved source record retained"
+          }
+        ]
+      },
+      {
+        "original_page": 31,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.entry",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.workflow",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.model.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.model.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.tools.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.tools.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.data",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.models",
+            "disposition": "condensed/merged; complete approved source record retained"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 3,
+    "original_pages": [
+      3
+    ],
+    "sources": [
+      {
+        "original_page": 3,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.research.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.trade.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.client.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.review.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.files.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!map.route.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!map.route1.text",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!map.route2.text",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "original_pages": [
+      4
+    ],
+    "sources": [
+      {
+        "original_page": 4,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!research.question",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.evidence.1.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.evidence.1.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!research.evidence.2.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.evidence.2.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!research.evidence.3.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.evidence.3.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!research.manual.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.manual.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.manual.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.manual.2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.manual.3",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.repetition",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "original_pages": [
+      5
+    ],
+    "sources": [
+      {
+        "original_page": 5,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!driver.llm.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!driver.root",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!driver.revenue.node",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!driver.revenue.factor",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!driver.cost.node",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!driver.cost.factor",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!driver.expense.node",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!driver.expense.factor",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!driver.tools",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!driver.result",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.issuer.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "original_pages": [
+      6
+    ],
+    "sources": [
+      {
+        "original_page": 6,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!views.llm.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!views.reportA.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!views.reportA.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!views.reportB.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!views.reportB.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!views.method.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!views.method.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!views.consensus.title",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!views.consensus.body",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!views.difference.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!views.difference.body",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!views.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.issuer.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 7,
+    "original_pages": [
+      8
+    ],
+    "sources": [
+      {
+        "original_page": 8,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!research.question",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.evidence.1.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.evidence.1.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!research.evidence.2.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!research.evidence.2.text",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!research.evidence.3.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.evidence.3.text",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!research.llm.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.llm.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.tool.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.tool.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.result.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!research.result.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!research.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 8,
+    "original_pages": [
+      9
+    ],
+    "sources": [
+      {
+        "original_page": 9,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!trade.task",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.intent.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.intent.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.query.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.query.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.inquire.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.inquire.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.compare.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.compare.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.sequence0.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!trade.sequence1.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!trade.sequence2.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.system.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.system.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.data.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.counterparty.role",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!trade.counterparty.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.ask.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.quote.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!trade.repetition",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 9,
+    "original_pages": [
+      10
+    ],
+    "sources": [
+      {
+        "original_page": 10,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!trade.southern",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case1.0.role",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!trade.case1.0.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case1.1.role",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!trade.case1.1.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case1.2.role",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!trade.case1.2.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case1.3.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case1.3.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case1.scope",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!trade.xq",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case2.0.role",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!trade.case2.0.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case2.1.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case2.1.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case2.2.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case2.2.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.case2.3.role",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!trade.case2.3.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.issuer.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 10,
+    "original_pages": [
+      11
+    ],
+    "sources": [
+      {
+        "original_page": 11,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!trade.intent",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!trade.llm.query.role",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!trade.llm.query.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.system.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.system.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!trade.llm.quote.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.llm.quote.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!trade.result.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!trade.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 11,
+    "original_pages": [
+      12,
+      16
+    ],
+    "sources": [
+      {
+        "original_page": 12,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!client.task",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.question.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.question.text",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.material0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.material1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.material2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.manual.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.manual.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.manual.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.manual.2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.repetition",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      },
+      {
+        "original_page": 16,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!clientDoc.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.version",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.label.product",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.value.product",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.label.period",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.value.period",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.label.view",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.view",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.label.risk",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.value.risk",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.reference.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.reference.text",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.questions.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.questions",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.manual",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 12,
+    "original_pages": [
+      14,
+      17
+    ],
+    "sources": [
+      {
+        "original_page": 14,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!tender.question",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!tender.source.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!tender.source.text",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!tender.llm.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!tender.llm.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!tender.answer.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!tender.answer.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!tender.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!tender.case",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!story.header.neutral.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.neutral.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      },
+      {
+        "original_page": 17,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.version",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.label.product",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.value.product",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.label.period",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.value.period",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.label.view",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.value.view",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.label.risk",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.value.risk",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!comment.meta.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!comment.meta.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!comment.view.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!comment.view.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!comment.risk.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!comment.risk.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.case",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!business.review.umbrella",
+            "disposition": "condensed/merged; complete approved source record retained"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 13,
+    "original_pages": [
+      15,
+      16,
+      18,
+      24
+    ],
+    "sources": [
+      {
+        "original_page": 15,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.input.customer",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.input.manager",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.input.product",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.llm.role",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!client.llm.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.title",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.version",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.product",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.product",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.period",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.period",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.view",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.view",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.risk",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.risk",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!client.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      },
+      {
+        "original_page": 16,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!clientDoc.title",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.version",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.product",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.product",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.period",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.period",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.view",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.view",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.risk",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.risk",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!review.reference.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.reference.text",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.questions.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.questions",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.manual",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      },
+      {
+        "original_page": 18,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.inputs.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.inputs.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.tool.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.tool.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.llm.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!review.llm.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!clientDoc.title",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.version",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.product",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.product",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.period",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.period",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.view",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.view",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.label.risk",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!clientDoc.value.risk",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!review.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      },
+      {
+        "original_page": 24,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.inputs.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.inputs.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.tool.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.tool.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.llm.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.llm.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!changeLog.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!changeLog.object",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!changeLog.driver.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!changeLog.driver.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!changeLog.watch.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!changeLog.watch.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!changeLog.sync.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!changeLog.sync.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!ops.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 14,
+    "original_pages": [
+      19
+    ],
+    "sources": [
+      {
+        "original_page": 19,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!risk.mail.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.mail.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!risk.manual.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.question.0.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.question.0.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.question.1.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.question.1.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.question.2.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.question.2.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.repetition",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 15,
+    "original_pages": [
+      20
+    ],
+    "sources": [
+      {
+        "original_page": 20,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!risk.htf",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!risk.th",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!risk.mail.extract.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.mail.extract.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.rules.tool.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.rules.tool.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.rules.explain",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.event.input.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.event.input.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!risk.event.llm.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.event.llm.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.event.user",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.issuer.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 16,
+    "original_pages": [
+      21
+    ],
+    "sources": [
+      {
+        "original_page": 21,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!risk.evidence.mail.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.evidence.mail.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!risk.evidence.system.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.evidence.system.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!risk.evidence.rule.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.evidence.rule.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!risk.llm.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.llm.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.result.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!risk.result.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!risk.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 17,
+    "original_pages": [
+      22
+    ],
+    "sources": [
+      {
+        "original_page": 22,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!ops.head0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.head1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.head2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.row0.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.row0.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.row0.2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.row1.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.row1.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.row1.2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.row2.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.row2.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.row2.2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.repetition",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 18,
+    "original_pages": [
+      23
+    ],
+    "sources": [
+      {
+        "original_page": 23,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.huaan",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.form.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.form.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.stat",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!ops.icbc",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.formats",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.compare.read",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.compare.old.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.compare.old.text",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.compare.new.label",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.compare.new.line1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.compare.new.line2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!ops.compare.functions",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 19,
+    "original_pages": [
+      25
+    ],
+    "sources": [
+      {
+        "original_page": 25,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!dev.request",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!dev.requirements.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.requirements.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.code.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.code.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.debug.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.debug.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.workload",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.client.development.sample.name",
+            "disposition": "condensed/merged; complete approved source record retained"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 20,
+    "original_pages": [
+      26
+    ],
+    "sources": [
+      {
+        "original_page": 26,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!dev.case1",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!dev.case2",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!dev.requirements.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.requirements.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.code.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.code.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.test.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.test.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.case.result",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.client.development.sample.name",
+            "disposition": "condensed/merged; complete approved source record retained"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 21,
+    "original_pages": [
+      27
+    ],
+    "sources": [
+      {
+        "original_page": 27,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!dev.request",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!dev.samples.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.samples.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.generate.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.generate.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.test.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.test.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.deliver.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.deliver.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.revise.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.revise.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.feedback.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.feedback.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!dev.testFeedback.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 22,
+    "original_pages": [
+      29
+    ],
+    "sources": [
+      {
+        "original_page": 29,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.research.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.trade.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.client.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.review.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.files.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev.outcome",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!recommend.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 23,
+    "original_pages": [
+      30
+    ],
+    "sources": [
+      {
+        "original_page": 30,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!cross.head0",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!cross.head1",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!cross.head2",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!cross.issuer",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!cross.0.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!cross.0.1",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!cross.0.2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!cross.1.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!cross.1.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!cross.1.2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!cross.client",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 24,
+    "original_pages": [
+      31,
+      32
+    ],
+    "sources": [
+      {
+        "original_page": 31,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.entry",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.workflow",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.model.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.model.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.tools.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.tools.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.data",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!arch.models",
+            "disposition": "condensed/merged; complete approved source record retained"
+          }
+        ]
+      },
+      {
+        "original_page": 32,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!phase.0.number",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!phase.0.title",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!phase.0.roles",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!phase.0.outputs",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!phase.1.number",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!phase.1.title",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!phase.1.roles",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!phase.1.outputs",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!phase.2.number",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!phase.2.title",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!phase.2.roles",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!phase.2.outputs",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!business.phase.teams",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!business.phase.outputs",
+            "disposition": "visible verbatim"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 25,
+    "original_pages": [
+      33
+    ],
+    "sources": [
+      {
+        "original_page": 33,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!evaluation.main",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!evaluation.flow.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!evaluation.flow.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!evaluation.flow.2",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!evaluation.flow.3",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!evaluation.0.title",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!evaluation.0.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!evaluation.1.title",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!evaluation.1.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!evaluation.2.title",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!evaluation.2.body",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!evaluation.3.title",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!evaluation.3.body",
+            "disposition": "notes verbatim"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 26,
+    "original_pages": [
+      7
+    ],
+    "sources": [
+      {
+        "original_page": 7,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!elements.head",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!elements.left",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!elements.right",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!element.0.source",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!element.0.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!element.0.value",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!element.1.source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!element.1.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!element.1.value",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!element.2.source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!element.2.label",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!element.2.value",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!elements.stat",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!elements.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.issuer.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.issuer.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 27,
+    "original_pages": [
+      13
+    ],
+    "sources": [
+      {
+        "original_page": 13,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!example",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!client.views.head",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!client.views.source.label",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!client.views.source.text",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!client.views.llm.role",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.views.llm.body",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.views.result.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!client.views.result.text",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!client.views.user",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!story.header.client.name",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!story.header.client.qualifier",
+            "disposition": "requested interface removal or six-section map reexpression"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 28,
+    "original_pages": [
+      28
+    ],
+    "sources": [
+      {
+        "original_page": 28,
+        "source_keys": [
+          {
+            "source_key": "!!heading",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!subtitle",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.front",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.research",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.trade",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!task.client",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!nav.middle",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.review",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.risk",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.back",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!task.files",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!task.dev",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!nav.home",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!page",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.prev",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!nav.next",
+            "disposition": "requested interface removal or six-section map reexpression"
+          },
+          {
+            "source_key": "!!source",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!other.0.title",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!other.0.company",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!other.0.flow.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!other.0.flow.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!other.0.flow.2",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!other.1.title",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!other.1.company",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!other.1.flow.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!other.1.flow.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!other.1.flow.2",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!other.2.title",
+            "disposition": "visible verbatim"
+          },
+          {
+            "source_key": "!!other.2.company",
+            "disposition": "notes verbatim"
+          },
+          {
+            "source_key": "!!other.2.flow.0",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!other.2.flow.1",
+            "disposition": "condensed/merged; complete approved source record retained"
+          },
+          {
+            "source_key": "!!other.2.flow.2",
+            "disposition": "notes verbatim"
+          }
+        ]
+      }
+    ]
+  }
+]

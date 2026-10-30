@@ -1,0 +1,13 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {FileBlob,PresentationFile} from '/Users/sthmax/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs';
+const [page,input,dir]=process.argv.slice(2);
+const inputSha256=crypto.createHash('sha256').update(await fs.readFile(input)).digest('hex');
+const p=await PresentationFile.importPptx(await FileBlob.load(input));
+const b=await p.export({slide:p.slides.items[Number(page)-1],format:'png',scale:1.5});
+const bytes=new Uint8Array(await b.arrayBuffer()),stem=`slide-${String(page).padStart(2,'0')}`;
+await fs.mkdir(dir,{recursive:true});
+await fs.writeFile(path.join(dir,stem+'.png'),bytes);
+await fs.writeFile(path.join(dir,stem+'.json'),JSON.stringify({slide:Number(page),input,inputSha256,pngSha256:crypto.createHash('sha256').update(bytes).digest('hex'),scale:1.5,freshNodeProcess:true},null,2));
+console.log(`Rendered ${page}`);
